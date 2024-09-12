@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="fr-CA" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Laboratoire</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Les sciences autour de nous">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Évaluer (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="sciencesautour" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Sauter au contenu</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="LSAN.html"><span class="title">Les sciences autour de nous:</span> <span class="subtitle">Laboratoires de probabilités et statistiques</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Table des matières"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Table des matières</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Résultats de la recherche: </h2>
+<div id="searchempty" class="searchempty"><span>Aucun résultat.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-Prelab_Varquant.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="up-button button" href="chap-Varquant.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><a class="next-button button" href="sec-Postlab_Varquant.html" title="Suivant"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap-Intro.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Prelab_Introduction.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Prélab</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Laboratoire</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#ssec-Interface" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Interface d’Excel</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#ssec-Exploration" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Exploration de l’élève (élargir des colonnes et des lignes, ajouter des colonnes/lignes, uniformiser largeur, bouton droit, onglets du ruban, ruban)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec_SelectionLigne" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Sélection d’une ligne ou d’une colonne</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-LargeurColonnes" class="internal"><span class="codenumber">1.2.2.2</span> <span class="title">Modifier la largeur des colonnes ou des lignes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#ssec_Nommerdescellules" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Attribuer des noms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-NomTableau" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title">Attribuer un nom à une cellule ou à une plage de cellules</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-VerificationNom" class="internal"><span class="codenumber">1.2.3.2</span> <span class="title">Vérification de l’attribution d’un nom</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-NomColonnes" class="internal"><span class="codenumber">1.2.3.3</span> <span class="title">Attribuer un nom aux colonnes d’un tableau</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#ssec_FigerVolets" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Figer et libérer les volets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-FigerLigneTitres" class="internal"><span class="codenumber">1.2.4.1</span> <span class="title">Figer la ligne de titres d’un tableau</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-LibererVolets" class="internal"><span class="codenumber">1.2.4.2</span> <span class="title">Libérer les volets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#ssec_Filtrer_Trier" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Filtrer et trier (données incohérentes, quoi faire?)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec_Filtrer" class="internal"><span class="codenumber">1.2.5.1</span> <span class="title">Ajouter des filtres</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-Trier" class="internal"><span class="codenumber">1.2.5.2</span> <span class="title">Trier à partir des filtres</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-TrierDonnees" class="internal"><span class="codenumber">1.2.5.3</span> <span class="title">Trier à partir de l’onglet Données</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#ssec_AjoutFeuilles" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Ajouter et nommer une feuille de calcul</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#ssec_TCD" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Tableau croisé dynamique</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-CreerTCD" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Générer un tableau croisé dynamique (variables qualitatives)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#sssec-RemplirTCD" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Remplir un tableau croisé dynamique</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Postlab_Introduction.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Réflexions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-Postlab_Introduction.html#ws-Reflexion_Introduction" class="internal"><span class="codenumber">1.3</span> <span class="title">Travail à faire après le laboratoire</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap-Varqual.html" class="internal"><span class="codenumber">2</span> <span class="title">Variables qualitatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Prelab_Varqual.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Prélab</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-Prelab_Varqual.html#ws-Prelab_Varqual" class="internal"><span class="codenumber">2.1</span> <span class="title">Travail à faire avant le cours</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Laboratoire_Varqual.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Laboratoire</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varqual.html#sec-Laboratoire_Varqual-5" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Le tableau croisé dynamique et le tableau pour publication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varqual.html#sec-Laboratoire_Varqual-6" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Mise en forme tableau</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varqual.html#sec-Laboratoire_Varqual-7" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Graphiques</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varqual.html#sec-Laboratoire_Varqual-8" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Mise en forme graphiques</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Postlab-Varqual.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Réflexions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-Postlab-Varqual.html#ws-Reflexion_Varqual" class="internal"><span class="codenumber">2.3</span> <span class="title">Travail à faire après le laboratoire</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chap-Varquant.html" class="internal"><span class="codenumber">3</span> <span class="title">Variables quantitatives</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Prelab_Varquant.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prélab</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-Prelab_Varquant.html#ws-Prelab_Varquant" class="internal"><span class="codenumber">3.1</span> <span class="title">Travail à faire avant le cours</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Laboratoire</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#ssec_TCD_VarQuant" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Tableau croisé dynamique (variable quantitative continue)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#sec-Laboratoire_Varquant-5" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Filtrer les valeurs aberrantes</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#ssec_Grouper" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Créer des classes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#sssec_Choix_Amp" class="internal"><span class="codenumber">3.2.3.1</span> <span class="title"></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#sssec_Grouper" class="internal"><span class="codenumber">3.2.3.2</span> <span class="title">Grouper les valeurs en classes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#sec-Laboratoire_Varquant-7" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Mise en forme tableau</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#ssec_Histogramme" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Histogramme</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#sec-Laboratoire_Varquant-9" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Mise en forme graphiques</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#sec-Laboratoire_Varquant-10" class="internal"><span class="codenumber">3.2.7</span> <span class="title">Mesures de tendance centrale</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#sec-Laboratoire_Varquant-11" class="internal"><span class="codenumber">3.2.8</span> <span class="title">Mesure de dispersion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#sec-Laboratoire_Varquant-12" class="internal"><span class="codenumber">3.2.9</span> <span class="title">Mesure de position</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Laboratoire_Varquant.html#ssec_PolygoneFrequences" class="internal"><span class="codenumber">3.2.10</span> <span class="title">Polygone de fréquences</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Postlab_Varquant.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Réflexions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Parties annexes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="ann-importation.html" class="internal"><span class="codenumber">A</span> <span class="title">Importer des données</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="ann-manipulation.html" class="internal"><span class="codenumber">B</span> <span class="title">Manipuler la feuille de calcul</span></a></div></li>
+<li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="ann-divers.html" class="internal"><span class="codenumber">C</span> <span class="title">Divers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-miseenforme.html" class="internal"><span class="codenumber">C.1</span> <span class="title">Mise en forme</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="ann-raccourcis.html" class="internal"><span class="codenumber">D</span> <span class="title">Raccourcis pratiques</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-utilite_raccourcis.html" class="internal"><span class="codenumber">D.1</span> <span class="title">Utilité</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-navigation_raccourcis.html" class="internal"><span class="codenumber">D.2</span> <span class="title">Navigation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-selection_raccourcis.html" class="internal"><span class="codenumber">D.3</span> <span class="title">Sélection variée</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-miseenforme_raccourcis.html" class="internal"><span class="codenumber">D.4</span> <span class="title">Mise en forme</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Laboratoire_Varquant"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">Laboratoire</span>
+</h2>
+<div class="para" id="sec-Laboratoire_Varquant-2">Dans ce laboratoire, on cherche à représenter la répartition de femmes d’origine pima vivant en Arizona selon l’indice de masse corporelle, ainsi que la répartition de femmes d’origine pima vivant en Arizona, par résultat au test diabétique, selon l’indice de masse corporelle.</div>
+<div class="para" id="sec-Laboratoire_Varquant-3">Pour cela, on utilise les variables <em class="alert">IMC</em> et <em class="alert">Atteint</em>.</div>
+<section class="subsection" id="ssec_TCD_VarQuant"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="space"> </span><span class="title">Tableau croisé dynamique (variable quantitative continue)</span>
+</h3>
+<div class="para" id="ssec_TCD_VarQuant-2"></div>
+<div class="para" id="ssec_TCD_VarQuant-3">Pour réaliser l’étude d’une variable quantitative continue, il est nécessaire de construire un tableau de fréquences en regroupant les valeurs en classes, car il y a trop de valeurs différentes pour permettre une synthèse efficace. Le tableau croisé dynamique généré par Excel n’est pas adéquat, car il ne regroupe pas les valeurs des variables par défaut. On commence par rappeler les étapes de création d’un tableau croisé dynamique, soit celui de la répartition des 768 femmes d’origina pima vivant en Arizona selon l’indice de masse corporelle.</div>
+<div class="para" id="ssec_TCD_VarQuant-4"></div>
+<div class="para logical" id="ssec_TCD_VarQuant-5"><ol class="decimal">
+<li id="ssec_TCD_VarQuant-5-1-1"><div class="para" id="ssec_TCD_VarQuant-5-1-1-1">Dans le classeur Excel, ajouter une nouvelle feuille de calcul intitulé <em class="alert">Étude IMC</em>. Déplacer cette feuille en dernière position si Excel ne le fait pas automatiquement.</div></li>
+<li id="ssec_TCD_VarQuant-5-1-2"><div class="para" id="ssec_TCD_VarQuant-5-1-2-1">Sélectionner la cellule <em class="alert"><code class="code-inline tex2jax_ignore">B3</code></em> dans cette feuille de calcul.</div></li>
+<li id="ssec_TCD_VarQuant-5-1-3"><div class="para" id="ssec_TCD_VarQuant-5-1-3-1">Insérer un tableau croisé dynamique vide tel que vu à la <a href="sec-Laboratoire_Introduction.html#sssec-CreerTCD" class="internal" title="Sous-sous-section 1.2.1: Générer un tableau croisé dynamique (variables qualitatives)">Sous-sous-section 1.2.1</a>.</div></li>
+<li id="ssec_TCD_VarQuant-5-1-4">
+<div class="para" id="ssec_TCD_VarQuant-5-1-4-1">Glisser et déposer la variable <em class="alert">IMC</em> dans la zone de saisie <em class="alert">Lignes</em>, ainsi que deux fois dans la zone de saisie <em class="alert">Valeurs</em> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_TCD_IMC_1" class="xref" data-knowl="./knowl/xref/Fig_TCD_IMC_1.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.1">Figure 3.2.1</a>).</div>
+<div class="para" id="ssec_TCD_VarQuant-5-1-4-2"></div>
+<figure class="figure figure-like" id="Fig_TCD_IMC_1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_TCD_IMC_1.png" class="contained" alt="Glissement de la variable IMC dans les zones de saisie Lignes et Valeurs"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.1<span class="period">.</span></span><span class="space"> </span>Glissement de la variable <em class="alert">IMC</em> dans les zones de saisie <em class="alert">Lignes</em> et <em class="alert">Valeurs</em></figcaption></figure><div class="para" id="ssec_TCD_VarQuant-5-1-4-4">Dans la zone de saisie <em class="alert">Valeurs</em>, cliquer sur la flèche du menu déroulant du premier onglet, puis sélectionner l’option <dfn class="terminology">Paramètres des champs de valeurs</dfn> pour modifier le calcul. On veut le nombre de femmes pour la deuxième colonne (et non la somme comme Excel fait par défaut), ainsi que le pourcentage de femmes pour la troisième colonne (voir la <a href="sec-Laboratoire_Introduction.html#sssec-RemplirTCD" class="internal" title="Sous-sous-section 1.2.2: Remplir un tableau croisé dynamique">Sous-sous-section 1.2.2</a> pour référence).</div>
+</li>
+<li id="ssec_TCD_VarQuant-5-1-5">
+<div class="para" id="ssec_TCD_VarQuant-5-1-5-1">Au final, le tableau croisé dynamique généré doit ressembler à la <a href="sec-Laboratoire_Varquant.html#Fig_TCD_IMC_2" class="xref" data-knowl="./knowl/xref/Fig_TCD_IMC_2.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.2">Figure 3.2.2</a>.</div>
+<div class="para" id="ssec_TCD_VarQuant-5-1-5-2"></div>
+<figure class="figure figure-like" id="Fig_TCD_IMC_2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_TCD_IMC_2.png" class="contained" alt="Les trois colonnes du tableau croisé dynamique final de la répartition des femmes selon l’indice de masse corporelle"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.2<span class="period">.</span></span><span class="space"> </span>Les trois colonnes du tableau croisé dynamique final de la répartition des femmes selon l’indice de masse corporelle</figcaption></figure>
+</li>
+</ol></div>
+<div class="para" id="ssec_TCD_VarQuant-6">La première ligne du tableau croisé dynamique révèle que onze femmes ont enregistré un indice de masse corporelle de 0. Cette valeur étant impossible, il s’agit donc d’une valeur aberrante. On choisit de filtrer ces valeurs et de les exclure lors de la création du tableau de fréquences, de l’histogramme, ainsi que des calculs des mesures statistiques, car ces dernières pourraient fausser les interprétations.</div></section><section class="subsection" id="sec-Laboratoire_Varquant-5"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="space"> </span><span class="title">Filtrer les valeurs aberrantes</span>
+</h3>
+<div class="para" id="sec-Laboratoire_Varquant-5-2">Il existe plusieurs façons de filtrer des valeurs aberrantes. On choisit de le faire avant de regrouper les valeurs en classes.</div>
+<div class="para" id="sec-Laboratoire_Varquant-5-3"></div>
+<div class="para logical" id="sec-Laboratoire_Varquant-5-4"><ol class="decimal">
+<li id="sec-Laboratoire_Varquant-5-4-1-1">
+<div class="para" id="sec-Laboratoire_Varquant-5-4-1-1-1">Dans une cellule de la première colonne du tableau croisé dynamique généré à la <a href="sec-Laboratoire_Varquant.html#ssec_TCD_VarQuant" class="internal" title="Sous-section 3.2.1: Tableau croisé dynamique (variable quantitative continue)">Sous-section 3.2.1</a>, cliquer avec le bouton droit de la souris. Un menu contextuel s’affiche (voir la <a href="sec-Laboratoire_Varquant.html#Fig_IMC_Filtre_1bis" class="xref" data-knowl="./knowl/xref/Fig_IMC_Filtre_1bis.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.3">Figure 3.2.3</a>).</div>
+<div class="para" id="sec-Laboratoire_Varquant-5-4-1-1-2"></div>
+<figure class="figure figure-like" id="Fig_IMC_Filtre_1bis"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_IMC_Filtre_1bis.png" class="contained" alt="Affichage du menu contextuel de la première colonne du tableau croisé dynamique"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.3<span class="period">.</span></span><span class="space"> </span>Affichage du menu contextuel de la première colonne du tableau croisé dynamique</figcaption></figure>
+</li>
+<li id="sec-Laboratoire_Varquant-5-4-1-3">
+<div class="para" id="sec-Laboratoire_Varquant-5-4-1-3-1">Sélectionner l’option <em class="alert">Filtres s’appliquant aux étiquettes</em> suivi de l’option <em class="alert">Est différent de</em> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_IMC_Filtre_2bis" class="xref" data-knowl="./knowl/xref/Fig_IMC_Filtre_2bis.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.4">Figure 3.2.4</a>).</div>
+<div class="para" id="sec-Laboratoire_Varquant-5-4-1-3-2"></div>
+<figure class="figure figure-like" id="Fig_IMC_Filtre_2bis"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_IMC_Filtre_2bis.png" class="contained" alt="Filtrage s’appliquant aux étiquettes"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.4<span class="period">.</span></span><span class="space"> </span>Filtrage s’appliquant aux étiquettes</figcaption></figure>
+</li>
+<li id="sec-Laboratoire_Varquant-5-4-1-4">
+<div class="para" id="sec-Laboratoire_Varquant-5-4-1-4-1">Une boîte de dialogue s’affiche. Il faut choisir d’afficher les éléments pour lesquels l’étiquette est différent de <span class="process-math">\(0\text{.}\)</span> Ainsi, dans la zone de saisie à droite de l’option <em class="emphasis">est différent de</em>, il faut taper la valeur <em class="emphasis">0</em> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_IMC_Filtre_3bis" class="xref" data-knowl="./knowl/xref/Fig_IMC_Filtre_3bis.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.5">Figure 3.2.5</a>) et cliquer sur <em class="alert">OK</em>.</div>
+<div class="para" id="sec-Laboratoire_Varquant-5-4-1-4-2"></div>
+<figure class="figure figure-like" id="Fig_IMC_Filtre_3bis"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_IMC_Filtre_3bis.png" class="contained" alt="Afficher les éléments pour lesquels l’étiquette est différent de 0"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.5<span class="period">.</span></span><span class="space"> </span>Afficher les éléments pour lesquels l’étiquette est différent de <span class="process-math">\(0\)</span></figcaption></figure>
+</li>
+</ol></div></section><section class="subsection" id="ssec_Grouper"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="space"> </span><span class="title">Créer des classes</span>
+</h3>
+<div class="para" id="ssec_Grouper-2"></div>
+<div class="para" id="ssec_Grouper-3">Avant de regrouper les valeurs en classes, il est nécessaire de déterminer le nombre de classes optimal ainsi que leur amplitude. Les choix d’Excel par défaut ne sont pas toujours adéquats. Il est donc recommandé de documenter clairement ces décisions dans la feuille Excel pour en garder une trace</div>
+<section class="subsubsection" id="sssec_Choix_Amp"><h4 class="heading hide-type">
+<span class="type">Sous-sous-section</span><span class="space"> </span><span class="codenumber">3.2.3.1</span><span class="space"> </span><span class="title"></span>
+</h4>
+<div class="para logical" id="sssec_Choix_Amp-1"><ol class="decimal">
+<li id="sssec_Choix_Amp-1-1-1">
+<div class="para" id="sssec_Choix_Amp-1-1-1-1">Dans la cellule <em class="alert"><code class="code-inline tex2jax_ignore">G3</code></em>, taper le titre <em class="emphasis">Calcul de l’amplitude</em> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Calcul_Classes_1" class="xref" data-knowl="./knowl/xref/Fig_Calcul_Classes_1.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.6">Figure 3.2.6</a>).</div>
+<div class="para" id="sssec_Choix_Amp-1-1-1-2"></div>
+<figure class="figure figure-like" id="Fig_Calcul_Classes_1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Calcul_Classes_1.png" class="contained" alt="Section pour documenter le calcul de l’amplitude"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.6<span class="period">.</span></span><span class="space"> </span>Section pour documenter le calcul de l’amplitude</figcaption></figure><div class="para" id="sssec_Choix_Amp-1-1-1-4"></div>
+<div class="para" id="sssec_Choix_Amp-1-1-1-5">Taper <em class="emphasis">Nombre de classes</em> dans la cellule <em class="alert"><code class="code-inline tex2jax_ignore">G5</code></em>, <em class="emphasis">Étendue de l’IMC</em> dans la cellule <em class="alert"><code class="code-inline tex2jax_ignore">G6</code></em>, <em class="emphasis">Valeur minimale de l’IMC</em> en <em class="alert"><code class="code-inline tex2jax_ignore">G7</code></em>, <em class="emphasis">Amplitude théorique</em> en <em class="alert"><code class="code-inline tex2jax_ignore">G8</code></em>, et finalement, <em class="emphasis">Amplitude choisie</em> dans la cellule <em class="alert"><code class="code-inline tex2jax_ignore">G9</code></em> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Calcul_Classes_1" class="xref" data-knowl="./knowl/xref/Fig_Calcul_Classes_1.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.6">Figure 3.2.6</a>).</div>
+<div class="para" id="sssec_Choix_Amp-1-1-1-6">On souhaite calculer le nombre théorique de classes (<em class="alert">K</em>) à l’aide de la formule de Sturges, soit <span class="process-math">\(1+\dfrac{10}{3}\log{n}\text{,}\)</span> où <span class="process-math">\(n\)</span> est le nombre de données. Dans Excel, on peut insérer des fonctions à partir de l’onglet <em class="alert">Formules</em> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Inserer_Fonction" class="xref" data-knowl="./knowl/xref/Fig_Inserer_Fonction.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.7">Figure 3.2.7</a>), ou en saisissant directement le symbole <em class="alert"><kbd class="kbdkey">=</kbd></em> dans une cellule, puis en tapant manuellement la fonction. <em class="alert">ATTENTION :</em> il ne faut jamais oublier le symboler <em class="alert"><kbd class="kbdkey">=</kbd></em> avant d’insérer une fonction.</div>
+<div class="para" id="sssec_Choix_Amp-1-1-1-7"></div>
+<figure class="figure figure-like" id="Fig_Inserer_Fonction"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Inserer_Fonction.png" class="contained" alt="Insérer une fonction à partir de l’onglet Formules"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.7<span class="period">.</span></span><span class="space"> </span>Insérer une fonction à partir de l’onglet <em class="alert">Formules</em></figcaption></figure>
+</li>
+<li id="sssec_Choix_Amp-1-1-2">
+<div class="para" id="sssec_Choix_Amp-1-1-2-1">Dans la cellule <em class="alert"><code class="code-inline tex2jax_ignore">H5</code></em>, taper la formule <code class="code-inline tex2jax_ignore">=1+10/3*LOG(NB.SI(IMC;"&lt; &gt; 0")) </code> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Calcul_Classes_2" class="xref" data-knowl="./knowl/xref/Fig_Calcul_Classes_2.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.8">Figure 3.2.8</a>).</div>
+<div class="para" id="sssec_Choix_Amp-1-1-2-2">La formule Excel <em class="alert">LOG</em> renvoie le logarithme de l’argument qui se trouve dans les parenthèses. Dans des formules Excel, on peut faire référence à des adresses de cellules ou au nom d’une plage de données.</div>
+<div class="para" id="sssec_Choix_Amp-1-1-2-3">La fonction Excel <dfn class="terminology">NB</dfn> renvoie le nombre de données de la plage de cellules sélectionnées. Si l’on mettait <code class="code-inline tex2jax_ignore">NB(IMC)</code>, ceci renvoie la valeur 768, soit le nombre total de cellules non vides de la variable <em class="alert">IMC</em>. Cependant, on veut exclure les femmes qui ont eu une valeur erronée de 0 comme indice de masse corporelle. Excel permet d’inclure des conditions dans ses formules avec le <em class="alert">SI</em>.</div>
+<div class="para" id="sssec_Choix_Amp-1-1-2-4">La fonction <dfn class="terminology">NB.SI</dfn> détermine le nombre de cellules non vides répondant à la condition à l’intérieur d’une plage. La condition souhaitée est que l’on compte les valeurs d’indice de masse corporelle différente de <span class="process-math">\(0\text{.}\)</span> Dans Excel, le symbole <em class="emphasis">&lt; &gt;</em> correspond à l’expression <em class="emphasis">différent de</em>. Ainsi, la formule <code class="code-inline tex2jax_ignore">NB.SI(IMC;"&lt; &gt; 0")</code> compte le nombre de cellules non vides de la plage IMC qui sont différentes de 0.</div>
+<div class="para" id="sssec_Choix_Amp-1-1-2-5"></div>
+<figure class="figure figure-like" id="Fig_Calcul_Classes_2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Calcul_Classes_2.png" class="contained" alt="Formule pour déterminer le nombre théorique de classes"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.8<span class="period">.</span></span><span class="space"> </span>Formule pour déterminer le nombre théorique de classes</figcaption></figure>
+</li>
+<li id="sssec_Choix_Amp-1-1-4">
+<div class="para" id="sssec_Choix_Amp-1-1-4-1">Une fois la formule rentrée, taper <kbd class="kbdkey">Enter</kbd>. On obtient environ <span class="process-math">\(10,6\text{.}\)</span>
+</div>
+<div class="para" id="sssec_Choix_Amp-1-1-4-2"></div>
+<figure class="figure figure-like" id="Fig_Calcul_Classes_3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Calcul_Classes_3.png" class="contained" alt="Nombre théorique de classes selon la formule de Sturges"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.9<span class="period">.</span></span><span class="space"> </span>Nombre théorique de classes selon la formule de Sturges</figcaption></figure>
+</li>
+<li id="sssec_Choix_Amp-1-1-6">
+<div class="para" id="sssec_Choix_Amp-1-1-6-1">Dans la cellule <em class="alert"><code class="code-inline tex2jax_ignore">H6</code></em>, on souhaite déterminer l’étendue de l’indice de masse corporelle, soit <em class="alert">E</em>. Taper la formule <code class="code-inline tex2jax_ignore">=MAX(IMC)-MIN.SI.ENS(IMC;IMC;"&lt; &gt; 0")</code> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Calcul_Classes_4" class="xref" data-knowl="./knowl/xref/Fig_Calcul_Classes_4.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.10">Figure 3.2.10</a>).</div>
+<div class="para" id="sssec_Choix_Amp-1-1-6-2">La formule Excel <em class="alert">MAX</em> renvoie la plus grande valeur parmi la liste de valeurs. La fonction Excel <dfn class="terminology">MIN</dfn> renvoie la plus petite valeur parmi une liste de valeurs.</div>
+<div class="para" id="sssec_Choix_Amp-1-1-6-3">Si l’on met <code class="code-inline tex2jax_ignore">MIN(IMC)</code>, ceci nous renvoie la valeur 0. Cependant, on veut exclure les femmes qui ont eu une valeur erronée de 0 comme indice de masse corporelle. On veut donc la deuxième plus petite valeur.</div>
+<div class="para" id="sssec_Choix_Amp-1-1-6-4">La fonction <dfn class="terminology">MIN.SI.ENS</dfn> renvoie la valeur minimale parmi la plage de cellules spécifiées par un ensemble de critères donné. La condition souhaitée est que l’on détermine la valeur minimale différente de <span class="process-math">\(0\text{.}\)</span> Ainsi, la formule <code class="code-inline tex2jax_ignore">MIN.SI.ENS(IMC;IMC;"&lt; &gt; 0")</code> détermine la valeur minimale de l’indice de masse corporelle avec le critère que l’IMC doit être différent de <span class="process-math">\(0\text{.}\)</span>
+</div>
+<div class="para" id="sssec_Choix_Amp-1-1-6-5"></div>
+<figure class="figure figure-like" id="Fig_Calcul_Classes_4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Calcul_Classes_4.png" class="contained" alt="Formule pour déterminer l’étendue de l’IMC"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.10<span class="period">.</span></span><span class="space"> </span>Formule pour déterminer l’étendue de l’IMC</figcaption></figure><div class="para" id="sssec_Choix_Amp-1-1-6-7"></div>
+<div class="para" id="sssec_Choix_Amp-1-1-6-8">L’étendue vaut 48,9.</div>
+</li>
+<li id="sssec_Choix_Amp-1-1-8">
+<div class="para" id="sssec_Choix_Amp-1-1-8-1">Dans la cellule <em class="alert"><code class="code-inline tex2jax_ignore">H7</code></em>, taper la formule <code class="code-inline tex2jax_ignore">=MIN.SI.ENS(IMC;IMC;"&lt; &gt; 0")</code> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Calcul_Classes_5" class="xref" data-knowl="./knowl/xref/Fig_Calcul_Classes_5.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.11">Figure 3.2.11</a>) pour déterminer la valeur minimale (autre que 0) de l’indice de masse corporelle. Il est essentiel de connaître la valeur minimale pour s’assurer de l’inclure lorsque l’on regroupe les valeurs.</div>
+<div class="para" id="sssec_Choix_Amp-1-1-8-2"></div>
+<figure class="figure figure-like" id="Fig_Calcul_Classes_5"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Calcul_Classes_5.png" class="contained" alt="Formule pour déterminer la valeur minimale de l’IMC (différente de 0)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.11<span class="period">.</span></span><span class="space"> </span>Formule pour déterminer la valeur minimale de l’IMC (différente de 0)</figcaption></figure><div class="para" id="sssec_Choix_Amp-1-1-8-4"></div>
+<div class="para" id="sssec_Choix_Amp-1-1-8-5">La deuxième valeur la plus petite est 18,2.</div>
+</li>
+<li id="sssec_Choix_Amp-1-1-9">
+<div class="para" id="sssec_Choix_Amp-1-1-9-1">On veut déterminer l’amplitude théorique, soit l’étendue divisée par le nombre théorique de classes <span class="process-math">\(\left(\dfrac{E}{K}\right)\text{.}\)</span> Dans la cellule <em class="alert"><code class="code-inline tex2jax_ignore">H8</code></em>, taper la formule <code class="code-inline tex2jax_ignore">=H6/H5</code> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Calcul_Classes_6" class="xref" data-knowl="./knowl/xref/Fig_Calcul_Classes_6.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.12">Figure 3.2.12</a>). Dans des formules Excel, on peut faire référence à des cellules. La cellule <em class="alert"><code class="code-inline tex2jax_ignore">H6</code></em> correspond à l’étendue et la cellule <em class="alert"><code class="code-inline tex2jax_ignore">H5</code></em> correspond au nombre théorique de classes.</div>
+<div class="para" id="sssec_Choix_Amp-1-1-9-2"></div>
+<figure class="figure figure-like" id="Fig_Calcul_Classes_6"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Calcul_Classes_6.png" class="contained" alt="Formule pour déterminer l’amplitude théorique des classes"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.12<span class="period">.</span></span><span class="space"> </span>Formule pour déterminer l’amplitude théorique des classes</figcaption></figure><div class="para" id="sssec_Choix_Amp-1-1-9-4"></div>
+</li>
+<li id="sssec_Choix_Amp-1-1-10">
+<div class="para" id="sssec_Choix_Amp-1-1-10-1">On obtient une amplitude théorique d’environ 4,6. Ceci n’est pas un nombre entier. On choisit 5. (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Calcul_Classes_7" class="xref" data-knowl="./knowl/xref/Fig_Calcul_Classes_7.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.13">Figure 3.2.13</a>).</div>
+<div class="para" id="sssec_Choix_Amp-1-1-10-2"></div>
+<figure class="figure figure-like" id="Fig_Calcul_Classes_7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Calcul_Classes_7.png" class="contained" alt="Détermination de l’amplitude choisie"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.13<span class="period">.</span></span><span class="space"> </span>Détermination de l’amplitude choisie</figcaption></figure><div class="para" id="sssec_Choix_Amp-1-1-10-4"></div>
+</li>
+</ol></div></section><section class="subsubsection" id="sssec_Grouper"><h4 class="heading hide-type">
+<span class="type">Sous-sous-section</span><span class="space"> </span><span class="codenumber">3.2.3.2</span><span class="space"> </span><span class="title">Grouper les valeurs en classes</span>
+</h4>
+<div class="para" id="sssec_Grouper-2">S’assurer d’afficher les éléments sans données et grouper après...blabla</div>
+<div class="para logical" id="sssec_Grouper-3"><ol class="decimal">
+<li id="sssec_Grouper-3-1-1">
+<div class="para" id="sssec_Grouper-3-1-1-1">Dans une cellule de la première colonne du tableau croisé dynamique, cliquer sur le bouton droit de la souris (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Grouper_0" class="xref" data-knowl="./knowl/xref/Fig_Grouper_0.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.14">Figure 3.2.14</a>). Un menu déroulant s’affiche.</div>
+<div class="para" id="sssec_Grouper-3-1-1-2"></div>
+<figure class="figure figure-like" id="Fig_Grouper_0"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Grouper_0.png" class="contained" alt="Menu déroulant de la première colonne d’un tableau croisé dynamique"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.14<span class="period">.</span></span><span class="space"> </span>Menu déroulant de la première colonne d’un tableau croisé dynamique</figcaption></figure>
+</li>
+<li id="sssec_Grouper-3-1-2"><div class="para" id="sssec_Grouper-3-1-2-1">Cliquer sur l’option <em class="alert">Paramètres de champs</em> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Grouper_0" class="xref" data-knowl="./knowl/xref/Fig_Grouper_0.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.14">Figure 3.2.14</a>).</div></li>
+<li id="sssec_Grouper-3-1-3">
+<div class="para" id="sssec_Grouper-3-1-3-1">Une boîte de dialogue s’affiche (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Grouper_0bis" class="xref" data-knowl="./knowl/xref/Fig_Grouper_0bis.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.15">Figure 3.2.15</a>). Cliquer sur l’onglet <em class="alert">Disposition et impression</em>. Cocher ensuite l’option <em class="alert">Afficher les éléments sans données</em>.</div>
+<div class="para" id="sssec_Grouper-3-1-3-2"></div>
+<figure class="figure figure-like" id="Fig_Grouper_0bis"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Grouper_0bis.png" class="contained" alt="La boîte de dialogue pour afficher les éléments sans données"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.15<span class="period">.</span></span><span class="space"> </span>La boîte de dialogue pour afficher les éléments sans données</figcaption></figure><div class="para" id="sssec_Grouper-3-1-3-4">En cochant cette option, on s’assure que lorsque l’on va grouper les valeurs de l’indice de masse corporelle en classes, Excel va afficher les classes qui ne contiennent aucun élément.</div>
+</li>
+<li id="sssec_Grouper-3-1-4">
+<div class="para" id="sssec_Grouper-3-1-4-1">Dans une cellule de la première colonne du tableau croisé dynamique, cliquer sur le bouton droit de la souris (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Grouper_1" class="xref" data-knowl="./knowl/xref/Fig_Grouper_1.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.16">Figure 3.2.16</a>). Un menu déroulant s’affiche.</div>
+<div class="para" id="sssec_Grouper-3-1-4-2"></div>
+<figure class="figure figure-like" id="Fig_Grouper_1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Grouper_1.png" class="contained" alt="Menu déroulant de la première colonne d’un tableau croisé dynamique"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.16<span class="period">.</span></span><span class="space"> </span>Menu déroulant de la première colonne d’un tableau croisé dynamique</figcaption></figure>
+</li>
+<li id="sssec_Grouper-3-1-5"><div class="para" id="sssec_Grouper-3-1-5-1">Cliquer sur l’option <em class="alert">Grouper</em>
+</div></li>
+<li id="sssec_Grouper-3-1-6">
+<div class="para" id="sssec_Grouper-3-1-6-1">Une boîte de dialogue s’affiche (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Grouper_2" class="xref" data-knowl="./knowl/xref/Fig_Grouper_2.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.17">Figure 3.2.17</a>). Excel propose une borne inférieure (soit <span class="process-math">\(0\text{,}\)</span> la valeur minimale de la variable, une borne supérieure (soit <span class="process-math">\(67,1\text{,}\)</span> la valeur maximale de la variable) et une amplitude pour les classes (soit <span class="process-math">\(10\)</span>).</div>
+<div class="para" id="sssec_Grouper-3-1-6-2"></div>
+<figure class="figure figure-like" id="Fig_Grouper_2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Grouper_2.png" class="contained" alt="La boîte de dialogue pour grouper les données d’un tableau croisé dynamique"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.17<span class="period">.</span></span><span class="space"> </span>La boîte de dialogue pour grouper les données d’un tableau croisé dynamique</figcaption></figure>
+</li>
+<li id="sssec_Grouper-3-1-7">
+<div class="para" id="sssec_Grouper-3-1-7-1">Taper <span class="process-math">\(15\)</span> comme valeur minimale au lieu du choix suggéré d’Excel de 0 et taper <span class="process-math">\(5\)</span> comme amplitude au lieu de 10 (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Grouper_6" class="xref" data-knowl="./knowl/xref/Fig_Grouper_6.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.18">Figure 3.2.18</a>).</div>
+<div class="para" id="sssec_Grouper-3-1-7-2"></div>
+<figure class="figure figure-like" id="Fig_Grouper_6"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Grouper_6.png" class="contained" alt="Choix de 15 comme valeur minimale et 5 comme amplitude des classes"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.18<span class="period">.</span></span><span class="space"> </span>Choix de 15 comme valeur minimale et 5 comme amplitude des classes</figcaption></figure><div class="para" id="sssec_Grouper-3-1-7-4">En choisissant 15 comme valeur minimale de la première classe, on s’assurer d’inclure la valeur minimale de 18,2.</div>
+</li>
+<li id="sssec_Grouper-3-1-8">
+<div class="para" id="sssec_Grouper-3-1-8-1">Cliquer sur <em class="alert">OK</em>. Le tableau croisé dynamique résultant groupe les valeurs de la variable <em class="alert">IMC</em> en classe d’amplitude valant <span class="process-math">\(5\)</span> (voir la <a href="sec-Laboratoire_Varquant.html#Fig_Grouper_7" class="xref" data-knowl="./knowl/xref/Fig_Grouper_7.html" data-reveal-label="Dévoiler" data-close-label="Close" title="Figure 3.2.19">Figure 3.2.19</a>). Puisque l’on a appliqué un filtre excluant les femmes enregistrant une valeur erronée de <span class="process-math">\(0\text{,}\)</span> le tableau commence à 15. Cette valeur inclut la deuxième valeur minimale de 18,2.</div>
+<div class="para" id="sssec_Grouper-3-1-8-2"></div>
+<figure class="figure figure-like" id="Fig_Grouper_7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Grouper_7.png" class="contained" alt="Tableau croisé dynamique commençant à 15 avec des classes d’amplitude 5"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.19<span class="period">.</span></span><span class="space"> </span>Tableau croisé dynamique commençant à 15 avec des classes d’amplitude 5</figcaption></figure>
+</li>
+</ol></div></section></section><section class="subsection" id="sec-Laboratoire_Varquant-7"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="space"> </span><span class="title">Mise en forme tableau</span>
+</h3></section><section class="subsection" id="ssec_Histogramme"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="space"> </span><span class="title">Histogramme</span>
+</h3></section><section class="subsection" id="sec-Laboratoire_Varquant-9"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="space"> </span><span class="title">Mise en forme graphiques</span>
+</h3></section><section class="subsection" id="sec-Laboratoire_Varquant-10"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="space"> </span><span class="title">Mesures de tendance centrale</span>
+</h3></section><section class="subsection" id="sec-Laboratoire_Varquant-11"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="space"> </span><span class="title">Mesure de dispersion</span>
+</h3></section><section class="subsection" id="sec-Laboratoire_Varquant-12"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="space"> </span><span class="title">Mesure de position</span>
+</h3></section><section class="subsection" id="ssec_PolygoneFrequences"><h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="space"> </span><span class="title">Polygone de fréquences</span>
+</h3></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-Prelab_Varquant.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Postlab_Varquant.html" title="Suivant"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
