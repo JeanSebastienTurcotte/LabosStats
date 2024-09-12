@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Laboratoire_Varquant" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Laboratoire</title>
+    <p>Dans ce laboratoire, on cherche à représenter la répartition de femmes d’origine pima vivant en Arizona selon l'indice de masse corporelle, ainsi que la répartition de femmes d'origine pima vivant en Arizona, par résultat au test diabétique, selon l'indice de masse corporelle.</p>
+
+     <p>   Pour cela, on utilise les variables <alert>IMC</alert> et <alert>Atteint</alert>.</p>
+    
+    
+    <subsection xml:id="ssec_TCD_VarQuant">
+        <title>Tableau croisé dynamique (variable quantitative continue)</title>
+        
+        <p></p>
+        
+        <p>Pour réaliser l'étude d'une variable quantitative continue, il est nécessaire de construire un tableau de fréquences en regroupant les valeurs en classes, car il y a trop de valeurs différentes pour permettre une synthèse efficace. Le tableau croisé dynamique généré par Excel n’est pas adéquat, car il ne regroupe pas les valeurs des variables par défaut. On commence par rappeler les étapes de création d'un tableau croisé dynamique, soit celui de la répartition des 768 femmes d'origina pima vivant en Arizona selon l'indice de masse corporelle.</p>
+        
+        
+<p></p>
+    
+<p>
+<ol> 
+
+<li> <p> Dans le classeur Excel, ajouter une nouvelle feuille de calcul intitulé <alert>Étude IMC</alert>. Déplacer cette feuille en dernière position si Excel ne le fait pas automatiquement.</p> </li>   
+    
+<li><p> Sélectionner la cellule <alert><c>B3</c></alert> dans cette feuille de calcul.</p></li> 
+    
+<li><p> Insérer un tableau croisé dynamique vide tel que vu à la <xref ref="sssec-CreerTCD"/>.</p></li> 
+    
+<li><p> Glisser et déposer la variable <alert> IMC </alert> dans la zone de saisie <alert> Lignes </alert>, ainsi que deux fois dans la zone de saisie <alert>Valeurs</alert> (voir la <xref ref="Fig_TCD_IMC_1"/>). </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_TCD_IMC_1">
+<caption>Glissement de la variable <alert>IMC</alert> dans les zones de saisie <alert>Lignes</alert> et <alert>Valeurs</alert></caption>
+<image source="images/Fig_TCD_IMC_1.png" >
+<description>Glissement de la variable IMC dans les zones de saisie Lignes et Valeurs</description>
+</image>
+</figure> 
+    
+    <p>Dans la zone de saisie <alert> Valeurs </alert>, cliquer sur la flèche du menu déroulant du premier onglet, puis sélectionner l'option <term> Paramètres des champs de valeurs </term> pour modifier le calcul. On veut le nombre de femmes pour la deuxième colonne (et non la somme comme Excel fait par défaut), ainsi que le pourcentage de femmes pour la troisième colonne (voir la <xref ref="sssec-RemplirTCD"/> pour référence).</p>
+    
+    </li>
+    
+<li> <p> Au final, le tableau croisé dynamique généré doit ressembler à la <xref ref="Fig_TCD_IMC_2"/>. </p>
+    <p> </p>
+    
+      <figure xml:id="Fig_TCD_IMC_2">
+<caption>Les trois colonnes du tableau croisé dynamique final de la répartition des femmes selon l'indice de masse corporelle</caption>
+<image source="images/Fig_TCD_IMC_2.png">
+<description>Les trois colonnes du tableau croisé dynamique final de la répartition des femmes selon l'indice de masse corporelle</description>
+</image>
+</figure>    
+    
+    </li>
+
+</ol>
+</p>
+        
+   <p>La première ligne du tableau croisé dynamique révèle que onze femmes ont enregistré un indice de masse corporelle de 0. Cette valeur étant impossible, il s'agit donc d'une valeur aberrante. On choisit de filtrer ces valeurs et de les exclure lors de la création du tableau de fréquences, de l'histogramme, ainsi que des calculs des mesures statistiques, car ces dernières pourraient fausser les interprétations. </p>     
+    </subsection>
+    
+    
+     <subsection> 
+        <title>Filtrer les valeurs aberrantes</title>
+        
+         <p>Il existe plusieurs façons de filtrer des valeurs aberrantes. On choisit de le faire avant de regrouper les valeurs en classes.</p>
+         
+        <p></p>
+         
+         
+             
+<p>
+<ol> 
+
+<li> <p> Dans une cellule de la première colonne du tableau croisé dynamique généré à la <xref ref="ssec_TCD_VarQuant"/>, cliquer avec le bouton droit de la souris. Un menu contextuel s'affiche (voir la <xref ref="Fig_IMC_Filtre_1bis"/>). </p> 
+    
+      <p> </p>
+    
+<figure xml:id="Fig_IMC_Filtre_1bis">
+<caption>Affichage du menu contextuel de la première colonne du tableau croisé dynamique</caption>
+<image source="images/Fig_IMC_Filtre_1bis.png" >
+<description>Affichage du menu contextuel de la première colonne du tableau croisé dynamique</description>
+</image>
+</figure> 
+    
+    </li>  
+    
+    <p> On veut exclure les valeurs de <m>0</m> des étiquettes de valeurs. Il faut donc appliquer un filtre sur les étiquettes.</p>
+    
+<li><p> Sélectionner l'option <alert>Filtres s'appliquant aux étiquettes</alert> suivi de l'option <alert>Est différent de</alert> (voir la <xref ref="Fig_IMC_Filtre_2bis"/>).</p>
+    
+          <p> </p>
+    
+<figure xml:id="Fig_IMC_Filtre_2bis">
+<caption>Filtrage s'appliquant aux étiquettes</caption>
+<image source="images/Fig_IMC_Filtre_2bis.png" >
+<description>Filtrage s'appliquant aux étiquettes</description>
+</image>
+</figure> 
+    
+    </li>  
+    
+<li><p> Une boîte de dialogue s'affiche. Il faut choisir d'afficher les éléments pour lesquels l'étiquette est différent de <m>0</m>. Ainsi, dans la zone de saisie à droite de l'option <em>est différent de</em>, il faut taper la valeur <em>0</em> (voir la <xref ref="Fig_IMC_Filtre_3bis"/>) et cliquer sur <alert>OK</alert>. </p>
+    
+        <p> </p>
+    
+<figure xml:id="Fig_IMC_Filtre_3bis">
+<caption>Afficher les éléments pour lesquels l'étiquette est différent de <m>0</m></caption>
+<image source="images/Fig_IMC_Filtre_3bis.png" >
+<description>Afficher les éléments pour lesquels l'étiquette est différent de 0</description>
+</image>
+</figure> 
+    
+    </li>  
+    
+    <p>Le tableau croisé dynamique résultat exclut les valeurs pour lesquelles l'IMC vaut 0.</p>
+</ol>
+</p>
+         
+    </subsection>
+    
+    
+    
+    
+    
+    <subsection xml:id="ssec_Grouper">
+        <title>Créer des classes</title>
+        <p> </p>
+        
+        <p>Avant de regrouper les valeurs en classes, il est nécessaire de déterminer le nombre de classes optimal ainsi que leur amplitude. Les choix d'Excel par défaut ne sont pas toujours adéquats. Il est donc recommandé de documenter clairement ces décisions dans la feuille Excel pour en garder une trace</p>
+        
+        <subsubsection xml:id="sssec_Choix_Amp">
+        
+        
+<p>
+<ol> 
+
+<li> <p> Dans la cellule <alert><c>G3</c></alert>, taper le titre <em>Calcul de l'amplitude</em> (voir la <xref ref="Fig_Calcul_Classes_1"/>). </p> 
+    
+      <p> </p>
+    
+<figure xml:id="Fig_Calcul_Classes_1">
+<caption>Section pour documenter le calcul de l'amplitude</caption>
+<image source="images/Fig_Calcul_Classes_1.png" >
+<description>Section pour documenter le calcul de l'amplitude</description>
+</image>
+</figure> 
+    <p> </p>
+    
+    <p>Taper <em>Nombre de classes</em> dans la cellule <alert><c>G5</c></alert>, <em>Étendue de l'IMC</em> dans la cellule <alert><c>G6</c></alert>, <em>Valeur minimale de l'IMC</em> en <alert><c>G7</c></alert>, <em>Amplitude théorique</em> en <alert><c>G8</c></alert>, et finalement, <em>Amplitude choisie</em> dans la cellule <alert><c>G9</c></alert> (voir la <xref ref="Fig_Calcul_Classes_1"/>).</p>
+    
+     
+    
+    <p> On souhaite calculer le nombre théorique de classes (<alert>K</alert>) à l'aide de la formule de Sturges, soit <m>1+\dfrac{10}{3}\log{n}</m>, où <m>n</m> est le nombre de données. Dans Excel, on peut insérer des fonctions à partir de l'onglet <alert>Formules</alert> (voir la <xref ref="Fig_Inserer_Fonction"/>), ou en saisissant directement le symbole <alert><kbd>=</kbd></alert> dans une cellule, puis en tapant manuellement la fonction. <alert>ATTENTION :</alert> il ne faut jamais oublier le symboler <alert><kbd>=</kbd></alert> avant d'insérer une fonction.</p>
+   
+    <p> </p>
+    
+    <figure xml:id="Fig_Inserer_Fonction">
+<caption>Insérer une fonction à partir de l'onglet <alert>Formules</alert></caption>
+<image source="images/Fig_Inserer_Fonction.png" >
+<description>Insérer une fonction à partir de l'onglet Formules</description>
+</image>
+</figure>
+    
+    </li> 
+   
+    
+<li><p> Dans la cellule <alert><c>H5</c></alert>, taper la formule <c>=1+10/3*LOG(NB.SI(IMC;"&lt; &gt; 0")) </c> (voir la <xref ref="Fig_Calcul_Classes_2"/>).</p> 
+    
+    <p>La formule Excel <alert>LOG</alert> renvoie le logarithme de l'argument qui se trouve dans les parenthèses. Dans des formules Excel, on peut faire référence à des adresses de cellules ou au nom d'une plage de données.</p> 
+    
+    <p>La fonction Excel <term>NB</term> renvoie le nombre de données de la plage de cellules sélectionnées. Si l'on mettait <c>NB(IMC)</c>, ceci renvoie la valeur 768, soit le nombre total de cellules non vides de la variable <alert>IMC</alert>. Cependant, on veut exclure les femmes qui ont eu une valeur erronée de 0 comme indice de masse corporelle. Excel permet d'inclure des conditions dans ses formules avec le <alert>SI</alert>. </p>
+    
+    <p>La fonction <term>NB.SI</term> détermine le nombre de cellules non vides répondant à la condition à l'intérieur d'une plage. La condition souhaitée est que l'on compte les valeurs d'indice de masse corporelle différente de <m>0</m>. Dans Excel, le symbole <em>&lt; &gt;</em> correspond à l'expression <em>différent de</em>. Ainsi, la formule <c>NB.SI(IMC;"&lt; &gt; 0")</c> compte le nombre de cellules non vides de la plage IMC qui sont différentes de 0. </p> 
+    
+          <p> </p>
+    
+    <figure xml:id="Fig_Calcul_Classes_2">
+<caption>Formule pour déterminer le nombre théorique de classes</caption>
+<image source="images/Fig_Calcul_Classes_2.png" >
+<description>Formule pour déterminer le nombre théorique de classes</description>
+</image>
+</figure>
+  
+    
+    </li>  
+    
+    <p></p>
+    
+<li><p>Une fois la formule rentrée, taper <kbd>Enter</kbd>. On obtient environ <m>10,6</m>.</p>
+    
+        <p> </p>
+    
+    <figure xml:id="Fig_Calcul_Classes_3">
+<caption>Nombre théorique de classes selon la formule de Sturges</caption>
+<image source="images/Fig_Calcul_Classes_3.png" >
+<description>Nombre théorique de classes selon la formule de Sturges</description>
+</image>
+</figure>
+    
+    </li>
+    
+ <p></p>
+   
+    
+    <li><p> Dans la cellule <alert><c>H6</c></alert>, on souhaite déterminer l'étendue de l'indice de masse corporelle, soit <alert>E</alert>. Taper la formule <c>=MAX(IMC)-MIN.SI.ENS(IMC;IMC;"&lt; &gt; 0")</c> (voir la <xref ref="Fig_Calcul_Classes_4"/>).</p> 
+        
+        <p>La formule Excel <alert>MAX</alert> renvoie la plus grande valeur parmi la liste de valeurs. La fonction Excel <term>MIN</term> renvoie la plus petite valeur parmi une liste de valeurs. </p>
+        
+        <p>Si l'on met <c>MIN(IMC)</c>, ceci nous renvoie la valeur 0. Cependant, on veut exclure les femmes qui ont eu une valeur erronée de 0 comme indice de masse corporelle. On veut donc la deuxième plus petite valeur.</p> 
+        
+        <p>La fonction <term>MIN.SI.ENS</term> renvoie la valeur minimale parmi la plage de cellules spécifiées par un ensemble de critères donné. La condition souhaitée est que l'on détermine la valeur minimale différente de <m>0</m>. Ainsi, la formule <c>MIN.SI.ENS(IMC;IMC;"&lt; &gt; 0")</c> détermine la valeur minimale de l'indice de masse corporelle avec le critère que l'IMC doit être différent de <m>0</m>. </p> 
+    
+          <p> </p>
+    
+    <figure xml:id="Fig_Calcul_Classes_4">
+<caption>Formule pour déterminer l'étendue de l'IMC</caption>
+<image source="images/Fig_Calcul_Classes_4.png" >
+<description>Formule pour déterminer l'étendue de l'IMC</description>
+</image>
+</figure>
+        
+        <p></p>
+        
+        <p>L'étendue vaut 48,9. </p>
+  
+    
+    </li> 
+    
+    <p></p>
+    
+    
+    <li><p> Dans la cellule <alert><c>H7</c></alert>, taper la formule <c>=MIN.SI.ENS(IMC;IMC;"&lt; &gt; 0")</c> (voir la <xref ref="Fig_Calcul_Classes_5"/>) pour déterminer la valeur minimale (autre que 0) de l'indice de masse corporelle. Il est essentiel de connaître la valeur minimale pour s'assurer de l'inclure lorsque l'on regroupe les valeurs.</p> 
+    
+          <p> </p>
+    
+    <figure xml:id="Fig_Calcul_Classes_5">
+<caption>Formule pour déterminer la valeur minimale de l'IMC (différente de 0)</caption>
+<image source="images/Fig_Calcul_Classes_5.png" >
+<description>Formule pour déterminer la valeur minimale de l'IMC (différente de 0)</description>
+</image>
+</figure>
+        
+         <p></p>
+        
+        <p>La deuxième valeur la plus petite est 18,2. </p>
+    
+    </li>
+    
+    
+      
+    <li><p> On veut déterminer l'amplitude théorique, soit l'étendue divisée par le nombre théorique de classes <m>\left(\dfrac{E}{K}\right)</m>. Dans la cellule <alert><c>H8</c></alert>, taper la formule <c>=H6/H5</c> (voir la <xref ref="Fig_Calcul_Classes_6"/>). Dans des formules Excel, on peut faire référence à des cellules. La cellule <alert><c>H6</c></alert> correspond à l'étendue et la cellule <alert><c>H5</c></alert> correspond au nombre théorique de classes.</p> 
+    
+          <p> </p>
+    
+    <figure xml:id="Fig_Calcul_Classes_6">
+<caption>Formule pour déterminer l'amplitude théorique des classes</caption>
+<image source="images/Fig_Calcul_Classes_6.png" >
+<description>Formule pour déterminer l'amplitude théorique des classes</description>
+</image>
+</figure>
+        
+         <p></p>
+        
+       
+    
+    </li>
+    
+          
+    <li><p> On obtient une amplitude théorique d'environ 4,6. Ceci n'est pas un nombre entier. On choisit 5. (voir la <xref ref="Fig_Calcul_Classes_7"/>). </p> 
+    
+          <p> </p>
+    
+    <figure xml:id="Fig_Calcul_Classes_7">
+<caption>Détermination de l'amplitude choisie</caption>
+<image source="images/Fig_Calcul_Classes_7.png" >
+<description>Détermination de l'amplitude choisie</description>
+</image>
+</figure>
+        
+         <p></p>
+        
+        
+    
+    </li>
+    
+    
+    <p></p>
+</ol>
+</p>
+           
+    </subsubsection>
+        
+        
+    <subsubsection xml:id="sssec_Grouper">
+        <title>Grouper les valeurs en classes</title>
+        
+        <p> S'assurer d'afficher les éléments sans données et grouper après...blabla</p>
+        
+        
+        <p>
+        <ol>
+            
+            
+            <li> <p> Dans une cellule de la première colonne du tableau croisé dynamique, cliquer sur le bouton droit de la souris (voir la <xref ref="Fig_Grouper_0"/>). Un menu déroulant s'affiche.</p> 
+    
+          <p> </p>
+    
+    <figure xml:id="Fig_Grouper_0">
+<caption>Menu déroulant de la première colonne d'un tableau croisé dynamique</caption>
+<image source="images/Fig_Grouper_0.png" >
+<description>Menu déroulant de la première colonne d'un tableau croisé dynamique</description>
+</image>
+</figure>
+              
+        </li>    
+            
+
+            <li><p> Cliquer sur l'option <alert>Paramètres de champs</alert> (voir la <xref ref="Fig_Grouper_0"/>).</p> </li>
+            
+            <li><p> Une boîte de dialogue s'affiche (voir la <xref ref="Fig_Grouper_0bis"/>). Cliquer sur l'onglet <alert>Disposition et impression</alert>. Cocher ensuite l'option <alert>Afficher les éléments sans données</alert>.</p>
+            
+            <p> </p>
+    
+    <figure xml:id="Fig_Grouper_0bis">
+<caption>La boîte de dialogue pour afficher les éléments sans données</caption>
+<image source="images/Fig_Grouper_0bis.png" >
+<description>La boîte de dialogue pour afficher les éléments sans données</description>
+</image>
+</figure>
+                
+                <p>En cochant cette option, on s'assure que lorsque l'on va grouper les valeurs de l'indice de masse corporelle en classes, Excel va afficher les classes qui ne contiennent aucun élément.</p>
+            
+            </li>  
+            
+            
+        <li> <p> Dans une cellule de la première colonne du tableau croisé dynamique, cliquer sur le bouton droit de la souris (voir la <xref ref="Fig_Grouper_1"/>). Un menu déroulant s'affiche.</p> 
+    
+          <p> </p>
+    
+    <figure xml:id="Fig_Grouper_1">
+<caption>Menu déroulant de la première colonne d'un tableau croisé dynamique</caption>
+<image source="images/Fig_Grouper_1.png" >
+<description>Menu déroulant de la première colonne d'un tableau croisé dynamique</description>
+</image>
+</figure>
+              
+        </li>    
+            
+            
+        <li><p> Cliquer sur l'option <alert>Grouper</alert></p>.</li>    
+            
+        <li><p> Une boîte de dialogue s'affiche (voir la <xref ref="Fig_Grouper_2"/>). Excel propose une borne inférieure (soit <m>0</m>, la valeur minimale de la variable, une borne supérieure (soit <m>67,1</m>, la valeur maximale de la variable) et une amplitude pour les classes (soit <m>10</m>).</p>
+            
+            <p> </p>
+    
+    <figure xml:id="Fig_Grouper_2">
+<caption>La boîte de dialogue pour grouper les données d'un tableau croisé dynamique</caption>
+<image source="images/Fig_Grouper_2.png" >
+<description>La boîte de dialogue pour grouper les données d'un tableau croisé dynamique</description>
+</image>
+</figure>
+            
+            </li>   
+            
+       <li> <p>Taper <m>15</m> comme valeur minimale au lieu du choix suggéré d'Excel de 0 et taper <m>5</m> comme amplitude au lieu de 10 (voir la <xref ref="Fig_Grouper_6"/>).</p>
+            
+            <p> </p>
+    
+    <figure xml:id="Fig_Grouper_6">
+<caption>Choix de 15 comme valeur minimale et 5 comme amplitude des classes</caption>
+<image source="images/Fig_Grouper_6.png" >
+<description>Choix de 15 comme valeur minimale et 5 comme amplitude des classes</description>
+</image>
+</figure>
+           
+           <p>En choisissant 15 comme valeur minimale de la première classe, on s'assurer d'inclure la valeur minimale de 18,2.</p>
+          
+      </li>     
+            
+            
+         <li><p> Cliquer sur <alert>OK</alert>. Le tableau croisé dynamique résultant groupe les valeurs de la variable <alert>IMC</alert> en classe d'amplitude valant <m>5</m> (voir la <xref ref="Fig_Grouper_7"/>). Puisque l'on a appliqué un filtre excluant les femmes enregistrant une valeur erronée de <m>0</m>, le tableau commence à 15. Cette valeur inclut la deuxième valeur minimale de 18,2. </p>
+            
+    <p> </p>
+    
+    <figure xml:id="Fig_Grouper_7">
+<caption>Tableau croisé dynamique commençant à 15 avec des classes d'amplitude 5 </caption>
+<image source="images/Fig_Grouper_7.png" >
+<description>Tableau croisé dynamique commençant à 15 avec des classes d'amplitude 5 </description>
+</image>
+</figure>
+        </li>   
+         
+        </ol>
+        </p>
+        
+<!-- <remark xml:id="rem-TCD-IMC">
+<title>Classes sans données</title>
+<p>Le tableau croisé dynamique affiche les deux dernières classes comme étant celles de 55 à 60 et de 65 à 70. Il faut constater qu'Excel a omis la classe de 60 à 65, car cette classe ne contient aucun élément. Il va falloir l'ajouter manuellement ou demander à Excel d'afficher les éléments sans données.</p>
+    </remark> -->
+        
+        </subsubsection>      
+    </subsection>
+    
+   
+    <subsection>
+        <title>Mise en forme tableau</title>
+    </subsection>
+    
+    
+    <subsection xml:id="ssec_Histogramme">
+        <title>Histogramme</title>
+    </subsection>
+    
+    
+    
+    
+    
+    
+    
+    
+        <subsection>
+        <title>Mise en forme graphiques</title>
+    </subsection>
+    
+            <subsection>
+        <title>Mesures de tendance centrale</title>
+    </subsection>
+    
+            <subsection>
+        <title>Mesure de dispersion</title>
+    </subsection>
+    
+            <subsection>
+        <title>Mesure de position</title>
+        Écart interquartile
+    </subsection>
+    
+    
+    <subsection xml:id="ssec_PolygoneFrequences">
+        <title>Polygone de fréquences</title>
+    </subsection>
+    
+    
+</section>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Postlab-Varqual" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Réflexions</title>
+<p>L'information transmise par les tableaux de fréquences et les graphiques n'est que la première partie d'une série de renseignements qui permettront de bien caractériser la population étudiée et éventuellement de faire des inférences et valider ou infirmer les hypothèses de recherche. Les questions qui suivent servent à regarder les problèmes à tirer des conclusions à partir d'une analyse sommaire des données comme la lecture de tableaux et de graphiques. Les prochains laboratoires viendront soutirer une multitude de détails statistiques à partir des données et permettront de combler certaines lacunes soulevées ci-dessous.</p>
+
+<worksheet xml:id="ws-Reflexion_Varqual">
+<title>Travail à faire après le laboratoire</title>
+
+<objectives>
+    <ul>
+      <li><p>Examiner les variable <alert>Atteint</alert> et <alert>Obésité</alert>.</p></li>
+      <li><p>Formuler des conclusions</p></li>
+      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>ToDo Formuler des hypothèses de recherche.</p></li>
+    </ul>
+    </objectives>
+    <exercise>
+    <statement><p>En deux courtes phrases, résumer la situation du diabète et du niveau d'obésité chez la population de femmes Pimas</p></statement>
+    </exercise>
+    
+    <exercise><statement><p>Selon ToDo, il y a Todo% des femmes américaines qui sont atteintes du diabètes. Selon Todo, il y a Todo% des femmes mexicaines (Pima?) qui le sont. Quels constats faire des données étudiées à la lumière de ces informations?</p>
+    </statement>
+    </exercise>
+    
+    <exercise>
+    <statement>
+    <p>Construire le diagramme circulaire pour aller avec la variable <alert>Obésité</alert>. Que dire du résultat?</p>
+    </statement>
+    </exercise>
+    
+    <exercise>
+    <statement>
+    <p>Est-il correct de dire que les femmes pimas vivant en Arizona ont un niveau d'obésité moyen d'environ <m>4</m>? Expliquer.</p>
+    </statement>
+    </exercise>
+    <exercise>
+    <statement>
+    <p>La taille de la population féminine Pima en Arizona est estimée à environ <m>3000</m> personnes. Les données étudiées comprennent <m>768</m> femmes Pimas. On peut penser à des considérations de temps et de coûts, mais quelles autres raisons pourraient être invoquées pour procéder par sondage plutôt que par recensement (dans ce cas-ci ou en général)?</p>
+    </statement>
+    </exercise>
+    </worksheet>
+</section>

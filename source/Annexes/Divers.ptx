@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="ann-divers">
+<title>Divers</title>
+<introduction>
+
+<p>ToDo</p>
+
+</introduction>
+
+<section xml:id="sec-miseenforme">
+<title>Mise en forme</title>
+<p>Plusieurs aspects de la mise en forme et du format de l'affichage sont disponibles dans le ruban de l'onglet <alert>Accueil</alert>. En voici une liste non exhaustive.</p>
+<list xml:id="liste-miseenforme">
+<title>Éléments de mise en forme</title>
+<dl>
+<li xml:id="li-pourcent"><title>Format de cellule en pourcentage</title><p>Pour faire en sorte que le contenu d'une cellule s'affiche en pourcentage, on change le menu déroulant à <alert>Pourcentage</alert> ou encore on clique sur le bouton juste en-dessous. Aussi, voir le raccourci <xref ref="li-pourcent_raccourci" text="title"/>.</p></li>
+</dl>
+</list>
+</section>
+</appendix>

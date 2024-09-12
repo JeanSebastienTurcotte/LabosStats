@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="ann-importation">
+<title>Importer des données</title>
+    
+    <p> </p>
+    
+<p>Il existe plusieurs formats de base de données et plusieurs manières de les importer. On ne considère que l'importation des données provenant d'un fichier <c>csv</c>. Un fichier <c>csv</c> est un fichier texte où chaque ligne du texte correspond à une ligne du tableau et les virgules correspondent aux séparations entre les colonnes. Les portions de texte séparées par une virgule correspondent ainsi aux contenus des cellules du tableau. Une ligne est une suite ordonnée de caractères terminée par un caractère de fin de ligne.</p>
+
+<p>Excel est en mesure d'ouvrir directement un fichier <c>csv</c>, mais il est préférable de ne pas travailler dans le fichier des données brutes, pour ne pas accidellement les modifier ou les corrompre. Les étapes pour importer un fichier <c>csv</c> dans Excel et le convertir en format <c>xlsx</c> sont présentées ci-dessous. </p>
+    
+    
+<p>
+<ol> 
+
+<li> <p> Ouvrir un classeur vide d'Excel.</p></li>
+    
+    <p> </p>
+  
+    
+<li> <p>Cliquer sur l'onglet <alert>Données</alert> (voir la <xref ref="Fig_Donnees_Obtenir"/>).</p>
+    <p> </p>
+ 
+    
+    <figure xml:id="Fig_Donnees_Obtenir">
+<caption>Sélection de l'onglet <alert>Données</alert></caption>
+<image source="images/Fig_Donnees_Obtenir.png" >
+<description>Sélection de l'onglet Données</description>
+</image>
+</figure>
+    </li>
+    
+
+<li> <p>Dans le groupe <alert> Récupérer et transformer des données </alert>, cliquer sur la flèche du menu déroulant de l'icône <alert>Obtenir des données</alert> (voir la <xref ref="Fig_Donnees_Obtenir"/>).</p></li>  
+    
+    
+<li> <p>Sélectionner l'option <alert>À partir d'un fichier </alert>, suivi de l'option <alert>À partir d'un fichier texte/CSV</alert> (voir la <xref ref="Fig_Donnees_CSV_1"/>).</p>
+    <p> </p>
+    
+    <figure xml:id="Fig_Donnees_CSV_1">
+<caption>Sélection de l'onglet <alert>À partir d'un fichier texte/CSV</alert></caption>
+<image source="images/Fig_Donnees_CSV_1.png" >
+<description>Sélection de l'onglet À partir d'un fichier texte/CSV</description>
+</image>
+</figure>
+    </li> 
+    
+    
+<li> <p>Accéder au fichier <q>diabete.csv</q> sauvegardé sur l'ordinateur. Sélectionner-le et cliquer <alert>Importer</alert> (voir la <xref ref="Fig_Donnees_CSV_2"/>).</p>
+    
+    <p> </p>
+ 
+    
+    <figure xml:id="Fig_Donnees_CSV_2">
+<caption>Importer un fichier de format <c>csv</c></caption>
+<image source="images/Fig_Donnees_CSV_2.png" >
+<description>Importer un fichier de format csv</description>
+</image>
+</figure>
+    </li>  
+    
+    
+<li> <p>Une boîte de dialoge s'ouvrira. Il faut s'assurer que le délimiteur est bien <alert>Virgule</alert>. Une fois fait, cliquer sur l'option <alert>Charger</alert> (voir la <xref ref="Fig_Donnees_CSV_3"/>).</p>
+    
+    <p> </p>
+
+    
+    <figure xml:id="Fig_Donnees_CSV_3">
+<caption>Charger les données en format <c>xlsx</c></caption>
+<image source="images/Fig_Donnees_CSV_3.png" >
+<description>Charger les données en format xlsx</description>
+</image>
+</figure>
+    </li>
+    
+<li> <p>Un tableau adapté pour travailler dans Excel est maintenant importé (voir la <xref ref="Fig_Donnees_CSV_4"/>).</p>
+    <p> </p>
+     <p> </p>
+    
+    <figure xml:id="Fig_Donnees_CSV_4">
+<caption>Tableau résultant dans Excel</caption>
+<image source="images/Fig_Donnees_CSV_4.png" >
+<description>Tableau résultat dans Excel</description>
+</image>
+</figure>
+    </li>     
+
+</ol>
+</p>  
+    
+    
+ <!-- Pour importer les données d'un fichier <c>csv</c> dans une feuille de travail Excel, on clique sur l'onglet <alert> Données </alert>, puis sur <alert> À partir d'un fichier texte/CSV</alert>, tel qu'illustré à la figure suivante.</p> -->
+<!-- ToDo Capture d'écran -->
+
+<!-- <p>On sélectionne ensuite le fichier sur l'ordinateur et un menu s'affiche pour compléter l'importation. </p> -->
+</appendix>
+<!--
+Ajouter/enlever cellules - effacer
+Ajout ligne/colonne
+Masquer/démasquer
+Trier
+Groupe ligne colonne (Ajouter raccourcis? >>> Alt+Shift+droite et Alt+Shift+gauche)
+Mode selection F8 ?
+-->

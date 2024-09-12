@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Prelab_Varqual" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Prélab</title>
+<p>Les variables qualitatives sont un type de variables pour lesquelles les modalités ne sont pas des nombres, mais plutôt des catégories. On retrouvera souvent parmi ces variables le sexe, la couleur, le niveau de satisfaction, etc. Elles se déclinent en deux catégories, soit les variables qualitatives nominales et ordinales. Pour synthétiser visuellement l'information d'une variable qualitative, on utilise principalement un tableau de fréquences ainsi qu'un diagramme circulaire ou un diagramme à bandes. </p>
+<worksheet xml:id="ws-Prelab_Varqual">
+<title>Travail à faire avant le cours</title>
+
+<objectives>
+    <ul>
+      <li><p>Créer les tableaux croisés dynamiques nécessaire pour le laboratoire</p></li>
+      <li><p>Quelque chose d'autre</p></li>
+    </ul>
+  </objectives>
+  
+  <introduction>
+    <p>On continue de travailler à l'aide de la base de données du laboratoire d'<xref ref="chap-Intro">introduction</xref>. Le but de ce prélab est d'utiliser les connaissances et outils acquis dans le premier laboratoire afin de préparer une feuille de calcul qui servira lors du prochain laboratoire.</p>
+  </introduction> 
+<page>  
+  <exercise>
+  <statement><p>Dans le fichier Excel du laboratoire, créer une nouvelle feuille de calcul. Dans celle-ci, créer le tableau croisé dynamique pour la variable <alert>Obésité</alert>. </p></statement>
+  </exercise>
+  
+  <exercise workspace="2.5in">
+  <introduction><p>Considérer les situations suivantes. Quelle(s) critique(s) peut on poser à leur égard?</p></introduction>
+
+  <task> 
+  <statement>
+  <p>Cette marque de dentifrice est recommandée par <m>80\%</m> des dentistes qui l'utilisent.</p>
+  </statement>
+  </task>
+  
+    <task> 
+  <statement>
+  <p>Il y a <m>200</m> utilisateurs d'un produit <m>A</m> qui ont acheté à nouveau contre <m>50</m> pour un produit compétitif <m>B</m>. Le produit <m>A</m> est donc supérieur au produit <m>B</m>.</p>
+  </statement>
+  </task>
+  </exercise>
+  </page>
+  <page>
+    <exercise> 
+  <statement>
+  <p>Considérer les graphiques suivants. Expliquer en quoi l'information est trompeuse.</p>
+  <figure xml:id="fig-mauvaisgraph1">
+  <caption>Diagramme à bandes des résultats de l'élection fédérale de 2021</caption>
+  <image source="images/Resultats_Election.jpg">
+  <description>Une capture d'écran du reportage de CBC sur le résultat de l'élection fédérale de 2021</description>
+  </image>
+  </figure>
+  
+   <figure xml:id="fig-mauvaisgraph2">
+   <caption>Diagramme circulaire à propos de la consommation de cannabis des américains</caption>
+  <image source="images/MauvaisGraph6.jpg">
+  <description>Une capture d'écran du réseau CBSN sur la consommation de cannabis des américains.</description>
+  </image>
+  </figure>
+  </statement>
+  </exercise>
+  </page>
+  <page>
+     <exercise> 
+  <statement>
+  <p>Lequel des graphiques suivants semble le plus adéquat pour illustrer l'information? Dire pourquoi.</p>
+    <figure xml:id="fig-circulairenaissances">
+  <caption>Répartition en pourcentage des élèves d'une classe de statistiques selon leur mois de naissance</caption>
+  <image source="images/circulairenaissances.png">
+  <description>Un graphique circulaire montrant la répartition des élèves d'une classe selon leur mois de naissance.</description>
+  </image>
+  </figure>
+  
+   <figure xml:id="fig-bandesnaissances">
+   <caption>Répartition en pourcentage des élèves d'une classe de statistiques selon leur mois de naissance</caption>
+  <image source="images/bandesnaissances.png">
+  <description>Un diagramme à bandes montrant la répartition des élèves d'une classe selon leur mois de naissance.</description>
+  </image>
+  </figure>
+  </statement>
+  </exercise>
+  </page>
+</worksheet>
+</section>
+<!-- Répartition en pourcentage des élèves d'une classe de statistiques selon leur mois de naissance
+-->

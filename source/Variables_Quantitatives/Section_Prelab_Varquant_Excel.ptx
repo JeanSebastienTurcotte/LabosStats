@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Prelab_Varquant" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Prélab</title>
+<p>Les variables quantitatives sont un type de variables pour lesquelles les modalités sont des nombres. On retrouvera souvent parmi ces variables le temps, la distance, le salaire, le nombre d'enfants, etc. Elles se déclinent en deux catégories, soit les variables quantitatives discrètes et continues. Pour synthétiser visuellement l'information d'une variable quantitative, on utilise principalement un tableau de fréquences ainsi qu'un diagramme à bâtons, un histogramme ou un polygone de fréquences.</p>
+    
+    
+    
+<worksheet xml:id="ws-Prelab_Varquant">
+<title>Travail à faire avant le cours</title>
+
+<objectives>
+    <ul>
+      <li><p>Créer le tableau croisé dynamique d'une variable quantitative discrète</p></li>
+      <li><p>Construire un diagramme à bâtons</p></li>
+    </ul>
+  </objectives>
+  
+  <introduction>
+    <p>On continue de travailler à l'aide de la base de données du laboratoire d'<xref ref="chap-Intro">introduction</xref>. Le but de ce prélab est d'utiliser les connaissances et outils acquis dans les deux premiers laboratoires afin de poursuivre l'étude des mesures diagnostiques des femmes d'origine pima.</p>
+  </introduction> 
+    
+<page>  
+  <exercise>
+  <statement><p>Dans le fichier Excel du laboratoire, créer le tableau croisé dynamique des femmes d'origine pima selon le <alert>Nombre de grossesses</alert> en suivant les étapes ci-dessous. 
+      
+  <p>
+  <ul>
+  
+      <li><p> Ajouter une nouvelle feuille de calcul intitulé <alert>Étude Nombre de grossesses</alert>. Déplacer cette feuille en dernière position si Excel ne le fait pas automatiquement.</p></li>
+      
+      <li><p> Dans cette feuille, créer le tableau croisé dynamique de la répartition des 768 femmes d'origine pima selon le nombre de grossesses.</p></li>
+      
+      <li><p> Couper le lien avec le tableau croisé dynamique et faire la mise en forme du tableau de fréquences en respectant toutes les normes de présentation abordées lors des deux laboratoires précédents.</p></li>
+      
+  </ul>        
+  </p>    
+      
+  </p></statement>
+  </exercise>
+  
+  <exercise xml:id="PrelabVarquant_2" workspace="2.5in">
+   <statement><p>Puisque la variable <alert>Nombre de grossesses</alert> est quantitative discrète, créer un diagramme à bâtons des femmes d'origine pima selon le <alert>Nombre de grossesses</alert> en suivant les étapes ci-dessous. 
+      
+  <p>
+  <ul>
+  
+      <li><p> Dans la feuille de calcul <alert>Étude Nombre de grossesses</alert>, créer le diagramme à bâtons en sélectionnant l'icône <alert>Insérer un histogramme ou un graphique à barres</alert> à partir de l'onglet <alert>Insertion</alert>.</p></li>
+      
+      <li><p> Faire la mise en forme du diagramme en respectant toutes les normes de présentation abordées lors des deux laboratoires précédents. Noter que dans la zone de saisie de <alert>Largeur des intervalles</alert>, taper <em>500%</em> pour avoir la largeur maximale entre les bâtons et pour les amincir le plus possible.</p></li>
+      
+  </ul>        
+  </p>    
+      
+  </p></statement>
+  </exercise>
+    
+    
+      <exercise workspace="2.5in">
+   <statement><p>Détailler les faits saillants du diagramme à bâtons fait à l'exercice <xref ref="PrelabVarquant_2"/>. </p></statement>
+  </exercise>
+    
+      <exercise workspace="2.5in">
+   <statement><p>À la lumière du graphique fait à l'exercice <xref ref="PrelabVarquant_2"/>, quelles sont les limites d'un diagramme à bâtons?</p></statement>
+  </exercise>
+    
+  </page>
+  
+</worksheet>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</section>

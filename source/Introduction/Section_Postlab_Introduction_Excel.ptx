@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Postlab_Introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Réflexions</title>
+    
+    <p>Avant d'entamer une collecte de données, toute personne chercheuse doit suivre un processus de recherche rigoureux, essentiel pour porter un jugement critique sur le sujet étudié. La première étape consiste à définir les objectifs de la recherche. En général, des hypothèses de recherche sont formulées avant de procéder à la collecte de données. Ce postlab vise à développer une compréhension des informations que révèlent les données avant d'entreprendre une étude quantitative plus approfondie. On rappelle que l'objectif de cette étude est de prédire, à partir de ses indicateurs de santé, si une femme d'origine pima est atteinte ou non du diabète. </p>
+       
+    
+<worksheet xml:id="ws-Reflexion_Introduction">
+<title>Travail à faire après le laboratoire</title>
+
+<objectives>
+    <ul>
+      <li><p>Examiner les séries statistiques.</p></li>
+      <li><p>Effectuer une revue de la littérature.</p></li>
+      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>Formuler des hypothèses de recherche.</p></li>
+    </ul>
+  </objectives>
+  
+<page>  
+  <exercise xml:id="Postlab_1">
+  <statement><p>Dans le fichier Excel du laboratoire, examiner les valeurs de chaque variable du tableau <alert>Échantillon</alert>. Quelle(s) observation(s) peut-on formuler à leur sujet? </p></statement>
+  </exercise>
+    
+  <exercise workspace="2.5in">
+  <statement><p>En tenant compte des variables de l'étude, formuler quelques objectifs envisageables après avoir passé en revue la littérature sur le diabète et les peuples d'origine pima. </p>   </statement>
+  </exercise>
+  
+  <exercise workspace="2.5in">
+  <statement><p>Une hypothèse de recherche est un énoncé ou une affirmation vérifiable concernant un effet attendu. Suite aux observations faites à l'exercice <xref ref="Postlab_1"/>, formuler des hypothèses de recherche qui paraissent plausibles et pourraient répondre aux objectifs formulées à l'exercice précédent. </p>   </statement> <!-- un énoncé ou une affirmation vérifiable concernant un effet attendu, qu'on croit est vrai, et qu'on croit répond à la question de départ-->
+  </exercise>
+    
+  <exercise workspace="2.5in">
+  <statement><p>Il peut être pertinent de comparer la santé physique d'un groupe à celle d'un autre. Identifier quelques groupes avec lesquels les femmes d'origine pima de l'Arizona pourraient être comparées, en précisant la pertinence de ces comparaisons. </p>   </statement>
+  </exercise> 
+      
+    </page>
+</worksheet>
+    
+    
+  </section>

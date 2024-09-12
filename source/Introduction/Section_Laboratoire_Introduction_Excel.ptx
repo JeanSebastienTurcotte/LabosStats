@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Laboratoire_Introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Laboratoire</title>
+  <p> Ce laboratoire a pour objectif d'introduire le logiciel Excel.</p>
+
+    
+<!-- <subsection xml:id="ssec-Importer">
+<title>Importer des données</title> 
+    <p></p>
+
+<p>Dans le domaine de la recherche, les fichiers de données sont souvent enregistrés au format <c>csv</c> (comma-separated value), un format qui permet de stocker de grandes bases de données et de les transférer entre différents types de logiciels. Afin de tirer parti des nombreuses fonctionnalités d'Excel, un logiciel qui utilise des fichiers au format <c>xlsx</c>, il est nécessaire d'importer les données en format <c>csv</c> et de les convertir en format <c>xlsx</c>.</p>  
+    
+    
+<p>
+<ol> 
+
+<li> <p> Ouvrir un classeur vide d'Excel.</p></li>
+    
+    <p> </p>
+  
+    
+<li> <p>Cliquer sur l'onglet <alert>Données</alert> (voir la <xref ref="Fig_Donnees_Obtenir"/>).</p>
+    <p> </p>
+ 
+    
+    <figure xml:id="Fig_Donnees_Obtenir">
+<caption>Sélection de l'onglet <alert>Données</alert></caption>
+<image source="images/Fig_Donnees_Obtenir.png" >
+<description>Sélection de l'onglet Données</description>
+</image>
+</figure>
+    </li>
+    
+
+<li> <p>Dans le groupe <alert> Récupérer et transformer des données </alert>, cliquer sur la flèche du menu déroulant de l'icône <alert>Obtenir des données</alert> (voir la <xref ref="Fig_Donnees_Obtenir"/>).</p></li>  
+    
+    
+<li> <p>Sélectionner l'option <alert>À partir d'un fichier </alert>, suivi de l'option <alert>À partir d'un fichier texte/CSV</alert> (voir la <xref ref="Fig_Donnees_CSV_1"/>).</p>
+    <p> </p>
+    
+    <figure xml:id="Fig_Donnees_CSV_1">
+<caption>Sélection de l'onglet <alert>À partir d'un fichier texte/CSV</alert></caption>
+<image source="images/Fig_Donnees_CSV_1.png" >
+<description>Sélection de l'onglet À partir d'un fichier texte/CSV</description>
+</image>
+</figure>
+    </li> 
+    
+    
+<li> <p>Accéder au fichier <q>diabete.csv</q> sauvegardé sur l'ordinateur. Sélectionner-le et cliquer <alert>Importer</alert> (voir la <xref ref="Fig_Donnees_CSV_2"/>).</p>
+    
+    <p> </p>
+ 
+    
+    <figure xml:id="Fig_Donnees_CSV_2">
+<caption>Importer un fichier de format *.csv</caption>
+<image source="images/Fig_Donnees_CSV_2.png" >
+<description>Importer un fichier de format *.csv</description>
+</image>
+</figure>
+    </li>  
+    
+    
+<li> <p>Une boîte de dialoge s'ouvrira. Il faut s'assurer que le délimiteur est bien <alert>Virgule</alert>. Une fois fait, cliquer sur l'option <alert>Charger</alert> (voir la <xref ref="Fig_Donnees_CSV_3"/>).</p>
+    
+    <p> </p>
+
+    
+    <figure xml:id="Fig_Donnees_CSV_3">
+<caption>Charger les données en format *.xlsx</caption>
+<image source="images/Fig_Donnees_CSV_3.png" >
+<description>Charger les données en format *.xlsx</description>
+</image>
+</figure>
+    </li>
+    
+<li> <p>Un tableau adapté pour travailler dans Excel est maintenant importé (voir la <xref ref="Fig_Donnees_CSV_4"/>).</p>
+    <p> </p>
+     <p> </p>
+    
+    <figure xml:id="Fig_Donnees_CSV_4">
+<caption>Tableau résultant dans Excel</caption>
+<image source="images/Fig_Donnees_CSV_4.png" >
+<description>Tableau résultat dans Excel</description>
+</image>
+</figure>
+    </li>     
+
+</ol>
+</p>    
+    
+</subsection> -->
+
+
+    
+    
+    
+    
+    
+    
+    
+<subsection xml:id="ssec-Interface">
+<title>Interface d'Excel</title>
+<!-- <p>Capture d'écran (interface) et légende pour les éléments importants</p> -->
+    <p> </p>
+
+<p> Avant de commencer à utiliser un nouveau logiciel, il est essentiel de se familiariser avec son interface et ses outils. Les fichiers d'Excel sont appelés des <alert> classeurs </alert> et chaque classeur contient des <term> feuilles </term>. La figure <xref ref="Fig_Interface_2"/> présente les noms des différents éléments d'une feuille d'Excel. </p> 
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Interface_2">
+<caption>Interface d'une fenêtre Excel</caption>
+<image source="images/Fig_Interface_2.png" >
+<description>Interface d'une fenêtre Excel</description>
+</image>
+</figure>
+    
+    
+<p>
+<ul>
+    
+<li><p>La <term> barre d'outil Accès rapide </term> est une barre personnalisable qui affiche les icônes des commandes les plus courantes. Par défaut, elle comprend les commandes suivantes : l'enregistrement de fichier, l'annulation d'une action effectuée et le rétablissement d'une action annulée.</p></li>
+    
+<li><p> Le <term> ruban </term> est composé d'une barre d'onglets (Fichier, Accueil, Insertion, Mise en page, Formules, Données, Affichage entre autres) et d'un groupe de commandes courantes dans chaque onglet (outils courants regroupés par nature dans chaque onglet). </p></li>
+    
+<li><p> Une <term> feuille de calcul </term> est un quadrillage comportant des cases, appelées cellules, dans lesquelles on peut écrire du texte ou effectuer des calculs à l'aide de formules et de fonctions. </p></li>
+    
+<li> <p> La <term> cellule de référence <c>C5</c> </term> est la cellule située à l'intersection de la colonne <term><c> C </c></term> et de la ligne <term><c> 5 </c></term>. <c>C5</c> est <term>l'adresse de la cellule</term>. Une cellule est dite <term> active </term> lorsqu'elle est sélectionnée. Dans ce cas, sa bordure est verte et épaisse. Les en-têtes de sa colonne et de sa ligne sont alors grisées. </p></li>
+    
+<li> <p> La <term> plage de données <c>F13:H18</c> </term> correspond à l'ensemble des cellules contiguës comprises entre les colonnes <term> <c>F</c> </term> et <term> <c>H</c> </term> et entre les lignes <term><c>13 </c></term> et <term><c> 18 </c></term>.</p></li>    
+    
+<li> <p> La <term> zone nom </term> permet d'afficher la référence d'une cellule (la lettre de sa colonne et le numéro de sa ligne) ou le nom qui lui a été attribuée. Cette zone permet également d'afficher le nom d'une plage de données. </p></li>
+
+<li> <p> La <term> barre de formule </term> permet d'afficher, d'entrer ou de modifier le contenu d'une cellule active. Le contenu peut être du texte, des nombres ou des formules (Fonctions?). </p></li>
+    
+<li> <p> Les <term> onglets de feuilles </term> représentent l'ensemble des feuilles de calcul qui composent le <term> classeur </term>. En cliquant droit sur l'onglet d'une feuille, un menu contextuel apparaît. Il est possible, entre autres, de renommer la feuille, de la déplacer, de la copier, de la masquer ou de la supprimer. </p></li>
+
+<li> <p> En cliquant l'icône <m> + </m> se situant à droite des onglets des feuilles, on peut <term> ajouter une nouvelle feuille </term> au classeur. </p> </li>
+    
+</ul>
+</p>
+</subsection>
+    
+    
+    
+    
+    
+<subsection xml:id="ssec-Exploration">
+<title>Exploration de l'élève (élargir des colonnes et des lignes, ajouter des colonnes/lignes, uniformiser largeur, bouton droit, onglets du ruban, ruban)</title>
+    <p> </p>
+    
+    <p>L'élève est invité à explorer les onglets du ruban et les groupes de commandes. Pour ce faire, il faut ouvrir le fichier <alert>Données_Diabètes.xlsx</alert>.</p>
+    
+    <p> </p>
+<subsubsection xml:id="sssec_SelectionLigne">
+    <title>Sélection d'une ligne ou d'une colonne </title>
+    
+    <p> </p>
+    
+<p> Dans une feuille de calcul, il est possible de sélectionner une ligne entière ou une colonne entière. </p>   
+    
+    <p> </p>
+    
+<p>
+<ol> 
+
+<li> <p> Placer le curseur sur le numéro de la ligne à sélectionner jusqu'à ce qu'une flèche noire apparaisse au-dessus du numéro de la ligne (voir la <xref ref="Fig_Selection_Ligne"/>).</p>
+    
+    <p> </p>
+
+<figure xml:id="Fig_Selection_Ligne">
+<caption>Sélection d'une ligne</caption>
+<image source="images/Fig_Selection_Ligne.png" >
+<description>Selection d'une ligne</description>
+</image>
+</figure>
+</li>
+    
+<li> <p>Une fois que la flèche apparaît, cliquer. La ligne entière sera sélectionnée. Elle sera grisée et encadrée en vert.</p></li> 
+
+</ol>
+</p>  
+    <p> </p>
+    
+<p>Pour la sélection d'une colonne entière, la procédure est similaire. Il faut placer le curseur sur la lettre de la colonne à sélectionner, attendre l'apparition de la flèche noire et cliquer.</p>    
+    
+</subsubsection>    
+    
+    
+<subsubsection xml:id="sssec-LargeurColonnes">
+
+<title> Modifier la largeur des colonnes ou des lignes</title>   
+    
+    <p> </p>
+
+<p> Dans une feuille de calcul, il est possible d'élargir ou de rétrécir la largeur d'une colonne ou d'une ligne. </p>
+    
+    <p> </p>
+    
+<p>
+<ol> 
+
+<li> <p> Placer le curseur entre deux colonnes jusqu'à ce qu'une flèche bidirectionnelle apparaisse (voir la <xref ref="Fig_Elargir"/>).</p>
+
+    <p> </p>
+<figure xml:id="Fig_Elargir">
+<caption>Modifier la largeur d'une colonne</caption>
+<image source="images/Fig_Elargir.png" >
+<description>Modifier la largeur d'une colonne</description>
+</image>
+</figure>
+</li>
+    <p> </p>
+    
+<li> <p>Cliquer et déplacer la flèche vers la gauche pour rétrécir la largeur de la colonne de gauche et vers la droite pour élargir la largeur de la colonne de gauche. Pour modifier la largeur d'une ligne, il faut placer le curseur entre deux lignes et déplacer la flèche vers le haut ou le bas selon l'effet désiré.</p></li>
+    
+   
+
+<li> <p>Il est possible d'ajuster la largeur d'une colonne ou d'une ligne au contenu de celle-ci. Il suffit de double-cliquer lorsque la flèche bidirectionnelle apparaît.</p></li>    
+
+</ol>
+</p>    
+    
+    
+</subsubsection>
+      
+</subsection>
+    
+    
+    
+    
+<subsection xml:id="ssec_Nommerdescellules">
+<title>Attribuer des noms</title>
+    
+<subsubsection xml:id="sssec-NomTableau">
+<title>Attribuer un nom à une cellule ou à une plage de cellules</title>  
+    
+    <p> </p>
+
+<p>L'action de sélectionner des données (cellules?) est une opération courante dans Excel. Lors de l'utilisation de formules, il est souvent nécessaire de sélectionner des cellules. Cela peut être laborieux lorsque la base de données (le nombre de cellules ou la taille de la série statistique?) est grande. On peut glisser trop loin avec la souris et devoir revenir en arrière, ou ne pas glisser assez loin et oublier des données. Pour éviter ces problèmes, il est pratique d'attribuer un nom à une cellule ou à une plage de cellules. Ainsi, il est possible de faire référence à ce nom dans une formule, peu importe la feuille de calcul dans laquelle on travaille.</p>     
+    
+    <p> Dans la feuille de calcul <alert>Données</alert> du fichier Excel, on va attribuer un nom au tableau principal, soit le nom <q>Échantillon</q>. Il existe deux façons d'effectuer cette opération.</p>   
+    
+<paragraphs><title> Première méthode : <alert>zone nom</alert></title>    
+    
+<p>
+<ol> 
+
+    <li> <p>Sélectionner l'entièreté du tableau, soit la plage <alert><c>A5:K773</c></alert>. Il est possible de faire ceci en sélectionnant la cellule <alert><c>A5</c></alert> et en tapant la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd>.</p></li>
+
+
+<li> <p> Dans la <alert> zone nom </alert> (voir la figure <xref ref="Fig_Interface_2"/>), taper le mot <em>Échantillon</em> (voir la <xref ref="Fig_Nom_Echantillon_1"/>)) et appuyer sur la touche <kbd>Enter</kbd>. </p>
+    
+    <p> </p>
+
+<figure xml:id="Fig_Nom_Echantillon_1">
+<caption>Attribuer un nom à une plage de cellules à partir de la <alert>zone nom</alert></caption>
+<image source="images/Fig_Nom_Echantillon_1.png" >
+<description>Attribuer un nom à une plage de cellules à partir de la zone nom.</description>
+</image>
+</figure>
+</li>
+
+</ol>
+</p>
+
+<remark xml:id="rem-nommercellules">
+<title>Nommer une plage de cellules</title>
+<p>Lorsque l'on attribue un nom à une plage de cellules avec la première méthode, il ne faut pas oublier d'appuyer sur la touche <kbd>Enter</kbd> pour s'assurer de l'enregistrement du nom.</p>
+    </remark></paragraphs>
+
+
+<paragraphs>
+<title> Deuxième méthode: ruban</title>
+
+<p> 
+<ol> 
+
+    <li> <p>Sélectionner l'entièreté du tableau, soit la plage <alert><c>A5:K773</c></alert>. Il est possible de faire ceci en sélectionnant la cellule <alert><c>A5</c></alert> et en tapant la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd>.</p></li>
+
+    <li> <p> Cliquer sur l'onglet <alert> Formules </alert> du ruban (voir la <xref ref="Fig_Interface_2"/>).  </p></li>
+
+    <li> <p> Dans le groupe <term> Noms définis</term>, cliquer sur l'icône <term> Définir un nom </term> (voir la <xref ref="Fig_Nom_Echantillon_3"/>). Une boîte de dialogue s'ouvrira.</p>
+    <p> </p>
+        
+    <figure xml:id="Fig_Nom_Echantillon_3">
+<caption>L'onglet Formules et le groupe Noms définis</caption>
+<image source="images/Fig_Nom_Echantillon_3.png" >
+<description>L'onglet Formules du ruban et le groupe Noms définis.</description>
+</image>
+</figure>
+    </li>
+    <p> </p>
+
+    <li> <p> Dans l'encadré vide de l'onglet <alert>Nom</alert>, taper le mot <em>Échantillon</em>, le nom attribué au tableau (voir la <xref ref="Fig_Nom_Echantillon_2"/>). Les noms ne doivent pas contenir d'espace ni de caractères spéciaux.</p>
+<p> </p>
+        
+<figure xml:id="Fig_Nom_Echantillon_2">
+    <caption>Attribuer un nom à une plage de cellules à partir de l'onglet <alert>Formules</alert></caption>
+<image source="images/Fig_Nom_Echantillon_2.png" >
+<description>Attribuer un nom à une plage de cellules à partir de l'onglet Formules.</description>
+</image>
+</figure>
+    </li>
+    
+  <li><p> Cliquer sur <alert>OK</alert>.</p> </li>     
+    </ol>
+    </p>
+</paragraphs>    
+    
+</subsubsection>    
+    
+    
+<subsubsection xml:id="sssec-VerificationNom"> 
+<title> Vérification de l'attribution d'un nom</title>
+    <p> </p>
+
+<p> Il est important de vérifier que l'on a bien attribué un nom à une plage de cellules. </p>
+
+<p>
+<ol> 
+
+<li> <p> Dans la <alert> zone nom</alert>, cliquer sur la flèche du menu déroulant (voir la <xref ref="Fig_Verification_Noms_1"/>).  </p>
+    
+    <p> </p>
+    
+    <figure xml:id="Fig_Verification_Noms_1">
+<caption>Vérification de l'attribution d'un nom à une plage de cellules <alert>Formules</alert></caption>
+<image source="images/Fig_Verification_Noms_1.png" >
+<description>Vérification de l'attribution d'un nom à une plage de cellules à partir de la zone nom</description>
+</image>
+</figure>
+    </li>
+
+<li> <p> Le nom <alert> Échantillon </alert> devrait apparaître (voir la <xref ref="Fig_Verification_Noms_1bis"/>). S'il n'apparaît pas, l'attribution de nom n'a pas été bien saisie.</p>
+    
+    <p> </p>
+    
+    <figure xml:id="Fig_Verification_Noms_1bis">
+<caption>Vérification de l'attribution d'un nom <alert>Échantillon</alert> au tableau principal</caption>
+<image source="images/Fig_Verification_Noms_1bis.png" >
+<description>Vérification du nom du tableau principal</description>
+</image>
+</figure>
+    </li>
+
+</ol>
+</p>
+
+</subsubsection> 
+    
+    
+<subsubsection xml:id="sssec-NomColonnes"> 
+<title> Attribuer un nom aux colonnes d'un tableau</title>
+    <p> </p>
+
+<p>Il est pratique d'attribuer un nom aux colonnes d'un tableau puisqu'il est possible d'y faire référence dans des formules Excel, et ce, peu importe la feuille de calcul dans laquelle on travaille.</p> 
+
+<p>
+<ol> 
+
+<li> <p>Dans la <alert> zone nom</alert>, sélectionner <alert> Échantillon </alert> (voir la <xref ref="Fig_Verification_Noms_1bis"/>).</p>
+    <p> </p>
+    
+     <figure>
+<caption>Sélection du tableau <alert>Échantillon</alert></caption>
+<image source="images/Fig_Verification_Noms_1bis.png" >
+<description>Sélection du tableau Échantillon</description>
+</image>
+</figure>
+    </li>
+
+
+    <li> <p> Cliquer sur l'onglet <alert> Formules </alert> du ruban.  </p></li>
+
+
+
+
+<li> <p> Dans le groupe <alert> Noms définis</alert>, cliquer sur <alert> Depuis sélection </alert> (voir la <xref ref="Fig_Nommer_Colonnes_1"/>). Une fenêtre s'ouvrira.</p>
+    
+    <p> </p>
+    
+       <figure xml:id="Fig_Nommer_Colonnes_1">
+<caption>L'onglet <term>Formules</term> et le groupe <term>Noms définis</term></caption>
+<image source="images/Fig_Nommer_Colonnes_1.png" >
+<description>L'onglet Formules et le groupe Noms définis</description>
+</image>
+</figure>
+    </li>
+
+<li> <p> Cliquer sur l'option <alert> Ligne du haut </alert> (voir la <xref ref="Fig_Nommer_Colonnes_2"/>). Ceci permettra à Excel d'attribuer l'en-tête de la première ligne comme nom à la colonne.</p>
+    <p> </p>
+    
+     <figure xml:id="Fig_Nommer_Colonnes_2">
+<caption>L'option <alert>Lignes du haut</alert> dans le groupe <alert>Noms définis</alert> </caption>
+<image source="images/Fig_Nommer_Colonnes_2.png" >
+<description>L'option Lignes du haut dans le groupe Noms définis</description>
+</image>
+</figure>
+    </li>
+
+<li> <p> Dans la <alert> zone nom</alert>, cliquer sur la flèche du menu déroulant pour vérifier que chaque colonne a été attribuée un nom. (voir la figure <xref ref="Fig_Verification_Noms_2"/>)</p>
+    <p> </p>
+    
+       <figure xml:id="Fig_Verification_Noms_2">
+<caption>Vérification de l'attribution du nom de chaque colonne</caption>
+<image source="images/Fig_Verification_Noms_2.png" >
+<description>Vérification de l'attribution du nom de chaque colonne</description>
+</image>
+</figure>
+    </li>
+
+</ol>
+</p>
+</subsubsection>    
+   
+</subsection>
+    
+    
+    
+    
+<subsection xml:id="ssec_FigerVolets">
+<title>Figer et libérer les volets</title>
+    
+    <p> </p>
+    
+<p> Lorsqu'on souhaite parcourir un tableau avec beaucoup de lignes (gros tableau, tableau de grande taille), il est pratique de maintenir les titres des colonnes visibles pendant le défilement de la feuille de calcul. </p>   
+    
+    
+    <p> </p>
+    
+<subsubsection xml:id="sssec-FigerLigneTitres">
+<title> Figer la ligne de titres d'un tableau </title>    
+    
+<p>
+<ol> 
+
+<li> <p> Sélectionner la deuxième ligne du tableau, soit la ligne 6 (voir la <xref ref="Fig_Figer_Volets_1"/>). Il faut placer son curseur à la ligne 6 et cliquer.</p>
+    
+    <p> </p>
+    
+ <figure xml:id="Fig_Figer_Volets_1">
+<caption>Sélection de la deuxième ligne du tableau <alert>Échantillon</alert></caption>
+<image source="images/Fig_Figer_Volets_1.png" >
+<description>Sélection de la deuxième ligne du tableau Échantillon</description>
+</image>
+</figure>
+    </li>    
+
+<li> <p>Sélectionner l'onglet <alert> Affichage </alert> (voir la <xref ref="Fig_Figer_Volets_2"/>). </p>
+    
+    <p> </p>
+    
+ <figure xml:id="Fig_Figer_Volets_2">
+<caption>Sélection de l'onglet <alert>Affichage</alert></caption>
+<image source="images/Fig_Figer_Volets_2.png" >
+<description>Sélection de l'onglet Affichage</description>
+</image>
+</figure>
+    </li>     
+
+
+<li> <p>Dans le groupe <term> Fenêtre</term>, cliquer sur la flèche du menu déroulant de l'icône <term> Figer les volets </term> (voir la <xref ref="Fig_Figer_Volets_3"/>). </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Figer_Volets_3">
+<caption>Sélection de l'icône <alert>Figer les volets</alert></caption>
+<image source="images/Fig_Figer_Volets_3.png" >
+<description>Sélection de l'icône Figer les volets</description>
+</image>
+</figure>
+    </li>   
+   
+<li> <p> Cliquer sur <alert> Figer les volets </alert> (voir <xref ref="Fig_Figer_Volets_4"/>). </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Figer_Volets_4">
+<caption>Sélection de l'option <alert>Figer les volets</alert></caption>
+<image source="images/Fig_Figer_Volets_4.png" >
+<description>Sélection de l'option Figer les volets</description>
+</image>
+</figure>
+ </li>    
+    
+</ol>
+</p>
+
+<p> Maintenant, lorsque l'on fait défiler le tableau, les titres des colonnes restent visibles. Il est possible de verrouiller à la fois des lignes et des colonnes, ainsi que libérer les volets si nécessaire. </p>
+</subsubsection>  
+    
+    
+<subsubsection xml:id="sssec-LibererVolets" >  
+<title>Libérer les volets</title>    
+    
+    <p> </p>
+    
+<p>Si l'on veut libérer les volets, on peut les supprimer.</p>    
+    
+<p>
+<ol> 
+<li> <p>Sélectionner l'onglet <alert> Affichage </alert> (voir la figure <xref ref="Fig_Figer_Volets_2"/>). </p></li>
+
+<li> <p>Dans le groupe <alert> Fenêtre</alert>, cliquer sur la flèche du menu déroulant de l'icône <alert> Figer les volets </alert> (voir la <xref ref="Fig_Liberer_Volets_1"/>). Cliquer sur l'option <term>Libérer les volets</term>. </p>
+    <p> </p>
+    
+<figure xml:id="Fig_Liberer_Volets_1">
+<caption>Sélection de l'option <alert>Libérer les volets</alert></caption>
+<image source="images/Fig_Liberer_Volets_1.png" >
+<description>Sélection de l'option Libérer les volets</description>
+</image>
+</figure>
+ </li>     
+
+</ol>
+</p>    
+   
+</subsubsection>    
+    
+</subsection>
+    
+    
+    
+    
+<subsection xml:id="ssec_Filtrer_Trier">
+<title>Filtrer et trier (données incohérentes, quoi faire?)</title>
+   
+<p> </p>
+    
+<subsubsection xml:id="sssec_Filtrer">
+<title>Ajouter des filtres</title>
+    
+    <p> </p>
+
+<p>Dans Excel, il est possible d'ajouter des filtres qui permettent de dépister des valeurs aberrantes ou manquantes, ainsi que de choisir ou masquer certaines modalités.</p>    
+    
+<p>
+<ol>
+    
+<li> <p> Sélectionner le tableau <alert>Échantillon</alert>. </p></li>    
+    
+<li> <p>Sélectionner l'onglet <alert>Données</alert> (voir la <xref ref="Fig_Filtres"/>). Cliquer sur l'icône <term>Filtrer</term>. </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Filtres">
+<caption>Sélection de l'icône <alert>Filtrer</alert></caption>
+<image source="images/Fig_Filtres.png" >
+<description>Sélection de l'icône Filtrer</description>
+</image>
+</figure>
+ </li>      
+
+
+    
+<li><p> Chaque variable affiche désormais un petit triangle à droite de son nom (voir la <xref ref="Fig_Filtres_2"/>). </p>
+    <p> </p>
+    
+<figure xml:id="Fig_Filtres_2">
+<caption>Triangle affichant toutes les modalités d'une variable qualitative et toutes les valeurs d'une variable quantitative</caption>
+<image source="images/Fig_Filtres_2.png" >
+<description>Triangle affichant toutes les modalités d'une variable qualitative et toutes les valeurs d'une variable quantitative</description>
+</image>
+</figure> 
+</li>
+    
+<li><p> En cliquant sur ce triangle, toutes les modalités d'une variable qualitative et toutes les valeurs d'une variable quantitative sont affichées (voir la <xref ref="Fig_Filtres_3"/>). Il est possible de décocher certaines catégories pour les masquer et n'afficher que celles souhaitées. </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Filtres_3">
+<caption>Toutes les valeurs de la variable <alert>Âge</alert></caption>
+<image source="images/Fig_Filtres_3.png" >
+<description>Toutes les valeurs de la variable Âge</description>
+</image>
+</figure>     
+</li>
+    
+</ol>
+</p>
+    
+</subsubsection>    
+    
+
+<subsubsection xml:id="sssec-Trier">
+    <title>Trier à partir des filtres</title>
+    <p> </p>
+    
+<p>Il existe deux façons de trier les données d'un tableau. La première est à partir des filtres. </p>  
+    
+<p>
+<ol>
+      
+    
+<li> <p>En cliquant sur le petit triangle de filtre de la variable <alert>Âge</alert>, une boîte de dialogue s'ouvre. La première option permet de trier les valeurs par ordre croissant (plus petit au plus grand, A à Z pour les variables qualitatieves), tandis que la deuxième option permet de trier les valeurs par ordre décroissant (du plus grand au plus petit, Z à A pour les variables qualitatives) (voir la <xref ref="Fig_Trier_2"/>). </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Trier_2">
+<caption>Options de tris</caption>
+<image source="images/Fig_Trier_2.png" >
+<description>Options de tris.</description>
+</image>
+</figure>
+ </li>      
+
+    
+</ol>
+</p>    
+    
+</subsubsection>
+    
+    
+    
+<subsubsection xml:id="sssec-TrierDonnees">
+<title>Trier à partir de l'onglet Données</title>    
+
+    <p> </p>
+    
+    <p>La deuxième façon de trier des données est à partir de l'onglet <alert>Données</alert>. </p>
+
+<p>
+<ol>
+      
+    
+<li> <p>Cliquer sur l'onglet <alert>Données</alert>. Cliquer l'icône <term>Trier</term> (voir la <xref ref="Fig_Trier"/>). </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Trier">
+<caption>Options de tris</caption>
+<image source="images/Fig_Trier.png" >
+<description>Options de tris.</description>
+</image>
+</figure>
+ </li>      
+
+<li> <p>Une boîte de dialogue s'ouvre (voir la <xref ref="Fig_Trier_3"/>). </p>
+    
+<figure xml:id="Fig_Trier_3">
+<caption>Boîte de dialogue pour le tri</caption>
+<image source="images/Fig_Trier_3.png" >
+<description>Boîte de dialogue pour le tri</description>
+</image>
+</figure>
+ </li>  
+    
+    
+<li> <p>Il est possible de sélectionner la variable à trier (voir la <xref ref="Fig_Trier_4"/>) et d'appliquer un tri croissant, un tri décroissant ou un tri personnalisé. </p>
+    
+<figure xml:id="Fig_Trier_4">
+<caption>Option de variables à trier</caption>
+<image source="images/Fig_Trier_4.png" >
+<description>Option de variables à trier</description>
+</image>
+</figure>
+ </li>     
+    
+</ol>
+</p>    
+    
+</subsubsection>   
+    
+    
+</subsection>
+    
+    
+    
+    
+    
+    
+<subsection xml:id="ssec_AjoutFeuilles">
+<title>Ajouter et nommer une feuille de calcul</title>
+    
+    <p> </p>
+    
+<p> Lorsqu'on réalise plusieurs études, il est préférable d'organiser chacune d'elles dans sa propre feuille de calcul distincte afin de faciliter leur consultation.</p>
+
+
+<p>
+<ol> 
+
+<li> <p> Cliquer sur le symbole <m> + </m> (voir la <xref ref="Fig_Ajout_Feuille"/>). </p>
+    <p> </p>
+    
+<figure xml:id="Fig_Ajout_Feuille">
+<caption>Ajouter une nouvelle feuille de calcul</caption>
+<image source="images/Fig_Ajout_Feuille.png" >
+<description>Ajouter une nouvelle feuille de calcul.</description>
+</image>
+</figure>
+ </li>  
+    
+<li> <p> Une feuille intitulée <alert>Feuil1</alert> s'ouvrira. </p>
+  
+    <p> </p>
+    
+<figure xml:id="Fig_Ajout_Feuille_2">
+<caption>Une nouvelle feuille de calcul intitulée <alert>Feuil1</alert></caption>
+<image source="images/Fig_Ajout_Feuille_2.png" >
+<description>Une nouvelle feuille de calcul intitulée Feuil1.</description>
+</image>
+</figure>
+ </li>      
+
+<remark> <p> Il est possible de déplacer l'emplacement des feuilles. Il faut cliquer sur le nom de la feuille, la glisser et la déposer à l'emplacement voulu parmi les onglets des feuilles. </p></remark>
+
+
+<li> <p>Déplacer la feuille en dernière place, après les feuilles <alert> Questions </alert> et <alert> Données </alert>. </p></li>
+
+<li> <p>Cliquer droit sur le nom de la feuille. </p></li>
+
+<li> <p>Sélectionner l'icône <alert> Renommer </alert> et taper les mots <em> Étude Atteint </em>. </p>
+    <p> </p>
+    
+    <figure xml:id="Fig_Ajout_Feuille_3">
+<caption>Sélection de l'icône <alert>Renommer</alert></caption>
+<image source="images/Fig_Ajout_Feuille_3.png" >
+<description>Sélection de l'icône Renommer.</description>
+</image>
+</figure>
+ </li>   
+
+</ol>
+</p>    
+    
+</subsection>
+    
+    
+    
+    
+<subsection xml:id="ssec_TCD">
+<title>Tableau croisé dynamique</title>
+</subsection>
+    
+   <p> </p> 
+
+<p> Lorsque l'on dispose d'un large échantillon ou d'une vaste base de données, il peut être difficile de mettre en évidence les faits saillants. Excel permet de faire des tableaux croisés dynamiques pour organiser, présenter, synthétiser et analyser des données. Le mot <q> croisé </q> fait référence à la possibilité de regrouper et de comparer plusieurs variables, tandis que le mot <q> dynamique </q> souligne la capacité du tableau à évoluer. En effet, si une valeur est modifiée dans la base de données, le tableau croisé dynamique peut être mis à jour. À partir d'un tableau croisé dynamique, il est possible de générer un tableau de fréquences pour visualiser la répartition des unités statistiques en fonction d'une variable. </p>    
+    <p> </p>
+    
+<p> La première enquête du laboratoire 2 portera sur la répartition des femmes d'origine pima de l'Arizona atteinte ou non du diabète. Ainsi, on va générer un tableau croisé dynamique de cette distribution. Il existe deux méthodes pour le générer.</p>
+    
+   <p> </p> 
+    
+
+<subsubsection xml:id="sssec-CreerTCD">
+<title> Générer un tableau croisé dynamique (variables qualitatives) </title>
+  <p> </p>  
+    
+    
+    <paragraphs><title> Première méthode</title> </paragraphs>
+
+    <p> </p>
+    
+<p>
+<ol> 
+
+    <li> <p> Aller à la feuille <alert>Étude Atteint</alert>. Sélectionner la cellule <alert><c>B3</c></alert>, la cellule dans laquelle le tableau croisé dynamique sera inséré.</p></li>
+
+
+<li> <p> Cliquer sur l'onglet <term> Insertion </term> du ruban (voir la <xref ref="Fig_TCD_1"/>). </p>
+    
+    <p> </p>
+<figure xml:id="Fig_TCD_1">
+<caption>Sélection de l'onglet <alert>Insertion</alert></caption>
+<image source="images/Fig_TCD_1.png" >
+<description>Sélection de l'option Renommer</description>
+</image>
+</figure>
+ </li>     
+
+<li> <p> Cliquer le premier icône, soit <term> Tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_1"/>). </p></li>
+
+
+<li> <p>Une boîte de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_1bis"/>).</p>
+  <p> </p>  
+    
+<figure xml:id="Fig_TCD_1bis">
+<caption>Boîte de dialogue pour l'insertion d'un tableau croisé dynamique</caption>
+<image source="images/Fig_TCD_1bis.png" >
+<description>Boîte de dialogue pour l'insertion d'un tableau croisé dynamique</description>
+</image>
+</figure>
+ </li>     
+    
+
+<li> <p>Dans la zone de saisie <alert>Tableau/Plage</alert>, écrire le nom donné au tableau principal, soit <em>Échantillon</em>(voir la <xref ref="Fig_TCD_2bis"/>). </p>
+<p> </p>
+    
+<figure xml:id="Fig_TCD_2bis">
+<caption>Taper le nom donné au tableau principal, soit <em>Échantillon</em></caption>
+<image source="images/Fig_TCD_2bis.png" >
+<description>Taper le nom donné au tableau principal, soit Échantillon</description>
+</image>
+</figure>
+ </li>        
+
+<li> <p>Cliquer sur <alert>OK</alert>. </p></li>
+
+
+<li> <p>Un tableau croisé dynamique vide sera déposé dans la feuille <alert> Étude Atteint </alert> (voir <xref ref="Fig_TCD_Generer"/>).  </p>
+ <p> </p>
+    
+<figure xml:id="Fig_TCD_Generer">
+<caption>Tableau croisé dynamique généré</caption>
+<image source="images/Fig_TCD_Generer.png" >
+<description>Tableau croisé dynamique généré</description>
+</image>
+</figure>
+ </li>    
+
+</ol>
+</p>    
+        
+        <p> </p>
+        
+    <paragraphs><title> Deuxième méthode </title>  </paragraphs>
+
+    
+<p>
+<ol> 
+
+    <li> <p> Sélectionner l'entièreté du tableau, soit la plage <alert><c>A5:K773</c></alert>. Il est possible de faire ceci en sélectionnant une cellule non vide du tableau <alert> Échantillon </alert> et en tapant la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd>.</p></li>
+
+
+<li> <p> Cliquer sur l'onglet <term> Insertion </term> du ruban (voir la <xref ref="Fig_TCD_1"/>). </p>
+    
+    <p> </p>
+<figure>
+<caption>Sélection de l'onglet <alert>Insertion</alert></caption>
+<image source="images/Fig_TCD_1.png" >
+<description>Sélection de l'option Insertion</description>
+</image>
+</figure>
+ </li>     
+
+<li> <p> Cliquer sur le premier icône, soit <term> Tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_1"/>). </p></li>
+
+
+<li> <p>Une boîte de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_2_bis"/>). La plage de données à partir de laquelle on veut créer un tableau croisé dynamique est bien sélectionnée. </p>
+  <p> </p>  
+    
+<figure xml:id="Fig_TCD_2_bis">
+<caption>Sélection de la plage de données à partir de laquelle un tableau croisé dynamique sera généré</caption>
+<image source="images/Fig_TCD_2_bis.png" >
+<description>Sélection de la plage de données à partir de laquelle un tableau croisé dynamique sera généré</description>
+</image>
+</figure>
+ </li>     
+    
+
+<li> <p>Cliquer sur l'option <alert> Feuille de calcul existante </alert> pour déterminer l'emplacement du tableau croisé dynamique (voir la <xref ref="Fig_TCD_3bis"/>). </p>
+<p> </p>
+    
+<figure xml:id="Fig_TCD_3bis">
+<caption>Sélection de l'option <alert>Feuille de calcul existante</alert> et de la flèche pour l'emplacement du tableau croisé dynamique</caption>
+<image source="images/Fig_TCD_3bis.png" >
+<description>Sélection de l'option Feuille de calcul existante et de la flèche pour l'emplacement du tableau croisé dynamique</description>
+</image>
+</figure>
+ </li>        
+
+<!--<li> <p>Cliquer sur la flèche pointée vers le haut pour sélectionner l'emplacement exact du tableau croisé dynamique (voir la <xref ref="Fig_TCD_3"/>). </p></li>-->
+
+
+<li> <p>Cliquer sur l'onglet de la feuille de calcul <alert> Étude Atteint </alert>. </p></li>
+
+<li> <p>Une fois dans la feuille <alert>Étude Atteint</alert>, cliquer sur la cellule <alert><c> B3 </c></alert> de la feuille. </p></li>
+
+<li> <p>Cliquer à nouveau sur la flèche vers le haut. Une boîte de dialogue apparaîtra confirmant l'emplacement du tableau croisé dynamique (voir la <xref ref="Fig_TCD_4"/>). </p>
+    
+ <p> </p>
+    
+<figure xml:id="Fig_TCD_4">
+<caption>Confirmation de l'emplacement du tableau croisé dynamique</caption>
+<image source="images/Fig_TCD_4.png" >
+<description>Confirmation de l'emplacement du tableau croisé dynamique</description>
+</image>
+</figure>
+ </li>     
+
+<li> <p>Cliquer <alert> OK </alert>. </p></li>
+
+
+<li> <p>Un tableau croisé dynamique vide sera déposé dans la feuille <alert> Étude Atteint </alert> (voir <xref ref="Fig_TCD_Generer"/>).  </p>
+ <p> </p>
+    
+<figure>
+<caption>Tableau croisé dynamique généré</caption>
+<image source="images/Fig_TCD_Generer.png" >
+<description>Tableau croisé dynamique généré</description>
+</image>
+</figure>
+ </li>    
+
+</ol>
+</p>    
+
+    
+
+    
+</subsubsection>    
+<p> </p>
+        <p> Une fois le tableau croisé dynamique généré, il faut le configurer. Sur la droite de la feuille de calcul, les champs du tableau croisé dynamique s'affichent. Les champs correspondent aux en-têtes des colonnes du tableau source. On trouve cinq encadrés : le premier contient les champs. Les encadrés <term>Colonnes</term>, <term>Lignes</term> et <term>Valeurs</term> représentent des zones où l'on peut ajouter des champs. L'encadré <term>Valeurs</term> permet d'effectuer des calculs au sein du tableau croisé dynamique, tandis que l'encadré <term>Filtres</term> sert à appliquer des filtres aux données lors de la création du tableau.</p>
+    
+    
+    
+<subsubsection xml:id="sssec-RemplirTCD">
+<title>Remplir un tableau croisé dynamique</title>    
+    <p> </p>
+    
+<p>  Avec 768 femmes étudiées, il est évident qu'un décompte manuel des femmes diabétiques serait à la fois long, laborieux et sujet à de nombreuses erreurs. Les étapes pour créer le tableau croisé dynamique de la répartition des femmes Pima selon leur statut de diabétique (?) sont présentées ci-dessous.</p>    
+    
+    
+<p>
+<ol> 
+
+<!-- <li> <p> Cliquer sur la case de la variable <alert> Atteint </alert> dans la zone des <term> Champs de tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_Atteint_1"/>).</p>
+    <p> </p>
+    
+<figure xml:id="Fig_TCD_Atteint_1">
+<caption>Activation de la variable <alert>Atteint</alert></caption>
+<image source="images/Fig_TCD_Atteint_1.png" >
+<description>Activation de la variable Atteint</description>
+</image>
+</figure>
+ </li>     
+
+-->
+
+<li> <p> Glisser et déposer la variable <alert> Atteint </alert> dans la zone de saisie <alert> Lignes </alert> (voir la <xref ref="Fig_TCD_Atteint_2"/>). </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_TCD_Atteint_2">
+<caption>Glissement de la variable <alert>Atteint</alert> dans la zone de saisie <alert>Lignes</alert></caption>
+<image source="images/Fig_TCD_Atteint_2.png" >
+<description>Glissement de la variable Atteint dans la zone de saisie Lignes</description>
+</image>
+</figure>
+    
+    
+    
+<p>Les modalités/catégories de la variable s'affichent dans le première colonne du tableau croisé dynamique (voir la <xref ref="Fig_Atteint_1"/>).</p>
+    <p> </p>
+    
+<figure xml:id="Fig_Atteint_1">
+<caption>Première colonne du tableau croisé dynamique</caption>
+<image source="images/Fig_Atteint_1.png" >
+<description>Première colonne du tableau croisé dynamique</description>
+</image>
+</figure>
+   </li>  
+
+<li> <p> Glisser et déposer la variable <alert> Atteint </alert> dans la zone de saisie <alert> Valeurs </alert> cette fois-ci (voir la <xref ref="Fig_TCD_Atteint_3"/>). </p>
+    <p> </p>
+    
+    <figure xml:id="Fig_TCD_Atteint_3">
+<caption>Glissement de la variable <alert>Atteint</alert> dans la zone de saisie <alert>Valeurs</alert></caption>
+<image source="images/Fig_TCD_Atteint_3.png">
+<description>Glissement de la variable Atteint dans la zone de saisie Valeurs</description>
+</image>
+</figure>
+    
+    
+  
+ </li>    
+    
+
+    <li> <p> Par défaut, Excel effectue la somme des valeurs comme opération. Cependant, on veut compter le nombre de femmes dans chaque catégorie. Dans la zone de saisie <alert> Valeurs </alert>, cliquer sur la flèche du menu déroulant, puis sélectionner l'option <term> Paramètres des champs de valeurs </term> (voir la <xref ref="Fig_TCD_Atteint_4"/>) pour modifier le calcul. Une nouvelle boîte de dialoge apparaîtra.</p>
+    <p> </p>
+        
+    <figure xml:id="Fig_TCD_Atteint_4">
+<caption>Sélection de l'option <alert>Paramètres des champs de valeurs</alert></caption>
+<image source="images/Fig_TCD_Atteint_4.png">
+<description>Sélection de l'option Paramètres des champs de valeurs</description>
+</image>
+</figure>
+ </li>   
+
+
+<li> <p> À l'onglet <term> Synthèse des valeurs par </term>, sélectionner l'option <alert> Nombre </alert> (voir la <xref ref="Fig_TCD_Atteint_5"/>). </p>
+    <p> </p>
+    
+    <figure xml:id="Fig_TCD_Atteint_5">
+<caption>Sélection de l'option <alert>Nombre</alert> dans l'onglet <alert>Synthèse des valeurs par</alert></caption>
+<image source="images/Fig_TCD_Atteint_5.png">
+<description>Sélection de l'option Nombre dans l'onglet Synthèse des valeurs par</description>
+</image>
+</figure>
+    </li>    
+    
+    
+ <li><p>  <li><p>Cliquer sur <alert> OK </alert>.</p></li> </p>
+     
+<p>Cette action ajoute une deuxième colonne au le tableau croisé dynamique, une colonne qui compte le nombre de femmes d'origine pima dans chaque catégorie (voir la <xref ref="Fig_Atteint_2"/>).</p>   
+    <p> </p>
+    
+    <figure xml:id="Fig_Atteint_2">
+<caption>Deuxième colonne du tableau croisé dynamique</caption>
+<image source="images/Fig_Atteint_2.png">
+<description>Deuxième colonne du tableau croisé dynamique</description>
+</image>
+</figure>      
+ </li>       
+
+<li> <p> Refaire les étapes 2 à 4 pour ajouter une troisième colonne au tableau croisé dynamique. On veut ajouter une colonne pour le pourcentage de femmes d'origine pima atteinte ou non du diabète. </p></li>
+
+
+<li> <p> À l'onglet <alert> Synthèse des valeurs par </alert>, sélectionner l'option <alert> Nombre </alert> (voir la <xref ref="Fig_TCD_Atteint_5"/>). Attention, il ne faut pas cliquer <alert>OK</alert> tout de suite!</p></li>
+
+<li> <p> À droite de l'onglet <alert> Synthèse des valeurs par </alert>, cliquer sur l'onglet <term> Afficher les valeurs </term>. (voir la <xref ref="Fig_TCD_Atteint_5bis"/>). </p>
+    <p> </p>
+    
+    <figure xml:id="Fig_TCD_Atteint_5bis">
+<caption>Sélection de l'option <alert>Afficher les valeurs</alert></caption>
+<image source="images/Fig_TCD_Atteint_5bis.png">
+<description>Sélection de l'option Afficher les valeurs</description>
+</image>
+</figure>
+ </li>    
+
+<li> <p> Cliquer sur la flèche du menu déroulant et sélectionner l'option <alert> % du total général </alert> (voir la figure <xref ref="Fig_TCD_Atteint_6"/>). </p>
+    
+    <p> </p>
+    
+    <figure xml:id="Fig_TCD_Atteint_6">
+<caption>Sélection de l'option <alert>% du total général</alert> dans l'onglet <alert>Afficher les valeurs</alert></caption>
+<image source="images/Fig_TCD_Atteint_6.png">
+<description>Sélection de l'option pourcentage du total général dans l'onglet Afficher les valeurs</description>
+</image>
+</figure>
+ </li>    
+
+<li> <p> Cliquer sur <alert> OK </alert>. La troisième colonne présente le pourcentage de femmes d'origine pima atteintes ou non du diabète. </p>
+    <p> </p>
+    
+      <figure xml:id="Fig_Atteint_3">
+<caption>Les trois colonnes du tableau croisé dynamique final</caption>
+<image source="images/Fig_Atteint_3.png">
+<description>Les trois colonnes du tableau croisé dynamique</description>
+</image>
+</figure>  
+    
+    </li>
+
+</ol> 
+</p>    
+    
+    
+<p> Dans le prochain laboratoire, les étapes pour améliorer la présentation de ce tableau afin qu'il soit conforme aux normes statistiques seront abordées.</p>    
+    
+    
+</subsubsection>    
+
+</section>

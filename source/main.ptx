@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="fr-CA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+
+  <book xml:id="LSAN">
+    <title>Les sciences autour de nous</title>
+    <subtitle>Laboratoires de probabilités et statistiques</subtitle>
+
+    <!-- Include frontmatter -->
+   <!-- <xi:include href="./frontmatter.ptx" /> -->
+
+    <!-- Include chapters -->
+    <xi:include href="./Introduction/Chapitre_Introduction_Excel.ptx" />
+    <xi:include href="./Variables_Qualitatives/Chapitre_Varqual_Excel.ptx" />
+    <xi:include href="./Variables_Quantitatives/Chapitre_Varquant_Excel.ptx" />
+
+
+    <!-- Include backmatter -->
+   <xi:include href="./backmatter.ptx" /> 
+
+  </book>
+</pretext>

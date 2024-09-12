@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="ann-raccourcis">
+<title>Raccourcis pratiques</title>
+<introduction>
+
+<p>Cette annexe présente quelques raccourcis claviers qui permettent de sauver du temps dans Excel. Lorsqu'il est mention d'une combinaison, par exemple la combinaison <kbd>Shift</kbd>+<kbd>Enter</kbd>, cela signifie qu'il faut maintenir la touche qui précède le symbole + enfoncée et ensuite appuyer sur la ou les touches qui suivent.</p>
+
+</introduction>
+<section xml:id="sec-utilite_raccourcis">
+<title>Utilité</title>
+<p>Si l'on est en mode édition d'une cellule et que l'on veut le quitter, il suffit d'appuyer sur la touche <kbd>Esc</kbd> (ou <kbd>échap</kbd>).</p>
+
+<p>Deux des raccourcis claviers les plus utilisés sont sans aucun doute les fameux copier-coller. Dans Excel, la fonction coller est un peu différente, car on peut coller de plusieurs façon. Puisqu'une cellule peut contenir des formules, référençant potentiellement d'autres cellules, il faut déterminer lors du collage si l'on veut copier ces formules ou si l'on souhaite copier uniquement les valeurs des cellules.</p>
+
+<p>Pour comprendre l'importance de la distinction entre ces deux méthodes, on considère l'exemple suivant. Dans la première colonne, on a écrit les entiers de <m>1</m> à <m>5</m>. Dans la deuxième colonne, on a inscrit la formule qui double l'entrée de la colonne <c>A</c>. Si l'on veut copier le contenu de la colonne <c>B</c>, on peut avoir (minimalement) deux intentions:
+<ol>
+<li><p>Copier la formule, dans le but de continuer la multiplication par <m>2</m>;</p></li>
+<li><p>Copier les valeurs, dans le but de les retranscrire ailleurs pour réutilisation.</p></li>
+</ol>
+</p>
+<p>Si l'on copie les valeurs à l'aide de la combinaison <kbd>CTRL</kbd>+<kbd>C</kbd>, par défaut Excel va aussi copier les formules. Pour coller les valeurs seules, on peut appliquer la combinaison <kbd>CTRL</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> afin d'ouvrir le menu de collage et appuyer sur <kbd>V</kbd> à nouveau pour sélectionner l'option <em>Valeurs</em>.</p>
+</section>
+
+<section xml:id="sec-navigation_raccourcis">
+<title>Navigation</title>
+
+<p>Ces premiers raccourcis sont simples, mais très utiles. Lorsqu'une cellule est sélectionnée, on peut naviguer vers les cellules voisines en cliquant sur les flèches du clavier <kbd name="left"/>,<kbd name="right"/>,<kbd name="up"/>,<kbd name="down"/>. De manière équivalente, on peut se déplacer vers le bas avec la touche <kbd>Enter</kbd> ou vers le haut avec la combinaison <kbd>Shift</kbd>+<kbd>Enter</kbd> et vers la droite avec la touche <kbd>Tab</kbd> ou vers la gauche avec la combinaison <kbd>Shift</kbd>+<kbd>Tab</kbd>.</p>
+
+<remark xml:id="rem-navigationselection">
+<title>Navigation dans un ensemble de cellules sélectionnées</title>
+<p>Si un ensemble de cellules avait été préalablement sélectionné, alors la navigation avec <kbd>Enter</kbd> et <kbd>Tab</kbd> restera dans la sélection, changeant de colonne ou de ligne au besoin.</p>
+</remark>
+
+<p>Un clic sur le bouton <kbd>Home</kbd> change la cellule active pour la première cellule de la ligne alors que la combinaison <kbd>Ctrl</kbd>+<kbd>Home</kbd> ramène à la première cellule de la feuille, soit celle en haut à gauche (normalement identifiée A1).</p>
+</section>
+
+<section xml:id="sec-selection_raccourcis">
+<title>Sélection variée</title>
+
+<p>Il est souvent utile de sélectionner un ensemble de cellules, parfois rapprochées. Les quatre raccourcies suivants permettent de sélectionner la cellule active ainsi que tous ses voisins non vides dans l'une des quatre directions:
+<ul>
+<li><p>La combinaison <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd name="left"/> permet de sélectionner la cellule active et tout ce qui est non vide à sa gauche.</p></li>
+<li><p>La combinaison <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd name="right"/> permet de sélectionner la cellule active et tout ce qui est non vide à sa droite.</p></li>
+<li><p>La combinaison <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd name="up"/> permet de sélectionner la cellule active et tout ce qui ce qui est non vide au-dessus.</p></li>
+<li><p>La combinaison <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd name="down"/> permet de sélectionner la cellule active et tout ce qui ce qui est non vide en-dessous.</p></li>
+</ul>
+À noter qu'une utilisation additionnelle de ces combinaisons sélectionnera toutes les cellules vosines de la sélection actuelle, y compris les cellules vides, jusqu'à la prochaine cellule non vide ou jusqu'à la fin de la feuille.
+</p>
+
+<p>Si l'on souhaite plutôt sélectionner la ligne ou la colonne en totalité, alors en plus de pouvoir cliquer sur l'étiquette de la dite ligne ou colonne, <!-- ToDo : Image --> on peut également utiliser les combinaisons <kbd>Shift</kbd>+<kbd>Espace</kbd> et <kbd>Ctrl</kbd>+<kbd>Espace</kbd> pour sélectionner respectivement la ligne ou la colonne de la cellule active.</p>
+
+<remark xml:id="rem-selectiontableau">
+<title>Sélection dans un tableau</title>
+<p>Si la cellule active fait partie d'un tableau, alors l'application des raccourcis ci-dessus est d'abord limitée au tableau. <!-- ToDo image --> </p>
+</remark>
+
+<p>On peut sélectionner toutes les données d'un tableau à l'aide de la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd>. À l'extérieur d'un tableau, cette combinaison sélectionne l'entièreté de la feuille de calcul.</p>
+</section>
+
+<section xml:id="sec-miseenforme_raccourcis">
+<title>Mise en forme</title>
+<p>Pour la mise en forme, il existe plusieurs raccourcis qui sont prédéfinis. En voici une liste des principaux qui pourraient être utilisés.</p>
+<list xml:id="liste-miseenforme_raccourcis">
+<dl>
+<li xml:id="li-pourcent_raccourci"><title>Format de cellule en pourcentage</title><p>Pour que le format de cellule passe à <alert>Pourcentage</alert>, on effectue la combinaison <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>%</kbd>.</p></li>
+</dl>
+</list>
+</section>
+</appendix>
+
+<!--
+Importer données CSV
+Ajouter/enlever cellules - effacer
+Ajout ligne/colonne
+Masquer/démasquer
+Trier
+Groupe ligne colonne (Ajouter raccourcis? >>> Alt+Shift+droite et Alt+Shift+gauche)
+Mode selection F8 ?
+-->

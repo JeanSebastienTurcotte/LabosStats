@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Prelab_Introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Prélab</title>
+    
+<p>Les trois premiers laboratoires seront dédiés à l'étude de la maladie du diabète, en mettant l'accent sur les femmes d'origine pima. Les Pimas sont un peuple autochtone de la région du Sonora, au Mexique, et de l'État de l'Arizona, aux États-Unis. Les données utilisées proviennent de l'Institut National du Diabète et des Maladies Digestives et Rénales. </p>
+    
+    
+<p>Selon Santé Canada, le diabète est défini comme <q>une maladie chronique qui se développe lorsque le corps ne produit pas l'insuline dont il a besoin pour transformer le sucre en énergie ou qu'il ne l'utilise pas efficacement</q>. Cette maladie se divise en trois catégories : le diabète de type 1, le diabète de type 2 et le diabète gestationnel. Le diabète de type 1 se caractérise par une production insuffisante d'insuline par le corps. Le diabète de type 2 est lié à une résistace du corps à l'insuline. Le diabète gestationnel, quant à lui, se manifeste par une élévation récent du taux de glucose dans le sang d'une femme enceinte.</p>
+    
+<p>Dans l'étude présentée, on se concentre sur le diabète de type 2, une forme de diabète fréquemment associée à l'inactivité physique, à l'obésité, à l'âge avancé d'un individu, ainsi qu'à des antécédents familiaux de diabète de type 2. Plusieurs communautés autochtones rencontrent des obstacles pour accéder à des soins de santé adéquats en raison de ressources limitées, de faibles revenus et de conditions économiques précaires. </p>
+    
+<p>La base de données de l'enquête comprend les mesures diagnostiques d'un échantillon de 768 femmes d'origine pima de l'Arizona. Les variables à l'étude sont :</p>
+
+<p>
+<ul>
+    
+<li><p>l'<term>identifiant</term> des participantes. L'éthique en matière de recherche exige l'anonymat des personnes participantes. Ainsi, un numéro est attribué à chaque individu afin d'éviter de divulguer de leur identité;</p></li>
+    
+<li><p> l'<term>âge</term> des participantes en année; </p></li>
+    
+<li><p> la concentration de <term>glucose</term> plasmatique après deux heures lors d'un test de tolérance au glucose par voie orale en mg/dL. Un taux élevé de glucose est un signe précoce du diabète de type 2. Après ce test, une valeur considérée saine est inférieure à 140 mg/dL. Une valeur comprise entre 140 et 199 mg/dL est considérée comme un prédiabète. Une valeur de 200 mg/dL ou plus indique un diabète;</p></li>
+    
+<li> <p> la <term>pression artérielle diastolique</term> en mm Hg. La pression diastolique indique la pression dans les artères lorsque le coeur se repose entre deux battements. Une valeur comprise entre 60 et 80 est considérée normale; </p></li>
+    
+<li> <p> l'<term>épaisseur du pli cutané du triceps</term> en mm;</p></li>    
+    
+<li> <p> l'<term>insuline</term> dans le sang en <m>\mu</m>U/mL. L'insuline est une hormone produite par le pancréas. Elle joue un rôle crucial dans le maintien de l'équilibre énergétique du corps et la régulation du taux de glucose sanguin. Après un repas riche en glucides, le taux de glucose peut augmenter rapidement; l'insuline intervient alors pour l'abaisser. En cas de production insuffisante d'insuline ou si le corps devient résistant à son action, le glucose reste en excès dans le sang, ce qui peut entraîner des maladies comme le diabète de type 1 ou le diabète de type 2. Dans l'étude des femmes d'origine pima, l'accent est mis sur le risque de développement du diabète de type 2;</p></li>
+
+<li> <p> l'<term>indice de masse corporelle</term> (IMC) en kg/m<m>^{2}</m>. Comme l'indiquent ses unités, l'IMC est la valeur obtenue en divisant la masse d'un individu par sa taille au carré. Il s'agit d'un indicateur permettant d'estimer le surpoids d'une personne. Selon Statistique Canada, l'IMC fournit <q> un moyen de classer le poids corporel en fonction de risque pour la santé</q>. (CITATION?) Cependant, l'IMC n'est pas sans faille. Il ne fournit aucune information concernant la distribution de la matière grasse dans le corps; </p></li>
+    
+<li> <p> les stades d'<term>obésité</term> selon Santé Canada (catégorie de  l'IMC) :</p>
+    
+    <p><ol>
+    
+        <li> Poids insuffisant (<m> \lt 18,5</m>)</li>
+        <li> Poids normal (<m>18,5 - 24,9</m>)</li>
+        <li> Excès de poids (<m>25,0 - 29,9</m>)</li>
+        <li> Obésité Classe I (<m>30,0-34,9</m>)</li>
+        <li> Obésité Classe II (<m>35-39,9</m>)</li>
+        <li> Obésité Classe III (<m>\geq 40,0</m>)</li>
+    </ol></p>
+    
+</li>
+
+
+<li> <p> la <term>fonction pedigree du diabète</term>. C'est un score mesurant le risque familial du diabète. Cette valeur mesure entre 0,08 et 2,42;
+ </p> </li>
+ 
+    
+<li> <p> l'<term>atteinte</term> au diabète (avoir ou non le diabète).</p> 
+    <p><ol marker="0">
+    
+        <li> <p>Non </p></li>
+        <li> <p>Oui </p></li>
+    </ol></p>
+    
+    </li>
+    
+</ul>
+</p>    
+    
+</section>

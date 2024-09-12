@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="ann-manipulation">
+<title>Manipuler la feuille de calcul</title>
+
+<p>Une feuille de calcul est l'endroit principal où se déroule le travail dans Excel. Bien que l'on puisse tenter de tout prévoir, il est fréquent qu'il devienne nécessaire de déplacer, ajouter ou supprimer des éléments. On distingue trois types d'éléments: la cellule unique, la ligne et la colonne.</p>
+
+<p>
+Dans un premier temps, pour simplement effacer le contenu d'une cellule, on peut appuyer sur la touche <kbd>backspace</kbd>. Toutefois, si plus d'une cellule sont sélectionnées, seule le contenu de la cellule active sera supprimé. Pour effacer le contenu de toutes les cellules de la sélection, il vaut mieux utiliser la touche <kbd>suppr</kbd> (<kbd>del</kbd> en anglais).
+</p>
+
+<p>Pour ajouter une cellule à un endroit, il faut faire un clic droit où l'on veut la nouvelle cellule et ensuite décider de la manière de faire l'insertion. On peut
+<ul>
+<li><p>décaler la cellule active vers la droite,</p></li>
+<li><p>décaler la cellule active vers le bas,</p></li>
+<li><p>décaler la ligne entière vers le bas,</p></li>
+<li><p>décaler la colonne entière vers la droite.</p></li>
+</ul></p>
+
+<!-- ToDo  capture d'écran-->
+
+<p>Pour insérer une nouvelle ligne ou une nouvelle colonne, on peut effectuer un clic droit sur l'étiquette de la ligne ou de la colonne et cliquer sur <alert> Insérer </alert> ou encore utiliser l'option décrite ci-dessus dans l'ajout d'une cellule.</p>
+
+<p>D'une manière semblable, on peut supprimer une cellule. Ceci est une opération différente de supprimer son contenu. La supression d'une cellule requiert de décider ce que l'on doit faire avec l'espace qu'occupait la cellule. Il est possible de
+<ul>
+<li><p>supprimer un cellule et ramener les cellules vers la gauche,</p></li>
+<li><p>supprimer un cellule et ramener les cellules active vers le haut,</p></li>
+<li><p>supprimer toute la ligne et ramener les lignes vers le haut,</p></li>
+<li><p>supprimer toute la colonne et ramener les colonnes vers la gauche.</p></li>
+</ul>
+</p>
+
+<p>Parfois, certaines lignes ou certaines colonnes ne sont utiles que pour faire des calculs et on ne souhaite pas les afficher. Il est possible de masquer une ligne ou une colonne. Pour cacher une ligne ou une colonne:
+<ul>
+<li><p>On peut faire un clic droit sur l'étiquette de la ligne ou de la colonne et appuyer sur <alert> Masquer </alert>;</p></li>
+<li><p>Aller sous l'onglet <alert> Accueil </alert> et cliquer sur <alert> Format </alert>, puis <alert> Masquer &amp; afficher </alert> et finalement, <alert> Masquer les lignes </alert> ou <alert> Masquer les colonnes </alert> <!-- ToDo Capture d'écran -->.</p></li>
+</ul></p>
+
+<p>Pour afficher une ligne ou une colonne, on peut sélectionner les lignes ou les colonnes adjacentes et 
+<ul>
+<li><p>faire un clic droit et appuyer sur <alert> Afficher </alert>;</p></li>
+<li><p>aller sous l'onglet <alert> Accueil </alert> et cliquer sur <alert> Format </alert>, puis <alert> Masquer &amp; afficher </alert> et finalement, <alert> Afficher les lignes </alert> ou <alert> Afficher les colonnes </alert>.</p></li>
+</ul></p>
+
+<p>On peut aussi grouper des lignes ou des colonnes voisines afin de les masquer ou de les afficher. Pour cela, on sélectionne les lignes ou les colonnes que l'on souhaite grouper et on effectue la combinaison <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd name="right"/>. Pour dissocier les lignes ou les colonnes, on les sélectionne et on effectue la combinaison <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd name="left"/>.</p>
+</appendix>
+<!--
+
+Trier
+Mode selection F8 ?
+-->
