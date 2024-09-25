@@ -2,6 +2,84 @@
 
 <section xml:id="sec-Postlab_Varquant" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Réflexions</title>
-<p>Mise en contexte</p>
-<!-- Valeur aberrante  -->
-</section>
+    
+<p>Compte tenu du grand nombre de variables quantitatives, le travail réalisé lors du laboratoire 3 n'est qu'un point de départ de l'analyse. Il est essentiel de poursuivre l'étude afin d'extraire un maximum d'informations et d'approfondir la compréhension de la situation. </p>
+
+<worksheet xml:id="ws-Reflexion_Varqual">
+<title>Travail à faire après le laboratoire</title>
+
+<objectives>
+    <ul>
+      <li><p>Approfondir l'étude de la variable <alert>IMC</alert>.</p></li>
+      <li><p>Examiner les autres variables quantitatives continues (<alert>Glucose</alert>, <alert>Pression artérielle diastolique</alert>, <alert>Épaisseur de la peau</alert>, <alert>Insuline</alert>, <alert>Fonction pedigree du diabète</alert>).</p></li>
+      <li><p>Examiner une variable quantitative continue et une variable qualitative.</p></li>
+      <li><p>Formuler des conclusions.</p></li>
+      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>Formuler des hypothèses de recherche.</p></li>
+    </ul>
+    </objectives>
+    
+     <exercise>
+    <statement><p>En deux courtes phrases, résumer la situation du diabète et de l'indice de masse corporelle chez la population de femmes Pimas.</p></statement>
+    </exercise>
+    
+    <exercise>
+    <statement><p>Quelles sont les limites des deux études réalisées dans le laboratoire 3? Quelles variables sont reliées entre elles? Dépendance et indépendance.</p></statement>
+    </exercise>
+    
+    <exercise>
+    <statement><p>À la <xref ref="ssec_Mesures"/>, on a calculé des mesures descriptives avec et sans filtrage des valeurs nulles de l'indice de masse corporelle. Expliquer les effets de ne pas exclure les valeurs nulles lors des calculs. Quel impact cela a-t-il sur les mesures descriptives? Cet impact serait-il le même si la base de données contenait 20 données au lieu de 768?</p></statement>
+    </exercise>
+    
+    <exercise>
+    <statement><p>Calculer la moyenne à partir du tableau de fréquences des données groupées en classe (voir la <xref ref="Fig_Grouper_7"/>). La valeur obtenue est-elle la même que celle obtenue avec la formule Excel? Sinon, expliquer la différence.  Quelle valeur doit être privilégiée?</p></statement>
+    </exercise>
+    
+     <exercise>
+    <statement><p>Une donnée est considérée comme aberrante si elle se situe à 1,5 fois l'écart interquartile <m>\left(1,5\times (Q_{3}-Q_{1})\right)</m> en dessous au premier quartile ou à 1,5 fois l'écart interquartile au-dessus du troisième quartile. Dans la feuille de calcul <alert>Étude IMC</alert>, déterminer toutes les valeurs aberrantes de l'indice de masse corporelle en effectuant les calculs nécessaires. À la <xref ref="ssec_Filtrer"/>, quelles valeurs auraient dû être exclues en plus des valeurs nulles?</p></statement>
+    </exercise>
+    
+    <exercise>
+    <statement><p>Le choix de l'amplitude et du nombre de classes d'un histogramme peut influencer l'interprétation du graphique. Reproduire l'histogramme de la répartition de l'échantillon des femmes d'origine pima selon l'indice de masse corporelle en regroupant les données en cinq classes. Interpréter l'allure du graphique. Comparer l'histogramme reproduit à l'histogramme fait à la <xref ref="ssec_Histogramme"/>.</p>
+    </statement>
+    </exercise>
+    
+    <exercise>
+    <statement>
+    <p>Choisir une variable quantitative continue à étudier. Construire le tableau de fréquences ainsi que l'histogramme de la répartition de l'échantillon de femmes d'origine pima selon la variable choisie. Ne pas oublier de filtrer les données aberrantes et d'indiquer le choix de l'amplitude des classes. Interpréter le résultat.</p>
+    </statement>
+    </exercise>
+    
+    <exercise>
+    <statement>
+    <p>Calculer les mesures de tendance centrales, les mesures de dispersion et le troisième quintile de la variable choisie à la question précédente. </p>
+    </statement>
+    </exercise>
+    
+    <exercise>
+    <statement>
+    <p>Choisir une variable quantitative continue à étudier avec la variable qualitative <alert>Atteint</alert>. Construire le tableau de fréquences à double entrée ainsi que le polygone de fréquences de la répartition de l'échantillon de femmes d'origine pima, par variable qualitative (?), selon la variable quantitative choisie. Ne pas oublier de filtrer les données aberrantes et d'indiquer le choix de l'amplitude des classes. Interpréter le résultat. </p>
+    </statement>
+    </exercise>
+    
+     <exercise>
+    <statement>
+    <p>Calculer et interpréter la moyenne, l'écart type corrigé et le coefficient de variation de la variable quantitative continue choisie à la question précédente par résultat du test diabétique (?).</p>
+    </statement>
+    </exercise>
+    
+      <exercise>
+    <statement>
+    <p>Choisir une deuxième variable quantitative continue à étudier avec la variable qualitative <alert>Atteint</alert>. Construire le tableau de fréquences à double entrée ainsi que le polygone de fréquences de la répartition de l'échantillon de femmes d'origine pima, par variable qualitative (?), selon la variable quantitative choisie. Ne pas oublier de filtrer les données aberrantes et d'indiquer le choix de l'amplitude des classes. Interpréter le résultat. </p>
+    </statement>
+    </exercise>
+    
+     <exercise>
+    <statement>
+    <p>Calculer et interpréter la moyenne, l'écart type corrigé et le coefficient de variation de la variable quantitative continue choisie à la question précédente par résultat du test diabétique (?).</p>
+    </statement>
+    </exercise>
+    
+    <exercise><p>Après avoir étudié certaines variables quantitatives, formuler quelques hypothèses en lien avec ces variables et les autres.</p></exercise>
+    </worksheet>
+</section>    

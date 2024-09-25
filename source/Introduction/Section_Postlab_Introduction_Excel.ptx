@@ -3,7 +3,7 @@
 <section xml:id="sec-Postlab_Introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Réflexions</title>
     
-    <p>Avant d'entamer une collecte de données, toute personne chercheuse doit suivre un processus de recherche rigoureux, essentiel pour porter un jugement critique sur le sujet étudié. La première étape consiste à définir les objectifs de la recherche. En général, des hypothèses de recherche sont formulées avant de procéder à la collecte de données. Ce postlab vise à développer une compréhension des informations que révèlent les données avant d'entreprendre une étude quantitative plus approfondie. On rappelle que l'objectif de cette étude est de prédire, à partir de ses indicateurs de santé, si une femme d'origine pima est atteinte ou non du diabète. </p>
+    <p>Avant d'entamer une collecte de données, toute personne chercheuse doit suivre un processus de recherche rigoureux, essentiel pour porter un jugement critique sur le sujet étudié. La première étape consiste à définir les objectifs de la recherche. En général, des hypothèses de recherche sont formulées avant de procéder à la collecte de données. Ce postlab vise à développer une compréhension intuitive des informations que révèlent les données avant d'entreprendre une étude quantitative plus approfondie. On rappelle que l'objectif de cette étude est de prédire, à partir de ses indicateurs de santé, si une femme d'origine pima est atteinte ou non du diabète. </p>
        
     
 <worksheet xml:id="ws-Reflexion_Introduction">
@@ -20,7 +20,7 @@
   
 <page>  
   <exercise xml:id="Postlab_1">
-  <statement><p>Dans le fichier Excel du laboratoire, examiner les valeurs de chaque variable du tableau <alert>Échantillon</alert>. Quelle(s) observation(s) peut-on formuler à leur sujet? </p></statement>
+  <statement><p>Dans le fichier Excel du laboratoire, examiner les valeurs de chaque variable du tableau <alert>Échantillon</alert>. Quelle(s) observation(s) peuvent être formuler à leur sujet? </p></statement>
   </exercise>
     
   <exercise workspace="2.5in">

@@ -188,6 +188,7 @@
 </subsubsection>    
     
     
+    
 <subsubsection xml:id="sssec-LargeurColonnes">
 
 <title> Modifier la largeur des colonnes ou des lignes</title>   
@@ -213,7 +214,7 @@
 </li>
     <p> </p>
     
-<li> <p>Cliquer et déplacer la flèche vers la gauche pour rétrécir la largeur de la colonne de gauche et vers la droite pour élargir la largeur de la colonne de gauche. Pour modifier la largeur d'une ligne, il faut placer le curseur entre deux lignes et déplacer la flèche vers le haut ou le bas selon l'effet désiré.</p></li>
+<li> <p>Cliquer et déplacer la flèche vers la gauche pour rétrécir la largeur de la colonne de gauche et vers la droite pour élargir la largeur de la colonne de gauche. Pour modifier la largeur d'une ligne, il faut placer le curseur entre deux lignes et déplacer la flèche vers le haut ou le bas selon l'effet désiré.</p> </li>
     
    
 
@@ -240,7 +241,7 @@
 
 <p>L'action de sélectionner des données (cellules?) est une opération courante dans Excel. Lors de l'utilisation de formules, il est souvent nécessaire de sélectionner des cellules. Cela peut être laborieux lorsque la base de données (le nombre de cellules ou la taille de la série statistique?) est grande. On peut glisser trop loin avec la souris et devoir revenir en arrière, ou ne pas glisser assez loin et oublier des données. Pour éviter ces problèmes, il est pratique d'attribuer un nom à une cellule ou à une plage de cellules. Ainsi, il est possible de faire référence à ce nom dans une formule, peu importe la feuille de calcul dans laquelle on travaille.</p>     
     
-    <p> Dans la feuille de calcul <alert>Données</alert> du fichier Excel, on va attribuer un nom au tableau principal, soit le nom <q>Échantillon</q>. Il existe deux façons d'effectuer cette opération.</p>   
+    <p> Dans la feuille de calcul <alert>Données</alert> du fichier Excel, on va attribuer un nom au tableau principal, soit le nom &#xAB; Échantillon &#xBB;. Il existe deux façons d'effectuer cette opération.</p>   
     
 <paragraphs><title> Première méthode : <alert>zone nom</alert></title>    
     
@@ -446,9 +447,24 @@
 <description>Sélection de la deuxième ligne du tableau Échantillon</description>
 </image>
 </figure>
-    </li>    
+    </li> 
+    
+    
+<li> <p>Sélectionner l'onglet <alert> Affichage </alert>. Dans le groupe <term> Fenêtre</term>, cliquer sur la flèche du menu déroulant de l'icône <term> Figer les volets </term> (voir la <xref ref="Fig_Figer_Volet_gif"/>) </p>
+    
+    <p> </p>
+    
+    
+<figure xml:id="Fig_Figer_Volet_gif">
+<caption>Sélection de l'onglet <alert>Affichage</alert> et de l'icône <alert>Figer les volets</alert></caption>
+<image source="images/Fig_Figer_Volet_gif.png" >
+<description>Sélection de l'onglet Affichage et de l'icône Figer les volets</description>
+</image>
+</figure>
+    </li>       
+    
 
-<li> <p>Sélectionner l'onglet <alert> Affichage </alert> (voir la <xref ref="Fig_Figer_Volets_2"/>). </p>
+<!-- <li> <p>Sélectionner l'onglet <alert> Affichage </alert> (voir la <xref ref="Fig_Figer_Volets_2"/>). </p>
     
     <p> </p>
     
@@ -471,7 +487,7 @@
 <description>Sélection de l'icône Figer les volets</description>
 </image>
 </figure>
-    </li>   
+    </li>   -->
    
 <li> <p> Cliquer sur <alert> Figer les volets </alert> (voir <xref ref="Fig_Figer_Volets_4"/>). </p>
     
@@ -637,7 +653,7 @@
 </figure>
  </li>      
 
-<li> <p>Une boîte de dialogue s'ouvre (voir la <xref ref="Fig_Trier_3"/>). </p>
+<!-- <li> <p>Une boîte de dialogue s'ouvre (voir la <xref ref="Fig_Trier_3"/>). </p>
     
 <figure xml:id="Fig_Trier_3">
 <caption>Boîte de dialogue pour le tri</caption>
@@ -656,7 +672,23 @@
 <description>Option de variables à trier</description>
 </image>
 </figure>
- </li>     
+ </li>     -->
+    
+    
+    
+    
+    <li> <p>Une boîte de dialogue s'ouvre.</p> 
+        
+        <p>Il est possible de sélectionner la variable à trier et d'appliquer un tri croissant, un tri décroissant ou un tri personnalisé (voir la <xref ref="Fig_Trier_gif"/>). </p>
+    
+<figure xml:id="Fig_Trier_gif">
+<caption>Boîte de dialogue pour le tri et options de variables à trier</caption>
+<image source="images/Fig_Trier_gif.png" >
+<description>Boîte de dialogue pour le tri et options de variables à trier</description>
+</image>
+</figure>
+ </li>  
+    
     
 </ol>
 </p>    
@@ -737,7 +769,7 @@
     
    <p> </p> 
 
-<p> Lorsque l'on dispose d'un large échantillon ou d'une vaste base de données, il peut être difficile de mettre en évidence les faits saillants. Excel permet de faire des tableaux croisés dynamiques pour organiser, présenter, synthétiser et analyser des données. Le mot <q> croisé </q> fait référence à la possibilité de regrouper et de comparer plusieurs variables, tandis que le mot <q> dynamique </q> souligne la capacité du tableau à évoluer. En effet, si une valeur est modifiée dans la base de données, le tableau croisé dynamique peut être mis à jour. À partir d'un tableau croisé dynamique, il est possible de générer un tableau de fréquences pour visualiser la répartition des unités statistiques en fonction d'une variable. </p>    
+<p> Lorsque l'on dispose d'un large échantillon ou d'une vaste base de données, il peut être difficile de mettre en évidence les faits saillants. Excel permet de faire des tableaux croisés dynamiques pour organiser, présenter, synthétiser et analyser des données. Le mot &#xAB; croisé &#xBB; fait référence à la possibilité de regrouper et de comparer plusieurs variables, tandis que le mot &#xAB; dynamique &#xBB; souligne la capacité du tableau à évoluer. En effet, si une valeur est modifiée dans la base de données, le tableau croisé dynamique peut être mis à jour. À partir d'un tableau croisé dynamique, il est possible de générer un tableau de fréquences pour visualiser la répartition des unités statistiques en fonction d'une variable. </p>    
     <p> </p>
     
 <p> La première enquête du laboratoire 2 portera sur la répartition des femmes d'origine pima de l'Arizona atteinte ou non du diabète. Ainsi, on va générer un tableau croisé dynamique de cette distribution. Il existe deux méthodes pour le générer.</p>
@@ -773,8 +805,21 @@
 
 <li> <p> Cliquer le premier icône, soit <term> Tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_1"/>). </p></li>
 
+    
+    <li> <p>Une boîte de dialogue s'ouvrira.</p> 
+        
+        <p>Dans la zone de saisie <alert>Tableau/Plage</alert>, écrire le nom donné au tableau principal, soit <em>Échantillon</em>(voir la <xref ref="Fig_TCD_Methode1_gif"/>)</p>
+  <p> </p>  
+    
+<figure xml:id="Fig_TCD_Methode1_gif">
+<caption>Boîte de dialogue pour l'insertion d'un tableau croisé dynamique et saisie du nom donné au tableau principal, soit <em>Échantillon</em></caption>
+<image source="images/Fig_TCD_Methode1_gif.png" >
+<description>Boîte de dialogue pour l'insertion d'un tableau croisé dynamique et saisie du nom donné au tableau principal, soit Échantillon</description>
+</image>
+</figure>
+ </li> 
 
-<li> <p>Une boîte de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_1bis"/>).</p>
+<!-- <li> <p>Une boîte de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_1bis"/>).</p>
   <p> </p>  
     
 <figure xml:id="Fig_TCD_1bis">
@@ -795,7 +840,7 @@
 <description>Taper le nom donné au tableau principal, soit Échantillon</description>
 </image>
 </figure>
- </li>        
+ </li>    -->    
 
 <li> <p>Cliquer sur <alert>OK</alert>. </p></li>
 
@@ -838,9 +883,26 @@
 
 <li> <p> Cliquer sur le premier icône, soit <term> Tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_1"/>). </p></li>
 
-
-<li> <p>Une boîte de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_2_bis"/>). La plage de données à partir de laquelle on veut créer un tableau croisé dynamique est bien sélectionnée. </p>
+    
+    <li> <p>Une boîte de dialogue s'ouvrira. La plage de données à partir de laquelle on veut créer un tableau croisé dynamique est bien sélectionnée. </p>
+        
+        <p>Cliquer sur l'option <alert> Feuille de calcul existante </alert> pour déterminer l'emplacement du tableau croisé dynamique (voir la <xref ref="Fig_TCD_Methode2_gif2"/>)</p>
   <p> </p>  
+    
+    
+    
+<figure xml:id="Fig_TCD_Methode2_gif2">
+<caption>Sélection de la plage de données à partir de laquelle un tableau croisé dynamique sera généré et sélection de l'option <alert>Feuille de calcul existante</alert> et de la flèche pour l'emplacement du tableau croisé dynamique</caption>
+<image source="images/Fig_TCD_Methode2_gif2.png" >
+<description>Sélection de la plage de données à partir de laquelle un tableau croisé dynamique sera généré et sélection de l'option Feuille de calcul existante et de la flèche pour l'emplacement du tableau croisé dynamique</description>
+</image>
+</figure>
+ </li>   
+
+<!-- <li> <p>Une boîte de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_2_bis"/>). La plage de données à partir de laquelle on veut créer un tableau croisé dynamique est bien sélectionnée. </p>
+  <p> </p>  
+    
+    
     
 <figure xml:id="Fig_TCD_2_bis">
 <caption>Sélection de la plage de données à partir de laquelle un tableau croisé dynamique sera généré</caption>
@@ -860,7 +922,7 @@
 <description>Sélection de l'option Feuille de calcul existante et de la flèche pour l'emplacement du tableau croisé dynamique</description>
 </image>
 </figure>
- </li>        
+ </li>        -->
 
 <!--<li> <p>Cliquer sur la flèche pointée vers le haut pour sélectionner l'emplacement exact du tableau croisé dynamique (voir la <xref ref="Fig_TCD_3"/>). </p></li>-->
 
@@ -869,7 +931,7 @@
 
 <li> <p>Une fois dans la feuille <alert>Étude Atteint</alert>, cliquer sur la cellule <alert><c> B3 </c></alert> de la feuille. </p></li>
 
-<li> <p>Cliquer à nouveau sur la flèche vers le haut. Une boîte de dialogue apparaîtra confirmant l'emplacement du tableau croisé dynamique (voir la <xref ref="Fig_TCD_4"/>). </p>
+<li> <p>Cliquer l'onglet <alert>OK</alert> (voir la <xref ref="Fig_TCD_4"/>). </p>
     
  <p> </p>
     
@@ -881,7 +943,7 @@
 </figure>
  </li>     
 
-<li> <p>Cliquer <alert> OK </alert>. </p></li>
+
 
 
 <li> <p>Un tableau croisé dynamique vide sera déposé dans la feuille <alert> Étude Atteint </alert> (voir <xref ref="Fig_TCD_Generer"/>).  </p>
@@ -953,14 +1015,32 @@
 </image>
 </figure>
    </li>  
+    
+    
+     <li> <p> Glisser et déposer la variable <alert> Atteint </alert> dans la zone de saisie <alert> Valeurs </alert> cette fois-ci (voir la <xref ref="Fig_TCD_Atteint_M1_gif"/>). </p>
+         
+         <p></p>
+    <p> Par défaut, Excel effectue la somme des valeurs comme opération. Cependant, on veut compter le nombre de femmes dans chaque catégorie. Dans la zone de saisie <alert> Valeurs </alert>, cliquer sur la flèche du menu déroulant, puis sélectionner l'option <term> Paramètres des champs de valeurs </term> (voir la <xref ref="Fig_TCD_Atteint_M1_gif"/>) pour modifier le calcul. Une nouvelle boîte de dialoge apparaîtra.</p>
+    
+    <figure xml:id="Fig_TCD_Atteint_M1_gif">
+<caption>Glissement de la variable <alert>Atteint</alert> dans la zone de saisie <alert>Valeurs</alert></caption>
+<image source="images/Fig_TCD_Atteint_M1_gif.png">
+<description>Glissement de la variable Atteint dans la zone de saisie Valeurs</description>
+</image>
+</figure>
+    
+    
+  
+ </li>    
+    
 
-<li> <p> Glisser et déposer la variable <alert> Atteint </alert> dans la zone de saisie <alert> Valeurs </alert> cette fois-ci (voir la <xref ref="Fig_TCD_Atteint_3"/>). </p>
+<!-- <li> <p> Glisser et déposer la variable <alert> Atteint </alert> dans la zone de saisie <alert> Valeurs </alert> cette fois-ci (voir la <xref ref="Fig_TCD_Atteint_3"/>). </p>
     <p> </p>
     
     <figure xml:id="Fig_TCD_Atteint_3">
-<caption>Glissement de la variable <alert>Atteint</alert> dans la zone de saisie <alert>Valeurs</alert></caption>
+<caption>Glissement de la variable <alert>Atteint</alert> dans la zone de saisie <alert>Valeurs</alert> et sélection de l'option <alert>Paramètres des champs de valeurs</alert></caption>
 <image source="images/Fig_TCD_Atteint_3.png">
-<description>Glissement de la variable Atteint dans la zone de saisie Valeurs</description>
+<description>Glissement de la variable Atteint dans la zone de saisie Valeurs et sélection de l'option Paramètres des champs de valeurs</description>
 </image>
 </figure>
     
@@ -978,8 +1058,10 @@
 <description>Sélection de l'option Paramètres des champs de valeurs</description>
 </image>
 </figure>
+        
+ 
  </li>   
-
+-->
 
 <li> <p> À l'onglet <term> Synthèse des valeurs par </term>, sélectionner l'option <alert> Nombre </alert> (voir la <xref ref="Fig_TCD_Atteint_5"/>). </p>
     <p> </p>
@@ -1011,7 +1093,22 @@
 
 <li> <p> À l'onglet <alert> Synthèse des valeurs par </alert>, sélectionner l'option <alert> Nombre </alert> (voir la <xref ref="Fig_TCD_Atteint_5"/>). Attention, il ne faut pas cliquer <alert>OK</alert> tout de suite!</p></li>
 
-<li> <p> À droite de l'onglet <alert> Synthèse des valeurs par </alert>, cliquer sur l'onglet <term> Afficher les valeurs </term>. (voir la <xref ref="Fig_TCD_Atteint_5bis"/>). </p>
+
+    
+    <li> <p> À droite de l'onglet <alert> Synthèse des valeurs par </alert>, cliquer sur l'onglet <term> Afficher les valeurs </term>. </p>
+        
+        <p></p>
+    <p> Cliquer sur la flèche du menu déroulant et sélectionner l'option <alert> % du total général </alert> (voir la figure <xref ref="Fig_TCD_Atteint_M2_gif"/>)</p>
+    
+    <figure xml:id="Fig_TCD_Atteint_M2_gif">
+<caption>Sélection de l'onglet <alert>Afficher les valeurs</alert> et de l'option <alert>% du total général</alert></caption>
+<image source="images/Fig_TCD_Atteint_M2_gif.png">
+<description>Sélection de l'onglet Afficher les valeurs et de l'option Pourcentage du total général </description>
+</image>
+</figure>
+ </li> 
+    
+    <!-- <li> <p> À droite de l'onglet <alert> Synthèse des valeurs par </alert>, cliquer sur l'onglet <term> Afficher les valeurs </term>. (voir la <xref ref="Fig_TCD_Atteint_5bis"/>). </p>
     <p> </p>
     
     <figure xml:id="Fig_TCD_Atteint_5bis">
@@ -1032,7 +1129,9 @@
 <description>Sélection de l'option pourcentage du total général dans l'onglet Afficher les valeurs</description>
 </image>
 </figure>
- </li>    
+    
+ 
+ </li>   --> 
 
 <li> <p> Cliquer sur <alert> OK </alert>. La troisième colonne présente le pourcentage de femmes d'origine pima atteintes ou non du diabète. </p>
     <p> </p>

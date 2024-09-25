@@ -19,7 +19,7 @@
     <statement><p>En deux courtes phrases, résumer la situation du diabète et du niveau d'obésité chez la population de femmes Pimas</p></statement>
     </exercise>
     
-    <exercise><statement><p>Selon ToDo, il y a Todo% des femmes américaines qui sont atteintes du diabètes. Selon Todo, il y a Todo% des femmes mexicaines (Pima?) qui le sont. Quels constats faire des données étudiées à la lumière de ces informations?</p>
+    <exercise><statement><p>Selon la National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)<fn>https://www.niddk.nih.gov/health-information/health-statistics/diabetes-statistics#factsstats</fn>, il y a 8.8% des femmes américaines qui sont atteintes du diabètes (données de 2017-2020). Selon l'American Diabetes Association<fn>https://ictnews.org/archive/mexico-vs-arizona-pima-indians</fn>, il y a 6.9% des femmes mexicaines aussi d'origine pima qui le sont (données de 2006). En supposant que toutes ces valeurs et celles de la population étudiée sont restées les mêmes au fil du temps, quels constats faire au sujet des femmes pima vivant en Arizona à la lumière de ces informations?</p>
     </statement>
     </exercise>
     
@@ -34,10 +34,6 @@
     <p>Est-il correct de dire que les femmes pimas vivant en Arizona ont un niveau d'obésité moyen d'environ <m>4</m>? Expliquer.</p>
     </statement>
     </exercise>
-    <exercise>
-    <statement>
-    <p>La taille de la population féminine Pima en Arizona est estimée à environ <m>3000</m> personnes. Les données étudiées comprennent <m>768</m> femmes Pimas. On peut penser à des considérations de temps et de coûts, mais quelles autres raisons pourraient être invoquées pour procéder par sondage plutôt que par recensement (dans ce cas-ci ou en général)?</p>
-    </statement>
-    </exercise>
+    <exercise><p>Après avoir étudié les variables qualitatives, formuler deux hypothèses en lien avec ces variables et les autres.</p></exercise>
     </worksheet>
 </section>
