@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chap-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Distribution d'échantillonnage</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="Section_Prelab_Distribution_Excel.ptx" />
+  <xi:include href="Section_Laboratoire_Distribution_Excel.ptx" />
+  <xi:include href="Section_Postlab_Distribution_Excel.ptx" />
+
+</chapter>

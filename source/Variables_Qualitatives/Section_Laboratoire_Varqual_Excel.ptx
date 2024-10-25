@@ -2,6 +2,7 @@
 
 <section xml:id="sec-Laboratoire_Varqual" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Laboratoire</title>
+    <introduction>
     <p>Dans ce laboratoire, on cherche à représenter la répartition du nombre de femmes d'origine pima vivant en Arizona qui sont atteintes du diabète, ainsi que leur répartition selon leur niveau d'obésité, tel que qualifié par Santé Canada en fonction de l'indice de masse corporelle.</p>
     
     <p>Pour cela, on utilise les variables <alert>Atteint</alert> et <alert>Obésité</alert>, dont les tableaux croisés dynamiques ont été construits respectivement au <xref ref="chap-Intro" text="custom">Laboratoire 1</xref> et au <xref ref="sec-Prelab_Varqual" text="custom">pré laboratoire</xref> précédent. On rappelle que pour la variable <alert>Atteint</alert>, le code <m>0</m> signifie absence de diabète et le code <m>1</m> signifie que la femme est atteinte du diabète. Pour la variable <alert>Obésité</alert>, l'échelle de <m>1</m> à <m>6</m> se traduit par:
@@ -16,7 +17,7 @@
     </ol></p>
    
    <p>Dans ce laboratoire, on introduit la notion de mise en forme d'un tableau à des fins de publication, la création d'un diagramme circulaire et d'un diagramme à bandes, ainsi que la mise en forme appropriée pour ces deux éléments graphiques.</p>
-   
+</introduction>   
       <subsection>
         <title>Le tableau croisé dynamique et le tableau pour publication</title>
         <p>Le tableau croisé dynamique construit par Excel n'est pas adéquat pour publier comme source d'information. Il est nécessaire de préciser les étiquettes des lignes et des colonnes, d'ajouter un titre significatif ainsi que quelques éléments.</p>

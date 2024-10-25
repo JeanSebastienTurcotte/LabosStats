@@ -20,11 +20,11 @@
   
 <page>  
   <exercise xml:id="Postlab_1">
-  <statement><p>Dans le fichier Excel du laboratoire, examiner les valeurs de chaque variable du tableau <alert>Échantillon</alert>. Quelle(s) observation(s) peuvent être formuler à leur sujet? </p></statement>
+  <statement><p>Dans le fichier Excel du laboratoire, examiner les valeurs ou les modalités de chaque variable du tableau <alert>Échantillon</alert>. Quelle(s) observation(s) peuvent être formuler à leur sujet? </p></statement>
   </exercise>
     
   <exercise workspace="2.5in">
-  <statement><p>En tenant compte des variables de l'étude, formuler quelques objectifs envisageables après avoir passé en revue la littérature sur le diabète et les peuples d'origine pima. </p>   </statement>
+  <statement><p>En tenant compte des variables de l'étude, formuler quelques objectifs envisageables après avoir passé en revue la littérature sur le diabète et les peuples d'origine pima. </p> </statement>
   </exercise>
   
   <exercise workspace="2.5in">

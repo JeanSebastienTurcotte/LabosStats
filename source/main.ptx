@@ -15,7 +15,8 @@
     <xi:include href="./Introduction/Chapitre_Introduction_Excel.ptx" />
     <xi:include href="./Variables_Qualitatives/Chapitre_Varqual_Excel.ptx" />
     <xi:include href="./Variables_Quantitatives/Chapitre_Varquant_Excel.ptx" />
-
+    <xi:include href="./Distribution_Echantillonnale/Chapitre_Distribution_Excel.ptx" />
+    <xi:include href="./Tests_Hypotheses/Chapitre_TestHyp_Excel.ptx" />
 
     <!-- Include backmatter -->
    <xi:include href="./backmatter.ptx" /> 

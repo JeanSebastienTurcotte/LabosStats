@@ -3,10 +3,10 @@
 <section xml:id="sec-Prelab_Introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Prélab</title>
     
-<p>Les trois premiers laboratoires sont dédiés à l'étude de la maladie du diabète, en mettant l'accent sur les femmes d'origine pima. Les Pimas sont un peuple autochtone de la région du Sonora, au Mexique, et de l'État de l'Arizona, aux États-Unis. Les données utilisées proviennent du National Institute of Diabetes and Digestive and Kidney Diseases (l'Institut National du Diabète et des Maladies Digestives et Rénales). Les femmes ont été suivies sur une longue période de temps, de 1965 à 1995. Ce type de recherche est appelé étude longitudinale, et son objectif est de suivre l'évolution d'une variable au fil du temps. L'année exacte de la collecte de données pour ce laboratoire n'est cependant pas connue. </p>
+<p>Les trois premiers laboratoires sont consacrés à l'étude de la maladie du diabète, en mettant l'accent sur les femmes d'origine pima. Les Pimas sont un peuple autochtone de la région du Sonora, au Mexique, et de l'État de l'Arizona, aux États-Unis. Les données utilisées proviennent du National Institute of Diabetes and Digestive and Kidney Diseases (l'Institut National du Diabète et des Maladies Digestives et Rénales des États-Unis). Les femmes ont été suivies sur une longue période de temps, soit de 1965 à 1995. Ce type de recherche, appelé étude longitudinale, vise à suivre l'évolution d'une variable dans le temps. L'année exacte de la collecte de données pour ce laboratoire n'est toutefois pas connue. </p>
     
     
-<p>Selon Santé Canada, le diabète est défini comme &#xAB; une maladie chronique qui se développe lorsque le corps ne produit pas l'insuline dont il a besoin pour transformer le sucre en énergie ou qu'il ne l'utilise pas efficacement &#xBB;. Cette maladie se divise en trois catégories : le diabète de type 1, le diabète de type 2 et le diabète gestationnel. Le diabète de type 1 se caractérise par une production insuffisante d'insuline par le corps. Le diabète de type 2 est lié à une résistance du corps à l'insuline. Le diabète gestationnel, quant à lui, se manifeste par une élévation récente du taux de glucose dans le sang d'une femme enceinte.</p>
+<p>Selon Santé Canada, le diabète est défini comme &#xAB; une maladie chronique qui se développe lorsque le corps ne produit pas l'insuline dont il a besoin pour transformer le sucre en énergie ou qu'il ne l'utilise pas efficacement &#xBB;<fn>https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/diabete.html</fn>. Cette maladie se divise en trois catégories : le diabète de type 1, le diabète de type 2 et le diabète gestationnel. Le diabète de type 1 se caractérise par une production insuffisante d'insuline par le corps. Le diabète de type 2 est lié à une résistance du corps à l'insuline. Le diabète gestationnel, quant à lui, se manifeste par une élévation récente du taux de glucose dans le sang d'une femme enceinte.</p>
     
 <p>Dans l'étude présentée, on se concentre sur le diabète de type 2, une forme de diabète fréquemment associée à l'inactivité physique, à l'obésité, à l'âge avancé d'un individu, ainsi qu'à des antécédents familiaux de diabète de type 2. Plusieurs communautés autochtones rencontrent des obstacles pour accéder à des soins de santé adéquats en raison de ressources limitées, de faibles revenus et de conditions économiques précaires. </p>
     
@@ -15,7 +15,7 @@
 <p>
 <ul>
     
-<li><p>l'<term>identifiant</term> des participantes. L'éthique en matière de recherche exige l'anonymat des personnes participantes. Ainsi, un numéro est attribué à chaque individu afin d'éviter de divulguer de leur identité;</p></li>
+<li><p>l'<term>identifiant</term> des participantes. L'éthique en matière de recherche exige l'anonymat des personnes participantes. Ainsi, un numéro est attribué à chaque individu afin d'éviter de divulguer leur identité;</p></li>
     
 <li><p> l'<term>âge</term> des participantes en année; </p></li>
     
@@ -27,7 +27,7 @@
     
 <li> <p> l'<term>insuline</term> dans le sang en <m>\mu</m>U/mL. L'insuline est une hormone produite par le pancréas. Elle joue un rôle crucial dans le maintien de l'équilibre énergétique du corps et la régulation du taux de glucose sanguin. Après un repas riche en glucides, le taux de glucose peut augmenter rapidement; l'insuline intervient alors pour l'abaisser. En cas de production insuffisante d'insuline ou si le corps devient résistant à son action, le glucose reste en excès dans le sang, ce qui peut entraîner des maladies comme le diabète de type 1 ou le diabète de type 2. Dans l'étude des femmes d'origine pima, l'accent est mis sur le risque de développement du diabète de type 2;</p></li>
 
-<li> <p> l'<term>indice de masse corporelle</term> (IMC) en kg/m<m>^{2}</m>. Comme l'indiquent ses unités, l'IMC est la valeur obtenue en divisant la masse d'un individu par sa taille au carré. Il s'agit d'un indicateur permettant d'estimer le surpoids d'une personne. Selon Statistique Canada, l'IMC fournit &#xAB; un moyen de classer le poids corporel en fonction de risque pour la santé &#xBB; (CITATION?). Cependant, l'IMC n'est pas sans faille. Il ne fournit aucune information concernant la distribution de la matière grasse dans le corps; </p></li>
+<li> <p> l'<term>indice de masse corporelle</term> (IMC) en kg/m<m>^{2}</m>. Comme l'indiquent ses unités, l'IMC est la valeur obtenue en divisant la masse d'un individu par sa taille au carré. Il s'agit d'un indicateur permettant d'estimer le surpoids d'une personne. Selon Statistique Canada, l'IMC fournit &#xAB; un moyen de classer le poids corporel en fonction de risque pour la santé &#xBB; <fn>https://www150.statcan.gc.ca/n1/pub/82-229-x/2009001/status/abm-fra.htm</fn>. Cependant, l'IMC n'est pas sans faille. Il ne fournit aucune information concernant la distribution de la matière grasse dans le corps; </p></li>
     
 <li> <p> les stades d'<term>obésité</term> selon Santé Canada (catégorie de  l'IMC) :</p>
     
@@ -49,7 +49,7 @@
  
     
 <li> <p> l'<term>atteinte</term> au diabète (avoir ou non le diabète).</p> 
-    <p><ol marker="0">
+    <p><ol marker="0. ">
     
         <li> <p>Non </p></li>
         <li> <p>Oui </p></li>

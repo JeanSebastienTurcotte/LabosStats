@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Postlab_Distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Réflexions</title>
+<p>Le travail accompli dans ce laboratoire théorique aura permis de voir que, même avec un échantillon de grande taille, une statistique comme la moyenne n'est qu'une approximation de la valeur réelle dans la population.</p>
+<worksheet>
+<title>Travail à faire après le laboratoire</title>
+
+<objectives>
+    <ul>
+      <li><p>Comparer certains résultats obtenus avec la théorie.</p></li>
+      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>Formuler des hypothèses de recherche.</p></li>
+    </ul>
+    </objectives>
+    
+<!--<exercise><statement><p>Calculer l'écart interquartile de la population et comparer la valeur obtenue avec l'écart type de la population. En temps normal, ces deux valeurs sont près l'une de l'autre lorsqu'il n'y a pas de valeurs extrêmes. Pour une distribution normale, on s'attendrait à ce que <m>\sigma\approx 0.7413 (Q_3-Q_1)</m></p></statement></exercise>-->
+<exercise><statement><p>Dans l'analyse de la moyenne échantillonnale en fonction de la taille de l'échantillon, pourquoi est-ce que l'écart-type varie en fonction de <m>n</m>? Est-ce ce qui est attendu de la théorie?</p></statement></exercise>
+<exercise>
+<statement><p>Utiliser les écarts types calculés dans la sous-section <xref ref="ssec-tailleechantillons"/> afin de tracer le graphique de l'écart type en fonction de la taille de l'échantillon. Ajouter une courbe de tendance de type &#xAB; puissance &#xBB; et comparer l'équation donnée par Excel avec celle établie par le théorème central limite. Commenter les différences.</p>
+<figure>
+<caption>Insertion d'une courbe de tendance de type &#xAB; puissance &#xBB;</caption>
+<sidebyside widths="70% 30%">
+<image source="images/Ecarttype1.png">
+<shortdescription>Capture d'écran Excel montrant comment aller ajouter une courbe de tendance.</shortdescription>
+</image>
+<image source="images/Ecarttype2.png">
+<shortdescription>Capture d'écran Excel montrant comment choisir la courbe de tendance de type puissance et comment afficher son équation sur le graphique.</shortdescription>
+</image>
+</sidebyside>
+</figure></statement>
+</exercise>
+<exercise><statement><p>Commenter l'allure des courbes à mesure que la valeur de <m>n</m> ou <m>Nb_E</m> augmente. Est-ce le comportement attendu? Justifier brièvement.</p></statement></exercise>
+<exercise><statement><p>La théorie de la loi normale stipule que <m>99.73\%</m> des données provenant d'une loi normale se situe entre <m>-3\sigma</m> et <m>3\sigma</m>. Vérifier ce fait à l'aide des <m>10\,000</m> échantillons de taille <m>10</m>. Utiliser la véritable moyenne <m>\mu</m> et <m>\sigma_{\overline{X}}=\frac{\sigma}{\sqrt{10}}</m>.</p></statement></exercise>
+<exercise><introduction><p>Regarder la valeur minimale et la valeur maximale de la durée des trajets.</p></introduction>
+<task><statement><p> Est-ce que ces valeurs apparaissent suspectent? Expliquer pourquoi (au besoin, convertir en heures).</p></statement></task>
+<task><statement><p>En tant qu'analyste, quelle démarche serait-il possible d'entreprendre afin de vérifier la validité des données?</p></statement></task>
+</exercise>
+<exercise><statement><p>Le graphique ci-dessous illustre la distribution du maximum échantillonnale pour <m>100</m> échantillons de <m>10\,000</m> trajets en BIXI. On peut voir que la forme de la distribution n'est pas la même que la cloche de la loi normale, contrairement à celle pour la distribution des moyennes. Commenter cette remarque.</p>
+<figure>
+<image source="images/Maximumsdistribution.png">
+<shortdescription>Un histogramme est illustré, avec la proportion des données augmentant au fur et à mesure que les valeurs en abscisses augmentent.</shortdescription>
+</image>
+</figure>
+</statement></exercise>
+<exercise><statement><p>Générer <m>100</m> échantillons de taille <m>1000</m> et considérer la proportion des trajets qui proviennent de membres de BIXI. Tracer l'histogramme des proportions échantillonnales.</p></statement></exercise>
+<exercise>
+<statement><p>Formulez quelques hypothèses utilisant certaines des autres variables de cette base de données. </p></statement>
+</exercise>
+</worksheet>
+</section>

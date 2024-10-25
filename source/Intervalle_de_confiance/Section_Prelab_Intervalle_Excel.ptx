@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Prelab_Distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Prélab</title>
+<p> </p>
+<worksheet xml:id="ws-Prelab_Distribution">
+<title>Travail à faire avant le cours</title>
+
+<objectives>
+    <ul>
+      <li><p>Explorer le comportement de la moyenne échantillonnale pour une petite population.</p></li>
+      <li><p>Faire l'étude descriptive de la population des trajets en BIXI.</p></li>
+    </ul>
+  </objectives>
+<introduction>
+<p></p>
+</introduction>
+<page>
+<exercise xml:id="exo-echantillons">
+<introduction><p>L'un des objectifs du laboratoire est d'observer le comportement de la moyenne d'un échantillon par rapport à la véritable moyenne de la population en fonction de l'échantillon choisi. Afin de bien cerner ce contexte théorique, on propose un exemple simple illustrant certains des concepts qui seront par la suite approfondis.</p>
+<p>On considère une population de <m>5</m> individus dont la hauteur (en cm) est donnée dans la table suivante:</p>
+<table>
+  <title>Grandeur en cm d'une population de 5 individus</title>
+  <tabular top="major">
+    <row bottom="medium">
+      <cell>
+        Individu
+      </cell>
+      <cell>
+        Grandeur (cm)
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_1</m>
+      </cell>
+      <cell>
+        185
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_2</m>
+      </cell>
+      <cell>
+        175
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_3</m>
+      </cell>
+      <cell>
+        155
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_4</m>
+      </cell>
+      <cell>
+        165
+      </cell>
+    </row>
+    <row bottom="major">
+      <cell>
+        <m>x_5</m>
+      </cell>
+      <cell>
+        195
+      </cell>
+    </row>
+  </tabular>
+</table>
+</introduction>
+<task workspace="2in"><statement><p>Calculer la moyenne et l'écart type de cette population.</p></statement></task>
+<task><statement><p>Il existe <m>31</m> échantillons différents de cette population. Par exemple, il y a <m>{5\choose 2}=10</m> échantillons de taille <m>2</m>. Chacun de ces échantillons produit une moyenne et un écart type qui diffère possiblement des valeurs calculées dans la question précédente. On s'intèresse au comportement de la moyenne échantillonnale en ce qui a trait à la taille de l'échantillon choisi. Compléter les données manquantes dans la table suivante. Les deux dernières lignes représentent la moyennes et l'écart type des moyennes des échantillons pour une taille donnée.</p>
+<p>Faire les calculs à l'aide d'un logiciel ou d'une calculatrice.</p>
+<!-- full table --> <!--<table>
+  <title>Moyennes échantillonnales de tous les échantillons possibles</title>
+  <tabular top="major">
+    <row header="yes" halign="center">
+      <cell colspan="2" right="medium">
+        <m>n=1</m>
+      </cell>
+      <cell colspan="2" right="medium">
+        <m>n=2</m>
+      </cell>
+      <cell colspan="2" right="medium">
+         <m>n=3</m>
+      </cell>
+      <cell colspan="2" right="medium">
+        <m>n=4</m>
+      </cell>
+      <cell colspan="2">
+        <m>n=5</m>
+      </cell>
+    </row>
+    <row header="yes">
+      <cell>
+        Échantillons
+      </cell>
+      <cell right="medium">
+        <m>\bar{x}</m>
+      </cell>
+      <cell>
+        Échantillons
+      </cell>
+      <cell right="medium">
+        <m>\bar{x}</m>
+      </cell>
+      <cell>
+        Échantillons
+      </cell>
+      <cell right="medium">
+        <m>\bar{x}</m>
+      </cell>
+      <cell>
+        Échantillons
+      </cell>
+      <cell right="medium">
+        <m>\bar{x}</m>
+      </cell>
+      <cell>
+        Échantillons
+      </cell>
+      <cell>
+        <m>\bar{x}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_1</m>
+      </cell>
+      <cell right="medium">
+        <m>185</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2\}</m>
+      </cell>
+      <cell right="medium">
+        <m>180</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_3\}</m>
+      </cell>
+      <cell right="medium">
+        <m>171,67</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_3,x_4\}</m>
+      </cell>
+      <cell right="medium">
+        <m>170</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_3,x_4,x_5\}</m>
+      </cell>
+      <cell>
+        <m>175</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_2</m>
+      </cell>
+      <cell right="medium">
+        <m>175</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_3\}</m>
+      </cell>
+      <cell right="medium">
+        <m>170</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_4\}</m>
+      </cell>
+      <cell right="medium">
+        <m>175</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_3,x_5\}</m>
+      </cell>
+      <cell right="medium">
+        <m>177,5</m>
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_3</m>
+      </cell>
+      <cell right="medium">
+        <m>155</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_4\}</m>
+      </cell>
+      <cell right="medium">
+        <m>175</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_5\}</m>
+      </cell>
+      <cell right="medium">
+        <m>185</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_4</m>
+      </cell>
+      <cell right="medium">
+        <m>165</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_5\}</m>
+      </cell>
+      <cell right="medium">
+        <m>190</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_3,x_4\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_1,x_3,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>x_5</m>
+      </cell>
+      <cell right="medium">
+        <m>195</m>
+      </cell>
+      <cell>
+        <m>\{x_2,x_3\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_1,x_3,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_3,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_4\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_1,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_3,x_4\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_3,x_4\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_3,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_3,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_3,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+        <m>175</m>
+      </cell>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="major">
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+        <m>14,14</m>
+      </cell>
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+  </tabular>
+</table> -->
+<!-- colonne 1 à 3--> <table>
+  <title>Moyennes échantillonnales de tous les échantillons possibles</title>
+  <tabular top="major">
+    <row header="yes" halign="center">
+      <cell colspan="2" right="medium">
+        <m>n=1</m>
+      </cell>
+      <cell colspan="2" right="medium">
+        <m>n=2</m>
+      </cell>
+      <cell colspan="2">
+         <m>n=3</m>
+      </cell>
+    </row>
+    <row header="yes">
+      <cell>
+        Échantillons
+      </cell>
+      <cell right="medium">
+        <m>\bar{x}</m>
+      </cell>
+      <cell>
+        Échantillons
+      </cell>
+      <cell right="medium">
+        <m>\bar{x}</m>
+      </cell>
+      <cell>
+        Échantillons
+      </cell>
+      <cell>
+        <m>\bar{x}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_1\}</m>
+      </cell>
+      <cell right="medium">
+        <m>185</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2\}</m>
+      </cell>
+      <cell right="medium">
+        <m>180</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_3\}</m>
+      </cell>
+      <cell>
+        <m>171,67</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_2\}</m>
+      </cell>
+      <cell right="medium">
+        <m>175</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_3\}</m>
+      </cell>
+      <cell right="medium">
+        <m>170</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_4\}</m>
+      </cell>
+      <cell>
+        <m>175</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_3\}</m>
+      </cell>
+      <cell right="medium">
+        <m>155</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_4\}</m>
+      </cell>
+      <cell right="medium">
+        <m>175</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_5\}</m>
+      </cell>
+      <cell>
+        <m>185</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_4\}</m>
+      </cell>
+      <cell right="medium">
+        <m>165</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_5\}</m>
+      </cell>
+      <cell right="medium">
+        <m>190</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_3,x_4\}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_5\}</m>
+      </cell>
+      <cell right="medium">
+        <m>195</m>
+      </cell>
+      <cell>
+        <m>\{x_2,x_3\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_1,x_3,x_5\}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_4\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_1,x_4,x_5\}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_3,x_4\}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_3,x_4\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_3,x_5\}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_3,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_2,x_4,x_5\}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        <m>\{x_3,x_4,x_5\}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+        <m>175</m>
+      </cell>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="major">
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+        <m>14,14</m>
+      </cell>
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+  </tabular>
+</table>
+<!-- colonne 4 et 5--><table>
+  <title>Moyennes échantillonnales de tous les échantillons possibles</title>
+  <tabular top="major">
+    <row header="yes" halign="center">
+      <cell colspan="2" right="medium">
+        <m>n=4</m>
+      </cell>
+      <cell colspan="2">
+        <m>n=5</m>
+      </cell>
+    </row>
+    <row header="yes">
+      <cell>
+        Échantillons
+      </cell>
+      <cell right="medium">
+        <m>\bar{x}</m>
+      </cell>
+      <cell>
+        Échantillons
+      </cell>
+      <cell>
+        <m>\bar{x}</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_1,x_2,x_3,x_4\}</m>
+      </cell>
+      <cell right="medium">
+        <m>170</m>
+      </cell>
+      <cell>
+        <m>\{x_1,x_2,x_3,x_4,x_5\}</m>
+      </cell>
+      <cell>
+        <m>175</m>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_1,x_2,x_3,x_5\}</m>
+      </cell>
+      <cell right="medium">
+        <m>177,5</m>
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_1,x_2,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>\{x_1,x_3,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell>
+        <m>\{x_2,x_3,x_4,x_5\}</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+        <m>175</m>
+      </cell>
+      <cell>
+        Moyenne <m>\mu_{\overline{X}}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="major">
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell right="medium">
+        <m>14,14</m>
+      </cell>
+      <cell>
+        Écart type <m>\sigma_{\overline{X}}</m>
+      </cell>
+      <cell>
+      </cell>
+    </row>
+  </tabular>
+</table>
+
+</statement></task>
+<task workspace="2.5in"><statement><p>Formuler des observations sur le comportement de <m>\overline{X}</m> par rapport à la taille de l'échantillon.</p></statement></task>
+</exercise>
+<exercise workspace="2in"><statement><p>On regarde les notes finales de tous les élèves qui suivent un cours de probabilités et statistique. On considère aussi la moyenne finale de tous les groupes de ce même cours. Laquelle de ces deux variables aléatoires devrait posséder la plus grande variabilité? Comparer la réponse à cette question avec les observations de la question <xref ref="exo-echantillons" text="local"/>.</p></statement></exercise>
+</page>
+<page>
+<exercise>
+<introduction><p>Télécharger et ouvrir le fichier <c>Bixi_août_2016.xlsx</c> disponible à l'adresse ToDo. Ce fichier contient une feuille de calcul appelée &#xAB;Trajets en BIXI août 2016&#xBB;, laquelle contient quatre variables et <m>688174</m> données, représentant l'ensemble de tous les trajets effectués en Bixi à Montréal durant le mois d'août 2016. On considère ces trajets comme la population à l'étude.</p></introduction>
+<task>
+<statement>
+<p>Dans la feuille de calcul <alert>Trajets en BIXI août 2016</alert>, nommer le tableau des données ainsi que ses colonnes, tel que montré à la <xref ref="ssec-Nommerdescellules"/>. Créer ensuite une deuxième feuille de calculs intitulée &#xAB;Échantillonnage_canevas&#xBB;. Déplacer cette feuille de calcul à la gauche de la première. Cela évitera plus tard de la sélectionner par erreur.</p>
+</statement></task>
+<task workspace="2.5in">
+<statement><p>Faire l'étude descriptive de la population telle que décrite dans la <xref ref="sssec_Mesures"/>. À la vue de ces mesures, est-ce qu'on peut qualifier la distribution d'à peu près normale? Expliquer.</p></statement>
+</task>
+</exercise>
+<exercise><statement><p>Faire une lecture sommaire des sections <xref ref="sec-adresse" text="title"/>,<xref ref="sec-indirect" text="title"/> et <xref ref="sec-substitue" text="title"/> de l'annexe.</p></statement></exercise>
+</page>
+</worksheet>
+</section>

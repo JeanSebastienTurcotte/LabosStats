@@ -18,7 +18,7 @@
  <xi:include href="Annexes/Importation.ptx"/>
  <xi:include href="Annexes/Manipulation.ptx"/>
  <xi:include href="Annexes/Divers.ptx"/>
- 
+ <xi:include href="Annexes/Fonctions_utiles.ptx"/>
  <!-- En dernier -->
   <xi:include href="Annexes/Raccourcis.ptx"/>
   <colophon>

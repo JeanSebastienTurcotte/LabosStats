@@ -27,7 +27,7 @@
   <p>
   <ul>
   
-      <li><p> Ajouter une nouvelle feuille de calcul intitulé <alert>Étude Nombre de grossesses</alert>. Déplacer cette feuille en dernière position si Excel ne le fait pas automatiquement.</p></li>
+      <li><p> Ajouter une nouvelle feuille de calcul intitulée <alert>Étude Nombre de grossesses</alert>. Déplacer cette feuille en dernière position si Excel ne le fait pas automatiquement.</p></li>
       
       <li><p> Dans cette feuille, créer le tableau croisé dynamique de la répartition des 768 femmes d'origine pima selon le nombre de grossesses.</p></li>
       
@@ -45,7 +45,7 @@
   <p>
   <ul>
   
-      <li><p> Dans la feuille de calcul <alert>Étude Nombre de grossesses</alert>, créer le diagramme à bâtons en sélectionnant l'icône <alert>Insérer un histogramme ou un graphique à barres</alert> à partir de l'onglet <alert>Insertion</alert>.</p></li>
+      <li><p> Dans la feuille de calcul <alert>Étude Nombre de grossesses</alert>, créer le diagramme à bâtons en sélectionnant l'icône <alert>Insérer un histogramme ou un graphique à barres</alert> à partir de l'onglet <alert>Insertion</alert>. Sélectionner la première option de graphique proposée par Excel.</p></li>
       
       <li><p> Faire la mise en forme du diagramme en respectant toutes les normes de présentation abordées lors des deux laboratoires précédents. Noter que dans la zone de saisie de <alert>Largeur des intervalles</alert>, taper <em>500%</em> pour avoir la largeur maximale entre les bâtons et pour les amincir le plus possible.</p></li>
       
@@ -64,8 +64,26 @@
    <statement><p>À la lumière du graphique fait à l'exercice <xref ref="PrelabVarquant_2"/>, quelles sont les limites d'un diagramme à bâtons?</p></statement>
   </exercise>
     
-  </page>
-  
+    </page>
+    
+    <page>
+    
+     <exercise workspace="2.5in"> 
+  <statement>
+  <p>Considérer le graphique suivant. Déceler tous les problèmes avec ce graphique.</p>
+      <p></p>
+  <figure xml:id="fig-mauvaisgraphquant">
+  <caption>Histogramme de la répartition des hommes québécois de 20 ans et plus en fonction de leur taille en 2005</caption>
+  <image source="images/Fig_MauvaisGraphQuant.png">
+  <description>Histogramme de la répartition des hommes québécois de 20 ans et plus en fonction de leur taille en 2005</description>
+  </image>
+  </figure>
+         </statement>
+        </exercise> 
+      
+     </page>
+       
+      
 </worksheet>    
     
     
