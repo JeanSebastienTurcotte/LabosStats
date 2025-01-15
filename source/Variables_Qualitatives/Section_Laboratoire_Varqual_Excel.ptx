@@ -39,7 +39,7 @@
     
     </subsection>
 
-    <subsection>
+    <subsection xml:id="ssec-MiseEnFormeTableau">
         <title>Mise en forme tableau</title>
         <p>Une fois les données extraites du tableau croisé dynamique, on ajoute les étiquettes de colonnes et de lignes, le titre du tableau et la source des données. Pour le moment, on ne se soucie pas de la mise en forme de ces éléments. Dans un premier temps, pour le tableau concernant la variable <alert>Atteint</alert> du diabète, les étapes qui suivent devraient mener à un tableau de quatre lignes et trois colonnes.
    <list xml:id="li-tableau">

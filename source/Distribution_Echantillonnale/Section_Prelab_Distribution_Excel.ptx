@@ -795,7 +795,6 @@ BIXI Montréal est un organisme à but non lucratif créé en 2014 par la Ville 
         Moyenne <m>\mu_{\overline{X}}</m>
       </cell>
       <cell right="medium">
-        <m>175</m>
       </cell>
       <cell>
         Moyenne <m>\mu_{\overline{X}}</m>
@@ -808,7 +807,6 @@ BIXI Montréal est un organisme à but non lucratif créé en 2014 par la Ville 
         Écart type <m>\sigma_{\overline{X}}</m>
       </cell>
       <cell right="medium">
-        <m>14,14</m>
       </cell>
       <cell>
         Écart type <m>\sigma_{\overline{X}}</m>
@@ -835,7 +833,7 @@ BIXI Montréal est un organisme à but non lucratif créé en 2014 par la Ville 
 <statement><p>Faire l'étude descriptive de la population telle que décrite dans la <xref ref="sssec_Mesures"/>. À la vue de ces mesures, est-ce qu'on peut qualifier la distribution d'à peu près normale? Expliquer.</p></statement>
 </task>
 </exercise>
-<exercise><statement><p>Faire une lecture sommaire des sections <xref ref="sec-adresse" text="title"/>,<xref ref="sec-indirect" text="title"/> et <xref ref="sec-substitue" text="title"/> de l'annexe.</p></statement></exercise>
+<exercise><statement><p>Faire une lecture sommaire des sections <xref ref="sec-adresse" text="title"/>, <xref ref="sec-indirect" text="title"/> et <xref ref="sec-substitue" text="title"/> de l'annexe.</p></statement></exercise>
 </page>
 </worksheet>
 </section>

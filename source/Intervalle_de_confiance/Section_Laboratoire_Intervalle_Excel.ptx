@@ -1,181 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-Laboratoire_Distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-Laboratoire_Intervalle" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Laboratoire</title>
-<introduction><p>Il est rare que l'on ait accès à la population. Lorsque l'on calcule des mesures statistiques comme la moyenne, la médiane ou l'écart type à partir d'un échantillon, il est essentiel de comprendre que ces valeurs seraient fort probablement différentes si l'échantillon était lui-même différent. En fait, chacune des ces mesures statistiques est une variable aléatoire dont la distribution dépend de celle de la population et de ses paramètres.</p>
-
-<p>Puisque l'on a accès aux données de la population, il est possible d'observer les variations de la moyenne échantillonnale, notée <m>\overline{X}</m>, selon l'échantillon choisi et de comparer ces variations à la véritable moyenne, que l'on peut calculer. Dans la pratique, ces données ne seraient probablement pas disponibles. Il faudrait donc estimer les paramètres de la distribution, comme la moyenne, à l'aide d'un échantillon. Toutefois, il faut être conscient des limites de ces estimations et comprendre comment se comporte la variable aléatoire <m>\overline{X}</m> pour en tirer de bonnes conclusions. </p>
+<introduction>
+<p>Comme mentionné dans l'introduction, on n'a normalement pas accès aux valeurs de la population. On va alors tenter de reproduire le calcul d'un intervalle équivalent à celui de l'exercice (<xref ref="exo-probintervallexbarre" text="global"/>), mais qui sera centré autour de <m>\overline{x}</m> et qui utilisera <m>s</m> plutôt que <m>\sigma</m>. Les intervalles auront la forme
+<men xml:id="eq-intervalleconfiance">
+\left[\overline{x}-z_{\alpha/2}\frac{s}{\sqrt{n}};\overline{x}+z_{\alpha/2}\frac{s}{\sqrt{n}} \right]
+</men>,
+où <m>\alpha=0.05</m>. On reproduit ainsi un intervalle dont le <term>risque d'erreur</term> est de <m>5\%</m>. Ci-dessous, on analyse l'impact de prendre <m>s</m> comme approximation de <m>\sigma</m>.
+</p>
 </introduction>
+<subsection xml:id="ssec-intervalles95">
+<title>Intervalles pour une moyenne</title>
+<p>Créer une nouvelle feuille de calculs nommée &#xAB; Intervalle1 &#xBB; dans le fichier <alert>Bixi</alert>. Dans la plage <c>A1:B4</c>, inscrire dans la colonne <c>A</c> les étiquettes <m>n=</m>,<m>\text{alpha}=</m> et <m>z\text{alpha}/2=</m> et entrer <m>30</m> et <m>0.05</m> dans <c>B1</c> et <c>B2</c> respectivement pour <m>n</m> et alpha. Calculer à l'aide des formules de la loi normale la valeur de <m>z_{\alpha/2}</m>.</p>
 
+<p>On commence par construire un tableau qui contiendra les moyennes échantillonnales, les écart types échantillonnaux, ainsi que les bornes inférieures et supérieures de l'intervalle de l'équation <xref ref="eq-intervalleconfiance"/> des échantillons créés à l'exercice <xref ref="exo-echantillons11" text="global"/>. Pour cela,
+<ol>
+<li><p>Reporter les moyennes pour analyse et les écarts types calculés à l'exercice <xref ref="exo-moyennesecartstypes" text="global"/>;</p></li>
+<li><p>Ensuite, calculer les bornes inférieures et supérieures de chaque intervalle selon la formule <xref ref="eq-intervalleconfiance"/>; </p></li>
+<li><p>Ajouter une ligne (ou une colonne, selon la construction précédente) qui déterminera si <m>\mu</m> se retrouver dans l'intervalle pour chaque valeurs <m>\overline{x}</m>. Pour cela, on utilise ensemble les commandes <c>SI</c> et <c>ET</c>. La commande <c>SI</c> retournera <m>1</m> si sa condition est remplie et <m>0</m> sinon. La condition en tant que telle sera donnée par la fonction <c>ET</c>, qui vérifiera si la véritable moyenne est dans l'intervalle. La formule ressemblera à <c>SI(ET($B$4>=H2;$B$4&lt;=I2);1;0)</c>. Dans cet exemple, la cellule <c>B4</c> contient la vraie moyenne de la population et les cellules <c>H2</c> et <c>I2</c> sont respectivement les bornes inférieures et supérieures de l'intervalle de confiance;</p></li>
+<li><p>Calculer la proportion des intervalles qui contiennent <m>\mu</m>. Pour cela, il suffit de compter combien de <m>1</m> ont été retournés par les fonctions <c>SI</c> et de diviser par le nombre d'échantillons totaux, soit <m>1000</m> dans ce cas. Comparer avec le résultat &#xAB; attendu &#xBB; de <m>95\%</m>. Au besoin, recalculer la feuille avec <kbd>Shift</kbd>+<kbd>F9</kbd> si le calcul automatique est désactivé. </p></li>
+</ol></p>
+<p>ToDo Postlab Pense pas car question dans postlab réfère? À présent, on s'intéresse au résultat des questions <xref ref="exo-taille95-1" text="global"/> et <xref ref="exo-taille95-2" text="global"/> du pré-laboratoire.</p>
+<p>Créer une copie de la feuille <alert>Intervalle1</alert> et modifier la valeur de <m>\alpha</m> afin qu'elle corresponde à la valeur de l'exercice <xref ref="exo-taille95-1" text="global"/>. Vérifier que la proportion des intervalles contenant la moyenne est près du niveau de confiance attendu et vérifier également que la marge d'erreur est d'environ <m>50</m> secondes. en ajoutant une colonne ou une ligne &#xAB;marge d'erreur&#xBB;.</p>
+<p>Créer ensuite une série de nouvelles feuilles afin de tirer <m>100</m> échantillons de la taille appropriée, soit celle calculée à la question <xref ref="exo-taille95-2" text="global"/>. Vérifier que la proportion des intervalles contenant la moyenne est près du niveau de confiance <m>95\%</m> et vérifier également que la marge d'erreur est d'environ <m>50</m> secondes, comme il est attendu.</p>
+<p>En vertu de ces constructions, est-ce que la réponse à l'exercice <xref ref="exo-intervallemememarge"/> est toujours la bonne?</p>
+</subsection>
 <subsection>
-<title>Préparation du fichier</title>
-<p>L'échantillonnage est le procédé par lequel on sélectionne les unités statistiques d'une population afin qu'ils fassent partie d'un échantillon. Il existe plusieurs techniques d'échantillonnage, séparées en deux catégories: aléatoires et non aléatoire. Dans un monde idéal, il faudrait toujours que l'échantillonnage soit fait de manière aléatoire, mais, pour des raisons parfois d'impractibilité, ce n'est pas toujours possible. Comme l'étude des techniques d'échantillonnage n'est pas l'objectif de ce laboratoire, on procédera par l'une des méthodes les plus simples, soit l'échantillonnage aléatoire simple, avec remise. Cela signifie que chaque individu de la population a la même chance d'être choisi pour faire partie de l'échantillon et ce, pour chaque membre de l'échantillon (c'est ce que le &#xAB;avec remise&#xAB; signifie). Comme la taille de la population est grande comparativement à la taille des échantillons qui seront considérés, cette technique n'a pas tendance à donner des résultats trop différents de celle où l'on aurait pris les échantillons sans remise.</p>
-<p>Pour comprendre le comportement de <m>\overline{X}</m>, on s'intéresse à deux paramètres, soit la taille des échantillons, noté <m>n</m> et le nombre d'échantillons tirés, noté <m>Nb_{E}</m>, permettant d'observer l'allure de la distribution.</p>
-
-<p>On voudra étudier comment varie la distribution de <m>\overline{X}</m> en la regardant sous ces deux angles. Dans le premier cas, on fixe une taille d'échantillon <m>n=10</m> et l'on regarde la distribution de <m>\overline{X}</m> en considérant plusieurs ensembles d'échantillons de taille variée (<m>Nb_E\in\{5,10,100,1000,10000\}</m>). Ensuite, on étudie l'effet de l'augmentation de la taille des échantillons <m>n\in \{10,30,100,1000,10000\}</m> sur la distribution lorsque le nombre d'échantillons tirés est fixé à <m>Nb_E=100</m>. </p>
-
-<p>Dans le coin supérieur gauche de la feuille de calculs <alert>Échantillonnage_canevas</alert>, reproduire la table ci-dessous.</p>
-<figure>
-<caption>Table de construction de l'échantillonnage</caption>
-<image source="images/Echantillonnage1.png">
-<shortdescription>Une capture d'écran montrant une table dans Excel</shortdescription>
-<description><p>La table est de taille trois par quatre. La cellule A1 est vide, de même que les cellules de la plage C2 à D3. Les cellules A2 et A3 contiennent respectivement les phrases &#xAB; nombre d'échantillons&#xBB; et&#xAB; taille d'un échantillon&#xBB;. Les cellules B1,C1 et D1 contiennent respectivement &#xAB;n&#xBB;, &#xAB;début&#xBB; et &#xAB;fin&#xBB;. La cellule B2 contient le nombre 5 et la cellule B3 contient le nombre 10.</p>
-</description>
-</image>
-</figure>
-<p>Sous la table, par exemple dans la cellule <c>A5</c>, inscrire &#xAB;Taille de la population&#xBB; À droite de cette case, entrer la formule <c>=NB(Durée__s)</c>. Cette formule devrait retourner <m>688174</m>, soit la taille de la population.</p>
-<p>Quelque part à la droite de la table, insérer un nouveau tableau en cliquant sur le bouton approprié du ruban sous l'onglet <alert>insertion</alert>. Le tableau doit contenir une colonne et moins de dix lignes. Renommer le nom de la colonne &#xAB;Échantillonage1&#xBB;. Sous l'onglet <alert>Formules</alert>, cliquer sur le bouton <alert>Gestionnaire de noms</alert> et renommer le tableau créé &#xAB;Échantillonnages&#xBB;.  </p>
-<p>Dans la première ligne du tableau, entrer la formule <c>=ALEA.ENTRE.BORNES(2;$B$5+1)</c>. Si <c>B5</c> n'est pas la cellule qui contient la taille de la population, remplacer par la cellule appropriée. Cette commande devrait remplir le tableau de nombres aléatoires. Ces nombres correspondent à des numéros de lignes du tableau <alert>Données</alert>. Ils indiquent quels trajets feront partie dee échantillons.</p>
-<p>Le tableau <alert>Échantillonnages</alert> va contenir autant de colonnes que le nombre d'échantillons que l'on souhaite avoir et autant de ligne que la taille de ces échantillons. Chaque colonne de ce tableau représentera ainsi un échantillon de la population. Puisque l'on veut étudier la variation de <m>\overline{X}</m> selon le nombre d'échantillons et la taille, il faut que les dimensions de ce tableau puissent s'ajuster. C'est ici que la table construite dans la plage <c>A1:D3</c> va être utile. À l'aide de fonctions Excel, dont le fonctionnement est expliqué dans l'<xref ref="ann-fonctions"/>, on pourra calculer la plage que devra occuper le tableau.</p>
-<p>Dans la cellule <c>C2</c>, on veut inscrire la première colonne du tableau. Entrer la formule <c>=@COLONNE(Échantillonnages)</c>. Ceci devrait donner sous la forme d'un nombre la première colonne du tableau. Dans la cellule <c>D2</c>, on veut connaitre la dernière colonne du tableau, en fonction du nombre qui est inscrit dans la cellule <c>B2</c> (par défaut, 5, mais ce sera modifié plus tard). On veut aussi connaitre cette colonne non pas sous sa forme numérique, mais sous son nom lettré. Entrer la formule <c>=SUBSTITUE(ADRESSE(1;C2+B2-1;4);"1";"")</c>. Cela devrait donner la lettre correspondant à la cinquième colonne d'un tableau qui en contiendrait <m>5</m> s'il commençait la où se trouve le tableau <alert>Échantillonnages</alert>.</p>
-<figure>
-<caption>La feuille Échantillonnage</caption>
-<image source="images/Echantillonnage_canevas.png">
-<shortdescription>Une capture d'écran montrant une table et un tableau dans Excel</shortdescription>
-<description><p>La table est de taille trois par quatre. La cellule A1 est vide. Les cellules A2 et A3 contiennent respectivement les phrases &#xAB; nombre d'échantillons&#xBB; et&#xAB; taille d'un échantillon&#xBB;. Les cellules B1,C1 et D1 contiennent respectivement &#xAB;n&#xBB;, &#xAB;début&#xBB; et &#xAB;fin&#xBB;. La cellule B2 contient le nombre 5 et la cellule B3 contient le nombre 10. La plage C2 à D3 contient des nombres selon les formules de la partie précédente.</p>
-</description>
-</image>
-</figure>
-<p>On répète la procédure pour déterminer la dernière ligne du tableau. Dans la cellule <c>C3</c>, entrer la formule <c>=@LIGNE(Échantillonnages)</c>. Dans la cellule <c>D3</c>, entrer la formule <c>=C3+B3-1</c>. À ce stade-ci, la feuille de calculs devrait ressembler à celle de l'image ci-dessous, avec des valeurs différentes dans le tableau <alert>Échantillonnages</alert>.</p>
-<p>Avant de construire le premier ensemble d'échantillon, on va sauvegarder le travail effectué jusqu'à maintenant sous la forme d'un canevas que l'on pourra réutiliser pour les différentes études ci-dessous et dans le post laboratoire. Effectuer un clic-droit sur le nom de la feuille de calcul et cliquer sur &#xAB;Protéger la feuille<ellipsis/> &#xBB;. Une fenêtre devrait apparaitre. N'entrer pas de mot de passe et cliquer simplement sur &#xAB; OK &#xBB;. Ceci empêche maintenant toute modification sur cette feuille de calculs.</p>
-
-<p>Toujours à l'aide d'un clic droit sur le nom de la feuille, cliquer sur &#xAB; Déplacer ou copier &#xBB;. Dans la fenêtre qui apparait, cocher la case &#xAB;Créer une copie &#xBB;, sélectionner le positionnement &#xAB; (en dernier) &#xBB; et appuyer sur &#xAB; OK &#xBB;. Excel crée ainsi une copie du canevas qui constituera la feuille de calculs de la première étude. On renomme cette feuille de calcul &#xAB;Échantillonnage1&#xBB;. Cette nouvelle feuille de calculs est aussi verrouillée. Il est possible de la déverrouiller en effectuant un clic droit sur son nom et en cliquant sur &#xAB;Ôter la protection de la feuille <ellipsis/>. permettant ainsi sa modification. Également, le tableau de cette copie s'est vu attribuer un nom par Excel afin de le distinguer du tableau de la feuille originale. Ce n'est pas un problème en soi, mais il faudra être conscient du nom de ce tableau pour la suite ou encore le renommer. Par simplicité, on continue d'y faire référence sous le nom <alert>Échantillonnages</alert> dans ce qui suit. </p>
-</subsection>
-<subsection xml:id="ssec-echantillon">
-<title>Création du premier échantillon</title>
-<p>Le premier cas de figure étudié est lorsque la taille de l'échantillon est égale à <m>10</m>. On commence par tirer cinq échantillons au hasard dans la population. Comme ce sont ces paramètres qui avaient été placés dans la table de construction, on n'a pas à modifier ces valeurs cette fois. Voici la procédure pour sélectionner les échantillons.
-<ol>
-<li><p>Cliquer sur l'une des cellules du tableau <alert>Échantillonnages</alert>.</p></li>
-<li><p>Sous l'onglet &#xAB;Création de tableau&#xBB;, cliquer sur le bouton du ruban appelé &#xAB;Redimensionner le tableau &#xBB;.</p></li>
-<li><p>Dans la fenêtre apparaissant, modifier la fin de la plage afin qu'elle corresponde avec ce qui est inscrit aux cellules <c>D2</c> et <c>D3</c>. Appuyer sur &#xAB;OK&#xBB;. Le nouveau tableau devrait apparaitre, sans valeurs dans les colonnes à droites.</p></li>
-<li><p>Cliquer sur une cellule de nouveau tableau et effectuer la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd> afin de sélectionner toutes les cellules du tableau, puis effectuer la combinaison <kbd>Ctrl</kbd>+<kbd>D</kbd> afin de propager les formules vers la droite.</p></li>
-</ol>
-La figure ci-dessous illustre ces étapes.
+<title>Intervalles pour une proportion</title>
+<p>À l'<xref ref="exo-estimationproportion"/>, on a considéré la proportion de trajets effectués en BIXI qui proviennent des membres de la plateforme. On va construire un intervalle de confiance pour ce paramètre. On note <m>\pi</m> la proportion théorique de la population. On cherche à étudier le comportement d'un intervalle de confiance construit autour d'une estimation ponctuelle <m>p</m>. Si l'on considère qu'être membre de BIXI est un succès, alors la variable <m>X</m> représentant le nombre de membres dans un échantillon aléatoire pris avec remise suit une loi binomiale de paramètres <m>n,\pi</m>. Sous les conditions <m>n\geq 30, n\pi\geq 5</m> et <m>n(1-\pi)\geq 5</m>, alors on peut montrer que la proportion <m>P=\frac{X}{n}</m> se comporte approximativement comme une loi normale. On dit alors que
+<me>
+\frac{X}{n}\sim \mathcal{N}\left(\pi; \frac{\pi(1-\pi)}{n}\right)
+</me>
+sous les conditions nommées plus haut.</p>
+<p>Si <m>p</m> est l'estimation ponctuelle provenant d'un échantillon, on a alors
+<me>
+\pi\in \left[p-z_{\alpha/2}\sqrt{\frac{\pi(1-\pi)}{n}};p+z_{\alpha/2}\sqrt{\frac{\pi(1-\pi)}{n}}\right]
+</me> à un niveau de confiance de <m>1-\alpha</m>.</p>
+<p>Puisque le but est d'estimer la proportion <m>\pi</m> inconnue, on remplace sa valeur dans l'intervalle par l'estimation 
+<men xml:id="eq-intervalleproportion">
+\pi\in \left[p-z_{\alpha/2}\sqrt{\frac{p(1-p)}{n}};p+z_{\alpha/2}\sqrt{\frac{p(1-p)}{n}}\right]
+</men>, ce qui constitue l'intervalle de confiance pour la proportion <m>\pi</m>.
 </p>
-<figure xml:id="fig-elargirtableau">
-<caption>Sélection des unités statistiques des échantillons</caption>
-<image source="images/Elargirtableau.png">
-<shortdescription>
-Animation de la séquence d'instructions qui précèdent la figure.
-</shortdescription>
+<p><ol>
+<li><p>Créer une nouvelle feuille de calculs appelée &#xAB;Intervalle proportion1 &#xBB;.</p></li>
+<li><p>Comme on l'a fait à l'exercice <xref ref="exo-intervallemoyennetheorique" text="global"/>, on commence par regarder la proportion des valeurs estimées <m>p</m> se retrouve dans l'intervalle théorique <m>\left[\pi-z_{\alpha/2}\sqrt{\frac{\pi(1-\pi)}{n}};\pi+z_{\alpha/2}\sqrt{\frac{\pi(1-\pi)}{n}}\right]</m>. Le résultat devrait ressembler à celui de la figure <xref ref="fig-Proportiontheorique1"/>.</p></li>
+<li><p>Pour chacun des <m>100</m> échantillons générés à l'exercice <xref ref="exo-estimationproportion" text="global"/>, construire l'intervalle de confiance selon la formule <xref ref="eq-intervalleproportion"/> et vérifier dans combien de ces intervalles se trouve la véritable proportion <m>\pi</m>.</p></li>
+</ol></p>
+<figure xml:id="fig-Proportiontheorique1">
+<caption>Proportion des estimations <m>p</m> dans l'intervalle de confiance</caption>
+<image source="images/Proportiontheorique1.png">
+<description><p>Une capture d'écran d'un tableau de sept lignes et deux colonnes est montré. La première colonne contient les étiquettes des éléments nécessaire au calcul d'un intervalle de confiance théorique pour la proportion et la seconde leur valeur. On a donc la véritable proportion <m>\pi</m>, la taille de l'échantillon <m>n</m>, le niveau de risque <m>\alpha</m>, le facteur <m>z_{\alpha/2}</m>. De plus, on y retrouve la borne inférieure et la borne supérieure de l'intervalle de confiance ainsi que le pourcentage des estimations qui sont dans l'intervalle.</p></description>
 </image>
 </figure>
-
-<p>Les nombres dans la tableau représentent les lignes du tableau <alert>Données</alert> qui ont été sélectionnées pour faire partie des échantillons. Il faut maintenant aller lire dans les données la valeur de la variable à l'étude. Créer une copie de la feuille <alert>Échantillonnage1</alert> et nommer cette feuille &#xAB;Échantillons1&#xBB;.
-<ol>
-<li><p>Dans cette nouvelle copie, inscrire sous la table de construction dans la colonne <c>A</c> le texte &#xAB;Colonne de la variable étudiée &#xBB;.</p></li>
-<li><p>Entrer <c>=@COLONNE(Durée__s)</c> dans la cellule de adjacente.</p></li>
-<li><p>Dans le gestionnaire de noms, vérifier et changer le nom du tableau de cette nouvelle feuille pour &#xAB;Échantillons1&#xBB;.</p></li>
-<li><p>Renommer le titre de la première colonne de ce tableau &#xAB;Échantillon&#xBB;.</p></li>
-<li><p>Toujours avec le titre de la première colonne sélectionné, effectuer la combinaison <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd name="right"/> afin de sélectionner tous les titres de colonnes.</p></li>
-<li><p>Effectuer la combinaison <kbd>Ctrl</kbd>+<kbd>D</kbd> pour propager à droite le titre <alert>Échantillon</alert>.</p></li>
-<li><p>Ajouter un &#xAB;1&#xBB; au titre de la première colonne.</p></li>
-<li><p>Dans n'importe quelle cellule de la première colonne du tableau <alert>Échantillonnages</alert>, remplacer la formule en place par <c>=@INDIRECT(ADRESSE(@Échantillonnages1;$B$7;;;"Trajets en BIXI août 2016"))</c>, en prenant le soin de remplacer le nom &#xAB;Échantillonnages1&#xBB; par le nom qu'Excel a donné au tableau de la feuille <alert>Échantillonnage1</alert>.</p></li>
-<li><p>Sélectionner tout le tableau <alert>Échantillons1</alert> et propager à droite la nouvelle formule. Le tableau contient maintenant la durée en secondes des échantillons. La <xref ref="fig-echantillons1"/> illustre à quoi devrait ressembler la feuille de calculs <alert>Échantillons1</alert> jusqu'à présent.</p></li>
-<li><p>On veut maintenant ajouter les moyennes sous le tableau. Pour cela:</p>
-    <ol>
-    <li><p>Sélectionner le tableau <alert>Échantillons1</alert>;</p></li>
-    <li><p>Sous l'onglet <alert>Création de tableau</alert>, cocher la case <alert>Ligne Total</alert>. Il est aussi possible de cliquer sur l'icone dans le coin inférieur droit qui apparait une fois le tableau sélectionné;</p></li>
-    <li><p>Dans les deux cas, cliquer sur cet icône, puis sous <alert>Totaux</alert>, cliquer sur <alert>Moyenne</alert>. La figure ci-dessous illustre ces étapes.</p>
-    <figure>
-    <caption>Ajout de la ligne des moyennes</caption>
-    <sidebyside width="50%">
-    <image source="images/LigneTotal1.png">
-    <shortdescription>Capture d'écran montrant la case à cliquer appelée ligne total.</shortdescription>
-    </image>
-    <image source="images/LigneTotal2.png">
-    <shortdescription>Capture d'écran montrant le bouton à cliquer pour avoir la ligne des moyennes.</shortdescription>
-    </image>
-    </sidebyside>
-    </figure>
-    </li>
-    <li><p>Il est aussi possible d'utiliser la formule <c>Moyenne</c> sous la première colonne et de propage vers la droite par la suite. En fait, ceci est préférable s'il y a beaucoup de valeurs dans le tableau, car l'utilitaire ci-dessus nécessite davantage de ressources de la part de l'ordinateur.</p></li>
-    </ol>
-</li>
-</ol>
-</p>
-<figure xml:id="fig-echantillons0">
-<caption>Les échantillons avec la durée en secondes</caption>
-<image source="images/échantillons0.png">
-Capture d'écran montrant le résultat après avoir modifié les formules pour obtenir la durée en secondes.
-</image>
-</figure>
-<p>La figure ci-dessous montre le résultat final du tableau des échantillons, avec la ligne des moyennes ajoutée.</p>
-<figure xml:id="fig-echantillons1">
-<caption>La feuille Échantillons1</caption>
-<image source="images/échantillons1.png">
-Capture d'écran montrant le résultat après avoir ajouté la ligne des moyennes.
-</image>
-</figure>
-</subsection>
-
-<subsection xml:id="ssec-analyse">
-<title>Analyse de l'échantillon</title>
-<p>Il est maintenant temps de procéder à l'analyse des données. Le lecteur aura sans doute remarqué qu'Excel recalcule les échantillons chaque fois qu'une nouvelle information est entrée dans une cellule, que celle-ci soit reliée au tableau des échantillons ou non. Toutefois, lorsque vient le temps d'analyser les échantillons, il est préférable que les données ne changent plus. Bien qu'il soit possible d'automatiser plusieurs étapes, certaines décisions doivent être prises en regard avec les données spécifiques à un ensemble d'échantillons. Par exemple, on peut penser à l'amplitude des classes dans l'histogramme, qui pourrait varier d'un tirage à un autre. </p>
-
-<p>Copier les moyennes du tableau à un autre endroit dans la feuille <alert>Échantillons1</alert>, en s'assurant de faire un collage spécial (ToDo référence annexe?)  avec les valeurs seulement. Inscrire à gauche de cette ligne de moyennes le titre &#xAB; Moyennes pour analyse &#xBB;. Sous cette cellule, entrer la commande <c>=TRANSPOSE(plage)</c>, où <alert>plage</alert> est la plage de cellules où se retrouvent les moyennes pour analyse. Ceci va convertir le format horizontal en format vertical, nécessaire pour introduire un tableau croisé dynamique. Nommer cette plage verticale dans le gestionnaire de noms.</p>
-<figure xml:id="fig-transposee">
-<caption>Le résultat de la transposition</caption>
-<image source="images/Transposee.png">
-<shortdescription>Le résultat après tranposition des données</shortdescription>
-</image>
-</figure>
-<p>Créer une nouvelle feuille de calculs appelée &#xAB;Analyse1&#xBB;. Dans cette nouvelle feuile, insérer un tableau croisé dynamique à partir de la plage verticale contenant les moyennes, dans le but de construire une histogramme. </p>
-
-<p>En suivant la procédure décrite dans la <xref ref="sssec_Grouper"/>, faire le groupement dans tableau croisé dynamique. Ensuite, produire l'histogramme pour représenter les données.</p>
-</subsection>
-
-<subsection>
-<title>L'influence du nombre d'échantillons</title>
-
-<p>On répète maintenant les étapes des sous-sections <xref ref="ssec-echantillon"/> et <xref ref="ssec-analyse"/> afin de regarder le comportement lorsque le nombre d'échantillons tirés est de <m>10</m>, <m>100</m>,<m>1000</m> et <m>10 000</m> trajets. On note que pour aller avec un plus grand nombre d'échantillons, par exemple <m>100 000</m>, il faudrait changer la manière de procéder puisqu'Excel est limité à un peu plus de <m>16 000</m> colonnes.</p>
-
-<p>Une fois les histogrammes pour les autres cas créés, on les combine dans un seul graphique afin d'observer l'impact du nombre d'échantillons sur le comportement de la moyenne <m>\overline{X}</m>. On pourrait utiliser le polygone de fréquences d'Excel pour afficher simultanément les courbes sur un même graphique, mais ce type de graphique ne permet pas de tracer des séries de données qui possèdent des abscisses différents, ce qui est fort probablement le cas ici.</p>
-
-<p>On utilise plutôt le graphique &#xAB; Nuages de points &#xBB;. De plus, on utilise l'option &#xAB; avec lissage &#xBB; dans le but de voir le comportement limite s'approchant de la loi normale.
-<ol>
-<li><p>Créer une nouvelle feuille de calculs appelée &#xAB; Polygones de fréquences &#xBB;.</p></li>
-<li><p>Recopier les valeurs ayant servi à construire les histogrammes, en prenant soin de changer les valeurs des abscisses pour le point milieu de chacune des classe. Le résultat devrait ressembler à ce qui est illustré à la <xref ref="fig-polygonesdonnees"/>.</p></li>
-<li><p>Sélectionner la première plage de données, incluant le titre <m>n=5</m>.</p></li>
-<li><p>Sous l'onglet <alert>Insertion</alert>, cliquer sur le bouton &#xAB;Insérer un nuage de point (X,Y) ou un graphique en bulles &#xBB; et choisir l'option &#xAB; Nuage de points avec courbes lissées &#xBB;.</p></li>
-<li><p>Déplacer ce graphique afin qu'il ne couvre pas les séries de données.</p></li>
-<li><p>Sélectionner le graphique. Sous l'onglet <alert>Création de graphique</alert>, cliquer sur <alert>Sélectionner des données</alert>. Il est également possible de faire un clic droit sur le graphique et de cliquer sur <alert>Sélectionner des données</alert>.</p></li>
-<li><p>Dans la fenêtre qui s'ouvre, cliquer sur <alert>Ajouter</alert> sous &#xAB; Entrées de légende (Séries).</p></li>
-<li><p>Sélectionner les plages correspondant au titre, aux abscisses et aux ordonnées (les pourcentages). Appuyer sur <alert>OK</alert>.</p></li>
-<li><p>Répéter afin d'ajouter toutes les séries de données.</p></li>
-<li><p>Effectuer la mise en forme, selon la procédure décrite à la <xref ref="sssec_Polygone"/>. La <xref ref="fig-polygonesXbarre"/> illustre ces étapes.</p></li>
-</ol>
-</p>
-<figure xml:id="fig-polygonesdonnees">
-<caption>Les données pour les courbes de distribution</caption>
-<image source="images/Polygonesdonnées.png">
-<shortdescription>Capture d'écran Excel montrant les données recopiées.</shortdescription>
-</image>
-</figure>
-<figure xml:id="fig-polygonesXbarre">
-<caption>Création des polygones de fréquences lissés.</caption>
-<image source="images/PolygonesXbarre.png">
-<shortdescription>Capture d'écran Excel montrant la progression des étapes menant à la création du graphique contenant toutes les courbes.</shortdescription>
-</image>
-</figure>
-<p>On termine cette l'analyse de l'impact du nombre d'échantillons pour une taille fixé en regardant le comportement de la moyenne des moyennes et de l'écart type des moyennes. Pour cela, on commence par calculer la moyenne et l'écart type de la population, chose qu'il n'est normalement pas possible de faire. </p>
-<ol>
-<li><p>Créer une feuille de calcul appelée &#xAB; Analyse quantitative taille 10 &#xBB;.</p></li>
-<li><p>Reproduire le résultat de la <xref ref="fig-analysetaille10"/>. Évidemment, les valeurs seront différentes. S'assurer de calculer les moyennes à partir des données qui ont été gelées et de prendre la formule pour un échantillon pour les écarts types, sauf pour celui de la population.</p></li>
-</ol>
-<figure xml:id="fig-analysetaille10">
-<caption>Table de comparaison pour les moyennes et les écarts types</caption>
-<image source="images/Tableanalyse10.png">
-<shortdescription>Capture d'écran de la table à produire</shortdescription>
-<description><p>La capture d'écran montre une table contenant sept lignes et trois colonnes. La première ligne s'intitule Échantillons et contient les valeurs Nb_E=5,Nb_E=10,Nb_E=100,Nb_E=1000,Nb_E=10000 ainsi que Population. La deuxième colonne est titrée Moyenne et contient les moyennes des échantillons et de la population. La dernière colonne est appelée Écart type et contient les écarts types des échantillons et celui de la population.</p></description>
-</image>
-</figure>
-<p>On observe que la moyenne des moyennes semble se rapprocher de la véritable moyenne, mais pas l'écart type. Ce dernier semble tout de même se rapprocher d'une valeur. </p>
-</subsection>
-<subsection xml:id="ssec-tailleechantillons">
-<title>L'influence de la taille des échantillons</title>
-<p>On regarde maintenant comment se comporte la moyenne échantillonnale lorsque le nombre d'échantillons reste fixe, mais que la taille de chacun des échantillons augmente. En répétant les étapes des sous-sections précédentes, faire l'analyse complète pour des tailles des échantillons de taille <m>10,30,100,1000</m> et <m>10000</m>. Fixer le nombre d'échantillons pour chaque cas à <m>100</m>. À noter que le cas pour la taille <m>10</m> a déjà été effectué et devrait se trouver dans les feuilles de calculs <alert>Échantillonnage3</alert>,<alert>Échantillons3</alert> et <alert>Analyse3</alert>.</p>
-<p>Encore une fois, on peut observer que la moyenne des moyennes se rapproche de la véritable moyenne, mais pas l'écart type. Toutefois, l'écart type semble devenir de plus en plus petit, en accord avec le théorème central limite,  ce qui transpire aussi dans l'allure des courbes, qui s'écrasent de plus en plus vers la valeur centrale à mesure que <m>n</m> augmente.</p>
-<!-- TODO Note sur le recalcul si le fichier devient trop lourd -->
 </subsection>
 </section>

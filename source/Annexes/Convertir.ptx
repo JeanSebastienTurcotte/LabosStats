@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="ann-convertir">
+    <title>Les macros</title>
+    
+    <section xml:id="sec-SauvegarderXLSM">
+<title>Sauvegarder un fichier avec l'extension <c>xlsm</c></title>
+
+
+<introduction><p>Ce laboratoire utilise des canevas à remplir, créés pour effectuer des tests d'hypothèses paramétriques. Ces canevas contiennent des macros, une série d'instructions ou d'actions qu'un utilisateur peut exécuter automatiquement pour automatiser une tâche répétitive comme effacer le contenu d'une plage de cellules. Pour exécuter des macros, il faut sauvegarder les fichiers Excel avec l'extension <c>xlsm</c> au lieu de <c>xlsx</c>. </p></introduction>
+        
+        <p>Les étapes pour sauvegarder un fichier Excel avec l'extension <c>xlsm</c> sont présentées ci-dessous.</p>
+        
+        <p>
+        <ol>
+            
+         <li><p>Créer une copie du fichier Excel <alert>Données_Diabètes.xlsx</alert>. Nommer ce fichier                                  <alert>Test_Diabètes.xlsx</alert>.</p></li>    
+            
+         <li><p>Ouvrir le fichier <alert>Test_Diabètes.xlsx</alert>.</p></li>   
+            
+         <li><p>Cliquer sur l'onglet <alert>Fichier</alert> du ruban.</p></li>  
+            
+         <li><p>Sélectionner l'onglet <alert>Enregistrer une copie</alert>.</p>
+          <p></p>
+             
+             
+             <!-- (voir la <xref ref="Fig_Enregistrer_1"/>) <figure xml:id="Fig_Enregistrer_1">
+<caption>Sélection de l'option <alert>Enregistrer une copie</alert></caption>
+<image source="images/Fig_Enregistrer_1.png" >
+<description>Sélection de l'option Enregistrer une copie</description>
+</image>
+</figure>-->
+            
+         </li>   
+            
+            
+         <li><p>Cliquer sur la flèche du menu déroulant et sélectionner le deuxième choix de type de fichier, soit l'extension de fichier <c>xlsm</c> (voir la <xref ref="Fig_Enregistrer_2"/>). Ceci permet la sauvegarde d'un fichier Excel prenant en charge les macros.</p>
+             
+             <p></p>
+             
+              <figure xml:id="Fig_Enregistrer_2">
+<caption>Sélection de l'extension de fichier <c>xlsm</c></caption>
+<image source="images/Fig_Enregistrer_2.png" >
+<description>Sélection de l'extension de fichier xlsm</description>
+</image>
+</figure>
+            
+            
+         </li>  
+            
+        <li><p>Sauvegarder le fichier dans le répertoire désiré.</p></li>  
+            
+            
+        </ol>
+        </p>
+        
+        <p>Le fichier <alert>Test_Diabètes.xlsm</alert> est sauvegardé. Répéter les étapes avec le fichier <alert>Données_Polluant.xlsx</alert>.</p>
+        
+    </section>
+    
+    
+    
+    
+     <section xml:id="sec-Developpeur">
+        <title>Afficher l'onglet <term>Développeur</term></title>
+            <p></p>
+            
+         <introduction><p>Puisque ce laboratoire utilise des canevas qui contiennent des macros, il faut afficher l'onglet <alert>Développeur</alert> dans le ruban d'Excel. </p></introduction>
+        
+        <p>Les étapes pour afficher l'onglet sont présentées ci-dessous.</p>
+        
+        <p>
+        <ol>
+            
+         <li><p>Ouvrir le fichier <alert>Test_Diabètes.xlsm</alert>.</p></li>   
+            
+         <li><p>Cliquer sur l'onglet <alert>Fichier</alert> du ruban.</p></li>  
+            
+         <li><p>Sélectionner l'option <alert>Autres</alert> (voir la <xref ref="Fig_Developpeur_1"/>).</p>
+          <p></p>
+             
+             
+             <figure xml:id="Fig_Developpeur_1">
+<caption>Sélection de l'option <alert>Autres</alert></caption>
+<image source="images/Fig_Developpeur_1.png" >
+<description>Sélection de l'option Autres</description>
+</image>
+</figure>
+            
+         </li>   
+            
+            
+         <li><p>Des options s'affichent. Sélectionner l'onglet <alert>Options</alert> (voir la <xref ref="Fig_Developpeur_2"/>).</p>
+             
+             <p></p>
+             
+              <figure xml:id="Fig_Developpeur_2">
+<caption>Sélection de l'onglet <alert>Options</alert></caption>
+<image source="images/Fig_Developpeur_2.png" >
+<description>Sélection de l'onglet Options</description>
+</image>
+</figure>
+            
+            
+         </li>  
+            
+        <li><p>Une boîte de dialogue s'affiche présentant des onglets dans sa partie gauche. Sélectionner l'onglet <alert>Personnaliser le ruban</alert> (voir la <xref ref="Fig_Developpeur_gif"/>). </p></li>  
+            
+        
+            <li> <p>À droite de la boîte de dialogue, certains onglets principaux sont cochés. Il faut glisser la barre déroulante vers le bas et trouver l'icône <alert>Développeur</alert> (voir la <xref ref="Fig_Developpeur_gif"/>).</p></li>
+            
+            <li><p>Cocher l'encadré à gauche de <alert>Développeur</alert> (voir la <xref ref="Fig_Developpeur_gif"/>). Ceci fait en sorte que l'onglet <alert>Développeur</alert> apparaît parmi les onglets principaux d'Excel.</p>
+            <p></p>
+                   <figure xml:id="Fig_Developpeur_gif">
+<caption>Sélection des onglets <alert>Personnaliser le ruban</alert> et <alert>Développeur</alert></caption>
+<image source="images/Fig_Developpeur_gif.png" >
+<description>Sélection des onglets Personnaliser le ruban et Développeur</description>
+</image>
+</figure>
+            
+            </li>
+            
+            <li><p>Cliquer sur <alert>OK</alert>.</p></li>
+            
+         </ol>
+        </p>   
+        
+    
+    </section>
+       </appendix> 

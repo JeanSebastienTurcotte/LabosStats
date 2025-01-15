@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Laboratoire_KhiDeux" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Laboratoire</title>
+    
+    <introduction> <p>Dans ce laboratoire, l'objectif est de poursuivre l'analyse d'une base de données en vérifiant s'il existe des liens entre deux variables à échelle nominale ou ordinale. Est-ce que des différences observées au niveau d'un échantillon sont assez significatives pour être généralisées à la population? Ceci se fait à l'aide d'un test d'indépendance du khi-deux. Les étapes d'un tel test sont présentées dans ce laboratoire.</p>
+       
+       <p> On souhaite étudier la base nationale des collisions automobiles de <m>2019</m>. Plus spécifiquement, on s'intéresse aux liens possibles entre les variables présentées à la <xref ref="sec-Collisions"/>. Comme dans le laboratoire 6 sur les tests d'hypothèse paramétriques, un canevas sera utilisé pour les tests d'indépendance du khi-deux.</p>
+        
+        <p>Deux tests d'indépendance sont présentés. Un premier vérifiant le lien ou non entre la gravité d'une collision et l'âge d'une personne conductrice dans la collision; et un second vérifiant s'il existe un lien entre la gravité d'une collision et le type de mesures de sécurité dans la collision. La gravité d'une collision est une variable qualitative nominale avec quatre modalités : une collision provoquant au moins une perte de vie (code <m>1</m> dans le fichier Excel), une collision provoquant une blessure non mortelle mais pas de perte de vie (code <m>2</m>), gravité inconnue (code U) et la juridiction ne fournit pas cet élément d'information (code X). Le type de dispositifs de sécurité est uen variable qualitative nominale avec plusieurs modalités dont aucun dispositif de sécurité (codes 1, 12 ou 13 selon le type de véhicule), des ceintures (code 2), des sièges de bébé (codes 5 ou 6), des ports de casque (code 9), etc.</p>
+            
+           <p> Puisque la base de données représente l'ensemble de toutes les collisions de l'année 2019, on sélectionne un échantillon aléatoire, soit les données du mois de décembre.</p>
+    </introduction>  
+    
+    
+    
+    <subsection xml:id="ssec-KhiDeuxVehicule">
+    <title>Lien entre la gravité d'un accident et le type de véhicule</title>
+    
+     <introduction><p>Les étapes pour réaliser un test d'indépendance du khi-deux entre une variable qualitative et une variable quantitative sont présentées. On souhaite vérifier s'il existe un lien entre la gravité d'un accident et l'âge d'un conducteur. On choisit un seuil de signification de <m>5\%</m>.</p></introduction>
+    
+    
+    </subsection>
+    
+    
+    
+    
+    
+    <subsection xml:id="ssec-KhiDeuxAge">
+    <title>Lien entre la gravité d'un accident et l'âge d'un conducteur</title>
+    
+     <introduction><p>Les étapes pour réaliser un test d'indépendance du khi-deux entre une variable qualitative et une variable quantitative sont présentées. On souhaite vérifier s'il existe un lien entre la gravité d'un accident et l'âge d'une personne conductrice. On choisit un seuil de signification de <m>5\%</m>.</p>
+        </introduction>
+        
+        
+          <paragraphs xml:id="sssec-CopierCanevasKhiDeux">
+            <p></p>
+            <title>Copier le cavenas <alert>Test d'indépendance</alert></title>
+        
+            <p>Pour effectuer un test d'indépendance, il faut copier le canevas dans le fichier de travail.</p>
+        
+            <p>
+            <ol>
+                
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Collisions.xlsx</alert> et <alert>Labo 7_Canevas.xlsx</alert>.</p></li>   
+                
+             <li><p>Effectuer la procédure présentée à la ... (voir labo 4 JS) pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Labo 7_Canevas</alert> au classeur <alert>Données_Collisions</alert>.</p></li> 
+                
+              
+            </ol>
+            </p>
+            
+        </paragraphs>
+        
+    
+    <subsubsection xml:id="sssec-EtapesKhiDeuxAge">
+    <title>Étapes d'un test d'indépendance avec au moins une variable quantitative</title>
+
+        <introduction><p>Lorsque l'on fait un test d'indépendance avec une variable quantitative continue, l'étape de la construction du tableau des effectifs observés peut être laborieuse. Il faut grouper les valeurs dans des classes dans le tableau croisé dynamique généré. De plus, il faut s'assurer que les effectifs théoriques sont assez grands.</p></introduction>
+        
+        
+        
+        <p>
+        <ol>
+        
+            <li><p>Dans le classeur <alert>Données_Collisions</alert>, sélectionner la feuille <alert>Test d'indépendance</alert>. Renommer la feuille &#xAB; Test Khi-Deux Age&#xBB;</p></li>
+            
+              <li><p>La première étape d'un test d'indépendance consiste à définir ses variables et écrire les hypothèses nulle et alternative. Dans la cellule <c>C4</c>, taper &#xAB; La gravité d'une collision &#xBB;. Dans La cellule <c>C5</c>, taper &#xAB; L'âge d'une personne conductrice &#xBB; (voir la <xref ref="Fig_KhiAge_gif1"/>).</p>
+                
+                  <p> Pour ce test d'indépendance, l'hypothèse nulle <m>H_{0}</m> est que les deux variables sont indépendantes. L'hypothèse alternative <m>H_{1}</m> est son contraire, soit que les deux variables sont dépendantes. </p>
+                  
+                  <p>Dans l'encadré gris de la cellule <c>D8</c>, vis-à-vis <m>H_{0}</m>, taper &#xAB; La gravité d'une collision et l'âge d'une personne conductrice sont indépendants&#xBB; (voir la <xref ref="Fig_KhiAge_gif1"/>). Dans l'encadré gris de la cellule <c>D11</c>, vis-à-vis <m>H_{1}</m>,  taper &#xAB; La gravité d'une collision et l'âge d'une personne conductrice sont dépendants&#xBB; (voir la <xref ref="Fig_KhiAge_gif1"/>)</p> 
+                
+                 <p></p>
+                    
+            <figure xml:id="Fig_KhiAge_gif1">
+            <caption>Remplissage de la première étape d'un test d'indépendance entre la gravité d'une collision et l'âge d'une personne conductrice</caption>
+            <image source="images/Fig_KhiAge_gif1.png" >
+            <description>Remplissage de la première étape d'un test d'indépendance entre la gravité d'une collision et l'âge d'une personne conductrice</description>
+            </image>
+            </figure> 
+                  <p></p>
+
+            </li>
+            
+            
+            <li><p>La deuxième étape consiste à construire le tableau des effectifs observés et le tableau des effectifs théoriques.</p>
+                
+            <p>
+            <ul>
+            
+            <li><p>Il faut commencer par générer un tableau croisé dynamique des effectifs observés. Dans la feuille <alert>Données_Collisions</alert>, sélectionner le tableau &#xAB; Échantillon &#xBB;. </p></li>
+                
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul qu'on renomme <alert>TCD_GraviteAge</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Échantillon</alert>. Placer ce tableau dans la cellule <c>A3</c> (voir la <xref ref="Fig_KhiAge_5"/>).</p>
+                   <p></p>
+                    
+            <figure xml:id="Fig_KhiAge_5">
+            <caption>Générer un tableau croisé dynamique vide</caption>
+            <image source="images/Fig_KhiAge_5.png" >
+            <description>Générer un tableau croisé dynamique vide</description>
+            </image>
+            </figure> 
+                  <p></p>
+                </li>
+            
+            <li><p>Glisser et déposer la variable <alert>Âge</alert> dans la zone de saisie <alert>Lignes</alert> (voir la <xref ref="Fig_KhiAge_gif2"/>).</p>
+            
+ <p></p>
+            
+              <figure xml:id="Fig_KhiAge_gif2">
+            <caption>Tableau croisé dynamique avec la variable <alert>Âge</alert> en lignes et la variable <alert>Gravité</alert> en colonnes</caption>
+            <image source="images/Fig_KhiAge_gif2.png">
+            <description>Tableau croisé dynamique avec la variable Âge en lignes et la variable Gravité en colonnes</description>
+            </image>
+            </figure>
+      
+            <p></p>
+            
+            </li>
+                
+                <li><p>Glisser et déposer la variable <alert>Gravité</alert> dans la zone de saisie <alert>Colonnes</alert> (voir la <xref ref="Fig_KhiAge_gif2"/>).</p></li>
+                
+                <li><p>On veut maintenant grouper les valeurs de la variable <alert>Âge</alert> de <m>0</m> à <m>100</m> ans avec une amplitude de <m>10</m> ans. Il est important de se fier à la table de Sturges lorsque l'on fixe une amplitude. Cependant, on ne veut pas non plus avoir trop de classes avec peu d'effectifs observés pouvant mener au non-respect de la condition d'application du test d'indépendance de khi-deux.</p>
+            
+            <p>Dans la colonne des étiquettes de lignes de la variable <alert>Âge</alert>, cliquer avec le bouton de droite de la souris une des valeurs de l'âge. Cliquer l'option <alert>Grouper</alert> (voir la <xref ref="Fig_KhiAge_gif3"/>). Une boîte de dialogue s'affiche</p>
+
+                <p></p>
+            
+              <figure xml:id="Fig_KhiAge_gif3">
+            <caption>Grouper en classes la variable <alert>Âge</alert></caption>
+            <image source="images/Fig_KhiAge_gif3.png">
+            <description>Grouper en classes la variable Âge</description>
+            </image>
+            </figure>
+      <p></p>
+            
+            </li>
+            
+            <li><p>Taper <m>0</m> comme valeur de début et <m>10</m> comme amplitude (voir la <xref ref="Fig_KhiAge_gif3"/>). On choisit <m>0</m> comme valeur initiale, car on ne veut pas tenir compte des valeurs inférieures à <m>0</m>, soit les modalités <m>-2</m> et <m>-1</m> qui indiquent des informations inconnues par rapport à l'âge des personnes. Une fois le groupement fait, on peut filtrer les valeurs inférieures à <m>0</m>.</p></li>
+            
+            <li><p>Pour filtrer les valeurs inférieures à <m>0</m>, cliquer sur le petit triangle du menu déroulant de l'étiquette de lignes (voir la <xref ref="Fig_KhiAge_gif3"/>).</p></li>
+                
+            <li><p>Sélectionner l'option <alert>Filtres s'appliquant aux étiquettes</alert> suivi de l'option <alert>Supérieur ou égal à</alert> (voir la <xref ref="Fig_KhiAge_gif3"/>).</p></li>
+                
+             <li><p>Une boîte de dialogue s'affiche. Dans la zone de saisie à droite l'option <em>est supérieur ou égal à </em>, taper <m>0</m> (voir la <xref ref="Fig_KhiAge_gif3"/>). Cliquer sur <alert>0K</alert>.</p>
+                 
+              <p>À ce stade, le tableau croisé dynamique devrait ressembler à la <xref ref="Fig_KhiAge_15"/></p>
+                 
+                  <p></p>
+            
+              <figure xml:id="Fig_KhiAge_15">
+            <caption>Tableau croisé dynamique avec les variables <alert>Âge</alert> et <alert>Gravité</alert></caption>
+            <image source="images/Fig_KhiAge_15.png">
+            <description>Tableau croisé dynamique avec les variables Âge et Gravité</description>
+            </image>
+            </figure>
+                 <p></p>
+                
+                </li>
+                
+                
+              <li><p>Glisser et déposer la variable <alert>Âge</alert> dans la zone de saisie <alert>Valeurs</alert> (voir la <xref ref="Fig_KhiAge_gif4"/>). S'assurer que le calcul fait est bien le compte (<alert>Nombre</alert>) et non la somme. Si c'est la somme, changer pour <alert>Nombre</alert> avec les étapes vues à la <xref ref="sssec-RemplirTCD"/>.</p>
+                   <p></p>
+            
+              <figure xml:id="Fig_KhiAge_gif4">
+            <caption>Remplissage du tableau croisé dynamique des effectifs observés par <alert>Âge</alert> et <alert>Gravité d'accident</alert> et filtrage pour la période et l'usager voulu</caption>
+            <image source="images/Fig_KhiAge_gif4.png">
+            <description>Remplissage du tableau croisé dynamique des effectifs observés par Âge et Gravité d'accident et filtrage pour la période et l'usager voulu</description>
+            </image>
+            </figure>
+                 <p></p>
+                
+                </li>   
+                
+                
+                <li><p>On ne veut inclure que les données du mois de décembre (code 12) et les usagers qui sont des conducteurs (code 1). On appliquer des filtres pour faire cela.</p>
+             
+                    <p>Glisser et déposer la variable <alert>Mois</alert> dans la zone de saisie <alert>Filtres</alert>. Le filtre apparaît dans les cellules <c>A1:B1</c> (voir la <xref ref="Fig_KhiAge_gif4"/>). Cliquer sur la flèche du menu déroulant de la cellule <c>B1</c>. Sélectionner <m>12</m> pour le mois de décembre (voir la <xref ref="Fig_KhiAge_gif4"/>). Cliquer sur <alert>Ok</alert>.</p>
+                    
+                    <p>Glisser et déposer la variable <alert>Usager</alert> dans la zone de saisie <alert>Filtres</alert>. Le filtre apparaît dans les cellules <c>A2:B2</c> (voir la <xref ref="Fig_KhiAge_gif4"/>). Cliquer sur la flèche du menu déroulant de la cellule <c>B2</c>. Sélectionner <m>1</m> pour le conducteur (voir la <xref ref="Fig_KhiAge_gif4"/>). Cliquer sur <alert>Ok</alert>.</p>
+                    
+                        <p>À ce stade, le tableau croisé dynamique devrait ressembler à la <xref ref="Fig_KhiAge_22"/>.</p>
+                 
+                  <p></p>
+            
+              <figure xml:id="Fig_KhiAge_22">
+            <caption>Tableau croisé dynamique avec les variables <alert>Âge</alert> et <alert>Gravité</alert> filtrées</caption>
+            <image source="images/Fig_KhiAge_22.png">
+            <description>Tableau croisé dynamique avec les variables Âge et Gravité filtrées</description>
+            </image>
+            </figure>
+                    <p></p>
+                    
+                    <remark xml:id="rem-ConducteursJeunes">
+<title>Valeurs aberrantes?</title>
+<p>Selon le tableau de la <xref ref="Fig_KhiAge_22"/>, deux conducteurs auraient entre <m>0</m> et <m>10</m> ans. En creusant la base de données, il est fort probable qu'il y a eu une erreur de saisie. Les données seront tout de même conservées, puisque deux unités statistiques sur <m>14722</m> ne feront pas une grande différence.</p>
+    </remark>
+                 
+                     <remark xml:id="rem-Classes">
+<title>Deux classes avec peu de valeurs</title>
+<p>La première et la dernière classes ont peu d'individus. Il est fort probable que si on gardait les regroupements tels quels, les effectifs théoriques de ces classes seraient inférieurs à <m>5</m>. Ainsi, on va grouper les deux premières classes et les deux dernières classes pour s'assurer que la condition d'application du test est respectée.</p>
+    </remark>
+                </li>
+                
+                
+                <li><p>Pour regrouper des classes, le processus est un peu contre-intuitif. Il faut indiquer à Excel les classes qui ne seront pas regroupées. Dans ce cas, ce sont toutes les classes entre <m>20</m> ans et <m>79</m> ans. De cette façon, Excel regroupera en une classe les données avant la classe débutant à <m>20</m> ans et en une autre classe les données après la classe terminant à <m>79</m> ans.</p>
+                
+                <p>Cliquer avec le bouton de droite sur n'importe quelle classe d'âge de la première colonne du tableau croisé dynamique. Sélectionner l'option <alert>Grouper</alert> (voir la <xref ref="Fig_KhiAge_gif5"/>).</p>
+
+                     <p></p>
+            
+              <figure xml:id="Fig_KhiAge_gif5">
+            <caption>Groupage des deux premières et des deux dernières classes</caption>
+            <image source="images/Fig_KhiAge_gif5.png">
+            <description>Groupage des deux premières et des deux dernières classes</description>
+            </image>
+            </figure>
+                 <p></p>
+                    
+                     <p>Taper <m>20</m> comme début et <m>79</m> comme fin (voir la <xref ref="Fig_KhiAge_gif5"/>). Le tableau croisé dynamique des effectifs observés est présenté à la <xref ref="Fig_KhiAge_28"/>.</p>
+                    
+                      <p></p>
+            
+              <figure xml:id="Fig_KhiAge_28">
+            <caption>Tableau croisé dynamique des effectifs observés</caption>
+            <image source="images/Fig_KhiAge_28.png">
+            <description>Tableau croisé dynamique des effectifs observés</description>
+            </image>
+            </figure>
+                    <p></p>
+                 <p>On va maintenant coller une partie de ce tableau dans la feuille <alert>Test Khi-Deux Age</alert> et faire la mise en forme du tableau des effectifs observés.</p>
+                </li>
+             
+            <li><p>Dans la feuille <alert>Test Khi-Deux Age</alert>, cliquer sur la cellule <c>B20</c> et taper le symbole <kbd>=</kbd> (voir la <xref ref="Fig_KhiAge_gif6"/>).</p>
+                
+                <p></p>
+            
+              <figure xml:id="Fig_KhiAge_gif6">
+            <caption>Copiage d'une partie du tableau croisé dynamique dans le canevas <alert>Test Khi-Deux Age</alert></caption>
+            <image source="images/Fig_KhiAge_gif6.png">
+            <description>Copiage d'une partie du tableau croisé dynamique dans le canevas Test Khi-Deux Age</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li> 
+                
+                <li><p>Cliquer sur l'onglet de la feuille <alert>TCD_GraviteAge</alert> et sélectionner la plage <c>A6:D14</c> (voir la <xref ref="Fig_KhiAge_gif6"/>). </p></li>
+                
+                <li><p>Taper la touche <kbd>Enter</kbd> du clavier. Le tableau suivant apparaît dans la feuille <alert>Test Khi-Deux Age</alert> (voir la <xref ref="Fig_KhiAge_33"/>).</p>
+                
+                    <p></p>
+            
+              <figure xml:id="Fig_KhiAge_33">
+            <caption>Tableau des effectifs observés</caption>
+            <image source="images/Fig_KhiAge_33.png">
+            <description>Tableau des effectifs observés</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li>
+                
+                
+                <li><p>Faire une mise en forme élémentaire du tableau. Le tableau final des effectifs théoriques doit ressembler au tableau de la <xref ref="Fig_KhiAge_35"/>. Les couleurs et bordures importent peu ici. Si ceci était un tableau de présentation pour un rapport final, il faudrait peaufiner la mise en page ainsi que l'écriture des classes d'âge. Par exemple, au lieu de voir &#xAB; &lt; <m>20</m>&#xBB;, il faudrait voir &#xAB; Moins de 20 ans &#xBB;.</p>
+                   <p></p>
+            
+              <figure xml:id="Fig_KhiAge_35">
+            <caption>Tableau final des effectifs observés</caption>
+            <image source="images/Fig_KhiAge_35.png">
+            <description>Tableau final des effectifs observés</description>
+            </image>
+            </figure>
+                 <p></p>
+                
+                </li>
+                
+                <li><p>Il faut maintenant créer le tableau des effectifs théoriques. Dans la cellule <c>G17</c>, taper &#xAB; Tableau des effectifs théoriques &#xBB; (voir la <xref ref="Fig_KhiAge_gif7"/>). </p>
+                
+                <p></p>
+            
+              <figure xml:id="Fig_KhiAge_gif7">
+            <caption>Création du tableau des effectifs théoriques</caption>
+            <image source="images/Fig_KhiAge_gif7.png">
+            <description>Création du tableau des effectifs théoriques</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li>
+                
+                <li><p>Copier la plage de cellules <c>A18:D28</c>, soit le tableau des effectifs observés. Faire un collage spécial en ne collant que les valeurs dans la cellule <c>G18</c> (voir la <xref ref="Fig_KhiAge_gif7"/>).</p></li>
+                
+                <li><p>Sélectionner la plage de cellules <c>H20:I27</c> et la supprimer en appuyant sur la touche <alert>Supp</alert> du clavier (voir la <xref ref="Fig_KhiAge_gif7"/>).</p></li>
+                
+                <li><p>Formatter les titres au besoin. Ce n'est pas nécessaire.</p></li>
+                
+                <li><p>La formule pour calculer un effectif théorique est le total de la colonne multiplié par le total de la ligne divisé par la taille de l'échantillon. Dans la cellule <c>H20</c>, taper <c>=H$28*$J20/$J$28</c> (voir la <xref ref="Fig_KhiAge_gif8"/>). </p>
+                    
+                    <p></p>
+            
+              <figure xml:id="Fig_KhiAge_gif8">
+            <caption>Calcul des effectifs théoriques</caption>
+            <image source="images/Fig_KhiAge_gif8.png">
+            <description>Calcul des effectifs théoriques</description>
+            </image>
+            </figure>
+                 <p></p>
+                    
+                    <p>Le symbole <kbd>$</kbd> devant le nombre <m>28</m> permet de fixer la ligne à <m>28</m> lorsque la formule sera recopiée dans les cellules avoisinantes. Ainsi, le total de la ligne sera toujours celui de la ligne <m>28</m>. Le symbole <kbd>$</kbd> devant la lettre <c>J</c> fige la valeur du total de la colonne. </p></li>
+                
+                <li><p>Sélectionner la cellule <c>H20</c>. Placer le curseur dans le coin inférieur droit jusqu'à ce que la croix noire de recopie (<kbd>+</kbd>) apparaisse. Double-cliquer sur le coin inférieur droit. La formule se recopie jusqu'à la cellule <c>H27</c> (voir la <xref ref="Fig_KhiAge_gif8"/>). Il est également possible de garder enfoncer le curseur et de glisser la formule vers le bas.</p></li>
+                
+                <li><p>La plage de cellules <c>H20:H27</c> devrait toujours être sélectionnée. Placer le curseur dans le coin inférieur droit de la cellule <c>H27</c> jusqu'à ce que la croix noire de recopie (<kbd>+</kbd>) apparaisse. Cliquer avec le bouton de gauche de la souris en gardant le bouton enfoncé et glisser le curseur vers la droite pour remplir les cellules <c>I20:I27</c> (voir la <xref ref="Fig_KhiAge_gif8"/>). Il est possible de voir que les effectifs observés et théoriques sont assez similaires.</p></li>
+                
+                <li><p>Finalement, il ne reste qu'à vérifier si la condition d'application d'un test d'indépendance du khi-deux est respectée pour procéder à la prochaine étape. Tous les effectifs théoriques des cellules <c>H20:I27</c> sont supérieurs à <m>5</m>. Ainsi, dans la case <c>C34</c>, taper taper &#xAB; Oui, Tij > 5 &#xBB; (voir la <xref ref="Fig_KhiAge_47"/>).</p>
+                     <p></p>
+            
+              <figure xml:id="Fig_KhiAge_47">
+            <caption>Condition d'application vérifiée</caption>
+            <image source="images/Fig_KhiAge_47.png">
+            <description>Condition d'application vérifiée</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li>
+                
+            </ul>
+            </p>
+                
+            </li>
+            
+            <li><p>À la troisième étape, on procède de deux façons pour en arriver à trouver une règle de décision. On utilise la valeur p et le khi-deux observé <m>\chi^{2}_{obs}</m>. Il faut remplir les cases grisées, soit la valeur p (l'aire à droite du khi-deux observé), le degré de liberté et le seuil de signification <m>\alpha</m>. Les cases roses se rempliront automatiquement, car les formules pour le calcul des khi-deux respectifs sont inscrites. La fonction Excel <alert>LOI.KHIDEUX.INVERSE.DROITE</alert> est utilisée. Elle nécessite deux paramètres, soit l'aire à droite d'une valeur de khi-deux et le degré de liberté.</p>
+               
+            
+                <p>La fonction Excel <alert>CHISQ.TEST</alert> permet de calculer la valeur p. Il faut inscrire la plage des effectifs observés ainsi que la plage des effectifs théoriques.</p>
+            
+            
+            
+            <p>
+                <ul>
+            
+            <li><p>Dans la cellule <c>B40</c>, taper <c>=CHISQ.TEST(B20:C27;H20:I27)</c> (voir la <xref ref="Fig_KhiAge_gif9"/>). Il est possible de sélectionner les plages de cellules au lieu de taper la formule. </p>
+            <p>La valeur p s'approche de <m>0,2294</m>, une probabilité assez élevée.</p>
+                
+                 <p></p>
+            
+              <figure xml:id="Fig_KhiAge_gif9">
+            <caption>Remplissage des cases pour les étapes 3 et 4</caption>
+            <image source="images/Fig_KhiAge_gif9.png">
+            <description>Remplissage des cases pour les étapes 3 et 4</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li>
+            
+           <li><p>Dans la cellule <c>B41</c>, taper <c>=(8-1)*(2-1)</c>, soit le calcul du degré de liberté d'un test d'indépendance. On le calcule en multipliant le nombre de modalités de la première variable moins <m>1</m> et le nombre de modalités de la deuxième variable moins <m>1</m> (voir la <xref ref="Fig_KhiAge_gif9"/>). </p></li>
+            
+            <li><p>La cellule <c>B42</c> se remplit automatiquement. La valeur du <m>\chi^{2}_{obs}</m> est d'environ <m>9,34</m>.</p></li>
+            
+            <li><p>Dans la cellule <c>B45</c>, taper <c>=0,05</c> pour un seuil de <m>5\%</m> (voir la <xref ref="Fig_KhiAge_gif9"/>).</p></li>
+            
+            <li><p>La cellule <c>B46</c> se remplit automatiquement. La valeur du <m>\chi^{2}_{c}</m> est d'environ <m>14,07</m>.</p></li>
+                    
+            </ul>
+            </p>
+                </li>
+            
+            <li><p>Dans la cellule <c>A56</c>, écrire un texte qui permet de conclure s'il existe un lien entre les variables <alert>Gravité</alert> et <alert>Âge</alert> (voir la <xref ref="Fig_KhiAge_54"/>).</p>
+                  <p></p>
+            
+              <figure xml:id="Fig_KhiAge_54">
+            <caption>Décision et conclusion du test d'indépendance entre la gravité et l'âge</caption>
+            <image source="images/Fig_KhiAge_54.png">
+            <description>Décision et conclusion du test d'indépendance entre la gravité et l'âge</description>
+            </image>
+            </figure>
+                 <p></p>
+            
+            </li>
+            
+        </ol>
+        </p>
+        
+    </subsubsection>
+    </subsection>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <subsection xml:id="ssec-KhiDeuxSecurite">
+    <title>Lien entre la gravité d'un accident et le type de mesures de sécurité utilisées</title>
+    
+     <introduction><p>Les étapes pour réaliser un test d'indépendance du khi-deux entre deux variables qualitatives sont présentées dans cette sous-section. On souhaite vérifier s'il existe un lien entre la gravité d'un accident et le type de mesures de sécurité utilisées. Il est attendu que la gravité d'un accident dépende des mesures de sécurité utilisés. Selon la Sûreté du Québec, le port de la ceinture et plusieurs autres dispositifs de sécurité comme les sièges pour bébé diminuent la gravité des blessures (<fn><url href="https://www.sq.gouv.qc.ca/communiques/sur-la-route-la-securite-et-moi-ca-clique/#:~:text=Les%20recherches%20d%C3%A9montrent%20que%20%3A,70%20bless%C3%A9s%20graves%20chaque%20ann%C3%A9e."/>, page consultée le 17 décembre 2024</fn>). On va tester cette hypothèse au seuil de signification de <m>5\%</m>.</p>
+        </introduction>
+        
+        
+       
+        
+    
+    <subsubsection xml:id="sssec-EtapesKhiDeuxSecurite">
+    <title>Étapes d'un test d'indépendance avec deux variables qualitatives</title>
+
+        <introduction><p>Les étapes d'un test d'indépendance avec deux variables qualitatives sont présentées ci-dessous. </p></introduction>
+        
+        
+        
+        <p>
+        <ol>
+            
+            <li><p>Ouvrir les fichiers Excel <alert>Données_Collisions.xlsx</alert> et <alert>Labo 7_Canevas.xlsx</alert>.</p></li>   
+                
+             <li><p>Effectuer la procédure présentée à la ... (voir labo 4 JS) pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Labo 7_Canevas</alert> au classeur <alert>Données_Collisions</alert>. Une fois fait, fermer le fichier <alert>Labo 7_Canevas.xlsx</alert>.</p></li> 
+        
+            <li><p>Dans le classeur <alert>Données_Collisions</alert>, sélectionner la feuille <alert>Test d'indépendance</alert>. Renommer la feuille &#xAB; Test Khi-Deux Sécurité&#xBB; et la placer en dernière position.</p></li>
+            
+              <li><p>La première étape d'un test d'indépendance consiste à définir ses variables et écrire les hypothèses nulle et alternative. Dans la cellule <c>C4</c>, taper &#xAB; La gravité d'une collision &#xBB;. Dans La cellule <c>C5</c>, taper &#xAB; Les mesures de sécurité &#xBB; (voir la <xref ref="Fig_TestSecurite_gif1"/>).</p>
+                
+                  <p> Pour ce test d'indépendance, l'hypothèse nulle <m>H_{0}</m> est que les deux variables sont indépendantes. L'hypothèse alternative <m>H_{1}</m> est son contraire, soit que les deux variables sont dépendantes. </p>
+                  
+                  <p>Dans l'encadré gris de la cellule <c>D8</c>, vis-à-vis <m>H_{0}</m>, taper &#xAB; La gravité d'une collision et les mesures de sécurité utilisées sont indépendantes &#xBB; (voir la <xref ref="Fig_TestSecurite_gif1"/>). Dans l'encadré gris de la cellule <c>D11</c>, vis-à-vis <m>H_{1}</m>,  taper &#xAB; La gravité d'une collision et les mesures de sécurité utilisées sont dépendantes &#xBB; (voir la <xref ref="Fig_TestSecurite_gif1"/>)</p> 
+                
+                 <p></p>
+                    
+            <figure xml:id="Fig_TestSecurite_gif1">
+            <caption>Remplissage de la première étape d'un test d'indépendance entre la gravité d'une collision et les mesures de sécurité utilisées</caption>
+            <image source="images/Fig_TestSecurite_gif1.png" >
+            <description>Remplissage de la première étape d'un test d'indépendance entre la gravité d'une collision et les mesures de sécurité utilisées</description>
+            </image>
+            </figure> 
+                  <p></p>
+
+            </li>
+            
+            
+           <li><p>La deuxième étape consiste à construire le tableau des effectifs observés et le tableau des effectifs théoriques.</p>
+                
+            <p>
+            <ul>
+            
+            <li><p>Il faut commencer par générer un tableau croisé dynamique des effectifs observés. Dans la feuille <alert>Données_Collisions</alert>, sélectionner le tableau &#xAB; Échantillon &#xBB;. </p></li>
+                
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul qu'on renomme <alert>TCD_GraviteSécurité</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Échantillon</alert>. Placer ce tableau dans la cellule <c>A3</c> (voir la <xref ref="Fig_Securite_gif1"/>).</p></li>
+                
+                
+                <li><p>Glisser et déposer la variable <alert>Mesures de sécurité</alert> dans la zone de saisie <alert>Lignes</alert> (voir la <xref ref="Fig_Securite_gif1"/>).</p></li>
+
+           <li><p>Glisser et déposer la variable <alert>Gravité</alert> dans la zone de saisie <alert>Colonnes</alert> (voir la <xref ref="Fig_Securite_gif1"/>).</p></li>
+                
+                
+                 <li><p>Glisser et déposer la variable <alert>Mesures de sécurité</alert> dans la zone de saisie <alert>Valeurs</alert> (voir la <xref ref="Fig_Securite_gif1"/>). S'assurer que le calcul fait est bien le compte (<alert>Nombre</alert>) et non la somme. Si c'est la somme, changer pour <alert>Nombre</alert> avec les étapes vues à la <xref ref="sssec-RemplirTCD"/>.</p>
+                            
+ <p></p>
+            
+              <figure xml:id="Fig_Securite_gif1">
+            <caption>Tableau croisé dynamique avec la variable <alert>Mesures de sécurité</alert> en lignes et la variable <alert>Mesures de sécurité</alert> en colonnes</caption>
+            <image source="images/Fig_Securite_gif1.1ng">
+            <description>Tableau croisé dynamique avec la variable Mesures de sécuritéMesures de sécurité en lignes et la variable Gravité en colonnes</description>
+            </image>
+            </figure>
+      
+            <p></p>
+                </li>
+                
+                
+                        
+                
+                
+                     <li><p>On ne veut inclure que les données du mois de décembre (code 12). On appliquer des filtres pour faire cela.</p>
+             
+                    <p>Glisser et déposer la variable <alert>Mois</alert> dans la zone de saisie <alert>Filtres</alert>. Le filtre apparaît dans les cellules <c>A1:B1</c> (voir la <xref ref="Fig_Securite_gif1"/>). Cliquer sur la flèche du menu déroulant de la cellule <c>B1</c>. Sélectionner <m>12</m> pour le mois de décembre (voir la <xref ref="Fig_Securite_gif1"/>). Cliquer sur <alert>Ok</alert>.</p>
+                    
+                   
+                        <p>À ce stade, le tableau croisé dynamique devrait ressembler à la <xref ref="Fig_Securite_8bis"/>.</p>
+                 
+                  <p></p>
+            
+              <figure xml:id="Fig_Securite_8bis">
+            <caption>Tableau croisé dynamique avec les variables <alert>Mesures de sécurité</alert> et <alert>Gravité</alert> filtrées</caption>
+            <image source="images/Fig_Securite_8bis.png">
+            <description>Tableau croisé dynamique avec les variables Mesures de sécurité et Gravité filtrées</description>
+            </image>
+            </figure>
+                    <p></p>
+                    
+              <p></p>
+                    
+              <p>Ce tableau croisé dynamique présente deux difficultés pour la poursuite d'un test d'indépendance du khi-deux. Premièrement, on ne veut pas inclure les modalités NN, QQ et UU, car elles n'offrent aucune information. On rappelle que ce sont les codes pour &#xAB; l'élément d'information est sans objet &#xBB;, &#xAB; autre situation que les précédentes &#xBB; et &#xAB; Inconnu &#xBB;. Deuxièmement, les modalités <m>9</m>, <m>10</m> et <m>13</m> ont peu d'effectifs observés. En soi, ce n'est pas un problème. Cependant, le calcul d'effectifs théoriques impliquant ces modalités vont engendrer des valeurs inférieures à <m>5</m>. Ainsi, pour éviter d'avoir des effectifs théoriques inférieurs à <m>5</m>, on doit regrouper des modalités à échelle nominale. </p>
+                         
+    <remark xml:id="rem-GrouperNominale">
+<title>Regrouper les valeurs d'une variable à échelle nominale</title>
+<p>Pour regrouper les valeurs d'une variable à échelle nominale, il est suggéré d'y aller avec la logique. Dans le cas des dispositifs de sécurité, les modalités <m>1</m>, <m>12</m> et <m>13</m> sont des catégories dans lesquelles aucun dispositif de sécurité n'a été utilisé. Il y a donc un lien logique à regrouper ces catégories. Les modalités <m>2</m>, <m>9</m> et <m>10</m> sont des catégories dans lesquelles une mesure de sécurité a été utilisée (ceinture, port de casque et port de vêtements réfléchissants respectivement). Il est donc logique de regrouper ces trois modalités. </p>
+    </remark>
+                </li>
+                
+               <li><p>On veut maintenant grouper certaines modalités de la variable <alert>Mesures de sécurité</alert>. Puisque les valeurs des modalités sont des codes numériques non consécutifs, il sera plus facile de les grouper s'ils sont placés l'un à la suite de l'autre dans l'ordre de groupement. Excel permet de déplacer des modalités.</p>
+            
+            <p>Dans la colonne des étiquettes de lignes de la variable <alert>Mesures de sécurité</alert>, cliquer avec le bouton de gauche de la souris sur la valeur <m>12</m> telle que cette dernière est encadrée d'une bordure verte. Ensuite, cliquer avec le bouton de droite de la souris sur la valeur <m>12</m>. Cliquer l'option <alert>Déplacer</alert> (voir la <xref ref="Fig_Securite_gif2"/>), suivi de l'option <alert>Déplacer <q>12</q> vers le haut</alert>.</p>
+
+                <p></p>
+            
+              <figure xml:id="Fig_Securite_gif2">
+            <caption>Déplacer variable <alert>Mesures de sécurité</alert></caption>
+            <image source="images/Fig_Securite_gif2.png">
+            <description>Déplacer les modalités de la variable Mesures de sécurité</description>
+            </image>
+            </figure>
+      <p></p>
+            
+            </li>
+            
+            <li><p>On va faire de même pour les modalités <m>10</m> et <m>13</m>. Dans la colonne des étiquettes de lignes de la variable <alert>Mesures de sécurité</alert>, cliquer avec le bouton de droite de la souris sur la valeur <m>10</m>. Cliquer l'option <alert>Déplacer</alert> (voir la <xref ref="Fig_Securite_gif2"/>), suivi de l'option <alert>Déplacer <q>10</q> vers le bas</alert>. Au final, les modalités <m>1</m>, <m>12</m> et <m>13</m> sont l'une à la suite de l'autre ainsi que les modalités <m>2</m>, <m>9</m> et <m>10</m> (voir la <xref ref="Fig_Securite_14bis"/>).</p>
+                  <p></p>
+
+              <figure xml:id="Fig_Securite_14bis">
+            <caption>Séquence de modalités dans l'ordre voulu</caption>
+            <image source="images/Fig_Securite_14bis.png">
+            <description>Séquence de modalités dans l'ordre voulu</description>
+            </image>
+            </figure>
+      <p></p>
+                
+                </li>
+                
+                 <li><p>On va grouper les modalités <m>1</m>, <m>12</m> et <m>13</m> ainsi que les modalités <m>2</m>, <m>9</m> et <m>10</m>.</p>
+                     
+                     <p>Dans la colonne des étiquettes de lignes de la variable <alert>Mesures de sécurité</alert>, lorsque la flèche noire pointant vers la droite apparaît, sélectionner les trois lignes des modalités <m>1</m>, <m>12</m> et <m>13</m> (voir la <xref ref="Fig_Securite_gif3"/>).</p>
+                 <p></p>
+     <figure xml:id="Fig_Securite_gif3">
+            <caption>Groupement de modalités</caption>
+            <image source="images/Fig_Securite_gif3.png">
+            <description>Groupement de modalités</description>
+            </image>
+            </figure>
+      <p></p>
+                
+                </li>
+         
+                <li> <p>Une fois les lignes grisées, cliquer avec le bouton de droite de la souris et sélectionner l'option <alert>Grouper</alert> (voir la <xref ref="Fig_Securite_gif3"/>). Excel groupe les trois modalités dans un groupe intitulé <alert>Groupe 1</alert> (voir la <xref ref="Fig_Securite_17bis"/>). </p>
+                <p></p>
+                    
+            <figure xml:id="Fig_Securite_17bis">
+            <caption>Groupement des modalités et création de Groupe 1</caption>
+            <image source="images/Fig_Securite_17bis.png">
+            <description>Groupement de modalités et création de Groupe 1</description>
+            </image>
+            </figure>
+      <p></p>
+                
+                
+                </li>
+                
+                <li> <p>À gauche du nom <alert>Groupe 1</alert>, il y a un icône <kbd>-</kbd>. Cliquer cette icône pour réduire les modalités de ce groupe, c'est-à-dire pour rendre la lecture moins encombrante (voir la <xref ref="Fig_Securite_gif3"/>).</p></li>
+                
+                   <li> <p>Répéter l'étape précédente pour les modalités <m>10</m>, <m>2</m>, <m>9</m>, <m>NN</m>, <m>QQ</m> ainsi que <m>UU</m> (voir la <xref ref="Fig_Securite_gif3"/>).</p></li>
+                
+                <li><p>Dans la colonne des étiquettes de lignes de la variable <alert>Mesures de sécurité</alert>, lorsque la flèche noire pointant vers la droite apparaît, sélectionner les trois lignes des modalités <m>10</m>, <m>2</m> et <m>9</m> (voir la <xref ref="Fig_Securite_gif3"/>).</p></li>
+                
+                <li><p>Cliquer avec le bouton de droite de la souris et sélectionner l'option <alert>Grouper</alert> (voir la <xref ref="Fig_Securite_gif3"/>). Le <alert>Groupe 2</alert> est créé. Cliquer sur l'icône <kbd>-</kbd> à gauche de <alert>Groupe 2</alert> pour réduire les modalités de ce groupe. </p>
+                
+                <p>Le résultat des groupements est présenté à la <xref ref="Fig_Securite_26bis"/>.</p>
+                    
+                         <p></p>
+                    
+            <figure xml:id="Fig_Securite_26bis">
+            <caption>Groupement final des modalités</caption>
+            <image source="images/Fig_Securite_26bis.png">
+            <description>Groupement final de modalités</description>
+            </image>
+            </figure>
+      <p></p>
+                </li>
+       
+            
+            <li><p>Pour filtrer les modalités <m>NN</m>, <m>QQ</m> et <m>UU</m>, cliquer sur le petit triangle du menu déroulant de l'étiquette de lignes (voir la <xref ref="Fig_Securite_gif5"/>).</p>
+                <p></p>
+                    
+            <figure xml:id="Fig_Securite_gif5">
+            <caption>Filtrage des modalités <m>NN</m>, <m>QQ</m> et <m>UU</m></caption>
+            <image source="images/Fig_Securite_gif5.png">
+            <description>Filtrage des modalités NN, QQ et UU</description>
+            </image>
+            </figure>
+      <p></p>
+                
+                </li>
+                
+                <li><p>Décliquer les modalités <m>NN</m>, <m>QQ</m> et <m>UU</m>. Cliquer sur <alert>OK</alert> (voir la <xref ref="Fig_Securite_gif5"/>).</p></li>
+ 
+             <li> <p>À ce stade, le tableau croisé dynamique devrait ressembler à la <xref ref="Fig_Securite_36bis"/></p>
+                 
+                  <p></p>
+            
+              <figure xml:id="Fig_Securite_36bis">
+            <caption>Tableau croisé dynamique avec les variables <alert>Mesures de sécurité</alert> et <alert>Gravité</alert></caption>
+            <image source="images/Fig_Securite_36bis.png">
+            <description>Tableau croisé dynamique avec les variables Mesures de sécurité et Gravité</description>
+            </image>
+            </figure>
+                 <p></p>
+                
+                </li>
+                
+   
+             
+            <li><p>Dans la feuille <alert>Test Khi-Deux Sécurité</alert>, cliquer sur la cellule <c>B20</c> et taper le symbole <kbd>=</kbd> (voir la <xref ref="Fig_TestSecurite_gif2bis"/>).</p>
+                
+                <p></p>
+            
+              <figure xml:id="Fig_TestSecurite_gif2bis">
+            <caption>Copiage d'une partie du tableau croisé dynamique dans le canevas <alert>Test Khi-Deux Sécurité</alert></caption>
+            <image source="images/Fig_TestSecurite_gif2bis.png">
+            <description>Copiage d'une partie du tableau croisé dynamique dans le canevas Test Khi-Deux Sécurité</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li> 
+                
+                <li><p>Cliquer sur l'onglet de la feuille <alert>TCD_GraviteSécurité</alert> et sélectionner la plage <c>A5:D7</c> (voir la <xref ref="Fig_TestSecurite_gif2bis"/>). </p></li>
+                
+                <li><p>Taper la touche <kbd>Enter</kbd> du clavier. Le tableau suivant apparaît dans la feuille <alert>Test Khi-Deux Sécurité</alert> (voir la <xref ref="Fig_TestSecurite_9bis"/>).</p>
+                
+                    <p></p>
+            
+              <figure xml:id="Fig_TestSecurite_9bis">
+            <caption>Tableau des effectifs observés</caption>
+            <image source="images/Fig_TestSecurite_9bis.png">
+            <description>Tableau des effectifs observés</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li>
+                
+                
+              <li><p>Faire une mise en forme élémentaire du tableau. Le tableau final des effectifs théoriques doit ressembler au tableau de la <xref ref="Fig_TestSecurite_10bis"/>. Les couleurs et bordures importent peu ici. Si ceci était un tableau de présentation pour un rapport final, il faudrait peaufiner la mise en page.</p>
+                   <p></p>
+            
+              <figure xml:id="Fig_TestSecurite_10bis">
+            <caption>Tableau final des effectifs observés</caption>
+            <image source="images/Fig_TestSecurite_10bis.png">
+            <description>Tableau final des effectifs observés</description>
+            </image>
+            </figure>
+                 <p></p>
+                
+                </li>
+                
+                <li><p>Il faut maintenant créer le tableau des effectifs théoriques. Dans la cellule <c>G17</c>, taper &#xAB; Tableau des effectifs théoriques &#xBB; (voir la <xref ref="Fig_TestSecurite_gif3"/>). </p>
+                
+                <p></p>
+            
+              <figure xml:id="Fig_TestSecurite_gif3">
+            <caption>Création du tableau des effectifs théoriques</caption>
+            <image source="images/Fig_TestSecurite_gif3.png">
+            <description>Création du tableau des effectifs théoriques</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li>
+                
+                <li><p>Copier la plage de cellules <c>A18:D22</c>, soit le tableau des effectifs observés. Faire un collage spécial en ne collant que les valeurs dans la cellule <c>G18</c> (voir la <xref ref="Fig_TestSecurite_gif3"/>).</p></li>
+                
+                <li><p>Sélectionner la plage de cellules <c>H20:I21</c> et la supprimer en appuyant sur la touche <alert>Supp</alert> du clavier (voir la <xref ref="Fig_TestSecurite_gif3"/>).</p></li>
+                
+                <li><p>Formatter les titres au besoin. Ce n'est pas vraiment nécessaire.</p></li>
+                
+                <li><p>La formule pour calculer un effectif théorique est le total de la colonne multiplié par le total de la ligne divisé par la taille de l'échantillon. Dans la cellule <c>H20</c>, taper <c>=H$22*J$20/$J$22</c> (voir la <xref ref="Fig_TestSecurite_gif3"/>). </p></li>
+                
+                <li><p>Sélectionner la cellule <c>H20</c>. Placer le curseur dans le coin inférieur droit jusqu'à ce que la croix noire de recopie (<kbd>+</kbd>) apparaisse. Cliquer avec le bouton de gauche de la souris en gardant le bouton enfoncé et glisser le curseur vers le bas jusqu'à la cellule <c>H21</c>. Relâcher le bouton de gauche de la souris. Avec la plage <c>H20:H21</c> sélectionné, placer encore une fois le curseur dans le coin inférieur droit et glisser vers la droite pour remplir les cellules <c>I20:I21</c> (voir la <xref ref="Fig_TestSecurite_gif3"/>). </p></li>
+                
+                <li><p>Finalement, il ne reste qu'à vérifier si la condition d'application d'un test d'indépendance du khi-deux est respectée pour procéder à la prochaine étape. Tous les effectifs théoriques des cellules <c>H20:I21</c> sont supérieurs à <m>5</m>. Ainsi, dans la case <c>C34</c>, taper taper &#xAB; Oui, Tij > 5 &#xBB;.</p> </li>
+                
+            </ul>
+            </p>
+                
+            </li>
+            
+           <li><p>À la troisième étape, on procède de deux façons pour en arriver à trouver une règle de décision. On utilise la valeur p et le khi-deux observé <m>\chi^{2}_{obs}</m>. Il faut remplir les cases grisées, soit la valeur p (l'aire à droite du khi-deux observé), le degré de liberté et le seuil de signification <m>\alpha</m>. Les cases roses se rempliront automatiquement, car les formules pour le calcul des khi-deux respectifs sont inscrites. La fonction Excel <alert>LOI.KHIDEUX.INVERSE.DROITE</alert> est utilisée. Elle nécessite deux paramètres, soit l'aire à droite d'une valeur de khi-deux et le degré de liberté.</p>
+               
+            
+                <p>La fonction Excel <alert>CHISQ.TEST</alert> permet de calculer la valeur p. Il faut inscrire la plage des effectifs observés ainsi que la plage des effectifs théoriques.</p>
+            
+            
+            
+            <p>
+                <ul>
+            
+            <li><p>Dans la cellule <c>B40</c>, taper <c>=CHISQ.TEST(B20:C21;H20:I21)</c> (voir la <xref ref="Fig_TestSecurite_gif4"/>). Il est possible de sélectionner les plages de cellules au lieu de taper la formule. </p>
+            <p>La valeur p s'approche de <m>9,33 \times 10^{-9}</m>, une probabilité très petite.</p>
+                
+                 <p></p>
+            
+              <figure xml:id="Fig_TestSecurite_gif4">
+            <caption>Remplissage des cases pour les étapes 3 et 4</caption>
+            <image source="images/Fig_TestSecurite_gif4.png">
+            <description>Remplissage des cases pour les étapes 3 et 4</description>
+            </image>
+            </figure>
+                 <p></p>
+                </li>
+            
+           <li><p>Dans la cellule <c>B41</c>, taper <c>=(2-1)*(2-1)</c>, soit le calcul du degré de liberté d'un test d'indépendance. On le calcule en multipliant le nombre de modalités de la première variable moins <m>1</m> et le nombre de modalités de la deuxième variable moins <m>1</m> (voir la <xref ref="Fig_TestSecurite_gif4"/>). </p></li>
+            
+            <li><p>La cellule <c>B42</c> se remplit automatiquement. La valeur du <m>\chi^{2}_{obs}</m> est d'environ <m>32,98</m>.</p></li>
+            
+            <li><p>Dans la cellule <c>B45</c>, taper <c>=0,05</c> pour un seuil de <m>5\%</m> (voir la <xref ref="Fig_TestSecurite_gif4"/>).</p></li>
+            
+            <li><p>La cellule <c>B46</c> se remplit automatiquement. La valeur du <m>\chi^{2}_{c}</m> est d'environ <m>3,84</m>.</p></li>
+                    
+            </ul>
+            </p>
+                </li>
+            
+            <li><p>Dans la cellule <c>A56</c>, écrire un texte qui permet de conclure s'il existe un lien entre les variables <alert>Gravité</alert> et <alert>Mesures de sécurité</alert> (voir la <xref ref="Fig_TestSecurite_28"/>).</p>
+                  <p></p>
+            
+              <figure xml:id="Fig_TestSecurite_28">
+            <caption>Décision et conclusion du test d'indépendance entre la gravité et le type de mesures de sécurité</caption>
+            <image source="images/Fig_TestSecurite_28.png">
+            <description>Décision et conclusion du test d'indépendance entre la gravité et le type de mesures de sécurité</description>
+            </image>
+            </figure>
+                 <p></p>
+            
+            </li>-->
+            
+        </ol>
+        </p>
+        
+    </subsubsection>
+    </subsection>
+    
+    
+    
+    
+    
+    
+    
+</section>

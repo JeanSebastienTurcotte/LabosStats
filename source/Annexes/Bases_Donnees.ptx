@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="ann-basesdedonnees">
+<title>Bases de données</title>
+<introduction>
+
+<p>Les bases de données utilisées dans les laboratoires sont présentées.</p>
+
+</introduction>
+    
+    
+       
+    
+<section xml:id="sec-Armee">
+    <title>Armée américaine</title>
+
+     <p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, document consulté le 30 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. On introduit les données d'un échantillon de <m>6068</m> membres de l'armée américaine, prélevé en 2011 <fn> <url href="https://www.openlab.psu.edu/ansur2/"/>, page consultée le 30 novembre 2024</fn>. On pourrait supposer que la proportion de membres issus de minorité ethnique augmente à chaque année. C'est ce que l'on va vérifier en effectuant un test d'hypothèse sur une proportion. La base de données, modifiée pour répondre aux objectifs de ce laboratoire, a été obtenue du site <fn>https://www.openlab.psu.edu/ansur2/</fn>. Cette base de données comprend les variables suivantes.</p>
+        
+         
+    <p>
+    <ul>
+    
+        <li><p>l'identifiant du soldat;</p></li>
+        <li><p> le genre du soldat;</p>
+        
+            <ul>
+            <li><p>Homme;</p></li>
+            <li><p>Femme;</p></li>
+            </ul>
+        
+        </li>
+        
+        <li><p>l'installation du soldat;</p>
+        <ul>
+            <li><p>Camp Atterbury;</p></li>
+            <li><p>Camp Shelby;</p></li>
+            <li><p>Fort Bliss;</p></li>
+            <li><p>For Bragg;</p></li>
+            <li><p>Camp Drum;</p></li>
+            <li><p>Camp Gordon;</p></li>
+            <li><p>Camp Hood;</p></li>
+            <li><p>Camp Huachuca;</p></li>
+            <li><p>Camp Lee;</p></li>
+            <li><p>Camp McCoy;</p></li>
+            <li><p>Camp Rucker;</p></li>
+            <li><p>Camp Stewart;</p></li>
+            </ul>
+        
+        </li>
+        
+        <li><p>la branche de service;</p>
+        <ul>
+            <li><p>l'armée régulière;</p></li>
+            <li><p>garde nationale de l'armée;</p></li>
+            <li><p>réserve de l'armée</p></li>
+            </ul>
+        </li>
+        
+        <li><p>l'ethnicité du soldat;</p>
+        
+         <ol marker="1. ">
+            <li><p>blanc;</p></li>
+            <li><p>noir;</p></li>
+            <li><p>hispanique;</p></li>
+             <li><p>asiatique (Cambodge, Chine, Corée du Sud, Japon, Laos, Myanmar, Taïwan, Vietnam);</p></li>
+             <li><p>autochtone;</p></li>
+             <li><p>îles du Pacifique;</p></li>
+             <li><p>autre (Asie de l'est ou Inde, Moyen-Orient ou îles des Caraïbes);</p></li>
+            </ol>
+        </li>
+        
+        <li><p>l'âge du soldat (en années);</p></li>
+        
+        <li><p>la grandeur du soldat (en pouces);</p></li>
+        
+        <li><p>le poids du soldat (en livres);</p></li>
+        
+        <li><p>la main dominante du soldat;</p>
+        
+         <ul>
+            <li><p>droite;</p></li>
+            <li><p>gauche;</p></li>
+            <li><p>aucune préférence.</p></li>
+            </ul>
+        </li>
+        
+    </ul>
+    </p>
+
+    
+</section>
+    
+        
+    <section xml:id="sec-Collisions">
+    <title>Base canadienne de données sur les collisions</title>
+
+     <p>La base de données nationale sur les collisions s'agit &#xAB; d'une base de données de toutes les collisions automobiles ayant fait l'objet d'un rapport de police et étant survenues sur les routes publiques du Canada en 2019 &#xBB; <fn><url href="https://ouvert.canada.ca/data/fr/dataset/1eb9eba7-71d1-4b30-9fb1-30cbdab7e63a"/>, page consultée le 30 novembre 2024</fn>. Le fichier Excel avec la base de données a été nettoyé pour faciliter le traitement statistique. Les modalités de chaque variable peuvent être consultées sur le site web du gouvernement du Canada <fn><url href="https://opencanada.blob.core.windows.net/opengovprod/resources/21eb7966-38da-4814-a80e-521bce6c4c27/data_dictionary.pdf?se=2024-12-03T16%3A24%3A17Z&amp;sp=r&amp;sv=2019-07-07&amp;sr=b&amp;sig=0FuNKQEyD1awb0RPtN42Qur6vOBaaDDL2Z69SprCqFM%3D"/>, page consultée le 30 novembre 2024</fn>. Cette base de données comprend les variables suivantes. </p>
+        
+        
+         
+    <p>
+    <ul>
+    
+        <li><p>l'année de la collision;</p></li>
+        <li><p> le mois de la collision;</p>
+        
+           <!-- <ol>
+            <li><p>Janvier;</p></li>
+            <li><p>Février;</p></li>
+            <li><p>Mars:</p></li>
+            <li><p>Avril</p></li>
+            <li><p>Mai</p></li>
+            <li><p>Juin</p></li>
+            <li><p>Juillet</p></li>
+            <li><p>Août</p></li>
+            <li><p>Septembre</p></li>
+            <li><p>Octobre</p></li>
+            <li><p>Novembre</p></li>
+            <li><p>Décembre</p></li>
+            </ol>
+            
+            <ul>
+            <li><p>UU. Inconnu</p></li>
+            <li><p>XX. La jurisdiction ne fournit pas cet élément d'information</p></li>
+            </ul>-->
+        
+        </li>
+        
+           <li><p> le jour de la semaine de la collision;</p>
+        
+           <!-- <ol>
+            <li><p>Lundi;</p></li>
+            <li><p>Mardi;</p></li>
+            <li><p>Mercredi:</p></li>
+            <li><p>Jeudi</p></li>
+            <li><p>Vendredi</p></li>
+            <li><p>Samedi</p></li>
+            <li><p>Dimanche</p></li>
+            </ol>
+            
+            <ul>
+            <li><p>UU. Inconnu</p></li>
+            <li><p>XX. La jurisdiction ne fournit pas cet élément d'information</p></li>
+            </ul>-->
+        
+        </li>
+        
+        <li><p>l'heure de la collision;</p>
+        
+        </li>
+        
+        <li><p>la sévérité de la collision;</p>
+       <!-- <ol>
+            <li><p>Collision provoquant au moins une perte de vie;</p></li>
+            <li><p>Collision provoquant une blessure non mortelle mais pas de perte de vie;</p></li>
+            </ol>
+            <ul>
+            <li><p>U. Inconnu</p></li>
+            <li><p>X. La jurisdiction ne fournit pas cet élément d'information</p></li>
+            </ul>-->
+        </li>
+        
+        <li><p>le nombre de véhicules en cause;</p>
+        
+     <!--    <ul>
+            <li><p>01 à 98. 01-98 véhicules en cause;</p></li>
+            <li><p>99. 99 véhicules ou plus en cause;</p></li>
+            <li><p>UU. Inconnu;</p></li>
+             <li><p>XX. La jurisdiction ne fournit pas cet élément d'information.</p></li>
+            </ul>-->
+        </li>
+        
+        <li><p>le type de collision;</p></li>
+        
+        <li><p>l'endroit routier de la collision;</p></li>
+        
+        <li><p>les conditions météorologiques au moment de la collision;</p></li>
+        
+        <li><p>l'état de la chaussée;</p></li>
+        
+        <li><p>le segment de route où la collision a eu lieu;</p></li>
+        
+        <li><p>la signalisation;</p></li>
+        
+        <li><p>le type de véhicule impliqué dans la collision;</p></li>
+        
+        <li><p>l'année de modèle du véhicule;</p></li>
+        
+        <li><p>le sexe de la personne impliquée dans la collision;</p></li>
+        
+        <li><p>l'âge de la personne impliquée dans la collision;</p>
+        
+        <ul>
+            <li><p>Pour l'âge, les modalités <em>NN</em> et <em>UU</em> ont été remplacées par <m>-2</m> et <m>-1</m> respectivement afin de permettre des groupements dans un tableau croisé dynamique.</p></li>
+            </ul>
+        </li>
+        
+        <li><p>le type de blessure;</p></li>
+        
+        <li><p>les mesures de sécurité utilisées;</p></li>
+        
+        <li><p>le type d'usager.</p></li>
+        
+    </ul>
+    </p>
+        
+<p>La base de données est en lien avec les individus impliqués dans une collision et non pas le nombre de collisions. Une collision est donc enregistrée plusieurs fois selon le nombre de personnes impliquées. Par exemple, si deux véhicules sont entrées en collision, chacun avec un conducteur et un passager, on retrouvera cette collision quatre fois dans la base de données.</p>
+    
+</section>
+        
+
+<section xml:id="sec-Diabete">
+    <title>Diabète</title>
+
+<p>Les trois premiers laboratoires sont consacrés à l'étude de la maladie du diabète, en mettant l'accent sur les femmes d'origine pima. Les Pimas sont un peuple autochtone de la région du Sonora, au Mexique, et de l'État de l'Arizona, aux États-Unis. Les données utilisées proviennent du National Institute of Diabetes and Digestive and Kidney Diseases (l'Institut National du Diabète et des Maladies Digestives et Rénales des États-Unis). Les femmes ont été suivies sur une longue période de temps, soit de 1965 à 1995. Ce type de recherche, appelé étude longitudinale, vise à suivre l'évolution d'une variable dans le temps. L'année exacte de la collecte de données pour ce laboratoire n'est toutefois pas connue. </p>
+    
+    
+<p>Selon Santé Canada, le diabète est défini comme &#xAB; une maladie chronique qui se développe lorsque le corps ne produit pas l'insuline dont il a besoin pour transformer le sucre en énergie ou qu'il ne l'utilise pas efficacement &#xBB;<fn><url href="https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/diabete.html"/>, page consulté le 26 août 2024</fn>. Cette maladie se divise en trois catégories : le diabète de type 1, le diabète de type 2 et le diabète gestationnel. Le diabète de type 1 se caractérise par une production insuffisante d'insuline par le corps. Le diabète de type 2 est lié à une résistance du corps à l'insuline. Le diabète gestationnel, quant à lui, se manifeste par une élévation récente du taux de glucose dans le sang d'une femme enceinte.</p>
+    
+<p>Dans l'étude présentée, on se concentre sur le diabète de type 2, une forme de diabète fréquemment associée à l'inactivité physique, à l'obésité, à l'âge avancé d'un individu, ainsi qu'à des antécédents familiaux de diabète de type 2. Plusieurs communautés autochtones rencontrent des obstacles pour accéder à des soins de santé adéquats en raison de ressources limitées, de faibles revenus et de conditions économiques précaires. </p>
+    
+<p>La base de données de l'enquête comprend les mesures diagnostiques d'un échantillon de 768 femmes d'origine pima de l'Arizona. Les variables à l'étude sont :</p>
+
+<p>
+<ul>
+    
+<li><p>l'<term>identifiant</term> des participantes. L'éthique en matière de recherche exige l'anonymat des personnes participantes. Ainsi, un numéro est attribué à chaque individu afin d'éviter de divulguer leur identité;</p></li>
+    
+<li><p> l'<term>âge</term> des participantes en année; </p></li>
+    
+<li><p> la concentration de <term>glucose</term> plasmatique après deux heures lors d'un test de tolérance au glucose par voie orale en mg/dL. Un taux élevé de glucose est un signe précoce du diabète de type 2. Après ce test, une valeur considérée saine est inférieure à 140 mg/dL. Une valeur comprise entre 140 et 199 mg/dL est considérée comme un prédiabète. Une valeur de 200 mg/dL ou plus indique un diabète;</p></li>
+    
+<li> <p> la <term>pression artérielle diastolique</term> en mm Hg. La pression diastolique indique la pression dans les artères lorsque le coeur se repose entre deux battements. Une valeur comprise entre 60 et 80 est considérée normale. Une valeur entre 80 et 90 est qualifiée de préhyperetension. Une valeursupérieure à 90 est classifiée comme hypertension; </p></li>
+    
+<li> <p> l'<term>épaisseur du pli cutané du triceps</term> en mm;</p></li>    
+    
+<li> <p> l'<term>insuline</term> dans le sang en <m>\mu</m>U/mL. L'insuline est une hormone produite par le pancréas. Elle joue un rôle crucial dans le maintien de l'équilibre énergétique du corps et la régulation du taux de glucose sanguin. Après un repas riche en glucides, le taux de glucose peut augmenter rapidement; l'insuline intervient alors pour l'abaisser. En cas de production insuffisante d'insuline ou si le corps devient résistant à son action, le glucose reste en excès dans le sang, ce qui peut entraîner des maladies comme le diabète de type 1 ou le diabète de type 2. Dans l'étude des femmes d'origine pima, l'accent est mis sur le risque de développement du diabète de type 2;</p></li>
+
+<li> <p> l'<term>indice de masse corporelle</term> (IMC) en kg/m<m>^{2}</m>. Comme l'indiquent ses unités, l'IMC est la valeur obtenue en divisant la masse d'un individu par sa taille au carré. Il s'agit d'un indicateur permettant d'estimer le surpoids d'une personne. Selon Statistique Canada, l'IMC fournit &#xAB; un moyen de classer le poids corporel en fonction de risque pour la santé &#xBB; <fn>https://www150.statcan.gc.ca/n1/pub/82-229-x/2009001/status/abm-fra.htm</fn>. Cependant, l'IMC n'est pas sans faille. Il ne fournit aucune information concernant la distribution de la matière grasse dans le corps; </p></li>
+    
+<li> <p> les stades d'<term>obésité</term> selon Santé Canada (catégorie de  l'IMC) :</p>
+    
+    <p><ol>
+    
+        <li> Poids insuffisant (<m> \lt 18,5</m>)</li>
+        <li> Poids normal (<m>18,5 - 24,9</m>)</li>
+        <li> Excès de poids (<m>25,0 - 29,9</m>)</li>
+        <li> Obésité Classe I (<m>30,0-34,9</m>)</li>
+        <li> Obésité Classe II (<m>35-39,9</m>)</li>
+        <li> Obésité Classe III (<m>\geq 40,0</m>)</li>
+    </ol></p>
+    
+</li>
+
+
+<li> <p> la <term>fonction pedigree du diabète</term>. C'est un score mesurant le risque familial du diabète. Cette valeur mesure entre 0,08 et 2,42;
+ </p> </li>
+ 
+    
+<li> <p> l'<term>atteinte</term> au diabète (avoir ou non le diabète).</p> 
+    <p><ol marker="0. ">
+    
+        <li> <p>Non </p></li>
+        <li> <p>Oui </p></li>
+    </ol></p>
+    
+    </li>
+    
+</ul>
+</p>
+    
+    
+</section>
+    
+    
+ 
+    
+    
+    <section xml:id="sec-Polluants">
+    <title>Polluants</title>
+    
+        
+        <p>Le 9 août 2024, la ville de Montréal a reçu une quantité de pluie record entre 158 et 173 mm en raison de la tempête tropicale Debby, entraînant d'importantes inondations et des dommages infrastructurels. Une question intéressante à examiner est la suivante : comment des précipitations intenses influencent-elles la qualité de l'air? Certaines études démontrent que &#xAB; les précipitations intenses réduisent temporairement la concentration de particules fines (<term><m>PM_{2,5}</m></term>) et de dioxyde d'azote (<term><m>NO_{2}</m></term>) dans l'air en raison du lavage atmosphérique &#xBB; (SOURCE? Wang, Y., et al. (2014), Eslami, A., et al. (2020),Kim, B. M., Park, J. H. (2001)). Cependant, l'impact d'intenses précipitations sur la qualité de l'air peut varier selon des facteurs locaux tels que différentes sources de polluants et les conditions météorologiques. Dans les zones urbaines à forte circulation ou avec plusieurs secteurs industriels, les améliorations de la qualité de l'air peuvent être temporaires si les polluants s'accumulent rapidement après l'arrêt de la pluie. Afin d'étudier cette question, les données de la qualité de l'air de Montréal pour l'année 2024 ont été recueillies <fn><url href="https://donnees.montreal.ca/dataset/rsqa-iqa-historique"/>, page consultée le 14 octobre 2024</fn>. Cette base de données comprend les variables suivantes.</p>
+    
+    <p>
+    <ul>
+    
+        <li><p>la station de laquelle les mesures ont été prélevées;</p></li>
+        <li><p> le nom du polluant mesuré </p>
+        
+            <ul>
+            <li><p>l'ozone troposphérique, <alert><m>O_{3}</m></alert>;</p></li>
+            <li><p>le diazote de carbone, <alert><m>NO_{2}</m></alert>;</p></li>
+            <li><p>le monoxyde de carbone, <alert><m>CO</m></alert>;</p></li>    
+            <li><p>le dioxyde de soufre, <alert><m>SO_{2}</m></alert>;</p></li>
+                <li><p>les particules fines, <alert><m>PM_{2,5}</m></alert>.</p></li>
+            </ul>
+        
+        </li>
+        
+        <li><p>la valeur du polluant, tous en mg/m<m>^{3}</m>;</p></li>
+        
+        <li><p>la journée du prélèvement;</p></li>
+        
+        <li><p>l'heure du prélèvement.</p></li>
+        
+    </ul>
+    </p>
+        
+    
+    </section>
+    
+    
+    <section xml:id="sec-Precipitations">
+    <title>Précipitations</title>
+
+<p>D'après les données récoltées entre 1991 à 2020 par Environnement Canada à la station météorologique de l'Aéroport international Pierre-Elliott-Trudeau de Montréal <fn> Données tirées de <url href="https://climat.meteo.gc.ca/climate_normals/results_1991_2020_f.html?searchType=stnName_1991&amp;txtStationName_1991=montreal&amp;searchMethod=contains&amp;txtCentralLatMin=0&amp;txtCentralLatSec=0&amp;txtCentralLongMin=0&amp;txtCentralLongSec=0&amp;stnID=123000000&amp;dispBack=1"/>, page consultée le 21 novembre 2024</fn>, la ville de Montréal reçoit en moyenne <m>77,2</m> mm de précipitations totales au mois de mars, soit environ <m>2,49</m> mm par jour. Les précipitations totales sont la somme de la pluie totale et de l'équivalent en eau de la neige totale en millimètres.</p>
+        
+        <p>Les données échantillonnales d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>. La seule variable à l'étude est la quantité de précipitations totales en mm.</p>
+        
+    <!--<p>Cependant, ces dernières années, de nombreux Montréalais ont l'impression que les précipitations mensuelles sont en baisse (<fn><url href="https://www.lapresse.ca/actualites/environnement/2022-11-13/la-premiere-neige-de-plus-en-plus-tardive.php"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://ici.radio-canada.ca/nouvelle/2038368/deficit-significatif-neige-quebec"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://lactualite.com/actualites/montreal-a-perdu-le-tiers-de-sa-neige-depuis-1863/"/>, page consultée le 23 novembre 2024</fn>). Pour vérifier cette hypothèse, on va réaliser un test d'hypothèse sur une moyenne en se basant sur les données échantillonnales d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>. La seule variable à l'étude est la quantité de précipitations totales en mm.</p>-->
+
+    
+    </section>
+    
+    
+
+        
+    
+    
+</appendix>
+

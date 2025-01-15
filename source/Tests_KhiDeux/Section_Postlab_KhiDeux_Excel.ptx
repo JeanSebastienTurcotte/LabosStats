@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Postlab_KhiDeux" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Réflexions</title>
+<p>Mise en contexte</p>
+
+
+ 
+    
+    <worksheet xml:id="ws-Reflexion_KhiDeux">
+<title>Travail à faire après le laboratoire</title>
+
+<objectives>
+    <ul>
+      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>Formuler des hypothèses de recherche.</p></li>
+      <li><p>Choisir le type de tests adéquatement et comprendre les distinctions entre chaque type de tests.</p></li>
+      <li><p>Effectuer un test d'indépendance pour vérifier s'il existe un lien ou non entre deux variables.</p></li>
+      <li><p>Interpréter adéquatement la conclusion d'un test.</p></li>
+    </ul>
+    </objectives>
+        
+        <exercise>
+    <statement><p>Les cinq étapes d'un test d'indépendance permettent de vérifier s'il existe ou non un lien entre deux variables <m>X</m> et <m>Y</m>. Pourquoi n'est-il pas possible de simplement vérifier si <m>P(X_{i})=P(X_{i}|Y_{j})</m>, où <m>P(X_{i})</m> est la probabilité de l'événement <m>X_{i}</m>? Pourquoi faut-il calculer des effectifs théoriques et les comparer aux effectifs observés?</p></statement>
+    </exercise>
+    
+        
+         <exercise>
+  <statement><p>La conclusion d'un test d'indépendance peut parfois être obtenue avec un test paramétrique. Lequel? Expliquer.</p></statement>
+  </exercise>
+    
+<exercise>
+    <statement><p>À la <xref ref="ssec-KhiDeuxAge"/>, on a fait un test d'indépendance vérifiant s'il existe un lien entre l'âge d'un conducteur et la gravité d'une collision. La variable âge a été groupée en tranche de 10 ans. Ceci a mené au non-rejet de l'hypothèse nulle, c'est-à-dire qu'on n'a pas pu conclure qu'il existait un lien entre l'âge et la gravité. Choisir un groupement d'âge différent de celui fait à la  <xref ref="ssec-KhiDeuxAge"/> et montrer que la conclusion peut changer.</p></statement>
+    </exercise>
+        
+        
+        
+        <exercise>
+    <statement><p>Parmi toutes les bases de données disponibles dans la <xref ref="ann-basesdedonnees"/>, effectuer une recherche statistique en suivant toutes les étapes présentées dans les laboratoires 1, 2, 3 et 6 sauf la collecte de données. Cela signifie une recherche préliminaire de la littérature scientifique, la formulation de quelques hypothèses de recherche et la réalisation de tests d'indépendance. Faire deux tests d'indépendance en utilisant les canevas fournis. Au moins un des tests doit incorporer une variable quantitative continue.</p></statement>
+    </exercise>
+        
+         
+        
+    </worksheet>
+    
+  </section>
+  

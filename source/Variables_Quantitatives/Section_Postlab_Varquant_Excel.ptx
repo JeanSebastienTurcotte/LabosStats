@@ -36,13 +36,20 @@
     </exercise>
     
      <exercise>
-    <statement><p>Une donnée est considérée comme aberrante si elle se situe à 1,5 fois l'écart interquartile <m>\left(1,5\times (Q_{3}-Q_{1})\right)</m> en dessous du premier quartile ou à 1,5 fois l'écart interquartile au-dessus du troisième quartile. Dans la feuille de calcul <alert>Étude IMC</alert>, déterminer toutes les valeurs aberrantes de l'indice de masse corporelle en effectuant les calculs nécessaires. À la <xref ref="sssec_FiltrerP"/>, quelles valeurs auraient dû être exclues en plus des valeurs nulles?</p></statement>
+    <statement><p>Une donnée aberrante est une donnée située loin des autres observations. Une donnée est considérée comme aberrante si elle se situe à 1,5 fois l'écart interquartile <m>\left(1,5\times (Q_{3}-Q_{1})\right)</m> en dessous du premier quartile ou à 1,5 fois l'écart interquartile au-dessus du troisième quartile. Dans la feuille de calcul <alert>Étude IMC</alert>, déterminer toutes les valeurs aberrantes de l'indice de masse corporelle en effectuant les calculs nécessaires. À la <xref ref="sssec_FiltrerP"/>, quelles valeurs auraient dû être exclues en plus des valeurs nulles? Quel graphique permet de visualiser (d'identifier d'un coup d'oeil) les données aberrantes d'une variable?</p></statement>
+    </exercise>
+ 
+    
+      <exercise>
+    <statement><p>Devrait-on toujours exclure les valeurs aberrantes lors du traitement des données (graphiques et calculs de mesures)? Donner des exemples où l'exclusion est justifiée et des exemples où elle pourrait masquer la réalité d'un phénomène.</p></statement>
     </exercise>
     
     <exercise>
     <statement><p>Le choix de l'amplitude et du nombre de classes d'un histogramme peut influencer l'interprétation du graphique. Reproduire l'histogramme de la répartition de l'échantillon des femmes d'origine pima selon l'indice de masse corporelle en regroupant les données en cinq classes. Interpréter l'allure du graphique. Comparer l'histogramme reproduit à l'histogramme fait à la <xref ref="sssec_Histogramme"/>.</p>
     </statement>
     </exercise>
+    
+      <exercise><p>À la <xref ref="sssec_Mesures_DoubleEntree"/>, la moyenne et l'écart type corrigé de l'indice de masse corporelle par présence de diabète ont été calculés pour chaque échantillon (femmes atteintes et femmes non atteintes). Il manque une mesure statistique importante à calculer lorsque l'on compare deux distributions. Laquelle? Faire son calcul en ajoutant une colonne au tableau croisé dynamique de la <xref ref="Fig_Mesures_Pol_13bis"/>. Pourquoi cette mesure est-elle importante dans un contexte de comparaison?</p></exercise>
     
     <exercise>
     <statement>
@@ -80,6 +87,9 @@
     </statement>
     </exercise>
     
-    <exercise><p>Après avoir étudié certaines variables quantitatives, formuler quelques hypothèses en lien avec ces variables et les autres.</p></exercise>
+    <exercise xml:id="Varquant-12"><p>Après avoir étudié certaines variables quantitatives, formuler quelques hypothèses de recherche en lien avec ces variables et les autres de la base de données.</p></exercise>
+    
+    
+    <!--<exercise><p>En statistique, une recherche comprend deux hypothèses : une hypothèse de base, appelée l'hypothèse nulle, et une hypothèse alternative. Les hypothèses formulées à l'exercice <xref ref="Varquant-12" text="local"/> correspondent-elle à des hypothèses de base ou à des hypothèses alternatives? Justifier.</p></exercise>-->
     </worksheet>
 </section>    

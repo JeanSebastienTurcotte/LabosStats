@@ -25,6 +25,8 @@
        <p>Avant de générer un tableau croisé dynamique impliquant une variable quantitative, il est important d'effectuer une enquête préliminaire des données dans le but de filtrer des données aberrantes si nécessaire.</p>
         
         <p>En appliquant un filtre à la variable <alert>IMC</alert>, on constate que certaines femmes ont enregistré un indice de masse corporelle de 0. Cette valeur étant impossible, il s'agit donc d'une valeur aberrante. On choisit de filtrer ces valeurs et de les exclure lors de la création du tableau de fréquences, de l'histogramme, ainsi que des calculs des mesures statistiques, car ces dernières pourraient fausser les interprétations. Les étapes suivantes mènent au filtrage du tableau principal <alert>Échantillon</alert>.</p>
+        
+     
        
           
           <p>
@@ -59,6 +61,7 @@
              
               </li> -->
               
+              <li><p>Ouvrir le classeur <alert>Données_Diabète.xlsx</alert> sauvegardé avec le travail fait aux laboratoires 1 et 2.</p></li>
               
               <li><p>Dans le feuille <alert>Données</alert>, cliquer sur l'icône du filtre à droite du titre de la colonne <alert>IMC</alert> (voir la <xref ref="Fig_Filtre_0"/>). </p>
               <p></p>
@@ -145,9 +148,10 @@
 <description>Les trois colonnes du tableau croisé dynamique final de la répartition des femmes selon l'indice de masse corporelle</description>
 </image>
 </figure>    
-    
+  
     </li>
 
+ 
 </ol>
 </p>
         
@@ -1869,7 +1873,8 @@
           </p>
           
        
-                     <p> Pour une étude préliminaire d'un échantillon, le troisième quartile est une mesure pertinente pour examiner l'allure globale d'une distribution et l'étalement des données. Combiné avec le premier quartile, il permet de détecter une éventuelle asymétrie dans la distribution des données. Un tableau final des mesures descriptives d'une étude préliminaire de la variable IMC filtrée se retrouvent à la <xref ref="Fig_IMC_Mesures_Finales"/></p>
+                     <p> Pour une étude préliminaire d'un échantillon, le troisième quartile est une mesure pertinente pour examiner l'allure globale d'une distribution et l'étalement des données. Combiné avec le premier quartile, il permet de détecter une éventuelle asymétrie dans la distribution des données. Un tableau final des mesures descriptives d'une étude préliminaire de la variable IMC filtrée se retrouvent à la <xref ref="Fig_IMC_Mesures_Finales"/>.</p>
+                    <p></p>
                   
                      <figure xml:id="Fig_IMC_Mesures_Finales">
 <caption>Mesures descriptives d'une étude préliminaire de l'IMC filtrée</caption>
@@ -1877,6 +1882,50 @@
 <description>Mesures descriptives d'une étude préliminaire de l'IMC filtrée</description>
 </image>
 </figure>
+                    
+                   
+                    <p></p>
+                    
+                    <p>Le diagramme à quartiles, communément appelé la boîte à moustaches si le diagramme est placé horizontalement, illustre le premier quartile, la médiane, le troisième quartile, une valeur minimale qui est située à une distance d'une fois et demi l'écart interquartile en dessous du premier quartile, ainsi qu'une valeur maximale située à une distance d'une fois et demi l'écart interquartile au-dessus du troisième quartile. Ce graphique permet également de détecter d'un coup d'oeil les asymétries possibles à l'aide de la longueur des moustaches, les deux lignes qui s'étendent des quartiles aux valeurs minimale et maximale. </p>
+                    
+                    <p>Avec Excel, les détails pour tracer un diagramme à quartiles de la variable <alert>IMC</alert> sont présentées ci-dessous.</p>
+                    
+                    <p>
+                    <ol>
+                        
+                        <li><p>Dans la feuille <alert>Données</alert>, sélectionner la plage de données de la variable dont on souhaite tracer le diagramme à quartiles. Ici, c'est la variable <alert>IMC</alert>. S'assurer que les données de cette variable sont filtrées pour enlever les valeurs nulles. La sélection devrait être <c>H6:H773</c>, ou <c>H17:H773</c> (quand les valeurs sont ordonnées en ordre croissant et n'incluent pas les valeurs nulles).</p></li>
+                        
+                        <li><p>Cliquer sur l'onglet <alert>Insertion</alert> et sélectionner l'option <alert>Boîte à moustaches</alert> (voir la <xref ref="Fig_Moustaches_1"/>).</p>
+                           <p></p>
+                  
+                     <figure xml:id="Fig_Moustaches_1">
+<caption>Insertion d'une boîte à moustaches</caption>
+<image source="images/Fig_Moustaches_1.png" >
+<description>Insertion d'une boîte à moustaches</description>
+</image>
+</figure>
+                            <p></p>
+                        </li>
+                        
+                        <li><p>Déplacer le graphique à la feuille <alert>Étude IMC</alert>, dans un endroit vide de la feuille.</p></li>
+                        
+                        <li><p>Faire la mise en forme du graphique. Il devrait ressembler au graphique de la <xref ref="Fig_Moustaches"/>.</p>
+                        
+                        <p></p>
+                  
+                     <figure xml:id="Fig_Moustaches">
+<caption>Boîte à moustaches de la variable <alert>IMC</alert></caption>
+<image source="images/Fig_Moustaches.png" >
+<description>Boîte à moustaches de la variable IMC</description>
+</image>
+</figure>
+                        </li>
+                        
+                    </ol>
+                    
+                    </p>
+                    
+                  
                 
      </paragraphs>
                 
@@ -1906,9 +1955,9 @@
                         <p></p>
                    </li>
                         
-                   <li><p>Cliquer un endroit sous le tableau des mesures statistiques de l'IMC filtrée. Maintenir enfoncé le bouton gauche de la souris, glisser le curseur vers la droite pour créer la zone de texte de taille désirée. (GIF? LAB JS?)</p></li>   
+                   <li><p>Cliquer un endroit sous le tableau des mesures statistiques de l'IMC filtrée. Maintenir enfoncé le bouton gauche de la souris, glisser le curseur vers la droite pour créer la zone de texte de taille désirée. </p></li>   
 
-                    <li><p> Interpréter chaque mesure statistique de l'indice de masse corporelle filtrée. (Comparer dans post-lab?)</p></li>    
+                    <li><p> Interpréter chaque mesure statistique de l'indice de masse corporelle filtrée.</p></li>    
                     </ol>
                     </p>
                 

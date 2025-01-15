@@ -2,5 +2,1322 @@
 
 <section xml:id="sec-Laboratoire_TestHyp" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Laboratoire</title>
-<p>Mise en contexte</p>
+
+  <introduction> <p>Dans ce laboratoire, l'objectif est de poursuivre l'analyse d'une base de données, soit l'étape d'inférence statistique. On souhaite répondre aux questions de recherche et valider les hypothèse de recherche à l'aide de tests paramétriques.</p>
+       
+       <p> Pour les tests d'hypothèse sur une moyenne, sur une proportion et sur deux moyennes indépendantes, on utilise les données diagnostiques provenant de l'échantillon de femmes d'origine pima traitées dans les trois premiers laboratoires.</p>
+
+   <p> Pour le test d'hypothèse sur deux moyennes dépendantes, on utilise les données sur la qualité de l'air de la ville de Montréal. On désire savoir s'il y a une différence significative dans les polluants avant et après d'intenses précipitations.</p>
+    </introduction>    
+    
+    
+    
+  <!--  <subsection xml:id="ssec-PreparationExcel">
+    <title>Préparation du fichier Excel</title>
+   
+    <subsubsection xml:id="sssec-SauvegarderXLSM">
+        <title>Sauvegarder un fichier avec l'extension <c>xlsm</c></title>
+         <introduction><p>Ce laboratoire utilise des canevas à remplir, créés pour effectuer des tests d'hypothèses paramétriques. Ces canevas contiennent des macros, une série d'instructions ou d'actions qu'un utilisateur peut exécuter automatiquement pour automatiser une tâche répétitive comme effacer le contenu d'une plage de cellules. Pour exécuter des macros, il faut sauvegarder les fichiers Excel avec l'extension <c>xlsm</c> au lieu de <c>xlsx</c>. </p></introduction>
+        
+        <p>Les étapes pour sauvegarder un fichier Excel avec l'extension <c>xlsm</c> sont présentées ci-dessous.</p>
+        
+        <p>
+        <ol>
+            
+         <li><p>Créer une copie du fichier Excel <alert>Données_Diabètes.xlsx</alert>. Nommer ce fichier                                  <alert>Test_Diabètes.xlsx</alert>.</p></li>    
+            
+         <li><p>Ouvrir le fichier <alert>Test_Diabètes.xlsx</alert>.</p></li>   
+            
+         <li><p>Cliquer sur l'onglet <alert>Fichier</alert> du ruban.</p></li>  
+            
+         <li><p>Sélectionner l'onglet <alert>Enregistrer une copie</alert>.</p>
+          <p></p>
+             
+             
+              (voir la <xref ref="Fig_Enregistrer_1"/>) <figure xml:id="Fig_Enregistrer_1">
+<caption>Sélection de l'option <alert>Enregistrer une copie</alert></caption>
+<image source="images/Fig_Enregistrer_1.png" >
+<description>Sélection de l'option Enregistrer une copie</description>
+</image>
+</figure>
+            
+         </li>   
+            
+            
+         <li><p>Cliquer sur la flèche du menu déroulant et sélectionner le deuxième choix de type de fichier, soit l'extension de fichier <c>xlsm</c> (voir la <xref ref="Fig_Enregistrer_2"/>). Ceci permet la sauvegarde d'un fichier Excel prenant en charge les macros.</p>
+             
+             <p></p>
+             
+              <figure xml:id="Fig_Enregistrer_2">
+<caption>Sélection de l'extension de fichier <c>xlsm</c></caption>
+<image source="images/Fig_Enregistrer_2.png" >
+<description>Sélection de l'extension de fichier xlsm</description>
+</image>
+</figure>
+            
+            
+         </li>  
+            
+        <li><p>Sauvegarder le fichier dans le répertoire désiré.</p></li>  
+            
+            
+        </ol>
+        </p>
+        
+        <p>Le fichier <alert>Test_Diabètes.xlsm</alert> est sauvegardé. Répéter les étapes avec le fichier <alert>Données_Polluant.xlsx</alert>.</p>
+        
+    </subsubsection>-->
+        
+        
+      <!--  <subsubsection xml:id="sssec-Developpeur">
+        <title>Afficher l'onglet <term>Développeur</term></title>
+            <p></p>
+            
+         <introduction><p>Puisque ce laboratoire utilise des canevas qui contiennent des macros, il faut afficher l'onglet <alert>Développeur</alert> dans le ruban d'Excel. </p></introduction>
+        
+        <p>Les étapes pour afficher l'onglet sont présentées ci-dessous.</p>
+        
+        <p>
+        <ol>
+            
+         <li><p>Ouvrir le fichier <alert>Test_Diabètes.xlsm</alert>.</p></li>   
+            
+         <li><p>Cliquer sur l'onglet <alert>Fichier</alert> du ruban.</p></li>  
+            
+         <li><p>Sélectionner l'option <alert>Autres</alert> (voir la <xref ref="Fig_Developpeur_1"/>).</p>
+          <p></p>
+             
+             
+             <figure xml:id="Fig_Developpeur_1">
+<caption>Sélection de l'option <alert>Autres</alert></caption>
+<image source="images/Fig_Developpeur_1.png" >
+<description>Sélection de l'option Autres</description>
+</image>
+</figure>
+            
+         </li>   
+            
+            
+         <li><p>Des options s'affichent. Sélectionner l'onglet <alert>Options</alert> (voir la <xref ref="Fig_Developpeur_2"/>).</p>
+             
+             <p></p>
+             
+              <figure xml:id="Fig_Developpeur_2">
+<caption>Sélection de l'onglet <alert>Options</alert></caption>
+<image source="images/Fig_Developpeur_2.png" >
+<description>Sélection de l'onglet Options</description>
+</image>
+</figure>
+            
+            
+         </li>  
+            
+        <li><p>Une boîte de dialogue s'affiche présentant des onglets dans sa partie gauche. Sélectionner l'onglet <alert>Personnaliser le ruban</alert> (voir la <xref ref="Fig_Developpeur_gif"/>). </p></li>  
+            
+        
+            <li> <p>À droite de la boîte de dialogue, certains onglets principaux sont cochés. Il faut glisser la barre déroulante vers le bas et trouver l'icône <alert>Développeur</alert> (voir la <xref ref="Fig_Developpeur_gif"/>).</p></li>
+            
+            <li><p>Cocher l'encadré à gauche de <alert>Développeur</alert> (voir la <xref ref="Fig_Developpeur_gif"/>). Ceci fait en sorte que l'onglet <alert>Développeur</alert> apparaît parmi les onglets principaux d'Excel.</p>
+            <p></p>
+                   <figure xml:id="Fig_Developpeur_gif">
+<caption>Sélection des onglets <alert>Personnaliser le ruban</alert> et <alert>Développeur</alert></caption>
+<image source="images/Fig_Developpeur_gif.png" >
+<description>Sélection des onglets Personnaliser le ruban et Développeur</description>
+</image>
+</figure>
+            
+            </li>
+            
+            <li><p>Cliquer sur <alert>OK</alert>.</p></li>
+            
+         </ol>
+        </p>   
+        
+    </subsubsection>
+    </subsection>-->
+    
+    
+    
+    <subsection xml:id="ssec-Canevas">
+    <title>Présentation des canevas</title>
+    
+        <introduction><p>Les tests d'hypothèse paramétriques comportent plusieurs étapes : formuler les hypothèses nulle et alternative, préciser les informations du problème et fixer le seuil de signification, vérifier les conditions d'application du test, calculer l'écart type <m>\sigma_{\bar{X}}</m>, définir la règle de décision, calculer la statistique du test, calculer la cote <m>z</m> ou <m>t</m> observée de la statistique ou la valeur p, puis prendre une décision et conclure.</p> 
+            
+            <p>Le logiciel Excel réalise certaines de ces étapes, mais ne décompose pas toutes les phases d'un test. Ainsi, un canevas a été créé pour bien visualiser l'ensemble des étapes d'un test de manière plus détaillée. Dans cette sous-section, on explique les particularités des canevas.</p></introduction>
+    
+    
+    <p>La figure <xref ref="Fig_Canevas_gif"/> présente la configuration du canevas pour un test d'hypothèse sur une moyenne.</p>
+    
+<p></p>
+                   <figure xml:id="Fig_Canevas_1">
+<caption>Configuration générale d'un canevas (quatre premières étapes d'un test)</caption>
+<image source="images/Fig_Canevas_1.png" >
+<description>Configuration générale d'un canevas (quatre premières étapes d'un test)</description>
+</image>
+</figure>
+        
+         <figure xml:id="Fig_Canevas_3">
+<caption>Configuration générale d'un canevas (étapes 5 et 6 d'un test)</caption>
+<image source="images/Fig_Canevas_3.png" >
+<description>Configuration générale d'un canevas (étapes 5 et 6 d'un test)</description>
+</image>
+</figure>
+        
+        <figure xml:id="Fig_Canevas_4">
+<caption>Configuration générale d'un canevas (dernière étape d'un test)</caption>
+<image source="images/Fig_Canevas_4.png" >
+<description>Configuration générale d'un canevas (dernière étape d'un test)</description>
+</image>
+</figure>
+        
+         <figure xml:id="Fig_Canevas_gif">
+<caption>Configuration générale d'un canevas</caption>
+<image source="images/Fig_Canevas_gif.png" >
+<description>Configuration générale d'un canevas</description>
+</image>
+</figure>
+        
+        <p>
+        <ul>
+        
+            <li><p>Les cellules ayant un fond bleu contiennent les titres de chaque étape du test d'hypothèse.</p></li>
+            
+            <li><p>Les cellules ayant un fond rose ne peuvent pas être modifiées. À cet effet, elles sont protégées pour empêcher l'utilisateur d'y apporter des changements. Certaines de ces cellules contiennent des formules; par exemple, la cellule <c>C22</c> contient la formule permettant de calculer <m>\sigma_{\bar{X}}</m>. Cette cellule reste vide jusqu'à ce que tous les paramètres nécessaires à son calcul ont été attribués une valeur numérique dans leurs cellules respectives. Il arrive parfois que du contenu soit effacé par erreur lors de la saisie. La protection des cellules prévient ce type d'erreur.</p></li>
+            
+            <li><p>Les cellules ayant un fond gris et une bordure noire doivent être remplies. Certaines de ces cellules ont des menus déroulants permettant l'utilisateur de choisir une option. Par exemple, la cellule <c>D6</c> contient un menu déroulant forçant l'utilisateur de choisir le symbole approprié (<m>&lt;, &gt;</m> ou <m>\neq </m>) pour le type de test que ce dernier souhaite réaliser (voir la <xref ref="Fig_Canevas_7"/>).</p>
+            <p></p>
+            
+            <figure xml:id="Fig_Canevas_7">
+            <caption>Menu déroulant de certaines cellules</caption>
+            <image source="images/Fig_Canevas_7.png" >
+            <description>Menu déroulant de certaines cellules</description>
+            </image>
+            </figure>
+           
+            <p>Lorsqu'une cellule grisée contient un menu déroulant, l'utilisateur doit choisir une des options.</p>
+                
+            <p>D'autres cellules grisées sont vides et doivent être remplies par l'utilisateur. Parfois, il faut y inscrire des valeurs numériques; d'autres fois, il faut y inscrire du texte. Tel est le cas pour la cellule <c>E5</c>. L'utilisateur doit taper la valeur numérique de <m>\mu_{0}</m> qu'il souhaite tester.</p>    
+                
+                
+                
+             <p> Certaines des cellules grisées sont accompagnées d'une boîte offrant des instructions lorsque la cellule est sélectionnée. La figure <xref ref="Fig_Canevas_8"/> présente un tel exemple pour la cellule <c>C10</c>.</p>    
+            <p></p>
+            
+            <figure xml:id="Fig_Canevas_8">
+            <caption>Exemple d'un message accompagnant la sélection d'une cellule grisée</caption>
+            <image source="images/Fig_Canevas_8.png" >
+            <description>Exemple d'un message accompagnant la sélection d'une cellule grisée</description>
+            </image>
+            </figure>    
+            </li>
+            
+            
+        </ul> 
+        </p>
+    
+    
+    </subsection>
+    
+    
+    
+    
+    
+    <subsection xml:id="ssec-TestMoyenne">
+    <title>Test d'hypothèse sur une moyenne</title>
+    
+        <introduction><p>Les tests d'hypothèse sur une moyenne permettent de décider si la moyenne d'une population a changé en se basant sur une moyenne échantillonnale, c'est-à-dire de déterminer si la différence entre les deux moyennes est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
+            
+            
+            <p>D'après les données récoltées entre 1991 à 2020 par Environnement Canada à la station météorologique de l'Aéroport international Pierre-Elliott-Trudeau de Montréal <fn> Données tirées de <url href="https://climat.meteo.gc.ca/climate_normals/results_1991_2020_f.html?searchType=stnName_1991&amp;txtStationName_1991=montreal&amp;searchMethod=contains&amp;txtCentralLatMin=0&amp;txtCentralLatSec=0&amp;txtCentralLongMin=0&amp;txtCentralLongSec=0&amp;stnID=123000000&amp;dispBack=1"/>, page consultée le 21 novembre 2024</fn>, la ville de Montréal reçoit en moyenne <m>77,2</m> mm de précipitations totales au mois de mars, soit environ <m>2,49</m> mm par jour. Les précipitations totales sont la somme de la pluie totale et de l'équivalent en eau de la neige totale en millimètres. Cependant, ces dernières années, de nombreux Montréalais ont l'impression que les précipitations mensuelles sont en baisse. Pour vérifier cette hypothèse, on va la tester avec les données d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>.</p></introduction>
+  
+        
+      
+    
+        
+        
+        
+        <paragraphs xml:id="par-MesuresUneMoyenne">
+            <p></p>
+        <title>Calculer les mesures statistiques échantillonnales</title>
+
+        <introduction><p>Pour réaliser un test d'hypothèse sur une moyenne, il faut préalablement avoir calculé les mesures statistiques de l'échantillon, c'est-à-dire la moyenne et l'écart type corrigé.</p></introduction>
+
+            <p>Ceci peut se faire en en utilisant les fonctions Excel <c>MOYENNE</c> et <c>ÉCARTYPE.STANDARD</c>.</p>
+            
+            
+            
+            <p>
+            <ol>
+                
+                <li><p>Télécharger et ouvrir le classeur <c>Données_Précipitations.xlsm</c>.</p></li>
+
+                <li><p>Dans la feuille intitulée <alert>Données_Précipitations</alert>, sélectionner le tableau dans son entièreté, soit la plage de cellules <c>F5:G36</c>. </p></li> 
+            
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB;. </p></li> 
+            
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms aux deux colonnes du tableau <alert>Échantillon</alert>.</p></li>
+                
+            </ol>
+            </p>
+            
+        </paragraphs>   
+        
+        
+          <paragraphs xml:id="sssec-CopierCanevasMoyenne">
+            <p></p>
+            <title>Copier le cavenas <alert>Une moyenne</alert></title>
+        
+            <p>Pour effectuer un test d'hypothèse, il faut copier (importer) le canevas dans le fichier de travail.</p>
+        
+            <p>
+            <ol>
+                
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Précipitations.xlsm</alert> et <alert>Labo 6_Canevas.xlsm</alert>.</p></li>   
+                
+             <li><p>Effectuer la procédure présentée à la ... (voir labo 4 JS) pour copier la feuille <alert>Une moyenne</alert> du fichier <alert>Labo 6_Canevas</alert> au classeur <alert>Données_Précipitations</alert>.</p></li>   
+            </ol>
+            </p>
+            
+        </paragraphs>
+
+
+     <subsubsection xml:id="sssec-EtapesUneMoyenne">
+        <title>Étapes d'un test sur une moyenne</title>
+         
+         <introduction><p>Les étapes pour réaliser un test d'hypothèse sur une moyenne sont présentées. On veut tester si la quantité moyenne de précipitations reçues par jour en mars à Montréal a diminué. La valeur historique de 1991 à 2020 est de <m>2,49</m> mm par jour. On va se baser sur un échantillon du mois de mars 2024. On choisit un seuil de signification de <m>5\%</m>.</p></introduction>
+
+
+        <p>
+        <ol>
+            <li><p>Dans le classeur <alert>Données_Précipitations</alert>, sélectionner la feuille <alert>Une moyenne</alert>.</p></li>
+            
+              <li><p>La première étape d'un test consiste à écrire la moyenne de référence de la population, ainsi qu'à définir le type de test que l'on souhaite réaliste, à savoir un test unilatéral à gauche, à droite ou bilatéral. Dans la cellule <c>E5</c>, taper <c>=77,2/31</c>, soit la quantité moyenne de précipitations reçues en mars de 1991 à 2020 divisée par le nombre de jours en mars. La cellule <c>E6</c> se remplit automatiquement avec la même valeur (voir la <xref ref="Fig_Moy_gif1"/>).</p>
+                
+                <p> Puisque notre hypothèse de recherche est que la quantité moyenne de précipitations quotidiennes a diminué, on privilégie un test unilatéral à gauche. Dans la cellule <c>D6</c> de la feuille <alert>Une moyenne</alert>, il faut donc choisir le symbole <m>&lt;</m> (voir la <xref ref="Fig_Moy_gif1"/>).</p>
+                
+                 <p></p>
+                    
+            <figure xml:id="Fig_Moy_gif1">
+            <caption>Détermination de la moyenne de référence <m>\mu</m> et choix de l'hypothèse alternative</caption>
+            <image source="images/Fig_Moy_gif1.png" >
+            <description>Détermination de la moyenne de référence mu et choix de l'hypothèse alternative</description>
+            </image>
+            </figure> 
+                  <p></p>
+
+            </li>
+            
+            
+            <li><p>Dans la deuxième étape du test, il faut remplir les cases grisées avec les informations demandées.</p>
+            
+                <p>
+                <ul>
+            
+                <li><p>Choisir un seuil de <m>0,05</m>. Dans la cellule <c>C9</c>, taper <m>0,05</m> (voir la <xref ref="Fig_Moy_gif2"/>).</p>
+                    
+                     
+                    </li>
+                
+                <li><p>Puisque la taille de la population est le nombre de jours du mois de mars (<m>31</m>) multipliée par le nombre d'années (<m>30</m>), taper <c>=30*31</c> dans la cellule <c>C10</c> (voir la <xref ref="Fig_Moy_gif2"/>).</p> </li>
+                
+                    <li><p>L'écart type de la population est inconnu. Ainsi, dans la cellule <c>C11</c>, taper <c>inconnu</c> (voir la <xref ref="Fig_Moy_gif2"/>).</p> </li>
+               
+                
+                <li><p>Il faut trouver la moyenne échantillonnale, soit <m>\bar{x}</m>. Dans la cellule <c>F9</c>, taper <c>=MOYENNE(Précipitations)</c> (voir la <xref ref="Fig_Moy_gif2"/>).</p></li>
+
+                 <li><p>Dans la cellule <c>F10</c>, taper <c>=NB(Précipitations)</c> pour indiquer la taille de l'échantillon (voir la <xref ref="Fig_Moy_gif2"/>).</p></li>
+                    
+                    <li><p>Dans la cellule <c>F11</c>, taper <c>=ECARTYPE.STANDARD(Précipitations)</c> pour indiquer l'écart type corrigé, <m>s</m>, de l'échantillon (voir la <xref ref="Fig_Moy_gif2"/>).</p></li>
+
+               
+                
+                <li><p>Une fois les plages <c>F9:F11</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>E20</c> et <c>C22</c> se remplissent automatiquement, les cellules étant pré-remplies avec les formules appropriées (voir la <xref ref="Fig_Moy_gif2"/>).</p>
+                
+                <p></p>
+                    
+               <figure xml:id="Fig_Moy_gif2">
+            <caption>Remplissage des informations de l'étape 2</caption>
+            <image source="images/Fig_Moy_gif2.png" >
+            <description>Remplissage des informations de l'étape 2</description>
+            </image>
+            </figure> 
+                      <p></p>
+
+                </li>
+
+            </ul>
+           
+            </p>
+            </li>
+
+                <li><p>À la troisième étape, il faut vérifier les conditions d'application du test. Puisque la taille de l'échantillon est supérieure à 30, on utilise la loi normale. Dans la cellule <c>C14</c>, sélectionner <alert>Normale</alert>. Écrire un texte dans la cellule fusionnée <c>C16</c> expliquant ce choix (voir la <xref ref="Fig_Moy_gif3"/>).</p>
+
+                <p></p>
+
+               <figure xml:id="Fig_Moy_gif3">
+            <caption>Choix de la loi à utiliser pour le test</caption>
+            <image source="images/Fig_2Moy_gif3.png" >
+            <description>Choix de la loi à utiliser pour le test</description>
+            </image>
+            </figure>
+                    <p></p>
+
+                </li>
+
+                <li><p>L'écart type de la distribution <m>\bar{X}</m>, soit <m>\sigma_{\bar{X}}</m>, est calculé à l'aide des informations se trouvant dans les cellules <c>C10</c>, <c>C11</c>, <c>F10</c>, <c>F11</c>, <c>C20</c> et <c>C21</c>.</p></li>
+                
+                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c>B29</c>, sélectionner la statistique appropriée du test unilatéral à gauche utilisant la loi normale, soit <m>-z_{\alpha}</m> (voir la <xref ref="Fig_Moy_gif4"/>). Remarquer que la valeur de <m>-z_{\alpha}</m> (environ <m>-1,645</m>) dans la cellule <c>D29</c> et <c>F31</c> est pré-remplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>5\%</m>.</p></li>
+                
+                <li><p> Dans la cellule <c>E31</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test unilatéral à gauche, il faut choisir les mots &#xAB; plus petite que &#xBB; (voir la <xref ref="Fig_Moy_gif4"/>). </p>
+                    
+                    <p>La cellule <c>F34</c> est pré-remplie avec la valeur du seuil de signification pour indiquer que l'on rejette l'hypothèse nulle si la valeur p trouvée est inférieure à <m>5\%</m>.</p>
+                  <p></p>
+                    
+               <figure xml:id="Fig_Moy_gif4">
+            <caption>Remplissage des cellules pour l'étape 5</caption>
+            <image source="images/Fig_Moy_gif4.png" >
+            <description>Remplissage des cellules pour l'étape 5</description>
+            </image>
+            </figure>
+                    <p></p>
+                
+                </li>
+                
+                
+                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment. On observe que la cote <m>z_{obs}</m> a une valeur d'environ <m>-0,948</m>. La valeur p calculée par Excel est d'environ <m>0,172</m> (voir la <xref ref="Fig_Moy_24"/>).</p>
+            
+              <p></p>
+                    
+               <figure xml:id="Fig_Moy_24">
+            <caption>Remplissage automatique des cellules pour l'étape 6</caption>
+            <image source="images/Fig_Moy_24.png" >
+            <description>Remplissage automatique des cellules pour l'étape 6</description>
+            </image>
+            </figure>
+                    <p></p>
+            </li>
+                
+                <li><p> Dans la cellule <c>A47</c>, écrire la décision et la conclusion du test en fonction de la règle de décision. </p>
+                <p></p>
+                    
+               <figure xml:id="Fig_Moy_25">
+            <caption>Décision et conclusion du test</caption>
+            <image source="images/Fig_Moy_25.png" >
+            <description>Décision et conclusion du test</description>
+            </image>
+            </figure>
+                    <p></p>
+
+                </li>
+
+        </ol>   
+        </p>
+
+        </subsubsection>  
+
+    </subsection>
+
+
+
+
+
+
+    
+    <subsection xml:id="ssec-TestProportion">
+    <title>Test d'hypothèse sur une proportion</title>
+    
+         <introduction><p>Les tests d'hypothèse sur une proportion permettent de décider si la proportion d'une population a changé en se basant sur une proportion échantillonnale, c'est-à-dire de déterminer si la différence entre les deux pourcentages est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
+           
+            
+            <p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, page consultée le 24 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. Dans cette sous-section, on introduit les données d'un échantillon de <m>6068</m> membres de l'armée américaine, prélevé en 2011. On pourrait supposer que la proportion de membres issus de minorité ethnique augmente à chaque année. C'est ce que l'on va vérifier. La base de données, modifiée pour répondre aux objectifs de ce laboratoire, a été obtenue du site <fn><url href="https://www.openlab.psu.edu/ansur2/"/>, page consultée le 24 novembre 2024</fn>. Dans le fichier, les ethnies des membres ont un code nominal. Le code 1 signifie une personne blanche, les codes 2 à 7 correspondent aux personnes issues de minorités ethniques.</p></introduction>
+        
+        
+   
+    
+        
+        
+        
+        <paragraphs xml:id="par-MesuresUneProportion">
+            <p></p>
+        <title>Calculer la proportion échantillonnale</title>
+
+        <introduction><p>Pour réaliser un test d'hypothèse sur une proportion, il faut préalablement avoir calculé la proportion échantillonnale.</p></introduction>
+
+            <p>Ceci peut se faire en générant un tableau croisé dynamique.</p>
+            
+            <p>
+            <ol>
+                
+                <li><p>Ouvrir le classeur <alert>Données_Armée.xlsm</alert>.</p></li>
+
+                <li><p>Dans la feuille intitulée <alert>Données_Armée</alert>, sélectionner le tableau dans son entièreté, soit la plage de cellules <c>A5:I6073</c>. </p></li> 
+            
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB;. </p></li> 
+            
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms à toutes les colonnes du tableau <alert>Échantillon</alert>.</p></li>
+            
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul intitulé <alert>TCD_Ethnie</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Échantillon</alert>. Placer ce tableau dans la cellule <c>A3</c>.</p></li>
+            
+            <li><p>Glisser et déposer la variable <alert>Ethnie</alert> dans la zone de saisie <alert>Lignes</alert> (voir la <xref ref="Fig_TCD_Ethnie_gif1"/>).</p>
+            
+ <p></p>
+            
+              <figure xml:id="Fig_TCD_Ethnie_gif1">
+            <caption>Tableau croisé dynamique de la répartition de l'échantillon de 6068 membres de l'armée américaine selon leur ethnie en 2011</caption>
+            <image source="images/Fig_TCD_Ethnie_gif1.png">
+            <description>Tableau croisé dynamique de la répartition de l'échantillon de 6068 membres de l'armée américaine selon leur ethnie en 2011</description>
+            </image>
+            </figure>
+            <p></p>
+                
+               <!--  <figure xml:id="Fig_TCD_Polluant_gif2">
+            <caption>Tableau croisé dynamique avec la variable <alert>Station</alert> en lignes et la variable <alert>Jour</alert> en colonnes</caption>
+            <image source="images/Fig_TCD_Polluant_gif2.png">
+            <description>Tableau croisé dynamique avec la variable Station en lignes et la variable Jour en colonnes</description>
+            </image>
+            </figure>
+            <p></p>-->
+            
+            </li>
+                
+                
+                <li><p>Glisser et déposer la variable <alert>Ethnie</alert> dans la zone de saisie <alert>Valeurs</alert> (voir la <xref ref="Fig_TCD_Ethnie_gif1"/>).</p></li>
+                
+                <li><p>En suivant les étapes de présentées à la <xref ref="sssec-RemplirTCD"/>, afficher le nombre de personnes en pourcentage (voir la <xref ref="Fig_TCD_Ethnie_gif1"/>).</p></li>
+                
+             <!--   <li><p>Le tableau croisé dynamique est le suivant (voir la <xref ref="Fig_TCD_Ethnie_4"/>).</p>
+                
+                 <p></p>
+            
+              <figure xml:id="Fig_TCD_Ethnie_4">
+            <caption>Tableau croisé dynamique de la répartition de l'échantillon de 6068 membres de l'armée américaine selon leur ethnie en 2011</caption>
+            <image source="images/Fig_TCD_Ethnie_4.png">
+            <description>Tableau croisé dynamique de la répartition de l'échantillon de 6068 membres de l'armée américaine selon leur ethnie en 2011</description>
+            </image>
+            </figure>
+            <p></p>
+                
+                </li>-->
+                
+                <li><p>On s'intéresse au pourcentage total des codes 2 à 8. Il est possible de regrouper ces modalités pour trouver la proportion échantillonnale. Sélectionner les cellules <c>A5:B10</c> (voir la <xref ref="Fig_TCD_Ethnie_gif2"/>). </p>
+                
+                 <p></p>
+            
+              <figure xml:id="Fig_TCD_Ethnie_gif2">
+            <caption>Tableau croisé dynamique final</caption>
+            <image source="images/Fig_TCD_Ethnie_gif2.png">
+            <description>Tableau croisé dynamique final</description>
+            </image>
+            </figure>
+            <p></p>
+                
+                </li>
+                
+                <li><p>Cliquer sur le bouton de droite de la souris et sélectionner l'onglet <alert>Grouper</alert> (voir la <xref ref="Fig_TCD_Ethnie_gif2"/>). Le groupe 1 dans le tableau croisé dynamique regroupe tous les membres issus de minorités ethniques. La proportion échantillonnale est de <m>37,51\%</m>.</p></li>
+            </ol>
+            </p>
+            
+            
+            
+        </paragraphs>   
+        
+        
+             <paragraphs xml:id="sssec-CopierCanevasProportion">
+            <p></p>
+            <title>Copier le cavenas <alert>Une proportion (normale)</alert></title>
+        
+            <p>Pour effectuer un test d'hypothèse, il faut copier le canevas dans le fichier de travail.</p>
+        
+            <p>
+            <ol>
+                
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Armée.xlsm</alert> et <alert>Labo 6_Canevas.xlsm</alert>.</p></li>   
+                
+             <li><p>Effectuer la procédure présentée à la ... (voir labo 4 JS) pour copier la feuille <alert>Une proportion</alert> du fichier <alert>Labo 6_Canevas</alert> au classeur <alert>Données_Armée</alert>. Placer cette feuille en dernière position.</p></li>   
+            </ol>
+            </p>
+            
+        </paragraphs>
+
+
+     <subsubsection xml:id="sssec-EtapesUneProportion">
+        <title>Étapes d'un test sur une proportion</title>
+
+        <introduction><p>Les étapes pour réaliser un test d'hypothèse sur une proportion sont présentées. On veut tester si la proportion de membres de l'armée américaine issus de minorités ethniques a augmenté en 2011 versus 2010. On choisit un seuil de <m>5\%</m>.</p></introduction>
+
+        <p>
+        <ol>
+            <li><p>Sélectionner la feuille <alert>Une proportion (normale)</alert>.</p></li>
+            
+            
+            <li><p>La première étape d'un test consiste à écrire la proportion de référence de la population, ainsi qu'à définir le type de test que l'on souhaite réaliste, à savoir un test unilatéral à gauche, à droite ou bilatéral. Dans la cellule <c>E5</c>, taper la valeur <m>0,305</m>. On a choisi d'écrire les mesures en décimales. La cellule <c>E6</c> se remplit automatiquement avec la même valeur (voir la <xref ref="Fig_Prop_gif1"/>).</p>
+                
+                <p> Puisque notre hypothèse de recherche est que la proportion de membres de l'armée américaine issus de minorités ethniques a augmenté, on privilégie un test unilatéral à droite. Dans la cellule <c>D6</c> de la feuille <alert>Une proportion (normale)</alert>, il faut donc choisir le symbole <m>&gt;</m> (voir la <xref ref="Fig_Prop_gif1"/>).</p>
+                
+                 <p></p>
+                    
+            <figure xml:id="Fig_Prop_gif1">
+            <caption>Détermination de la proportion de référence <m>\pi</m> et choix de l'hypothèse alternative</caption>
+            <image source="images/Fig_Prop_gif1.png" >
+            <description>Détermination de la proportion de référence pi et choix de l'hypothèse alternative</description>
+            </image>
+            </figure> 
+
+            </li>
+            
+            <li><p>Dans la deuxième étape du test, il faut remplir les cases grisées avec les informations demandées.</p>
+            
+                <p>
+                <ul>
+            
+                <li><p>Choisir un seuil de <m>0,05</m>. Dans la cellule <c>C9</c>, taper <m>0,05</m> (voir la <xref ref="Fig_Prop_gif2"/>).</p>
+                    
+                     
+                    </li>
+                
+                <li><p>Puisqu'on ne connaît pas la taille de la population de l'armée américaine, on suppose qu'elle est grande. Selon le rapport démographique de 2020, il y avait au moins <m>400 000</m> membres en 2010. Ainsi, le test ne requière pas de facteur de correction. Dans la cellule <c>C10</c>, taper &#xAB; grande &#xBB; (voir la <xref ref="Fig_Prop_gif2"/>).</p>
+
+                </li>
+                
+               
+                
+                <li><p>Il faut indiquer la proportion échantillonnale de <m>P</m>. On peut la copier de la feuille <alert>TCD_Ethnie</alert> ou simplement recopier la valeur manuellement. Dans la cellule <c>F9</c> de feuille <alert>Une proportion</alert>, taper <c>=0,3751</c> (voir la <xref ref="Fig_Prop_gif2"/>).</p>
+                
+                  
+                </li>
+
+                 <li><p>Dans la cellule <c>F10</c>, taper <c>=6068</c> pour indiquer la taille de l'échantillon (voir la <xref ref="Fig_Prop_gif2"/>).</p></li>
+
+                
+
+                <!-- <li><p>Dans la cellule <c>F11</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>K5</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
+                
+                <li><p>Dans la cellule <c>I11</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>L4</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>-->
+                
+                <li><p>Une fois les plages <c>F9:F10</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>E20</c> et <c>C22</c> se remplissent automatiquement, les cellules étant pré-remplies avec les formules appropriées (voir la <xref ref="Fig_Prop_gif2"/>).</p>
+                
+                <p></p>
+                    
+               <figure xml:id="Fig_Prop_gif2">
+            <caption>Remplissage des informations de l'étape 2</caption>
+            <image source="images/Fig_Prop_gif2.png" >
+            <description>Remplissage des informations de l'étape 2</description>
+            </image>
+            </figure> 
+                      <p></p>
+
+                </li>
+
+            </ul>
+           
+            </p>
+            </li>
+
+                <li><p>À la troisième étape, il faut vérifier les conditions d'application du test. Puisque la taille de l'échantillon est supérieure à 30 et que les produits <m>n\pi</m> et <m>n(1-\pi)</m> sont supérieurs à 5, on utilise la loi normale. Écrire un texte dans la cellule fusionnée <c>C16</c> expliquant ce choix (voir la <xref ref="Fig_Prop_12"/>).</p>
+
+              <p></p>
+
+               <figure xml:id="Fig_Prop_12">
+            <caption>Choix de la loi à utiliser pour le test</caption>
+            <image source="images/Fig_Prop_12.png" >
+            <description>Choix de la loi à utiliser pour le test</description>
+            </image>
+            </figure>
+                    <p></p>
+
+                </li>
+
+                <li><p>L'écart type de la distribution <m>P</m>, soit <m>\sigma_{P}</m> dans la cellule <c>C22</c>, est calculé à l'aide des informations se trouvant dans les cellules <c>E5</c>, <c>F10</c>, <c>C20</c>, <c>C21</c>.</p></li>
+                
+                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c>B29</c>, sélectionner la statistique appropriée du test unilatéral à droite utilisant la loi normale, soit <m>z_{\alpha}</m>. Remarquer que la valeur de <m>z_{\alpha}</m> (environ <m>1,645</m>) dans la cellule <c>D29</c> et <c>G31</c> est pré-remplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>5\%</m> (voir la <xref ref="Fig_Prop_gif3"/>).</p></li>
+                
+                <li><p> Dans la cellule <c>E31</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test unilatéral à droite, il faut choisir les mots &#xAB; plus grande que &#xBB; (voir la <xref ref="Fig_Prop_gif3"/>). </p>
+                  <p></p>
+                    
+               <figure xml:id="Fig_Prop_gif3">
+            <caption>Remplissage des cellules pour l'étape 5</caption>
+            <image source="images/Fig_Prop_gif3.png" >
+            <description>Remplissage des cellules pour l'étape 5</description>
+            </image>
+            </figure>
+                    <p></p>
+                
+                </li>
+                
+                
+                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_Prop_18"/>). <!--On observe que la cote <m>z_{obs}</m> est énorme avec une valeur d'environ <m>9,06</m>. Le rejet de l'hypothèse nulle est presqu'assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est quasiment <m>0</m>.--></p></li>
+                
+                <li><p> Dans la cellule <c>A47</c>, écrire la décision et la conclusion du test en fonction de la règle de décision (voir la <xref ref="Fig_Prop_18"/>).</p>
+                 <p></p>
+                    
+               <figure xml:id="Fig_Prop_18">
+            <caption>Décision et conclusion du test</caption>
+            <image source="images/Fig_Prop_18.png" >
+            <description>Décision et conclusion du test</description>
+            </image>
+            </figure>
+                    <p></p>
+
+                </li>
+
+        </ol>   
+        </p>
+
+        </subsubsection>  
+
+    </subsection>
+
+
+
+
+
+
+
+
+        <subsection xml:id="ssec-TestDeuxMoyennesInd">
+    <title>Test d'hypothèse sur deux moyennes indépendantes</title>
+    
+        <introduction><p>Les tests d'hypothèse sur deux moyennes indépendantes, aussi appelés des tests sur la comparaison ou la différence de deux moyennes, permettent de comparer les moyennes de deux populations, c'est-à-dire de déterminer si la différence entre les deux est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
+            
+            <p>Pour réaliser un test sur deux moyennes indépendantes, il faut s'assurer que les deux échantillons sont sélectionnés indépendamment l'un de l'autre.</p>
+            
+            <p>Dans cette sous-section, on revient sur l'une des questions de recherche du laboratoire 3, à savoir si les femmes d'origine pima d'Arizona atteintes de diabète ont un indice de masse corporelle moyen plus élevé que celui des femmes non atteintes de cette maladie. Les deux échantillons (femmes avec diabète et femmes sans diabète) sont bien indépendants.</p></introduction>
+        
+        
+     
+            
+            
+       
+        <paragraphs xml:id="par-Mesures2MoyInd">
+        <title>Calculer les mesures statistiques échantillonnales</title>
+            
+        <introduction><p>Pour réaliser un test d'hypothèse sur deux moyennes, il faut préalablement avoir calculé les mesures statistiques de chaque échantillon, c'est-à-dire leur moyenne et leur écart type corrigé respectif.</p></introduction>
+           
+            
+            <p>Heureusement, à la <xref ref="sssec_Mesures_DoubleEntree"/> dans la <xref ref="Fig_Mesures_Pol_17bis"/>, les indices de masse corporelle moyens pour les femmes atteintes et non de diabète ont déjà été calculés, ainsi que les écarts types corrigés respectifs. On est en mesure d'effectuer le test. </p>
+            
+              <remark xml:id="rem-Soustotal">
+<title>Filtrage de données aberrantes</title>
+<p>Lors d'un test d'hypothèse paramétriques, il est important de filtrer les valeurs aberrantes avant de calculer les mesures descriptives. Dans le cas des données diagnostiques des femmes d'origina pima, un filtrage est nécessaire si l'on veut les moyennes et les écarts types corrigés sans tenir compte des valeurs nulles de l'indice de masse corporelle.</p>
+    </remark>
+            
+        </paragraphs>   
+            
+            
+               <paragraphs>
+            <p></p>
+            <title>Copier le cavenas <alert>2 moyennes indépendantes</alert></title>
+        
+           <p></p>
+            <p>
+            <ol>
+                
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Diabète.xlsm</alert>, le fichier complété du laboratoire 3, et <alert>Labo 6_Canevas.xlsm</alert>.</p></li>   
+                
+             <li><p>Effectuer la procédure présentée à la ... (voir labo 4 JS) pour copier la feuille <alert>2 moyennes indépendantes</alert> du fichier <alert>Labo 6_Canevas</alert> au classeur <alert>Données_Diabètes</alert>. </p></li>  
+                
+                <li><p>Placer la feuille <alert>2 moyennes indépendantes</alert> en dernière position si Excel ne le fait pas pas défaut.</p></li>
+                  
+            </ol>
+            </p>
+            
+        </paragraphs>
+            
+            
+       <subsubsection xml:id="sssec-EtapesDeuxMoyennesInd">
+        <title>Étapes d'un test sur deux moyennes indépendantes</title>
+            
+        <introduction><p>Les étapes pour réaliser un test d'hypothèse sur deux moyennes indépendantes sont présentées.</p></introduction>
+           
+           
+            
+        <p>
+        <ol>
+            
+            <li><p>Il faut définir <m>X_{1}</m> et <m>X_{2}</m>. Soit <m>X_{1}</m>, les femmes d'origine pima d'Arizona atteintes de diabète, et soit <m>X_{2}</m>, les femmes d'origine pima d'Arizona sans diabète. Pour aider le l'utilisateur, il est pertinent de taper dans la cellule <c>C4</c> &#xAB; Atteint &#xBB;, et &#xAB; Non Atteint &#xBB; dans la cellule <c>E4</c> (voir la <xref ref="Fig_2Moy_gif1"/>).</p></li>
+            
+            <li><p>La première étape d'un test consiste à choisir le type de test que l'on souhaite réaliste, à savoir un test unilatéral à gauche, à droite ou bilatéral. Puisque notre hypothèse de recherche est que les femmes d'origine pima atteintes de diabètes ont un indice de masse corporelle moyen supérieur à celui des femmes non atteintes, on privilégie un test unilatéral à droite. Dans la cellule <c>D6</c> du canevas, il faut donc choisir le symbole <m>&gt;</m> (voir la <xref ref="Fig_2Moy_gif1"/>).</p>
+            <p></p>
+               <figure xml:id="Fig_2Moy_gif1">
+            <caption>Remplissage des cellules pour la première étape d'un test sur deux moyennes indépendates</caption>
+            <image source="images/Fig_2Moy_gif1.png" >
+            <description>Remplissage des cellules pour la première étape d'un test sur deux moyennes indépendates</description>
+            </image>
+            </figure> 
+                
+                <p></p>
+            
+            </li>
+            
+            <li><p>Dans la deuxième étape du test, il faut remplir les cases grisées avec les informations demandées.</p>
+            
+                <p>
+                <ul>
+            
+                <li><p>Choisir un seuil de <m>0,01</m>. Dans la cellule <c>C9</c>, taper <m>0,01</m> (voir la <xref    ref="Fig_2Moy_gif2"/>). (EXPLIQUER choix?)</p></li>
+                
+                <li><p>Puisqu'on ne connaît pas la taille de la population des femmes d'origine pima vivant en Arizona, on suppose qu'elle est grande. Taper &#xAB; grande &#xBB; (voir la <xref ref="Fig_2Moy_gif2"/>).</p>
+                  <p></p>
+                    
+               <figure xml:id="Fig_2Moy_gif2">
+            <caption>Remplissage du seuil de signification <m>\alpha</m> et de la taille de la population <m>N</m></caption>
+            <image source="images/Fig_2Moy_gif2.png" >
+            <description>Remplissage du seuil de signification  et de la taille de la population N</description>
+            </image>
+            </figure> 
+                    
+                    <p></p>
+                
+                </li>
+                
+               
+                
+                <li><p>Pour les mesures descriptives échantillonnales de <m>X_{1}</m> et <m>X_{2}</m>, on utilise les valeurs calculées qui se trouvent dans la feuille <alert>Étude IMC-Atteinte</alert> (voir la <xref ref="Fig_Mesures_Pol_15bis"/>). Dans la cellule <c>F9</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>J5</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif3"/>).</p>
+                
+                    <p></p>
+                    
+               <figure xml:id="Fig_2Moy_gif3">
+            <caption>Insertion de la valeur de la moyenne échantillonnale des femmes atteintes de diabète <m>\bar{x}_{1}</m> </caption>
+            <image source="images/Fig_2Moy_gif3.png" >
+            <description>Insertion de la moyenne de la moyenne échantillonnale des femmes atteintes de diabète</description>
+            </image>
+            </figure>
+                
+                <p></p>
+                
+                </li>
+                
+                <li><p>Dans la cellule <c>I9</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>J4</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
+                
+                <li><p>Pour la taille de chaque échantillon, si cela n'a pas été fait dans la <xref ref="sec-Postlab_Varquant"/>, ajouter une quatrième colonne au tableau croisé dynamique de la feuille <alert>Étude IMC-Atteinte</alert> calculant le nombre de femmes dans chaque catégorie. Suivre les étapes de la <xref ref="sssec-RemplirTCD"/> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
+                
+                 <li><p>Dans la cellule <c>F10</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>L5</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
+                
+                <li><p>Dans la cellule <c>I10</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>L4</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
+                
+                 <li><p>Répéter les étapes précédentes pour recopier les valeurs de <m>s_{1}</m> et <m>s_{2}</m> dans les cellules <c>F11</c> et <c>I11</c> respectivement (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
+                
+                <!-- <li><p>Dans la cellule <c>F11</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>K5</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
+                
+                <li><p>Dans la cellule <c>I11</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>L4</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>-->
+                
+                <li><p>Une fois les plages <c>F9:F11</c> et <c>I9:I11</c> remplies, il est possible de constater que les cellules <c>C20</c> et <c>C21</c> se remplissent automatiquement, les cellules étant pré-remplies avec les formules appropriées. Dans la cellule <c>C20</c> se trouve la formule pour <alert>s</alert>, paramètre nécessaire pour le calcul de l'écart type <m>\sigma_{\bar{X}_{1}-\bar{X}_{2}}</m> quand la taille d'un des échantillons est inférieur à 30. Dans ce test, puisque les deux échantillons sont supérieurs à 30, on n'a pas besoin de <alert>s</alert> (voir la <xref ref="Fig_2Moy_gif4"/>).</p>
+                
+                  <p></p>
+                    
+               <figure xml:id="Fig_2Moy_gif4">
+            <caption>Remplissage des mesures descriptives de chaque échantillon</caption>
+            <image source="images/Fig_2Moy_gif4.png" >
+            <description>Remplissage des mesures descriptives de chaque échantillon</description>
+            </image>
+            </figure>
+                    <p></p>
+                </li>
+            
+           
+            </ul>
+           
+            </p>
+            </li>
+                
+                <li><p>À la troisième étape, il faut vérifier les conditions d'application du test. Puisque les tailles d'échantillon <m>n_{1}</m> et <m>n_{2}</m> sont supérieures à 30, on utilise la loi normale. Dans la cellule <c>C14</c>, sélectionner <alert>Normale</alert>. Écrire un texte dans la cellule fusionnée <c>C16</c> expliquant ce choix (voir la <xref ref="Fig_2Moy_gif5"/>).</p>
+                
+                  <p></p>
+                    
+               <figure xml:id="Fig_2Moy_gif5">
+            <caption>Choix de la loi à utiliser pour le test</caption>
+            <image source="images/Fig_2Moy_gif5.png" >
+            <description>Choix de la loi à utiliser pour le test</description>
+            </image>
+            </figure>
+                    <p></p>
+                    
+                </li>
+                
+                
+                <li><p>L'écart type de la distribution <m>\bar{X}_{1}-\bar{X}_{2}</m>, soit <m>\sigma_{\bar{X}_{1}-\bar{X}_{2}}</m>, est calculé à l'aide de formule se trouvant dans les cellules <c>C20</c> et <c>C21</c>.</p></li>
+                
+                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c> B27</c>, sélectionner la statistique appropriée du test unilatéral à droite, soit <m>z_{\alpha}</m>. Remarquer que la valeur de <m>z_{\alpha}</m> (environ <m>2,33</m>) dans la cellule <c>D27</c> et <c>G29</c> est pré-remplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>1\%</m> (voir la <xref ref="Fig_2Moy_gif6"/>).</p></li>
+                
+                <li><p> Dans la cellule <c>E29</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test unilatéral à droite, il faut choisir les mots &#xAB; plus grande que &#xBB; (voir la <xref ref="Fig_2Moy_gif6"/>). </p>
+                  <p></p>
+                    
+               <figure xml:id="Fig_2Moy_gif6">
+            <caption>Remplissage des cellules pour l'étape 5</caption>
+            <image source="images/Fig_2Moy_gif6.png" >
+            <description>Remplissage des cellules pour l'étape 5</description>
+            </image>
+            </figure>
+                    <p></p>
+                
+                </li>
+                
+                
+                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_2Moy_gif7"/>). On observe que la cote <m>z_{obs}</m> est énorme avec une valeur d'environ <m>9,06</m>. Le rejet de l'hypothèse nulle est presqu'assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est quasiment <m>0</m> (même en augmentant le nombre de décimales affichées).</p></li>
+                
+                <li><p> Dans la cellule <c>A45</c>, écrire la décision et la conclusion du test en fonction de la règle de décision (voir la <xref ref="Fig_2Moy_gif7"/>). </p>
+                  <p></p>
+                    
+               <figure xml:id="Fig_2Moy_gif7">
+            <caption>Décision et conclusion du test</caption>
+            <image source="images/Fig_2Moy_gif7.png" >
+            <description>Décision et conclusion du test</description>
+            </image>
+            </figure>
+                    <p></p>
+                
+                </li>
+             
+            
+            
+            
+            
+        </ol>   
+        </p>
+            
+            
+        </subsubsection>  
+            
+            
+        <subsubsection xml:id="sssec-UtilitaireAnalyse">
+            <title>Utilitaire d'analyse</title>
+            
+            <p></p>
+            
+            <introduction><p>Avec Excel, il est possible de réaliser des tests sur deux moyennes à l'aide de l'outil <alert>Utilitaire d'analyse</alert>. Ce dernier permet de calculer la cote <m>t</m> critique d'un test bilatéral (<m>t_{\alpha/2}</m>) et celle d'un test unilatéral (<m>t_{\alpha}</m>), ainsi que la statistique du test (<m>t_{obs}</m>) et la valeur p du test (bilatéral et unilatéral).</p>
+                
+                
+                <p>Cet outil possède néanmoins un inconvénient qui rend son utilisation moins pertinente dans certains cas. Il faut préalablement filtrer les données par échantillon. Dans le cas de l'indice de masse corporelle des femmes atteintes et non du diabète, il incombe de séparer les valeurs par présence de diabète avant d'utiliser l'utilitaire d'analyse. Excel ne permet pas d'inscrire les valeurs des moyennes de chaque échantillon.</p>
+            
+                <p>Les étapes menant aux calculs des statistiques pertinentes avec l'utilitaire d'analyse sont présentées ci-dessous pour effectuer le test sur deux moyennes indépendantes présenté à la <xref ref="sssec-EtapesDeuxMoyennesInd"/>.</p>
+            
+            </introduction>
+        
+            
+            
+        <p>
+        <ol>
+            
+        <li><p>Dans la feuille <alert>Données</alert> du classeur <alert>Données_Diabètes</alert>, filtrer les données de la variable <alert>Atteint</alert> pour ne faire ressortir que les valeurs des femmes atteintes de diabète (voir la <xref ref="sssec_Filtrer"/>).</p></li>  
+            
+            <li><p>Copier les valeurs de la colonne <alert>IMC</alert> et les coller dans la cellule <c>D2</c> d'une nouvelle feuille. Taper le titre <alert>Atteint</alert> dans la cellule <c>D1</c>.</p></li>
+            
+            <li><p>Dans la feuille <alert>Données</alert>, filtrer les données de la variable <alert>Atteint</alert> pour ne faire ressortir que les valeurs des femmes non atteintes de diabète (voir la <xref ref="sssec_Filtrer"/>).</p></li>  
+            
+            <li><p>Copier les valeurs de la colonne <alert>IMC</alert> et les coller dans la cellule <c>E2</c> d'une nouvelle feuille ajoutée. Taper le titre <alert>Atteint</alert> dans la cellule <c>E1</c> (voir la <xref ref="Fig_Utilitaire_1"/>).</p>
+            <p></p>
+                    
+               <figure xml:id="Fig_Utilitaire_1">
+            <caption>Données brutes de l'IMC par présence de diabète</caption>
+            <image source="images/Fig_Utilitaire_1.png" >
+            <description>Données brutes de l'IMC par présence de diabète</description>
+            </image>
+            </figure>
+            
+            </li>
+            
+             <li><p>Cliquer sur l'onglet <alert>Données</alert>. Dans le groupe <alert>Analyse</alert>, cliquer sur l'onglet <alert>Utilitaire d'analyse</alert> (voir la <xref ref="Fig_Utilitaire_gif1"/>). Il faut s'assurer que l'outil <alert>Utilitaire d'analyse</alert> soit visible (METTRE RÉFÉRENCE ANNEXE).</p>
+            <p></p>
+                    
+               <figure xml:id="Fig_Utilitaire_gif1">
+            <caption>Sélection de l'onglet <alert>Utilitaire d'analyse</alert></caption>
+            <image source="images/Fig_Utilitaire_gif1.png" >
+            <description>Sélection de l'onglet Utilitaire d'analyse</description>
+            </image>
+            </figure>
+            <p></p>
+            </li> 
+            
+            <li><p>Sélectionner l'option <alert>Test d'égalité des espérances: deux observations de variances différentes</alert> (voir la <xref ref="Fig_Utilitaire_gif1"/>).</p></li>
+            
+            
+           <li><p>Une boîte de dialogue s'affiche. Il faut entrer la plage de données brutes des deux variables. Pour la variable 1, soit l'indice de masse corporelle des femmes atteintes de diabète, sélectionner la plage de cellules <c>D2:D267</c>. Pour la variable 2, soit l'indice de masse corporelle des femmes non atteintes de diabète, sélectionner la plage de cellules <c>E2:E492</c> (voir la <xref ref="Fig_Utilitaire_gif2"/>. </p>
+                
+                <p></p>
+                
+                 <figure xml:id="Fig_Utilitaire_gif2">
+            <caption>Utilisation de l'outil <alert>Utilitaire d'analyse</alert></caption>
+            <image source="images/Fig_Utilitaire_gif2.png">
+            <description>Utilisation de l'utilitaire d'analyse</description>
+            </image>
+            </figure>
+            <p></p>
+            </li> 
+            
+            <li><p>Il y a une zone pour écrire le seuil de signification voulu. Taper <m>0,01</m> (voir la <xref ref="Fig_Utilitaire_gif2"/>. </p> </li> 
+            
+            <li><p>Il y a une zone pour indiquer la plage de sortie. Sélectionner la cellule <m>H2</m> ou taper <m>$H$2</m> (voir la <xref ref="Fig_Utilitaire_gif2"/>. </p> </li> 
+            
+          <li><p>Cliquer sur <alert>OK</alert>.</p> </li> 
+           
+            <li><p>Le rapport généré s'affiche. Excel utilise la loi de Student pour tout test sur deux moyennes indépendantes, et ce, même si la loi normale peut être appliquée. Le rapport indique la statistique du test (<m>t_{obs}</m>), la cote <m>t</m> critique du test unilatéral et bilatéral, ainsi que la valeur p du test unilatéral et bilatéral (voir la <xref ref="Fig_Utilitaire_10"/>. </p> 
+            
+            <p></p>
+                
+                 <figure xml:id="Fig_Utilitaire_10">
+            <caption>Rapport généré par l'<alert>Utilitaire d'analyse</alert></caption>
+            <image source="images/Fig_Utilitaire_10.png">
+            <description>Rapport généré par l'utilitaire d'analyse</description>
+            </image>
+            </figure>
+            <p></p>
+            </li> 
+            
+        </ol>     
+        </p>   
+            
+            <p>En comparant la conclusion du test réalisé avec le canevas, on constate que la statistique du test (<m>t_{obs}</m>) est bien identique en utilisant le canevas et l'utilitaire d'analyse, comme il est attendu. Les valeurs p sont sensiblement les mêmes, proches de <m>0</m>. </p>
+            
+        </subsubsection>    
+    
+    </subsection>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <subsection xml:id="ssec-TestDeuxMoyennesDep">
+    <title>Test d'hypothèse sur deux moyennes dépendantes</title>
+ 
+        
+    <introduction><p>Les tests d'hypothèse sur deux moyennes dépendantes, aussi appelés des tests sur des données appariées, permettent de comparer les moyennes de deux séries de mesures sur un même échantillon. C'est le cas lorsque l'on mesure en paires des observations sur les mêmes unités statistiques. Un tel exemple est l'impact d'intenses précipitations sur la qualité de l'air mesurée avant et après l'événement aux mêmes stations.</p>
+            
+            <p>Pour réaliser un test sur deux moyennes dépendantes, il faut s'assurer que les mesures sont bien liées.</p>
+            
+            <p>Dans cette section, on compare la qualité de l'air le jour précédant et le jour suivant le grand déluge qu'à connu la ville de Montréal le 9 août 2024, en s'appuyant sur les mesures des particules fines (les <alert><m>PM_{2,5}</m></alert>). Les mesures proviennent des mêmes onze stations actives dans la région montréalaise. Ces deux séries de données sont bien dépendantes, puisque chaque station constitue une paire de mesures correspondantes. On contrôle les variables qui ne sont pas mesurées dans l'étude en les maintenant constantes. Dans l'étude de la qualité de l'air, l'endroit de la prise des mesures est maintenu fixe avec les mesures prises aux mêmes onze stations.</p></introduction>
+        
+        
+     
+        
+        
+        
+        
+        <subsubsection xml:id="sssec-TCDTest2MoyDep">
+        <title>Tableau croisé dynamique de la quantité de polluant par station</title>
+            <p> </p>
+            <introduction><p>Le tableau des mesures de la qualité d'air contient <m>933 881</m> observations distinctes. Pour effectuer le test d'hypothèse comparant les mesures des particules fines (les <alert><m>PM_{2,5}</m></alert>) des onze stations le jour précédant et suivant le 9 août à 13h, il est nécessaire de créer un tableau croisé dynamique afin d'extraire les paires de mesures requises. Les étapes sont présentées. </p>
+            </introduction>
+        
+        <p>
+        <ol>
+            
+        <li><p>Dans la feuille <alert>Données_Qualité_Air</alert>, sélectionner le tableau dans son entièreté, soit la plage de cellules <c>A1:E933881</c>. </p></li> 
+            
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB;. </p></li> 
+            
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms à toutes les colonnes du tableau <alert>Échantillon</alert>.</p></li>
+            
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul qu'on renomme <alert>TCD_Polluant</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Échantillon</alert>. Placer ce tableau dans la cellule <c>A3</c>.</p></li>
+            
+            <li><p>Glisser et déposer la variable <alert>Station</alert> dans la zone de saisie <alert>Lignes</alert> (voir la <xref ref="Fig_TCD_Polluant_gif1"/>).</p>
+            
+ <p></p>
+            
+              <figure xml:id="Fig_TCD_Polluant_gif1">
+            <caption>Tableau croisé dynamique avec la variable <alert>Station</alert> en lignes et la variable <alert>Jour</alert> en colonnes</caption>
+            <image source="images/Fig_TCD_Polluant_gif1.png">
+            <description>Tableau croisé dynamique avec la variable Station en lignes et la variable Jour en colonnes</description>
+            </image>
+            </figure>
+            <p></p>
+                
+              <!--   <figure xml:id="Fig_TCD_Polluant_gif2">
+            <caption>Tableau croisé dynamique avec la variable <alert>Station</alert> en lignes et la variable <alert>Jour</alert> en colonnes</caption>
+            <image source="images/Fig_TCD_Polluant_gif2.png">
+            <description>Tableau croisé dynamique avec la variable Station en lignes et la variable Jour en colonnes</description>
+            </image>
+            </figure>-->
+            <p></p>
+            
+            </li>
+            
+            <li><p>Glisser et déposer la variable <alert>Jour</alert> dans la zone de saisie <alert>Colonnes</alert> (voir la <xref ref="Fig_TCD_Polluant_gif1"/>).</p></li>
+            
+            <li><p>On ne veut afficher que les valeurs du mois d'août 2024. Cliquer sur la flèche du menu déroulant de l'<alert>Étiquettes de colonnes</alert>. Sélectionner seulement l'année 2024. Cliquer sur <alert>OK</alert> (voir la <xref ref="Fig_TCD_Polluant_gif3"/>).</p>
+            
+ <p></p>
+            
+              <figure xml:id="Fig_TCD_Polluant_gif3">
+            <caption>Filtrage de la variable <alert>Jour</alert> pour afficher l'année 2024</caption>
+            <image source="images/Fig_TCD_Polluant_gif3.png">
+            <description>Filtrage de la variable Jour pour afficher l'année 2024</description>
+            </image>
+            </figure>
+            <p></p>            
+            </li>
+            
+            <li><p>Cliquer sur le symbole <kbd>+</kbd> à côté de l'étiquette <m>2024</m> de la cellule <c>B4</c> pour développer le champ <m>2024</m> (voir la <xref ref="Fig_TCD_Polluant_10bis"/>).</p>
+            
+ <p></p>
+            
+              <figure xml:id="Fig_TCD_Polluant_10bis">
+            <caption>Développer la variable <m>2024</m></caption>
+            <image source="images/Fig_TCD_Polluant_10bis.png">
+            <description>Développer la variable 2024</description>
+            </image>
+            </figure>
+            <p></p>            
+            </li>
+           
+            <li><p>Sélectionner la cellule <c>B5</c>, soit la cellule où l'étiquette <m>Trimestre 1</m> apparaît (voir la <xref ref="Fig_TCD_Polluant_gif4"/>).</p>
+            
+ <p></p>
+            
+              <figure xml:id="Fig_TCD_Polluant_gif4">
+            <caption>Filtrage de la variable <alert>Jour</alert> pour n'afficher que le mois d'août 2024</caption>
+            <image source="images/Fig_TCD_Polluant_gif4.png">
+            <description>Filtrage de la variable Jour pour n'afficher que le mois d'août 2024</description>
+            </image>
+            </figure>
+            <p></p>
+            </li>
+            
+            <li><p>Cliquer à nouveau sur la flèche du menu déroulant de l'<alert>Étiquettes de colonnes</alert> (voir la <xref ref="Fig_TCD_Polluant_gif4"/>). </p></li>
+            
+            <li><p>Ne cocher que la case pour <alert>Trimestre 3</alert> (voir la <xref ref="Fig_TCD_Polluant_gif4"/>). </p></li>
+            
+            <li><p>Cliquer sur le symbole <kbd>+</kbd> à côté de l'étiquette <m>Trimestre 3</m> de la cellule <c>B5</c> (voir la <xref ref="Fig_TCD_Polluant_gif4"/>).</p></li>
+            
+            <li><p>Sélectionner la cellule <c>B6</c>, soit la cellule où l'étiquette <m>Juillet</m> apparaît (voir la <xref ref="Fig_TCD_Polluant_gif4"/>).</p></li>
+            
+            <li><p>Cliquer à nouveau sur la flèche du menu déroulant de l'<alert>Étiquettes de colonnes</alert> (voir la <xref ref="Fig_TCD_Polluant_gif4"/>). </p></li>
+            
+            <li><p>Ne cocher que la case pour <alert>Août</alert> (voir la <xref ref="Fig_TCD_Polluant_gif4"/>). </p></li>
+            
+             <li><p>Cliquer sur le symbole <kbd>+</kbd> à côté de l'étiquette <alert>Août</alert> de la cellule <c>B7</c> (voir la <xref ref="Fig_TCD_Polluant_18"/>).</p>
+            
+            
+             <p></p>
+            
+              <figure xml:id="Fig_TCD_Polluant_18">
+            <caption>Développer la variable <alert>août</alert></caption>
+            <image source="images/Fig_TCD_Polluant_18.png">
+            <description>Développer la variable août</description>
+            </image>
+            </figure> 
+            <p></p>
+                 
+            </li>
+            
+            <li><p>On ne veut que le polluant <alert>PM25</alert>. Il faut donc imposer un filtre. Glisser et déposer la variable <alert>Polluant</alert> dans la zone de saisie <alert>Filtres</alert>. Un filtre apparaît dans les cellules <c>A1:B1</c> (voir la <xref ref="Fig_TCD_Polluant_gif5"/>).</p>
+            
+ <p></p>
+            
+              <figure xml:id="Fig_TCD_Polluant_gif5">
+            <caption>Ajout de filtres pour le type de polluant et l'heure de la journée et insertion des valeurs de <m>PM_{2,5}</m></caption>
+            <image source="images/Fig_TCD_Polluant_gif5.png">
+            <description>Ajout de filtres pour le type de polluant et l'heure de la journée et insertion des valeurs de PM25</description>
+            </image>
+            </figure>
+            <p></p>
+                
+                
+                </li>
+            
+            <li><p>Cliquer sur la flèche du menu déroulant de la cellule <c>B1</c>. Sélectionner <alert>PM</alert> (voir la <xref ref="Fig_TCD_Polluant_gif5"/>).</p></li>
+            
+            <li><p>On souhaite choisir une prise de mesure à une heure précise, soit 13h. Glisser et déposer la variable <alert>Heure</alert> dans la zone de saisie <alert>Filtres</alert>. Un filtre apparaît dans les cellules <c>A2:B2</c> (voir la <xref ref="Fig_TCD_Polluant_gif5"/>).</p></li>
+            
+            <li><p>Cliquer sur la flèche du menu déroulant de la cellule <c>B2</c>. Sélectionner <alert>13</alert> pour 13h (voir la <xref ref="Fig_TCD_Polluant_gif5"/>).</p></li>
+            
+            <li><p>Glisser et déposer la variable <alert>Valeur</alert> dans la zone de saisie <alert>Valeurs</alert>. Puisqu'il n'y a qu'une mesure de <m>PM_{2,5}</m> par heure par station, on conserve le calcul de <alert>Somme de Valeurs</alert> (voir la <xref ref="Fig_TCD_Polluant_gif5"/>). On ne veut pas le compte.</p></li>
+            
+  
+            
+            <li><p>Au final, on ne veut que les valeurs du 8 août et du 10 août (voir la <xref ref="Fig_TCD_Polluant_24"/>).</p>
+            
+                  <p></p>
+            
+              <figure xml:id="Fig_TCD_Polluant_24">
+            <caption>Sélection des colonnes du 8 août et du 10 août 2024</caption>
+            <image source="images/Fig_TCD_Polluant_24.png">
+            <description>Sélection des colonnes du 8 août et du 10 août 2024</description>
+            </image>
+            </figure>
+            <p></p>
+            </li>
+            
+            <li><p>Copier et coller les deux colonnes  en dessous du tableau croisé dynamique. Créer un tableau respectant toute la mise en forme vue à la <xref ref="ssec-MiseEnFormeTableau"/> (voir la <xref ref="Fig_TCD_Polluant"/>).</p>
+            
+            <p></p>
+            
+              <figure xml:id="Fig_TCD_Polluant">
+            <caption>Tableau final des mesures pairées des particules fines avant et après le 9 août</caption>
+            <image source="images/Fig_TCD_Polluant.png">
+            <description>Tableau final des mesures pairées des particules fines avant et après le 9 août</description>
+            </image>
+            </figure>
+            <p></p>
+            
+        </li> 
+            
+            
+        <li><p>Donner au tableau créé à la <xref ref="Fig_TCD_Polluant"/> le nom <alert>DonnéesTest</alert> (voir la <xref ref="ssec-Nommerdescellules"/>).</p></li>  
+            
+        <li><p>Sélectionner le tableau <alert>DonnéesTest</alert> et générer des noms pour les quatre colonnes qui le composent (voir la <xref ref="sssec-NomColonnes"/>).</p></li>  
+            
+        </ol>        
+        </p>
+            
+                 <p></p>
+        
+        <paragraphs>
+            <p></p>
+            <title>Copier le cavenas <alert>2 moyennes dépendantes</alert></title>
+       
+            
+            <introduction><p>Avant d'effectuer le test sur deux moyenne dépendantes, il faut copier le canevas <alert>2 moyennes dépendantes</alert> dans le classeur <alert>Données_Polluant</alert>.</p></introduction>
+
+            <p>
+            <ol>
+                
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Polluant.xlsm</alert> et <alert>Labo 6_Canevas.xlsm</alert>.</p></li>   
+                
+             <li><p>Effectuer la procédure présentée à la ... (voir labo 4 JS) pour copier la feuille <alert>2 moyennes dépendantes</alert> du fichier <alert>Labo 6_Canevas</alert> au classeur <alert>Données_Polluant</alert>.</p></li>   
+            </ol>
+            </p>
+            
+        </paragraphs> 
+               
+        </subsubsection>
+        
+        
+            
+   
+        
+        
+        
+        
+        <subsubsection xml:id="EtapesDeuxMoyennesDep">
+          <title>Étapes d'un test sur deux moyennes dépendantes</title>
+            
+      
+            <introduction><p>Les étapes pour réaliser un test d'hypothèse sur deux moyennes dépendantes sont présentées.</p></introduction>
+            
+            
+            <p>
+        <ol>
+            
+            <li><p>La variable <m>X</m> est définie comme les mesures de particules fines du 8 août 2024 et <m>Y</m>, les mesures du 10 août 2024. Soit <m>D=Y-X</m>, la différence. La quatrième colonne de la <xref ref="Fig_TCD_Polluant"/> présente le calcul de la variable aléatoire <m>D</m>.</p></li>
+            
+            <li><p>La première étape d'un test consiste à choisir le type de test que l'on souhaite réaliste, à savoir un test unilatéral à gauche, à droite ou bilatéral. Puisque l'impact d'intenses précipitations n'est pas clair (voir la <xref ref="sec-Prelab_TestHyp"/>), il est prudent d'être conservateur et de choisir un test bilatéral. Dans la cellule <c>D6</c> de la feuille <alert>2 moyennes dépendantes</alert>, il faut donc choisir le symbole <m>\neq</m> (voir la <xref ref="Fig_2MoyDep_gif1"/>).</p>
+            <p></p>
+               <figure xml:id="Fig_2MoyDep_gif1">
+            <caption>Remplissage des cellules pour la première étape d'un test sur deux moyennes dépendates</caption>
+            <image source="images/Fig_2MoyDep_gif1.png" >
+            <description>Remplissage des cellules pour la première étape d'un test sur deux moyennes dépendates</description>
+            </image>
+            </figure> 
+                
+                <p></p>
+            
+            </li>
+            
+            <li><p>Dans la deuxième étape du test, il faut remplir les cases grisées avec les informations demandées.</p>
+            
+            <ul>
+            
+                <li><p>Choisir un seuil de <m>0,01</m>. Dans la cellule <c>C9</c>, taper <m>0,01</m> (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p></li>
+                
+                <li><p>Au moment de l'enregistrement du fichier, le nombre total de données était de <m>933 881</m> observations. Prendre cela comme la taille de la population. Taper &#xAB; 933881 &#xBB; (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p>
+                  <p></p>
+                    
+               <figure xml:id="Fig_2MoyDep_gif2">
+            <caption>Remplissage du seuil de signification <m>\alpha</m> et des mesures descriptives</caption>
+            <image source="images/Fig_2MoyDep_gif2.png" >
+            <description>Remplissage du seuil de signification et des mesures descriptives</description>
+            </image>
+            </figure> 
+                    
+                    <p></p>
+                
+                </li>
+                
+               
+                
+                <li><p>Dans la cellule <c>F9</c>, taper <c>=MOYENNE(Différence)</c>, <alert>Différence</alert> étant le nom de la quatrième colonne de la <xref ref="Fig_TCD_Polluant"/>. Cliquer sur <kbd>Enter</kbd> (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p></li>
+                
+                <li><p>Dans la cellule <c>F10</c>, taper <c>=NB(Différence)</c> pour calculer automatiquement le nombre de mesures pairées. Cliquer sur <kbd>Enter</kbd> (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p></li>
+                
+               <li><p>Dans la cellule <c>F111</c>, taper <c>=ECARTYPE.STANDARD(Différence)</c> pour calculer l'écart type des mesures. Cliquer sur <kbd>Enter</kbd> (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p></li>
+                
+                <li><p>Une fois les plages <c>F9:F11</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>D27</c>, <c>G29</c> et <c>F32</c> se remplissent automatiquement, les cellules étant pré-remplies avec les formules appropriées.</p>
+                
+           
+                </li>
+                
+                </ul>
+                 </li>
+            
+                
+                <li><p>À la troisième étape, il faut vérifier les conditions d'application du test. Puisque l'on effectue le test avec un petit échantillon (inférieur à 30), il faut supposer que les différences sont normalement distribuées pour poursuivre le test. On utilise la loi de Student. Écrire un texte dans la cellule fusionnée <c>C16</c> expliquant ce choix (voir la <xref ref="Fig_2MoyDep_11bis"/>).</p>
+                
+                  <p></p>
+                    
+               <figure xml:id="Fig_2MoyDep_11bis">
+            <caption>Choix de la loi à utiliser pour le test</caption>
+            <image source="images/Fig_2MoyDep_11bis.png" >
+            <description>Choix de la loi à utiliser pour le test</description>
+            </image>
+            </figure>
+                    <p></p>
+                    
+                </li>
+                
+                
+                <li><p>L'écart type de la distribution <m>D</m>, soit <m>\sigma_{\bar{D}_{1}</m>, est calculé à l'aide de formule se trouvant dans la cellule <c>C20</c> (voir la <xref ref="Fig_2MoyDep_gif3"/>).</p>
+                 <p></p>
+                    
+               <figure xml:id="Fig_2MoyDep_gif3">
+            <caption>Remplissage des cellules pour les étapes 4 et 5</caption>
+            <image source="images/Fig_2MoyDep_gif3.png" >
+            <description>Remplissage des cellules pour les étapes 4 et 5</description>
+            </image>
+            </figure>
+                    <p></p>
+                
+                </li>
+                
+                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c> B27</c>, sélectionner la statistique appropriée du test bilatéral, soit <m>t_{\alpha/2}</m>. Remarquer que la valeur de <m>t_{\alpha/2}</m> (environ <m>3,17</m>) dans la cellule <c>D27</c> et <c>G29</c> est pré-remplie et correspond bien à la cote <m>t</m> pour un seuil de signification de <m>1\%</m> et un degré de liberté de 10 (voir la <xref ref="Fig_2MoyDep_gif3"/>).</p></li>
+                
+                <li><p> Dans la cellule <c>E29</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test bilatéral, il faut choisir les mots &#xAB; est différente de &#xBB; (voir la <xref ref="Fig_2MoyDep_gif3"/>). </p>
+                 
+                
+                </li>
+                
+                
+                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_2MoyDep_16"/>). On observe que la cote <m>|t_{obs}|</m> est grande avec une valeur d'environ <m>5,04</m>. Le rejet de l'hypothèse nulle est presqu'assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est d'environ <m>0,0005</m>.</p></li>
+                
+                <li><p> Dans la cellule <c>A45</c>, écrire la décision et la conclusion du test en fonction de la règle de décision (voir la <xref ref="Fig_2MoyDep_16"/>). </p>
+                  <p></p>
+                    
+               <figure xml:id="Fig_2MoyDep_16">
+            <caption>Décision et conclusion du test</caption>
+            <image source="images/Fig_2MoyDep_16.png" >
+            <description>Décision et conclusion du test</description>
+            </image>
+            </figure>
+                    <p></p>
+              <p>Il serait intéressant de vérifier si cette conclusion s'applique à tous les types de polluants.</p>  
+                </li>
+              
+           
+            
+            
+            
+        </ol>   
+        </p>
+        
+        
+        <p>Il est possible d'utiliser l'utilitaire d'analyse, comme présenté à la <xref ref="sssec-UtilitaireAnalyse"/>. Il suffit de sélectionner l'option <alert>Test d'égalité des espérances: observations pairées</alert>, l'option pour les tests d'hypothèse sur deux moyennes dépendantes.</p>
+        </subsubsection>
+    
+    </subsection>
+    
 </section>

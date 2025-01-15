@@ -106,14 +106,14 @@
 <!-- <p>Capture d'écran (interface) et légende pour les éléments importants</p> -->
   
 
-<introduction><p> Avant de commencer à utiliser un nouveau logiciel, il est essentiel de se familiariser avec son interface et ses outils. Les fichiers d'Excel sont appelés des <alert> classeurs </alert> et chaque classeur contient des <term> feuilles de calcul</term>. La figure <xref ref="Fig_Interface_2"/> présente les noms des différents éléments d'une feuille d'Excel. </p> </introduction>
+<introduction><p> Avant de commencer à utiliser un nouveau logiciel, il est essentiel de se familiariser avec son interface et ses outils. Les fichiers d'Excel sont appelés des <alert> classeurs </alert> et chaque classeur contient des <term> feuilles de calcul</term>. La figure <xref ref="Fig_Interface3"/> présente les noms des différents éléments d'une feuille d'Excel. </p> </introduction>
     
    <p></p>
     
-<figure xml:id="Fig_Interface_2">
+<figure xml:id="Fig_Interface3">
 <caption>Interface d'une fenêtre Excel</caption>
-<image source="images/Fig_Interface_2.png" >
-<description>Interface d'une fenêtre Excel</description>
+<image source="images/Fig_Interface3.png" >
+<shortdescription>Interface d'une fenêtre Excel</shortdescription>
 </image>
 </figure>
     
@@ -123,11 +123,14 @@
     
 <li><p>La <term> barre d'outil Accès rapide </term> est une barre personnalisable qui affiche les icônes des commandes les plus courantes. Par défaut, elle comprend les commandes suivantes : l'enregistrement de fichier, l'annulation d'une action effectuée et le rétablissement d'une action annulée.</p></li>
     
-<li><p> Le <term> ruban </term> est composé d'une barre d'onglets (Fichier, Accueil, Insertion, Mise en page, Formules, Données, Affichage entre autres) et d'un groupe de commandes courantes dans chaque onglet (outils courants regroupés par nature dans chaque onglet). </p></li>
+        
+<li><p>Le <term> nom du classeur </term> est écrit dans la barre d'Accès rapide. Par défaut, Excel nomme le fichier Classeur 1. Les versions plus récentes d'Excel permettent de sauvegarder automatiquement le travail fait.</p></li>
+    
+<li><p> Le <term> ruban </term> est composé d'une barre de menus (Fichier, Accueil, Insertion, Mise en page, Formules, Données, Affichage entre autres) et d'un groupe de commandes courantes dans chaque menu (outils courants regroupés par nature dans chaque onglet). </p></li>
     
 <li><p> Une <term> feuille de calcul </term> est un quadrillage comportant des cases, appelées cellules, dans lesquelles on peut écrire du texte ou effectuer des calculs à l'aide de formules et de fonctions. </p></li>
     
-<li> <p> La <term> cellule de référence <c>C5</c> </term> est la cellule située à l'intersection de la colonne <c> C </c> et de la ligne <c> 5 </c>. <c>C5</c> est <term>l'adresse de la cellule</term>. Une cellule est dite <term> active </term> lorsqu'elle est sélectionnée. Dans ce cas, sa bordure est verte et épaisse. Les en-têtes de sa colonne et de sa ligne sont alors grisées. </p></li>
+<li> <p> La <term> cellule de référence <c>C5</c> </term> est la cellule située à l'intersection de la colonne <c> C </c> et de la ligne <c> 5 </c>. <c>C5</c> est <term>l'adresse de la cellule</term>. Une cellule est dite <term> active </term> lorsqu'elle est sélectionnée. Dans ce cas, sa bordure est verte et épaisse. Les en-têtes de sa colonne et de sa ligne sont alors grisés. </p></li>
     
 <li> <p> La <term> plage de données</term>  <c>F13:H18</c>  correspond à l'ensemble des cellules contiguës comprises entre les colonnes <c>F</c> et <c>H</c> et entre les lignes <c>13 </c> et <c> 18 </c>.</p></li>    
     
@@ -138,6 +141,8 @@
 <li> <p> Les <term> onglets de feuilles </term> représentent l'ensemble des feuilles de calcul qui composent le <term> classeur </term>. En cliquant droit sur l'onglet d'une feuille, un menu contextuel apparaît. Il est possible, entre autres, de renommer la feuille, de la déplacer, de la copier, de la masquer ou de la supprimer. </p></li>
 
 <li> <p> En cliquant l'icône <m> + </m> se situant à droite des onglets des feuilles, on peut <term> ajouter une nouvelle feuille </term> au classeur. </p> </li>
+    
+<li> <p> Les <alert>barres de défilement</alert> permettent se déplacer horizontalement et verticalement la feuille de calcul.</p> </li>
     
 </ul>
 </p>
@@ -153,7 +158,7 @@
     <!-- (élargir des colonnes et des lignes, ajouter des colonnes/lignes, uniformiser largeur, bouton droit, onglets du ruban, ruban)-->
    
     
-    <introduction><p>L'élève est invité à explorer les onglets du ruban et les groupes de commandes. Pour ce faire, il faut ouvrir le fichier <alert>Données_Diabètes.xlsx</alert>.</p></introduction>
+    <introduction><p>L'élève est invité à explorer les onglets du ruban et les groupes de commandes. Pour ce faire, il faut ouvrir le fichier <alert>Données_Diabète.xlsx</alert>.</p></introduction>
     
     
 <subsubsection xml:id="sssec_SelectionLigne">
@@ -187,6 +192,8 @@
     <p> </p>
     
 <p>Pour la sélection d'une colonne entière, la procédure est similaire. Il faut placer le curseur sur la lettre de la colonne à sélectionner, attendre l'apparition de la flèche noire et cliquer.</p>    
+    
+    <p>Il ne faut pas oublier de sauvegarder régulièrement son travail en appuyant sur les touches <kbd>CTRL-S</kbd> ou en activant la sauvegarde automatique.</p>
     
 </subsubsection>    
     
@@ -237,7 +244,7 @@
 <subsection xml:id="ssec-Nommerdescellules">
 <title>Attribuer des noms</title>
     
-    <introduction><p>Dans cette section, les étapes pour nommer des cellule sont présentées. Attribuer un nom à une cellule signifie lui donner un identifiant autre que son adresse, afin de pouvoir y faire référence dans toutes les feuilles de calcul d'un classeur Excel.</p></introduction>
+    <introduction><p>Dans cette section, les étapes pour nommer des cellules sont présentées. Attribuer un nom à une cellule signifie lui donner un identifiant autre que son adresse, afin de pouvoir y faire référence dans toutes les feuilles de calcul d'un classeur Excel.</p></introduction>
     
 <subsubsection xml:id="sssec-NomTableau">
 <title>Attribuer un nom à une cellule ou à une plage de cellules</title>  
@@ -256,7 +263,7 @@
     <li> <p>Sélectionner l'entièreté du tableau, soit la plage <c>A5:K773</c>. Il est possible de faire ceci en sélectionnant la cellule <c>A5</c> et en tapant la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd>.</p></li>
 
 
-<li> <p> Dans la <alert> zone nom </alert> (voir la figure <xref ref="Fig_Interface_2"/>), taper le mot <em>Échantillon</em> (voir la <xref ref="Fig_Nom_Echantillon_1"/>) et appuyer sur la touche <kbd>Enter</kbd>. Les noms ne doivent pas contenir d'espace ni de caractères spéciaux. </p>
+<li> <p> Dans la <alert> zone nom </alert> (voir la figure <xref ref="Fig_Interface3"/>), taper le mot <em>Échantillon</em> (voir la <xref ref="Fig_Nom_Echantillon_1"/>) et appuyer sur la touche <kbd>Enter</kbd>. Les noms ne doivent pas contenir d'espace ni de caractères spéciaux. </p>
     
     <p> </p>
 
@@ -287,7 +294,7 @@
 
     <li> <p>Sélectionner l'entièreté du tableau, soit la plage <c>A5:K773</c>. Il est possible de faire ceci en sélectionnant la cellule <c>A5</c> et en tapant la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd>.</p></li>
 
-    <li> <p> Cliquer sur l'onglet <alert> Formules </alert> du ruban (voir la <xref ref="Fig_Interface_2"/>).  </p></li>
+    <li> <p> Cliquer sur l'onglet <alert> Formules </alert> du ruban (voir la <xref ref="Fig_Interface3"/>).  </p></li>
 
     <li> <p> Dans le groupe <term> Noms définis</term>, cliquer sur l'icône <term> Définir un nom </term> (voir la <xref ref="Fig_Nom_Echantillon_3"/>). Une boîte de dialogue apparaît à l'écran.</p>
     <p> </p>
@@ -300,6 +307,8 @@
 </figure>
     </li>
     <p> </p>
+    
+   
 
     <li> <p> Dans l'encadré vide de l'option <alert>Nom</alert>, taper le mot <em>Échantillon</em>, le nom attribué au tableau (voir la <xref ref="Fig_Nom_Echantillon_2"/>). Les noms ne doivent pas contenir d'espace ni de caractères spéciaux.</p>
 <p> </p>
@@ -311,6 +320,8 @@
 </image>
 </figure>
     </li>
+    
+     <li><p>S'assurer que dans l'encadré de l'option <alert>Zone</alert> il soit écrit <alert>Classeur</alert>. Ceci garantit que le nom attribué à une plage de cellules est défini dans toutes les feuilles du classeur, permettant à l'utilisateur d'y faire référence quelle que soit la feuille de travail.</p></li>
     
   <li><p> Cliquer sur <alert>OK</alert>.</p> </li>     
     </ol>
@@ -419,6 +430,7 @@
 </figure>
     </li>
 
+    <li><p>Sauvegarder le travail.</p></li>
 </ol>
 </p>
 </subsubsection>    
@@ -693,9 +705,10 @@
 <description>Boîte de dialogue pour le tri et options de variables à trier</description>
 </image>
 </figure>
+        <p></p>
  </li>  
     
-    
+    <li><p>Sauvegarder.</p></li>
 </ol>
 </p>    
     
@@ -714,7 +727,7 @@
     
     <p> </p>
     
-<introduction><p> Lorsqu'on réalise plusieurs études, il est préférable d'organiser chacune d'elles dans sa propre feuille de calcul distincte afin de faciliter leur consultation.</p></introduction>
+<introduction><p> Lorsqu'on réalise plusieurs études à partir d'une même base de données, il est préférable de travailler dans un seul classeur et d'effectuer chaque étude dans sa propre feuille de calcul distincte afin de faciliter la consultation.</p></introduction>
 
 
 <p>
@@ -756,7 +769,7 @@
     <figure xml:id="Fig_Ajout_Feuille_3">
 <caption>Sélection de l'icône <alert>Renommer</alert></caption>
 <image source="images/Fig_Ajout_Feuille_3.png" >
-<description>Sélection de l'icône Renommer.</description>
+<description>Sélection de l'icône Renommer</description>
 </image>
 </figure>
  </li>   
@@ -765,6 +778,110 @@
 </p>    
     
 </subsection>
+    
+    
+    
+    <subsection xml:id="ssec-RemplissageAutomatique">
+    <title>Remplissage automatique</title>
+        
+        <subsubsection xml:id="RemplissageValeur">
+            <title>Remplissage automatique d'une valeur</title>
+            
+            <introduction><p>Il est possible de remplir une colonne avec la même valeur en utilisant la fonction de recopiage automatique d'Excel. Par exemple, dans un problème de physique ou de chimie, il se peut l'incertitude soit la même pour toutes les mesures et on aimerait la recopier sans taper manuellement la valeur plusieurs fois. Les étapes pour faire un remplissage automatique sont présentées ci-dessous.</p></introduction>
+            
+            <p>
+            <ol>
+                
+                <li><p>Dans le classeur de travail, ajouter une feuille de travail (<xref ref="Fig_Ajout_Feuille"/>).</p></li>
+                
+                <li><p>Dans la cellule <c>C5</c> de cette nouvelle feuille, taper la valeur <m>1</m> (<xref ref="Fig_Remplissage_gif1"/>).</p>
+                   <p> </p>
+    
+    <figure xml:id="Fig_Remplissage_gif1">
+<caption>Remplissage automatique d'une valeur à recopier</caption>
+<image source="images/Fig_Remplissage_gif1.png" >
+<description>Remplissage automatique d'une valeur à recopier</description>
+</image>
+</figure>
+ </li>  
+                
+                <li><p>Sélectionner la cellule jusqu'à ce qu'elle soit encadrée d'une bordure verte (<xref ref="Fig_Remplissage_gif1"/>).</p></li>
+                
+                <li><p>Cliquer et maintenir enfoncer le bouton gauche de la souris sur le coin inférieur droit de la cellule (un petit carré vert). Glisser le pointeur vers le bas jusqu'à la cellule voulue, la cellule <c>C17</c> dans ce cas (<xref ref="Fig_Remplissage_gif1"/>). </p></li>
+                
+                <li><p>Relâcher le bouton gauche de la souris. La valeur <m>1</m> apparaît dans toutes les cases sélectionnées, soit la plage <c>C5:C17</c> (<xref ref="Fig_Remplissage_gif1"/>). Le remplissage peut également être fait le long d'une ligne.</p></li>
+                
+                
+            </ol>
+            </p>
+        
+        </subsubsection>
+        
+        
+            <subsubsection xml:id="RemplissageSuite">
+            <title>Remplissage automatique d'une suite de nombre</title>
+            
+            <introduction>Il est possible de remplir une colonne avec une suite de nombres en utilisant la fonction de recopiage automatique d'Excel. Les étapes sont présentées ci-dessous.</introduction>
+            
+            <p>
+            <ol>
+                
+                <li><p>Dans les cellules <c>E5:E7</c> de la même feuille de calcul, taper les valeurs <m>1</m>, <m>2</m> et <m>3</m> respectivement (<xref ref="Fig_Remplissage_gif2"/>).</p>
+                   <p> </p>
+    
+    <figure xml:id="Fig_Remplissage_gif2">
+<caption>Remplissage automatique d'une suite de nombres</caption>
+<image source="images/Fig_Remplissage_gif2.png" >
+<description>Remplissage automatique d'une suite de nombres</description>
+</image>
+</figure>
+ </li>  
+                
+                <li><p>Sélectionner les cellules <c>E5:E7</c> jusqu'à ce qu'elles soient encadrées d'une bordure verte (<xref ref="Fig_Remplissage_gif2"/>).</p></li>
+                
+                <li><p>Cliquer et maintenir enfoncer le bouton gauche de la souris sur le coin inférieur droit de la plage de cellules (un petit carré vert). Glisser le pointeur vers le bas jusqu'à la cellule voulue, la cellule <c>E17</c> dans ce cas (<xref ref="Fig_Remplissage_gif2"/>). Relâcher le bouton gauche de la souris une fois la cellule voulue atteinte. </p>
+                
+                <p>En sélectionnant trois cellules qui ont trois nombres consécutifs, Excel comprend qu'en effectuant un remplissage automatique, on veut poursuivre la séquence et non recopier ces trois valeurs. Ainsi, il remplit les cellules avec les nombres <m>4</m> à <m>13</m> (<xref ref="Fig_Remplissage_gif2"/>).</p>
+                </li>
+                
+                
+            </ol>
+            </p>
+        
+        </subsubsection>
+    
+    
+        
+                <subsubsection xml:id="RemplissageValeurDouble">
+            <title>Remplissage automatique d'une valeur en double-cliquant</title>
+            
+            <introduction> Il est possible de remplir une colonne adjacente à une autre en utilisant le double-clique. Les étapes sont présentées ci-dessous.</introduction>
+            
+            <p>
+            <ol>
+                
+                <li><p>Dans les cellules <c>F5:F6</c> de la même feuille de calcul, taper la valeur <m>2</m> (<xref ref="Fig_Remplissage_gif3"/>). On place ces valeurs dans la colonne adjacente à celles déjà remplies avec les valeurs <m>1</m> à <m>13</m>.</p>
+                   <p> </p>
+    
+    <figure xml:id="Fig_Remplissage_gif3">
+<caption>Remplissage automatique d'une valeur ou d'une formule avec le double-clique</caption>
+<image source="images/Fig_Remplissage_gif3.png" >
+<description>Remplissage automatique d'une valeur ou d'une formule avec le double-clique</description>
+</image>
+</figure>
+ </li>  
+                
+                <li><p>Sélectionner les cellules <c>F5:F6</c> jusqu'à ce qu'elles soient encadrées d'une bordure verte (<xref ref="Fig_Remplissage_gif3"/>).</p></li>
+                
+                <li><p>Double-cliquer le bouton gauche de la souris sur le coin inférieur droit de la plage de cellules (un petit carré vert) (voir la <xref ref="Fig_Remplissage_gif3"/>). La plage <c>F5:F17</c> se remplit automatiquement. Le remplissage arrête à la ligne <m>17</m>, car Excel remplit jusqu'à la même ligne que la colonne adjacente à la colonne <c>F</c>. </p> </li>
+                
+                
+            </ol>
+            </p>
+        
+        </subsubsection>
+    
+    </subsection>
     
     
     
@@ -807,7 +924,7 @@
     
     <li> <p>Une boîte de dialogue apparaît à l'écran.</p> 
         
-        <p>Dans la zone de saisie <alert>Tableau/Plage</alert>, écrire le nom donné au tableau principal, soit <em>Échantillon</em>(voir la <xref ref="Fig_TCD_Methode1_gif"/>)</p>
+        <p>Dans la zone de saisie <alert>Tableau/Plage</alert>, écrire le nom donné au tableau principal, soit <em>Échantillon</em> (voir la <xref ref="Fig_TCD_Methode1_gif"/>)</p>
   <p> </p>  
     
 <figure xml:id="Fig_TCD_Methode1_gif">
@@ -1141,9 +1258,10 @@
 <description>Les trois colonnes du tableau croisé dynamique</description>
 </image>
 </figure>  
-    
+    <p></p>
     </li>
 
+    <li><p>Sauvegarder le travail.</p></li>
 </ol> 
 </p>    
     
@@ -1152,7 +1270,7 @@
     
 </subsubsection>    
     
-    <subsubsection sml:id="sssec-ActualiserTCD">
+    <subsubsection xml:id="sssec-ActualiserTCD">
     <title>Actualiser un tableau croisé dynamique</title>
     <p></p>
     
@@ -1170,9 +1288,10 @@
 <description>Sélection de l'option Actualiser d'un tableau croisé dynamique</description>
 </image>
 </figure>  
-    
+    <p></p>
     </li>
-            
+       
+            <li><p>Sauvegarder le travail.</p></li>
             
         </ol>
         </p>

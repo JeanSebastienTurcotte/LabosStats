@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Laboratoire_TODO" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Laboratoire</title>
+<introduction>
+<p>Dans ce laboratoire, on s'intéresse au type de lien qui peut exister entre deux variables quantitatives. Plus spécifiquement, on cherche à déterminer l'existence d'un lien linéaire entre des variables <m>X,Y</m>, et donc de l'existence de coefficients <m>a,b</m> pour lesquels <m>Y\approx aX+b</m>. Cette droite est appelée la droite de régression. Cette droite est appelée la droite de régression. Plus la dépendance entre <m>X,Y</m> est forte, plus cette approximation sera bonne. La force de ce lien (linéaire) est donnée par le coefficient de corrélation, aussi appelé coefficient de Pearson. Il est noté <m>r</m> dans le cas d'un échantillon et <m>\rho</m> (lettre grecque &#x00AB; rho &#x00BB;) pour une population. </p>
+<p>La première étape d'une étude sur la nature du lien entre deux variables doit toujours être l'observation des données afin de vérifier qualitativement la plausabilité de l'existence d'un lien linéaire entre les variables. L'équation de la droite de régression ainsi que le coefficient de corrélation peuvent presque toujours être calculés, même si les données ne sont pas reliées linéairement. Il incombe à l'analyste de déterminer la pertinence et l'interprétation adéquate de ces outils.</p>
+<p>Pour présenter ces concepts, on utilise une base de données portant sur <m>421</m> étoiles de type &#x00AB; céphéide &#x00BB;. Une céphéide est une étoile variable, c'est-à-dire dont la luminosité change dû à un mouvement périodique de dilatation et de contraction. La première à avoir été découverte, par l'astronome amateur John Goodricke en 1784, fait partie de la constellation Céphée, qui a par la suite prêté son nom à cette nouvelle catégorie d'étoile. Les données datent de <m>1997</m> et proviennent de <url href="https://www.astro.utoronto.ca/DDO/research/cepheids/cepheids.html">l'Observatoire-David-Dunlap</url> à Richmond Hill, en Ontario. Cet observatoire a été désigné comme un <url href="https://parcs.canada.ca/culture/designation/lieu-site/david-dunlap">lieu historique national</url> en 2019. Les variables présentes dans le fichier sont
+<ul>
+<li><p>ID: Numéro de l'échantillon</p></li>
+<li><p>Étoile: Nom de l'étoile</p></li>
+<li><p>Période:  Période de pulsation (en jours)</p></li>
+<li><p>Mag App: Magnitude apparente moyenne (sans unités)</p></li>
+<li><p>Couleur BV: Indice de couleur B-V moyen (sans unités)</p></li>
+<li><p>Excès: Excès de couleur (sans unités)</p></li>
+<li><p>Amplitude V: Amplitude de la luminosité observée au travers d'un filtre V (~500nm) (sans unités)</p></li>
+<li><p>Mag Abs: Magnitude Absolue (sans unités)</p></li>
+<li><p>Dist: Distance entre l'étoile et le soleil (parsecs)</p></li>
+<li><p>VR MOY: Vitesse radiale moyenne (km/s)</p></li>
+<li><p>RAYON: Rayon solaire ( x 6,957x10^8 m)</p></li>
+</ul>
+</p>
+</introduction>
+<subsection>
+<title>Corrélation et régression linéaire</title>
+<p>Dans le prélaboratoire, on a demandé de tracer le nuage de points de la période de pulsation en fonction du rayon. À l'observation du graphique, il est plausible de conclure à l'existence d'un lien linéaire entre le rayon d'une céphéide et sa période de pulsation. On peut donc aller de l'avant avec l'analyse de la relation linéaire entre ces variables.</p>
+<figure>
+<caption>Le nuage de points créé sur Excel. Source: Observatoire-David-Dunlap, Canada, 1997 </caption>
+<image source="images/PeriodeRayon.png">
+<despcription><p>Le nuage de points créé sur Excel représentant les 120 céphéides de l'échantillons pour lesquelles le rayon est disponible. Le rayon est sur l'axe horizontal et la période sur l'axe verticale. Le graphique est titré &#x00AB; Période de pulsation des céphéides selon le rayon de l'étoile pour 120 céphéides, 1997
+ &#x00BB;. On peut y voir la grande majorité des points qui sont concentrés le long d'une ligne, avec deux points un peu à l'écart.</p></despcription>
+</image>
+</figure>
+<p>Dans un premier temps, on calcule le coefficient de corrélation linéaire. La formule <c>COEFFICIENT.CORRELATION(matrice1;matrice2)</c> permet d'obtenir ce coefficient, où <c>matrice1</c> et <c>matrice2</c> sont les plages contenant les données des deux variables. La formule mathématique du coefficient de corrélation est
+<men xml:id="eq-coeffvar">
+r=\frac{1}{n-1}\sum_{i=1}^n\left(\frac{x_i-\bar{x}}{s_x}\right)\left(\frac{y_i-\bar{y}}{s_y}\right).
+</men>
+C'est une mesure de la variabilité conjointe des variables, normalisée pour être entre <m>-1</m> et <m>1</m>. </p>
+<p>Le signe du coefficient de corrélation donne le sens de la variabilité de la variable <m>Y</m> lorsque <m>X</m> varie: une variation positive de <m>X</m> entraine une variation positive de <m>Y</m> lorsque <m>r>0</m> et  une variation positive de <m>X</m> entraine une variation négative de <m>Y</m> lorsque <m>r&lt;0</m>. La magnitude du coefficient de corrélation quant à elle quantifie la force du lien linéaire entre les variables. Traditionnellement, la force est obtenu selon la valeur de <m>\abs{r}</m> dans la table suivante. TODO AJUSTER AVEC MANUEL </p>
+<table>
+  <title>Interprétation de la force du lien linéaire</title>
+  <tabular top="major">
+    <row bottom="medium">
+      <cell>
+        <m>\abs{r}</m>
+      </cell>
+      <cell>
+        Interprétation du lien
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>]0,8;1]</m>
+      </cell>
+      <cell>
+        Très fort à parfait
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>]0,6;0,8]</m>
+      </cell>
+      <cell>
+        Fort
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>]0,4;0,6]</m>
+      </cell>
+      <cell>
+        Modéré
+      </cell>
+    </row>
+    <row>
+      <cell>
+        <m>]0,2;0,4</m>
+      </cell>
+      <cell>
+        Faible
+      </cell>
+    </row>
+    <row bottom="major">
+      <cell>
+        <m>[0;0,2]</m>
+      </cell>
+      <cell>
+        Aucun à très faible
+      </cell>
+    </row>
+  </tabular>
+</table>
+<p>On calcule le coefficient de corrélation entre la période de pulsation et le rayon des céphéides et on  l'ajoute sous les études descriptives. Puisque les écarts types des variables font partie de la <xref ref="eq-coeffvar">formule mathématique</xref> du coefficient de variation, ce dernier est sensible aux valeurs extrêmes. Il est donc important de bien analyser les données lors d'une étape préliminaire.</p>
+<p>Une fois la nature linéaire du lien confirmée, il est possible de déterminer l'équation de la meilleure droite qui relie les deux variables. L'exercice <xref ref="exo-moindrescarres"/> donne une idée de la procédure mathématique à suivre pour la trouver. Un ouvrage statistique théorique peut montrer que la pente est donnée par <m>a=r\frac{s_y}{s_x}</m> et l'ordonnée à l'origine par <m>b=\bar{y}-a\bar{x}</m>.Sur Excel, on peut afficher directement sur le graphique la droite et son équation. Pour cela, on sélectionne le graphique et on clique sur la petite croix en haut à droite, puis sur <em>linéaire</em>. La case <em>Courbe de tendance</em> aurait aussi pu faire le travail, puisque son comportement par défaut est la relation linéaire. Pour ajouter l'équation, on clique sur <em>Autres options</em> ou on fait un double-clic sur la droite créée précédemment et on coche la case <em>Afficher l'équation sur le graphique</em>. </p>
+<p>La fonction <c>DROITEREG</c> permet aussi d'obtenir directement dans les cellules les valeurs de <m>a,b</m>, mais elle a comme inconvénient qu'il faut que le nombres de valeurs pour chacune des variables soit le même. Dans le cas de la base de données des céphéides, le rayon de plusieurs étoiles est manquant. Il faut alors filtrer dans la formule pour exclure les entrées vides. La formule <c>DROITEREG((FILTRE(PÉRIODE;Rayon&lt;>0));(FILTRE(RAYON;RAYON&lt;>0)))</c> permet d'accomplir cela, où <c>PÉRIODE</c> et <c>RAYON</c> sont les plages nommées correspondant à ces variables dans le tableau des données. Dans les deux cas, si l'on note <m>P</m> la période et <m>R</m> le rayon, on obtient
+<me>
+P=0,184600309R-2,250611573
+</me>.</p>
+<p>Avec cette droite, on est en mesure d'estimer la période de pulsation d'une céphéide de rayon donné ou à l'inverse, de déterminer le rayon d'une étoile dont la période de pulsation est connue. Par exemple, la céphéide <em>FF_AQL</em> dont l'identifiant est <m>4</m> possède une période égale à environ <m>4,47</m> jours. En entrant cette valeur  dans l'équation, on estime un rayon de <m>36,41124772(x6,957x10^8)</m> mètres. Selon <url href="https://en.wikipedia.org/wiki/FF_Aquilae#cite_note-turner-5">Wikipédia</url>, la composante numérique du rayon est de 39.</p>
+
+<p>Truc sur R^2 coeff det</p>
+</subsection>
+</section>
+<!-- Faire observer les données avec deux clusters et chercher la cause
+Déterminer les données manquantes avec la droite et valider (Post lab ) en cherchant sur internet
+-->

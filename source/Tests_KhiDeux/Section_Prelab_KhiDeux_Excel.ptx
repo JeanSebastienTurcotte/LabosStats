@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Prelab_KhiDeux" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Prélab</title>
+    
+    <p>Les tests d'ajustement du khi-deux permettent de déterminer si une variable se répartit selon une certaine distribution théorique.</p>
+    
+<p>Les tests d'indépendance du khi-deux permettent de déterminer l'existence ou l'absence d'un lien entre deux variables. Ces dernières doivent être à échelle nominale ou ordinale pour pouvoir effectuer le test.</p>
+    
+    
+     <worksheet xml:id="ws-Prelab_TestKhiDeux">
+<title>Travail à faire avant le cours</title>
+
+<objectives>
+    <ul>
+       <li><p>Examiner les séries statistiques.</p></li>
+      <li><p>Effectuer une revue de la littérature.</p></li>
+      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>Formuler des hypothèses de recherche.</p></li>
+      <li><p>Explorer le lien entre deux variables.</p></li> 
+    </ul>
+  </objectives>
+        
+        <p>Dans ce prochain laboratoire, la base nationale des collisions automobiles de la <xref ref="sec-Collisions"/> sera analysée.</p>
+
+        
+         
+
+    
+<page>  
+    
+    <exercise>
+  <statement><p>Le ministère de la Santé et des Services Sociaux du Québec veut dresser un portrait de la situation des urgences. Il s'intéresse à la répartition des personnes en attente d'un médecin à l'urgence en fonction des jours de la semaine. Il croit qu'il y a proportionnellement moins de personnes qui se présentent aux urgences en début de semaine (du lundi au jeudi) qu'en fin de semaine (du vendredi au dimanche). Quelles seraient l'hypothèse nulle et l'hypothèse alternative de ce test d'ajustement du khi-deux? Expliquer les choix.</p></statement>
+  </exercise>
+    
+       <exercise>
+  <statement><p>Dans un test d'indépendance, l'hypothèse nulle postule l'indépendance entre deux variables, alors que l'hypothèse alternative affirme une dépendance. Expliquer pourquoi ça ne peut pas être l'inverse. Utiliser les concepts de probabilité pour le faire.</p></statement>
+  </exercise>
+    
+  
+    <exercise>
+  <statement><p>Ouvrir la base de données présentée à la <xref ref="sec-Collisions"/>. En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB;. En suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms aux deux colonnes du tableau <alert>Échantillon</alert>. </p></statement>
+  </exercise>
+
+ <exercise>
+  <statement><p>Dans la base de données présentée à la <xref ref="sec-Collisions"/>, explorer les variables. Déterminer quelques paires de variables pourraient fort probablement avoir un lien entre elles. Déterminer quelques paires de variables dont un dépendance est moins claire. </p></statement>
+  </exercise>
+     
+     </page>
+       
+      
+</worksheet> 
+    
+    
+</section>

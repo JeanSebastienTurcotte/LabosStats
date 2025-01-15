@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Prelab_Correlation" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Prélab</title>
+<p>Dans ce laboratoire, on poursuit le travail des deux laboratoires précédents à propos de la recherche d'une lien entre deux variables. En particulier, lorsque les deux variables sont quantitatives continues, on peut s'intéresser au type de lien qu'il peut y avoir entre deux variables. Ce lien peut être linéaire, polynomiale, exponentielle, logarithmique et ainsi de suite. Par simplicité, on commence par considérer uniquement les variables dont le lien semble être linéaire. Afin de poser les bonnes conclusions, il est primordial que cette linéarité soit présente. La principale manière de constater ce type de lien est en illustrant les variables sur un nuage de points, aussi appelé diagramme de dispersion. </p>
+<worksheet xml:id="ws-Prelab_Correlation">
+<title>Travail à faire avant le cours</title>
+
+<objectives>
+    <ul>
+      <li><p>Déterminer visuellement si la nature du lien entre deux variables est linéaire</p></li>
+      <li><p>Introduire le calcul de la droite de régression</p></li>
+      <li><p>Préparer le fichier de base de données pour le laboratoire</p></li>
+    </ul>
+  </objectives>
+  <page>
+  <exercise><statement><p>Parmi les images suivantes, déterminer celle ou celles qui ont le plus l'allure d'un lien linéaire.</p>
+  
+  <sidebyside widths="45% 45%" margins="auto" valign="middle">
+  <figure xml:id="fig-correlation_intro1">
+  <caption>Un premier lien entre deux variables</caption>
+  <image source="images/Lien1.svg"></image></figure>
+  <figure xml:id="fig-correlation_intro2">
+   <caption>Un deuxième lien entre deux variables</caption>
+  <image source="images/Lien2.svg"></image></figure>
+  </sidebyside>
+  <sidebyside widths="45% 45%" margins="auto" valign="middle">
+  <figure xml:id="fig-correlation_intro3">
+  <caption>Un troisième lien entre deux variables</caption>
+  <image source="images/Lien3.svg"></image></figure>
+  <figure xml:id="fig-correlation_intro4">
+   <caption>Un quatrième lien entre deux variables</caption>
+  <image source="images/Lien4.svg"></image></figure>
+  </sidebyside>
+  </statement></exercise>
+  <exercise xml:id="exo-moindrescarres"><introduction><p>Par deux points il ne peut passer qu'une seule droite. Étant donnés un ensemble de points, il est impossible de penser qu'une relation de la forme <m>y=ax+b</m> pourra passer par tous les points. Il existe plusieurs manières de définir &#x00AB; la meilleure droite &#x00BB; <m>y=ax+b</m> représentant un ensemble de points. La plus commune est celle obtenue en appliquant la méthode des moindres carrées.</p>
+  <p>Cette méthode consiste à calculer la différence entre chacune des valeurs dépendantes des données et la valeur dépendante de l'équation d'une droite de paramètres <m>a,b</m> et d'additionner le carré de toutes ces différences. On cherche les valeurs de <m>a</m> et <m>b</m> qui minimise cette somme.</p>
+  </introduction>
+  <task><statement><p>On considère les points <m>A(1;1),B(2;3)</m> et <m>C(4;4)</m>. Écrire les trois termes de la sommes des moindres carrés pour ces trois points.</p></statement></task>
+  <task><statement><p>Dans un cours de calcul différentiel à plusieurs variables, on apprend que pour optimiser une fonction multivariée, il faut que les dérivées par rapport à chacune de ses variables soit égales à <m>0</m>. Dans le cas des moindres carrés, deux variables sont présentes. En traitant à tour de rôle l'une variable comme étant constante, calculer la dérivée de la somme obtenue à la partie précédente par rapport à l'autre variable pour obtenir deux équations linéaires en <m>a,b</m>.</p></statement></task>
+  <task><statement><p>En posant chacune de ces équations égales à 0, montrer que la droite des moindres carrés de ce problème est <me>y=\frac{13}{14}x+\frac{1}{2}</me>.</p></statement></task>
+  </exercise>
+  </page> 
+  <page>
+  <exercise><introduction><p>Le fichier <c>13jeux_de_donnees.xlsx</c> disponible TODO contient 13 ensembles de couples de données ayant été créés artificiellement afin de produire le résultat des exercices ci-dessous. Le but de cet exercice est de comprendre l'importance d'observer les données avant d'en tirer quelconques conclusion.</p></introduction>
+  <task><statement><p>Dans une nouvelle feuille de calculs, créer un tableau croisé dynamique contenant dans le champ &#x00AB;colonne&#x00BB; les entrées<c>Valeurs_X</c> et <c>Valeurs_Y</c>. Ajouter aussi un filtre avec l'entrée <c>Jeu x</c></p></statement></task>
+  <task><statement><p>Positionner le filtre en haut du tableau sur <c>Jeu 1</c>.</p></statement></task>
+  <task><statement><p>À l'aide de fonctions Excel, calculer la moyenne des valeurs <c>X</c>, la moyenne des valeurs <c>Y</c>, l'écart type des valeurs <c>X</c>, l'écart type des valeurs <c>Y</c> ainsi que le coefficient de corrélation entre les valeurs <c>X</c> et <c>Y</c>. </p></statement></task>
+  <task><statement><p>Insérer un nuage de points avec les valeurs du tableau croisé dynamique.</p></statement></task>
+  <task><statement><p>Observer l'effet qu'a le changement du jeu de données dans le filtre sur les mesures statistiques calculées et sur l'allure du nuage de points. Commenter brièvement. </p></statement></task>
+  </exercise>
+  </page>
+  <exercise><introduction><p>Télécharger le fichier <c>Cepheides_donnees.xlsx</c> disponible TODO. Ce fichier contient différentes données de <m>421</m> étoiles de type &#x00AB; céphéides &#x00BB;. Dans le prochain laboratoire, on cherche à déterminer s'il existe des liens linéaires entre certaines de ces variables.</p></introduction>
+  <task><statement><p>Dans une feuille appelée &#x00AB; RP &#x00BB;, tracer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
+  <task><statement><p>Dans une feuille appelée &#x00AB;MappP &#x00BB;, tracer le nuage de points représentant la magnitude apparente des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
+  <task><statement><p>Dans une feuille appelée &#x00AB;MabsP &#x00BB;, tracer le nuage de points représentant la magnitude absolue des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
+  <task><statement><p>Sur chacune des trois feuille, faire l'étude descriptive de la population telle que décrite dans la <xref ref="sssec_Mesures"/> pour les variables impliquées.</p></statement></task>
+  </exercise>
+  </worksheet>
+</section>

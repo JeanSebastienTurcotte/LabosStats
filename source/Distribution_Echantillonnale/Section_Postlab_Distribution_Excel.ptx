@@ -43,9 +43,9 @@
 </image>
 </figure>
 </statement></exercise>
-<exercise><statement><p>Générer <m>100</m> échantillons de taille <m>1000</m> et considérer la proportion des trajets qui proviennent de membres de BIXI. Tracer l'histogramme des proportions échantillonnales.</p></statement></exercise>
+<exercise xml:id="exo-estimationproportion"><statement><p>Générer <m>100</m> échantillons de taille <m>1000</m> et considérer la proportion des trajets qui proviennent de membres de BIXI. Tracer l'histogramme des proportions échantillonnales.</p></statement></exercise>
 <exercise>
-<statement><p>Formulez quelques hypothèses utilisant certaines des autres variables de cette base de données. </p></statement>
+<statement><p>Formulez quelques hypothèses utilisant certaines les variables de cette base de données. </p></statement>
 </exercise>
 </worksheet>
 </section>
