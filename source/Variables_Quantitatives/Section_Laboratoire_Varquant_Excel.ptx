@@ -797,7 +797,7 @@
                 </li>
                 
                 
-                  <p>Faire la mise en forme du tableau de fréquences correspondant à la répartition de femmes selon l'indice de masse corporelle. La version finale du tableau de fréquences est présentée à la <xref ref="Fig_IMC_Tableau_2"/> (référence aux sections de JS).</p>
+                  <p>Faire la mise en forme du tableau de fréquences correspondant à la répartition de femmes selon l'indice de masse corporelle. La version finale du tableau de fréquences est présentée à la <xref ref="Fig_IMC_Tableau_2"/> (voir la <xref ref="ssec-MiseEnFormeTableau"/>).</p>
         
          <figure xml:id="Fig_IMC_Tableau_2">
 <caption>Version définitive du tableau de fréquences de la variable <alert>IMC</alert></caption>
@@ -2078,7 +2078,7 @@
     <p> </p>
     </li>
     
-      <li><p> La version finale du tableau de fréquences... (référence aux sections de JS)</p>
+      <li><p> La version finale du tableau de fréquences doit ressembler à la <xref ref="Fig_IMCAtteinte_Tableau_1"/> (voir la <xref ref="ssec-MiseEnFormeTableau"/>).</p>
         
          <figure xml:id="Fig_IMCAtteinte_Tableau_1">
 <caption>Version définitive du tableau de fréquences de la variable <alert>IMC</alert> avec la variable <alert>Atteinte</alert></caption>

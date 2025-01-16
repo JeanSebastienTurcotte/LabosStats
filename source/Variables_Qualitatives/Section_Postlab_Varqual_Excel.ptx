@@ -2,24 +2,24 @@
 
 <section xml:id="sec-Postlab-Varqual" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Réflexions</title>
-<p>L'information transmise par les tableaux de fréquences et les graphiques n'est que la première partie d'une série de renseignements qui permettront de bien caractériser la population étudiée et éventuellement de faire des inférences et valider ou infirmer les hypothèses de recherche. Les questions qui suivent servent à regarder les problèmes à tirer des conclusions à partir d'une analyse sommaire des données comme la lecture de tableaux et de graphiques. Les prochains laboratoires viendront soutirer une multitude de détails statistiques à partir des données et permettront de combler certaines lacunes soulevées ci-dessous.</p>
+<p>L'information transmise par les tableaux de fréquences et les graphiques n'est que la première partie d'une série de renseignements qui permettront de bien caractériser la population étudiée et éventuellement de faire des inférences et valider ou infirmer les hypothèses de recherche. Les questions qui suivent servent à regarder les problèmes qu'il y a à tirer des conclusions à partir d'une analyse sommaire des données comme la lecture de tableaux et de graphiques. Les prochains laboratoires viendront soutirer une multitude de détails statistiques à partir des données et permettront de combler certaines lacunes soulevées ci-dessous.</p>
 
 <worksheet xml:id="ws-Reflexion_Varqual">
 <title>Travail à faire après le laboratoire</title>
 
 <objectives>
     <ul>
-      <li><p>Examiner les variable <alert>Atteint</alert> et <alert>Obésité</alert>.</p></li>
+      <li><p>Examiner les variables <alert>Atteint</alert> et <alert>Obésité</alert>.</p></li>
       <li><p>Formuler des conclusions</p></li>
       <li><p>Poser un regard critique sur les données.</p></li>
-      <li><p>ToDo Formuler des hypothèses de recherche.</p></li>
+      <li><p>Formuler des hypothèses de recherche.</p></li>
     </ul>
     </objectives>
     <exercise>
-    <statement><p>En deux courtes phrases, résumer la situation du diabète et du niveau d'obésité chez la population de femmes Pimas</p></statement>
+    <statement><p>En deux courtes phrases, résumer la situation du diabète et du niveau d'obésité chez la population de femmes pimas.</p></statement>
     </exercise>
     
-    <exercise><statement><p>Selon la National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)<fn>https://www.niddk.nih.gov/health-information/health-statistics/diabetes-statistics#factsstats</fn>, il y a 8.8% des femmes américaines qui sont atteintes du diabètes (données de 2017-2020). Selon l'American Diabetes Association<fn>https://ictnews.org/archive/mexico-vs-arizona-pima-indians</fn>, il y a 6.9% des femmes mexicaines aussi d'origine pima qui le sont (données de 2006). En supposant que toutes ces valeurs et celles de la population étudiée sont restées les mêmes au fil du temps, quels constats faire au sujet des femmes pima vivant en Arizona à la lumière de ces informations?</p>
+    <exercise><statement><p>Selon la National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)<fn>https://www.niddk.nih.gov/health-information/health-statistics/diabetes-statistics#factsstats</fn>, il y a 8,8% des femmes américaines qui sont atteintes du diabète (données de 2017-2020). Selon l'American Diabetes Association<fn>https://ictnews.org/archive/mexico-vs-arizona-pima-indians</fn>, il y a 6,9% des femmes mexicaines aussi d'origine pima qui le sont (données de 2006). En supposant que toutes ces valeurs et celles de la population étudiée sont restées les mêmes au fil du temps, quels constats faire au sujet des femmes pimas vivant en Arizona à la lumière de ces informations?</p>
     </statement>
     </exercise>
     
@@ -34,6 +34,6 @@
     <p>Est-il correct de dire que les femmes pimas vivant en Arizona ont un niveau d'obésité moyen d'environ <m>4</m>? Expliquer.</p>
     </statement>
     </exercise>
-    <exercise><p>Après avoir étudié les variables qualitatives, formuler deux hypothèses en lien avec ces variables et les autres.</p></exercise>
+    <exercise><p>Après avoir étudié les variables qualitatives de ce laboratoire, formuler deux hypothèses en lien avec ces variables et les autres présentes dans la base de données.</p></exercise>
     </worksheet>
 </section>

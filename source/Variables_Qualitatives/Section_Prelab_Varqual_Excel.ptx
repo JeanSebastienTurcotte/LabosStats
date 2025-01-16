@@ -9,8 +9,8 @@
 
 <objectives>
     <ul>
-      <li><p>Créer les tableaux croisés dynamiques nécessaire pour le laboratoire</p></li>
-      <li><p>Quelque chose d'autre</p></li>
+      <li><p>Créer les tableaux croisés dynamiques nécessaires pour le laboratoire</p></li>
+      <li><p>Se conscientiser à l'importance de présenter des résultats de la bonne manière.</p></li>
     </ul>
   </objectives>
   
@@ -19,11 +19,11 @@
   </introduction> 
 <page>  
   <exercise>
-  <statement><p>Dans le fichier Excel du laboratoire, créer une nouvelle feuille de calcul. Dans celle-ci, générer le tableau croisé dynamique de la répartition des femmes pour la variable <alert>Obésité</alert>. </p></statement>
+  <statement><p>Dans le fichier Excel du laboratoire, créer une nouvelle feuille de calcul. Dans celle-ci, générer le tableau croisé dynamique de la répartition des femmes selon la variable <alert>Obésité</alert>. </p></statement>
   </exercise>
   
   <exercise workspace="2.5in">
-  <introduction><p>Considérer les situations suivantes. Quelle(s) critique(s) peut on poser à leur égard?</p></introduction>
+  <introduction><p>Considérer les situations suivantes. Quelle(s) critique(s) peut-on poser à leur égard?</p></introduction>
 
   <task> 
   <statement>
@@ -33,7 +33,7 @@
   
     <task> 
   <statement>
-  <p>Il y a <m>200</m> utilisateurs d'un produit <m>A</m> qui ont acheté à nouveau contre <m>50</m> pour un produit compétitif <m>B</m>. Le produit <m>A</m> est donc supérieur au produit <m>B</m>.</p>
+  <p>Il y a <m>200</m> utilisateurs d'un produit <m>A</m> qui l'ont acheté à nouveau alors que <m>50</m> utilisateurs d'un produit compétitif <m>B</m> ont acheté à nouveau le produit <m>B</m>. Le produit <m>A</m> est donc une meilleur produit que le <m>B</m>.</p>
   </statement>
   </task>
   </exercise>

@@ -10,7 +10,7 @@
     
 <p>Dans l'étude présentée, on se concentre sur le diabète de type 2, une forme de diabète fréquemment associée à l'inactivité physique, à l'obésité, à l'âge avancé d'un individu, ainsi qu'à des antécédents familiaux de diabète de type 2. Plusieurs facteurs expliquent cette prévalence chez les communautés autochtones. Notamment, ces dernières rencontrent des obstacles pour accéder à des soins de santé adéquats en raison de ressources limitées, de faibles revenus et de conditions économiques précaires. </p>
     
-    <p>Le fichier Excel à télécharger, ouvrir et enregistrer est <c>Données_Diabète.xlsx</c> disponible à l'adresse .</p>
+    <p>Le fichier Excel à télécharger, ouvrir et enregistrer est <c>Données_Diabète.xlsx</c> disponible en cliquant <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Donnees/Donn%C3%A9es_Diab%C3%A8te.xlsx?raw=true">ici</url>.</p>
     
 <p>La base de données de l'enquête comprend les mesures diagnostiques d'un échantillon de 768 femmes d'origine pima de l'Arizona. Les variables à l'étude sont :</p>
 

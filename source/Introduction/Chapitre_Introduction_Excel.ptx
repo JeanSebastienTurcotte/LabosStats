@@ -4,7 +4,7 @@
   <title>Introduction</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Ce chapitre sert d'introduction au logiciel Excel en contexte scientifique. On y présente la première base de données qui sera utilisée lors des prochains laboratoires afin d'étudier la présence de diabète chez une population de femmes d'origine pima.  Il couvre des sujets tels que l'interface d'Excel, la manipulation des lignes et des colonnes, l'attribution de noms aux cellules, le filtrage et le tri des données, ainsi que la création de tableaux croisés dynamiques. Ces compétences sont essentielles pour effectuer des analyses statistiques efficaces et organiser les données de manière optimale. </p>
   </introduction>
 
   <!-- include sections -->
