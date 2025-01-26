@@ -4,7 +4,7 @@
   <title>Variables quantitatives</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Ce chapitre introduit le traitement et la présentation des variables quantitatives. Il aborde des techniques telles que la création de tableaux croisés dynamiques pour synthétiser les données quantitatives, la mise en forme de ces tableaux pour une présentation optimale, et l’élaboration de graphiques adaptés à ces types de variables. Ces méthodes facilitent l’interprétation et la communication des informations issues des données quantitatives. </p>
   </introduction>
 
   <!-- include sections -->

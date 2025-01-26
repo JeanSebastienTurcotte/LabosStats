@@ -106,7 +106,7 @@
 <!-- <p>Capture d'écran (interface) et légende pour les éléments importants</p> -->
   
 
-<introduction><p> Avant de commencer à utiliser un nouveau logiciel, il est essentiel de se familiariser avec son interface et ses outils. Les fichiers d'Excel sont appelés des <alert> classeurs </alert> et chaque classeur contient des <term> feuilles de calcul</term>. La figure <xref ref="Fig_Interface3"/> présente les noms des différents éléments d'une feuille d'Excel. </p> </introduction>
+<introduction><p> Avant de commencer à utiliser un nouveau logiciel, il est essentiel de se familiariser avec son interface et ses outils. Les fichiers d'Excel sont appelés des <alert> classeurs </alert> et chaque classeur contient des <term> feuilles de calcul</term>. La <xref ref="Fig_Interface3"/> présente les noms des différents éléments d'une feuille d'Excel. </p> </introduction>
     
    <p></p>
     
@@ -889,7 +889,7 @@
 <subsection xml:id="ssec_TCD">
 <title>Tableau croisé dynamique</title>
 
-<introduction><p> Lorsque l'on dispose d'une vaste base de données, il peut être difficile de mettre en évidence les faits saillants. Excel permet de faire des tableaux croisés dynamiques pour organiser, présenter, synthétiser et analyser des données. Le mot &#xAB; croisé &#xBB; fait référence à la possibilité de regrouper et de comparer plusieurs variables, tandis que le mot &#xAB; dynamique &#xBB; souligne la capacité du tableau à évoluer. En effet, si une valeur est modifiée dans la base de données, le tableau croisé dynamique peut être mis à jour. À partir d'un tableau croisé dynamique, il est possible de générer un tableau de fréquences pour visualiser la répartition des unités statistiques en fonction d'une variable. </p>
+<introduction><p> Lorsque l'on dispose d'une vaste base de données, il peut être difficile de mettre en évidence les faits saillants. Excel permet de créer des tableaux croisés dynamiques pour organiser, présenter, synthétiser et analyser des données. Pour ce faire, il est crucial que les données de chaque variable soient initialement organisées en colonnes dans un seul tableau maître. Le mot &#xAB; croisé &#xBB; fait référence à la possibilité de regrouper et de comparer plusieurs variables, tandis que le mot &#xAB; dynamique &#xBB; souligne la capacité du tableau à évoluer. En effet, si une valeur est modifiée dans la base de données, le tableau croisé dynamique peut être mis à jour. À partir d'un tableau croisé dynamique, il est possible de générer un tableau de fréquences pour visualiser la répartition des unités statistiques en fonction d'une variable. </p>
     
 <p> La première enquête du laboratoire 2 porte sur la répartition des femmes d'origine pima de l'Arizona selon la présence de diabète. Ainsi, on génère un tableau croisé dynamique de cette distribution. Il existe deux méthodes pour le générer.</p></introduction> 
     

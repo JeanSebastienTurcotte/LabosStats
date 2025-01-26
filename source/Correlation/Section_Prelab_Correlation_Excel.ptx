@@ -51,7 +51,7 @@
   </exercise>
   </page>
   <exercise><introduction><p>Télécharger le fichier <c>Cepheides_donnees.xlsx</c> disponible TODO. Ce fichier contient différentes données de <m>421</m> étoiles de type &#x00AB; céphéides &#x00BB;. Dans le prochain laboratoire, on cherche à déterminer s'il existe des liens linéaires entre certaines de ces variables.</p></introduction>
-  <task><statement><p>Dans une feuille appelée &#x00AB; RP &#x00BB;, tracer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
+  <task><statement><p>Dans une feuille appelée &#x00AB; PR &#x00BB;, tracer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
   <task><statement><p>Dans une feuille appelée &#x00AB;MappP &#x00BB;, tracer le nuage de points représentant la magnitude apparente des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
   <task><statement><p>Dans une feuille appelée &#x00AB;MabsP &#x00BB;, tracer le nuage de points représentant la magnitude absolue des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
   <task><statement><p>Sur chacune des trois feuille, faire l'étude descriptive de la population telle que décrite dans la <xref ref="sssec_Mesures"/> pour les variables impliquées.</p></statement></task>

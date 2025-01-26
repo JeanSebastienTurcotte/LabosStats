@@ -19,7 +19,7 @@
   </introduction> 
 <page>  
   <exercise>
-  <statement><p>Dans le fichier Excel du laboratoire, créer une nouvelle feuille de calcul. Dans celle-ci, générer le tableau croisé dynamique de la répartition des femmes selon la variable <alert>Obésité</alert>. </p></statement>
+  <statement><p>Dans le fichier Excel du laboratoire, créer une nouvelle feuille de calcul intitulée <alert>Étude Obésité</alert>. Dans celle-ci, générer le tableau croisé dynamique de la répartition des femmes selon la variable <alert>Obésité</alert>. </p></statement>
   </exercise>
   
   <exercise workspace="2.5in">

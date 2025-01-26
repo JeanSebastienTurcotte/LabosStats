@@ -2,8 +2,46 @@
 
 <section xml:id="sec-Postlab_TODO" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Réflexions</title>
-<p>Mise en contexte</p>
+<p>Ce laboratoire a montré comment déterminer la présence d'un lien linéaire entre deux variables, par le biais de l'observation (qualitativement) du nuage de points et par le calcul des coefficients de corrélation et de détermination (quantitativement). Ensemble, ces informations permettent de conclure à la présence ou non d'une relation linéaire ainsi que d'en quantifier la force.</p>
+<p>De plus, on a vu qu'il est possible d'être en présence d'une relation qui n'est pas linéaire, mais qui peut être tout de même intéressante et très forte.</p>
+<worksheet>
+<title>Travail à faire après le laboratoire</title>
+<objectives>
+    <ul>
+      <li><p>Calculer des informations manquantes à l'aide de la régression linéaire.</p></li>
+      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>Effectuer un test d'hypothèse paramétriques pour vérifier une hypothèse.</p></li>
+      <li><p>Interpréter adéquatement la conclusion d'un test.</p></li>
+      <li><p>Construire des intervalles de confiance pour estimer une variable à l'aide d'une régression.</p></li>
+    </ul>
+    </objectives>
+    <exercise><introduction><p>Dans le tableau des données, on remarque que plusieurs étoiles n'ont pas de valeurs pour le rayon. On peut utiliser l'équation de la droite de régression <xref ref="eq-PR"/> pour approximer ces données manquantes.</p></introduction>
+    <task><statement><p>Dans le tableau des données, filtrer la colonne <alert>Rayon</alert> afin d'afficher uniquement les étoiles dont la valeur du rayon est absente.</p></statement></task>
+    <task><statement><p>Dans une nouvelle feuille de calcul, copier, le nom et la période de ces étoiles.</p></statement></task>
+    <task><statement><p>À l'aide de l'équation <xref ref="eq-PR"/>, déterminer les rayons manquants dans cette feuille de calculs.</p></statement></task>
+    <task><statement><p>Vérifier la précision de l'approximation en cherchant les véritables valeurs des rayons des étoiles <c>AX_Cir</c> (ID 207), <c>R_Cru</c> (ID 209), <c>SU_Cyg</c> (ID 225) et <c>S_Sgr</c> (ID 397). Citer les sources utilisées.</p></statement></task>
+    </exercise>
+    <exercise><introduction><p>Puisque le coefficient de corrélation <m>r</m> est une approximation du véritable facteur de corrélation (<m>\rho</m>) entre les variables et qu'il dépend du hasard de l'échantillon, ainsi que de sa taille, il est possible de faire un test d'hypothèse pour évaluer si le lien est significatif. L'hypothèse nulle est <m>H_0: \rho = 0</m>, où <m>\rho</m> est la vraie valeur du facteur de corrélation entre les variables, et l'hypothèse alternative est <m>H_1: \rho\neq 0</m>. La règle de décision stipule de rejetter <m>H_0</m> lorsque <m>|{T_{obs}}|>t_{n-2;\alpha/2}</m> où <m>t_{obs}=\frac{r\sqrt{n-2}}{\sqrt{1-r^2}})</m>. Si l'on préfère utiliser la valeur <m>P</m>, qui dans ce cas vaut <m>2P(T_{n-2}>|{t_{obs}}|</m>, on rejette <m>H_0</m> si celle-ci est inférieure à <m>\alpha</m>.</p>
+    </introduction>
+    <task><statement><p>Faire le test d'hypothèse au seuil de <m>5\%</m> en utilisant la première méthode.</p></statement></task>
+    <task><statement><p>Faire le test d'hypothèse au seuil de <m>1\%</m> en utilisant la valeur <m>P</m>.</p></statement></task>
+    <task><statement><p>Interpréter adéquatement ce test d'hypothèses.</p></statement></task>
+    </exercise>
+    <exercise><introduction><p>Lorsque l'on utilise l'équation de la droite de régression pour estimer une variable à l'aide d'une autre, ce que l'on fait est en réalité un calcul de moyenne conditionnelle, à savoir si les variables <m>X,Y</m> sont linéairement corrélées, alors l'équation <m>y=ax+b</m> signifie aussi qu'en moyenne lorsque <m>X=x</m>, la variable <m>Y</m> sera égale à <m>y</m>. On peut utiliser ces informations pour construire un intervalle de confiance pour estimer une valeur de <m>Y</m> pour une valeur de <m>X</m> donnée, offrant ainsi plus de contrôle sur l'estimation. L'intervalle pour un niveau de confiance de <m>(a-\alpha)\%</m> est de la forme
+<me>
+[ax+b-E;ax+b+E]
+</me>, où la marge d'erreur <m>E</m> vaut, si <m>s_x,s_y</m> sont les écarts types estimés des variables <m>X,Y</m>,
+<me>
+E=t_{n-2;\alpha/2}s_y\sqrt{\frac{1}{n}+\frac{(x-\bar{x})^2}{(n-1)s_x^2}}
+</me>.</p></introduction>
+<task><statement><p>Dans une nouvelle feuille de calculs appelée <alert>IntervalleR</alert>, faire une copie des couples de données période-rayon pour les couples dont le rayon n'est pas vide.</p></statement></task>
+<task><statement>Ajouter des colonnes <alert>Estimation</alert>, <alert>E</alert>, <alert>Binf</alert>, <alert>Bsup</alert> et <alert>P dans intervalle</alert>.</statement></task>
+<task><statement><p>À côté de ce tableau, calculer la moyenne des rayons, les écarts type pour les rayons et la période et le nombre de données dans le tableau. Inscrire aussi la valeur <m>\alpha=0,05</m> et calculer la cote <m>t</m> nécessaire.</p></statement></task>
+<task><statement><p>Dans le tableau, calculer les entrées de la colonne <alert>Estimation</alert> à l'aide de l'équation de la droite de régression obtenue pendant le laboratoire.</p></statement></task>
+<task><statement><p>Remplir la colonne <alert>E</alert> en calculant les marges d'erreur.</p></statement></task>
+<task><statement><p>Calculer les bornes inférieures et supérieures pour les intervalles de confiance dans les colonnes suivantes.</p></statement></task>
+<task><statement><p>Dans la colonne <alert>P dans intervalle</alert>, vérifier si la véritable période de chacune des étoiles se trouve dans l'intervalle de confiance construit.</p></statement></task>
+<task><statement><p>Quelle est la proportion d'intervalles qui contiennent leur période? Commenter brièvement.</p></statement></task>
+</exercise>
+</worksheet>
 </section>
-
-<!-- outliers variables individuelles vs dans le nuage -->
-<!-- réflexion sur quelle variable est dép vs indép -->

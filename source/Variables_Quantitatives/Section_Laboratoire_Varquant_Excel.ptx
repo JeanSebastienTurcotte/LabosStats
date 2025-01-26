@@ -63,12 +63,12 @@
               
               <li><p>Ouvrir le classeur <alert>Données_Diabète.xlsx</alert> sauvegardé avec le travail fait aux laboratoires 1 et 2.</p></li>
               
-              <li><p>Dans le feuille <alert>Données</alert>, cliquer sur l'icône du filtre à droite du titre de la colonne <alert>IMC</alert> (voir la <xref ref="Fig_Filtre_0"/>). </p>
+              <li><p>Dans le feuille <alert>Données</alert>, cliquer sur l'icône du filtre (petit triangle) à droite du titre de la colonne <alert>IMC</alert> (voir la <xref ref="Fig_Filtre_0"/>). </p>
               <p></p>
                   
                 
                  <figure xml:id="Fig_Filtre_0">
-<caption>Icone de filtre à droite du titre de la colonne <alert>IMC</alert></caption>
+<caption>Icône de filtre à droite du titre de la colonne <alert>IMC</alert></caption>
 <image source="images/Fig_Filtre_0.png" >
 <description>Icône de filtre à droite du titre de la colonne IMC</description>
 </image>
@@ -97,7 +97,7 @@
         
         <remark xml:id="rem-filtrer">
 <title>Filtrer des données</title>
-<p>Ce filtrage ne s'applique que sur les données du tableau principal <alert>Échantillon</alert> et non sur les tableaux croisés dynamiques.</p>
+<p>Malheureusement, ce filtrage ne s'applique que sur les données du tableau principal <alert>Échantillon</alert> et non sur les tableaux croisés dynamiques.</p>
     </remark>
         
     
@@ -143,9 +143,9 @@
     <p> </p>
     
       <figure xml:id="Fig_TCD_IMC_2">
-<caption>Les trois colonnes du tableau croisé dynamique final de la répartition des femmes selon l'indice de masse corporelle</caption>
+<caption>Les trois colonnes du tableau croisé dynamique final de la répartition de l'échantillon de femmes d'origine pima selon l'indice de masse corporelle</caption>
 <image source="images/Fig_TCD_IMC_2.png">
-<description>Les trois colonnes du tableau croisé dynamique final de la répartition des femmes selon l'indice de masse corporelle</description>
+<description>Les trois colonnes du tableau croisé dynamique final de la répartition de l'échantillon de femmes d'origine pima selon l'indice de masse corporelle</description>
 </image>
 </figure>    
   
@@ -155,7 +155,7 @@
 </ol>
 </p>
         
-   <p>La première ligne du tableau croisé dynamique révèle que onze femmes ont enregistré un indice de masse corporelle de 0. Il est possible de constater que le tableau croisé dynamique n'a pas filtré les données contenant une valeur nulle comme le tableau principal <alert>Échantillon</alert> l'a fait. Cette valeur étant impossible, il s'agit donc d'une valeur aberrante. On choisit d'exclure ces données lors de la création du tableau de fréquences, de l'histogramme, ainsi que des calculs des mesures statistiques, car ces dernières pourraient fausser les interprétations. </p>     
+   <p>La première ligne du tableau croisé dynamique révèle que onze femmes ont enregistré un indice de masse corporelle de 0. Il est possible de constater que le tableau croisé dynamique n'a pas filtré les données contenant une valeur nulle comme le tableau principal <alert>Échantillon</alert> l'a fait. Il va falloir le refaire pour le tableau croisé dynamique. </p>     
     </subsubsection>
     
     
@@ -201,7 +201,7 @@
     
     </li>  
     
-<li><p> Une boîte de dialogue s'affiche. Il faut choisir d'afficher les éléments pour lesquels l'étiquette est différent de <m>0</m>. Ainsi, dans la zone de saisie à droite de l'option <em>est différent de</em>, il faut taper la valeur <em>0</em> (voir la <xref ref="Fig_IMC_Filtre_3bis"/>) et cliquer sur <alert>OK</alert>. </p>
+<li><p> Une boîte de dialogue s'affiche à l'écran. Il faut choisir d'afficher les éléments pour lesquels l'étiquette est différent de <m>0</m>. Ainsi, dans la zone de saisie à droite de l'option <em>est différent de</em>, il faut taper la valeur <em>0</em> (voir la <xref ref="Fig_IMC_Filtre_3bis"/>) et cliquer sur <alert>OK</alert>. </p>
     
         <p> </p>
     
@@ -231,7 +231,7 @@
         <title>Créer des classes</title>
         <p> </p>
         
-        <p>Comme présenté, le tableau croisé dynamique de la <xref ref="Fig_TCD_IMC_2"/> n'est pas optimal pour l'analyse de la répartition des femmes selon l'indice de masse corporelle. Un regroupement des données en classes est nécessaire. Avant de procéder, il est important de déterminer le nombre optimal de classes et leur amplitude. Les choix par défaut d'Excel ne sont pas toujours adéquats. Il est donc recommandé de documenter clairement les décisions prises dans la feuille Excel afin d'en conserver une trace. Les étapes suivantes mènent au groupement des données de la variable <alert>IMC</alert>.</p>
+        <p>Comme présenté, le tableau croisé dynamique de la <xref ref="Fig_TCD_IMC_2"/> n'est pas optimal pour l'analyse de la répartition des femmes selon l'indice de masse corporelle. Un regroupement des données en classes est nécessaire. Avant de procéder, il est important de déterminer le nombre optimal de classes et l'amplitude de ces dernières. Les choix par défaut d'Excel ne sont pas toujours adéquats. Il est donc recommandé de documenter clairement les décisions prises dans la feuille de calcul afin d'en conserver une trace. Les étapes suivantes mènent au groupement des données de la variable <alert>IMC</alert>.</p>
         
         <paragraphs xml:id="par_Choix_Amp">
             <title>Choix d'amplitude</title>
@@ -336,7 +336,7 @@
  <p></p>
    
     
-    <li><p> Dans la cellule <alert><c>H6</c></alert>, on souhaite déterminer l'étendue de l'indice de masse corporelle (valeur maximale moins la valeur minimale). Taper la formule <c>=SOUS.TOTAL(4;IMC)-SOUS.TOTAL(5;IMC)</c> (voir la <xref ref="Fig_ClassesF_4"/>).</p> 
+    <li><p> Dans la cellule <alert><c>H6</c></alert>, on souhaite déterminer l'étendue de l'indice de masse corporelle (valeur maximale moins la valeur minimale). Taper la formule <c>=SOUS.TOTAL(4;IMC)-SOUS.TOTAL(5;IMC)</c> (voir la <xref ref="Fig_ClassesF_4"/>) suivie de la touche <kbd>Enter</kbd>.</p> 
         
         <p>La formule Excel <alert>SOUS.TOTAL(4;IMC)</alert> renvoie la plus grande valeur parmi la liste de valeurs (le maximum). La fonction Excel <term>SOUS.TOTAL(5;IMC)</term> renvoie la plus petite valeur parmi une liste de valeurs (le minimum). </p>
         
@@ -356,7 +356,7 @@
         
         <p></p>
         
-        <p>L'étendue vaut 48,9. </p>
+        <p>L'étendue vaut<m>48,9</m>. </p>
   <p></p>
     
     </li> 
@@ -364,7 +364,7 @@
     <p></p>
     
     
-    <li><p> Dans la cellule <alert><c>H7</c></alert>, taper la formule <c>=SOUS.TOTAL(5;IMC)</c> (voir la <xref ref="Fig_ClassesF_5"/>) pour déterminer la valeur minimale des données filtrées de l'indice de masse corporelle. Il est essentiel de connaître la valeur minimale pour s'assurer de l'inclure lorsque l'on regroupe les valeurs.</p> 
+    <li><p> Dans la cellule <alert><c>H7</c></alert>, taper la formule <c>=SOUS.TOTAL(5;IMC)</c> suivie de la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_ClassesF_5"/>) pour déterminer la valeur minimale des données filtrées de l'indice de masse corporelle. Il est essentiel de connaître la valeur minimale pour s'assurer de l'inclure lorsque l'on regroupe les valeurs.</p> 
     
           <p> </p>
     
@@ -377,7 +377,7 @@
         
          <p></p>
         
-        <p>La deuxième valeur la plus petite est 18,2. </p>
+        <p>La deuxième valeur la plus petite est <m>18,2</m>. </p>
         
         <p></p>
     
@@ -385,7 +385,7 @@
     
     
       
-    <li><p> On veut déterminer l'amplitude théorique de chaque classe, soit l'étendue divisée par le nombre théorique de classes. Dans la cellule <alert><c>H8</c></alert>, taper la formule <c>=H6/H5</c> (voir la <xref ref="Fig_ClassesF_6"/>). Dans des formules Excel, on peut faire référence à des cellules. La cellule <alert><c>H6</c></alert> correspond à l'étendue et la cellule <alert><c>H5</c></alert> correspond au nombre théorique de classes.</p> 
+    <li><p> On veut déterminer l'amplitude théorique de chaque classe, soit l'étendue divisée par le nombre théorique de classes. Dans la cellule <alert><c>H8</c></alert>, taper la formule <c>=H6/H5</c> suivie de la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_ClassesF_6"/>). Dans des formules Excel, on peut faire référence à des cellules. La cellule <alert><c>H6</c></alert> correspond à l'étendue et la cellule <alert><c>H5</c></alert> correspond au nombre théorique de classes.</p> 
     
           <p> </p>
     
@@ -403,7 +403,7 @@
     </li>
     
           
-    <li><p> On obtient une amplitude théorique d'environ 4,6. Ceci n'est pas un nombre entier. On choisit 5. (voir la <xref ref="Fig_ClassesF_7"/>). </p> 
+    <li><p> On obtient une amplitude théorique d'environ <m>4,6</m>. Ceci n'est pas un nombre entier. On choisit <m>5</m>. On écrit donc <m>5</m> dans la cellule <alert><c>H9</c></alert> (voir la <xref ref="Fig_ClassesF_7"/>). </p> 
     
           <p> </p>
     
@@ -644,7 +644,7 @@
         
         <p></p>
         
-        <p>Une fois l'amplitude des classes et la valeur de début déterminées, il est possible de forcer le regroupement des données selon les besoins. </p> <!-- -->
+        <p>Une fois l'amplitude des classes et la valeur de début déterminées, il est possible de forcer le regroupement voulu des données. </p> <!-- -->
         
         <remark xml:id="rem-TCD-Grouper">
 <title>Afficher les élèments sans données</title>
@@ -749,12 +749,12 @@
 </figure>
      
            
-           <p>En choisissant 15 comme valeur minimale de la première classe, on s'assure d'inclure la valeur minimale de 18,2.</p>
+           <p>En choisissant <m>15</m> comme valeur minimale de la première classe, on s'assure d'inclure la valeur minimale de <m>18,2</m>. La valeur <m>15</m> est un choix logique puisque c'est un multiple de <m>5</m>.</p>
           
       </li>     
             
             
-         <li><p> Cliquer sur <alert>OK</alert>. Le tableau croisé dynamique résultant groupe les valeurs de la variable <alert>IMC</alert> en classe d'amplitude valant <m>5</m> (voir la <xref ref="Fig_Grouper_7"/>). Puisque l'on a appliqué un filtre excluant les femmes enregistrant une valeur erronée de <m>0</m>, le tableau commence à 15. </p>
+         <li><p> Cliquer sur <alert>OK</alert>. Le tableau croisé dynamique résultant groupe les valeurs de la variable <alert>IMC</alert> en classe d'amplitude valant <m>5</m> (voir la <xref ref="Fig_Grouper_7"/>). Puisque l'on a appliqué un filtre excluant les femmes enregistrant une valeur erronée de <m>0</m>, le tableau commence à <m>15</m>. </p>
             
     <p> </p>
     
@@ -766,7 +766,7 @@
 </figure>
           
             
-            <p>On peut remarquer que les trois dernières classes (excluant celle de <m>&gt; 70</m>), celles de <m>55</m> à <m>60</m>, <m>60</m> à <m>65</m> et <m>65</m> à <m>70</m>, contiennent un très faible pourcentage de données. Dans ce cas, il est conseiller de créer une classe ouverte lorsque les premières ou les dernières classes ont peu de données (moins de <m>1%</m> chacune) afin de faciliter l'interprétation des données.</p>
+            <p>On remarque que les trois dernières classes (excluant la classe <m>&gt;70</m>), celles de <m>55</m> à <m>60</m>, <m>60</m> à <m>65</m> et <m>65</m> à <m>70</m>, contiennent un très faible pourcentage de données. Dans ce cas, il est conseiller de créer une classe ouverte lorsque les premières ou les dernières classes ont peu de données (moins de <m>1\%</m> chacune) afin de faciliter l'interprétation des données.</p>
            </li> 
             
             
@@ -797,7 +797,7 @@
                 </li>
                 
                 
-                  <p>Faire la mise en forme du tableau de fréquences correspondant à la répartition de femmes selon l'indice de masse corporelle. La version finale du tableau de fréquences est présentée à la <xref ref="Fig_IMC_Tableau_2"/> (voir la <xref ref="ssec-MiseEnFormeTableau"/>).</p>
+                  <p>Dans un espace sous le tableau croisé dynamique, faire la mise en forme du tableau de fréquences correspondant à la répartition de femmes selon l'indice de masse corporelle. La version finale du tableau de fréquences est présentée à la <xref ref="Fig_IMC_Tableau_2"/> (voir la <xref ref="ssec-MiseEnFormeTableau"/>).</p>
         
          <figure xml:id="Fig_IMC_Tableau_2">
 <caption>Version définitive du tableau de fréquences de la variable <alert>IMC</alert></caption>
@@ -932,7 +932,7 @@
  
             </li>
             
-            <li> <p> Ajouter une classe fictive nulle avant la première valeur et après la dernière valeur (<m>0%</m> dans les cellules <alert><c>H18</c></alert> et <alert><c>H27</c></alert>) (voir la <xref ref="Fig_IMC_HistoF_gif_1"/>). Cette étape vise à faciliter la mise en forme de l'histogramme et à améliorer son esthétique.</p>
+            <li> <p> Ajouter une classe fictive nulle avant la première valeur et après la dernière valeur (<m>0\%</m> dans les cellules <alert><c>H18</c></alert> et <alert><c>H27</c></alert>) (voir la <xref ref="Fig_IMC_HistoF_gif_1"/>). Cette étape vise à faciliter la mise en forme de l'histogramme et à améliorer son esthétique.</p>
             <p></p>
              
    
@@ -945,7 +945,7 @@
             
             </li>
             
-              <li> <p> Sélectionner la plage de cellules <alert><c>G19:G21</c></alert> (voir la <xref ref="Fig_IMC_HistoF_gif_1"/>). La plage est encadré d'une bordure verte et un petit carré vert apparaît dans le coin inférieur droit. Approcher le curseur au-dessus du carré vert. Dès qu'une croix noire apparaît, double-cliquer (voir la <xref ref="Fig_IMC_HistoF_gif_1"/>). </p> 
+              <li> <p> Sélectionner la plage de cellules <alert><c>G19:G21</c></alert> (voir la <xref ref="Fig_IMC_HistoF_gif_1"/>). La plage est encadré d'une bordure verte et un petit carré vert apparaît dans le coin inférieur droit. Approcher le curseur au-dessus du carré vert. Dès qu'une croix noire apparaît, double-cliquer (voir la <xref ref="Fig_IMC_HistoF_gif_1"/> et la <xref ref="RemplissageSuite"/>). </p> 
 
 
             <p></p>
@@ -960,7 +960,7 @@
             </li>
             
             
-             <li> <p> Sélectionner les valeurs des fréquences relatives de la colonne de droite incluant les <m>0%</m> avant et après, soit la plage de cellules <alert><c>G18:H27</c></alert> (voir la <xref ref="Fig_IMC_HistoF_6"/>).</p>
+             <li> <p> Sélectionner les valeurs des fréquences relatives de la colonne de droite incluant les <m>0\%</m> avant et après, soit la plage de cellules <alert><c>G18:H27</c></alert> (voir la <xref ref="Fig_IMC_HistoF_6"/>).</p>
            <p></p>
                   
                     <figure xml:id="Fig_IMC_HistoF_6">
@@ -1031,7 +1031,7 @@
             
             <li><p>Une boîte de dialogue grise avec des options de séries s'affiche à la droite de la feuille de calcul (voir la <xref ref="Fig_IMC_HistoF_gif_2"/>). </p>
                  
-                 <p> À l'option <alert>Largeur des intervalles</alert>, Excel met <m>219%</m> par défaut. Pour un histogramme, on veut que la largeur entre les bandes soient de <m>0%</m>. Effacer <m>219</m> et taper <m>0</m> (voir la <xref ref="Fig_IMC_HistoF_gif_2"/>). </p>
+                 <p> À l'option <alert>Largeur des intervalles</alert>, Excel met <m>219\%</m> par défaut. Pour un histogramme, on veut que la largeur entre les bandes soient de <m>0\%</m>. Effacer <m>219</m> et taper <m>0</m> (voir la <xref ref="Fig_IMC_HistoF_gif_2"/>). </p>
                 <p></p>
                 
                  <figure xml:id="Fig_IMC_HistoF_gif_2">
@@ -1151,7 +1151,7 @@
             </li>
             
             
-             <li><p>Sélectionner la plage de cellules <alert><c>G19:G27</c></alert> (voir la <xref ref="Fig_IMC_HistoF_18"/>). </p>
+             <li><p>Sélectionner la plage de cellules <alert><c>G19:G27</c></alert>, soit les valeurs <m>15</m> à <m>55</m> (voir la <xref ref="Fig_IMC_HistoF_18"/>). </p>
                 <p></p>
                 
                  <figure xml:id="Fig_IMC_HistoF_18">
@@ -1249,7 +1249,7 @@
         <title>Mesures descriptives</title>
                 <p></p>
                 
-                <p> Avec Excel, il est possible de calculer les mesures descriptives d'une variable comme les mesures de tendance centrale (moyenne, médiane et mode), les mesures de dispersion (écart type et coefficient de variation) et les mesures de position (quantiles). Pour approfondir l'étude de l'indice de masse corporelle de l'échantillon de femmes d'origine pima, on va calculer et interpréter plusieurs mesures. De plus, on a juger bon de comparer les valeurs des mesures descriptives avec et sans le filtrage des valeurs nulles de l'indice de masse corporelle.</p>
+                <p> Avec Excel, il est possible de calculer les mesures descriptives d'une variable comme les mesures de tendance centrale (moyenne, médiane et mode), les mesures de dispersion (écart type et coefficient de variation) et les mesures de position (quantiles). Pour approfondir l'étude de l'indice de masse corporelle de l'échantillon de femmes d'origine pima, on va calculer et interpréter plusieurs mesures. De plus, on a jugé bon de comparer les valeurs des mesures descriptives avec et sans le filtrage des valeurs nulles de l'indice de masse corporelle.</p>
                 
       
       <paragraphs xml:id="par_MesuresSansFiltre">
@@ -1271,11 +1271,11 @@
 </image>
 </figure>
                   <p></p>
-                  <p>Puisque le titre est long, on va fusionner quelques cellules et le centrer.</p>
+                  <p>Puisque le titre est long, on va fusionner quelques cellules et centrer le texte.</p>
               
               </li>
               
-              <li><p>Sélection la plage de cellules <alert><c>K2:L3</c></alert> (voir la <xref ref="Fig_Mesures_2"/>).</p>
+              <li><p>Sélectionner la plage de cellules <alert><c>K2:L3</c></alert> (voir la <xref ref="Fig_Mesures_2"/>).</p>
               
                     <p></p>
                 
@@ -1319,7 +1319,7 @@
                     <p></p>
                 </li>
               
-               <li><p>Mettre une bordure à ce tableau (voir la <xref ref="Fig_Mesures_5"/>).</p>
+               <li><p>Ajouter une bordure noire à ce tableau (voir la <xref ref="Fig_Mesures_5"/>).</p>
               
                     <p></p>
                 
@@ -1335,9 +1335,9 @@
               
               <li><p> Si on ne connaît pas la formule pour la fonction que l'on veut, on peut faire une recherche (voir la <xref ref="Fig_Inserer_Fonction"/> et la <xref ref="Fig_Mesures_Fonctions_2"/>).</p> 
                   
-                  <p>Pour les fonctions statistiques, les titres des formules sont assez intuitives. Pour le nombre de données, la formule est <alert><c>NB</c></alert>. Dans la cellule <alert><c>L4</c></alert>, taper <alert><c>=NB(IMC)</c></alert> (voir la <xref ref="Mesures_gif_1"/>).</p>
+                  <p>Pour les fonctions statistiques, les formules sont assez intuitives. Pour le nombre de données, la formule est <alert><c>NB</c></alert>. Dans la cellule <alert><c>L4</c></alert>, taper <alert><c>=NB(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>).</p>
                   
-                  <p> On voit maintenant l'avantage d'avoir nommé la variable <alert>IMC</alert>. Il n'est pas nécessaire de retourner à la feuille de calcul <alert>Données</alert> et d'aller sélectionner la plage de données avec les valeurs de l'IMC.</p>
+                  <p> On voit maintenant l'avantage d'avoir nommé la variable <alert>IMC</alert> dans le laboratoire <m>1</m>. Il n'est pas nécessaire de retourner à la feuille de calcul <alert>Données</alert> et de sélectionner la plage de données avec les valeurs de l'IMC.</p>
               
                     <p></p>
                 
@@ -1345,7 +1345,7 @@
               </li>
               
               
-              <li><p> Dans la cellule <alert><c>L5</c></alert>, taper <alert><c>=MIN(IMC)</c></alert> (voir la <xref ref="Mesures_gif_1"/>).</p>
+              <li><p> Dans la cellule <alert><c>L5</c></alert>, taper <alert><c>=MIN(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>).</p>
                  
            
                   
@@ -1353,41 +1353,41 @@
                   <p></p>
                 </li>
               
-                <li><p>Dans la cellule <alert><c>L6</c></alert>, taper <alert><c>=MAX(IMC)</c></alert> (voir la <xref ref="Mesures_gif_1"/>).</p>
+                <li><p>Dans la cellule <alert><c>L6</c></alert>, taper <alert><c>=MAX(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>).</p>
               
                     <p></p>
                 
             
                 </li>
               
-               <li><p>Dans la cellule <alert><c>L7</c></alert>, taper <alert><c>=MOYENNE(IMC)</c></alert> (voir la <xref ref="Mesures_gif_1"/>).</p>
+               <li><p>Dans la cellule <alert><c>L7</c></alert>, taper <alert><c>=MOYENNE(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>).</p>
               
                     <p></p>
                 
                
                 </li>
               
-               <li><p>Dans la cellule <alert><c>L8</c></alert>, taper <alert><c>=MEDIANE(IMC)</c></alert> (voir la <xref ref="Mesures_gif_1"/>).</p>
+               <li><p>Dans la cellule <alert><c>L8</c></alert>, taper <alert><c>=MEDIANE(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>).</p>
               
                     <p></p>
                
                 </li>
               
               
-              <li><p>Dans la cellule <alert><c>L9</c></alert>, taper <alert><c>=MODE.SIMPLE(IMC)</c></alert> (voir la <xref ref="Mesures_gif_1"/>).</p>
+              <li><p>Dans la cellule <alert><c>L9</c></alert>, taper <alert><c>=MODE.SIMPLE(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>).</p>
               <p></p>
                    
                 </li>
               
               
-              <li><p>Dans la cellule <alert><c>L10</c></alert>, taper <alert><c>=ECARTYPE.STANDARD(IMC)</c></alert> (voir la <xref ref="Mesures_gif_1"/>). La formule <alert>ECARTYPE.PEARSON</alert> calcule l'écart type de données issues d'une population. La formule <alert>ECARTYPE.STANDARD</alert> renvoie l'écart type corrigé de données provenant d'un échantillon.</p>
+              <li><p>Dans la cellule <alert><c>L10</c></alert>, taper <alert><c>=ECARTYPE.STANDARD(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>). La formule <alert>ECARTYPE.PEARSON</alert> calcule l'écart type de données issues d'une population. La formule <alert>ECARTYPE.STANDARD</alert> renvoie l'écart type corrigé de données provenant d'un échantillon.</p>
               
                     <p></p>
               
                 </li>
               
               
-              <li><p> Pour le calcul du coefficient de variation, Excel ne dispose pas de formule intégrée dans son logiciel. Cependant, comme le calcul repose sur la moyenne et l'écart type, il peut être facilement effectuer manuellement. Dans la cellule <alert><c>L11</c></alert>, taper <alert><c>=L10/L7</c></alert>. Il est possible de sélectionner les cellules <alert><c>L10</c></alert> et <alert><c>L7</c></alert> au lieu de les taper (voir la <xref ref="Mesures_gif_1"/>).</p>
+              <li><p> Pour le calcul du coefficient de variation, Excel ne dispose pas de formule intégrée dans son logiciel. Cependant, comme le calcul repose sur la moyenne et l'écart type, il peut être facilement effectuer manuellement. Dans la cellule <alert><c>L11</c></alert>, taper <alert><c>=L10/L7</c></alert> et appuyer sur la touche <kbd>Enter</kbd>. Il est possible de sélectionner les cellules <alert><c>L10</c></alert> et <alert><c>L7</c></alert> au lieu de les taper (voir la <xref ref="Mesures_gif_1"/>).</p>
               
                     <p></p>
                 
@@ -1523,7 +1523,7 @@
                 </li>
               
               
-              <li><p>Dans la cellule <alert><c>L12</c></alert>, taper <alert><c>=CENTILE.INCLURE(IMC;0,25)</c></alert> (voir la <xref ref="Fig_Mesures_14"/>). Le centile recherché est le <m>25^{\text{e}}</m>. Le deuxième paramètre à inscrire dans la formule Excel est le centile recherché en notation décimale. Pour les quartiles, Excel a une formule lui étant dédiée, soit <c>QUARTILE.INCLURE</c>. </p>
+              <li><p>Dans la cellule <alert><c>L12</c></alert>, taper <alert><c>=CENTILE.INCLURE(IMC;0,25)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_Mesures_14"/>). Le centile recherché est le <m>25^{\text{e}}</m>. Le deuxième paramètre à inscrire dans la formule Excel est le centile recherché en notation décimale. Pour les quartiles, Excel a une formule lui étant dédiée, soit <c>QUARTILE.INCLURE</c>. </p>
               
                     <p></p>
                 
@@ -1773,7 +1773,7 @@
               
               <!-- La fonction <alert>SOUS.TOTAL</alert> d'Excel permet de calculer certaines mesures statistiques (pas toutes) sur un sous-ensemble de données lorsqu'un filtre a été appliqué sur une variable. Cela signifie qu'Excel peut faire certains calculs sur les données filtrées. -->
               
-              <li><p> Dans la cellule <alert><c>O4</c></alert>, taper <alert><c>=SOUS.TOTAL(2;IMC)</c></alert> (voir la <xref ref="Fig_Mesures_Filtre_0"/>).</p>
+              <li><p> Dans la cellule <alert><c>O4</c></alert>, taper <alert><c>=SOUS.TOTAL(2;IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_Mesures_Filtre_0"/>).</p>
                   
                   <p>Le chiffre <m>2</m> fait référence au calcul du nombre de données. Les nombres <m>1</m> à <m>11</m> spécifie la fonction à utiliser pour calculer le sous-total. Le deuxième paramètre, soit <alert>IMC</alert>, fait référence à la plage de données dont on souhaite calculer le sous-total. </p>
               
@@ -1792,7 +1792,7 @@
                 </li>
                 
               
-              <li><p> Dans la cellule <alert><c>O5</c></alert>, taper <alert><c>=SOUS.TOTAL(5;IMC)</c></alert> (voir la <xref ref="MesuresF_gif"/>).</p>
+              <li><p> Dans la cellule <alert><c>O5</c></alert>, taper <alert><c>=SOUS.TOTAL(5;IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
                   
               
                     <p></p>
@@ -1801,7 +1801,7 @@
                   <!-- <p>Avec filtre, on rappelle que le minimum de l'IMC est de <m>18,2</m>.</p>-->
                 </li>
               
-                <li><p>Dans la cellule <alert><c>O6</c></alert>, taper <alert><c>=SOUS.TOTAL(4;IMC)</c></alert> (voir la <xref ref="MesuresF_gif"/>).</p>
+                <li><p>Dans la cellule <alert><c>O6</c></alert>, taper <alert><c>=SOUS.TOTAL(4;IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
               
                     <p></p>
                 
@@ -1810,14 +1810,14 @@
            
                 </li>
               
-               <li><p>Dans la cellule <alert><c>O7</c></alert>, taper <alert><c>=SOUS.TOTAL(1;IMC)</c></alert> (voir la <xref ref="MesuresF_gif"/>).</p>
+               <li><p>Dans la cellule <alert><c>O7</c></alert>, taper <alert><c>=SOUS.TOTAL(1;IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
               
                     <p></p>
                 
               
                 </li>
               
-               <li><p>Malheureusement, Excel n'est pas en mesure de calculer la médiane du sous-total d'une plage de données. Il est donc nécessaire d'utiliser la fonction Excel <alert>SI</alert>, fonction qui permet d'appliquer des conditions lors de l'emploi d'une formule. Dans la cellule <alert><c>O8</c></alert>, taper <alert><c>=MEDIANE(SI(IMC &lt; &gt; 0 ;IMC))</c></alert> (voir la <xref ref="MesuresF_gif"/>).</p>
+               <li><p>Malheureusement, Excel n'est pas en mesure de calculer la médiane du sous-total d'une plage de données. Il est donc nécessaire d'utiliser la fonction Excel <alert>SI</alert>, fonction qui permet d'appliquer des conditions lors de l'emploi d'une formule. Dans la cellule <alert><c>O8</c></alert>, taper <alert><c>=MEDIANE(SI(IMC &lt; &gt; 0 ;IMC))</c> </alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
                    
                    <p><alert><c>SI(IMC &lt; &gt; 0 ;IMC)</c></alert> renvoie les valeurs de l'IMC différentes de <m>0</m>. Excel fait ensuite le calcul de la médiane de ces valeurs.</p>
               
@@ -1834,14 +1834,14 @@
                 </li>
               
               
-              <li><p>Dans la cellule <alert><c>O10</c></alert>, taper <alert><c>=SOUS.TOTAL(7;IMC)</c></alert> (voir la <xref ref="MesuresF_gif"/>).</p>
+              <li><p>Dans la cellule <alert><c>O10</c></alert>, taper <alert><c>=SOUS.TOTAL(7;IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
               
                     <p></p>
                 
                   </li>
               
               
-              <li><p> Dans la cellule <alert><c>O11</c></alert>, taper <alert><c>=O10/O7</c></alert> (voir la <xref ref="MesuresF_gif"/>).</p>
+              <li><p> Dans la cellule <alert><c>O11</c></alert>, taper <alert><c>=O10/O7</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
               
                     <p></p>
                 
@@ -1850,7 +1850,7 @@
                 </li>
               
               
-              <li><p>La fonction <alert><c>SOUS.TOTAL</c></alert> ne permet pas de calculer des centiles. Il faut utiliser la fonction <alert><c>SI</c></alert>. Dans la cellule <alert><c>O12</c></alert>, taper <alert><c>=CENTILE.INCLURE(SI(IMC&lt; &gt; 0);0,25)</c></alert> (voir la <xref ref="MesuresF_gif"/>). </p>
+              <li><p>La fonction <alert><c>SOUS.TOTAL</c></alert> ne permet pas de calculer des centiles. Il faut utiliser la fonction <alert><c>SI</c></alert>. Dans la cellule <alert><c>O12</c></alert>, taper <alert><c>=CENTILE.INCLURE(SI(IMC&lt; &gt; 0);0,25)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>). </p>
               
                     <p></p>
                 
@@ -1886,7 +1886,7 @@
                    
                     <p></p>
                     
-                    <p>Le diagramme à quartiles, communément appelé la boîte à moustaches si le diagramme est placé horizontalement, illustre le premier quartile, la médiane, le troisième quartile, une valeur minimale qui est située à une distance d'une fois et demi l'écart interquartile en dessous du premier quartile, ainsi qu'une valeur maximale située à une distance d'une fois et demi l'écart interquartile au-dessus du troisième quartile. Ce graphique permet également de détecter d'un coup d'oeil les asymétries possibles à l'aide de la longueur des moustaches, les deux lignes qui s'étendent des quartiles aux valeurs minimale et maximale. </p>
+                    <p>Le diagramme à quartiles, communément appelé la boîte à moustaches si le diagramme est placé horizontalement, illustre le premier quartile, la médiane, le troisième quartile, une valeur minimale qui est située à une distance d'une fois et demi l'écart interquartile en dessous du premier quartile, ainsi qu'une valeur maximale située à une distance d'une fois et demi l'écart interquartile au-dessus du troisième quartile. Ce graphique permet également de détecter d'un coup d'oeil les asymétries possibles à l'aide de la longueur des moustaches, les deux lignes qui s'étendent des quartiles aux valeurs minimale et maximale.</p>
                     
                     <p>Avec Excel, les détails pour tracer un diagramme à quartiles de la variable <alert>IMC</alert> sont présentées ci-dessous.</p>
                     
@@ -1941,7 +1941,7 @@
                     <p>
                     <ol>
                         
-                    <li><p>Cliquer sur l'onglet <alert>Insertion</alert>. </p></li> 
+                    <li><p>Dans la feuille de calcul <alert>Étude IMC</alert>, cliquer sur l'onglet <alert>Insertion</alert>. </p></li> 
                         
                     <li><p>Cliquer sur l'icône <alert>Texte</alert> suivi de l'option <alert>Zone de texte</alert> (voir la <xref ref="Fig_ZoneTexte_1"/>).</p>
                         <p></p>
@@ -1955,7 +1955,7 @@
                         <p></p>
                    </li>
                         
-                   <li><p>Cliquer un endroit sous le tableau des mesures statistiques de l'IMC filtrée. Maintenir enfoncé le bouton gauche de la souris, glisser le curseur vers la droite pour créer la zone de texte de taille désirée. </p></li>   
+                   <li><p>Cliquer, en maintenant enfoncé le bouton de gauche de la souris, un endroit sous le tableau des mesures statistiques de l'IMC filtrée. Glisser le curseur vers la droite pour créer la zone de texte de taille désirée. </p></li>   
 
                     <li><p> Interpréter chaque mesure statistique de l'indice de masse corporelle filtrée.</p></li>    
                     </ol>
@@ -1980,21 +1980,21 @@
     
     
     <subsection xml:id="ssec_PolygoneFrequences">
-        <title>L'étude de deux variables dont l'une quantitative continue (traitement simultané?)</title>
+        <title>L'étude simultanée de deux variables dont l'une quantitative continue</title>
         
+    
         
-        
-        <introduction><p>Pour réaliser l'étude d'une variable quantitative continue et d'une variable qualitative, il est nécessaire de construire un tableau de fréquences à double entrée. Dans cette section, on va approfondir l'étude de l'indice de masse corporelle de l'échantillon de femmes d'origine pima, cette fois-ci par atteinte du diabète ou non.</p></introduction>
+        <introduction><p>Pour réaliser l'étude simultanée d'une variable quantitative continue et d'une variable qualitative, il est nécessaire de construire un tableau de fréquences à double entrée. Dans cette section, on va approfondir l'étude de l'indice de masse corporelle de l'échantillon de femmes d'origine pima, cette fois-ci par atteinte du diabète ou non.</p></introduction>
         
         <subsubsection xml:id="ssec_TCD_Pol">
         <title>Tableau croisé dynamique à double entrée</title>
             
             <p></p>
         
-        <p>
+ <p>
 <ol> 
 
-<li> <p> Dans le classeur Excel, ajouter une nouvelle feuille de calcul intitulé <alert>Étude IMC-Atteinte</alert>. Déplacer cette feuille en dernière position si Excel ne le fait pas automatiquement.</p> </li>   
+<li> <p> Dans le classeur Excel, ajouter une nouvelle feuille de calcul intitulé <alert>Étude IMC_Atteinte</alert>. Déplacer cette feuille en dernière position si Excel ne le fait pas automatiquement.</p> </li>   
     
 <li><p> Sélectionner la cellule <alert><c>B3</c></alert> dans cette feuille de calcul.</p></li> 
     
@@ -2027,7 +2027,7 @@
     </li>
     
     
-    <li> <p> Glisser et déposer la variable <alert>IMC</alert> dans la zone de saisie <alert>Valeurs</alert> (voir la <xref ref="Fig_TCD_IMCAtteinte_3"/>). </p>
+    <li> <p> Glisser et déposer la variable <alert>IMC</alert> dans la zone de saisie <alert>Valeurs</alert> (voir la <xref ref="Fig_TCD_IMCAtteinte_3"/>). On aurait pu choisir la variable <alert>Atteint</alert>. </p>
     <p> </p>
     
       <figure xml:id="Fig_TCD_IMCAtteinte_3">
@@ -2043,7 +2043,7 @@
     
       <li> <p> Dans la zone de saisie <alert>Valeurs</alert>, cliquer sur la flèche du menu déroulant de la variable, puis sélectionner l'option <term> Paramètres des champs de valeurs </term> pour modifier le calcul.</p> 
           
-          <p>Dans l'onglet <alert>Synthèse des valeurs par</alert>, s'assurer que le type de calcul sélectionné est <alert>Nombre</alert>. Ensuite, cliquer sur l'onglet <term> Afficher les valeurs </term>, suivi de la flèche du menu déroulant et sélectionner l'option <alert> % du total de la colonne </alert> (voir la <xref ref="Fig_TCD_IMCAtteinte_3bis"/>). </p>
+          <p>Dans l'onglet <alert>Synthèse des valeurs par</alert>, s'assurer que le type de calcul sélectionné est <alert>Nombre</alert> puisque l'on veut compter le nombre de femmes dans chaque catégorie. Ensuite, cliquer sur l'onglet <term> Afficher les valeurs </term>, suivi de la flèche du menu déroulant et sélectionner l'option <alert> % du total de la colonne </alert> (voir la <xref ref="Fig_TCD_IMCAtteinte_3bis"/>). </p>
     <p> </p>
     
       <figure xml:id="Fig_TCD_IMCAtteinte_3bis">
@@ -2053,7 +2053,7 @@
 </image>
 </figure>    
         
-          <p>Le choix d'afficher les valeurs en pourcentage du total de la colonne est déterminé en fonction de l'analyse souhaitée. L'objectif est de mettre en évidence la répartition des femmes d'origine pima, par présence de diabète, selon l'indice de masse corporelle. On obtient le tableau croisé dynamique de la <xref ref="Fig_TCD_IMCAtteinte_4bis"/></p>
+          <p>Le choix d'afficher les valeurs en pourcentage du total de la colonne est déterminé en fonction de l'analyse souhaitée. L'objectif est de mettre en évidence la répartition des femmes d'origine pima, <alert>PAR</alert> présence de diabète, selon l'indice de masse corporelle. On obtient le tableau croisé dynamique de la <xref ref="Fig_TCD_IMCAtteinte_4bis"/></p>
           <p> </p>
           
            <figure xml:id="Fig_TCD_IMCAtteinte_4bis">
@@ -2076,9 +2076,10 @@
 </figure>    
     
     <p> </p>
+
     </li>
     
-      <li><p> La version finale du tableau de fréquences doit ressembler à la <xref ref="Fig_IMCAtteinte_Tableau_1"/> (voir la <xref ref="ssec-MiseEnFormeTableau"/>).</p>
+    <li><p> Copier et coller les classes et les poucentages de chaque catégorie du tableau croisé dynamique dans l'endroit souhaité de la feuille de calcul et faire le formatage du tableau à double entrée. L'allure du tableau croisé dynamique final est présentée à la <xref ref="Fig_TCD_IMCAtteinte_5"/>.</p>
         
          <figure xml:id="Fig_IMCAtteinte_Tableau_1">
 <caption>Version définitive du tableau de fréquences de la variable <alert>IMC</alert> avec la variable <alert>Atteinte</alert></caption>
@@ -2115,7 +2116,7 @@
         <p></p>
            
            
-           <p>Pour analyser simultanément deux variables, l'une quantitative quantitative et l'autre qualitative, le polygone de fréquences est l'option à privilégier. Sur l'axe des abscisses, on place la variable quantitative continue, et chaque courbe représente ensuite les différentes modalités de la variable qualitative.  </p>   
+           <p>Pour représenter simultanément deux variables, l'une quantitative quantitative et l'autre qualitative, le polygone de fréquences est l'option à privilégier. Sur l'axe des abscisses, on place la variable quantitative continue, et chaque courbe représente ensuite les différentes modalités de la variable qualitative.  </p>   
            
            <p>Les étapes qui suivent mènent à la construction du polygone de fréquences de la répartition de l'échantillon de femmes d'origine pima, par présence de diabète, selon l'indice de masse corporelle.</p>
            
@@ -2123,7 +2124,7 @@
            <p>
            <ol>
                
-             <li> <p> Sélectionner la plage de données représentant les fréquences relatives de l'indice de masse corporelle par présence de diabète, soit la plage de cellules <alert><c>C5:D12</c></alert> (). Ne pas sélectionner les classes de l'indice de masse corporelle, ni les titres des colonnes, ni les données de la ligne et de la colonne <em>Total général</em>.</p>
+             <li> <p> Sélectionner la plage de données représentant les fréquences relatives de l'indice de masse corporelle par présence de diabète, soit la plage de cellules <alert><c>C5:D12</c></alert>. Ne pas sélectionner les classes de l'indice de masse corporelle, ni les titres des colonnes, ni les données de la ligne et de la colonne <em>Total général</em>.</p>
                
                    <p></p>
              
@@ -2143,7 +2144,7 @@
  
             </li>
             
-            <li> <p> Ajouter une classe fictive nulle avant et après les fréquences relatives (<m>0%</m> avant les premiers pourcentages dans les cellules <alert><c>H21</c></alert> et <alert><c>I21</c></alert> et <m>0%</m> après les derniers pourcentages dans les cellules <alert><c>H30</c></alert> et <alert><c>I30</c></alert>) (voir la <xref ref="Fig_Pol_gif_1"/>). Cette étape est pour faciliter la mise en forme du polygone de fréquences et améliorer son esthétique.</p>
+            <li> <p> Ajouter une classe fictive nulle avant et après les fréquences relatives (<m>0\%</m> avant les premiers pourcentages dans les cellules <alert><c>H21</c></alert> et <alert><c>I21</c></alert> et <m>0\%</m> après les derniers pourcentages dans les cellules <alert><c>H30</c></alert> et <alert><c>I30</c></alert>) (voir la <xref ref="Fig_Pol_gif_1"/>). Cette étape est pour faciliter la mise en forme du polygone de fréquences et améliorer son esthétique.</p>
             <p></p>
              
    
@@ -2227,7 +2228,7 @@
             </li>
                
                
-               <li><p>Il est possible de déplacer la légende des modalités de la variable qualitative. Cliquer avec le bouton de droit de la souris sur une des modalités et sélectionner le dernier onglet <alert>Format de la légende</alert> (voir la <xref ref="Fig_Pol_11"/>)</p>
+               <li><p>Il est possible de déplacer la légende des modalités de la variable qualitative. Cliquer avec le bouton de droit de la souris sur une des modalités de la légende et sélectionner le dernier onglet <alert>Format de la légende</alert> (voir la <xref ref="Fig_Pol_11"/>)</p>
                 
 <p> </p>
                  <figure xml:id="Fig_Pol_11">
@@ -2281,7 +2282,7 @@
             </li>
                
                
-                 <li><p>Il est possible d'enlever les lignes horizontales grisées pour avoir un fond purement blanc (voir la <xref ref="Fig_Pol_gif_3"/>). Cliquer sur une des lignes horizontales. L'ensemble des lignes est désormais sélectionné. Appuyer sur la touche <alert>Suppr</alert>.</p>
+                 <li><p>Il est possible d'enlever les lignes horizontales grisées pour avoir un fond purement blanc (voir la <xref ref="Fig_Pol_gif_3"/>). Cliquer sur une des lignes horizontales. L'ensemble des lignes est désormais sélectionné. Appuyer sur la touche <kbd>suppr</kbd> du clavier.</p>
                 <p></p>
                 
                  <figure xml:id="Fig_Pol_gif_3">
@@ -2390,7 +2391,7 @@
 </image>
 </figure>    
         
-          <p>Ce choix de calcul permet de calculer la moyenne de l'indice de masse corporelle des femmes qui ont le diabète et la moyenne de celles qui ne l'ont pas.</p>
+          <p>Ce choix de calcul permet de calculer la moyenne de l'indice de masse corporelle des femmes qui n'ont pas le diabète et la moyenne de celles qui l'ont.</p>
           <p> </p>
           
            <figure xml:id="Fig_Mesures_Pol_5">
@@ -2414,7 +2415,7 @@
              
              <li> 
                   
-                  <p>Dans la zone de saisie <alert>Valeurs</alert>, cliquer sur la flèche du menu déroulant de la variable <alert>IMC</alert>, puis sélectionner l’option <alert>Paramètres des champs de valeurs</alert> pour modifier le calcul. Dans l’onglet <alert>Synthèse des valeurs par</alert>, sélectionner l'option de calcul <alert>Ecartype.</alert></p>
+                  <p>Dans la zone de saisie <alert>Valeurs</alert>, cliquer sur la flèche du menu déroulant de la variable <alert>IMC</alert> nouvellement ajoutée, puis sélectionner l’option <alert>Paramètres des champs de valeurs</alert> pour modifier le calcul. Dans l’onglet <alert>Synthèse des valeurs par</alert>, sélectionner l'option de calcul <alert>Ecartype.</alert></p>
                  
                  <p>Le tableau croisé dynamique résultant est présenté à la <xref ref="Fig_Mesures_Pol_6"/>.</p>
     <p> </p>
@@ -2520,7 +2521,7 @@
              </li>
              
              
-               <li> <p>Copier et coller le tableau croisé dynamique dans les cellules <alert><c>I10:K13</c></alert>(voir la section...).</p>
+               <li> <p>Copier et coller le tableau croisé dynamique dans les cellules <alert><c>I10:K13</c></alert>(voir la <xref ref="fig-TCDaformat_anim1"/>).</p>
                    
                    <p>Ajouter une colonne à droite de l'écart type corrigé pour le calcul du coefficient de variation. Dans la cellule <alert><c>L10</c></alert>, taper <alert><c>=K11/J11</c></alert> (voir la <xref ref="Fig_Mesures_Pol_14"/>).</p>
    
@@ -2536,7 +2537,7 @@
            
              </li>
              
-             <li> <p>Copier la formule de la cellule <alert><c>L11</c></alert> dans les celulles <alert><c>L12</c></alert> et <alert><c>L13</c></alert> (voir la <xref ref="Fig_Mesures_Pol_15bis"/>).</p>
+             <li> <p>Copier la formule de la cellule <alert><c>L11</c></alert> dans les cellules <alert><c>L12</c></alert> et <alert><c>L13</c></alert> en faisant un remplissage automatique (voir la <xref ref="RemplissageValeur"/> et <xref ref="Fig_Mesures_Pol_15bis"/> pour le résultat).</p>
                    
                  <p></p>
     

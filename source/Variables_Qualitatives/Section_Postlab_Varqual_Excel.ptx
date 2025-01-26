@@ -19,13 +19,13 @@
     <statement><p>En deux courtes phrases, résumer la situation du diabète et du niveau d'obésité chez la population de femmes pimas.</p></statement>
     </exercise>
     
-    <exercise><statement><p>Selon la National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)<fn>https://www.niddk.nih.gov/health-information/health-statistics/diabetes-statistics#factsstats</fn>, il y a 8,8% des femmes américaines qui sont atteintes du diabète (données de 2017-2020). Selon l'American Diabetes Association<fn>https://ictnews.org/archive/mexico-vs-arizona-pima-indians</fn>, il y a 6,9% des femmes mexicaines aussi d'origine pima qui le sont (données de 2006). En supposant que toutes ces valeurs et celles de la population étudiée sont restées les mêmes au fil du temps, quels constats faire au sujet des femmes pimas vivant en Arizona à la lumière de ces informations?</p>
+    <exercise><statement><p>Selon la National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)<fn>https://www.niddk.nih.gov/health-information/health-statistics/diabetes-statistics#factsstats</fn>, il y a 8,8% des femmes américaines qui sont atteintes du diabète (données de 2017-2020). Selon l'American Diabetes Association<fn>https://ictnews.org/archive/mexico-vs-arizona-pima-indians</fn>, il y a 6,9% des femmes mexicaines aussi d'origine pima qui le sont (données de 2006). En supposant que toutes ces valeurs et celles de la population étudiée sont restées les mêmes au fil du temps, quels constats peut-on faire au sujet des femmes pimas vivant en Arizona à la lumière de ces informations?</p>
     </statement>
     </exercise>
     
     <exercise>
     <statement>
-    <p>Construire le diagramme circulaire pour aller avec la variable <alert>Obésité</alert>. Que dire du résultat?</p>
+    <p>Dans le feuille Excel <alert>Étude Obésité</alert>, construire le diagramme circulaire pour aller avec la variable <alert>Obésité</alert>. Que dire du résultat?</p>
     </statement>
     </exercise>
     

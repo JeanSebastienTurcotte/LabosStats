@@ -93,14 +93,38 @@ C'est une mesure de la variabilité conjointe des variables, normalisée pour ê
 <p>On calcule le coefficient de corrélation entre la période de pulsation et le rayon des céphéides et on  l'ajoute sous les études descriptives. Puisque les écarts types des variables font partie de la <xref ref="eq-coeffvar">formule mathématique</xref> du coefficient de variation, ce dernier est sensible aux valeurs extrêmes. Il est donc important de bien analyser les données lors d'une étape préliminaire.</p>
 <p>Une fois la nature linéaire du lien confirmée, il est possible de déterminer l'équation de la meilleure droite qui relie les deux variables. L'exercice <xref ref="exo-moindrescarres"/> donne une idée de la procédure mathématique à suivre pour la trouver. Un ouvrage statistique théorique peut montrer que la pente est donnée par <m>a=r\frac{s_y}{s_x}</m> et l'ordonnée à l'origine par <m>b=\bar{y}-a\bar{x}</m>.Sur Excel, on peut afficher directement sur le graphique la droite et son équation. Pour cela, on sélectionne le graphique et on clique sur la petite croix en haut à droite, puis sur <em>linéaire</em>. La case <em>Courbe de tendance</em> aurait aussi pu faire le travail, puisque son comportement par défaut est la relation linéaire. Pour ajouter l'équation, on clique sur <em>Autres options</em> ou on fait un double-clic sur la droite créée précédemment et on coche la case <em>Afficher l'équation sur le graphique</em>. </p>
 <p>La fonction <c>DROITEREG</c> permet aussi d'obtenir directement dans les cellules les valeurs de <m>a,b</m>, mais elle a comme inconvénient qu'il faut que le nombres de valeurs pour chacune des variables soit le même. Dans le cas de la base de données des céphéides, le rayon de plusieurs étoiles est manquant. Il faut alors filtrer dans la formule pour exclure les entrées vides. La formule <c>DROITEREG((FILTRE(PÉRIODE;Rayon&lt;>0));(FILTRE(RAYON;RAYON&lt;>0)))</c> permet d'accomplir cela, où <c>PÉRIODE</c> et <c>RAYON</c> sont les plages nommées correspondant à ces variables dans le tableau des données. Dans les deux cas, si l'on note <m>P</m> la période et <m>R</m> le rayon, on obtient
-<me>
+<men xml:id="eq-PR">
 P=0,184600309R-2,250611573
-</me>.</p>
+</men>.</p>
 <p>Avec cette droite, on est en mesure d'estimer la période de pulsation d'une céphéide de rayon donné ou à l'inverse, de déterminer le rayon d'une étoile dont la période de pulsation est connue. Par exemple, la céphéide <em>FF_AQL</em> dont l'identifiant est <m>4</m> possède une période égale à environ <m>4,47</m> jours. En entrant cette valeur  dans l'équation, on estime un rayon de <m>36,41124772(x6,957x10^8)</m> mètres. Selon <url href="https://en.wikipedia.org/wiki/FF_Aquilae#cite_note-turner-5">Wikipédia</url>, la composante numérique du rayon est de 39.</p>
 
-<p>Truc sur R^2 coeff det</p>
+<p>Une autre mesure de la force du lien est donnée par le coefficient de détermination, habituellement noté <m>R^2</m> (sans lien avec le rayon mentionné précédemment). Ce dernier quantifie la proportion des variations de la variable dépendante qui sont expliquées par la variable indépendante. Il est donné en pourcentage et lorsqu'il n'y a qu'une seule variable indépendante, on a toujours <me>R^2=r^2\times 100\%</me>.</p>
+<p>Sur excel, la commande <c>COEFFICIENT.DETERMINATION(matrice1;matrice2)</c> permet de l'obtenir, mais ne donne pas le résultat en pourcentage. Il faut manuellement modifier le format de cellule. En calculant le coefficient de détermination entre la période de pulsation et le rayon d'une céphéide, on trouve qu'une variation du rayon d'une étoile de type céphéide explique environ <m>81\%</m> de la variation de sa période de pulsation. </p>
+</subsection>
+<subsection>
+<title>Absence de lien linéaire apparent et autres cas</title>
+<p>Dans la feuille <alert>MappP</alert>, on trace le nuage de points représentant la magnitude apparente et la période de pulsation. Le résultat est illustré à la figure ci-dessous.</p>
+<figure>
+<caption>Todo quand indep/dep </caption>
+</figure>
+<p>Le calcul des coefficients de corrélation et de détermination montre d'autant plus que ces variables ne sont pas reliées de manière linéaire. Ceci s'explique probablement en partie du fait que la luminosité apparente dépend de la distance de l'étoile. Au contraire, la magnitude absolue ramène cette valeur sur une même échelle.</p>
+<p>Dans la feuille <alert>MabsP</alert>, on trace le nuage de points représentant la magnitude absoulue et la période de pulsation. Le résultat est illustré à la figure ci-dessous.</p>
+<figure>
+<caption>Todo quand indep/dep </caption>
+</figure>
+<p>Deux choses ressortent de ce graphique. Premièrement, la relation ne semble pas linéaire, mais il y a clairement un lien entre les deux variables. Deuxièmement, bien que la relation semble très forte, il semble aussi y avoir deux types de relations. En effet, on peut observer dans le graphique produit deux amas principaux de points. Ces deux amas paraissent suivre une relation de même type, mais il y a possiblement une troisième variable qui influence le lien entre la magnitude absolue et la période de pulsation, ou des erreurs dans les données disponibles.</p>
+<p>On commence par s'attarder à la première observation. Bien qu'elle ne soit pas linéaire, la relation liant les variables ressemble à un courbe bien connue, soit un logarithme. En cliquant sur l'outil croix du graphique, puis sur la flèche au niveau de l'option <alert>courbe de tendance</alert> suivi de <alert>autres options</alert>, on peut modifier le type de fonction utilisée pour approximer le lien. L'option logarithme est présente. On peut également afficher l'équation sur le graphique, qui sera de la forme <m>a\ln(x)+b</m>.</p>
+<p>Une autre option est de modifier l'axe de la période pour que l'échelle soit logarithmique. Voici la marche à suivre pour y arriver.
+<ol>
+<li><p>Faire un clic à l'aide du bouton de droite de la souris sur l'axe de la période, ou encore effectuer un double-clic;</p></li>
+<li><p>Dans le menu apparaissant, cliquer sur le petit icone ressemblant à un histogramme et appelé <alert>Options d'axe</alert>.</p></li>
+<li><p>Cocher la boite appelée <alert>Échelle logarithmique</alert>.</p></li>
+</ol>
+</p>
+<p>Pour la deuxième observation, déterminer la nature de la cause relèverait davantage de la physique que des statistiques. Il existe deux types de céphéides, pour lesquels la période et la magnitude absolue suivent en effet des relations différentes, mais toutes deux logarithmiques, mais une analyse des données a montré que la presque totalité des étoiles de cette base de données sont de type <m>I</m>. </p>
+<p>Le calcul du coefficient de détermination linéaire pour ces deux variables est relativement fort. Par contre, dans les options de la courbe de tendance, il est possible de faire calculer le coefficient de détermination de la relation logarithmique, qui est encore plus fort. Afficher ce coefficient sur le graphique.</p>
 </subsection>
 </section>
-<!-- Faire observer les données avec deux clusters et chercher la cause
+<!--
 Déterminer les données manquantes avec la droite et valider (Post lab ) en cherchant sur internet
 -->

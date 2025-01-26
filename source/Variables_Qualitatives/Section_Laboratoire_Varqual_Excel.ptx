@@ -16,14 +16,16 @@
     <li><p>Obésité Classe III. </p></li>
     </ol></p>
    
-   <p>Dans ce laboratoire, on introduit la notion de mise en forme d'un tableau à des fins de publication, la création d'un diagramme circulaire et d'un diagramme à bandes, ainsi que la mise en forme appropriée pour ces deux éléments graphiques.</p>
+   <p>Dans ce laboratoire, on introduit la notion de mise en forme d'un tableau à des fins de publication, la création d'un diagramme circulaire et d'un diagramme à bandes, ainsi que la mise en forme appropriée pour ces deux éléments graphiques. </p>
 </introduction>   
-      <subsection>
+      <subsection xml:id="ssec-CopierTCD">
         <title>Le tableau croisé dynamique et le tableau pour publication</title>
           <p></p>
-        <p>Le tableau croisé dynamique construit par Excel n'est pas adéquat pour publier comme source d'information. Il est nécessaire de préciser les étiquettes des lignes et des colonnes, d'ajouter un titre significatif ainsi que quelques éléments. Voici une procédure pour construire un tableau plus propice au partage des informations.</p>
-        <p>On sélectionne une cellule pour débuter le tableau, par exemple <c>H8</c> dans la figure <xref ref="fig-TCDaformat_anim1"/>.  On appuie ensuite sur <kbd>=</kbd>, on sélectionne la plage du tableau croisé dynamique correspondant aux données et on appuie sur <kbd>Enter</kbd>.</p>
-        <p>Il est également possible de faire la combinaison <kbd>Ctrl</kbd>+<kbd>C</kbd> sur la plage des données du tableau croisé dynamique et de faire un collage spécial à l'endroit souhaité. Pour cela, on peut faire la combinaison <kbd>Ctrl</kbd>+<kbd>V</kbd>, cliquer sur l'icone de collage dans le coin inférieur bas et sélectionner <alert>Coller le lien (N)</alert>. On peut aussi relâcher la touche <kbd>Ctrl</kbd> et appuyer sur la combinaison <kbd>Ctrl</kbd>+<kbd>N</kbd> pour utiliser le raccourci clavier correspondant. La figure <xref ref="fig-TCDaformat_anim2"/> illustre ce menu.</p> 
+          
+        <p>Le tableau croisé dynamique construit par Excel à la fin du laboratoire 1 (répartition des femmes selon la présence de diabète) n'est pas adéquat pour publier comme source d'information. Il est nécessaire de préciser les étiquettes des lignes et des colonnes, d'ajouter un titre significatif ainsi que quelques éléments. Voici une procédure pour construire un tableau plus propice au partage des informations.</p>
+        <p>Dans la feuille <alert>Étude Atteint</alert>, on sélectionne une cellule pour débuter le tableau, par exemple <c>H8</c> dans la figure <xref ref="fig-TCDaformat_anim1"/>.  On appuie ensuite sur <kbd>=</kbd>, on sélectionne la plage du tableau croisé dynamique correspondant aux données et on appuie sur <kbd>Enter</kbd>.</p>
+        <p>Il est également possible de faire la combinaison <kbd>Ctrl</kbd>+<kbd>C</kbd> sur la plage des données du tableau croisé dynamique et de faire un collage spécial à l'endroit souhaité. Pour cela, on peut faire la combinaison <kbd>Ctrl</kbd>+<kbd>V</kbd>, cliquer sur l'icone de collage dans le coin inférieur bas et sélectionner <alert>Coller le lien (N)</alert>. 
+            <!--On peut aussi relâcher la touche <kbd>Ctrl</kbd> et appuyer sur la combinaison <kbd>Ctrl</kbd>+<kbd>N</kbd> pour utiliser le raccourci clavier correspondant. La figure <xref ref="fig-TCDaformat_anim2"/> illustre ce menu.--></p> 
         
         <p> Dans tous les cas, il est possible qu'il faille changer le format de la cellule pour <alert>Pourcentage</alert> (voir <xref ref="li-pourcent" text="title"/>). On s'assure de garder deux chiffres significatifs après la virgule. L'animation ci-dessous permet de voir en trois étapes à quoi ressemble la progression de ces étapes.</p>
         <figure xml:id="fig-TCDaformat_anim1">
@@ -48,7 +50,7 @@
    <list xml:id="li-tableau">
    <title>Mise en forme du tableau pour publication</title>
    <ol>
-    <li><p>On ajoute une colonne appelée <q>Présence du diabète</q> à gauche dont les lignes sont, du haut vers le bas : <q>Non</q>,<q>Oui</q>,<q>Total</q>.</p></li>
+    <li><p>On ajoute une colonne appelée <q>Présence du diabète</q> à gauche dont les lignes sont, du haut vers le bas : <q>Non</q>,<q>Oui</q>,<q>Total</q>. La colonne <q>Présence du diabète</q> se trouve donc dans la colonne <c>G</c> de la feuille de calcul.</p></li>
     <li><p>On ajoute le titre des autres colonnes, de gauche à droite : <q>Nombre de femmes</q>, <q>Pourcentage de femmes</q>. Élargir les colonnes de manière à ce que le tout soit lisible.</p></li>
     <li><p>Dans la dernière ligne, on a le total du nombre de femmes sous chaque colonne. Sous la colonne <alert>Pourcentage de femmes</alert> à la ligne <alert>Total</alert>, on s'assure qu'il est <em>toujours</em> écrit <m>100\%</m>, même si les nombres dans la colonne pourraient ne pas additionner à <m>100\%</m> en raison d'erreur d'arrondi. Dans de tel cas, on l'indiquera sous le tableau à l'aide de la note : <q>En raison de l'arrondissement des pourcentage, le total pourrait ne pas être exactement de <m>100,00\%</m>.</q></p></li>
     <li><p>Sous le tableau, on inscrit la source des données. Dans le cas de cette étude, la source est donnée dans <xref ref="sec-Prelab_Introduction" text="l'introduction"/>. La mention <q>Source : National Institute of Diabetes and Digestive and Kidney Diseases (USA)</q> doit apparaitre sous chacun des tableaux et graphiques créés pour publication. </p></li>
@@ -57,12 +59,13 @@
     </p>
     <p>La figure ci-dessous illustre le tableau pour publication une fois toutes les étapes effectuées.</p>
         <figure>
-        <caption>Le tableau pour publication - avant la mise en forme</caption>
-        <image source="images/Tableau_atteint_preformat.png">
-        <description>Caputre d'écran du tableau une fois les étapes précédentes effectuées.</description>
+        <caption>Le tableau pour publication - après la mise en forme</caption>
+            <image source="images/Fig_Tableau_Formatter.png">
+        <!-- <image source="images/Tableau_atteint_preformat.png">-->
+        <description>Capture d'écran du tableau une fois les étapes précédentes effectuées.</description>
         </image>
         </figure>    
-    <p>Répéter les étapes ci-dessus avec le tableau croisé dynamique généré lors du pré laboratoire pour la variable <alert>Obésité</alert>.</p>
+    <p>Répéter les étapes ci-dessus avec le tableau croisé dynamique généré lors du pré laboratoire pour la variable <alert>Obésité</alert> dans la feuille <alert>Étude Obésité</alert>.</p>
     <p>Ces tableaux sont appelés <term>tableau de fréquences</term> de la variable étudiée. S'il n'y a que la colonne du nombre d'individus, on parle alors de <term>tableau de fréquences absolues</term> et s'il n'y a que la colonne des pourcentages, on dit <term>tableau de fréquences relatives</term>.</p>
     <p>Habituellement, le titre, les en-têtes de colonne, ainsi que le contenu de la ligne &#xAB;Total&#xBB; ont une mise en forme particulière, par exemple en gras.</p>
     </subsection>
@@ -75,7 +78,7 @@
         
      <p>On construit le diagramme circulaire associé à la variable <alert>Atteint</alert>. On choisit de faire la répartition en pourcentage des effectifs.
      <ol>
-     <li><p>Dans le tableau de fréquences, sélectionner les modalités de la variable aux cellules <c>G8:G9</c> et, en maintenant la touche <kbd>Ctrl</kbd> enfoncée, les effectifs relatifs aux cellules <c>I8:I9</c>.</p></li>
+     <li><p>Dans le tableau de fréquences de la feuille <alert>Étude Atteint</alert>, sélectionner les modalités de la variable aux cellules <c>G8:G9</c> et, en maintenant la touche <kbd>Ctrl</kbd> enfoncée, les effectifs relatifs aux cellules <c>I8:I9</c>.</p></li>
      <li><p>Sous l'onglet <alert>Insertion</alert>, cliquer sur le bouton correspondant au diagramme circulaire dans le ruban. Voir la figure ci-dessous.</p></li>
      <li><p>Sous <alert>Secteur 2D</alert>, cliquer sur le premier type de graphique à gauche, appellé <alert>Secteur</alert>. Déplacer le graphique au besoin.</p> <p>La figure <xref ref="fig-graphqualsansinfos"/> illustre les étapes précédentes sous forme d'animation.</p></li>
      <li><p>On peut sélectionner un style prédéfini sous l'onglet création de graphique (apparaissant lorsque le graphique est sélectionné, voir la figure <xref ref="fig-stylespredefinis"/>) ou encore peaufiner les éléments graphiques selon ce qui est attendu. Toutefois, en sciences, l'allure esthétique du graphique ne devrait pas prendre le dessus sur l'information transmise. On préférera un style relativement neutre sans trop de fioritures. Le graphique circulaire doit néanmoins contenir les éléments suivants:
@@ -90,7 +93,7 @@
      </ol> </p>
      <figure xml:id="fig-graphqualsansinfos">
      <caption>L'insertion d'un diagramme circulaire</caption>
-     <image source="images/varqualsansinfos.gif">
+     <image source="images/varqualsansinfos.png">
      <description>Animation des étapes menant à l'insertion d'un diagrame circulaire.</description>
      </image>
      </figure>
@@ -113,7 +116,7 @@
      </figure>
      <p>On construit maintenant le diagramme à bandes pour la variable <alert>Obésité</alert>. Comme la variable est qualitative à échelle ordinale, on choisit les bandes verticales. Cette fois, on choisit d'utiliser les effectifs absolus.
      <ol>
-     <li><p>Dans le tableau de fréquences, sélectionner les modalités de la variable et, en maintenant la touche <kbd>Ctrl</kbd> enfoncée, les effectifs absolus.</p></li>
+     <li><p>Dans le tableau de fréquences de la feuille <alert>Étude Obésité</alert>, sélectionner les modalités de la variable et, en maintenant la touche <kbd>Ctrl</kbd> enfoncée, les effectifs absolus.</p></li>
      <li><p>Sous l'onglet <alert>Insertion</alert>, cliquer sur le bouton correspondant à l'histogramme. Voir la figure <xref ref="fig-graphqualbandes"/> ci-dessous.
      <ul>
      <li><p>Sous <alert>Histogramme 2D</alert>, cliquer sur le premier type de graphique à gauche, appellé <alert>Histogramme groupé</alert>, pour un diagramme à bandes verticales.</p></li>
