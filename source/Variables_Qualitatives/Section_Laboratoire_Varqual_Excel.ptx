@@ -114,9 +114,9 @@
      </image>
      </sidebyside>
      </figure>
-     <p>On construit maintenant le diagramme à bandes pour la variable <alert>Obésité</alert>. Comme la variable est qualitative à échelle ordinale, on choisit les bandes verticales. Cette fois, on choisit d'utiliser les effectifs absolus.
+     <p>On construit maintenant le diagramme à bandes pour la variable <alert>Obésité</alert>. Comme la variable est qualitative à échelle ordinale, on choisit les bandes verticales. On choisit d'utiliser les effectifs relatifs.
      <ol>
-     <li><p>Dans le tableau de fréquences de la feuille <alert>Étude Obésité</alert>, sélectionner les modalités de la variable et, en maintenant la touche <kbd>Ctrl</kbd> enfoncée, les effectifs absolus.</p></li>
+     <li><p>Dans le tableau de fréquences de la feuille <alert>Étude Obésité</alert>, sélectionner les modalités de la variable et, en maintenant la touche <kbd>Ctrl</kbd> enfoncée, les effectifs relatifs.</p></li>
      <li><p>Sous l'onglet <alert>Insertion</alert>, cliquer sur le bouton correspondant à l'histogramme. Voir la figure <xref ref="fig-graphqualbandes"/> ci-dessous.
      <ul>
      <li><p>Sous <alert>Histogramme 2D</alert>, cliquer sur le premier type de graphique à gauche, appellé <alert>Histogramme groupé</alert>, pour un diagramme à bandes verticales.</p></li>

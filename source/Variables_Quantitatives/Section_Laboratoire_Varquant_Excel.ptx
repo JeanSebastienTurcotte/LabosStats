@@ -20,11 +20,10 @@
         
     <subsubsection xml:id="sssec_FiltrerP">
         <title>Filtrer les valeurs aberrantes du tableau principal</title>
-        <p></p>
     
-       <p>Avant de générer un tableau croisé dynamique impliquant une variable quantitative, il est important d'effectuer une enquête préliminaire des données dans le but de filtrer des données aberrantes si nécessaire.</p>
+    <p>Avant de générer un tableau croisé dynamique impliquant une variable quantitative, il est important d'effectuer une enquête préliminaire des données dans le but de filtrer des données aberrantes si nécessaire. </p>
         
-        <p>En appliquant un filtre à la variable <alert>IMC</alert>, on constate que certaines femmes ont enregistré un indice de masse corporelle de 0. Cette valeur étant impossible, il s'agit donc d'une valeur aberrante. On choisit de filtrer ces valeurs et de les exclure lors de la création du tableau de fréquences, de l'histogramme, ainsi que des calculs des mesures statistiques, car ces dernières pourraient fausser les interprétations. Les étapes suivantes mènent au filtrage du tableau principal <alert>Échantillon</alert>.</p>
+        <p> En appliquant un filtre à la variable <alert>IMC</alert>, on constate que certaines femmes ont enregistré un indice de masse corporelle de 0. Cette valeur étant impossible, il s'agit donc d'une valeur aberrante. On choisit de filtrer ces valeurs et de les exclure lors de la création du tableau de fréquences, de l'histogramme, ainsi que des calculs des mesures statistiques, car ces dernières pourraient fausser les interprétations. Les étapes suivantes mènent au filtrage du tableau principal <alert>Échantillon</alert>.</p>
         
      
        
@@ -97,7 +96,7 @@
         
         <remark xml:id="rem-filtrer">
 <title>Filtrer des données</title>
-<p>Malheureusement, ce filtrage ne s'applique que sur les données du tableau principal <alert>Échantillon</alert> et non sur les tableaux croisés dynamiques.</p>
+<p>Malheureusement, ce filtrage ne s'applique que sur les données du tableau principal <alert>Échantillon</alert> et non sur les tableaux croisés dynamiques. Toutefois, il est pratique de filtrer les données brutes lors de la réalisation d'une partie d'une étude, afin de pouvoir comparer les résultats obtenus et leur conformité avec les données.</p><!-- Yasmine relis ma phrase, pas entièrement satisfait -->
     </remark>
         
     
@@ -292,7 +291,7 @@
     
    
     
-<li><p>Puisque l'on a filtré certaines valeurs, on ne peut pas utiliser les fonctions de base d'Excel comme <term>MIN</term> (renvoie la valeur minimale), <term>MAX</term> (renvoie la valeur maximale), <term>NB</term> (renvoie le nombre de données), etc. Il faut utiliser la fonction <term>SOUS.TOTAL</term>.</p>
+<li><p>Dans Excel, plusieurs fonctions de base existent pour faire des calculs. Celles-ci incluent la fonction <term>MIN</term> (renvoie la valeur minimale), la fonction <term>MAX</term> (renvoie la valeur maximale), la fonction <term>NB</term> (renvoie le nombre de données), etc. Malheureusement, lorsque l'on applique un filtre à une variable, comme le filtre appliqué à la variable <alert>IMC</alert>, on ne peut pas utiliser les fonctions de base d'Excel. Excel pallie à ce problème avec la fonction <term>SOUS.TOTAL</term>.</p>
     
     <p>La fonction <alert>SOUS.TOTAL</alert> d'Excel permet de calculer certaines mesures statistiques (pas toutes) sur un sous-ensemble de données lorsqu'un filtre a été appliqué sur une variable (comme fait à la <xref ref="sssec_Filtrer"/>). Cela signifie qu'Excel peut faire certains calculs sur les données filtrées.</p>
     
@@ -770,7 +769,7 @@
            </li> 
             
             
-            <li> <p> Dans une cellule de la première colonne du tableau croisé dynamique, cliquer sur le bouton droit de la souris. Sélectionner l'option <alert>Grouper</alert> à nouveau. Taper <m>50</m> comme valeur de fin, soit la limite supérieure de la première classe ouverte (voir la <xref ref="Fig_Grouper_6tris"/>).</p>
+            <li> <p> Dans une cellule de la première colonne du tableau croisé dynamique, cliquer sur le bouton droit de la souris. Sélectionner l'option <alert>Grouper</alert> à nouveau. Taper <m>50</m> comme valeur de fin, soit la limite inférieure de la première classe ouverte (voir la <xref ref="Fig_Grouper_6tris"/>).</p>
             
             <p> </p>
     
@@ -1225,14 +1224,15 @@
                   
                   <p></p>
             </li>
-            
-            <li><p>L'étape finale consiste à mettre la source des données en dessous de l'histogramme (voir la <xref ref="Fig_IMC_HistoF_26"/>). </p>
+            <li><p>Comme il y a un saut de valeurs entre la première classe et l'axe des ordonnées, il est recommandé de l'indiquer dans une note au bas du graphique.</p></li>
+ <!-- Yasmine ici plus  veux-tu refaire l'image modifiée avec la note de saut, pour que ça garde la même mise en forme-->          
+ <li><p>L'étape finale consiste à mettre la source des données en dessous de l'histogramme (voir la <xref ref="Fig_IMC_HistoF_26"/>). </p>
                 <p></p>
                 
                  <figure xml:id="Fig_IMC_HistoF_26">
-<caption>Version définitive de l'histogramme avec la source des données</caption>
+<caption>Version définitive de l'histogramme avec la source des données et la note de saut</caption>
 <image source="images/Fig_IMC_HistoF_26.png" >
-<description>Version définitive de l'histogramme avec la source des données</description>
+<description>Version définitive de l'histogramme avec la source des données et la note de saut</description>
 </image>
 </figure>
                 
@@ -1817,16 +1817,16 @@
               
                 </li>
               
-               <li><p>Malheureusement, Excel n'est pas en mesure de calculer la médiane du sous-total d'une plage de données. Il est donc nécessaire d'utiliser la fonction Excel <alert>SI</alert>, fonction qui permet d'appliquer des conditions lors de l'emploi d'une formule. Dans la cellule <alert><c>O8</c></alert>, taper <alert><c>=MEDIANE(SI(IMC &lt; &gt; 0 ;IMC))</c> </alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
+               <li><p>Malheureusement, Excel n'est pas en mesure de calculer la médiane du sous-total d'une plage de données. Il est donc nécessaire d'utiliser la fonction Excel <alert>SI</alert>, fonction qui permet d'appliquer des conditions lors de l'emploi d'une formule. Dans la cellule <alert><c>O8</c></alert>, taper <alert><c>=MEDIANE(SI(IMC &lt;&gt; 0 ;IMC))</c> </alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
                    
-                   <p><alert><c>SI(IMC &lt; &gt; 0 ;IMC)</c></alert> renvoie les valeurs de l'IMC différentes de <m>0</m>. Excel fait ensuite le calcul de la médiane de ces valeurs.</p>
+                   <p><alert><c>SI(IMC &lt;&gt; 0 ;IMC)</c></alert> renvoie les valeurs de l'IMC différentes de <m>0</m>. Excel fait ensuite le calcul de la médiane de ces valeurs.</p>
               
                     <p></p>
                 
                 </li>
               
               
-              <li><p>Malheureusement, Excel n'est pas en mesure de calculer le mode du sous-total d'une plage de données. Il faut donc utiliser la fonction Excel <alert>SI</alert> encore une fois. Dans la cellule <alert><c>O9</c></alert>, taper <alert><c>=MODE.SIMPLE(SI(IMC &lt; &gt; 0 ;IMC))</c></alert> (voir la <xref ref="MesuresF_gif"/>).</p>
+              <li><p>Malheureusement, Excel n'est pas en mesure de calculer le mode du sous-total d'une plage de données. Il faut donc utiliser la fonction Excel <alert>SI</alert> encore une fois. Dans la cellule <alert><c>O9</c></alert>, taper <alert><c>=MODE.SIMPLE(SI(IMC &lt;&gt; 0 ;IMC))</c></alert> (voir la <xref ref="MesuresF_gif"/>).</p>
               
                     <p></p>
                 
@@ -1850,7 +1850,7 @@
                 </li>
               
               
-              <li><p>La fonction <alert><c>SOUS.TOTAL</c></alert> ne permet pas de calculer des centiles. Il faut utiliser la fonction <alert><c>SI</c></alert>. Dans la cellule <alert><c>O12</c></alert>, taper <alert><c>=CENTILE.INCLURE(SI(IMC&lt; &gt; 0);0,25)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>). </p>
+              <li><p>La fonction <alert><c>SOUS.TOTAL</c></alert> ne permet pas de calculer des centiles. Il faut utiliser la fonction <alert><c>SI</c></alert>. Dans la cellule <alert><c>O12</c></alert>, taper <alert><c>=CENTILE.INCLURE(SI(IMC&lt;&gt; 0;IMC);0,25)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>). </p>
               
                     <p></p>
                 
@@ -1888,7 +1888,7 @@
                     
                     <p>Le diagramme à quartiles, communément appelé la boîte à moustaches si le diagramme est placé horizontalement, illustre le premier quartile, la médiane, le troisième quartile, une valeur minimale qui est située à une distance d'une fois et demi l'écart interquartile en dessous du premier quartile, ainsi qu'une valeur maximale située à une distance d'une fois et demi l'écart interquartile au-dessus du troisième quartile. Ce graphique permet également de détecter d'un coup d'oeil les asymétries possibles à l'aide de la longueur des moustaches, les deux lignes qui s'étendent des quartiles aux valeurs minimale et maximale.</p>
                     
-                    <p>Avec Excel, les détails pour tracer un diagramme à quartiles de la variable <alert>IMC</alert> sont présentées ci-dessous.</p>
+                    <p>Avec Excel, les détails pour tracer un diagramme à quartiles de la variable <alert>IMC</alert> sont présentées ci-dessous. Ces étapes ne sont pas à faire pour ce laboratoire. Elles sont simplement présentées pour démontrer la pertinence de ce type de graphique. </p>
                     
                     <p>
                     <ol>
@@ -1907,9 +1907,16 @@
                             <p></p>
                         </li>
                         
-                        <li><p>Déplacer le graphique à la feuille <alert>Étude IMC</alert>, dans un endroit vide de la feuille.</p></li>
-                        
-                        <li><p>Faire la mise en forme du graphique. Il devrait ressembler au graphique de la <xref ref="Fig_Moustaches"/>.</p>
+                        <li><p>En cliquant avec le bouton droit sur le graphique, déplacer  ce dernier à la feuille <alert>Étude IMC</alert>, dans un endroit vide.</p>
+                      <figure xml:id="Fig_Moustaches_deplacer1">
+<caption>Déplacer la boite à moustaches</caption>
+<image source="images/moustache_deplacer1.png" >
+<shortdescription>Déplacer un graphique</shortdescription>
+</image>
+</figure>                       
+                        </li>
+                        <li><p>Faire un clic avec le bouton droit sur les données, cliquer sur <alert>Mettre en forme une série de données</alert>, </p></li>
+                        <li><p>Faire la mise en forme du graphique. Il devrait ressembler au graphique de la <xref ref="Fig_Moustaches"/>. À noter que les valeurs numériques ont été ajoutées manuellement pour montrer l'utilité de ce type de graphique.</p>
                         
                         <p></p>
                   
@@ -2183,7 +2190,7 @@
                
                
                
-             <li> <p> Sélectionner la plage de cellules <alert><c>G29:I30</c></alert> (voir la <xref ref="Fig_Pol_9"/>).</p>
+             <li> <p> Sélectionner la plage de cellules <alert><c>G20:I30</c></alert> (voir la <xref ref="Fig_Pol_9"/>).</p>
            <p></p>
                   
                     <figure xml:id="Fig_Pol_9">

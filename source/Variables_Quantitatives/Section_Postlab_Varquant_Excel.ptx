@@ -36,7 +36,7 @@
     </exercise>
     
      <exercise>
-    <statement><p>Une donnée aberrante est une donnée située anormalement loin des autres observations. Une donnée est considérée comme aberrante si elle se situe à 1,5 fois l'écart interquartile <m>\left(1,5\times (Q_{3}-Q_{1})\right)</m> en dessous du premier quartile ou à 1,5 fois l'écart interquartile au-dessus du troisième quartile. Dans la feuille de calcul <alert>Étude IMC</alert>, déterminer toutes les valeurs aberrantes de l'indice de masse corporelle en effectuant les calculs nécessaires. À la <xref ref="sssec_FiltrerP"/>, quelles valeurs auraient dû être exclues en plus des valeurs nulles? Quel graphique permet de visualiser (d'identifier d'un coup d'oeil) les données aberrantes d'une variable?</p></statement>
+    <statement><p>Une donnée aberrante est une donnée située anormalement loin des autres observations. Une donnée est considérée comme aberrante si elle se situe à 1,5 fois l'écart interquartile <m>\left(1,5\times (Q_{3}-Q_{1})\right)</m> en dessous du premier quartile ou à 1,5 fois l'écart interquartile au-dessus du troisième quartile. Dans la feuille de calcul <alert>Étude IMC</alert>, déterminer toutes les valeurs aberrantes de l'indice de masse corporelle en effectuant les calculs nécessaires dans des cellules vides. À la <xref ref="sssec_FiltrerP"/>, quelles valeurs auraient dû être exclues en plus des valeurs nulles? Quel graphique permet de visualiser (d'identifier d'un coup d'oeil) les données aberrantes d'une variable?</p></statement>
     </exercise>
  
     
@@ -45,7 +45,7 @@
     </exercise>
     
     <exercise>
-    <statement><p>Le choix de l'amplitude et du nombre de classes d'un histogramme peut influencer l'interprétation du graphique. Dans la feuille de calcul <alert>Étude IMC</alert>, reproduire l'histogramme de la répartition de l'échantillon des femmes d'origine pima selon l'indice de masse corporelle en regroupant les données en cinq classes. Interpréter l'allure du graphique. Comparer l'histogramme reproduit à l'histogramme fait à la <xref ref="sssec_Histogramme"/>.</p>
+    <statement><p>Le choix de l'amplitude et du nombre de classes d'un histogramme peut influencer l'interprétation du graphique. Dans une nouvelle feuille de calcul intitulée <alert>Étude IMC 2</alert>, reproduire l'histogramme de la répartition de l'échantillon des femmes d'origine pima selon l'indice de masse corporelle en regroupant les données en cinq classes. Il es préférable de refaire le tableau croisé dynamique. Il se peut que ceci affecte le regroupement fait à la <xref ref="sssec_Grouper"/>. Interpréter l'allure du graphique. Comparer l'histogramme reproduit à l'histogramme fait à la <xref ref="sssec_Histogramme"/>.</p>
     </statement>
     </exercise>
     
@@ -53,7 +53,7 @@
     
     <exercise>
     <statement>
-    <p>Choisir une variable quantitative continue (autre que l'IMC) à étudier. Ajouter une feuille de calcul dans le fichier Excel avec un nom approprié. Construire le tableau de fréquences ainsi que l'histogramme de la répartition de l'échantillon de femmes d'origine pima selon la variable choisie. Ne pas oublier de filtrer les données aberrantes et d'indiquer le choix de l'amplitude des classes. Interpréter le résultat.</p>
+    <p>Choisir une variable quantitative continue (autre que l'IMC) à étudier. Ajouter une feuille de calcul dans le fichier Excel avec un nom approprié reflétant le contenu. Construire le tableau de fréquences ainsi que l'histogramme de la répartition de l'échantillon de femmes d'origine pima selon la variable choisie. Ne pas oublier de filtrer les données aberrantes, d'indiquer le choix de l'amplitude des classes et de regrouper les données. Interpréter le résultat.</p>
     </statement>
     </exercise>
     
@@ -77,13 +77,13 @@
     
       <exercise>
     <statement>
-    <p>Choisir une variable quantitative continue (autre que l'IMC) à étudier simultanément avec la variable qualitative <alert>Atteint</alert>. Ajouter une feuille de calcul dans le fichier Excel avec un nom approprié. Construire le tableau de fréquences à double entrée ainsi que le polygone de fréquences de la répartition de l'échantillon de femmes d'origine pima, par présence de diabète, selon la variable quantitative continue choisie. Ne pas oublier de filtrer les données aberrantes et d'indiquer le choix de l'amplitude des classes. Interpréter le résultat. </p>
+    <p>Choisir une variable quantitative continue (autre que l'IMC) à étudier simultanément avec la variable qualitative <alert>Atteint</alert>. Ajouter une feuille de calcul dans le fichier Excel avec un nom approprié reflétant le contenu. Construire le tableau de fréquences à double entrée ainsi que le polygone de fréquences de la répartition de l'échantillon de femmes d'origine pima, par présence de diabète, selon la variable quantitative continue choisie. Ne pas oublier de filtrer les données aberrantes, d'indiquer le choix de l'amplitude des classes et de regrouper les données. Interpréter le résultat. </p>
     </statement>
     </exercise>
     
      <exercise>
     <statement>
-    <p>Calculer et interpréter la moyenne, l'écart type corrigé et le coefficient de variation de la variable quantitative continue choisie à la question précédente par présence de diabète.</p>
+    <p>Calculer et interpréter la moyenne, l'écart type corrigé et le coefficient de variation de la variable quantitative continue choisie à la question précédente par présence de diabète. Il faut faire ces calculs à l'aide d'un tableau croisé dynamique tel que présenté à la <xref ref="sssec_Mesures_DoubleEntree"/>.</p>
     </statement>
     </exercise>
     
