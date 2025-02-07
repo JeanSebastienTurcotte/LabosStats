@@ -141,7 +141,7 @@
     <shortdescription>Capture d'écran de l'emplacement pour ajouter un diagramme à bandes</shortdescription>
     </image>
     </figure>
-    <figure>
+    <figure xml:id="fig-graphqualbandesfinal">
     <caption>Diagramme à bandes verticales</caption>
     <image source="images/Diagrammebandes.png">
     <shortdescription>Le résultat attendu du diagramme à bandes vertical</shortdescription></image>
