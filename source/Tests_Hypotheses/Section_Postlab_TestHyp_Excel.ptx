@@ -2,7 +2,7 @@
 
 <section xml:id="sec-Postlab_TestHyp" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Réflexions</title>
-<p>Mise en contexte</p>
+<p>Ce laboratoire aura permis d'explorer les concepts liés aux tests d'hypothèse paramétriques. Toutefois, une étude plus approfondie est utile pour en saisir toutes les subtilités.</p>
     
     
     
@@ -11,7 +11,7 @@
 
 <objectives>
     <ul>
-      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>Poser un regard critique sur des données.</p></li>
       <li><p>Formuler des hypothèses de recherche.</p></li>
       <li><p>Choisir le type de tests adéquatement et comprendre les distinctions entre chaque type de tests.</p></li>
       <li><p>Effectuer un test d'hypothèse paramétriques pour vérifier une hypothèse.</p></li>
@@ -21,7 +21,7 @@
     </ul>
     </objectives>
         
-        <exercise>
+   <!--     <exercise>
     <statement><p>Donner quelques exemples où les tests bilatéraux et unilatéraux d'une même situation peuvent entraîner des conclusions différentes.</p></statement>
     </exercise>
     
@@ -31,15 +31,15 @@
     
         <exercise>
     <statement><p>On dit souvent des tests unilatéraux qu'ils sont plus puissants que les tests bilatéraux si on a une idée de la direction du changement. Donner quelques exemples pour illustrer ce point. </p></statement>
-    </exercise>
+    </exercise>-->
         
-        <exercise>
+       <!-- <exercise>
     <statement><p>Donner quelques exemples dans lesquels un test bilatéral est privilégié.</p></statement>
     </exercise>
         
         <exercise>
     <statement><p>Donner quelques exemples où il serait désavantageux de poser une hypothèse de recherche unilatérale avant d'effectuer la collecte de données. </p></statement>
-    </exercise>
+    </exercise>-->
 
         <exercise>
     <statement><p>Avant de faire une collecte de données, un chercheur pose ses hypothèses de recherche. Ce dernier effectue une étude sur l'efficacité de certains désinfectants sur la croissance de bactéries. Ce dernier croit que le désinfectant commercial Lysol sera plus efficace que le vinaigre à contrer la croissance bactérienne. Une fois les données récoltées, le chercheur constate que la moyenne du diamètre d'inhibition des bactéries avec Lysol est plus petite que la moyenne avec le vinaigre. Il décide de manipuler ses données pour fitter son hypothèse de recherche de départ. Discuter des impacts de ce choix dans ce contexte et dans d'autres contextes. Que devrait faire le chercheur avant de réaliser son test d'hypothèse? </p></statement>
@@ -47,8 +47,10 @@
         
         
      <exercise>
-    <statement><p>Dans le test sur deux moyennes dépendantes de la <xref ref="ssec-TestDeuxMoyennesDep"/>, si on change le seuil de signification, est-ce que la conclusion du test change? Expliquer en considérant les valeur des statistiques et de la valeur p.</p></statement>
+    <statement><p>Dans le test sur deux moyennes dépendantes de la <xref ref="ssec-TestDeuxMoyennesDep"/>, à partir de quelle valeur du seuil de signification la conclusion du test change-t-elle? Donner la valeur au centième près. Expliquer en considérant les valeur des statistiques et de la valeur p.</p></statement>
     </exercise>
+        
+        <!--si on change le seuil de signification, est-ce que la conclusion du test change?-->
         
         <exercise>
     <statement><p>Un chercheur peut commettre deux types d'erreurs lorsque vient le temps de conclure: une erreur de type I (un faux positif), c'est-à-dire rejeter <m>H_{0}</m> alors que <m>H_{0}</m> est vraie, ou une erreur de type II (un faux négatif), soit ne pas rejeter <m>H_{0}</m> alors que <m>H_{0}</m> est faux. Supposer qu'un professionnel de la santé veut tester si un patient a une maladie. Dans quel contexte est-ce que l'erreur de type I (faux positif) est plus grave? Dans quel contexte est-ce que l'erreur de type II (faux négatif) est plus grave? Donner des exemples concrets.
@@ -57,25 +59,27 @@
         
         
         <exercise>
-    <statement><p>Parmi toutes les bases de données disponibles (baseball, vin, armée, nutrition, voitures, etc.), effectuer une recherche statistique en suivant toutes les étapes présentées dans les laboratoires 1, 2, 3 et 6 sauf la collecte de données. Cela signifie une recherche préliminaire de la littérature scientifique, la formulation de quelques hypothèses de recherche et la réalisation des tests d'hypothèse paramétriques. Faire trois tests d'hypothèse paramétriques différents en utilisant les canevas.</p></statement>
+    <statement><p>Parmi toutes les bases de données disponibles (baseball, vin, armée, nutrition, voitures, etc.), faire deux tests d'hypothèse paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse.</p></statement>
     </exercise>
         
+        <!--effectuer une recherche statistique en suivant toutes les étapes présentées dans les laboratoires 1, 2, 3 et 6 sauf la collecte de données. Cela signifie une recherche préliminaire de la littérature scientifique, la formulation de quelques hypothèses de recherche et la réalisation des tests d'hypothèse paramétriques. Faire deux tests d'hypothèse paramétriques de type différent en utilisant les canevas.-->
         
-        <exercise>
+        
+      <!--  <exercise>
     <statement><p>La puissance d'un test est la probabilité de rejeter <m>H_{0}</m> alors que <m>H_{0}</m> est faux, c'est-à-dire de bien identifier une différence significative quand l'une existe réellement. Discuter des liens entre la puissance d'un test et la probabilité d'un faux négatif (l'erreur de type II, soit <m>\beta</m>).</p></statement>
-    </exercise>
+    </exercise>-->
         
         <exercise>
-    <statement><p>Pour trois des quatre tests effectués dans le laboratoire 6, les cotes <m>z</m> ou <m>t</m> observées sont loin des valeurs critiques et les valeurs p sont très petites. Donner quelques raisons qui pourraient expliquer la puissance de ces rejets de l'hypothèse nulle.</p></statement>
+    <statement><p>Pour trois des quatre tests effectués dans le laboratoire 6, les cotes <m>z</m> ou <m>t</m> observées sont loin des valeurs critiques et les valeurs p sont très petites. Donner une ou deux raisons qui pourraient expliquer la puissance de ces rejets de l'hypothèse nulle. Les feuilles des fichiers Excel remis doivent être bien identifiées.</p></statement>
     </exercise>
         
-        <exercise>
+       <!-- <exercise>
     <statement><p>Un problème avec les tests d'hypothèse est qu'un effet réel peut ne pas être détecté. Ce problème est le plus susceptible de se produire dans quelles circonstances?</p></statement>
     </exercise>
         
           <exercise>
     <statement><p>Lors d'un test d'hypothèse, pourquoi ne pas toujours prendre un seuil de signification de <m>1 %</m>? Expliquer le raisonnemment derrière le choix d'un seuil en faisant référence à quelques contextes en sciences.</p></statement>
-    </exercise>
+    </exercise>-->
         
     </worksheet>
     

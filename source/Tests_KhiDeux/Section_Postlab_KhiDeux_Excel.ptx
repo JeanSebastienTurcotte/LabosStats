@@ -2,7 +2,7 @@
 
 <section xml:id="sec-Postlab_KhiDeux" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Réflexions</title>
-<p>Mise en contexte</p>
+<p>Ce laboratoire aura permis d’explorer les concepts liés aux tests d'indépendance. Toutefois, une étude plus approfondie est utile pour en saisir toutes les subtilités</p>
 
 
  
@@ -30,13 +30,13 @@
   </exercise>
     
 <exercise>
-    <statement><p>À la <xref ref="ssec-KhiDeuxAge"/>, on a fait un test d'indépendance vérifiant s'il existe un lien entre l'âge d'un conducteur et la gravité d'une collision. La variable âge a été groupée en tranche de 10 ans. Ceci a mené au non-rejet de l'hypothèse nulle, c'est-à-dire qu'on n'a pas pu conclure qu'il existait un lien entre l'âge et la gravité. Choisir un groupement d'âge différent de celui fait à la  <xref ref="ssec-KhiDeuxAge"/> et montrer que la conclusion peut changer.</p></statement>
+    <statement><p>À la <xref ref="ssec-KhiDeuxAge"/>, on a fait un test d'indépendance vérifiant s'il existe un lien entre l'âge d'un conducteur et la gravité d'une collision. La variable <alert>Âge</alert> a été groupée en tranche de 10 ans. Ceci a mené au non-rejet de l'hypothèse nulle, c'est-à-dire qu'on n'a pas pu conclure qu'il existait un lien entre l'âge et la gravité. Choisir un groupement d'âge différent de celui fait à la  <xref ref="ssec-KhiDeuxAge"/> et montrer que la conclusion peut changer.</p></statement>
     </exercise>
         
         
         
         <exercise>
-    <statement><p>Parmi toutes les bases de données disponibles dans la <xref ref="ann-basesdedonnees"/>, effectuer une recherche statistique en suivant toutes les étapes présentées dans les laboratoires 1, 2, 3 et 6 sauf la collecte de données. Cela signifie une recherche préliminaire de la littérature scientifique, la formulation de quelques hypothèses de recherche et la réalisation de tests d'indépendance. Faire deux tests d'indépendance en utilisant les canevas fournis. Au moins un des tests doit incorporer une variable quantitative continue.</p></statement>
+    <statement><p>Parmi toutes les bases de données disponibles dans l'<xref ref="ann-basesdedonnees"/>, formuler quelques hypothèses de recherche et réaliser deux tests d'indépendance pour valider ces hypothèses. Utiliser les canevas fournis. Au moins un des tests doit incorporer une variable quantitative continue.</p></statement>
     </exercise>
         
          

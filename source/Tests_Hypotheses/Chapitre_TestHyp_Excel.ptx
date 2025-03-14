@@ -4,7 +4,9 @@
   <title>Tests d'hypothèses</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+  
+
+      <p>Ce chapitre présente les tests d'hypothèse paramétriques, une branche de l'inférence statistique. L'objectif principal d’une étude scientifique est de répondre aux questions de recherche en généralisant les résultats obtenus à partir d'un échantillon à l'ensemble de la population. Les observations issues de l’échantillon révèlent-elles une modification du comportement au sein de la population, ou sont-elles simplement le fruit du hasard lié à l’échantillonnage? </p>
   </introduction>
 
   <!-- include sections -->

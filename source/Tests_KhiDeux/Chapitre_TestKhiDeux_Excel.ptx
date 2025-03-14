@@ -4,7 +4,7 @@
   <title>Tests du khi-deux</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Il existe des types de tests qui n'impliquent pas de paramètres comme la moyenne et la proportion. On les appelle des tests non paramétriques. Ce chapitre présente plus particulièrement les tests d'indépendance du khi-deux. Ces derniers permettent de déterminer s'il existe un lien entre deux variables à partir d'un échantillon. Les variables peuvent être qualitatives ou quantitatives.</p>
   </introduction>
 
   <!-- include sections -->

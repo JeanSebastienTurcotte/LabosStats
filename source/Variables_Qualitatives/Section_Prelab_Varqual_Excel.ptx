@@ -15,7 +15,7 @@
   </objectives>
   
   <introduction>
-    <p>On continue de travailler à l'aide de la base de données du laboratoire d'<xref ref="chap-Intro">introduction</xref>. Le but de ce prélab est d'utiliser les connaissances et outils acquis dans le premier laboratoire afin de préparer une feuille de calcul qui servira lors du prochain laboratoire.</p>
+    <p>On continue de travailler à l'aide de la base de données du laboratoire d'<xref ref="chap-Intro">introduction</xref>. Le but de ce prélab est d'utiliser les connaissances et les outils acquis dans le premier laboratoire afin de préparer une feuille de calcul qui servira lors du prochain laboratoire.</p>
   </introduction> 
 <page>  
   <exercise>
@@ -33,7 +33,7 @@
   
     <task> 
   <statement>
-  <p>Il y a <m>200</m> utilisateurs d'un produit <m>A</m> qui l'ont acheté à nouveau alors que <m>50</m> utilisateurs d'un produit compétitif <m>B</m> ont acheté à nouveau le produit <m>B</m>. Le produit <m>A</m> est donc une meilleur produit que le <m>B</m>.</p>
+  <p>Il y a <m>200</m> utilisateurs d'un produit <m>A</m> qui l'ont acheté à nouveau alors que <m>50</m> utilisateurs d'un produit compétitif <m>B</m> ont acheté à nouveau le produit <m>B</m>. Le produit <m>A</m> est donc un meilleur produit que le <m>B</m>.</p>
   </statement>
   </task>
   </exercise>
@@ -50,9 +50,9 @@
   </figure>
   
    <figure xml:id="fig-mauvaisgraph2">
-   <caption>Diagramme circulaire à propos de la consommation de cannabis des américains</caption>
+   <caption>Diagramme circulaire à propos de la consommation de cannabis des Américains</caption>
   <image source="images/MauvaisGraph6.jpg">
-  <description>Une capture d'écran du réseau CBSN sur la consommation de cannabis des américains.</description>
+  <description>Une capture d'écran du réseau CBSN sur la consommation de cannabis des Américains.</description>
   </image>
   </figure>
   </statement>

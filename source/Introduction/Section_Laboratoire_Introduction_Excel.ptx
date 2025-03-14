@@ -63,7 +63,7 @@
     </li>  
     
     
-<li> <p>Une boîte de dialoge s'ouvrira. Il faut s'assurer que le délimiteur est bien <alert>Virgule</alert>. Une fois fait, cliquer sur l'option <alert>Charger</alert> (voir la <xref ref="Fig_Donnees_CSV_3"/>).</p>
+<li> <p>Une boite de dialogue s'ouvrira. Il faut s'assurer que le délimiteur est bien <alert>Virgule</alert>. Une fois fait, cliquer sur l'option <alert>Charger</alert> (voir la <xref ref="Fig_Donnees_CSV_3"/>).</p>
     
     <p> </p>
 
@@ -121,28 +121,28 @@
 <p>
 <ul>
     
-<li><p>La <term> barre d'outil Accès rapide </term> est une barre personnalisable qui affiche les icônes des commandes les plus courantes. Par défaut, elle comprend les commandes suivantes : l'enregistrement de fichier, l'annulation d'une action effectuée et le rétablissement d'une action annulée.</p></li>
+<li><p>La <term> barre Accès rapide </term> est une barre personnalisable qui affiche les icônes des commandes les plus courantes. Par défaut, elle comprend les commandes suivantes : l'enregistrement de fichier, l'annulation d'une action effectuée et le rétablissement d'une action annulée.</p></li>
     
         
 <li><p>Le <term> nom du classeur </term> est écrit dans la barre d'Accès rapide. Par défaut, Excel nomme le fichier Classeur 1. Les versions plus récentes d'Excel permettent de sauvegarder automatiquement le travail fait.</p></li>
     
-<li><p> Le <term> ruban </term> est composé d'une barre de menus (Fichier, Accueil, Insertion, Mise en page, Formules, Données, Affichage entre autres) et d'un groupe de commandes courantes dans chaque menu (outils courants regroupés par nature dans chaque onglet). </p></li>
+<li><p> Le <term> ruban </term> est composé d'une barre de menus (Fichier, Accueil, Insertion, Mise en page, Formules, Données, Affichage, entre autres) et d'un groupe de commandes courantes dans chaque menu (outils courants regroupés par nature dans chaque onglet). </p></li>
     
 <li><p> Une <term> feuille de calcul </term> est un quadrillage comportant des cases, appelées cellules, dans lesquelles on peut écrire du texte ou effectuer des calculs à l'aide de formules et de fonctions. </p></li>
     
-<li> <p> La <term> cellule de référence <c>C5</c> </term> est la cellule située à l'intersection de la colonne <c> C </c> et de la ligne <c> 5 </c>. <c>C5</c> est <term>l'adresse de la cellule</term>. Une cellule est dite <term> active </term> lorsqu'elle est sélectionnée. Dans ce cas, sa bordure est verte et épaisse. Les en-têtes de sa colonne et de sa ligne sont alors grisés. </p></li>
+<li> <p> La <term> cellule de référence <c>C5</c> </term> est la cellule située à l'intersection de la colonne <c> C </c> et de la ligne <c> 5 </c>. <c>C5</c> est <term>l'adresse de la cellule</term>. Une cellule est dite <term> active </term> lorsqu'elle est sélectionnée. Dans ce cas, sa bordure est verte et épaisse. Les entêtes de sa colonne et de sa ligne sont alors grisés. </p></li>
     
-<li> <p> La <term> plage de données</term>  <c>F13:H18</c>  correspond à l'ensemble des cellules contiguës comprises entre les colonnes <c>F</c> et <c>H</c> et entre les lignes <c>13 </c> et <c> 18 </c>.</p></li>    
+<li> <p> La <term> plage de données</term>  <c>F13:H18</c>  correspond à l'ensemble des cellules contigües comprises entre les colonnes <c>F</c> et <c>H</c> et entre les lignes <c>13 </c> et <c> 18 </c>.</p></li>    
     
-<li> <p> La <term> zone nom </term> permet d'afficher la référence d'une cellule (la lettre de sa colonne et le numéro de sa ligne) ou le nom qui lui a été attribuée. Cette zone permet également d'afficher le nom d'une plage de données. </p></li>
+<li> <p> La <term> zone nom </term> permet d'afficher la référence d'une cellule (la lettre de sa colonne et le numéro de sa ligne) ou le nom qui lui a été attribué. Cette zone permet également d'afficher le nom d'une plage de données. </p></li>
 
-<li> <p> La <term> barre de formule </term> permet d'afficher, d'entrer ou de modifier le contenu d'une cellule active. Le contenu peut être du texte, des nombres, des formules ou des fonctions. </p></li>
+<li> <p> La <term> barre de formule </term> permet d'afficher, d'entrer ou de modifier le contenu d'une cellule active. Le contenu peut être composé de texte, de nombres, de formules ou de fonctions. </p></li>
     
-<li> <p> Les <term> onglets de feuilles </term> représentent l'ensemble des feuilles de calcul qui composent le <term> classeur </term>. En cliquant droit sur l'onglet d'une feuille, un menu contextuel apparaît. Il est possible, entre autres, de renommer la feuille, de la déplacer, de la copier, de la masquer ou de la supprimer. </p></li>
+<li> <p> Les <term> onglets de feuilles </term> représentent l'ensemble des feuilles de calcul qui composent le <term> classeur </term>. En cliquant droit sur l'onglet d'une feuille, un menu contextuel apparait. Il est possible, entre autres, de renommer la feuille, de la déplacer, de la copier, de la masquer ou de la supprimer. </p></li>
 
-<li> <p> En cliquant l'icône <m> + </m> se situant à droite des onglets des feuilles, on peut <term> ajouter une nouvelle feuille </term> au classeur. </p> </li>
+<li> <p> En cliquant l'icône <m> + </m> située à droite des onglets des feuilles, on peut <term> ajouter une nouvelle feuille </term> au classeur. </p> </li>
     
-<li> <p> Les <alert>barres de défilement</alert> permettent se déplacer horizontalement et verticalement la feuille de calcul.</p> </li>
+<li> <p> Les <alert>barres de défilement</alert> permettent de déplacer horizontalement et verticalement la feuille de calcul.</p> </li>
     
 </ul>
 </p>
@@ -175,7 +175,7 @@
 
 <li> <p> Placer le curseur sur le numéro de la ligne à sélectionner jusqu'à ce qu'une flèche noire apparaisse au-dessus du numéro de la ligne (voir la <xref ref="Fig_Selection_Ligne"/>).</p></li>
     
-<li> <p>Une fois que la flèche apparaît, cliquer. La ligne entière sera sélectionnée. Elle sera grisée et entourée d'un cadre vert.</p>
+<li> <p>Une fois que la flèche apparait, cliquer. La ligne entière sera sélectionnée. Elle sera grisée et entourée d'un cadre vert.</p>
     
         <p> </p>
 
@@ -224,11 +224,11 @@
 </li>
     <p> </p>
     
-<li> <p>Cliquer et déplacer la flèche vers la gauche pour rétrécir la largeur de la colonne de gauche et vers la droite pour élargir la largeur de la colonne de gauche. Pour modifier la largeur d'une ligne, il faut placer le curseur entre deux lignes et déplacer la flèche vers le haut ou le bas selon l'effet désiré.</p> </li>
+<li> <p>Cliquer et déplacer la flèche vers la gauche pour rétrécir la largeur de la colonne de gauche et vers la droite pour élargir la largeur de la colonne de gauche. Pour modifier la largeur d'une ligne, il faut placer le curseur entre deux lignes et déplacer la flèche vers le haut ou le bas selon le résultat souhaité.</p> </li>
     
    
 
-<li> <p>Il est possible d'ajuster la largeur d'une colonne ou d'une ligne au contenu de celle-ci. Il suffit de double-cliquer lorsque la flèche bidirectionnelle apparaît.</p></li>    
+<li> <p>Il est possible d'ajuster la largeur d'une colonne ou d'une ligne au contenu de celle-ci. Il suffit de doublecliquer lorsque la flèche bidirectionnelle apparait.</p></li>    
 
 </ol>
 </p>    
@@ -249,9 +249,10 @@
 <subsubsection xml:id="sssec-NomTableau">
 <title>Attribuer un nom à une cellule ou à une plage de cellules</title>  
     
-    <p> </p>
 
-<p>La sélection de données est une opération courante dans Excel. Que ce soit pour l'utilisation de formules ou la création de graphiques, il est souvent nécessaire de sélectionner des cellules. Cette tâche peut être laborieuse lorsque la base de données est volumineuse. On risque de glisser trop loin avec la souris et devoir revenir en arrière, ou ne pas sélectionner suffisamment de cellules et omettre des données. Pour éviter ces problèmes, il est pratique d'attribuer un nom à une cellule ou à une plage de cellules. Cela permet de faire référence à ce nom dans une formule, peu importe la feuille de calcul dans laquelle on travaille.</p>     
+<p>La sélection de données est une opération courante dans Excel. En effet, que ce soit pour l'utilisation de formules ou la création de graphiques, il est souvent nécessaire de sélectionner des cellules. Cette tâche peut être laborieuse lorsque la base de données est volumineuse : on risque de glisser trop loin avec la souris, de devoir revenir en arrière, de ne pas sélectionner suffisamment de cellule et d'omettre des données, etc. Pour éviter ces problèmes, il est pratique d'attribuer un nom à une cellule ou à une plage de cellules. Cela permet de faire référence à ce nom dans une formule, peu importe la feuille de calcul dans laquelle on travaille.</p>     
+    
+   
     
     <p> Dans la feuille de calcul <alert>Données</alert> du fichier Excel, on attribue un nom au tableau principal, soit le nom &#xAB; Échantillon &#xBB;. Il existe deux façons d'effectuer cette opération.</p>   
     
@@ -296,7 +297,7 @@
 
     <li> <p> Cliquer sur l'onglet <alert> Formules </alert> du ruban (voir la <xref ref="Fig_Interface3"/>).  </p></li>
 
-    <li> <p> Dans le groupe <term> Noms définis</term>, cliquer sur l'icône <term> Définir un nom </term> (voir la <xref ref="Fig_Nom_Echantillon_3"/>). Une boîte de dialogue apparaît à l'écran.</p>
+    <li> <p> Dans le groupe <term> Noms définis</term>, cliquer sur l'icône <term> Définir un nom </term> (voir la <xref ref="Fig_Nom_Echantillon_3"/>). Une boite de dialogue apparait à l'écran.</p>
     <p> </p>
         
     <figure xml:id="Fig_Nom_Echantillon_3">
@@ -321,7 +322,7 @@
 </figure>
     </li>
     
-     <li><p>S'assurer que dans l'encadré de l'option <alert>Zone</alert> il soit écrit <alert>Classeur</alert>. Ceci garantit que le nom attribué à une plage de cellules est défini dans toutes les feuilles du classeur, permettant à l'utilisateur d'y faire référence quelle que soit la feuille de travail.</p></li>
+     <li><p>S'assurer que, dans l'encadré de l'option <alert>Zone</alert>, il soit écrit <alert>Classeur</alert>. Ceci garantit que le nom attribué à une plage de cellules est défini dans toutes les feuilles du classeur. Cela permet aussi à l'utilisateur ou à l'utilisatrice d'y faire référence quelle que soit la feuille de travail.</p></li>
     
   <li><p> Cliquer sur <alert>OK</alert>.</p> </li>     
     </ol>
@@ -352,7 +353,7 @@
 </figure>
     </li>
 
-<li> <p> Le nom <em> Échantillon </em> devrait apparaître (voir la <xref ref="Fig_Verification_Noms_1bis"/>). S'il n'apparaît pas, l'attribution de nom n'a pas été bien saisie.</p>
+<li> <p> Le nom <em> Échantillon </em> devrait apparaitre (voir la <xref ref="Fig_Verification_Noms_1bis"/>). S'il n'apparait pas, l'attribution de nom n'a pas été bien saisie.</p>
     
     <p> </p>
     
@@ -374,7 +375,7 @@
 <title> Attribuer un nom aux colonnes d'un tableau</title>
     <p> </p>
 
-<p>Il est pratique d'attribuer un nom aux colonnes d'un tableau puisqu'il est possible d'y faire référence dans des formules Excel, et ce, peu importe la feuille de calcul dans laquelle on travaille.</p> 
+<p>Il est pratique d'attribuer un nom aux colonnes d'un tableau puisqu'il est possible de faire référence à celles-ci dans des formules Excel, et ce, peu importe la feuille de calcul dans laquelle on travaille.</p> 
 
 <p>
 <ol> 
@@ -396,7 +397,7 @@
 
 
 
-<li> <p> Dans le groupe <alert> Noms définis</alert>, cliquer sur <alert> Depuis sélection </alert> (voir la <xref ref="Fig_Nommer_Colonnes_1"/>). Une boîte de dialogue s'ouvre.</p>
+<li> <p> Dans le groupe <alert> Noms définis</alert>, cliquer sur <alert> Depuis sélection </alert> (voir la <xref ref="Fig_Nommer_Colonnes_1"/>). Une boite de dialogue s'ouvre.</p>
     
     <p> </p>
     
@@ -408,7 +409,7 @@
 </figure>
     </li>
 
-<li> <p> Cliquer sur l'option <alert> Ligne du haut </alert> (voir la <xref ref="Fig_Nommer_Colonnes_2"/>). Ceci permettra à Excel d'attribuer l'en-tête de la première ligne comme nom à la colonne.</p>
+<li> <p> Cliquer sur l'option <alert> Ligne du haut </alert> (voir la <xref ref="Fig_Nommer_Colonnes_2"/>). Ceci permettra à Excel d'attribuer l'entête de la première ligne comme nom à la colonne.</p>
     <p> </p>
     
      <figure xml:id="Fig_Nommer_Colonnes_2">
@@ -419,7 +420,7 @@
 </figure>
     </li>
 
-<li> <p> Dans la <alert> zone nom</alert>, cliquer sur la flèche du menu déroulant pour vérifier que chaque colonne a été attribuée un nom (voir la figure <xref ref="Fig_Verification_Noms_2"/>).</p>
+<li> <p> Dans la <alert> zone nom</alert>, cliquer sur la flèche du menu déroulant pour vérifier qu'un nom a été attribué à chaque colonne (voir la figure <xref ref="Fig_Verification_Noms_2"/>).</p>
     <p> </p>
     
        <figure xml:id="Fig_Verification_Noms_2">
@@ -444,7 +445,7 @@
 <title>Figer et libérer les volets</title>
     
      
-<introduction><p> Lorsqu'on souhaite parcourir un tableau de grande tailler (beaucoup de lignes et/ou de colonnes), il est pratique de maintenir les titres des colonnes et/ou des lignes visibles pendant le défilement de la feuille de calcul. </p> </introduction>
+<introduction><p> Lorsqu'on souhaite parcourir un tableau de grande taille (beaucoup de lignes ou de colonnes), il est pratique de maintenir les titres des colonnes ou des lignes visibles pendant le défilement de la feuille de calcul. </p> </introduction>
     
     
   
@@ -468,7 +469,7 @@
     </li> 
     
     
-<li> <p>Sélectionner l'onglet <alert> Affichage </alert>. Dans le groupe <term> Fenêtre</term>, cliquer sur la flèche du menu déroulant de l'icône <term> Figer les volets </term> (voir la <xref ref="Fig_Figer_Volet_gif"/>) </p>
+<li> <p>Sélectionner l'onglet <alert> Affichage </alert>. Dans le groupe <term> Fenêtre</term>, cliquer sur la flèche du menu déroulant de l'icône <term> Figer les volets </term> (voir la <xref ref="Fig_Figer_Volet_gif"/>). </p>
     
     <p> </p>
     
@@ -522,7 +523,7 @@
 </ol>
 </p>
 
-<p> Maintenant, lorsque l'on fait défiler le tableau, les titres des colonnes restent visibles. Il est possible de verrouiller à la fois des lignes et des colonnes, ainsi que libérer les volets si nécessaire. </p>
+<p> Maintenant, lorsque l'on fait défiler le tableau, les titres des colonnes restent visibles. Il est possible de verrouiller à la fois des lignes et des colonnes, ainsi que de libérer les volets, si nécessaire. </p>
 </subsubsection>  
     
     
@@ -561,7 +562,7 @@
 <subsection xml:id="ssec_Filtrer_Trier">
 <title>Filtrer et trier des données</title>
    
-<introduction><p>Dans Excel, il est possible d'ajouter des filtres qui permettent de dépister des valeurs aberrantes ou manquantes, ainsi que de choisir ou masquer certaines modalités. Il est également possible de trier des séries statistiques dans un certain ordre voulu.</p></introduction>
+<introduction><p>Dans Excel, il est possible d'ajouter des filtres permettant de dépister des valeurs aberrantes ou manquantes, ainsi que de choisir ou masquer certaines modalités. Il est également possible de trier des séries statistiques dans un certain ordre voulu.</p></introduction>
     
 <subsubsection xml:id="sssec_Filtrer">
 <title>Ajouter des filtres</title>
@@ -589,7 +590,7 @@
 
 
     
-<li><p> Chaque variable affiche désormais un petit triangle dans une boîte grise à droite de son nom (voir la <xref ref="Fig_Filtres_2"/>). </p>
+<li><p> Chaque variable affiche désormais un petit triangle dans une boite grise à droite de son nom (voir la <xref ref="Fig_Filtres_2"/>). </p>
     <p> </p>
     
 <figure xml:id="Fig_Filtres_2">
@@ -622,13 +623,13 @@
     <title>Trier à partir des filtres</title>
     <p> </p>
     
-<p>Il existe deux façons de trier les données d'un tableau. La première est à partir des filtres. </p>  
+<p>Il existe deux façons de trier les données d'un tableau. La première se fait en utilisant des filtres. </p>  
     
 <p>
 <ol>
       
     
-<li> <p>En cliquant sur le petit triangle de filtre de la variable <alert>Âge</alert>, une boîte de dialogue s'ouvre. La première option permet de trier les valeurs par ordre croissant (plus petit au plus grand, A à Z pour les variables qualitatives), tandis que la deuxième option permet de trier les valeurs par ordre décroissant (du plus grand au plus petit, Z à A pour les variables qualitatives) (voir la <xref ref="Fig_Trier_2"/>). </p>
+<li> <p>En cliquant sur le petit triangle de filtre de la variable <alert>Âge</alert>, une boite de dialogue s'ouvre. La première option permet de trier les valeurs par ordre croissant (plus petit au plus grand, A à Z pour les variables qualitatives), tandis que la deuxième option permet de trier les valeurs par ordre décroissant (du plus grand au plus petit, Z à A pour les variables qualitatives) (voir la <xref ref="Fig_Trier_2"/>). </p>
     
     <p> </p>
     
@@ -653,7 +654,7 @@
 
     <p> </p>
     
-    <p>La deuxième façon de trier des données est à partir de l'onglet <alert>Données</alert>. </p>
+    <p>La deuxième façon de trier des données passe par l'onglet <alert>Données</alert>. </p>
 
 <p>
 <ol>
@@ -671,12 +672,12 @@
 </figure>
  </li>      
 
-<!-- <li> <p>Une boîte de dialogue s'ouvre (voir la <xref ref="Fig_Trier_3"/>). </p>
+<!-- <li> <p>Une boite de dialogue s'ouvre (voir la <xref ref="Fig_Trier_3"/>). </p>
     
 <figure xml:id="Fig_Trier_3">
-<caption>Boîte de dialogue pour le tri</caption>
+<caption>boite de dialogue pour le tri</caption>
 <image source="images/Fig_Trier_3.png" >
-<description>Boîte de dialogue pour le tri</description>
+<description>boite de dialogue pour le tri</description>
 </image>
 </figure>
  </li>  
@@ -695,14 +696,14 @@
     
     
     
-    <li> <p>Une boîte de dialogue s'ouvre.</p> 
+    <li> <p>Une boite de dialogue s'ouvre.</p> 
         
         <p>Il est possible de sélectionner la variable à trier et d'appliquer un tri croissant, un tri décroissant ou un tri personnalisé (voir la <xref ref="Fig_Trier_gif"/>). </p>
     
 <figure xml:id="Fig_Trier_gif">
-<caption>Boîte de dialogue pour le tri et options de variables à trier</caption>
+<caption>Boite de dialogue pour le tri et options de variables à trier</caption>
 <image source="images/Fig_Trier_gif.png" >
-<description>Boîte de dialogue pour le tri et options de variables à trier</description>
+<description>Boite de dialogue pour le tri et options de variables à trier</description>
 </image>
 </figure>
         <p></p>
@@ -727,7 +728,7 @@
     
     <p> </p>
     
-<introduction><p> Lorsqu'on réalise plusieurs études à partir d'une même base de données, il est préférable de travailler dans un seul classeur et d'effectuer chaque étude dans sa propre feuille de calcul distincte afin de faciliter la consultation.</p></introduction>
+<introduction><p> Lorsqu'on réalise plusieurs études à partir d'une même base de données, il est préférable de travailler dans un seul classeur et d'effectuer chaque étude dans une feuille de calcul distincte afin de faciliter la consultation.</p></introduction>
 
 
 <p>
@@ -787,7 +788,7 @@
         <subsubsection xml:id="RemplissageValeur">
             <title>Remplissage automatique d'une valeur</title>
             
-            <introduction><p>Il est possible de remplir une colonne avec la même valeur en utilisant la fonction de recopiage automatique d'Excel. Par exemple, dans un problème de physique ou de chimie, il se peut l'incertitude soit la même pour toutes les mesures et on aimerait la recopier sans taper manuellement la valeur plusieurs fois. Les étapes pour faire un remplissage automatique sont présentées ci-dessous.</p></introduction>
+            <introduction><p>Il est possible de remplir une colonne avec la même valeur en utilisant la fonction de recopiage automatique d'Excel. Par exemple, dans un problème de physique ou de chimie, il se peut que l'incertitude soit la même pour toutes les mesures et l'on aimerait la recopier sans taper manuellement la valeur plusieurs fois. Les étapes pour faire un remplissage automatique sont présentées ci-dessous.</p></introduction>
             
             <p>
             <ol>
@@ -807,9 +808,9 @@
                 
                 <li><p>Sélectionner la cellule jusqu'à ce qu'elle soit encadrée d'une bordure verte (<xref ref="Fig_Remplissage_gif1"/>).</p></li>
                 
-                <li><p>Cliquer et maintenir enfoncer le bouton gauche de la souris sur le coin inférieur droit de la cellule (un petit carré vert). Glisser le pointeur vers le bas jusqu'à la cellule voulue, la cellule <c>C17</c> dans ce cas (<xref ref="Fig_Remplissage_gif1"/>). </p></li>
+                <li><p>Cliquer et maintenir enfoncé le bouton gauche de la souris sur le coin inférieur droit de la cellule (un petit carré vert). Glisser le pointeur vers le bas jusqu'à la cellule voulue, la cellule <c>C17</c> dans ce cas (<xref ref="Fig_Remplissage_gif1"/>). </p></li>
                 
-                <li><p>Relâcher le bouton gauche de la souris. La valeur <m>1</m> apparaît dans toutes les cases sélectionnées, soit la plage <c>C5:C17</c> (<xref ref="Fig_Remplissage_gif1"/>). Le remplissage peut également être fait le long d'une ligne.</p></li>
+                <li><p>Relâcher le bouton gauche de la souris. La valeur <m>1</m> apparait dans toutes les cases sélectionnées, soit la plage <c>C5:C17</c> (<xref ref="Fig_Remplissage_gif1"/>). Le remplissage peut également être fait le long d'une ligne.</p></li>
                 
                 
             </ol>
@@ -839,7 +840,7 @@
                 
                 <li><p>Sélectionner les cellules <c>E5:E7</c> jusqu'à ce qu'elles soient encadrées d'une bordure verte (<xref ref="Fig_Remplissage_gif2"/>).</p></li>
                 
-                <li><p>Cliquer et maintenir enfoncer le bouton gauche de la souris sur le coin inférieur droit de la plage de cellules (un petit carré vert). Glisser le pointeur vers le bas jusqu'à la cellule voulue, la cellule <c>E17</c> dans ce cas (<xref ref="Fig_Remplissage_gif2"/>). Relâcher le bouton gauche de la souris une fois la cellule voulue atteinte. </p>
+                <li><p>Cliquer et maintenir enfoncé le bouton gauche de la souris sur le coin inférieur droit de la plage de cellules (un petit carré vert). Glisser le pointeur vers le bas jusqu'à la cellule voulue, la cellule <c>E17</c> dans ce cas (<xref ref="Fig_Remplissage_gif2"/>). Relâcher le bouton gauche de la souris une fois la cellule voulue atteinte. </p>
                 
                 <p>En sélectionnant trois cellules qui ont trois nombres consécutifs, Excel comprend qu'en effectuant un remplissage automatique, on veut poursuivre la séquence et non recopier ces trois valeurs. Ainsi, il remplit les cellules avec les nombres <m>4</m> à <m>13</m> (<xref ref="Fig_Remplissage_gif2"/>).</p>
                 </li>
@@ -853,9 +854,9 @@
     
         
                 <subsubsection xml:id="RemplissageValeurDouble">
-            <title>Remplissage automatique d'une valeur en double-cliquant</title>
+            <title>Remplissage automatique d'une valeur en doublecliquant</title>
             
-            <introduction> Il est possible de remplir une colonne adjacente à une autre en utilisant le double-clique. Les étapes sont présentées ci-dessous.</introduction>
+            <introduction> Il est possible de remplir une colonne adjacente à une autre en utilisant le doubleclique. Les étapes sont présentées ci-dessous.</introduction>
             
             <p>
             <ol>
@@ -864,16 +865,16 @@
                    <p> </p>
     
     <figure xml:id="Fig_Remplissage_gif3">
-<caption>Remplissage automatique d'une valeur ou d'une formule avec le double-clique</caption>
+<caption>Remplissage automatique d'une valeur ou d'une formule avec le doubleclique</caption>
 <image source="images/Fig_Remplissage_gif3.png" >
-<description>Remplissage automatique d'une valeur ou d'une formule avec le double-clique</description>
+<description>Remplissage automatique d'une valeur ou d'une formule avec le doubleclique</description>
 </image>
 </figure>
  </li>  
                 
                 <li><p>Sélectionner les cellules <c>F5:F6</c> jusqu'à ce qu'elles soient encadrées d'une bordure verte (<xref ref="Fig_Remplissage_gif3"/>).</p></li>
                 
-                <li><p>Double-cliquer le bouton gauche de la souris sur le coin inférieur droit de la plage de cellules (un petit carré vert) (voir la <xref ref="Fig_Remplissage_gif3"/>). La plage <c>F5:F17</c> se remplit automatiquement. Le remplissage arrête à la ligne <m>17</m>, car Excel remplit jusqu'à la même ligne que la colonne adjacente à la colonne <c>F</c>. </p> </li>
+                <li><p>Doublecliquer le bouton gauche de la souris sur le coin inférieur droit de la plage de cellules (un petit carré vert) (voir la <xref ref="Fig_Remplissage_gif3"/>). La plage <c>F5:F17</c> se remplit automatiquement. Le remplissage arrête à la ligne <m>17</m>, car Excel remplit jusqu'à la même ligne que la colonne adjacente à la colonne <c>F</c>. </p> </li>
                 
                 
             </ol>
@@ -889,7 +890,7 @@
 <subsection xml:id="ssec_TCD">
 <title>Tableau croisé dynamique</title>
 
-<introduction><p> Lorsque l'on dispose d'une vaste base de données, il peut être difficile de mettre en évidence les faits saillants. Excel permet de créer des tableaux croisés dynamiques pour organiser, présenter, synthétiser et analyser des données. Pour ce faire, il est crucial que les données de chaque variable soient initialement organisées en colonnes dans un seul tableau maître. Le mot &#xAB; croisé &#xBB; fait référence à la possibilité de regrouper et de comparer plusieurs variables, tandis que le mot &#xAB; dynamique &#xBB; souligne la capacité du tableau à évoluer. En effet, si une valeur est modifiée dans la base de données, le tableau croisé dynamique peut être mis à jour. À partir d'un tableau croisé dynamique, il est possible de générer un tableau de fréquences pour visualiser la répartition des unités statistiques en fonction d'une variable. </p>
+<introduction><p> Lorsque l'on dispose d'une vaste base de données, il peut être difficile de mettre en évidence les faits saillants. Excel permet de créer des tableaux croisés dynamiques pour organiser, présenter, synthétiser et analyser des données. Pour ce faire, il est crucial que les données de chaque variable soient initialement organisées en colonnes dans un seul tableau maitre. Le mot &#xAB; croisé &#xBB; fait référence à la possibilité de regrouper et de comparer plusieurs variables, tandis que le mot &#xAB; dynamique &#xBB; souligne la capacité du tableau à évoluer. En effet, si une valeur est modifiée dans la base de données, le tableau croisé dynamique peut être mis à jour. À partir d'un tableau croisé dynamique, il est possible de générer un tableau de fréquences pour visualiser la répartition des unités statistiques en fonction d'une variable. </p>
     
 <p> La première enquête du laboratoire 2 porte sur la répartition des femmes d'origine pima de l'Arizona selon la présence de diabète. Ainsi, on génère un tableau croisé dynamique de cette distribution. Il existe deux méthodes pour le générer.</p></introduction> 
     
@@ -919,23 +920,23 @@
 </figure>
  </li>     
 
-<li> <p> Cliquer le premier icône, soit <term> Tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_1"/>). </p></li>
+<li> <p> Cliquer la première icône, soit <term> Tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_1"/>). </p></li>
 
     
-    <li> <p>Une boîte de dialogue apparaît à l'écran.</p> 
+    <li> <p>Une boite de dialogue apparait à l'écran.</p> 
         
         <p>Dans la zone de saisie <alert>Tableau/Plage</alert>, écrire le nom donné au tableau principal, soit <em>Échantillon</em> (voir la <xref ref="Fig_TCD_Methode1_gif"/>)</p>
   <p> </p>  
     
 <figure xml:id="Fig_TCD_Methode1_gif">
-<caption>Boîte de dialogue pour l'insertion d'un tableau croisé dynamique et saisie du nom donné au tableau principal, soit <em>Échantillon</em></caption>
+<caption>Boite de dialogue pour l'insertion d'un tableau croisé dynamique et saisie du nom donné au tableau principal, soit <em>Échantillon</em></caption>
 <image source="images/Fig_TCD_Methode1_gif.png" >
-<description>Boîte de dialogue pour l'insertion d'un tableau croisé dynamique et saisie du nom donné au tableau principal, soit Échantillon</description>
+<description>Boite de dialogue pour l'insertion d'un tableau croisé dynamique et saisie du nom donné au tableau principal, soit Échantillon</description>
 </image>
 </figure>
  </li> 
 
-<!-- <li> <p>Une boîte de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_1bis"/>).</p>
+<!-- <li> <p>Une boite de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_1bis"/>).</p>
   <p> </p>  
     
 <figure xml:id="Fig_TCD_1bis">
@@ -997,10 +998,10 @@
 </figure>
  </li>     
 
-<li> <p> Cliquer sur le premier icône, soit <term> Tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_1"/>). </p></li>
+<li> <p> Cliquer sur la première icône, soit <term> Tableau croisé dynamique </term> (voir la <xref ref="Fig_TCD_1"/>). </p></li>
 
     
-    <li> <p>Une boîte de dialogue s'ouvre. La plage de données à partir de laquelle on veut créer un tableau croisé dynamique est bien sélectionnée. </p>
+    <li> <p>Une boite de dialogue s'ouvre. La plage de données à partir de laquelle on veut créer un tableau croisé dynamique est bien sélectionnée. </p>
         
         <p>Cliquer sur l'option <alert> Feuille de calcul existante </alert> pour déterminer l'emplacement du tableau croisé dynamique (voir la <xref ref="Fig_TCD_Methode2_gif2"/>)</p>
   <p> </p>  
@@ -1015,7 +1016,7 @@
 </figure>
  </li>   
 
-<!-- <li> <p>Une boîte de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_2_bis"/>). La plage de données à partir de laquelle on veut créer un tableau croisé dynamique est bien sélectionnée. </p>
+<!-- <li> <p>Une boite de dialogue s'ouvrira (voir la <xref ref="Fig_TCD_2_bis"/>). La plage de données à partir de laquelle on veut créer un tableau croisé dynamique est bien sélectionnée. </p>
   <p> </p>  
     
     
@@ -1076,7 +1077,7 @@
 </ol>
 </p>    
 <p> </p>
-        <p> Une fois le tableau croisé dynamique généré, il faut le configurer. À la droite de la feuille de calcul, les champs du tableau croisé dynamique s'affichent. Les champs correspondent aux en-têtes des colonnes du tableau source. On trouve cinq encadrés : le premier contient les champs. Les encadrés <term>Colonnes</term>, <term>Lignes</term> et <term>Valeurs</term> représentent des zones où l'on peut ajouter des champs. L'encadré <term>Valeurs</term> permet d'effectuer des calculs au sein du tableau croisé dynamique, tandis que l'encadré <term>Filtres</term> sert à appliquer des filtres aux données lors de la création du tableau.</p>
+        <p> Une fois le tableau croisé dynamique généré, il faut le configurer. À la droite de la feuille de calcul, les champs du tableau croisé dynamique s'affichent. Les champs correspondent aux entêtes des colonnes du tableau source. On trouve cinq encadrés : le premier contient les champs. Les encadrés <term>Colonnes</term>, <term>Lignes</term> et <term>Valeurs</term> représentent des zones où l'on peut ajouter des champs. L'encadré <term>Valeurs</term> permet d'effectuer des calculs au sein du tableau croisé dynamique, tandis que l'encadré <term>Filtres</term> sert à appliquer des filtres aux données lors de la création du tableau.</p>
     
 
     
@@ -1089,7 +1090,7 @@
 <title>Remplir un tableau croisé dynamique</title>    
     <p> </p>
     
-<p>  Avec 768 femmes étudiées, il est évident qu'un décompte manuel des femmes diabétiques est à la fois long, laborieux et sujet à de nombreuses erreurs. Les étapes pour créer le tableau croisé dynamique de la répartition des femmes Pima selon la présence de diabète sont présentées ci-dessous.</p>    
+<p>  Avec 768 femmes étudiées, il est évident qu'un décompte manuel des femmes diabétiques est à la fois long, laborieux et sujet à de nombreuses erreurs. Les étapes pour créer le tableau croisé dynamique de la répartition des femmes pima selon la présence de diabète sont présentées ci-dessous.</p>    
     
     
 <p>
@@ -1121,7 +1122,7 @@
     
     
     
-<p>Les modalités de la variable <alert>Atteint</alert> s'affichent dans le première colonne du tableau croisé dynamique (voir la <xref ref="Fig_Atteint_1"/>).</p>
+<p>Les modalités de la variable <alert>Atteint</alert> s'affichent dans la première colonne du tableau croisé dynamique (voir la <xref ref="Fig_Atteint_1"/>).</p>
     <p> </p>
     
 <figure xml:id="Fig_Atteint_1">
@@ -1145,7 +1146,7 @@
 </image>
 </figure>
     
-    <p>Une nouvelle boîte de dialoge apparaît.</p>
+    <p>Une nouvelle boite de dialogue apparait.</p>
   
  </li>    
     
@@ -1165,7 +1166,7 @@
  </li>    
     
 
-    <li> <p> Par défaut, Excel effectue la somme des valeurs comme opération. Cependant, on veut compter le nombre de femmes dans chaque catégorie. Dans la zone de saisie <alert> Valeurs </alert>, cliquer sur la flèche du menu déroulant, puis sélectionner l'option <term> Paramètres des champs de valeurs </term> (voir la <xref ref="Fig_TCD_Atteint_4"/>) pour modifier le calcul. Une nouvelle boîte de dialoge apparaîtra.</p>
+    <li> <p> Par défaut, Excel effectue la somme des valeurs comme opération. Cependant, on veut compter le nombre de femmes dans chaque catégorie. Dans la zone de saisie <alert> Valeurs </alert>, cliquer sur la flèche du menu déroulant, puis sélectionner l'option <term> Paramètres des champs de valeurs </term> (voir la <xref ref="Fig_TCD_Atteint_4"/>) pour modifier le calcul. Une nouvelle boite de dialogue apparaitra.</p>
     <p> </p>
         
     <figure xml:id="Fig_TCD_Atteint_4">
@@ -1204,7 +1205,7 @@
 </figure>      
  </li>       
 
-<li> <p> Refaire les étapes 2 à 4 pour ajouter une troisième colonne au tableau croisé dynamique. On veut ajouter une colonne pour le pourcentage de femmes d'origine pima atteinte ou non du diabète. </p></li>
+<li> <p> Refaire les étapes 2 à 4 pour ajouter une troisième colonne au tableau croisé dynamique. On veut ajouter une colonne pour le pourcentage de femmes d'origine pima atteintes ou non du diabète. </p></li>
 
 
 <li> <p> À l'onglet <alert> Synthèse des valeurs par </alert>, sélectionner l'option <alert> Nombre </alert> (voir la <xref ref="Fig_TCD_Atteint_5"/>). Attention, il ne faut pas cliquer sur <alert>OK</alert> tout de suite!</p></li>
@@ -1296,7 +1297,7 @@
         </ol>
         </p>
     
-        <p> Dans le prochain laboratoire, les étapes pour améliorer la présentation de ce tableau afin qu'il soit conforme aux normes statistiques seront abordées.</p> 
+        <p> Dans le prochain laboratoire seront abordées les étapes pour améliorer la présentation de ce tableau afin qu'il soit conforme aux normes statistiques .</p> 
         
     </subsubsection>
     

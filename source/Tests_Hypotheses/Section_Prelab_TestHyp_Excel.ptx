@@ -7,7 +7,7 @@
     
     <p>Ensuite, la collecte de données est effectuée à l'aide de l'outil de collecte approprié. Une fois les données récoltées, il convient de les organiser et de les traiter. </p>
 
-    <p>Le but ultime d'une étude scientifique est de répondre aux questions de recherche en généralisant les résultats d'un échantillon à la population. Les résultats observés dans l'échantillon révèlent-ils un changement dans le comportement de la population, ou sont-ils simplement dus au hasard de l'échantillonnage? La prochaine étape de la recherche consiste donc à réaliser des tests d'hypothèse paramétriques, notamment des tests d'hypothèse sur une moyenne, des tests sur une proportion, des tests de comparaison entre deux moyennes et des tests de comparaison entre deux proportions. Ce sera l'occasion de se familiariser avec les canevas créés et de comprendre les subtilités des tests d'hypothèse paramétriques.</p>
+    <p>Le but ultime d'une étude scientifique est de répondre aux questions de recherche en généralisant les résultats d'un échantillon à la population. Les résultats observés dans l'échantillon révèlent-ils un changement dans le comportement de la population, ou sont-ils simplement dus au hasard de l'échantillonnage? Dans les laboratoires 1, 2 et 3, il a été question de traitement et d'organisation de données. La prochaine étape de la recherche consiste à réaliser des tests d'hypothèse paramétriques, notamment des tests d'hypothèse sur une moyenne, des tests sur une proportion, des tests de comparaison entre deux moyennes et des tests de comparaison entre deux proportions. Ce sera l'occasion de se familiariser avec les canevas créés et de comprendre les subtilités des tests d'hypothèse paramétriques.</p>
     
 
       
@@ -21,15 +21,15 @@
 
 <objectives>
     <ul>
-       <li><p>Examiner les séries statistiques.</p></li>
+       <li><p>Examiner des déries statistiques.</p></li>
       <li><p>Effectuer une revue de la littérature.</p></li>
-      <li><p>Poser un regard critique sur les données.</p></li>
+      <li><p>Poser un regard critique sur des données.</p></li>
       <li><p>Formuler des hypothèses de recherche.</p></li>
       <li><p>Se questionner sur la généralisation des mesures échantillonnales à la population.</p></li> 
     </ul>
   </objectives>
         
-        <p>Dans ce prochain laboratoire, quatre bases de données seront exploitées, chacune correspondant à un test d'hypothèse spécifique. Pour le test d'hypothèse sur une moyenne, on analysera les données des précipitations totales reçues au mois de mars 2024, présentées à la <xref ref="sec-Precipitations"/>.Le test d'hypothèse sur une proportion s'appuiera sur les données démographiques des soldats de l'armée américaine disponibles à la <xref ref="sec-Armee"/>. Pour le test sur deux moyennes indépendantes, les données diagnostiques des femmes d'origine pima d'Arizona (voirla <xref ref="sec-Diabete"/>) seront utilisées. Enfin, concernant le test sur deux moyennes dépendantes, une étude sur la qualité de l'air à Montréal sera réalisée avec les données présentées à la <xref ref="sec-Polluants"/>.</p>
+   <!--     <p>Dans ce prochain laboratoire, quatre bases de données seront exploitées, chacune correspondant à un test d'hypothèse spécifique. Pour le test d'hypothèse sur une moyenne, on analysera les données des précipitations totales reçues au mois de mars 2024, présentées à la <xref ref="sec-Precipitations"/>. Le test d'hypothèse sur une proportion s'appuiera sur les données démographiques des soldats de l'armée américaine disponibles à la <xref ref="sec-Armee"/>. Pour le test sur deux moyennes indépendantes, les données diagnostiques des femmes d'origine pima d'Arizona (voirla <xref ref="sec-Diabete"/>) seront utilisées. Enfin, concernant le test sur deux moyennes dépendantes, une étude sur la qualité de l'air à Montréal sera réalisée avec les données présentées à la <xref ref="sec-Polluants"/>.</p>-->
 
 <page>  
     
@@ -38,7 +38,7 @@
   </exercise>
     
     <exercise xml:id="TestHyp_2" workspace="2.5in">
-        <statement><p> Justifier la réponse de l'exercice <xref ref="TestHyp_1" text="local"/> avec les calculs appropriés (cote z ou probabilité d'obtenir un tel résultat).</p></statement>
+        <statement><p> Justifier la réponse de l'exercice <xref ref="TestHyp_1" text="local"/> avec les calculs appropriés (cote z ou probabilité d'obtenir un tel résultat, soit piger six billes vertes).</p></statement>
   </exercise>
     
     <exercise xml:id="TestHyp_3" workspace="2.5in">
@@ -49,12 +49,12 @@
     
    
 
-     <exercise  xml:id="TestHyp_4" workspace="2.5in">
+   <!--  <exercise  xml:id="TestHyp_4" workspace="2.5in">
   <statement><p>Dans un test d'hypothèse, est-ce le paramètre de la population ou la statistique de l'échantillon qui est testé? Expliquer.</p></statement>
-  </exercise>
+  </exercise>-->
     
     <exercise xml:id="TestHyp_5" workspace="2.5in">
-  <statement><p>Une personne enseignante veut effectuer une expérience en classe avec ses élèves. Elle donne à chaque élève un dé à six faces. Elle souhaite savoir quels dés sont truqués (pipés). Pour le déterminer, les élèves doivent les lancer plusieurs fois et noter la distribution des résultats obtenus. Lors de l'élaboration d'un test d'hypothèse, il faut formuler une hypothèse de base et une hypothèse alternative. L'hypothèse de base, soit <m>H_{0}</m>, communément appelée l'hypothèse nulle, est un énoncé à tester partant de l'idée qu'il n'y a pas de différence significative dans le paramètre mesuré. L'hypothèse alternative est l'énoncé contraire à l'hypothèse nulle, soit qu'il y a une différence dans le paramètre mesuré. Dans ce scénario, pourquoi est-ce que l'hypothèse nulle serait que le dé n'est pas pipé. Pourquoi est-ce que l'hypothèse alternative serait que le dé est pipé? Expliquer.</p></statement>
+  <statement><p>Une personne enseignante veut effectuer une expérience en classe avec ses élèves. Elle donne à chaque élève un dé à six faces. Elle souhaite savoir quels dés sont truqués (pipés). Pour le déterminer, les élèves doivent les lancer plusieurs fois et noter la distribution des résultats obtenus. Lors de l'élaboration d'un test d'hypothèse, il faut formuler une hypothèse de base et une hypothèse alternative. L'hypothèse de base, soit <m>H_{0}</m>, communément appelée l'hypothèse nulle, est un énoncé à tester partant de l'idée qu'il n'y a pas de différence significative dans le paramètre mesuré ou de l'idée que la distribution obtenue se répartit selon un modèle théorique connu. L'hypothèse alternative est l'énoncé contraire à l'hypothèse nulle, soit qu'il y a une différence dans le paramètre mesuré. Dans ce scénario, pourquoi est-ce que l'hypothèse nulle serait que le dé n'est pas pipé. Pourquoi est-ce que l'hypothèse alternative serait que le dé est pipé? Expliquer.</p></statement>
   </exercise>
     
       <!--<exercise xml:id="TestHyp_6" workspace="2.5in">
@@ -66,21 +66,21 @@
   </exercise>-->
     
     <exercise xml:id="TestHyp_7" workspace="2.5in">
-   <statement><p>La quantité moyenne quotidienne de précipitations totales reçues au courant du mois de mars à Montréal entre 1991 et 2020 est de <m>2,49</m> mm par jour. Cependant, ces dernières années, de nombreux Montréalais ont l'impression que les précipitations mensuelles sont en baisse (<fn><url href="https://www.lapresse.ca/actualites/environnement/2022-11-13/la-premiere-neige-de-plus-en-plus-tardive.php"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://ici.radio-canada.ca/nouvelle/2038368/deficit-significatif-neige-quebec"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://lactualite.com/actualites/montreal-a-perdu-le-tiers-de-sa-neige-depuis-1863/"/>, page consultée le 23 novembre 2024</fn>). Pour vérifier cette hypothèse, on souhaite réaliser un test d'hypothèse sur une moyenne en se basant sur les données échantillonnales d'Environnement Canada pour le mois de mars 2024 (voir la <xref ref="sec-Precipitations"/>) comme échantillon pour vérifier si la quantité moyenne de précipitations a diminué. On a obtenu une valeur de <m>1,93</m> mm par jour. Il se peut que l'échantillon prélevé a donné une moyenne un peu plus basse que le paramètre de la population. C'est ce qu'on appelle la variabilité échantillonnale. Chaque échantillon donne une moyenne différente. Il se peut que la différence n'est pas simplement due au hasard de l'échantillonnage. Sans faire de calculs, est-ce que la différence entre <m>2,49</m> mm et <m>1,93</m> mm paraît grande à première vue, et donc significative? </p></statement>
+   <statement><p>La quantité moyenne quotidienne de précipitations totales reçues au courant du mois de mars à Montréal entre 1991 et 2020 est de <m>2,49</m> mm par jour. Cependant, ces dernières années, de nombreux Montréalais ont l'impression que les précipitations mensuelles sont en baisse (<fn><url href="https://www.lapresse.ca/actualites/environnement/2022-11-13/la-premiere-neige-de-plus-en-plus-tardive.php"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://ici.radio-canada.ca/nouvelle/2038368/deficit-significatif-neige-quebec"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://lactualite.com/actualites/montreal-a-perdu-le-tiers-de-sa-neige-depuis-1863/"/>, page consultée le 23 novembre 2024</fn>). Pour vérifier cette hypothèse, on souhaite réaliser un test d'hypothèse sur une moyenne en se basant sur les données échantillonnales d'Environnement Canada pour le mois de mars 2024 (voir la <xref ref="sec-Precipitations"/>) pour vérifier si la quantité moyenne de précipitations a diminué. On a obtenu une valeur de <m>1,93</m> mm par jour. Il se peut que l'échantillon prélevé a donné une moyenne un peu plus basse que le paramètre de la population. C'est ce qu'on appelle la variabilité échantillonnale. Chaque échantillon donne une moyenne différente et rarement égale à la moyenne de la population. Il se peut que la différence n'est pas simplement due au hasard de l'échantillonnage. Sans faire de calculs, est-ce que la différence entre <m>2,49</m> mm (<m>\mu</m>) et <m>1,93</m> mm (<m>\bar{x}</m>) paraît grande à première vue, et donc significative? Justifier ce choix.</p></statement>
   </exercise>
     
-    <exercise xml:id="TestHyp_8" workspace="2.5in">
-   <statement><p>À l'exercice <xref ref="TestHyp_7"/>, si l'on effectuait un test d'hypothèse sur une moyenne, avec pour hypothèse nulle que la quantité moyenne de précipitations totales reçues par jour en mars est la même que la valeur historique de <m>2,49</m> mm, et pour hypothèse alternative de recherche que la moyenne a changé et est inférieure à <m>2,49</m> mm par jour, s'attend-on à rejeter ou non l'hypothèse nulle selon la valeur échantillonnale obtenue? Quelles sont les attentes intuitives? Dans le cas présent, le test est-il nécessaire? En d'autres mots, la conclusion semble-t-elle évidente? </p></statement>
+  <!--  <exercise xml:id="TestHyp_8" workspace="2.5in">
+   <statement><p>À l'exercice <xref ref="TestHyp_7"/>, si l'on effectuait un test d'hypothèse sur une moyenne, avec pour hypothèse nulle que la quantité moyenne de précipitations totales reçues par jour en mars est la même que la valeur historique de <m>2,49</m> mm, et pour hypothèse alternative de recherche que la moyenne a changé et est inférieure à <m>2,49</m> mm par jour, s'attend-on à rejeter ou non l'hypothèse nulle selon la valeur échantillonnale obtenue (<m>1,93</m> mm)? Quelles sont les attentes intuitives? Dans le cas présent, un test est-il nécessaire? En d'autres mots, la conclusion semble-t-elle évidente? </p></statement>
   </exercise>
     
     <exercise xml:id="TestHyp_9" workspace="2.5in">
    <statement><p>Outre la moyenne échantillonnale, quels facteurs peuvent influencer la conclusion d'un test d'hypothèse sur une moyenne? </p></statement>
-  </exercise>
+  </exercise>-->
     
     
-    <exercise xml:id="TestHyp_10" workspace="2.5in">
+  <!--  <exercise xml:id="TestHyp_10" workspace="2.5in">
    <statement><p>Selon un rapport démographique de la communauté militaire américaine <fn><url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, page 29 consultée le 30 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. En 2011, un échantillon aléatoire de <m>6068</m> membres de l'armée américaine a été prélevé dans lequel <m>37,5\%</m> des soldats étaient de minorités ethniques. On pourrait supposer que la proportion de membres issus de minorité ethnique augmente à chaque année. Cependant, il se peut que l'échantillon prélevé a donné une proportion un peu plus élevée que le paramètre de la population par hasard de l'échantillonnage. Sans faire de calculs, est-ce que la différence entre <m>30,5\%</m> et <m>37,5\%</m> paraît grande à première vue, et donc significative?</p></statement>
-  </exercise>
+  </exercise>-->
     
    <!--   <exercise xml:id="TestHyp_10" workspace="2.5in">
    <statement><p>Dans le <xref ref="chap-Varquant"/>, portant sur les données diagnostiques d'un échantillon de 768 femmes d'origine pima en Arizona, plusieurs variables ont été traitées et analysées. L'indice de masse corporelle moyen  de 757 de ces femmes a été évalué à 32,5, alors que le seuil pour être considéré obèse est 30. Il se peut que l'échantillon prélevé a donné une moyenne un peu plus élevée que le seuil de Santé Canada. C'est ce qu'on appelle la variabilité échantillonnale. Chaque échantillon donne une moyenne différente. Il se peut que la différence n'est pas simplement due au hasard de l'échantillonnage. Sans faire de calculs, est-ce que la différence entre 32,5 et 30 paraît grande, et donc significative? </p></statement>
@@ -91,13 +91,13 @@
   </exercise>-->
     
     
-     <exercise xml:id="TestHyp_11" workspace="2.5in">
+  <!--   <exercise xml:id="TestHyp_11" workspace="2.5in">
    <statement><p>Dans le <xref ref="chap-Varquant"/>, on a comparé l'indice de masse corporelle moyen des femmes pimas atteintes de diabète, qui s'élève à <m>35,41</m>, à celui des femmes non diabétiques, qui est de <m>30,86</m>. Sans effectué de calculs, la différence paraît-elle significative? Si l'hypothèse nulle stipule que les femmes pimas atteintes de diabète ont le même indice de masse corporelle que celles qui n'en souffrent pas, doit-on s'attendre à rejeter cette hypothèse? Justifier. Un test d'hypothèse sur la comparaison de deux moyennes indépendantes est-il nécessaire?</p></statement>
   </exercise>
     
   <exercise xml:id="TestHyp_12" workspace="2.5in">
    <statement><p>On souhaite comparer la qualité de l'air le jour précédant et le jour suivant le grand déluge qu'a connu la ville de Montréal le 9 août 2024, en s'appuyant sur les mesures des particules fines (les <alert><m>PM_{2,5}</m></alert>). Les mesures proviennent des mêmes onze stations actives dans la région montréalaise. L'hypothèse nulle du test sur deux moyennes dépendantes est qu'il n'y a aucune différence entre la quantité de particules fines le jour précédant et suivant le grand déluge. Si la moyenne échantillonnale des différences est d'environ <m>-2,09</m> avec un écart type corrigé de <m>1,38</m>, doit-on s'attendre à rejeter cette hypothèse? Justifier. Un test d'hypothèse de deux moyennes dépendantes est-il nécessaire? </p></statement>
-  </exercise>
+  </exercise>-->
      
      </page>
        

@@ -1014,18 +1014,13 @@
             </li>
             
             
-            <li><p>Les bandes d'un histogramme doivent être collées. Sur une des bandes, cliquer avec le bouton de droite de la souris et sélectionner l'option <alert>Mettre en forme une série de données</alert> (voir la <xref ref="Fig_IMC_HistoF_10"/>). </p>
-                <p></p>
-                
-                 <figure xml:id="Fig_IMC_HistoF_10">
+            <li><p>Les bandes d'un histogramme doivent être collées. Sur une des bandes, cliquer avec le bouton de droite de la souris et sélectionner l'option <alert>Mettre en forme une série de données</alert> (voir la <xref ref="Fig_IMC_HistoF_10"/>). </p>               
+<figure xml:id="Fig_IMC_HistoF_10">
 <caption>Sélection de l'option <alert>Mettre en forme une série de données</alert></caption>
 <image source="images/Fig_IMC_HistoF_10.png" >
-<description>Sélection de l'option Mettre en forme une série de données</description>
+<shortdescription>Sélection de l'option Mettre en forme une série de données</shortdescription>
 </image>
-</figure>
-                
-                <p></p>
-              
+</figure>                          
             </li>
             
             <li><p>Une boîte de dialogue grise avec des options de séries s'affiche à la droite de la feuille de calcul (voir la <xref ref="Fig_IMC_HistoF_gif_2"/>). </p>
@@ -1034,7 +1029,7 @@
                 <p></p>
                 
                  <figure xml:id="Fig_IMC_HistoF_gif_2">
-<caption>Mettre <m>0%</m> comme largeur des intervalles entre les bandes au lieu de <m>219%</m></caption>
+<caption>Mettre <m>0\%</m> comme largeur des intervalles entre les bandes au lieu de <m>219\%</m></caption>
 <image source="images/Fig_IMC_HistoF_gif_2.png" >
 <description>Mettre 0% comme largeur des intervalles entre les bandes au lieu de 219%</description>
 </image>

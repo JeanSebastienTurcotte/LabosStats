@@ -3,7 +3,7 @@
 <section xml:id="sec-Postlab_Introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Réflexions</title>
     
-    <p>Avant d'entamer une collecte de données, toute personne chercheuse doit suivre un processus de recherche rigoureux, essentiel pour porter un jugement critique sur le sujet étudié. La première étape consiste à définir les objectifs de la recherche. En général, des hypothèses de recherche sont formulées avant de procéder à la collecte de données. Ce postlab vise à développer une compréhension intuitive des informations que révèlent les données avant d'entreprendre une étude quantitative plus approfondie. On rappelle que l'objectif de cette étude est de prédire, à partir de ses indicateurs de santé, si une femme d'origine pima est atteinte ou non du diabète. </p>
+    <p>Avant d'entamer une collecte de données, toute personne chercheuse doit suivre un processus de recherche rigoureux et essentiel pour porter un jugement critique sur le sujet étudié. La première étape consiste à définir les objectifs de la recherche. En général, des hypothèses de recherche sont formulées avant de procéder à la collecte de données. Ce postlab vise à développer une compréhension intuitive des informations que révèlent les données avant d'entreprendre une étude quantitative plus approfondie. On rappelle que l'objectif de cette étude est de prédire, à partir de ses indicateurs de santé, si une femme d'origine pima est atteinte ou non du diabète. </p>
        
     
 <worksheet xml:id="ws-Reflexion_Introduction">
@@ -25,7 +25,7 @@
 <li><p>Trier en ordre décroissant selon la colonne <alert>Nombre de grossesses</alert>;</p></li>
 <li><p>Trier en ordre croissant selon la colonne <alert>Épaisseur peau</alert>.</p></li>
 </ul></p>
-<p>Dans la feuille <alert>Étude atteint</alert>, cliquer avec le bouton de droit sur le tableau croisé dynamique et cliquer sur <alert>Afficher la liste de champs</alert>. Glisser le champ <alert>Nombre de grossesses</alert> dans la zone filtre. Un nouvel élément apparait au-dessus du tableau croisé dynamique. Explorer cet ajout et son effet sur le tableau. S'assurer de remettre la valeur du filtre sur <alert>(Tous)</alert> une fois l'exploration terminée.</p>
+<p>Dans la feuille <alert>Étude atteint</alert>, cliquer avec le bouton de droite sur le tableau croisé dynamique et cliquer sur <alert>Afficher la liste de champs</alert>. Glisser le champ <alert>Nombre de grossesses</alert> dans la zone filtre. Un nouvel élément apparait au-dessus du tableau croisé dynamique. Explorer cet ajout et son effet sur le tableau. S'assurer de remettre la valeur du filtre sur <alert>(Tous)</alert> une fois l'exploration terminée.</p>
 </statement>
 </exercise>
   <exercise xml:id="Postlab_1" workspace="2.5in">
@@ -40,7 +40,7 @@
     
     <page>
   <exercise workspace="2.5in">
-  <statement><p>Une hypothèse de recherche est un énoncé &#xAB; provisoire à une ou plusieurs questions de recherche &#xBB; <fn>MORNEAU, S. (2024). Probabilités et statistique en sciences de la nature. Les Éditions CEC. p.4</fn>. Suite aux observations faites à l'exercice <xref ref="Postlab_1"/>, formuler des hypothèses de recherche qui paraissent plausibles, sont appuyées du contexte théorique et pourraient répondre aux observations formulées à l'exercice précédent. </p>   </statement> <!-- un énoncé ou une affirmation vérifiable concernant un effet attendu, qu'on croit est vrai, et qu'on croit répond à la question de départ-->
+  <statement><p>Une hypothèse de recherche est un énoncé &#xAB; provisoire à une ou plusieurs questions de recherche &#xBB; <fn>MORNEAU, S. (2024). Probabilités et statistique en sciences de la nature. Les Éditions CEC. p.4</fn>. À la suite des observations faites à l'exercice <xref ref="Postlab_1"/>, formuler des hypothèses de recherche qui paraissent plausibles, sont appuyées par un contexte théorique et pourraient répondre aux observations formulées à l'exercice précédent. </p>   </statement> <!-- un énoncé ou une affirmation vérifiable concernant un effet attendu, qu'on croit est vrai, et qu'on croit répond à la question de départ-->
   </exercise>
     
   <exercise workspace="2.5in">

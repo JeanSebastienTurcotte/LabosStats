@@ -45,7 +45,7 @@
     </exercise>
     
     <exercise>
-    <statement><p>Le choix de l'amplitude et du nombre de classes d'un histogramme peut influencer l'interprétation du graphique. Dans une nouvelle feuille de calcul intitulée <alert>Étude IMC 2</alert>, reproduire l'histogramme de la répartition de l'échantillon des femmes d'origine pima selon l'indice de masse corporelle en regroupant les données en cinq classes. Il es préférable de refaire le tableau croisé dynamique. Il se peut que ceci affecte le regroupement fait à la <xref ref="sssec_Grouper"/>. Interpréter l'allure du graphique. Comparer l'histogramme reproduit à l'histogramme fait à la <xref ref="sssec_Histogramme"/>.</p>
+    <statement><p>Le choix de l'amplitude et du nombre de classes d'un histogramme peut influencer l'interprétation du graphique. Dans une nouvelle feuille de calcul intitulée <alert>Étude IMC 2</alert>, reproduire l'histogramme de la répartition de l'échantillon des femmes d'origine pima selon l'indice de masse corporelle en regroupant les données en cinq classes. Il est préférable de refaire le tableau croisé dynamique. Il se peut que ceci affecte le regroupement fait à la <xref ref="sssec_Grouper"/>. Interpréter l'allure du graphique. Comparer l'histogramme reproduit à l'histogramme fait à la <xref ref="sssec_Histogramme"/>.</p>
     </statement>
     </exercise>
     
