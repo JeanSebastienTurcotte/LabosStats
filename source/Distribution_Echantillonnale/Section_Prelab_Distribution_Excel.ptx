@@ -79,7 +79,7 @@ BIXI Montréal est un organisme à but non lucratif créé en 2014 par la Ville 
 </table>
 </introduction>
 <task workspace="2in"><statement><p>Calculer la moyenne et l'écart type de cette population.</p></statement></task>
-<task><statement><p>Il existe <m>31</m> échantillons différents de cette population. Par exemple, il y a <m>{5\choose 2}=10</m> échantillons de taille <m>2</m>. Chacun de ces échantillons produit une moyenne et un écart type qui diffère possiblement des valeurs calculées dans la question précédente. On s'intèresse au comportement de la moyenne échantillonnale en ce qui a trait à la taille de l'échantillon choisi. Compléter les données manquantes dans la table suivante. Les deux dernières lignes représentent la moyennes et l'écart type des moyennes des échantillons pour une taille donnée.</p>
+<task><statement><p>Il existe <m>31</m> échantillons différents de cette population. Par exemple, il y a <m>{5\choose 2}=10</m> échantillons de taille <m>2</m>. Chacun de ces échantillons produit une moyenne et un écart type qui diffère possiblement des valeurs calculées dans la question précédente. On s'intèresse au comportement de la moyenne échantillonnale en ce qui a trait à la taille de l'échantillon choisi. Compléter les données manquantes dans la table suivante. Les deux dernières lignes représentent la moyenne et l'écart type des moyennes des échantillons pour une taille donnée.</p>
 <p>Faire les calculs à l'aide d'un logiciel ou d'une calculatrice.</p>
 <!-- full table --> <!--<table>
   <title>Moyennes échantillonnales de tous les échantillons possibles</title>
@@ -673,7 +673,7 @@ BIXI Montréal est un organisme à but non lucratif créé en 2014 par la Ville 
         Moyenne <m>\mu_{\overline{X}}</m>
       </cell>
       <cell right="medium">
-        <m>175</m>
+        <m></m>
       </cell>
       <cell>
         Moyenne <m>\mu_{\overline{X}}</m>
@@ -691,7 +691,7 @@ BIXI Montréal est un organisme à but non lucratif créé en 2014 par la Ville 
         Écart type <m>\sigma_{\overline{X}}</m>
       </cell>
       <cell right="medium">
-        <m>14,14</m>
+        <m></m>
       </cell>
       <cell>
         Écart type <m>\sigma_{\overline{X}}</m>

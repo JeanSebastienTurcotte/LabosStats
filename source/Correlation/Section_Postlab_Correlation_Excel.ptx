@@ -10,7 +10,7 @@
     <ul>
       <li><p>Calculer des informations manquantes à l'aide de la régression linéaire.</p></li>
       <li><p>Poser un regard critique sur les données.</p></li>
-      <li><p>Effectuer un test d'hypothèse paramétriques pour vérifier une hypothèse.</p></li>
+      <li><p>Effectuer un test d'hypothèse paramétrique pour vérifier une hypothèse.</p></li>
       <li><p>Interpréter adéquatement la conclusion d'un test.</p></li>
       <li><p>Construire des intervalles de confiance pour estimer une variable à l'aide d'une régression.</p></li>
     </ul>
@@ -21,7 +21,7 @@
     <task><statement><p>À l'aide de l'équation <xref ref="eq-PR"/>, déterminer les rayons manquants dans cette feuille de calculs.</p></statement></task>
     <task><statement><p>Vérifier la précision de l'approximation en cherchant les véritables valeurs des rayons des étoiles <c>AX_Cir</c> (ID 207), <c>R_Cru</c> (ID 209), <c>SU_Cyg</c> (ID 225) et <c>S_Sgr</c> (ID 397). Citer les sources utilisées.</p></statement></task>
     </exercise>
-    <exercise><introduction><p>Puisque le coefficient de corrélation <m>r</m> est une approximation du véritable facteur de corrélation (<m>\rho</m>) entre les variables et qu'il dépend du hasard de l'échantillon, ainsi que de sa taille, il est possible de faire un test d'hypothèse pour évaluer si le lien est significatif. L'hypothèse nulle est <m>H_0: \rho = 0</m>, où <m>\rho</m> est la vraie valeur du facteur de corrélation entre les variables, et l'hypothèse alternative est <m>H_1: \rho\neq 0</m>. La règle de décision stipule de rejetter <m>H_0</m> lorsque <m>|{T_{obs}}|>t_{n-2;\alpha/2}</m> où <m>t_{obs}=\frac{r\sqrt{n-2}}{\sqrt{1-r^2}}</m>. Si l'on préfère utiliser la valeur <m>P</m>, qui dans ce cas vaut <m>2P(T_{n-2}>|{t_{obs}}|)</m>, on rejette <m>H_0</m> si celle-ci est inférieure à <m>\alpha</m>.</p>
+    <exercise><introduction><p>Puisque le coefficient de corrélation <m>r</m> est une approximation du véritable facteur de corrélation (<m>\rho</m>) entre les variables et qu'il dépend du hasard de l'échantillon, ainsi que de sa taille, il est possible de faire un test d'hypothèse pour évaluer si le lien est significatif. L'hypothèse nulle est <m>H_0: \rho = 0</m>, où <m>\rho</m> est la vraie valeur du facteur de corrélation entre les variables, et l'hypothèse alternative est <m>H_1: \rho\neq 0</m>. La règle de décision stipule de rejeter <m>H_0</m> lorsque <m>|{T_{obs}}|>t_{n-2;\alpha/2}</m> où <m>t_{obs}=\frac{r\sqrt{n-2}}{\sqrt{1-r^2}}</m>. Si l'on préfère utiliser la valeur <m>P</m>, qui dans ce cas vaut <m>2P(T_{n-2}>|{t_{obs}}|)</m>, on rejette <m>H_0</m> si celle-ci est inférieure à <m>\alpha</m>.</p>
     </introduction>
     <task><statement><p>Faire le test d'hypothèse au seuil de <m>5\%</m> en utilisant la première méthode.</p></statement></task>
     <task><statement><p>Faire le test d'hypothèse au seuil de <m>1\%</m> en utilisant la valeur <m>P</m>.</p></statement></task>

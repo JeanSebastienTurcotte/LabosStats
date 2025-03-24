@@ -36,13 +36,13 @@
 r=\frac{1}{n-1}\sum_{i=1}^n\left(\frac{x_i-\bar{x}}{s_x}\right)\left(\frac{y_i-\bar{y}}{s_y}\right).
 </men>
 C'est une mesure de la variabilité conjointe des variables, normalisée pour être entre <m>-1</m> et <m>1</m>. </p>
-<p>Le signe du coefficient de corrélation donne le sens de la variabilité de la variable <m>Y</m> lorsque <m>X</m> varie: une variation positive de <m>X</m> entraine une variation positive de <m>Y</m> lorsque <m>r>0</m> et  une variation positive de <m>X</m> entraine une variation négative de <m>Y</m> lorsque <m>r&lt;0</m>. La magnitude du coefficient de corrélation quant à elle quantifie la force du lien linéaire entre les variables. Traditionnellement, la force est obtenu selon la valeur de <m>\abs{r}</m> dans la table suivante. TODO AJUSTER AVEC MANUEL </p>
+<p>Le signe du coefficient de corrélation donne le sens de la variabilité de la variable <m>Y</m> lorsque <m>X</m> varie: une variation positive de <m>X</m> entraine une variation positive de <m>Y</m> lorsque <m>r>0</m> et  une variation positive de <m>X</m> entraine une variation négative de <m>Y</m> lorsque <m>r&lt;0</m>. La magnitude du coefficient de corrélation quant à elle quantifie la force du lien linéaire entre les variables. Traditionnellement, la force est obtenue selon la valeur de <m>|r|</m> dans la table suivante. TODO AJUSTER AVEC MANUEL </p>
 <table>
   <title>Interprétation de la force du lien linéaire</title>
   <tabular top="major">
     <row bottom="medium">
       <cell>
-        <m>\abs{r}</m>
+        <m>|r|</m>
       </cell>
       <cell>
         Interprétation du lien
@@ -91,7 +91,7 @@ C'est une mesure de la variabilité conjointe des variables, normalisée pour ê
   </tabular>
 </table>
 <p>On calcule le coefficient de corrélation entre la période de pulsation et le rayon des céphéides et on  l'ajoute sous les études descriptives. Puisque les écarts types des variables font partie de la <xref ref="eq-coeffvar">formule mathématique</xref> du coefficient de variation, ce dernier est sensible aux valeurs extrêmes. Il est donc important de bien analyser les données lors d'une étape préliminaire.</p>
-<p>Une fois la nature linéaire du lien confirmée, il est possible de déterminer l'équation de la meilleure droite qui relie les deux variables. L'exercice <xref ref="exo-moindrescarres"/> donne une idée de la procédure mathématique à suivre pour la trouver. Un ouvrage statistique théorique peut montrer que la pente est donnée par <m>a=r\frac{s_y}{s_x}</m> et l'ordonnée à l'origine par <m>b=\bar{y}-a\bar{x}</m>.Sur Excel, on peut afficher directement sur le graphique la droite et son équation. Pour cela, on sélectionne le graphique et on clique sur la petite croix en haut à droite, puis sur <em>linéaire</em>. La case <em>Courbe de tendance</em> aurait aussi pu faire le travail, puisque son comportement par défaut est la relation linéaire. Pour ajouter l'équation, on clique sur <em>Autres options</em> ou on fait un double-clic sur la droite créée précédemment et on coche la case <em>Afficher l'équation sur le graphique</em>. </p>
+<p>Une fois la nature linéaire du lien confirmée, il est possible de déterminer l'équation de la meilleure droite qui relie les deux variables. L'exercice <xref ref="exo-moindrescarres"/> donne une idée de la procédure mathématique à suivre pour la trouver. Un ouvrage statistique théorique peut montrer que la pente est donnée par <m>a=r\frac{s_y}{s_x}</m> et l'ordonnée à l'origine par <m>b=\bar{y}-a\bar{x}</m>. Sur Excel, on peut afficher directement sur le graphique la droite et son équation. Pour cela, on sélectionne le graphique et on clique sur la petite croix en haut à droite, puis sur <em>linéaire</em>. La case <em>Courbe de tendance</em> aurait aussi pu faire le travail, puisque son comportement par défaut est la relation linéaire. Pour ajouter l'équation, on clique sur <em>Autres options</em> ou on fait un double-clic sur la droite créée précédemment et on coche la case <em>Afficher l'équation sur le graphique</em>. </p>
 <p>La fonction <c>DROITEREG</c> permet aussi d'obtenir directement dans les cellules les valeurs de <m>a,b</m>, mais elle a comme inconvénient qu'il faut que le nombres de valeurs pour chacune des variables soit le même. Dans le cas de la base de données des céphéides, le rayon de plusieurs étoiles est manquant. Il faut alors filtrer dans la formule pour exclure les entrées vides. La formule <c>DROITEREG((FILTRE(PÉRIODE;Rayon&lt;>0));(FILTRE(RAYON;RAYON&lt;>0)))</c> permet d'accomplir cela, où <c>PÉRIODE</c> et <c>RAYON</c> sont les plages nommées correspondant à ces variables dans le tableau des données. Dans les deux cas, si l'on note <m>P</m> la période et <m>R</m> le rayon, on obtient
 <men xml:id="eq-PR">
 P=0,184600309R-2,250611573

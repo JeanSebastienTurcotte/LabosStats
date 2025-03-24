@@ -3,7 +3,7 @@
 <section xml:id="sec-Postlab_Varquant" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Réflexions</title>
     
-<p>Compte tenu du nombre de variables quantitatives dans la base de données, le travail réalisé lors du laboratoire 3 n'est qu'un point de départ de l'analyse. Il est essentiel de poursuivre l'étude des mesures diagnostiques des femmes d'origine pima vivant en Arizona afin d'extraire un maximum d'informations quant à leur situation médicale.</p>
+<p>Compte tenu du nombre de variables quantitatives dans la base de données, le travail réalisé lors du laboratoire 3 n'est que le point de départ de l'analyse. Il est essentiel de poursuivre l'étude des mesures diagnostiques des femmes d'origine pima vivant en Arizona afin d'extraire un maximum d'informations concernant leur situation médicale.</p>
 
 <worksheet xml:id="ws-Reflexion_Varquant">
 <title>Travail à faire après le laboratoire</title>
@@ -36,7 +36,7 @@
     </exercise>
     
      <exercise>
-    <statement><p>Une donnée aberrante est une donnée située anormalement loin des autres observations. Une donnée est considérée comme aberrante si elle se situe à 1,5 fois l'écart interquartile <m>\left(1,5\times (Q_{3}-Q_{1})\right)</m> en dessous du premier quartile ou à 1,5 fois l'écart interquartile au-dessus du troisième quartile. Dans la feuille de calcul <alert>Étude IMC</alert>, déterminer toutes les valeurs aberrantes de l'indice de masse corporelle en effectuant les calculs nécessaires dans des cellules vides. À la <xref ref="sssec_FiltrerP"/>, quelles valeurs auraient dû être exclues en plus des valeurs nulles? Quel graphique permet de visualiser (d'identifier d'un coup d'oeil) les données aberrantes d'une variable?</p></statement>
+    <statement><p>Une donnée aberrante est une donnée située anormalement loin des autres observations. Une donnée est considérée comme aberrante si elle se situe à 1,5 fois l'écart interquartile <m>\left(1,5\times (Q_{3}-Q_{1})\right)</m> en dessous du premier quartile ou à 1,5 fois l'écart interquartile au-dessus du troisième quartile. Dans la feuille de calcul <alert>Étude IMC</alert>, déterminer toutes les valeurs aberrantes de l'indice de masse corporelle en effectuant les calculs nécessaires dans des cellules vides. À la <xref ref="sssec_FiltrerP"/>, quelles valeurs auraient dû être exclues en plus des valeurs nulles? Quel graphique permet de visualiser (d'identifier d'un coup d'&#x0153;il) les données aberrantes d'une variable?</p></statement>
     </exercise>
  
     
