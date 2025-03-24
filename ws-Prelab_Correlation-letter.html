@@ -100,14 +100,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.10';
+eBookConfig.runestone_version = '7.5.11';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.c2d04816128ebb44.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.ee5a0b116b7d0991.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.e0c6d4592e23c667.css">
 </head>
 <body id="sciencesautour" class="pretext book ignore-math standalone worksheet letter">
@@ -180,7 +180,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#RemplissageValeur" class="internal"><span class="codenumber">1.2.7.1</span> <span class="title">Remplissage automatique d’une valeur</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#RemplissageSuite" class="internal"><span class="codenumber">1.2.7.2</span> <span class="title">Remplissage automatique d’une suite de nombre</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#RemplissageValeurDouble" class="internal"><span class="codenumber">1.2.7.3</span> <span class="title">Remplissage automatique d’une valeur en double-cliquant</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-Laboratoire_Introduction.html#RemplissageValeurDouble" class="internal"><span class="codenumber">1.2.7.3</span> <span class="title">Remplissage automatique d’une valeur en doublecliquant</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-subsection">
@@ -442,9 +442,9 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <article class="objectives goal-like" id="ws-Prelab_Correlation-2"><h4 class="heading"><span class="type">Objectifs</span></h4>
 <ul class="disc" id="ws-Prelab_Correlation-2-1">
-<li id="ws-Prelab_Correlation-2-1-1"><div class="para" id="ws-Prelab_Correlation-2-1-1-1">Déterminer visuellement si la nature du lien entre deux variables est linéaire</div></li>
-<li id="ws-Prelab_Correlation-2-1-2"><div class="para" id="ws-Prelab_Correlation-2-1-2-1">Introduire le calcul de la droite de régression</div></li>
-<li id="ws-Prelab_Correlation-2-1-3"><div class="para" id="ws-Prelab_Correlation-2-1-3-1">Préparer le fichier de base de données pour le laboratoire</div></li>
+<li id="ws-Prelab_Correlation-2-1-1"><div class="para" id="ws-Prelab_Correlation-2-1-1-1">Déterminer visuellement si la nature du lien entre deux variables est linéaire.</div></li>
+<li id="ws-Prelab_Correlation-2-1-2"><div class="para" id="ws-Prelab_Correlation-2-1-2-1">Introduire le calcul de la droite de régression.</div></li>
+<li id="ws-Prelab_Correlation-2-1-3"><div class="para" id="ws-Prelab_Correlation-2-1-3-1">Préparer le fichier de base de données pour le laboratoire.</div></li>
 </ul></article><section class="onepage" id="ws-Prelab_Correlation-3"><article class="exercise exercise-like" id="ws-Prelab_Correlation-3-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <div class="para" id="ws-Prelab_Correlation-3-1-1-1">Parmi les images suivantes, déterminer celle ou celles qui ont le plus l’allure d’un lien linéaire.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel middle" style="width:47.3684210526316%;"><figure class="figure figure-like" id="fig-correlation_intro1"><img src="external/images/Lien1.svg" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.1.1<span class="period">.</span></span><span class="space"> </span>Un premier lien entre deux variables</figcaption></figure></div>
@@ -458,8 +458,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exo-moindrescarres-1-2">Cette méthode consiste à calculer la différence entre chacune des valeurs dépendantes des données et la valeur dépendante de l’équation d’une droite de paramètres <span class="process-math">\(a,b\)</span> et d’additionner le carré de toutes ces différences. On cherche les valeurs de <span class="process-math">\(a\)</span> et <span class="process-math">\(b\)</span> qui minimise cette somme.</div>
 </div>
 <article class="task exercise-like" id="exo-moindrescarres-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="exo-moindrescarres-2-1-1">On considère les points <span class="process-math">\(A(1;1),B(2;3)\)</span> et <span class="process-math">\(C(4;4)\text{.}\)</span> Écrire les trois termes de la sommes des moindres carrés pour ces trois points.</div></article><article class="task exercise-like" id="exo-moindrescarres-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="exo-moindrescarres-3-1-1">Dans un cours de calcul différentiel à plusieurs variables, on apprend que pour optimiser une fonction multivariée, il faut que les dérivées par rapport à chacune de ses variables soit égales à <span class="process-math">\(0\text{.}\)</span> Dans le cas des moindres carrés, deux variables sont présentes. En traitant à tour de rôle l’une variable comme étant constante, calculer la dérivée de la somme obtenue à la partie précédente par rapport à l’autre variable pour obtenir deux équations linéaires en <span class="process-math">\(a,b\text{.}\)</span>
+<div class="para" id="exo-moindrescarres-2-1-1">On considère les points <span class="process-math">\(A(1;1),B(2;3)\)</span> et <span class="process-math">\(C(4;4)\text{.}\)</span> Écrire les trois termes de la somme des moindres carrés pour ces trois points.</div></article><article class="task exercise-like" id="exo-moindrescarres-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exo-moindrescarres-3-1-1">Dans un cours de calcul différentiel à plusieurs variables, on apprend que pour optimiser une fonction multivariée, il faut que les dérivées par rapport à chacune de ses variables soient égales à <span class="process-math">\(0\text{.}\)</span> Dans le cas des moindres carrés, deux variables sont présentes. En traitant à tour de rôle l’une variable comme étant constante, calculer la dérivée de la somme obtenue à la partie précédente par rapport à l’autre variable pour obtenir deux équations linéaires en <span class="process-math">\(a,b\text{.}\)</span>
 </div></article><article class="task exercise-like" id="exo-moindrescarres-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para logical" id="exo-moindrescarres-4-1-1">
 <div class="para">En posant chacune de ces équations égales à 0, montrer que la droite des moindres carrés de ce problème est</div>
@@ -469,9 +469,9 @@ y=\frac{13}{14}x+\frac{1}{2}\text{.}
 \end{equation*}
 </div>
 </div></article></article></section><section class="onepage" id="ws-Prelab_Correlation-4"><article class="exercise exercise-like" id="ws-Prelab_Correlation-4-1"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="introduction" id="ws-Prelab_Correlation-4-1-1"><div class="para" id="ws-Prelab_Correlation-4-1-1-1">Le fichier <code class="code-inline tex2jax_ignore">13jeux_de_donnees.xlsx</code> disponible TODO contient 13 ensembles de couples de données ayant été créés artificiellement afin de produire le résultat des exercices ci-dessous. Le but de cet exercice est de comprendre l’importance d’observer les données avant d’en tirer quelconques conclusion.</div></div>
+<div class="introduction" id="ws-Prelab_Correlation-4-1-1"><div class="para" id="ws-Prelab_Correlation-4-1-1-1">Le fichier <code class="code-inline tex2jax_ignore">13jeux_de_donnees.xlsx</code> disponible TODO contient 13 ensembles de couples de données ayant été créés artificiellement afin de produire le résultat des exercices ci-dessous. Le but de cet exercice est de comprendre l’importance d’observer les données avant d’en tirer quelconque conclusion.</div></div>
 <article class="task exercise-like" id="ws-Prelab_Correlation-4-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="ws-Prelab_Correlation-4-1-2-1-1">Dans une nouvelle feuille de calculs, créer un tableau croisé dynamique contenant dans le champ «colonne» les entrées<code class="code-inline tex2jax_ignore">Valeurs_X</code> et <code class="code-inline tex2jax_ignore">Valeurs_Y</code>. Ajouter aussi un filtre avec l’entrée <code class="code-inline tex2jax_ignore">Jeu x</code>
+<div class="para" id="ws-Prelab_Correlation-4-1-2-1-1">Dans une nouvelle feuille de calculs, créer un tableau croisé dynamique contenant dans la zone de saisie <em class="alert">Colonne</em> les entrées <code class="code-inline tex2jax_ignore">Valeurs_X</code> et <code class="code-inline tex2jax_ignore">Valeurs_Y</code>. Ajouter aussi un filtre avec l’entrée <code class="code-inline tex2jax_ignore">Jeu x</code>
 </div></article><article class="task exercise-like" id="ws-Prelab_Correlation-4-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ws-Prelab_Correlation-4-1-3-1-1">Positionner le filtre en haut du tableau sur <code class="code-inline tex2jax_ignore">Jeu 1</code>.</div></article><article class="task exercise-like" id="ws-Prelab_Correlation-4-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ws-Prelab_Correlation-4-1-4-1-1">À l’aide de fonctions Excel, calculer la moyenne des valeurs <code class="code-inline tex2jax_ignore">X</code>, la moyenne des valeurs <code class="code-inline tex2jax_ignore">Y</code>, l’écart type des valeurs <code class="code-inline tex2jax_ignore">X</code>, l’écart type des valeurs <code class="code-inline tex2jax_ignore">Y</code> ainsi que le coefficient de corrélation entre les valeurs <code class="code-inline tex2jax_ignore">X</code> et <code class="code-inline tex2jax_ignore">Y</code>.</div></article><article class="task exercise-like" id="ws-Prelab_Correlation-4-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
@@ -482,7 +482,7 @@ y=\frac{13}{14}x+\frac{1}{2}\text{.}
 <div class="para" id="ws-Prelab_Correlation-5-2-1-1">Dans une feuille appelée « PR », tracer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</div></article><article class="task exercise-like" id="ws-Prelab_Correlation-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="ws-Prelab_Correlation-5-3-1-1">Dans une feuille appelée «MappP », tracer le nuage de points représentant la magnitude apparente des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</div></article><article class="task exercise-like" id="ws-Prelab_Correlation-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="ws-Prelab_Correlation-5-4-1-1">Dans une feuille appelée «MabsP », tracer le nuage de points représentant la magnitude absolue des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</div></article><article class="task exercise-like" id="ws-Prelab_Correlation-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="ws-Prelab_Correlation-5-5-1-1">Sur chacune des trois feuille, faire l’étude descriptive de la population telle que décrite dans la <a href="sec-Laboratoire_Varquant.html#sssec_Mesures" class="internal" title="Sous-sous-section 3.2.1.6: Mesures descriptives">Sous-sous-section 3.2.1.6</a> pour les variables impliquées.</div></article></article></section>
+<div class="para" id="ws-Prelab_Correlation-5-5-1-1">Sur chacune des trois feuilles, faire l’étude descriptive de la population telle que décrite dans la <a href="sec-Laboratoire_Varquant.html#sssec_Mesures" class="internal" title="Sous-sous-section 3.2.1.6: Mesures descriptives">Sous-sous-section 3.2.1.6</a> pour les variables impliquées.</div></article></article></section>
 </div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-Prelab_Correlation.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Laboratoire_TODO.html" title="Suivant"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
