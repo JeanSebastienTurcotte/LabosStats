@@ -43,16 +43,16 @@
   <statement>
   <p>Considérer les graphiques suivants. Expliquer en quoi l'information est trompeuse.</p>
   <figure xml:id="fig-mauvaisgraph1">
-  <caption>Diagramme à bandes des résultats de l'élection fédérale de 2021</caption>
+  <caption>Diagramme à bandes des résultats de l'élection fédérale de 2021 <fn>capture d'écran du reportage du réseau CBC sur le résultat de l'élection fédérale canadienne de 2021</fn></caption>
   <image source="images/Resultats_Election.jpg">
-  <description>Une capture d'écran du reportage de CBC sur le résultat de l'élection fédérale de 2021</description>
+  <description>Une capture d'écran du reportage du réseau CBC sur le résultat de l'élection fédérale canadienne de 2021</description>
   </image>
   </figure>
   
    <figure xml:id="fig-mauvaisgraph2">
-   <caption>Diagramme circulaire à propos de la consommation de cannabis des Américains</caption>
+       <caption>Diagramme circulaire à propos de la consommation de cannabis des Américains <fn><url href="https://www.painting-with-numbers.com/blog/getting-high-on-bad-data-visualization"></url>, visité le 27 mars</fn></caption>
   <image source="images/MauvaisGraph6.jpg">
-  <description>Une capture d'écran du réseau CBSN sur la consommation de cannabis des Américains.</description>
+  <description>Une capture d'écran du réseau CBS News sur la consommation de cannabis des Américains.</description>
   </image>
   </figure>
   </statement>

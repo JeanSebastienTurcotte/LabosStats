@@ -3,9 +3,9 @@
 <section xml:id="sec-Laboratoire_TestHyp" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Laboratoire</title>
 
-  <introduction> <p>Dans ce laboratoire, l'objectif est de poursuivre l'analyse d'une base de données, soit l'étape d'inférence statistique. On souhaite répondre à des questions de recherche bien formulées et valider les hypothèse de recherche à l'aide de tests paramétriques.</p>
+  <introduction> <p>Dans ce laboratoire, l'objectif est de poursuivre l'analyse d'une base de données, soit l'étape d'inférence statistique. On souhaite répondre à des questions de recherche bien formulées et valider les hypothèses de recherche à l'aide de tests paramétriques.</p>
        
-      <p>Quatre bases de données seront exploitées, chacune correspondant à un test d'hypothèse spécifique. Pour le test d'hypothèse sur une moyenne, on analysera les données des précipitations totales reçues au mois de mars 2024, présentées à la <xref ref="sec-Precipitations"/>. Le test d'hypothèse sur une proportion s'appuiera sur les données démographiques des soldats de l'armée américaine disponibles à la <xref ref="sec-Armee"/>. Pour le test sur deux moyennes indépendantes, les données diagnostiques des femmes d'origine pima d'Arizona (voirla <xref ref="sec-Diabete"/>) seront utilisées. Enfin, concernant le test sur deux moyennes dépendantes, une étude sur la qualité de l'air à Montréal sera réalisée avec les données présentées à la <xref ref="sec-Polluants"/>.</p>
+      <p>Quatre bases de données seront exploitées, chacune correspondant à un test d'hypothèse spécifique. Pour le test d'hypothèse sur une moyenne, on analysera les données des précipitations totales reçues au mois de mars 2024, présentées à la <xref ref="sec-Precipitations"/>. Le test d'hypothèse sur une proportion s'appuiera sur les données démographiques des soldats de l'armée américaine disponibles à la <xref ref="sec-Armee"/>. Pour le test sur deux moyennes indépendantes, les données diagnostiques des femmes d'origine pima d'Arizona (voir la <xref ref="sec-Diabete"/>) seront utilisées. Enfin, concernant le test sur deux moyennes dépendantes, une étude sur la qualité de l'air à Montréal sera réalisée avec les données présentées à la <xref ref="sec-Polluants"/>.</p>
 
   <!-- <p> Pour le test d'hypothèse sur deux moyennes dépendantes, on utilise les données sur la qualité de l'air de la ville de Montréal. On désire savoir s'il y a une différence significative dans les polluants avant et après d'intenses précipitations.</p>-->
     </introduction>    
@@ -141,12 +141,12 @@
     <subsection xml:id="ssec-Canevas">
     <title>Présentation des canevas</title>
     
-        <introduction><p>Les tests d'hypothèse paramétriques comportent plusieurs étapes : formuler les hypothèses nulle et alternative, préciser les informations du problème et fixer le seuil de signification, vérifier les conditions d'application du test, calculer l'écart type <m>\sigma_{\bar{X}}</m>, énoncer la règle de décision, calculer la statistique du test, calculer la cote <m>z</m> ou <m>t</m> observée de la statistique ou la valeur p, puis prendre une décision et conclure.</p> 
+        <introduction><p>Les tests d'hypothèses paramétriques comportent plusieurs étapes : formuler les hypothèses nulle et alternative, préciser les informations du problème et fixer le seuil de signification, vérifier les conditions d'application du test, calculer l'écart type <m>\sigma_{\bar{X}}</m>, énoncer la règle de décision, calculer la statistique du test, calculer la cote <m>z</m> ou <m>t</m> observée de la statistique ou la valeur p, puis prendre une décision et conclure.</p> 
             
             <p>Le logiciel Excel réalise certaines de ces étapes, mais ne décompose pas toutes les phases d'un test. Ainsi, un canevas a été créé pour bien visualiser l'ensemble des étapes d'un test de manière plus détaillée. Dans cette sous-section, on explique les particularités des canevas.</p></introduction>
     
     
-    <p>La figure <xref ref="Fig_Canevas_gif"/> présente la configuration du canevas pour un test d'hypothèse sur une moyenne, soit la feuille <alert>Une moyenne</alert> du fichier Excel <alert>Labo6_Canevas.xlsm</alert>.</p>
+    <p>La figure <xref ref="Fig_Canevas_gif"/> présente la configuration du canevas pour un test d'hypothèse sur une moyenne, soit la feuille <alert>Une moyenne</alert> du fichier Excel <alert>Canevas_tests_hypotheses.xlsm</alert>.</p>
     
 <p></p>
                    <figure xml:id="Fig_Canevas_1">
@@ -182,10 +182,10 @@
         
             <li><p>Les cellules ayant un fond bleu contiennent les titres de chaque étape du test d'hypothèse.</p></li>
             
-            <li><p>Les cellules ayant un fond rose ne peuvent pas être modifiées. À cet effet, elles sont protégées pour empêcher l'utilisateur d'y apporter des changements. Certaines de ces cellules contiennent des formules; par exemple, la cellule <c>C22</c> du canevas contient la formule permettant de calculer <m>\sigma_{\bar{X}}</m>. Cette cellule reste vide jusqu'à ce que tous les paramètres nécessaires à son calcul ont été attribués une valeur numérique dans leurs cellules respectives. Il arrive parfois que du contenu soit effacé par erreur lors de la saisie. La protection des cellules prévient ce type d'erreur.</p></li>
+            <li><p>Les cellules ayant un fond rose ne peuvent pas être modifiées. À cet effet, elles sont protégées pour empêcher l'utilisateur d'y apporter des changements. Certaines de ces cellules contiennent des formules; par exemple, la cellule <c>C22</c> du canevas contient la formule permettant de calculer <m>\sigma_{\bar{X}}</m>. Cette cellule reste vide jusqu'à ce qu'on ait attribué une valeur numérique à tous les paramètres nécessaires à son calcul. Il arrive parfois que du contenu soit effacé par erreur lors de la saisie. La protection des cellules prévient ce type d'erreur.</p></li>
             
             
-            <li><p>Les cellules ayant un fond gris et une bordure noire doivent être remplies. Certaines de ces cellules ont des menus déroulants permettant l'utilisateur de choisir une option. Par exemple, la cellule <c>D6</c> contient un menu déroulant obligeant l'utilisateur de choisir le symbole approprié (<m>&lt;, &gt;</m> ou <m>\neq </m>) pour le type de test que ce dernier souhaite réaliser (voir la <xref ref="Fig_Canevas_7"/>).</p>
+            <li><p>Les cellules ayant un fond gris et une bordure noire doivent être remplies. Certaines de ces cellules ont des menus déroulants permettant à l'utilisateur de choisir une option. Par exemple, la cellule <c>D6</c> contient un menu déroulant obligeant l'utilisateur à choisir le symbole approprié (<m>&lt;, &gt;</m> ou <m>\neq </m>) pour le type de test que ce dernier souhaite réaliser (voir la <xref ref="Fig_Canevas_7"/>).</p>
             <p></p>
             
             <figure xml:id="Fig_Canevas_7">
@@ -212,7 +212,7 @@
             </figure>    
             </li>
             
-             <li><p>Lorsque l'on clique sur la cellule intitulée <alert>Effacer le contenu des cellules grises</alert>(voir la <xref ref="Fig_Canevas_7"/>), un message d'avertissement s'affiche et demande à l'utilisateur si ce dernier veut vraiment effacer tout le contenu des cellules grises. En cliquant <c>Oui</c>, le contenu des cellules grises est effacée.</p></li>
+             <li><p>Lorsque l'on clique sur la cellule intitulée <alert>Effacer le contenu des cellules grises</alert>(voir la <xref ref="Fig_Canevas_7"/>), un message d'avertissement s'affiche et demande à l'utilisateur si ce dernier veut vraiment effacer tout le contenu des cellules grises. En cliquant <c>Oui</c>, le contenu des cellules grises est effacé.</p></li>
             
         </ul> 
         </p>
@@ -227,7 +227,7 @@
     <subsection xml:id="ssec-TestMoyenne">
     <title>Test d'hypothèse sur une moyenne</title>
     
-        <introduction><p>Les tests d'hypothèse sur une moyenne permettent de décider si la moyenne d'une population a changé en se basant sur une moyenne échantillonnale, c'est-à-dire de déterminer si la différence entre les deux moyennes est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
+        <introduction><p>Les tests d'hypothèses sur une moyenne permettent de décider si la moyenne d'une population a changé en se basant sur une moyenne échantillonnale, c'est-à-dire de déterminer si la différence entre les deux moyennes est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
             
             
             <p>D'après les données récoltées entre 1991 à 2020 par Environnement Canada à la station météorologique de l'Aéroport international Pierre-Elliott-Trudeau de Montréal <fn> Données tirées de <url href="https://climat.meteo.gc.ca/climate_normals/results_1991_2020_f.html?searchType=stnName_1991&amp;txtStationName_1991=montreal&amp;searchMethod=contains&amp;txtCentralLatMin=0&amp;txtCentralLatSec=0&amp;txtCentralLongMin=0&amp;txtCentralLongSec=0&amp;stnID=123000000&amp;dispBack=1"/>, page consultée le 21 novembre 2024</fn>, la ville de Montréal reçoit en moyenne <m>77,2</m> mm de précipitations totales au mois de mars, soit environ <m>2,49</m> mm par jour. Les précipitations totales sont la somme de la pluie totale et de l'équivalent en eau de la neige totale en millimètres. Cependant, ces dernières années, de nombreux Montréalais ont l'impression que les précipitations mensuelles sont en baisse (<fn><url href="https://www.lapresse.ca/actualites/environnement/2022-11-13/la-premiere-neige-de-plus-en-plus-tardive.php"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://ici.radio-canada.ca/nouvelle/2038368/deficit-significatif-neige-quebec"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://lactualite.com/actualites/montreal-a-perdu-le-tiers-de-sa-neige-depuis-1863/"/>, page consultée le 23 novembre 2024</fn>)). Pour vérifier cette hypothèse, on va la tester avec les données d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>.</p></introduction>
@@ -244,7 +244,7 @@
 
         <introduction><p>Pour réaliser un test d'hypothèse sur une moyenne, il faut préalablement avoir calculé les mesures statistiques de l'échantillon, c'est-à-dire la moyenne et l'écart type corrigé.</p></introduction>
 
-            <p>Ceci peut se faire en en utilisant les fonctions Excel <c>MOYENNE</c> et <c>ÉCARTYPE.STANDARD</c>.</p>
+            <p>Ceci peut se faire en utilisant les fonctions Excel <c>MOYENNE</c> et <c>ÉCARTYPE.STANDARD</c>.</p>
             
             
             
@@ -269,14 +269,14 @@
             <p></p>
             <title>Copier le cavenas <alert>Une moyenne</alert></title>
         
-            <p>Pour effectuer un test d'hypothèse, il faut copier (importer) le canevas du fichier <alert>Labo 6_Canevas.xlsm</alert> dans le fichier Excel de travail <alert>Données_Précipitations.xlsm</alert>.</p>
+            <p>Pour effectuer un test d'hypothèse, il faut copier (importer) le canevas du fichier <alert>Canevas_tests_hypotheses.xlsm</alert> dans le fichier Excel de travail <alert>Données_Précipitations.xlsm</alert>.</p>
         
             <p>
             <ol>
                 
-             <li><p>Ouvrir les fichiers Excel <alert>Données_Précipitations.xlsm</alert> et <alert>Labo 6_Canevas.xlsm</alert>.</p></li>   
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Précipitations.xlsm</alert> et <alert>Canevas_tests_hypotheses.xlsm</alert>.</p></li>   
                 
-             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Une moyenne</alert> du fichier <alert>Labo 6_Canevas</alert> au classeur <alert>Données_Précipitations</alert>.</p></li>   
+             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Une moyenne</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données_Précipitations</alert>.</p></li>   
             </ol>
             </p>
             
@@ -320,7 +320,7 @@
                      
                     </li>
                 
-                <li><p>Puisque la taille de la population est le nombre de jours du mois de mars (<m>31</m>) multipliée par le nombre d'années (<m>30</m>), taper <c>=30*31</c> dans la cellule <c>C10</c> (voir la <xref ref="Fig_Moy_gif2"/>).</p> </li>
+                <li><p>Puisque la taille de la population est le nombre de jours du mois de mars (<m>31</m>) multiplié par le nombre d'années (<m>30</m>), taper <c>=30*31</c> dans la cellule <c>C10</c> (voir la <xref ref="Fig_Moy_gif2"/>).</p> </li>
                 
                     <li><p>L'écart type de la population est inconnu. Ainsi, dans la cellule <c>C11</c>, taper <c>inconnu</c> (voir la <xref ref="Fig_Moy_gif2"/>).</p> </li>
                
@@ -333,7 +333,7 @@
 
                
                 
-                <li><p>Une fois les plages <c>F9:F11</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>E20</c> et <c>C22</c> se remplissent automatiquement, les cellules étant pré-remplies avec les formules appropriées (voir la <xref ref="Fig_Moy_gif2"/>).</p>
+                <li><p>Une fois les plages <c>F9:F11</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>E20</c> et <c>C22</c> se remplissent automatiquement, les cellules étant préremplies avec les formules appropriées (voir la <xref ref="Fig_Moy_gif2"/>).</p>
                 
                 <p></p>
                     
@@ -368,11 +368,11 @@
 
                 <li><p>L'écart type de la distribution <m>\bar{X}</m>, soit <m>\sigma_{\bar{X}}</m>, est calculé à l'aide des informations se trouvant dans les cellules <c>C10</c>, <c>C11</c>, <c>F10</c>, <c>F11</c>, <c>C20</c> et <c>C21</c>.</p></li>
                 
-                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c>B29</c>, sélectionner la statistique appropriée du test unilatéral à gauche utilisant la loi normale, soit <m>-z_{\alpha}</m> (voir la <xref ref="Fig_Moy_gif4"/>). Remarquer que la valeur de <m>-z_{\alpha}</m> (environ <m>-1,645</m>) dans la cellule <c>D29</c> et <c>F31</c> est pré-remplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>5\%</m>.</p></li>
+                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c>B29</c>, sélectionner la statistique appropriée du test unilatéral à gauche utilisant la loi normale, soit <m>-z_{\alpha}</m> (voir la <xref ref="Fig_Moy_gif4"/>). Remarquer que la valeur de <m>-z_{\alpha}</m> (environ <m>-1,645</m>) dans la cellule <c>D29</c> et <c>F31</c> est préremplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>5\%</m>.</p></li>
                 
                 <li><p> Dans la cellule <c>E31</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test unilatéral à gauche, il faut choisir les mots &#xAB; plus petite que &#xBB; (voir la <xref ref="Fig_Moy_gif4"/>). </p>
                     
-                    <p>La cellule <c>F34</c> est pré-remplie avec la valeur du seuil de signification pour indiquer que l'on rejette l'hypothèse nulle si la valeur p trouvée est inférieure à <m>5\%</m>.</p>
+                    <p>La cellule <c>F34</c> est préremplie avec la valeur du seuil de signification pour indiquer que l'on rejette l'hypothèse nulle si la valeur p trouvée est inférieure à <m>5\%</m>.</p>
                   <p></p>
                     
                <figure xml:id="Fig_Moy_gif4">
@@ -428,10 +428,10 @@
     <subsection xml:id="ssec-TestProportion">
     <title>Test d'hypothèse sur une proportion</title>
     
-         <introduction><p>Les tests d'hypothèse sur une proportion permettent de décider si la proportion d'une population a changé en se basant sur une proportion échantillonnale, c'est-à-dire de déterminer si la différence entre les deux pourcentages est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
+         <introduction><p>Les tests d'hypothèses sur une proportion permettent de décider si la proportion d'une population a changé en se basant sur une proportion échantillonnale, c'est-à-dire de déterminer si la différence entre les deux pourcentages est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
            
             
-            <p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, page consultée le 24 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. Dans cette sous-section, on introduit les données d'un échantillon de <m>6068</m> membres de l'armée américaine, prélevé en 2011. On pourrait supposer que la proportion de membres issus de minorité ethnique augmente à chaque année. C'est ce que l'on va vérifier. La base de données <fn><url href="https://www.openlab.psu.edu/ansur2/"/>, page consultée le 24 novembre 2024</fn> a été modifiée pour répondre aux objectifs de ce laboratoire. Dans le fichier, les ethnies des membres ont un code nominal. Le code 1 signifie une personne blanche, les codes 2 à 7 correspondent aux personnes issues de minorités ethniques.</p></introduction>
+            <p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, page consultée le 24 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. Dans cette sous-section, on introduit les données d'un échantillon de <m>6068</m> membres de l'armée américaine, prélevé en 2011. On pourrait supposer que la proportion de membres issus de minorités ethniques augmente chaque année. C'est ce que l'on va vérifier. La base de données <fn><url href="https://www.openlab.psu.edu/ansur2/"/>, page consultée le 24 novembre 2024</fn> a été modifiée pour répondre aux objectifs de ce laboratoire. Dans le fichier, chacun des groupes ethniques est associé à un code nominal. Le code 1 signifie une personne blanche, les codes 2 à 7 correspondent aux différentes minorités ethniques.</p></introduction>
         
         
    
@@ -456,7 +456,7 @@
             
             <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB;. </p></li> 
             
-            <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms à toutes les colonnes du tableau <alert>Échantillon</alert>.</p></li>
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer un nom à chacune des colonnes du tableau <alert>Échantillon</alert>.</p></li>
             
             <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul intitulé <alert>TCD_Ethnie</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Échantillon</alert>. Placer ce tableau dans la cellule <c>A3</c>.</p></li>
             
@@ -485,7 +485,7 @@
                 
                 <li><p>Glisser et déposer la variable <alert>Ethnie</alert> dans la zone de saisie <alert>Valeurs</alert> (voir la <xref ref="Fig_TCD_Ethnie_gif1"/>).</p></li>
                 
-                <li><p>En suivant les étapes de présentées à la <xref ref="sssec-RemplirTCD"/>, afficher le nombre de personnes en pourcentage (voir la <xref ref="Fig_TCD_Ethnie_gif1"/>).</p></li>
+                <li><p>En suivant les étapes présentées à la <xref ref="sssec-RemplirTCD"/>, afficher le nombre de personnes en pourcentage (voir la <xref ref="Fig_TCD_Ethnie_gif1"/>).</p></li>
                 
              <!--   <li><p>Le tableau croisé dynamique est le suivant (voir la <xref ref="Fig_TCD_Ethnie_4"/>).</p>
                 
@@ -533,9 +533,9 @@
             <p>
             <ol>
                 
-             <li><p>Ouvrir les fichiers Excel <alert>Données_Armée.xlsm</alert> et <alert>Labo 6_Canevas.xlsm</alert>.</p></li>   
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Armée.xlsm</alert> et <alert>Canevas_tests_hypotheses.xlsm</alert>.</p></li>   
                 
-             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Une proportion</alert> du fichier <alert>Labo 6_Canevas</alert> au classeur <alert>Données_Armée</alert>. Placer cette feuille en dernière position.</p></li>   
+             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Une proportion</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données_Armée</alert>. Placer cette feuille en dernière position.</p></li>   
             </ol>
             </p>
             
@@ -577,7 +577,7 @@
                      
                     </li>
                 
-                <li><p>Puisqu'on ne connaît pas la taille de la population de l'armée américaine, on suppose qu'elle est grande. Selon le rapport démographique de 2020, il y avait au moins <m>400 000</m> membres en 2010. Ainsi, le test ne requière pas de facteur de correction. Dans la cellule <c>C10</c>, taper le mot &#xAB; grande &#xBB; (voir la <xref ref="Fig_Prop_gif2"/>).</p>
+                <li><p>Puisqu'on ne connaît pas la taille de la population de l'armée américaine, on suppose qu'elle est grande. Selon le rapport démographique de 2020, il y avait au moins <m>400 000</m> membres en 2010. Ainsi, le test ne requiert pas de facteur de correction. Dans la cellule <c>C10</c>, taper le mot &#xAB; grande &#xBB; (voir la <xref ref="Fig_Prop_gif2"/>).</p>
 
                 </li>
                 
@@ -596,7 +596,7 @@
                 
                 <li><p>Dans la cellule <c>I11</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>L4</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>-->
                 
-                <li><p>Une fois les plages <c>F9:F10</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>E20</c> et <c>C22</c> se remplissent automatiquement, les cellules étant pré-remplies avec les formules appropriées (voir la <xref ref="Fig_Prop_gif2"/>).</p>
+                <li><p>Une fois les plages <c>F9:F10</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>E20</c> et <c>C22</c> se remplissent automatiquement, les cellules étant préremplies avec les formules appropriées (voir la <xref ref="Fig_Prop_gif2"/>).</p>
                 
                 <p></p>
                     
@@ -631,7 +631,7 @@
 
                 <li><p>L'écart type de la distribution <m>P</m>, soit <m>\sigma_{P}</m> dans la cellule <c>C22</c>, est calculé à l'aide des informations se trouvant dans les cellules <c>E5</c>, <c>F10</c>, <c>C20</c>, <c>C21</c>.</p></li>
                 
-                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c>B29</c>, sélectionner la statistique appropriée du test unilatéral à droite utilisant la loi normale, soit <m>z_{\alpha}</m>. Remarquer que la valeur de <m>z_{\alpha}</m> (environ <m>1,645</m>) dans la cellule <c>D29</c> et <c>G31</c> est pré-remplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>5\%</m> (voir la <xref ref="Fig_Prop_gif3"/>).</p></li>
+                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c>B29</c>, sélectionner la statistique appropriée du test unilatéral à droite utilisant la loi normale, soit <m>z_{\alpha}</m>. Remarquer que la valeur de <m>z_{\alpha}</m> (environ <m>1,645</m>) dans la cellule <c>D29</c> et <c>G31</c> est préremplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>5\%</m> (voir la <xref ref="Fig_Prop_gif3"/>).</p></li>
                 
                 <li><p> Dans la cellule <c>E31</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test unilatéral à droite, il faut choisir les mots &#xAB; plus grande que &#xBB; (voir la <xref ref="Fig_Prop_gif3"/>). </p>
                   <p></p>
@@ -647,7 +647,7 @@
                 </li>
                 
                 
-                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_Prop_18"/>). <!--On observe que la cote <m>z_{obs}</m> est énorme avec une valeur d'environ <m>9,06</m>. Le rejet de l'hypothèse nulle est presqu'assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est quasiment <m>0</m>.--></p></li>
+                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_Prop_18"/>). <!--On observe que la cote <m>z_{obs}</m> est énorme avec une valeur d'environ <m>9,06</m>. Le rejet de l'hypothèse nulle est presque assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est quasiment <m>0</m>.--></p></li>
                 
                 <li><p> Dans la cellule <c>A47</c>, écrire la décision et la conclusion du test en fonction de la règle de décision (voir la <xref ref="Fig_Prop_18"/>).</p>
                  <p></p>
@@ -679,7 +679,7 @@
         <subsection xml:id="ssec-TestDeuxMoyennesInd">
     <title>Test d'hypothèse sur deux moyennes indépendantes</title>
     
-        <introduction><p>Les tests d'hypothèse sur deux moyennes indépendantes, aussi appelés des tests sur la comparaison ou la différence de deux moyennes, permettent de comparer les moyennes de deux populations à partir de deux moyennes échantillonnales, c'est-à-dire de déterminer si la différence entre les deux moyennes est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
+        <introduction><p>Les tests d'hypothèses sur deux moyennes indépendantes, aussi appelés des tests sur la comparaison ou la différence de deux moyennes, permettent de comparer les moyennes de deux populations à partir de deux moyennes échantillonnales, c'est-à-dire de déterminer si la différence entre les deux moyennes est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
             
             <p>Pour réaliser un test sur deux moyennes indépendantes, il faut s'assurer que les deux échantillons sont sélectionnés indépendamment l'un de l'autre.</p>
             
@@ -700,7 +700,7 @@
             
               <remark xml:id="rem-Soustotal">
 <title>Filtrage de données aberrantes</title>
-<p>Lors d'un test d'hypothèse paramétriques, il est important de filtrer les données aberrantes avant de calculer les mesures descriptives. Dans le cas des données diagnostiques des femmes d'origina pima, un filtrage est nécessaire si l'on veut les moyennes et les écarts types corrigés sans tenir compte des valeurs nulles de l'indice de masse corporelle.</p>
+<p>Lors d'un test d'hypothèse paramétrique, il est important de filtrer les données aberrantes avant de calculer les mesures descriptives. Dans le cas des données diagnostiques des femmes d'origine pima, un filtrage est nécessaire si l'on veut les moyennes et les écarts types corrigés sans tenir compte des valeurs nulles de l'indice de masse corporelle.</p>
     </remark>
             
         </paragraphs>   
@@ -714,11 +714,11 @@
             <p>
             <ol>
                 
-             <li><p>Ouvrir les fichiers Excel <alert>Données_Diabète.xlsm</alert>, le fichier complété du laboratoire 3, et <alert>Labo 6_Canevas.xlsm</alert>.</p></li>   
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Diabète_pour_tests.xlsm</alert>, le fichier complété du laboratoire 3, et <alert>Canevas_tests_hypotheses.xlsm</alert>.</p></li>   
                 
-             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes indépendantes</alert> du fichier <alert>Labo 6_Canevas</alert> au classeur <alert>Données_Diabètes</alert>. </p></li>  
+             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes indépendantes</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données</alert>. </p></li>  
                 
-                <li><p>Placer la feuille <alert>2 moyennes indépendantes</alert> en dernière position si Excel ne le fait pas pas défaut.</p></li>
+                <li><p>Placer la feuille <alert>2 moyennes indépendantes</alert> en dernière position si Excel ne le fait pas par défaut.</p></li>
                   
             </ol>
             </p>
@@ -738,12 +738,12 @@
             
             <li><p>Il faut définir <m>X_{1}</m> et <m>X_{2}</m>. Soit <m>X_{1}</m>, les femmes d'origine pima d'Arizona atteintes de diabète, et soit <m>X_{2}</m>, les femmes d'origine pima d'Arizona sans diabète. Pour se souvenir de ce choix, il est pertinent de taper dans la cellule <c>C4</c> &#xAB; Atteint &#xBB;, et &#xAB; Non Atteint &#xBB; dans la cellule <c>E4</c> (voir la <xref ref="Fig_2Moy_gif1"/>).</p></li>
             
-            <li><p>La première étape d'un test consiste à choisir le type de test que l'on souhaite réaliser, à savoir un test unilatéral à gauche, à droite ou bilatéral. Puisque notre hypothèse de recherche est que les femmes d'origine pima atteintes de diabètes ont un indice de masse corporelle moyen supérieur à celui des femmes non atteintes, on privilégie un test unilatéral à droite. Dans la cellule <c>D6</c> du canevas, il faut donc choisir le symbole <m>&gt;</m> (voir la <xref ref="Fig_2Moy_gif1"/>).</p>
+            <li><p>La première étape d'un test consiste à choisir le type de test que l'on souhaite réaliser, à savoir un test unilatéral à gauche, à droite ou bilatéral. Puisque notre hypothèse de recherche est que les femmes d'origine pima atteintes de diabète ont un indice de masse corporelle moyen supérieur à celui des femmes non atteintes, on privilégie un test unilatéral à droite. Dans la cellule <c>D6</c> du canevas, il faut donc choisir le symbole <m>&gt;</m> (voir la <xref ref="Fig_2Moy_gif1"/>).</p>
             <p></p>
                <figure xml:id="Fig_2Moy_gif1">
-            <caption>Remplissage des cellules pour la première étape d'un test sur deux moyennes indépendates</caption>
+            <caption>Remplissage des cellules pour la première étape d'un test sur deux moyennes indépendantes</caption>
             <image source="images/Fig_2Moy_gif1.png" >
-            <description>Remplissage des cellules pour la première étape d'un test sur deux moyennes indépendates</description>
+            <description>Remplissage des cellules pour la première étape d'un test sur deux moyennes indépendantes</description>
             </image>
             </figure> 
                 
@@ -803,7 +803,7 @@
                 
                 <li><p>Dans la cellule <c>I11</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert> et sélectionner la cellule <c>L4</c>et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>-->
                 
-                <li><p>Une fois les plages <c>F9:F11</c> et <c>I9:I11</c> remplies, il est possible de constater que les cellules <c>C20</c> et <c>C21</c> se remplissent automatiquement, les cellules étant pré-remplies avec les formules appropriées. Dans la cellule <c>C20</c> se trouve la formule pour <alert>s</alert>, une mesure nécessaire pour le calcul de l'écart type <m>\sigma_{\bar{X}_{1}-\bar{X}_{2}}</m> quand la taille d'un des échantillons est inférieur à 30. Il ne faut pas confondre cette mesure avec l'écart type corrigé d'un échantillon. Dans ce test, puisque les deux échantillons ont des tailles supérieurese à 30, on n'a pas besoin de <alert>s</alert> (voir la <xref ref="Fig_2Moy_gif4"/>).</p>
+                <li><p>Une fois les plages <c>F9:F11</c> et <c>I9:I11</c> remplies, il est possible de constater que les cellules <c>C20</c> et <c>C21</c> se remplissent automatiquement, les cellules étant préremplies avec les formules appropriées. Dans la cellule <c>C20</c> se trouve la formule pour <alert>s</alert>, une mesure nécessaire pour le calcul de l'écart type <m>\sigma_{\bar{X}_{1}-\bar{X}_{2}}</m> quand la taille d'un des échantillons est inférieur à 30. Il ne faut pas confondre cette mesure avec l'écart type corrigé d'un échantillon. Dans ce test, puisque les deux échantillons ont des tailles supérieures à 30, on n'a pas besoin de <alert>s</alert> (voir la <xref ref="Fig_2Moy_gif4"/>).</p>
                 
                   <p></p>
                     
@@ -839,7 +839,7 @@
                 
                 <li><p>L'écart type de la distribution <m>\bar{X}_{1}-\bar{X}_{2}</m>, soit <m>\sigma_{\bar{X}_{1}-\bar{X}_{2}}</m>, est calculé à l'aide de formule se trouvant dans les cellules <c>C20</c> et <c>C21</c>.</p></li>
                 
-                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c>B27</c>, sélectionner la statistique appropriée du test unilatéral à droite, soit <m>z_{\alpha}</m>. Remarquer que la valeur de <m>z_{\alpha}</m> (environ <m>2,33</m>) dans la cellule <c>D27</c> et <c>G29</c> est pré-remplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>1\%</m> (voir la <xref ref="Fig_2Moy_gif6"/>).</p></li>
+                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c>B27</c>, sélectionner la statistique appropriée du test unilatéral à droite, soit <m>z_{\alpha}</m>. Remarquer que la valeur de <m>z_{\alpha}</m> (environ <m>2,33</m>) dans la cellule <c>D27</c> et <c>G29</c> est préremplie et correspond bien à la cote <m>z</m> pour un seuil de signification de <m>1\%</m> (voir la <xref ref="Fig_2Moy_gif6"/>).</p></li>
                 
                 <li><p> Dans la cellule <c>E29</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test unilatéral à droite, il faut choisir les mots &#xAB; plus grande que &#xBB; (voir la <xref ref="Fig_2Moy_gif6"/>). </p>
                   <p></p>
@@ -855,7 +855,7 @@
                 </li>
                 
                 
-                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_2Moy_25"/>). On observe que la cote <m>z_{obs}</m> est énorme avec une valeur d'environ <m>9,06</m>. Le rejet de l'hypothèse nulle est presqu'assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est quasiment <m>0</m> (même en augmentant le nombre de décimales affichées).</p></li>
+                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_2Moy_25"/>). On observe que la cote <m>z_{obs}</m> est énorme avec une valeur d'environ <m>9,06</m>. Le rejet de l'hypothèse nulle est presque assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est quasiment <m>0</m> (même en augmentant le nombre de décimales affichées).</p></li>
                 
                 <li><p> Dans la cellule <c>A45</c>, écrire la décision et la conclusion du test en fonction de la règle de décision (voir la <xref ref="Fig_2Moy_25"/>). </p>
                   <p></p>
@@ -900,11 +900,11 @@
         <p>
         <ol>
             
-        <li><p>Dans la feuille <alert>Données</alert> du classeur <alert>Données_Diabètes</alert>, filtrer les données de la variable <alert>Atteint</alert> pour ne faire ressortir que les valeurs des femmes atteintes de diabète (voir la <xref ref="sssec_Filtrer"/>). S'assurer que le filtre sur la variable <alert>IMC</alert> est toujours en place, c'est-à-dire que les valeurs nulles ne sont pas tenues en compte.</p></li>  
+        <li><p>Dans la feuille <alert>Données</alert> du classeur <alert>Données_Diabètes</alert>, filtrer les données de la variable <alert>Atteint</alert> pour ne faire ressortir que les valeurs concernant les femmes atteintes de diabète (voir la <xref ref="sssec_Filtrer"/>). S'assurer que le filtre sur la variable <alert>IMC</alert> est toujours en place, c'est-à-dire que les valeurs nulles ne sont pas prises en compte.</p></li>  
             
             <li><p>Copier les valeurs de la colonne <alert>IMC</alert> et les coller dans la cellule <c>D2</c> d'une nouvelle feuille. Taper le titre <alert>Atteint</alert> dans la cellule <c>D1</c>.</p></li>
             
-            <li><p>Dans la feuille <alert>Données</alert>, filtrer les données de la variable <alert>Atteint</alert> pour ne faire ressortir que les valeurs des femmes non atteintes de diabète (voir la <xref ref="sssec_Filtrer"/>).</p></li>  
+            <li><p>Dans la feuille <alert>Données</alert>, filtrer les données de la variable <alert>Atteint</alert> pour ne faire ressortir que les valeurs concernant les femmes non atteintes de diabète (voir la <xref ref="sssec_Filtrer"/>).</p></li>  
             
             <li><p>Copier les valeurs de la colonne <alert>IMC</alert> et les coller dans la cellule <c>E2</c> d'une nouvelle feuille ajoutée. Taper le titre <alert>Atteint</alert> dans la cellule <c>E1</c> (voir la <xref ref="Fig_Utilitaire_1"/>).</p>
             <p></p>
@@ -1174,14 +1174,14 @@
             <title>Copier le cavenas <alert>2 moyennes dépendantes</alert></title>
        
             
-            <introduction><p>Avant d'effectuer le test sur deux moyenne dépendantes, il faut copier le canevas <alert>2 moyennes dépendantes</alert> dans le classeur <alert>Données_Polluant</alert>.</p></introduction>
+            <introduction><p>Avant d'effectuer le test sur deux moyennes dépendantes, il faut copier le canevas <alert>2 moyennes dépendantes</alert> dans le classeur <alert>Données_Polluant</alert>.</p></introduction>
 
             <p>
             <ol>
                 
-             <li><p>Ouvrir les fichiers Excel <alert>Données_Polluant.xlsm</alert> et <alert>Labo 6_Canevas.xlsm</alert>.</p></li>   
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Polluant.xlsm</alert> et <alert>Canevas_tests_hypotheses.xlsm</alert>.</p></li>   
                 
-             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes dépendantes</alert> du fichier <alert>Labo 6_Canevas.xlsm</alert> au classeur <alert>Données_Polluant.xlsm</alert>.</p></li>   
+             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes dépendantes</alert> du fichier <alert>Canevas_tests_hypotheses.xlsm</alert> au classeur <alert>Données_Polluant.xlsm</alert>.</p></li>   
             </ol>
             </p>
             
@@ -1211,9 +1211,9 @@
             <li><p>La première étape d'un test consiste à choisir le type de test que l'on souhaite réaliser, à savoir un test unilatéral à gauche, à droite ou bilatéral. Puisque l'impact d'intenses précipitations n'est pas clair (voir la <xref ref="sec-Prelab_TestHyp"/>), il est prudent d'être conservateur et de choisir un test bilatéral. Dans la cellule <c>D6</c> de la feuille <alert>2 moyennes dépendantes</alert> du classeur <alert>Données_Polluant.xlsm</alert>, il faut donc choisir le symbole <m>\neq</m> (voir la <xref ref="Fig_2MoyDep_gif1"/>).</p>
             <p></p>
                <figure xml:id="Fig_2MoyDep_gif1">
-            <caption>Remplissage des cellules pour la première étape d'un test sur deux moyennes dépendates</caption>
+            <caption>Remplissage des cellules pour la première étape d'un test sur deux moyennes dépendantes</caption>
             <image source="images/Fig_2MoyDep_gif1.png" >
-            <description>Remplissage des cellules pour la première étape d'un test sur deux moyennes dépendates</description>
+            <description>Remplissage des cellules pour la première étape d'un test sur deux moyennes dépendantes</description>
             </image>
             </figure> 
                 
@@ -1227,7 +1227,7 @@
             
                 <li><p>Choisir un seuil de <m>0,01</m>. Dans la cellule <c>C9</c>, taper <c>=0,01</c> (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p></li>
                 
-                <li><p>Au moment de l'enregistrement du fichier, le nombre total de données était de <m>933 881</m> observations. Prendre cela comme la taille de la population. Taper &#xAB; 933881 &#xBB; (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p>
+                <li><p>Au moment de l'enregistrement du fichier, le nombre total de données était de <m>933 881</m> observations. Prendre ce nombre comme la taille de la population. Taper &#xAB; 933881 &#xBB; (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p>
                   <p></p>
                     
                <figure xml:id="Fig_2MoyDep_gif2">
@@ -1249,7 +1249,7 @@
                 
                <li><p>Dans la cellule <c>F11</c>, taper <c>=ECARTYPE.STANDARD(Différence)</c> pour calculer l'écart type des mesures. Appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2MoyDep_gif2"/>).</p></li>
                 
-                <li><p>Une fois les plages <c>F9:F11</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>D27</c>, <c>G29</c> et <c>F32</c> se remplissent automatiquement, les cellules étant pré-remplies avec les formules appropriées.</p>
+                <li><p>Une fois les plages <c>F9:F11</c> remplies, il est possible de constater que les cellules <c>C20</c>, <c>D27</c>, <c>G29</c> et <c>F32</c> se remplissent automatiquement, les cellules étant préremplies avec les formules appropriées.</p>
                 
            
                 </li>
@@ -1286,7 +1286,7 @@
                 
                 </li>
                 
-                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c> B27</c>, sélectionner la statistique appropriée du test bilatéral, soit <m>t_{\alpha/2}</m>. Remarquer que la valeur de <m>t_{\alpha/2}</m> (environ <m>3,17</m>) dans les cellules <c>D27</c> et <c>G29</c> est pré-remplie et correspond bien à la cote <m>t</m> pour un seuil de signification de <m>1\%</m> et un degré de liberté de 10 (voir la <xref ref="Fig_2MoyDep_gif3"/>).</p></li>
+                <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c> B27</c>, sélectionner la statistique appropriée du test bilatéral, soit <m>t_{\alpha/2}</m>. Remarquer que la valeur de <m>t_{\alpha/2}</m> (environ <m>3,17</m>) dans les cellules <c>D27</c> et <c>G29</c> est préremplie et correspond bien à la cote <m>t</m> pour un seuil de signification de <m>1\%</m> et un degré de liberté de 10 (voir la <xref ref="Fig_2MoyDep_gif3"/>).</p></li>
                 
                 <li><p> Dans la cellule <c>E29</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test bilatéral, il faut choisir les mots &#xAB; est différente de &#xBB; (voir la <xref ref="Fig_2MoyDep_gif3"/>). </p>
                  
@@ -1294,7 +1294,7 @@
                 </li>
                 
                 
-                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_2MoyDep_16"/>). On observe que la cote <m>|t_{obs}|</m> est grande avec une valeur d'environ <m>5,04</m>. Le rejet de l'hypothèse nulle est presqu'assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est d'environ <m>0,0005</m>.</p></li>
+                  <li><p>À la sixième étape, toutes les cases roses se remplissent automatiquement selon les informations fournies précédemment (voir la <xref ref="Fig_2MoyDep_16"/>). On observe que la cote <m>|t_{obs}|</m> est grande avec une valeur d'environ <m>5,04</m>. Le rejet de l'hypothèse nulle est presque assuré. De plus, pour renchérir sur ce point, la valeur p calculée par Excel est d'environ <m>0,0005</m>.</p></li>
                 
                 <li><p> Dans la cellule <c>A45</c>, écrire la décision et la conclusion du test en fonction de la règle de décision (voir la <xref ref="Fig_2MoyDep_16"/>). </p>
                   <p></p>
@@ -1306,7 +1306,7 @@
             </image>
             </figure>
                     <p></p>
-              <p>Il serait intéressant de vérifier si cette conclusion s'applique à tous les types de polluants et non seulement les particules fines.</p>  
+              <p>Il serait intéressant de vérifier si cette conclusion s'applique à tous les types de polluants et non seulement aux particules fines.</p>  
                 </li>
               
            
@@ -1317,7 +1317,7 @@
         </p>
         
         
-        <p>Il est possible d'utiliser l'utilitaire d'analyse, comme présenté à la <xref ref="sssec-UtilitaireAnalyse"/>. Il suffit de sélectionner l'option <alert>Test d'égalité des espérances: observations pairées</alert>, l'option pour les tests d'hypothèse sur deux moyennes dépendantes.</p>
+        <p>Il est possible d'utiliser l'utilitaire d'analyse, comme présenté à la <xref ref="sssec-UtilitaireAnalyse"/>. Il suffit de sélectionner l'option <alert>Test d'égalité des espérances: observations pairées</alert>, l'option pour les tests d'hypothèses sur deux moyennes dépendantes.</p>
         </subsubsection>
     
     </subsection>

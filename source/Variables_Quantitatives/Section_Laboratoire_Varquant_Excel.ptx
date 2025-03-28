@@ -1040,7 +1040,7 @@
                 <p>L'allure des bandes est désormais la suivante (voir la <xref ref="Fig_IMC_HistoF_13"/>).</p>
                 <p> </p>
                  <figure xml:id="Fig_IMC_HistoF_13">
-<caption>Histogramme avec <m>0%</m> comme largeur des intervalles</caption>
+<caption>Histogramme avec <m>0\%</m> comme largeur des intervalles</caption>
 <image source="images/Fig_IMC_HistoF_13.png" >
 <description>Histogramme avec 0% comme largeur des intervalles</description>
 </image>
@@ -1891,7 +1891,6 @@
                         <li><p>Dans la feuille <alert>Données</alert>, sélectionner la plage de données de la variable dont on souhaite tracer le diagramme à quartiles. Ici, c'est la variable <alert>IMC</alert>. S'assurer que les données de cette variable sont filtrées pour enlever les valeurs nulles. La sélection devrait être <c>H6:H773</c>, ou <c>H17:H773</c> (quand les valeurs sont ordonnées en ordre croissant et n'incluent pas les valeurs nulles).</p></li>
                         
                         <li><p>Cliquer sur l'onglet <alert>Insertion</alert> et sélectionner l'option <alert>Boite à moustaches</alert> (voir la <xref ref="Fig_Moustaches_1"/>).</p>
-                           <p></p>
                   
                      <figure xml:id="Fig_Moustaches_1">
 <caption>Insertion d'une boite à moustaches</caption>
@@ -1899,7 +1898,6 @@
 <description>Insertion d'une boite à moustaches</description>
 </image>
 </figure>
-                            <p></p>
                         </li>
                         
                         <li><p>En cliquant avec le bouton de droite sur le graphique, déplacer  ce dernier à la feuille <alert>Étude IMC</alert>, dans un endroit vide.</p>

@@ -61,6 +61,7 @@
   <!-- sided.  @pageref="yes/no" controls whether page number are   -->
   <!-- included in cross-references                                 -->
   <latex print="no" sides="one" font-size="10" draft="no">
+  <cover front="images/frontcover_LSAN_avec_titre.pdf"/>
     <!-- Control text justification and bottom page behavior: -->
     <page right-alignment="flush" bottom-alignment="ragged" />
     <!-- Add content to \geometry{}: -->

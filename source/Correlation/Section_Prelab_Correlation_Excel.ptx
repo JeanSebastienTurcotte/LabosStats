@@ -2,7 +2,7 @@
 
 <section xml:id="sec-Prelab_Correlation" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Prélab</title>
-<p>Dans ce laboratoire, on poursuit le travail des deux laboratoires précédents à propos de la recherche d'un lien entre deux variables. En particulier, lorsque les deux variables sont quantitatives continues, on peut s'intéresser au type de lien qu'il peut y avoir entre deux variables. Ce lien peut être linéaire, polynomiale, exponentielle, logarithmique et ainsi de suite. Par simplicité, on commence par considérer uniquement les variables dont le lien semble être linéaire. Afin de poser les bonnes conclusions, il est primordial que cette linéarité soit présente. La principale manière de constater ce type de lien est en illustrant les variables sur un nuage de points, aussi appelé diagramme de dispersion. </p>
+<p>Dans ce laboratoire, on poursuit le travail des deux laboratoires précédents à propos de la recherche d'un lien entre deux variables. En particulier, lorsque les deux variables sont quantitatives continues, on peut s'intéresser au type de lien qu'il peut y avoir entre deux variables. Ce lien peut être linéaire, polynomiale, exponentielle, logarithmique et ainsi de suite. Par simplicité, on commence par considérer uniquement les variables dont le lien semble être linéaire. Afin de tirer les bonnes conclusions, il est primordial que cette linéarité soit présente. La principale manière de constater ce type de lien est en illustrant les variables sur un nuage de points, aussi appelé diagramme de dispersion. </p>
 <worksheet xml:id="ws-Prelab_Correlation">
 <title>Travail à faire avant le cours</title>
 
@@ -50,7 +50,7 @@
   <task><statement><p>Observer l'effet qu'a le changement du jeu de données dans le filtre sur les mesures statistiques calculées et sur l'allure du nuage de points. Commenter brièvement. </p></statement></task>
   </exercise>
   </page>
-  <exercise><introduction><p>Télécharger le fichier <c>Cepheides_donnees.xlsx</c> disponible TODO. Ce fichier contient différentes données de <m>421</m> étoiles de type &#x00AB; céphéides &#x00BB;. Dans le prochain laboratoire, on cherche à déterminer s'il existe des liens linéaires entre certaines de ces variables.</p></introduction>
+  <exercise><introduction><p>Télécharger le fichier <c>Données_Cepheides.xlsx</c> disponible TODO. Ce fichier contient différentes données de <m>421</m> étoiles de type &#x00AB; céphéides &#x00BB;. Dans le prochain laboratoire, on cherche à déterminer s'il existe des liens linéaires entre certaines de ces variables.</p></introduction>
   <task><statement><p>Dans une feuille appelée &#x00AB; PR &#x00BB;, tracer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
   <task><statement><p>Dans une feuille appelée &#x00AB;MappP &#x00BB;, tracer le nuage de points représentant la magnitude apparente des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
   <task><statement><p>Dans une feuille appelée &#x00AB;MabsP &#x00BB;, tracer le nuage de points représentant la magnitude absolue des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>

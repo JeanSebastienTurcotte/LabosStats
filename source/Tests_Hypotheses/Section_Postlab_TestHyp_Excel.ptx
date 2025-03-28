@@ -2,7 +2,7 @@
 
 <section xml:id="sec-Postlab_TestHyp" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Réflexions</title>
-<p>Ce laboratoire aura permis d'explorer les concepts liés aux tests d'hypothèse paramétriques. Toutefois, une étude plus approfondie est utile pour en saisir toutes les subtilités.</p>
+<p>Ce laboratoire aura permis d'explorer les concepts liés aux tests d'hypothèses paramétriques. Toutefois, une étude plus approfondie est utile pour en saisir toutes les subtilités.</p>
     
     
     
@@ -30,7 +30,7 @@
     </exercise>
     
         <exercise>
-    <statement><p>On dit souvent des tests unilatéraux qu'ils sont plus puissants que les tests bilatéraux si on a une idée de la direction du changement. Donner quelques exemples pour illustrer ce point. </p></statement>
+    <statement><p>On dit souvent des tests unilatéraux qu'ils sont plus puissants que les tests bilatéraux si l'on a une idée de la direction du changement. Donner quelques exemples pour illustrer cette affirmation. </p></statement>
     </exercise>-->
         
        <!-- <exercise>
@@ -42,15 +42,15 @@
     </exercise>-->
 
         <exercise>
-    <statement><p>Avant de faire une collecte de données, un chercheur pose ses hypothèses de recherche. Ce dernier effectue une étude sur l'efficacité de certains désinfectants sur la croissance de bactéries. Ce dernier croit que le désinfectant commercial Lysol sera plus efficace que le vinaigre à contrer la croissance bactérienne. Une fois les données récoltées, le chercheur constate que la moyenne du diamètre d'inhibition des bactéries avec Lysol est plus petite que la moyenne avec le vinaigre. Il décide de manipuler ses données pour fitter son hypothèse de recherche de départ. Discuter des impacts de ce choix dans ce contexte et dans d'autres contextes. Que devrait faire le chercheur avant de réaliser son test d'hypothèse? </p></statement>
+    <statement><p>Avant de faire une collecte de données, un chercheur pose ses hypothèses de recherche. Ce dernier effectue une étude sur l'efficacité de certains désinfectants sur la croissance de bactéries. Ce dernier croit que le désinfectant commercial Lysol sera plus efficace que le vinaigre contre la croissance bactérienne. Une fois les données récoltées, le chercheur constate que la moyenne du diamètre d'inhibition des bactéries avec Lysol est plus petite que la moyenne avec le vinaigre. Il décide de manipuler ses données pour aller dans le sens de son hypothèse de recherche de départ. Discuter des impacts de ce choix dans ce contexte et dans d'autres contextes. Que devrait faire le chercheur avant de réaliser son test d'hypothèse? </p></statement>
     </exercise>
         
         
      <exercise>
-    <statement><p>Dans le test sur deux moyennes dépendantes de la <xref ref="ssec-TestDeuxMoyennesDep"/>, à partir de quelle valeur du seuil de signification la conclusion du test change-t-elle? Donner la valeur au centième près. Expliquer en considérant les valeur des statistiques et de la valeur p.</p></statement>
+    <statement><p>Dans le test sur deux moyennes dépendantes de la <xref ref="ssec-TestDeuxMoyennesDep"/>, à partir de quelle valeur du seuil de signification la conclusion du test change-t-elle? Donner la valeur au centième près. Expliquer en considérant les valeurs des statistiques et de la valeur p.</p></statement>
     </exercise>
         
-        <!--si on change le seuil de signification, est-ce que la conclusion du test change?-->
+        <!--si l'on change le seuil de signification, est-ce que la conclusion du test change?-->
         
         <exercise>
     <statement><p>Un chercheur peut commettre deux types d'erreurs lorsque vient le temps de conclure: une erreur de type I (un faux positif), c'est-à-dire rejeter <m>H_{0}</m> alors que <m>H_{0}</m> est vraie, ou une erreur de type II (un faux négatif), soit ne pas rejeter <m>H_{0}</m> alors que <m>H_{0}</m> est faux. Supposer qu'un professionnel de la santé veut tester si un patient a une maladie. Dans quel contexte est-ce que l'erreur de type I (faux positif) est plus grave? Dans quel contexte est-ce que l'erreur de type II (faux négatif) est plus grave? Donner des exemples concrets.
@@ -59,7 +59,7 @@
         
         
         <exercise>
-    <statement><p>Parmi toutes les bases de données disponibles (baseball, vin, armée, nutrition, voitures, etc.), faire deux tests d'hypothèse paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse.</p></statement>
+    <statement><p>Parmi toutes les bases de données disponibles (baseball, vin, armée, nutrition, voitures, etc.), faire deux tests d'hypothèses paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse.</p></statement>
     </exercise>
         
         <!--effectuer une recherche statistique en suivant toutes les étapes présentées dans les laboratoires 1, 2, 3 et 6 sauf la collecte de données. Cela signifie une recherche préliminaire de la littérature scientifique, la formulation de quelques hypothèses de recherche et la réalisation des tests d'hypothèse paramétriques. Faire deux tests d'hypothèse paramétriques de type différent en utilisant les canevas.-->

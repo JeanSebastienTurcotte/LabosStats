@@ -245,9 +245,9 @@
         <li> Poids insuffisant (<m> \lt 18,5</m>)</li>
         <li> Poids normal (<m>18,5 - 24,9</m>)</li>
         <li> Excès de poids (<m>25,0 - 29,9</m>)</li>
-        <li> Obésité Classe I (<m>30,0-34,9</m>)</li>
-        <li> Obésité Classe II (<m>35-39,9</m>)</li>
-        <li> Obésité Classe III (<m>\geq 40,0</m>)</li>
+        <li> Obésité classe I (<m>30,0-34,9</m>)</li>
+        <li> Obésité classe II (<m>35-39,9</m>)</li>
+        <li> Obésité classe III (<m>\geq 40,0</m>)</li>
     </ol></p>
     
 </li>

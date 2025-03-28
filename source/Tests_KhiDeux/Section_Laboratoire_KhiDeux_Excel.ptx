@@ -42,9 +42,9 @@
             <p>
             <ol>
                 
-             <li><p>Ouvrir les fichiers Excel <alert>Données_Collisions.xlsx</alert> et <alert>Labo 7_Canevas.xlsx</alert>.</p></li>   
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Collisions.xlsx</alert> et <alert>Canevas_tests_independance.xlsx</alert>.</p></li>   
                 
-             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Labo 7_Canevas</alert> au classeur <alert>Données_Collisions</alert>.</p></li> 
+             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Canevas_tests_independance</alert> au classeur <alert>Données_Collisions</alert>.</p></li> 
                 
               
             </ol>
@@ -89,9 +89,9 @@
             <p>
             <ul>
             
-            <li><p>Il faut commencer par générer un tableau croisé dynamique des effectifs observés. Dans la feuille <alert>Données_Collisions</alert>, sélectionner le tableau &#xAB; Échantillon &#xBB;. </p></li>
+            <li><p>Il faut commencer par générer un tableau croisé dynamique des effectifs observés. Dans la feuille <alert>Données_Collisions</alert>, sélectionner le tableau &#xAB; Données &#xBB;. </p></li>
                 
-            <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul qu'on renomme <alert>TCD_GraviteAge</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Échantillon</alert>. Placer ce tableau dans la cellule <c>A3</c> (voir la <xref ref="Fig_KhiAge_5"/>).</p>
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul qu'on renomme <alert>TCD_GraviteAge</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Données</alert>. Placer ce tableau dans la cellule <c>A3</c> (voir la <xref ref="Fig_KhiAge_5"/>).</p>
                    <p></p>
                     
             <figure xml:id="Fig_KhiAge_5">
@@ -422,9 +422,9 @@
         <p>
         <ol>
             
-            <li><p>Ouvrir les fichiers Excel <alert>Données_Collisions.xlsx</alert> et <alert>Labo 7_Canevas.xlsx</alert>.</p></li>   
+            <li><p>Ouvrir les fichiers Excel <alert>Données.xlsx</alert> et <alert>Canevas_tests_independance.xlsx</alert>.</p></li>   
                 
-             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Labo 7_Canevas</alert> au classeur <alert>Données_Collisions</alert>. Une fois fait, fermer le fichier <alert>Labo 7_Canevas.xlsx</alert>.</p></li> 
+             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Canevas_tests_independance</alert> au classeur <alert>Données_Collisions</alert>. Une fois fait, fermer le fichier <alert>Canevas_tests_independance.xlsx</alert>.</p></li> 
         
             <li><p>Dans le classeur <alert>Données_Collisions</alert>, sélectionner la feuille <alert>Test d'indépendance</alert>. Renommer cette feuille &#xAB; Test Khi-Deux Sécurité&#xBB; et la placer en dernière position.</p></li>
             
@@ -452,9 +452,9 @@
             <p>
             <ul>
             
-            <li><p>Il faut commencer par générer un tableau croisé dynamique des effectifs observés. Dans la feuille <alert>Données_Collisions</alert>, sélectionner le tableau &#xAB; Échantillon &#xBB;. </p></li>
+            <li><p>Il faut commencer par générer un tableau croisé dynamique des effectifs observés. Dans la feuille <alert>Données_Collisions</alert>, sélectionner le tableau &#xAB; Données &#xBB;. </p></li>
                 
-            <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul qu'on renomme <alert>TCD_GraviteSécurité</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Échantillon</alert>. Placer ce tableau dans la cellule <c>A3</c> (voir la <xref ref="Fig_Securite_gif1"/>).</p></li>
+            <li><p>En suivant les étapes présentées à la <xref ref="sssec-CreerTCD"/>, générer, dans une nouvelle feuille de calcul qu'on renomme <alert>TCD_GraviteSécurité</alert>, un tableau croisé dynamique vide à partir du tableau <alert>Données</alert>. Placer ce tableau dans la cellule <c>A3</c> (voir la <xref ref="Fig_Securite_gif1"/>).</p></li>
                 
                 
                 <li><p>Glisser et déposer la variable <alert>Mesures de sécurité</alert> dans la zone de saisie <alert>Lignes</alert> (voir la <xref ref="Fig_Securite_gif1"/>).</p></li>
