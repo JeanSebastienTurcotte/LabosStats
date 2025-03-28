@@ -250,8 +250,8 @@
             
             <p>
             <ol>
-                
-                <li><p>Télécharger et ouvrir le classeur <c>Données_Précipitations.xlsm</c>.</p></li>
+ <!-- <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Bixi_ao%C3%BBt_2016.xlsx?raw=true">suivante</url> -->               
+                <li><p>Télécharger et ouvrir le classeur <c>Données_Précipitations.xlsm</c> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Pr%C3%A9cipitations.xlsm?raw=true">suivante</url>.</p></li>
 
                 <li><p>Dans la feuille intitulée <alert>Données_Précipitations</alert>, sélectionner le tableau dans son entièreté, soit la plage de cellules <c>F5:G36</c>. </p></li> 
             
@@ -449,8 +449,8 @@
             
             <p>
             <ol>
-                
-                <li><p>Ouvrir le classeur <alert>Données_Armée.xlsm</alert>.</p></li>
+                   
+                <li><p>Ouvrir le classeur <alert>Données_Armée.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Arm%C3%A9e.xlsm?raw=true">suivante</url>.</p></li>
 
                 <li><p>Dans la feuille intitulée <alert>Données_Armée</alert>, sélectionner le tableau dans son entièreté, soit la plage de cellules <c>A5:I6073</c>. </p></li> 
             
@@ -714,7 +714,7 @@
             <p>
             <ol>
                 
-             <li><p>Ouvrir les fichiers Excel <alert>Données_Diabète_pour_tests.xlsm</alert>, le fichier complété du laboratoire 3, et <alert>Canevas_tests_hypotheses.xlsm</alert>.</p></li>   
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Diabète_pour_tests.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Diab%C3%A8te_pour_tests.xlsm?raw=true">suivante</url>, le fichier complété du laboratoire 3, et <alert>Canevas_tests_hypotheses.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_hypotheses.xlsm?raw=true">suivante</url>.</p></li>   
                 
              <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes indépendantes</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données</alert>. </p></li>  
                 
@@ -1009,6 +1009,8 @@
         <p>
         <ol>
             
+            <li><p>Ouvrir le fichier Excel <alert>Données_Polluant.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Polluant.xlsm?raw=true">suivante</url>.</p></li>
+            
         <li><p>Dans la feuille <alert>Données_Qualité_Air</alert>, sélectionner le tableau dans son entièreté, soit la plage de cellules <c>A1:E933881</c>. </p></li> 
             
             <li><p>En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB;. </p></li> 
@@ -1179,7 +1181,7 @@
             <p>
             <ol>
                 
-             <li><p>Ouvrir les fichiers Excel <alert>Données_Polluant.xlsm</alert> et <alert>Canevas_tests_hypotheses.xlsm</alert>.</p></li>   
+             <li><p>Ouvrir le fichier <alert>Canevas_tests_hypotheses.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_hypotheses.xlsm?raw=true">suivante</url>.</p></li>   
                 
              <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes dépendantes</alert> du fichier <alert>Canevas_tests_hypotheses.xlsm</alert> au classeur <alert>Données_Polluant.xlsm</alert>.</p></li>   
             </ol>

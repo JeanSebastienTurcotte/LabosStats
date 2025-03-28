@@ -824,7 +824,7 @@ BIXI Montréal est un organisme à but non lucratif créé en 2014 par la Ville 
 </page>
 <page>
 <exercise>
-<introduction><p>Télécharger et ouvrir le fichier <c>Bixi_août_2016.xlsx</c> disponible à l'adresse ToDo. Ce fichier contient une feuille de calcul appelée &#xAB;Trajets en BIXI août 2016&#xBB;, laquelle contient quatre variables et <m>688174</m> données, représentant l'ensemble de tous les trajets effectués en Bixi à Montréal durant le mois d'août 2016. On considère ces trajets comme la population à l'étude.</p></introduction>
+<introduction><p>Télécharger et ouvrir le fichier <c>Bixi_août_2016.xlsx</c> disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Bixi_ao%C3%BBt_2016.xlsx?raw=true">suivante</url>. Ce fichier contient une feuille de calcul appelée &#xAB;Trajets en BIXI août 2016&#xBB;, laquelle contient quatre variables et <m>688174</m> données, représentant l'ensemble de tous les trajets effectués en Bixi à Montréal durant le mois d'août 2016. On considère ces trajets comme la population à l'étude.</p></introduction>
 <task>
 <statement>
 <p>Dans la feuille de calcul <alert>Trajets en BIXI août 2016</alert>, nommer le tableau des données ainsi que ses colonnes, tel que montré à la <xref ref="ssec-Nommerdescellules"/>. Créer ensuite une deuxième feuille de calculs intitulée &#xAB;Échantillonnage_canevas&#xBB;. Déplacer cette feuille de calcul à la gauche de la première. Cela évitera plus tard de la sélectionner par erreur.</p>

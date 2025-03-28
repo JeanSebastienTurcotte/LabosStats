@@ -59,7 +59,7 @@
         
         
         <exercise>
-    <statement><p>Parmi toutes les bases de données disponibles (baseball, vin, armée, nutrition, voitures, etc.), faire deux tests d'hypothèses paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse.</p></statement>
+    <statement><p>Parmi toutes les bases de données disponibles (<!--baseball,--> vin, armée, <!--nutrition,--> collisions, etc.), faire deux tests d'hypothèses paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse.</p></statement>
     </exercise>
         
         <!--effectuer une recherche statistique en suivant toutes les étapes présentées dans les laboratoires 1, 2, 3 et 6 sauf la collecte de données. Cela signifie une recherche préliminaire de la littérature scientifique, la formulation de quelques hypothèses de recherche et la réalisation des tests d'hypothèse paramétriques. Faire deux tests d'hypothèse paramétriques de type différent en utilisant les canevas.-->
