@@ -19,18 +19,18 @@
   <sidebyside widths="45% 45%" margins="auto" valign="middle">
   <figure xml:id="fig-correlation_intro1">
   <caption>Un premier lien entre deux variables</caption>
-  <image source="images/Lien1.svg"></image></figure>
+  <image source="images/Lien1"></image></figure>
   <figure xml:id="fig-correlation_intro2">
    <caption>Un deuxième lien entre deux variables</caption>
-  <image source="images/Lien2.svg"></image></figure>
+  <image source="images/Lien2"></image></figure>
   </sidebyside>
   <sidebyside widths="45% 45%" margins="auto" valign="middle">
   <figure xml:id="fig-correlation_intro3">
   <caption>Un troisième lien entre deux variables</caption>
-  <image source="images/Lien3.svg"></image></figure>
+  <image source="images/Lien3"></image></figure>
   <figure xml:id="fig-correlation_intro4">
    <caption>Un quatrième lien entre deux variables</caption>
-  <image source="images/Lien4.svg"></image></figure>
+  <image source="images/Lien4"></image></figure>
   </sidebyside>
   </statement></exercise>
   <exercise xml:id="exo-moindrescarres"><introduction><p>Par deux points il ne peut passer qu'une seule droite. Étant donnés un ensemble de points, il est impossible de penser qu'une relation de la forme <m>y=ax+b</m> pourra passer par tous les points. Il existe plusieurs manières de définir &#x00AB; la meilleure droite &#x00BB; <m>y=ax+b</m> représentant un ensemble de points. La plus commune est celle obtenue en appliquant la méthode des moindres carrées.</p>
@@ -42,7 +42,7 @@
   </exercise>
   </page> 
   <page>
-  <exercise><introduction><p>Le fichier <c>13jeux_de_donnees.xlsx</c> disponible TODO contient 13 ensembles de couples de données ayant été créés artificiellement afin de produire le résultat des exercices ci-dessous. Le but de cet exercice est de comprendre l'importance d'observer les données avant d'en tirer quelconque conclusion.</p></introduction>
+  <exercise><introduction><p>Le fichier <c>13jeux_de_donnees.xlsx</c> disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/13jeux_de_donnees.xlsx?raw=true">adresse</url> contient 13 ensembles de couples de données ayant été créés artificiellement afin de produire le résultat des exercices ci-dessous. Le but de cet exercice est de comprendre l'importance d'observer les données avant d'en tirer quelconque conclusion.</p></introduction>
   <task><statement><p>Dans une nouvelle feuille de calculs, créer un tableau croisé dynamique contenant dans la zone de saisie <alert>Colonne</alert> les entrées <c>Valeurs_X</c> et <c>Valeurs_Y</c>. Ajouter aussi un filtre avec l'entrée <c>Jeu x</c></p></statement></task>
   <task><statement><p>Positionner le filtre en haut du tableau sur <c>Jeu 1</c>.</p></statement></task>
   <task><statement><p>À l'aide de fonctions Excel, calculer la moyenne des valeurs <c>X</c>, la moyenne des valeurs <c>Y</c>, l'écart type des valeurs <c>X</c>, l'écart type des valeurs <c>Y</c> ainsi que le coefficient de corrélation entre les valeurs <c>X</c> et <c>Y</c>. </p></statement></task>
@@ -50,8 +50,8 @@
   <task><statement><p>Observer l'effet qu'a le changement du jeu de données dans le filtre sur les mesures statistiques calculées et sur l'allure du nuage de points. Commenter brièvement. </p></statement></task>
   </exercise>
   </page>
-  <exercise><introduction><p>Télécharger le fichier <c>Données_Cepheides.xlsx</c> disponible TODO. Ce fichier contient différentes données de <m>421</m> étoiles de type &#x00AB; céphéides &#x00BB;. Dans le prochain laboratoire, on cherche à déterminer s'il existe des liens linéaires entre certaines de ces variables.</p></introduction>
-  <task><statement><p>Dans une feuille appelée &#x00AB; PR &#x00BB;, tracer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
+  <exercise><introduction><p>Télécharger le fichier <c>Données_Cepheides.xlsx</c> disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Cepheides.xlsx?raw=true">adresse</url>. Ce fichier contient différentes données de <m>421</m> étoiles de type &#x00AB; céphéides &#x00BB;. Dans le prochain laboratoire, on cherche à déterminer s'il existe des liens linéaires entre certaines de ces variables.</p></introduction>
+  <task><statement><p>Dans une feuille appelée &#x00AB; RP &#x00BB;, tracer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
   <task><statement><p>Dans une feuille appelée &#x00AB;MappP &#x00BB;, tracer le nuage de points représentant la magnitude apparente des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
   <task><statement><p>Dans une feuille appelée &#x00AB;MabsP &#x00BB;, tracer le nuage de points représentant la magnitude absolue des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
   <task><statement><p>Sur chacune des trois feuilles, faire l'étude descriptive de la population telle que décrite dans la <xref ref="sssec_Mesures"/> pour les variables impliquées.</p></statement></task>

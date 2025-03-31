@@ -14,7 +14,7 @@
 <section xml:id="sec-Armee">
     <title>Armée américaine</title>
 
-     <p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, document consulté le 30 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. On introduit les données d'un échantillon de <m>6068</m> membres de l'armée américaine, prélevé en 2011 <fn> <url href="https://www.openlab.psu.edu/ansur2/"/>, page consultée le 30 novembre 2024</fn>. On pourrait supposer que la proportion de membres issus de minorité ethnique augmente à chaque année. C'est ce que l'on va vérifier en effectuant un test d'hypothèse sur une proportion. La base de données, modifiée pour répondre aux objectifs de ce laboratoire, a été obtenue du site <fn>https://www.openlab.psu.edu/ansur2/</fn>. Cette base de données comprend les variables suivantes.</p>
+     <p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, document consulté le 30 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. On introduit les données d'un échantillon de <m>6068</m> membres de l'armée américaine, prélevé en 2011 <fn> <url href="https://www.openlab.psu.edu/ansur2/"/>, page consultée le 30 novembre 2024</fn>. On pourrait supposer que la proportion de membres issus de minorité ethnique augmente à chaque année. C'est ce que l'on va vérifier en effectuant un test d'hypothèse sur une proportion. La base de données, modifiée pour répondre aux objectifs de ce laboratoire, a été obtenue du site <fn>https://www.openlab.psu.edu/ansur2/</fn>. La base de données à à cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Arm%C3%A9e.xlsm?raw=true">adresse</url> cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Arm%C3%A9e.xlsm?raw=true">adresse</url> comprend les variables suivantes.</p>
         
          
     <p>
@@ -86,9 +86,19 @@
         
     </ul>
     </p>
+    
+        <section xml:id="sec-Bixi">
+        
+        La base de données sur les données de trajets de Bixi se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Bixi_ao%C3%BBt_2016.xlsx?raw=true">adresse</url> 
+    </section>
 
     
 </section>
+    
+         <section xml:id="sec-Cepheides">
+        
+        La base de données sur les céphéides se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Cepheides.xlsx?raw=true">adresse</url> 
+    </section>
     
         
     <section xml:id="sec-Collisions">
@@ -205,6 +215,8 @@
     </p>
         
 <p>La base de données est en lien avec les individus impliqués dans une collision et non pas le nombre de collisions. Une collision est donc enregistrée plusieurs fois selon le nombre de personnes impliquées. Par exemple, si deux véhicules sont entrées en collision, chacun avec un conducteur et un passager, on retrouvera cette collision quatre fois dans la base de données.</p>
+
+<p>La base de données se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Collisions.xlsx?raw=true">suivante</url>.</p>
     
 </section>
         
@@ -218,7 +230,7 @@
 <p>Selon Santé Canada, le diabète est défini comme &#xAB; une maladie chronique qui se développe lorsque le corps ne produit pas l'insuline dont il a besoin pour transformer le sucre en énergie ou qu'il ne l'utilise pas efficacement &#xBB;<fn><url href="https://www.canada.ca/fr/sante-publique/services/maladies-chroniques/diabete.html"/>, page consulté le 26 août 2024</fn>. Cette maladie se divise en trois catégories : le diabète de type 1, le diabète de type 2 et le diabète gestationnel. Le diabète de type 1 se caractérise par une production insuffisante d'insuline par le corps. Le diabète de type 2 est lié à une résistance du corps à l'insuline. Le diabète gestationnel, quant à lui, se manifeste par une élévation récente du taux de glucose dans le sang d'une femme enceinte.</p>
     
 <p>Dans l'étude présentée, on se concentre sur le diabète de type 2, une forme de diabète fréquemment associée à l'inactivité physique, à l'obésité, à l'âge avancé d'un individu, ainsi qu'à des antécédents familiaux de diabète de type 2. Plusieurs communautés autochtones rencontrent des obstacles pour accéder à des soins de santé adéquats en raison de ressources limitées, de faibles revenus et de conditions économiques précaires. </p>
-    
+<p>Le fichier Excel à télécharger, ouvrir et enregistrer est <c>Données_Diabète.xlsx</c> disponible en cliquant <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Diab%C3%A8te.xlsx?raw=true">ici</url>.</p>
 <p>La base de données de l'enquête comprend les mesures diagnostiques d'un échantillon de 768 femmes d'origine pima de l'Arizona. Les variables à l'étude sont :</p>
 
 <p>
@@ -280,7 +292,7 @@
     <title>Polluants</title>
     
         
-        <p>Le 9 août 2024, la ville de Montréal a reçu une quantité de pluie record entre 158 et 173 mm en raison de la tempête tropicale Debby, entraînant d'importantes inondations et des dommages infrastructurels. Une question intéressante à examiner est la suivante : comment des précipitations intenses influencent-elles la qualité de l'air? Certaines études démontrent que &#xAB; les précipitations intenses réduisent temporairement la concentration de particules fines (<term><m>PM_{2,5}</m></term>) et de dioxyde d'azote (<term><m>NO_{2}</m></term>) dans l'air en raison du lavage atmosphérique &#xBB; (SOURCE? Wang, Y., et al. (2014), Eslami, A., et al. (2020),Kim, B. M., Park, J. H. (2001)). Cependant, l'impact d'intenses précipitations sur la qualité de l'air peut varier selon des facteurs locaux tels que différentes sources de polluants et les conditions météorologiques. Dans les zones urbaines à forte circulation ou avec plusieurs secteurs industriels, les améliorations de la qualité de l'air peuvent être temporaires si les polluants s'accumulent rapidement après l'arrêt de la pluie. Afin d'étudier cette question, les données de la qualité de l'air de Montréal pour l'année 2024 ont été recueillies <fn><url href="https://donnees.montreal.ca/dataset/rsqa-iqa-historique"/>, page consultée le 14 octobre 2024</fn>. Cette base de données comprend les variables suivantes.</p>
+        <p>Le 9 août 2024, la ville de Montréal a reçu une quantité de pluie record entre 158 et 173 mm en raison de la tempête tropicale Debby, entraînant d'importantes inondations et des dommages infrastructurels. Une question intéressante à examiner est la suivante : comment des précipitations intenses influencent-elles la qualité de l'air? Certaines études démontrent que &#xAB; les précipitations intenses réduisent temporairement la concentration de particules fines (<term><m>PM_{2,5}</m></term>) et de dioxyde d'azote (<term><m>NO_{2}</m></term>) dans l'air en raison du lavage atmosphérique &#xBB; (SOURCE? Wang, Y., et al. (2014), Eslami, A., et al. (2020),Kim, B. M., Park, J. H. (2001)). Cependant, l'impact d'intenses précipitations sur la qualité de l'air peut varier selon des facteurs locaux tels que différentes sources de polluants et les conditions météorologiques. Dans les zones urbaines à forte circulation ou avec plusieurs secteurs industriels, les améliorations de la qualité de l'air peuvent être temporaires si les polluants s'accumulent rapidement après l'arrêt de la pluie. Afin d'étudier cette question, les données de la qualité de l'air de Montréal pour l'année 2024 ont été recueillies <fn><url href="https://donnees.montreal.ca/dataset/rsqa-iqa-historique"/>, page consultée le 14 octobre 2024</fn>. Cette base de données, disponible à  cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Polluant.xlsm?raw=true">adresse</url> comprend les variables suivantes.</p>
     
     <p>
     <ul>
@@ -305,7 +317,7 @@
         <li><p>l'heure du prélèvement.</p></li>
         
     </ul>
-    </p>
+     La base de données utilisée est disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Pr%C3%A9cipitations.xlsm?raw=true">suivante</url>.</p>
         
     
     </section>
@@ -316,17 +328,23 @@
 
 <p>D'après les données récoltées entre 1991 à 2020 par Environnement Canada à la station météorologique de l'Aéroport international Pierre-Elliott-Trudeau de Montréal <fn> Données tirées de <url href="https://climat.meteo.gc.ca/climate_normals/results_1991_2020_f.html?searchType=stnName_1991&amp;txtStationName_1991=montreal&amp;searchMethod=contains&amp;txtCentralLatMin=0&amp;txtCentralLatSec=0&amp;txtCentralLongMin=0&amp;txtCentralLongSec=0&amp;stnID=123000000&amp;dispBack=1"/>, page consultée le 21 novembre 2024</fn>, la ville de Montréal reçoit en moyenne <m>77,2</m> mm de précipitations totales au mois de mars, soit environ <m>2,49</m> mm par jour. Les précipitations totales sont la somme de la pluie totale et de l'équivalent en eau de la neige totale en millimètres.</p>
         
-        <p>Les données échantillonnales d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>. La seule variable à l'étude est la quantité de précipitations totales en mm.</p>
+        <p>Les données échantillonnales d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>. La seule variable à l'étude est la quantité de précipitations totales en mm. La base de données utilisée est disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Pr%C3%A9cipitations.xlsm?raw=true">suivante</url>.</p>
         
     <!--<p>Cependant, ces dernières années, de nombreux Montréalais ont l'impression que les précipitations mensuelles sont en baisse (<fn><url href="https://www.lapresse.ca/actualites/environnement/2022-11-13/la-premiere-neige-de-plus-en-plus-tardive.php"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://ici.radio-canada.ca/nouvelle/2038368/deficit-significatif-neige-quebec"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://lactualite.com/actualites/montreal-a-perdu-le-tiers-de-sa-neige-depuis-1863/"/>, page consultée le 23 novembre 2024</fn>). Pour vérifier cette hypothèse, on va réaliser un test d'hypothèse sur une moyenne en se basant sur les données échantillonnales d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>. La seule variable à l'étude est la quantité de précipitations totales en mm.</p>-->
 
     
     </section>
     
-    
+    <section xml:id="sec-Vins">
+        <p>La base de données sur l'analyse chimique de certains vins se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Vins.xlsx?raw=true">suivante</url>. </p>
+    </section>
 
         
+
+
     
+
+
     
 </appendix>
 
