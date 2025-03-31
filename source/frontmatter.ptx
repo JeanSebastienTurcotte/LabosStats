@@ -20,8 +20,7 @@
 <colophon xmlns:xi="http://www.w3.org/2001/XInclude">
   <edition>Première édition</edition>
   <website>
-    <name>https://jeansebastienturcotte.github.io/LabosStats/LSAN.html</name>
-    <address>https://jeansebastienturcotte.github.io/LabosStats/LSAN.html</address>
+    <url>https://jeansebastienturcotte.github.io/LabosStats/LSAN.html</url>
   </website>
  <copyright>
     <year>2024<ndash />2025</year>
@@ -54,5 +53,6 @@ pour toute utilisation, y compris commerciale.</p></li>
   </paragraphs>
 </colophon>
 <xi:include href="Remerciements.ptx"/>
+<xi:include href="Versions.ptx"/>
 </frontmatter>
 
