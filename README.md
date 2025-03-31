@@ -1,3 +1,3 @@
-# My Great Book
+# Les sciences autour de nous: laboratoires de probabilités et statistiques
 
-Visit <https://pretextbook.org/documentation.html> to learn more.
+Ressource offrant 8 laboratoires de probabilités et statistiques dévelopée pour le cours 201-SN1-RE. Crée avec PreTeXt.
