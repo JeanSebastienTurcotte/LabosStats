@@ -146,7 +146,7 @@
             <p>Le logiciel Excel réalise certaines de ces étapes, mais ne décompose pas toutes les phases d'un test. Ainsi, un canevas a été créé pour bien visualiser l'ensemble des étapes d'un test de manière plus détaillée. Dans cette sous-section, on explique les particularités des canevas.</p></introduction>
     
     
-    <p>La figure <xref ref="Fig_Canevas_gif"/> présente la configuration du canevas pour un test d'hypothèse sur une moyenne, soit la feuille <alert>Une moyenne</alert> du fichier Excel <alert>Canevas_tests_hypotheses.xlsm</alert>.</p>
+    <p>La figure <xref ref="Fig_Canevas_gif"/> présente la configuration du canevas pour un test d'hypothèse sur une moyenne, soit la feuille <alert>Une moyenne</alert> du fichier Excel <alert>Canevas_tests_hypotheses.xlsm</alert> disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_hypotheses.xlsm?raw=true">suivante</url>.</p>
     
 <p></p>
                    <figure xml:id="Fig_Canevas_1">
@@ -230,7 +230,7 @@
         <introduction><p>Les tests d'hypothèses sur une moyenne permettent de décider si la moyenne d'une population a changé en se basant sur une moyenne échantillonnale, c'est-à-dire de déterminer si la différence entre les deux moyennes est statistiquement significative ou si elle n'est due qu'au hasard de l'échantillonnage.</p>
             
             
-            <p>D'après les données récoltées entre 1991 à 2020 par Environnement Canada à la station météorologique de l'Aéroport international Pierre-Elliott-Trudeau de Montréal <fn> Données tirées de <url href="https://climat.meteo.gc.ca/climate_normals/results_1991_2020_f.html?searchType=stnName_1991&amp;txtStationName_1991=montreal&amp;searchMethod=contains&amp;txtCentralLatMin=0&amp;txtCentralLatSec=0&amp;txtCentralLongMin=0&amp;txtCentralLongSec=0&amp;stnID=123000000&amp;dispBack=1"/>, page consultée le 21 novembre 2024</fn>, la ville de Montréal reçoit en moyenne <m>77,2</m> mm de précipitations totales au mois de mars, soit environ <m>2,49</m> mm par jour. Les précipitations totales sont la somme de la pluie totale et de l'équivalent en eau de la neige totale en millimètres. Cependant, ces dernières années, de nombreux Montréalais ont l'impression que les précipitations mensuelles sont en baisse (<fn><url href="https://www.lapresse.ca/actualites/environnement/2022-11-13/la-premiere-neige-de-plus-en-plus-tardive.php"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://ici.radio-canada.ca/nouvelle/2038368/deficit-significatif-neige-quebec"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://lactualite.com/actualites/montreal-a-perdu-le-tiers-de-sa-neige-depuis-1863/"/>, page consultée le 23 novembre 2024</fn>)). Pour vérifier cette hypothèse, on va la tester avec les données d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>.</p></introduction>
+            <p>D'après les données récoltées entre 1991 à 2020 par Environnement Canada à la station météorologique de l'Aéroport international Pierre-Elliott-Trudeau de Montréal <fn> Données tirées de <url href="https://climat.meteo.gc.ca/climate_normals/results_1991_2020_f.html?searchType=stnName_1991&amp;txtStationName_1991=montreal&amp;searchMethod=contains&amp;txtCentralLatMin=0&amp;txtCentralLatSec=0&amp;txtCentralLongMin=0&amp;txtCentralLongSec=0&amp;stnID=123000000&amp;dispBack=1"/>, page consultée le 21 novembre 2024</fn>, la ville de Montréal reçoit en moyenne <m>77,2</m> mm de précipitations totales au mois de mars, soit environ <m>2,49</m> mm par jour. Les précipitations totales sont la somme de la pluie totale et de l'équivalent en eau de la neige totale en millimètres. Cependant, ces dernières années, de nombreux Montréalais ont l'impression que les précipitations mensuelles sont en baisse (<fn><url href="https://www.lapresse.ca/actualites/environnement/2022-11-13/la-premiere-neige-de-plus-en-plus-tardive.php"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://ici.radio-canada.ca/nouvelle/2038368/deficit-significatif-neige-quebec"/>, page consultée le 23 novembre 2024</fn> <fn><url href="https://lactualite.com/actualites/montreal-a-perdu-le-tiers-de-sa-neige-depuis-1863/"/>, page consultée le 23 novembre 2024</fn>). Pour vérifier cette hypothèse, on va la tester avec les données d'Environnement Canada pour le mois de mars 2024 <fn>Données tirées de <url href="https://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=51157&amp;timeframe=2&amp;StartYear=1840&amp;EndYear=2024&amp;Day=8&amp;Year=2024&amp;Month=3#" />, page consultée le 21 novembre 2024</fn>.</p></introduction>
   
         
       
@@ -276,7 +276,8 @@
                 
              <li><p>Ouvrir les fichiers Excel <alert>Données_Précipitations.xlsm</alert> et <alert>Canevas_tests_hypotheses.xlsm</alert>.</p></li>   
                 
-             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Une moyenne</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données_Précipitations</alert>.</p></li>   
+  <!-- Todo Changer url pour u lien inter-->             
+  <li><p>Effectuer la <url href="https://jeansebastienturcotte.github.io/LabosStats/sec-Laboratoire_Distribution.html#sec-Laboratoire_Distribution-3-15">procédure</url> présentée au laboratoire 4 pour copier la feuille <alert>Une moyenne</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données_Précipitations</alert>. Il est primordial de cliquer sur la boite <alert>Créer une copie</alert> afin que le canevas reste intact.</p></li>   
             </ol>
             </p>
             
@@ -552,7 +553,7 @@
             <li><p>Dans le classeur <alert>Données_Armée.xlsm</alert>, sélectionner la feuille <alert>Une proportion (normale)</alert>.</p></li>
             
             
-            <li><p>La première étape d'un test consiste à écrire la proportion de référence de la population, ainsi qu'à définir le type de test que l'on souhaite réaliser, à savoir un test unilatéral à gauche, à droite ou bilatéral. Dans la cellule <c>E5</c>, taper la valeur <m>0,305</m>. On a choisi d'écrire les mesures en décimales. La cellule <c>E6</c> se remplit automatiquement avec la même valeur (voir la <xref ref="Fig_Prop_gif1"/>).</p>
+            <li><p>La première étape d'un test consiste à écrire la proportion de référence de la population, ainsi qu'à définir le type de test que l'on souhaite réaliser, à savoir un test unilatéral à gauche, à droite ou bilatéral. Dans la cellule <c>E5</c>, taper la valeur <m>0,305</m>. On a choisi d'écrire les mesures en décimales, plutôt qu'en pourcentages. La cellule <c>E6</c> se remplit automatiquement avec la même valeur (voir la <xref ref="Fig_Prop_gif1"/>).</p>
                 
                 <p> Puisque notre hypothèse de recherche est que la proportion de membres de l'armée américaine issus de minorités ethniques a augmenté, on privilégie un test unilatéral à droite. Dans la cellule <c>D6</c> de la feuille <alert>Une proportion (normale)</alert>, il faut donc choisir le symbole <m>&gt;</m> (voir la <xref ref="Fig_Prop_gif1"/>).</p>
                 
@@ -714,7 +715,7 @@
             <p>
             <ol>
                 
-             <li><p>Ouvrir les fichiers Excel <alert>Données_Diabète_pour_tests.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Diab%C3%A8te_pour_tests.xlsm?raw=true">suivante</url>, le fichier complété du laboratoire 3, et <alert>Canevas_tests_hypotheses.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_hypotheses.xlsm?raw=true">suivante</url>.</p></li>   
+             <li><p>Ouvrir les fichiers Excel <alert>Données_Diabète_pour_tests.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Diab%C3%A8te_pour_tests.xlsm?raw=true">suivante</url>, le fichier complété du laboratoire 3, et le fichier <alert>Canevas_tests_hypotheses.xlsm</alert> précédemment téléchargé à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_hypotheses.xlsm?raw=true">suivante</url>.</p></li>   
                 
              <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes indépendantes</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données</alert>. </p></li>  
                 

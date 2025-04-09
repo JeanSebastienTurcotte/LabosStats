@@ -87,17 +87,22 @@
     </ul>
     </p>
     
-        <section xml:id="sec-Bixi">
-        
-        La base de données sur les données de trajets de Bixi se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Bixi_ao%C3%BBt_2016.xlsx?raw=true">adresse</url> 
-    </section>
+  
 
     
 </section>
     
-         <section xml:id="sec-Cepheides">
+    
+          <section xml:id="sec-Bixi">
+            <title>Bixi</title>
         
-        La base de données sur les céphéides se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Cepheides.xlsx?raw=true">adresse</url> 
+              <p>  La base de données sur les données de trajets de Bixi se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Bixi_ao%C3%BBt_2016.xlsx?raw=true">adresse</url> </p>
+    </section>
+    
+         <section xml:id="sec-Cepheides">
+             <title>Céphéides</title>
+        
+        <p>La base de données sur les céphéides se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Cepheides.xlsx?raw=true">adresse</url> </p>
     </section>
     
         
@@ -336,6 +341,7 @@
     </section>
     
     <section xml:id="sec-Vins">
+        <title>Vins</title>
         <p>La base de données sur l'analyse chimique de certains vins se trouve à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Vins.xlsx?raw=true">suivante</url>. </p>
     </section>
 
