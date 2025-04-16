@@ -717,7 +717,7 @@
                 
              <li><p>Ouvrir les fichiers Excel <alert>Données_Diabète_pour_tests.xlsm</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Diab%C3%A8te_pour_tests.xlsm?raw=true">suivante</url>, le fichier complété du laboratoire 3, et le fichier <alert>Canevas_tests_hypotheses.xlsm</alert> précédemment téléchargé à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_hypotheses.xlsm?raw=true">suivante</url>.</p></li>   
                 
-             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes indépendantes</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données</alert>. </p></li>  
+             <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>2 moyennes indépendantes</alert> du fichier <alert>Canevas_tests_hypotheses</alert> au classeur <alert>Données_Diabète_pour_tests</alert>. </p></li>  
                 
                 <li><p>Placer la feuille <alert>2 moyennes indépendantes</alert> en dernière position si Excel ne le fait pas par défaut.</p></li>
                   
@@ -737,7 +737,7 @@
         <p>
         <ol>
             
-            <li><p>Il faut définir <m>X_{1}</m> et <m>X_{2}</m>. Soit <m>X_{1}</m>, les femmes d'origine pima d'Arizona atteintes de diabète, et soit <m>X_{2}</m>, les femmes d'origine pima d'Arizona sans diabète. Pour se souvenir de ce choix, il est pertinent de taper dans la cellule <c>C4</c> &#xAB; Atteint &#xBB;, et &#xAB; Non Atteint &#xBB; dans la cellule <c>E4</c> (voir la <xref ref="Fig_2Moy_gif1"/>).</p></li>
+            <li><p>Il faut définir <m>X_{1}</m> et <m>X_{2}</m>. Soit <m>X_{1}</m>, les femmes d'origine pima d'Arizona atteintes de diabète, et soit <m>X_{2}</m>, les femmes d'origine pima d'Arizona sans diabète. Pour se souvenir de ce choix, il est pertinent de taper dans la cellule <c>C4</c> de la feuille <alert>2 moyennes indépendantes</alert> les noms &#xAB; Atteint &#xBB;, et &#xAB; Non Atteint &#xBB; dans la cellule <c>E4</c> (voir la <xref ref="Fig_2Moy_gif1"/>).</p></li>
             
             <li><p>La première étape d'un test consiste à choisir le type de test que l'on souhaite réaliser, à savoir un test unilatéral à gauche, à droite ou bilatéral. Puisque notre hypothèse de recherche est que les femmes d'origine pima atteintes de diabète ont un indice de masse corporelle moyen supérieur à celui des femmes non atteintes, on privilégie un test unilatéral à droite. Dans la cellule <c>D6</c> du canevas, il faut donc choisir le symbole <m>&gt;</m> (voir la <xref ref="Fig_2Moy_gif1"/>).</p>
             <p></p>
@@ -792,7 +792,16 @@
                 
                 <li><p>Dans la cellule <c>I9</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert>, suivi de la cellule <c>J4</c> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
                 
-                <li><p>Pour la taille de chaque échantillon, si cela n'a pas été fait dans la <xref ref="sec-Postlab_Varquant"/>, ajouter une quatrième colonne au tableau croisé dynamique de la feuille <alert>Étude IMC-Atteinte</alert> calculant le nombre de femmes dans chaque catégorie. Suivre les étapes de la <xref ref="sssec-RemplirTCD"/> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
+                <li><p>Pour la taille de chaque échantillon, si cela n'a pas été fait dans la <xref ref="sec-Postlab_Varquant"/>, ajouter une quatrième colonne au tableau croisé dynamique de la feuille <alert>Étude IMC-Atteinte</alert> calculant le nombre de femmes dans chaque catégorie. Suivre les étapes de la <xref ref="sssec-RemplirTCD"/> (voir la <xref ref="Fig_2Moy_10"/>).</p>
+                          <p></p>
+                    
+               <figure xml:id="Fig_2Moy_10">
+            <caption>Ajouter une quatrième colonne au tableau croisé dynamique de la feuille Étude IMC-Atteinte pour calculer le nombre de femmes dans chaque catégorie</caption>
+            <image source="images/Fig_2Moy_10.png" >
+            <description>Ajouter une quatrième colonne au tableau croisé dynamique de la feuille Étude IMC-Atteinte pour calculer le nombre de femmes dans chaque catégorie</description>
+            </image>
+            </figure>
+                    </li>
                 
                  <li><p>Dans la cellule <c>F10</c> de feuille <alert>2 moyennes indépendantes</alert>, taper le symbole <kbd>=</kbd>. Ensuite, sélectionner la feuille de calcul <alert>Étude IMC-Atteinte</alert>, suivi de la cellule <c>L5</c> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Fig_2Moy_gif4"/>).</p></li>
                 
@@ -1095,7 +1104,7 @@
             
             <li><p>Ne cocher que la case pour <alert>Août</alert> (voir la <xref ref="Fig_TCD_Polluant_gif4"/>). </p></li>
             
-             <li><p>Cliquer sur le symbole <kbd>+</kbd> à côté de l'étiquette <alert>Août</alert> de la cellule <c>B7</c> (voir la <xref ref="Fig_TCD_Polluant_18"/> pour le résultat final).</p>
+             <li><p>Cliquer sur le symbole <kbd>+</kbd> à côté de l'étiquette <alert>Août</alert> de la cellule <c>B6</c> (voir la <xref ref="Fig_TCD_Polluant_18"/> pour le résultat final).</p>
             
             
              <p></p>
