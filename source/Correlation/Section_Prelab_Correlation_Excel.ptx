@@ -3,6 +3,21 @@
 <section xml:id="sec-Prelab_Correlation" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Prélab</title>
 <p>Dans ce laboratoire, on poursuit le travail des deux laboratoires précédents à propos de la recherche d'un lien entre deux variables. En particulier, lorsque les deux variables sont quantitatives continues, on peut s'intéresser au type de lien qu'il peut y avoir entre deux variables. Ce lien peut être linéaire, polynomiale, exponentielle, logarithmique et ainsi de suite. Par simplicité, on commence par considérer uniquement les variables dont le lien semble être linéaire. Afin de tirer les bonnes conclusions, il est primordial que cette linéarité soit présente. La principale manière de constater ce type de lien est en illustrant les variables sur un nuage de points, aussi appelé diagramme de dispersion. </p>
+<p>Dans le laboratore, on utilise une base de données portant sur les céphéides. Une céphéide est une étoile variable, c'est-à-dire dont la luminosité change dû à un mouvement périodique de dilatation et de contraction. La première à avoir été découverte, par l'astronome amateur John Goodricke en 1784, fait partie de la constellation Céphée, qui a par la suite prêté son nom à cette nouvelle catégorie d'étoile. Les données datent de <m>1997</m> et proviennent de <url href="https://www.astro.utoronto.ca/DDO/research/cepheids/cepheids.html">l'Observatoire-David-Dunlap</url> à Richmond Hill, en Ontario. Cet observatoire a été désigné comme un <url href="https://parcs.canada.ca/culture/designation/lieu-site/david-dunlap">lieu historique national</url> en 2019. Les variables présentes dans le fichier sont
+<ul>
+<li><p>ID: Numéro de l'échantillon</p></li>
+<li><p>Étoile: Nom de l'étoile</p></li>
+<li><p>Période:  Période de pulsation (en jours)</p></li>
+<li><p>Mag App: Magnitude apparente moyenne (sans unités)</p></li>
+<li><p>Couleur BV: Indice de couleur B-V moyen (sans unités)</p></li>
+<li><p>Excès: Excès de couleur (sans unités)</p></li>
+<li><p>Amplitude V: Amplitude de la luminosité observée au travers d'un filtre V (~500nm) (sans unités)</p></li>
+<li><p>Mag Abs: Magnitude Absolue (sans unités)</p></li>
+<li><p>Dist: Distance entre l'étoile et le soleil (parsecs)</p></li>
+<li><p>VR MOY: Vitesse radiale moyenne (km/s)</p></li>
+<li><p>RAYON: Rayon solaire ( x 6,957x10^8 m)</p></li>
+</ul></p>
+<p>La dernière question de ce prélaboratoire sert à préparer le fichier Excel de cette base de données.</p>
 <worksheet xml:id="ws-Prelab_Correlation">
 <title>Travail à faire avant le cours</title>
 
@@ -37,24 +52,42 @@
   <p>Cette méthode consiste à calculer la différence entre chacune des valeurs dépendantes des données et la valeur dépendante de l'équation d'une droite de paramètres <m>a,b</m> et d'additionner le carré de toutes ces différences. On cherche les valeurs de <m>a</m> et <m>b</m> qui minimise cette somme.</p>
   </introduction>
   <task><statement><p>On considère les points <m>A(1;1),B(2;3)</m> et <m>C(4;4)</m>. Écrire les trois termes de la somme des moindres carrés pour ces trois points.</p></statement></task>
-  <task><statement><p>Dans un cours de calcul différentiel à plusieurs variables, on apprend que pour optimiser une fonction multivariée, il faut que les dérivées par rapport à chacune de ses variables soient égales à <m>0</m>. Dans le cas des moindres carrés, deux variables sont présentes. En traitant à tour de rôle l'une variable comme étant constante, calculer la dérivée de la somme obtenue à la partie précédente par rapport à l'autre variable pour obtenir deux équations linéaires en <m>a,b</m>.</p></statement></task>
+  <task><statement><p>Dans un cours de calcul différentiel à plusieurs variables, on apprend que pour optimiser une fonction multivariée, il faut que les dérivées par rapport à chacune de ses variables soient égales à <m>0</m>. Dans le cas des moindres carrés, ce sont les variables <m>a</m> et <m>b</m> que l'on cherche à déterminer. En traitant à tour de rôle l'une variable comme étant constante, calculer la dérivée de la somme obtenue à la partie précédente par rapport à l'autre variable pour obtenir deux équations linéaires en <m>a,b</m>.</p></statement></task>
   <task><statement><p>En posant chacune de ces équations égales à 0, montrer que la droite des moindres carrés de ce problème est <me>y=\frac{13}{14}x+\frac{1}{2}</me>.</p></statement></task>
   </exercise>
   </page> 
   <page>
-  <exercise><introduction><p>Le fichier <c>13jeux_de_donnees.xlsx</c> disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/13jeux_de_donnees.xlsx?raw=true">adresse</url> contient 13 ensembles de couples de données ayant été créés artificiellement afin de produire le résultat des exercices ci-dessous. Le but de cet exercice est de comprendre l'importance d'observer les données avant d'en tirer quelconque conclusion.</p></introduction>
-  <task><statement><p>Dans une nouvelle feuille de calculs, créer un tableau croisé dynamique contenant dans la zone de saisie <alert>Colonne</alert> les entrées <c>Valeurs_X</c> et <c>Valeurs_Y</c>. Ajouter aussi un filtre avec l'entrée <c>Jeu x</c></p></statement></task>
+  <!-- ToDo remettre la question quand captures faites pour mieux expliquer -->
+  <!--<exercise><introduction><p>Le fichier <c>13jeux_de_donnees.xlsx</c> disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/13jeux_de_donnees.xlsx?raw=true">adresse</url> contient 13 ensembles de couples de données ayant été créés artificiellement afin de produire le résultat des exercices ci-dessous. Le but de cet exercice est de comprendre l'importance d'observer les données avant d'en tirer quelconque conclusion.</p></introduction>
+  <task><statement><p>En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB; et en suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms aux colonnes du tableau <alert>Échantillon</alert>.</p></statement></task>
+  <task><statement><p>Dans une nouvelle feuille de calculs, créer un tableau croisé dynamique contenant dans la zone de saisie <alert>Colonne</alert> les entrées <c>Valeurs_X</c> et <c>Valeurs_Y</c>. Ajouter aussi un filtre avec l'entrée <c>Jeu n</c></p></statement></task>
   <task><statement><p>Positionner le filtre en haut du tableau sur <c>Jeu 1</c>.</p></statement></task>
   <task><statement><p>À l'aide de fonctions Excel, calculer la moyenne des valeurs <c>X</c>, la moyenne des valeurs <c>Y</c>, l'écart type des valeurs <c>X</c>, l'écart type des valeurs <c>Y</c> ainsi que le coefficient de corrélation entre les valeurs <c>X</c> et <c>Y</c>. </p></statement></task>
   <task><statement><p>Insérer un nuage de points avec les valeurs du tableau croisé dynamique.</p></statement></task>
   <task><statement><p>Observer l'effet qu'a le changement du jeu de données dans le filtre sur les mesures statistiques calculées et sur l'allure du nuage de points. Commenter brièvement. </p></statement></task>
-  </exercise>
+  </exercise>-->
   </page>
-  <exercise><introduction><p>Télécharger le fichier <c>Données_Cepheides.xlsx</c> disponible à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Cepheides.xlsx?raw=true">adresse</url>. Ce fichier contient différentes données de <m>421</m> étoiles de type &#x00AB; céphéides &#x00BB;. Dans le prochain laboratoire, on cherche à déterminer s'il existe des liens linéaires entre certaines de ces variables.</p></introduction>
-  <task><statement><p>Dans une feuille appelée &#x00AB; RP &#x00BB;, tracer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
-  <task><statement><p>Dans une feuille appelée &#x00AB;MappP &#x00BB;, tracer le nuage de points représentant la magnitude apparente des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
-  <task><statement><p>Dans une feuille appelée &#x00AB;MabsP &#x00BB;, tracer le nuage de points représentant la magnitude absolue des étoiles en fonction de leur période de pulsation. Effectuer la mise en forme appropriée.</p></statement></task>
-  <task><statement><p>Sur chacune des trois feuilles, faire l'étude descriptive de la population telle que décrite dans la <xref ref="sssec_Mesures"/> pour les variables impliquées.</p></statement></task>
+  <exercise><introduction><p>Télécharger le fichier <c>Données_Cepheides.xlsx</c> disponible à <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Cepheides.xlsx?raw=true">l'adresse suivante</url>. Ce fichier contient différentes données de <m>421</m> étoiles de type &#x00AB; céphéides &#x00BB;. Dans le prochain laboratoire, on cherche à déterminer s'il existe des liens linéaires entre certaines de ces variables.</p></introduction>
+  <task><statement><p>En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB; et en suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms aux colonnes du tableau <alert>Échantillon</alert>.</p></statement></task>
+  <task><statement><p>Ajouter une feuille de calcul appelée &#x00AB; RP &#x00BB;. </p></statement></task>
+  <task><statement><p>Insérer le nuage de points représentant le rayon des étoiles en fonction de leur période de pulsation en suivant la procédure ci-dessous. La figure <xref ref="fig-nuagepoints_anim"/> illustre ces étapes. 
+  <ol>
+  <li><p>Retourner à la feuille <alert>Données</alert> et cliquer sur <alert>PÉRIODE</alert> dans la zone nom.</p></li>
+  <li><p>Appuyer et maintenir la touche <kbd>CTRL</kbd> enfoncée et cliquer sur <alert>RAYON</alert> dans la zone nom. Relâcher la touche <kbd>CTRL</kbd>.</p></li>
+  <li><p>Cliquer sur l'onglet <alert>Insertion</alert>, puis sur l'icone pour ajouter un nuage de points. Sélectionner la première option.</p></li>
+  <li><p>Effectuer un clic avec le bouton droit de la souris et appuyer sur &#x00AB;Déplacer le graphique &#x00BB;.</p></li>
+  <li><p>Dans la boite qui s'ouvre, sélectionner la feuille <alert>RP</alert> et appuyer sur &#x00AB;OK&#x00BB;. Le graphique est maintenant dans la feuille <alert>RP</alert>.</p></li>
+  <li><p>Effectuer la mise en forme appropriée.</p></li>
+  </ol>
+  <figure xml:id="fig-nuagepoints_anim">
+  <caption>Insertion d'un nuage de points</caption>
+  <image source="images/nuagepoints_anim.png">
+  <shortdescription>Animation des étapes pour insertion d'un nuage de points.</shortdescription></image>
+  </figure></p>
+  </statement></task>
+  <task><statement><p>Ajouter une feuille de calcul appelée &#x00AB;MappP &#x00BB;, tracer le nuage de points représentant la magnitude apparente des étoiles en fonction de leur période de pulsation en suivant la procédure ci-dessus.</p></statement></task>
+  <task><statement><p>Ajouter une feuille de calcul appelée &#x00AB;MabsP &#x00BB;, tracer le nuage de points représentant la magnitude absolue des étoiles en fonction de leur période de pulsation en suivant la procédure ci-dessus.</p></statement></task>
+  <task><statement><p>Sur chacune des trois feuilles, faire l'étude descriptive des variables de l'échantillon telle que décrite dans la <xref ref="sssec_Mesures"/> pour les variables impliquées.</p></statement></task>
   </exercise>
   </worksheet>
 </section>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-Postlab_TODO" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="sec-Postlab_correlation" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Réflexions</title>
 <p>Ce laboratoire a montré comment déterminer la présence d'un lien linéaire entre deux variables, par le biais de l'observation (qualitativement) du nuage de points et par le calcul des coefficients de corrélation et de détermination (quantitativement). Ensemble, ces informations permettent de conclure à la présence ou non d'une relation linéaire ainsi que d'en quantifier la force.</p>
 <p>De plus, on a vu qu'il est possible d'être en présence d'une relation qui n'est pas linéaire, mais qui peut être tout de même intéressante et très forte.</p>

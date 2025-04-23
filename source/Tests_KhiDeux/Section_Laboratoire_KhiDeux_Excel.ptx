@@ -42,7 +42,7 @@
             <p>
             <ol>
                 
-             <li><p>Ouvrir le fichie Excel <alert>Données_Collisions.xlsx</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Collisions.xlsx?raw=true">suivante</url> et  le fichi> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_independance.xlsx?raw=true">suivante</url>.</p></li>   
+             <li><p>Ouvrir le fichie Excel <alert>Données_Collisions.xlsx</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Collisions.xlsx?raw=true">suivante</url> et  le fichier du canevas à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_independance.xlsx?raw=true">suivante</url>.</p></li>   
                 
              <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Canevas_tests_independance</alert> au classeur <alert>Données_Collisions</alert>.</p></li> 
                 
@@ -422,7 +422,7 @@
         <p>
         <ol>
             
-            <li><p>Ouvrir le fichier <alert>Canevas_tests_independance.xlsx</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_independance.xlsm?raw=true">suivante</url>.</p></li>   
+            <li><p>Ouvrir le fichier <alert>Canevas_tests_independance.xlsx</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_independance.xls?raw=true">suivante</url>.</p></li>   
                 
              <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Canevas_tests_independance</alert> au classeur <alert>Données_Collisions</alert>. Une fois fait, fermer le fichier <alert>Canevas_tests_independance.xlsx</alert>.</p></li> 
         

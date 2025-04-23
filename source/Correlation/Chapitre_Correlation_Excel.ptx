@@ -4,7 +4,8 @@
   <title>Corrélation et régression</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Ce chapitre présente un type de lien qui peut exister entre deux variables. Lorsque deux variables quantitatives sont mises en relation, il peut être intéressant d'en déterminer la nature. A-t-on affaire à une relation linéaire de la forme <m>y=ax+b</m>, un lien exponentiel ou encore un phénomène périodique de forme sinusoïdale? Qui plus est, si une équation est déterminée pour représenter le lien entre deux variables, on peut se servir de celle-ci pour inférer des valeurs d'une des variables en fonction de la seconde. </p>
+    <p>Lorsque les variables sont reliées par un tel lien, on dit qu'elles sont corrélées. Le principal type de corrélation que l'on étudie est la corrélation linéaire. On s'intéresse au sens de cette corrélation ainsi qu'à sa force.</p>
   </introduction>
 
   <!-- include sections -->

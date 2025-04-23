@@ -41,7 +41,7 @@
     
   
     <exercise>
-  <statement><p>Ouvrir la base de données présentée à la <xref ref="sec-Collisions"/>. En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB;. En suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms aux deux colonnes du tableau <alert>Échantillon</alert>. </p></statement>
+  <statement><p>Ouvrir la base de données présentée à la <xref ref="sec-Collisions"/>. En suivant les étapes présentées à la <xref ref="sssec-NomTableau"/>, attribuer au tableau le nom &#xAB; Échantillon &#xBB;. En suivant les étapes présentées à la <xref ref="sssec-NomColonnes"/>, attribuer des noms à toutes les colonnes du tableau <alert>Échantillon</alert>. </p></statement>
   </exercise>
 
  <exercise>
