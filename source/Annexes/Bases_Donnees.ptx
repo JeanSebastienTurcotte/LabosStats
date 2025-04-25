@@ -14,7 +14,7 @@
 <section xml:id="sec-Armee">
     <title>Armée américaine</title>
 
-     <p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, document consulté le 30 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. On introduit les données d'un échantillon de <m>6068</m> membres de l'armée américaine, prélevé en 2011 <fn> <url href="https://www.openlab.psu.edu/ansur2/"/>, page consultée le 30 novembre 2024</fn>. On pourrait supposer que la proportion de membres issus de minorité ethnique augmente à chaque année. C'est ce que l'on va vérifier en effectuant un test d'hypothèse sur une proportion. La base de données, modifiée pour répondre aux objectifs de ce laboratoire, a été obtenue du site <fn>https://www.openlab.psu.edu/ansur2/</fn>. La base de données à à cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Arm%C3%A9e.xlsm?raw=true">adresse</url> cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Arm%C3%A9e.xlsm?raw=true">adresse</url> comprend les variables suivantes.</p>
+     <p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, document consulté le 30 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>30,5\%</m> de membres issus de minorités ethniques. On introduit les données d'un échantillon de <m>6068</m> membres de l'armée américaine, prélevé en 2011 <fn> <url href="https://www.openlab.psu.edu/ansur2/"/>, page consultée le 30 novembre 2024</fn>. On pourrait supposer que la proportion de membres issus de minorité ethnique augmente à chaque année. C'est ce que l'on va vérifier en effectuant un test d'hypothèse sur une proportion. La base de données, modifiée pour répondre aux objectifs de ce laboratoire, a été obtenue du site <fn>https://www.openlab.psu.edu/ansur2/</fn>. La base de données à cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Donn%C3%A9es_Arm%C3%A9e.xlsm?raw=true">adresse</url> comprend les variables suivantes.</p>
         
          
     <p>
@@ -86,7 +86,7 @@
         
     </ul>
     </p>
-    
+<p>Pour consulter la légende, consulter le PDF disponible à cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Collisions_data_dictionary.pdf?raw=true">adresse</url>. </p>
   
 
     
