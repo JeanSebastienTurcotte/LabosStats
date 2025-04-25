@@ -1300,7 +1300,7 @@
                 
                 <li><p>À la cinquième étape, il faut écrire la règle de décision, soit avec le calcul de la statistique du test ou avec la valeur p. Dans la cellule <c> B27</c>, sélectionner la statistique appropriée du test bilatéral, soit <m>t_{\alpha/2}</m>. Remarquer que la valeur de <m>t_{\alpha/2}</m> (environ <m>3,17</m>) dans les cellules <c>D27</c> et <c>G29</c> est préremplie et correspond bien à la cote <m>t</m> pour un seuil de signification de <m>1\%</m> et un degré de liberté de 10 (voir la <xref ref="Fig_2MoyDep_gif3"/>).</p></li>
                 
-                <li><p> Dans la cellule <c>E29</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test bilatéral, il faut choisir les mots &#xAB; est différente de &#xBB; (voir la <xref ref="Fig_2MoyDep_gif3"/>). </p>
+                <li><p> Dans la cellule <c>E29</c>, sélectionner les mots appropriés parmi les trois choix du menu déroulant. Puisque l'on effectue un test bilatéral, il faut choisir les mots &#xAB; plus grande que &#xBB; (voir la <xref ref="Fig_2MoyDep_gif3"/>). </p>
                  
                 
                 </li>
