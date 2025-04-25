@@ -86,7 +86,7 @@
         
     </ul>
     </p>
-<p>Pour consulter la légende, consulter le PDF disponible à cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Collisions_data_dictionary.pdf?raw=true">adresse</url>. </p>
+
   
 
     
@@ -109,7 +109,7 @@
     <section xml:id="sec-Collisions">
     <title>Base canadienne de données sur les collisions</title>
 
-     <p>La base de données nationale sur les collisions s'agit &#xAB; d'une base de données de toutes les collisions automobiles ayant fait l'objet d'un rapport de police et étant survenues sur les routes publiques du Canada en 2019 &#xBB; <fn><url href="https://ouvert.canada.ca/data/fr/dataset/1eb9eba7-71d1-4b30-9fb1-30cbdab7e63a"/>, page consultée le 30 novembre 2024</fn>. Le fichier Excel avec la base de données a été nettoyé pour faciliter le traitement statistique. Les modalités de chaque variable peuvent être consultées sur le site web du gouvernement du Canada <fn><url href="https://opencanada.blob.core.windows.net/opengovprod/resources/21eb7966-38da-4814-a80e-521bce6c4c27/data_dictionary.pdf?se=2024-12-03T16%3A24%3A17Z&amp;sp=r&amp;sv=2019-07-07&amp;sr=b&amp;sig=0FuNKQEyD1awb0RPtN42Qur6vOBaaDDL2Z69SprCqFM%3D"/>, page consultée le 30 novembre 2024</fn>. Cette base de données comprend les variables suivantes. </p>
+     <p>La base de données nationale sur les collisions s'agit &#xAB; d'une base de données de toutes les collisions automobiles ayant fait l'objet d'un rapport de police et étant survenues sur les routes publiques du Canada en 2019 &#xBB; <fn><url href="https://ouvert.canada.ca/data/fr/dataset/1eb9eba7-71d1-4b30-9fb1-30cbdab7e63a"/>, page consultée le 30 novembre 2024</fn>. Le fichier Excel avec la base de données a été nettoyé pour faciliter le traitement statistique. Les modalités de chaque variable peuvent être consultées en consultant la légende dans le PDF disponible à cette <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Base%20de%20donn%C3%A9es/Collisions_data_dictionary.pdf?raw=true">adresse</url>. Cette base de données comprend les variables suivantes. </p>
         
         
          
