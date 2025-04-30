@@ -231,7 +231,7 @@
                  <p>On va maintenant coller une partie de ce tableau dans la feuille <alert>Test Khi-Deux Age</alert> et faire sa mise en forme.</p>
                 </li>
              
-            <li><p>Dans la feuille <alert>Test Khi-Deux Age</alert>, cliquer sur la cellule <c>B20</c> et taper le symbole <kbd>=</kbd> (voir la <xref ref="Fig_KhiAge_gif6"/>).</p>
+            <li><p>Dans la feuille <alert>Test Khi-Deux Age</alert>, cliquer sur la cellule <c>A20</c> et taper le symbole <kbd>=</kbd> (voir la <xref ref="Fig_KhiAge_gif6"/>).</p>
                 
                 <p></p>
             
@@ -422,7 +422,7 @@
         <p>
         <ol>
             
-            <li><p>Ouvrir le fichier <alert>Canevas_tests_independance.xlsx</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_independance.xls?raw=true">suivante</url>.</p></li>   
+            <li><p>Ouvrir le fichier <alert>Canevas_tests_independance.xlsx</alert> à l'adresse <url href="https://github.com/JeanSebastienTurcotte/LabosStats/blob/main/assets/Canevas/Canevas_tests_independance.xlsx?raw=true">suivante</url>.</p></li>   
                 
              <li><p>Effectuer la procédure présentée au laboratoire 4 pour copier la feuille <alert>Test d'indépendance</alert> du fichier <alert>Canevas_tests_independance</alert> au classeur <alert>Données_Collisions</alert>. Une fois fait, fermer le fichier <alert>Canevas_tests_independance.xlsx</alert>.</p></li> 
         
@@ -617,7 +617,7 @@
                 
    
              
-            <li><p>Dans la feuille <alert>Test Khi-Deux Sécurité</alert>, cliquer sur la cellule <c>B20</c> et taper le symbole <kbd>=</kbd> (voir la <xref ref="Fig_TestSecurite_gif2bis"/>).</p>
+            <li><p>Dans la feuille <alert>Test Khi-Deux Sécurité</alert>, cliquer sur la cellule <c>A20</c> et taper le symbole <kbd>=</kbd> (voir la <xref ref="Fig_TestSecurite_gif2bis"/>).</p>
                 
                 <p></p>
             
@@ -678,7 +678,7 @@
                 
                 <li><p>Formatter les titres au besoin. Ce n'est pas vraiment nécessaire.</p></li>
                 
-                <li><p>La formule pour calculer un effectif théorique est le total de la colonne multiplié par le total de la ligne divisé par la taille de l'échantillon. Dans la cellule <c>H20</c>, taper <c>=H$22*J$20/$J$22</c> (voir la <xref ref="Fig_TestSecurite_gif3"/>). </p></li>
+                <li><p>La formule pour calculer un effectif théorique est le total de la colonne multiplié par le total de la ligne divisé par la taille de l'échantillon. Dans la cellule <c>H20</c>, taper <c>=H$22*$J20/$J$22</c> (voir la <xref ref="Fig_TestSecurite_gif3"/>). </p></li>
                 
                 <li><p>Sélectionner la cellule <c>H20</c>. Placer le curseur dans le coin inférieur droit jusqu'à ce que la croix noire de recopie (<kbd>+</kbd>) apparaisse. Cliquer avec le bouton de gauche de la souris en gardant le bouton enfoncé et glisser le curseur vers le bas jusqu'à la cellule <c>H21</c>. Relâcher le bouton de gauche de la souris. Avec la plage <c>H20:H21</c> sélectionnée, placer encore une fois le curseur dans le coin inférieur droit et glisser vers la droite pour remplir les cellules <c>I20:I21</c> (voir la <xref ref="Fig_TestSecurite_gif3"/>). </p></li>
                 
