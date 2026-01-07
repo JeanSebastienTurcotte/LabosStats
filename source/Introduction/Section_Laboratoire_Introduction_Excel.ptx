@@ -193,7 +193,7 @@
     
 <p>Pour la sélection d'une colonne entière, la procédure est similaire. Il faut placer le curseur sur la lettre de la colonne à sélectionner, attendre l'apparition de la flèche noire et cliquer.</p>    
     
-    <p>Il ne faut pas oublier de sauvegarder régulièrement son travail en appuyant sur les touches <kbd>CTRL-S</kbd> ou en activant la sauvegarde automatique.</p>
+    <p>Il ne faut pas oublier de sauvegarder régulièrement son travail en appuyant sur les touches <kbd>Ctrl</kbd>+<kbd>S</kbd> ou en activant la sauvegarde automatique.</p>
     
 </subsubsection>    
     
@@ -254,7 +254,7 @@
     
    
     
-    <p> Dans la feuille de calcul <alert>Données</alert> du fichier Excel, on attribue un nom au tableau principal, soit le nom &#xAB; Échantillon &#xBB;. Il existe deux façons d'effectuer cette opération.</p>   
+    <p> Dans la feuille de calcul <alert>Données</alert> du fichier Excel, on attribue un nom au tableau principal, soit le nom &#xAB; Échantillon &#xBB;. Il existe deux façons d'effectuer cette opération. La première méthode est présentée ci-dessous et est celle privilégiée. La deuixème méthode est présentée en annexe (voir la <xref ref="ann-nommerruban"/>).</p>   
     
 <paragraphs><title> Première méthode : <alert>zone nom</alert></title>    
     
@@ -264,7 +264,7 @@
     <li> <p>Sélectionner l'entièreté du tableau, soit la plage <c>A5:K773</c>. Il est possible de faire ceci en sélectionnant la cellule <c>A5</c> et en tapant la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd>.</p></li>
 
 
-<li> <p> Dans la <alert> zone nom </alert> (voir la figure <xref ref="Fig_Interface3"/>), taper le mot <em>Échantillon</em> (voir la <xref ref="Fig_Nom_Echantillon_1"/>) et appuyer sur la touche <kbd>Enter</kbd>. Les noms ne doivent pas contenir d'espace ni de caractères spéciaux. </p>
+<li> <p> Dans la <alert> zone nom </alert> (voir la <xref ref="Fig_Interface3"/>), taper le mot <em>Échantillon</em> (voir la <xref ref="Fig_Nom_Echantillon_1"/>) et appuyer sur la touche <kbd>Enter</kbd>. Les noms ne doivent pas contenir d'espace ni de caractères spéciaux. </p>
     
     <p> </p>
 
@@ -287,8 +287,10 @@
     </remark></paragraphs>
 
 
-<paragraphs>
+<!--<paragraphs>
 <title> Deuxième méthode: ruban</title>
+    
+ 
 
 <p> 
 <ol> 
@@ -327,7 +329,7 @@
   <li><p> Cliquer sur <alert>OK</alert>.</p> </li>     
     </ol>
     </p>
-</paragraphs>    
+</paragraphs>    -->
     
 </subsubsection>    
     
@@ -420,7 +422,7 @@
 </figure>
     </li>
 
-<li> <p> Dans la <alert> zone nom</alert>, cliquer sur la flèche du menu déroulant pour vérifier qu'un nom a été attribué à chaque colonne (voir la figure <xref ref="Fig_Verification_Noms_2"/>).</p>
+<li> <p> Dans la <alert> zone nom</alert>, cliquer sur la flèche du menu déroulant pour vérifier qu'un nom a été attribué à chaque colonne (voir la <xref ref="Fig_Verification_Noms_2"/>).</p>
     <p> </p>
     
        <figure xml:id="Fig_Verification_Noms_2">
@@ -441,122 +443,7 @@
     
     
     
-<subsection xml:id="ssec_FigerVolets">
-<title>Figer et libérer les volets</title>
-    
-     
-<introduction><p> Lorsqu'on souhaite parcourir un tableau de grande taille (beaucoup de lignes ou de colonnes), il est pratique de maintenir les titres des colonnes ou des lignes visibles pendant le défilement de la feuille de calcul. </p> </introduction>
-    
-    
-  
-    
-<subsubsection xml:id="sssec-FigerLigneTitres">
-<title> Figer la ligne de titres d'un tableau </title>    
-    
-<p>
-<ol> 
 
-<li> <p> Sélectionner la deuxième ligne du tableau, soit la ligne 6 (voir la <xref ref="Fig_Figer_Volets_1"/>). Il faut placer son curseur à la ligne 6 et cliquer.</p>
-    
-    <p> </p>
-    
- <figure xml:id="Fig_Figer_Volets_1">
-<caption>Sélection de la deuxième ligne du tableau <alert>Échantillon</alert></caption>
-<image source="images/Fig_Figer_Volets_1.png" >
-<description>Sélection de la deuxième ligne du tableau Échantillon</description>
-</image>
-</figure>
-    </li> 
-    
-    
-<li> <p>Sélectionner l'onglet <alert> Affichage </alert>. Dans le groupe <term> Fenêtre</term>, cliquer sur la flèche du menu déroulant de l'icône <term> Figer les volets </term> (voir la <xref ref="Fig_Figer_Volet_gif"/>). </p>
-    
-    <p> </p>
-    
-    
-<figure xml:id="Fig_Figer_Volet_gif">
-<caption>Sélection de l'onglet <alert>Affichage</alert> et de l'icône <alert>Figer les volets</alert></caption>
-<image source="images/Fig_Figer_Volet_gif.png" >
-<description>Sélection de l'onglet Affichage et de l'icône Figer les volets</description>
-</image>
-</figure>
-    </li>       
-    
-
-<!-- <li> <p>Sélectionner l'onglet <alert> Affichage </alert> (voir la <xref ref="Fig_Figer_Volets_2"/>). </p>
-    
-    <p> </p>
-    
- <figure xml:id="Fig_Figer_Volets_2">
-<caption>Sélection de l'onglet <alert>Affichage</alert></caption>
-<image source="images/Fig_Figer_Volets_2.png" >
-<description>Sélection de l'onglet Affichage</description>
-</image>
-</figure>
-    </li>     
-
-
-<li> <p>Dans le groupe <term> Fenêtre</term>, cliquer sur la flèche du menu déroulant de l'icône <term> Figer les volets </term> (voir la <xref ref="Fig_Figer_Volets_3"/>). </p>
-    
-    <p> </p>
-    
-<figure xml:id="Fig_Figer_Volets_3">
-<caption>Sélection de l'icône <alert>Figer les volets</alert></caption>
-<image source="images/Fig_Figer_Volets_3.png" >
-<description>Sélection de l'icône Figer les volets</description>
-</image>
-</figure>
-    </li>   -->
-   
-<li> <p> Cliquer sur <alert> Figer les volets </alert> (voir <xref ref="Fig_Figer_Volets_4"/>). </p>
-    
-    <p> </p>
-    
-<figure xml:id="Fig_Figer_Volets_4">
-<caption>Sélection de l'option <alert>Figer les volets</alert></caption>
-<image source="images/Fig_Figer_Volets_4.png" >
-<description>Sélection de l'option Figer les volets</description>
-</image>
-</figure>
- </li>    
-    
-</ol>
-</p>
-
-<p> Maintenant, lorsque l'on fait défiler le tableau, les titres des colonnes restent visibles. Il est possible de verrouiller à la fois des lignes et des colonnes, ainsi que de libérer les volets, si nécessaire. </p>
-</subsubsection>  
-    
-    
-<subsubsection xml:id="sssec-LibererVolets" >  
-<title>Libérer les volets</title>    
-    
-    <p> </p>
-    
-<p>Si l'on veut libérer les volets, on peut les supprimer.</p>    
-    
-<p>
-<ol> 
-<li> <p>Sélectionner l'onglet <alert> Affichage </alert> (voir la figure <xref ref="Fig_Figer_Volet_gif"/>). </p></li>
-
-<li> <p>Dans le groupe <alert> Fenêtre</alert>, cliquer sur la flèche du menu déroulant de l'icône <alert> Figer les volets </alert> (voir la <xref ref="Fig_Liberer_Volets_1"/>). Cliquer sur l'option <term>Libérer les volets</term>. </p>
-    <p> </p>
-    
-<figure xml:id="Fig_Liberer_Volets_1">
-<caption>Sélection de l'option <alert>Libérer les volets</alert></caption>
-<image source="images/Fig_Liberer_Volets_1.png" >
-<description>Sélection de l'option Libérer les volets</description>
-</image>
-</figure>
- </li>     
-
-</ol>
-</p>    
-   
-</subsubsection>    
-    
-</subsection>
-    
-    
     
     
 <subsection xml:id="ssec_Filtrer_Trier">
@@ -782,7 +669,7 @@
     
     
     
-    <subsection xml:id="ssec-RemplissageAutomatique">
+ <!--   <subsection xml:id="ssec-RemplissageAutomatique">
     <title>Remplissage automatique</title>
         
         <subsubsection xml:id="RemplissageValeur">
@@ -882,7 +769,7 @@
         
         </subsubsection>
     
-    </subsection>
+    </subsection>-->
     
     
     
@@ -1205,17 +1092,17 @@
 </figure>      
  </li>       
 
-<li> <p> Refaire les étapes 2 à 4 pour ajouter une troisième colonne au tableau croisé dynamique. On veut ajouter une colonne pour le pourcentage de femmes d'origine pima atteintes ou non du diabète. </p></li>
+<li> <p> Répéter l'étape 2 pour ajouter une troisième colonne au tableau croisé dynamique. On veut ajouter une colonne pour le pourcentage de femmes d'origine pima atteintes ou non du diabète.</p></li>
 
 
-<li> <p> À l'onglet <alert> Synthèse des valeurs par </alert>, sélectionner l'option <alert> Nombre </alert> (voir la <xref ref="Fig_TCD_Atteint_5"/>). Attention, il ne faut pas cliquer sur <alert>OK</alert> tout de suite!</p></li>
+<li> <p> À l'onglet <alert> Synthèse des valeurs par </alert>, sélectionner l'option <alert> Nombre </alert> (voir la <xref ref="Fig_TCD_Atteint_5"/>). ATTENTION, il ne faut pas cliquer sur <alert>OK</alert> tout de suite!</p></li>
 
 
     
     <li> <p>Cliquer sur l'onglet <term> Afficher les valeurs </term>, l'onglet à droite de <alert> Synthèse des valeurs par </alert>. </p>
         
         <p></p>
-    <p> Cliquer sur la flèche du menu déroulant et sélectionner l'option <alert> % du total général </alert> (voir la figure <xref ref="Fig_TCD_Atteint_M2_gif"/>)</p>
+    <p> Cliquer sur la flèche du menu déroulant et sélectionner l'option <alert> % du total général </alert> (voir la <xref ref="Fig_TCD_Atteint_M2_gif"/>)</p>
     
     <figure xml:id="Fig_TCD_Atteint_M2_gif">
 <caption>Sélection de l'onglet <alert>Afficher les valeurs</alert> et de l'option <alert>% du total général</alert></caption>
@@ -1301,10 +1188,124 @@
         
     </subsubsection>
     
-    
-        
-   
-    
    </subsection>
+    
+    
+    <subsection xml:id="ssec_FigerVolets">
+<title>Figer et libérer les volets</title>
+    
+     
+<introduction><p> Lorsqu'on souhaite parcourir un tableau de grande taille (beaucoup de lignes ou de colonnes), il est pratique de maintenir les titres des colonnes ou des lignes visibles pendant le défilement de la feuille de calcul. </p> </introduction>
+    
+    
+  
+    
+<subsubsection xml:id="sssec-FigerLigneTitres">
+<title> Figer la ligne de titres d'un tableau </title>    
+    
+<p>
+<ol> 
+
+<li> <p> Dans la feuille de calcul <alert>Données</alert> du fichier Excel, sélectionner la deuxième ligne du tableau, soit la ligne 6 (voir la <xref ref="Fig_Figer_Volets_1"/>). Il faut placer son curseur à la ligne 6 et cliquer.</p>
+    
+    <p> </p>
+    
+ <figure xml:id="Fig_Figer_Volets_1">
+<caption>Sélection de la deuxième ligne du tableau <alert>Échantillon</alert></caption>
+<image source="images/Fig_Figer_Volets_1.png" >
+<description>Sélection de la deuxième ligne du tableau Échantillon</description>
+</image>
+</figure>
+    </li> 
+    
+    
+<li> <p>Sélectionner l'onglet <alert> Affichage </alert>. Dans le groupe <term> Fenêtre</term>, cliquer sur la flèche du menu déroulant de l'icône <term> Figer les volets </term> (voir la <xref ref="Fig_Figer_Volet_gif"/>). </p>
+    
+    <p> </p>
+    
+    
+<figure xml:id="Fig_Figer_Volet_gif">
+<caption>Sélection de l'onglet <alert>Affichage</alert> et de l'icône <alert>Figer les volets</alert></caption>
+<image source="images/Fig_Figer_Volet_gif.png" >
+<description>Sélection de l'onglet Affichage et de l'icône Figer les volets</description>
+</image>
+</figure>
+    </li>       
+    
+
+<!-- <li> <p>Sélectionner l'onglet <alert> Affichage </alert> (voir la <xref ref="Fig_Figer_Volets_2"/>). </p>
+    
+    <p> </p>
+    
+ <figure xml:id="Fig_Figer_Volets_2">
+<caption>Sélection de l'onglet <alert>Affichage</alert></caption>
+<image source="images/Fig_Figer_Volets_2.png" >
+<description>Sélection de l'onglet Affichage</description>
+</image>
+</figure>
+    </li>     
+
+
+<li> <p>Dans le groupe <term> Fenêtre</term>, cliquer sur la flèche du menu déroulant de l'icône <term> Figer les volets </term> (voir la <xref ref="Fig_Figer_Volets_3"/>). </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Figer_Volets_3">
+<caption>Sélection de l'icône <alert>Figer les volets</alert></caption>
+<image source="images/Fig_Figer_Volets_3.png" >
+<description>Sélection de l'icône Figer les volets</description>
+</image>
+</figure>
+    </li>   -->
+   
+<li> <p> Cliquer sur <alert> Figer les volets </alert> (voir <xref ref="Fig_Figer_Volets_4"/>). </p>
+    
+    <p> </p>
+    
+<figure xml:id="Fig_Figer_Volets_4">
+<caption>Sélection de l'option <alert>Figer les volets</alert></caption>
+<image source="images/Fig_Figer_Volets_4.png" >
+<description>Sélection de l'option Figer les volets</description>
+</image>
+</figure>
+ </li>    
+    
+</ol>
+</p>
+
+<p> Maintenant, lorsque l'on fait défiler le tableau, les titres des colonnes restent visibles. Il est possible de verrouiller à la fois des lignes et des colonnes, ainsi que de libérer les volets, si nécessaire. </p>
+</subsubsection>  
+    
+    
+<subsubsection xml:id="sssec-LibererVolets" >  
+<title>Libérer les volets</title>    
+    
+    <p> </p>
+    
+<p>Si l'on veut libérer les volets, on peut les défiger.</p>    
+    
+<p>
+<ol> 
+<li> <p>Sélectionner l'onglet <alert> Affichage </alert> (voir la <xref ref="Fig_Figer_Volet_gif"/>). </p></li>
+
+<li> <p>Dans le groupe <alert> Fenêtre</alert>, cliquer sur la flèche du menu déroulant de l'icône <alert> Figer les volets </alert> (voir la <xref ref="Fig_Liberer_Volets_1"/>). Cliquer sur l'option <term>Libérer les volets</term>. </p>
+    <p> </p>
+    
+<figure xml:id="Fig_Liberer_Volets_1">
+<caption>Sélection de l'option <alert>Libérer les volets</alert></caption>
+<image source="images/Fig_Liberer_Volets_1.png" >
+<description>Sélection de l'option Libérer les volets</description>
+</image>
+</figure>
+ </li>     
+
+</ol>
+</p>    
+   
+</subsubsection>    
+    
+</subsection>
+    
+    
 
 </section>

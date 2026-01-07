@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="ann-nommerruban">
+<title>Nommer des cellules</title>
+    
+<subsubsection xml:id="Nom_Ruban">
+<title> Deuxième méthode pour nommer des cellules: ruban</title>
+
+
+<p> 
+<ol> 
+
+    <li> <p>Sélectionner l'entièreté du tableau, soit la plage <c>A5:K773</c>. Il est possible de faire ceci en sélectionnant la cellule <c>A5</c> et en tapant la combinaison <kbd>Ctrl</kbd>+<kbd>A</kbd>.</p></li>
+
+    <li> <p> Cliquer sur l'onglet <alert> Formules </alert> du ruban (voir la <xref ref="Fig_Interface3"/>).  </p></li>
+
+    <li> <p> Dans le groupe <term> Noms définis</term>, cliquer sur l'icône <term> Définir un nom </term> (voir la <xref ref="Fig_Nom_Echantillon_3"/>). Une boite de dialogue apparait à l'écran.</p>
+    <p> </p>
+        
+    <figure xml:id="Fig_Nom_Echantillon_3">
+<caption>L'onglet Formules et le groupe Noms définis</caption>
+<image source="images/Fig_Nom_Echantillon_3.png" >
+<description>L'onglet Formules du ruban et le groupe Noms définis.</description>
+</image>
+</figure>
+    </li>
+    <p> </p>
+    
+   
+
+    <li> <p> Dans l'encadré vide de l'option <alert>Nom</alert>, taper le mot <em>Échantillon</em>, le nom attribué au tableau (voir la <xref ref="Fig_Nom_Echantillon_2"/>). Les noms ne doivent pas contenir d'espace ni de caractères spéciaux.</p>
+<p> </p>
+        
+<figure xml:id="Fig_Nom_Echantillon_2">
+    <caption>Attribuer un nom à une plage de cellules à partir de l'onglet <alert>Formules</alert></caption>
+<image source="images/Fig_Nom_Echantillon_2.png" >
+<description>Attribuer un nom à une plage de cellules à partir de l'onglet Formules.</description>
+</image>
+</figure>
+    </li>
+    
+     <li><p>S'assurer que, dans l'encadré de l'option <alert>Zone</alert>, il soit écrit <alert>Classeur</alert>. Ceci garantit que le nom attribué à une plage de cellules est défini dans toutes les feuilles du classeur. Cela permet aussi à l'utilisateur ou à l'utilisatrice d'y faire référence quelle que soit la feuille de travail.</p></li>
+    
+  <li><p> Cliquer sur <alert>OK</alert>.</p> </li>     
+    </ol>
+    </p>
+</subsubsection>    
+    
+
+</appendix>
+<!--
+Ajouter/enlever cellules - effacer
+Ajout ligne/colonne
+Masquer/démasquer
+Trier
+Groupe ligne colonne (Ajouter raccourcis? >>> Alt+Shift+droite et Alt+Shift+gauche)
+Mode selection F8 ?
+-->

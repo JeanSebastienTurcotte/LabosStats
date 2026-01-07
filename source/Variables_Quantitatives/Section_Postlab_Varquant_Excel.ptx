@@ -45,7 +45,7 @@
     </exercise>
     
     <exercise>
-    <statement><p>Le choix de l'amplitude et du nombre de classes d'un histogramme peut influencer l'interprétation du graphique. Dans une nouvelle feuille de calcul intitulée <alert>Étude IMC 2</alert>, reproduire l'histogramme de la répartition de l'échantillon des femmes d'origine pima selon l'indice de masse corporelle en regroupant les données en cinq classes. Il est préférable de refaire le tableau croisé dynamique. Il se peut que ceci affecte le regroupement fait à la <xref ref="sssec_Grouper"/>. Interpréter l'allure du graphique. Comparer l'histogramme reproduit à l'histogramme fait à la <xref ref="sssec_Histogramme"/>.</p>
+    <statement><p>Le choix de l'amplitude et du nombre de classes d'un histogramme peut influencer l'interprétation du graphique. Dans une nouvelle feuille de calcul intitulée <alert>Étude IMC 2</alert>, reproduire l'histogramme de la répartition de l'échantillon des femmes d'origine pima selon l'indice de masse corporelle en regroupant les données en cinq classes. Il est préférable de refaire le tableau croisé dynamique. Il se peut que ceci affecte le regroupement fait à la <xref ref="sssec_Grouper"/>. Interpréter l'allure du graphique. Comparer l'histogramme reproduit à l'histogramme fait à la <xref ref="sssec_Histogramme"/>. Une fois cette question complétée, effacer tout filtre du tableau principal en particulier le filtre sur la variable <alert>IMC</alert> (voir <xref ref="sssec_FiltrerP"/>). </p>
     </statement>
     </exercise>
     
@@ -53,13 +53,13 @@
     
     <exercise>
     <statement>
-    <p>Choisir une variable quantitative continue (autre que l'IMC) à étudier. Ajouter une feuille de calcul dans le fichier Excel avec un nom approprié reflétant le contenu. Construire le tableau de fréquences ainsi que l'histogramme de la répartition de l'échantillon de femmes d'origine pima selon la variable choisie. Ne pas oublier de filtrer les données aberrantes, d'indiquer le choix de l'amplitude des classes et de regrouper les données. Interpréter le résultat.</p>
+    <p>Choisir une variable quantitative continue (autre que l'IMC) à étudier. <alert>ATTENTION</alert>, il faut s'assurer d'effacer tout filtre du tableau principal avant de commencer cette question. Ceci va affecter les regroupements faits à la <xref ref="sssec_Grouper"/> et à la question précédente. Il est donc important de garder des traces des calculs, tableaux et graphiques faits. Ajouter une feuille de calcul dans le fichier Excel avec un nom approprié reflétant le contenu. Construire le tableau de fréquences ainsi que l'histogramme de la répartition de l'échantillon de femmes d'origine pima selon la variable choisie. Ne pas oublier de filtrer les données aberrantes et d'indiquer quelles valeurs ont été filtrées. Indiquer le choix de l'amplitude des classes et regrouper les données. Interpréter le résultat.</p>
     </statement>
     </exercise>
     
     <exercise>
     <statement>
-    <p>Calculer les mesures de tendance centrales, les mesures de dispersion et le troisième quintile de la variable choisie à la question précédente. </p>
+    <p>Dans un tableau comme celui de la <xref ref="Fig_IMC_Mesures_Finales"/>, calculer avec les formules Excel les mesures de tendance centrales, les mesures de dispersion et le troisième quintile de la variable choisie à la question précédente.  </p>
     </statement>
     </exercise>
     
@@ -77,7 +77,7 @@
     
       <exercise>
     <statement>
-    <p>Choisir une variable quantitative continue (autre que l'IMC) à étudier simultanément avec la variable qualitative <alert>Atteint</alert>. Ajouter une feuille de calcul dans le fichier Excel avec un nom approprié reflétant le contenu. Construire le tableau de fréquences à double entrée ainsi que le polygone de fréquences de la répartition de l'échantillon de femmes d'origine pima, par présence de diabète, selon la variable quantitative continue choisie. Ne pas oublier de filtrer les données aberrantes, d'indiquer le choix de l'amplitude des classes et de regrouper les données. Interpréter le résultat. </p>
+    <p>Prendre la variable quantitative continue choisie aux deux exercices précédents à étudier simultanément avec la variable qualitative <alert>Atteint</alert>. Ajouter une feuille de calcul dans le fichier Excel avec un nom approprié reflétant le contenu. Construire le tableau de fréquences à double entrée ainsi que le polygone de fréquences de la répartition de l'échantillon de femmes d'origine pima, par présence de diabète, selon la variable quantitative continue choisie. Ne pas oublier de filtrer les données aberrantes et d'indiquer quelles valeurs ont été filtrées. Indiquer le choix de l'amplitude des classes et regrouper les données. Interpréter le résultat. </p>
     </statement>
     </exercise>
     

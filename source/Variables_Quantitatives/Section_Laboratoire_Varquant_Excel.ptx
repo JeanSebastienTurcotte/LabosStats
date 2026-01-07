@@ -11,6 +11,19 @@
       
     </introduction>
     
+    
+    
+     <subsection xml:id="ssec-prelab3_exo">
+<title>Exercice préparatoire</title>
+    
+    <introduction>
+   
+        <p> Pour préparer ce laboratoire, il faut s'assurer d'avoir fait les trois premières questions du prélaboratoire 3 (voir la <xref ref="sec-Prelab_Varquant"></xref>).</p> 
+ 
+    </introduction>
+    
+ </subsection>  
+    
     <subsection xml:id="ssec_UneVarQuant">
         <title>L'étude d'une variable quantitative continue</title>
            
@@ -796,7 +809,7 @@
                 </li>
                 
                 
-                  <p>Dans un espace sous le tableau croisé dynamique, faire la mise en forme du tableau de fréquences correspondant à la répartition des femmes selon l'indice de masse corporelle. La version finale du tableau de fréquences est présentée à la <xref ref="Fig_IMC_Tableau_2"/> (voir la <xref ref="ssec-MiseEnFormeTableau"/>).</p>
+                  <p>Dans un espace sous le tableau croisé dynamique, faire la mise en forme du tableau de fréquences correspondant à la répartition des femmes selon l'indice de masse corporelle. La version finale du tableau de fréquences est présentée à la <xref ref="Fig_IMC_Tableau_2"/> (voir la <xref ref="sssec-MiseEnFormeTableau"/>).</p>
         
          <figure xml:id="Fig_IMC_Tableau_2">
 <caption>Version définitive du tableau de fréquences de la variable <alert>IMC</alert></caption>
@@ -1172,7 +1185,7 @@
                 
             </li>
             
-             <li><p>Les valeurs des étiquettes des abscisses ne sont pas bien alignées. Il faut les aligner à droite. Cliquer sur une des valeurs de l'abscisse jusqu'à ce que l'entièreté des valeurs soit comprise dans un encadré. Cliquer sur l'onglet <alert>Accueil</alert>. Dans le groupe <alert>Alignement</alert>, cliquer sur l'icône <alert>Aligner à droite</alert> (voir la <xref ref="Fig_IMC_HistoF_21"/>). </p>
+             <li><p>Les valeurs des étiquettes des abscisses ne sont pas bien alignées. Il faut les aligner à droite. Cliquer sur une des valeurs de l'abscisse jusqu'à ce que l'entièreté des valeurs soit comprise dans un encadré. Cliquer sur l'onglet <alert>Accueil</alert>. Dans le groupe <alert>Alignement</alert>, cliquer sur l'icône <alert>Aligner à droite</alert> (voir la <xref ref="Fig_IMC_HistoF_21"/>). Il faut noter que cette option n'existe pas pour les Mac. Il vaut mieux de procéder avec un zone de texte.</p>
                 <p></p>
                 
                  <figure xml:id="Fig_IMC_HistoF_21">
@@ -1221,12 +1234,12 @@
             </li>
             <li><p>Comme il y a un saut de valeurs entre la première classe et l'axe des ordonnées, il est recommandé de l'indiquer dans une note au bas du graphique.</p></li>
  <!-- Yasmine ici plus  veux-tu refaire l'image modifiée avec la note de saut, pour que ça garde la même mise en forme-->          
- <li><p>L'étape finale consiste à mettre la source des données en dessous de l'histogramme (voir la <xref ref="Fig_IMC_HistoF_26"/>). </p>
+ <li><p>L'étape finale consiste à mettre la source des données en dessous de l'histogramme (voir la <xref ref="Fig_IMC_HistoF_26bis"/>). </p>
                 <p></p>
                 
-                 <figure xml:id="Fig_IMC_HistoF_26">
+                 <figure xml:id="Fig_IMC_HistoF_26bis">
 <caption>Version définitive de l'histogramme avec la source des données et la note de saut</caption>
-<image source="images/Fig_IMC_HistoF_26.png" >
+<image source="images/Fig_IMC_HistoF_26bis.png" >
 <description>Version définitive de l'histogramme avec la source des données et la note de saut</description>
 </image>
 </figure>
@@ -1369,7 +1382,7 @@
                 </li>
               
               
-              <li><p>Dans la cellule <alert><c>L9</c></alert>, taper <alert><c>=MODE.SIMPLE(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>).</p>
+              <li><p>Dans la cellule <alert><c>L9</c></alert>, taper <alert><c>=MODE.SIMPLE(IMC)</c></alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="Mesures_gif_1"/>). Noter que la fonction <alert>MODE.SIMPLE</alert> ne renvoie le mode que pour des variables quantitatives.</p>
               <p></p>
                    
                 </li>
@@ -2521,7 +2534,7 @@
              </li>
              
              
-               <li> <p>Copier et coller le tableau croisé dynamique dans les cellules <alert><c>I10:K13</c></alert>(voir la <xref ref="fig-TCDaformat_anim1"/>).</p>
+               <li> <p>Copier et coller le tableau croisé dynamique dans les cellules <alert><c>I10:K13</c></alert> (voir la <xref ref="Fig_Qual_Tableau1"/>).</p>
                    
                    <p>Ajouter une colonne à droite de l'écart type corrigé pour le calcul du coefficient de variation. Dans la cellule <alert><c>L10</c></alert>, taper <alert><c>=K11/J11</c></alert> (voir la <xref ref="Fig_Mesures_Pol_14"/>).</p>
    

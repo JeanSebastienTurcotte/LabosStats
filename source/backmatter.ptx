@@ -20,6 +20,8 @@
  <xi:include href="Annexes/Manipulation.ptx"/>
  <xi:include href="Annexes/Divers.ptx"/>
  <xi:include href="Annexes/Fonctions_utiles.ptx"/>
+ <xi:include href="Annexes/Nommer_Ruban.ptx"/>
+ <xi:include href="Annexes/Remplissage_Automatique.ptx"/>
  <xi:include href="Annexes/Convertir.ptx"/>
  <!-- En dernier -->
   <xi:include href="Annexes/Raccourcis.ptx"/>

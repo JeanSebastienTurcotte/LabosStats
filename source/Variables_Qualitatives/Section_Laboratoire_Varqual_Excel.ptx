@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+ 
+    
+
 <section xml:id="sec-Laboratoire_Varqual" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Laboratoire</title>
-    <introduction>
-    <p>Dans ce laboratoire, on cherche à représenter la répartition du nombre de femmes d'origine pima vivant en Arizona qui sont atteintes du diabète, ainsi que leur répartition selon leur niveau d'obésité, tel que qualifié par Santé Canada en fonction de l'indice de masse corporelle.</p>
     
-    <p>Pour cela, on utilise les variables <alert>Atteint</alert> et <alert>Obésité</alert>, dont les tableaux croisés dynamiques ont été construits respectivement au <xref ref="chap-Intro" text="custom">Laboratoire 1</xref> et au <xref ref="sec-Prelab_Varqual" text="custom">prélaboratoire</xref> précédent. On rappelle que, pour la variable <alert>Atteint</alert>, le code <m>0</m> signifie l'absence de diabète et le code <m>1</m> signifie que la femme est atteinte du diabète. Pour la variable <alert>Obésité</alert>, l'échelle de <m>1</m> à <m>6</m> se traduit par:
+   
+    
+    
+    
+ <introduction> 
+ <p>Dans ce laboratoire, on cherche à représenter la répartition du nombre de femmes d'origine pima vivant en Arizona qui sont atteintes du diabète, ainsi que leur répartition selon leur niveau d'obésité, tel que qualifié par Santé Canada en fonction de l'indice de masse corporelle.</p>
+   
+          
+          <p>Pour cela, on utilise les variables <alert>Atteint</alert> et <alert>Obésité</alert>, dont les tableaux croisés dynamiques ont été construits respectivement au <xref ref="chap-Intro" text="custom">Laboratoire 1</xref> et à l'<xref ref="ssec-prelab2_exo" text="custom">exercice préparatoire</xref>. On rappelle que, pour la variable <alert>Atteint</alert>, le code <m>0</m> signifie l'absence de diabète et le code <m>1</m> signifie que la femme est atteinte du diabète. Pour la variable <alert>Obésité</alert>, l'échelle de <m>1</m> à <m>6</m> se traduit par:
     
     <ol>
     <li><p>Poids insuffisant;</p></li>
@@ -15,19 +24,128 @@
     <li><p>Obésité classe II; </p></li>
     <li><p>Obésité classe III. </p></li>
     </ol></p>
+          
+    
    
    <p>Dans ce laboratoire, on introduit la notion de mise en forme d'un tableau à des fins de publication, la création d'un diagramme circulaire et d'un diagramme à bandes, ainsi que la mise en forme appropriée pour ces deux éléments graphiques. </p>
-</introduction>   
-      <subsection xml:id="ssec-CopierTCD">
+    
+</introduction>
+    
+    
+     <subsection xml:id="ssec-prelab2_exo">
+<title>Exercice préparatoire</title>
+    
+    <introduction>
+   
+        <p>Avant chaque laboratoire, on cherche à consolider les notions abordées dans les laboratoires précédents et à préparer les fichiers de travail. Pour préparer ce laboratoire, on poursuit l'étude des données diagnostiques de 768 femmes d'origine pima de l'Arizona à partir de la base de données du laboratoire d'<xref ref="chap-Intro">introduction</xref>.</p> 
+  
+<p>Dans le fichier Excel du laboratoire 1 (<alert>Données_Diabète.xlsx</alert>), créer une nouvelle feuille de calcul intitulée <alert>Étude Obésité</alert>. Dans celle-ci, générer le tableau croisé dynamique de la répartition des femmes selon la variable <alert>Obésité</alert>. </p>
+    
+    </introduction>
+    
+ </subsection>  
+
+    
+    
+    <subsection xml:id="ssec-EtudeQual">
+        <title>Tableau d'une variable qualitative</title>
+   
+        
+        <introduction><p>Les étapes de l'analyse d'une variable qualitative sont les suivantes : filtrage de données aberrantes, création du tableau croisé dynamique, mise en forme de ce tableau croisé dynamique, création d'un graphique approprié, tel qu'un diagramme circulaire ou un diagramme à bandes verticales ou horizontales, calcul de quelques mesures descriptives comme le mode, et enfin, interprétation des résultats. Les étapes qui suivent mènent à l'analyse de la présence de diabète chez les 768 femmes d'origine pima de l'échantillon.</p></introduction>
+    
+        
+    <subsubsection xml:id="sssec-TCDQual">
+        <title>Le tableau croisé dynamique</title>
+          <p></p>
+        
+        <p>La première étape de l'étude d'une variable qualitative est la création d'un tableau croisé dynamique. Les étapes menant à la construction du tableau de la répartition des femmes selon la présence de diabète ont été présentées à la fin du laboratoire 1 (voir la <xref ref="ssec_TCD"/>). </p>
+        
+         </subsubsection>
+        
+        
+         <subsubsection xml:id="sssec-CopierTCD">
+        <title>Le tableau pour publication</title>
+             <p></p>
+          
+        <p>Le tableau croisé dynamique construit par Excel à la fin du laboratoire 1 n'est pas adéquat si l'on souhaite le publier comme source d'information. Par exemple, il est nécessaire de préciser le nom des catégories, d'ajouter un titre significatif et la source des données. Les étapes suivantes mènent à la construction d'un tableau plus propice au partage des informations.</p>
+             
+             <p></p>
+             
+              <paragraphs><title> Première méthode</title> </paragraphs>
+             
+            <p>
+             <ol>
+               <li><p>Dans la feuille <alert>Étude Atteint</alert>, sélectionner la cellule <c>G3</c> pour commencer le tableau (voir la <xref ref="Fig_Qual_Tableau1"/>). </p> </li> 
+                 <li><p>Appuyer ensuite sur la touche <kbd>=</kbd> (voir la <xref ref="Fig_Qual_Tableau1"/>). </p></li>
+                 
+                 <li><p>Sélectionner la plage du tableau croisé dynamique correspondant aux données, soit les cellules <c>C4:D6</c>. Appuyer sur la touche <kbd>Enter</kbd>.</p></li>
+                 
+                 
+                 <li><p> Il est possible qu'il faille changer le format de la cellule pour <alert>Pourcentage</alert> (voir <xref ref="li-pourcent" text="title"/>). On s'assure de garder deux chiffres significatifs après la virgule. L'animation ci-dessous permet de voir à quoi ressemble la progression de ces étapes.</p>
+                     
+        <figure xml:id="Fig_Qual_Tableau1">
+        <caption>Création du tableau pour présentation - première méthode</caption>
+        <image source="images/Fig_Qual_Tableau1.png">
+        <description>Animation de la copie des données du tableau croisé dynamique vers un tableau pour présentation - première méthode</description>
+            </image></figure></li>
+                
+             </ol>
+             
+             </p> 
+             
+             
+              <paragraphs><title> Deuxième méthode</title> </paragraphs>
+        
+        <p>Il existe une autre méthode pour copier les valeurs d'un tableau croisé dynamique. Les étapes sont présentées ci-dessous. </p>
+            
+
+        <p>
+             <ol>
+               <li><p>Dans la feuille <alert>Étude Atteint</alert>, sélectionner les cellules <c>C4:D6</c> (voir la <xref ref="Fig_Qual_Tableau2"/>). </p> </li> 
+                 <li><p>Appuyer sur les touches <kbd>Ctrl</kbd>+<kbd>C</kbd> pour copier les valeurs. </p></li>
+                 
+                 <li><p>Sélectionner la cellule <c>G3</c>, l'endroit où les cellules copiées seront collées.</p></li>
+                 
+                  <li><p>Appuyer sur les touches <kbd>Ctrl</kbd>+<kbd>V</kbd> pour copier les valeurs (voir la <xref ref="Fig_Qual_Tableau2"/>). </p></li>
+                 
+                 <li><p>Cliquer sur l'icône de collage spécial situé dans le coin inférieur bas et sélectionner <alert>Coller le lien (N)</alert> (voir la <xref ref="Fig_Qual_Tableau2"/>). </p></li>
+                 
+                 
+                 <li><p> Il est possible qu'il faille changer le format de la cellule pour <alert>Pourcentage</alert> (voir <xref ref="li-pourcent" text="title"/>). On s'assure de garder deux chiffres significatifs après la virgule. L'animation ci-dessous permet de voir à quoi ressemble la progression de ces étapes.</p>
+                     
+        <figure xml:id="Fig_Qual_Tableau2">
+        <caption>Création du tableau pour présentation - deuxième méthode</caption>
+        <image source="images/Fig_Qual_Tableau2.png">
+        <description>Animation de la copie des données du tableau croisé dynamique vers un tableau pour présentation - deuxième méthode</description>
+            </image></figure></li>
+                
+             </ol>
+             
+             </p> 
+    
+    </subsubsection>
+        
+        
+    
+    
+    
+    
+    
+    
+
+        <!--On peut aussi relâcher la touche <kbd>Ctrl</kbd> et appuyer sur la combinaison <kbd>Ctrl</kbd>+<kbd>N</kbd> pour utiliser le raccourci clavier correspondant. La figure <xref ref="fig-TCDaformat_anim2"/> illustre ces diverses possibilités.--> 
+
+<!--    <subsection xml:id="ssec-CopierTCD">
         <title>Le tableau croisé dynamique et le tableau pour publication</title>
           <p></p>
           
         <p>Le tableau croisé dynamique construit par Excel à la fin du laboratoire 1 (répartition des femmes selon la présence de diabète) n'est pas adéquat si l'on souhaite le publier comme source d'information. Par exemple, il est nécessaire de préciser le nom des catégories, d'ajouter un titre significatif et la source des données. Voici une procédure pour construire un tableau plus propice au partage des informations.</p>
         <p>Dans la feuille <alert>Étude Atteint</alert>, on sélectionne une cellule pour commencer le tableau, par exemple <c>H8</c> dans la figure <xref ref="fig-TCDaformat_anim1"/>.  On appuie ensuite sur <kbd>=</kbd>, on sélectionne la plage du tableau croisé dynamique correspondant aux données et l'on appuie sur <kbd>Enter</kbd>.</p>
-        <p>Il est également possible de faire la combinaison <kbd>Ctrl</kbd>+<kbd>C</kbd> sur la plage des données du tableau croisé dynamique et de faire un collage spécial à l'endroit souhaité. Pour cela, on peut faire la combinaison <kbd>Ctrl</kbd>+<kbd>V</kbd>, cliquer sur l'icône de collage dans le coin inférieur bas et sélectionner <alert>Coller le lien (N)</alert>. 
-            <!--On peut aussi relâcher la touche <kbd>Ctrl</kbd> et appuyer sur la combinaison <kbd>Ctrl</kbd>+<kbd>N</kbd> pour utiliser le raccourci clavier correspondant. La figure <xref ref="fig-TCDaformat_anim2"/> illustre ces diverses possibilités.--></p> 
+        <p>Il est également possible de faire la combinaison <kbd>Ctrl</kbd>+<kbd>C</kbd> sur la plage des données du tableau croisé dynamique et de faire un collage spécial à l'endroit souhaité. Pour cela, on peut faire la combinaison <kbd>Ctrl</kbd>+<kbd>V</kbd>, cliquer sur l'icône de collage dans le coin inférieur bas et sélectionner <alert>Coller le lien (N)</alert>. </p>
+            
+
         
-        <p> Dans tous les cas, il est possible qu'il faille changer le format de la cellule pour <alert>Pourcentage</alert> (voir <xref ref="li-pourcent" text="title"/>). On s'assure de garder deux chiffres significatifs après la virgule. L'animation ci-dessous permet de voir en trois étapes à quoi ressemble la progression de ces étapes.</p>
+         <p> Dans tous les cas, il est possible qu'il faille changer le format de la cellule pour <alert>Pourcentage</alert> (voir <xref ref="li-pourcent" text="title"/>). On s'assure de garder deux chiffres significatifs après la virgule. L'animation ci-dessous permet de voir en trois étapes à quoi ressemble la progression de ces étapes.</p>
         <figure xml:id="fig-TCDaformat_anim1">
         <caption>Création du tableau pour présentation - première méthode</caption>
         <image source="images/TCDaformat_anim.png">
@@ -41,37 +159,161 @@
         </image>
         </figure>
     
-    </subsection>
+    </subsection> -->
 
-    <subsection xml:id="ssec-MiseEnFormeTableau">
-        <title>Mise en forme tableau</title>
+    <subsubsection xml:id="sssec-MiseEnFormeTableau">
+        <title>Mise en forme d'un tableau</title>
         <p></p>
         <p>Une fois les données extraites du tableau croisé dynamique, on ajoute les étiquettes de colonnes et de lignes, le titre du tableau et la source des données. Pour le moment, on ne se soucie pas de la mise en forme de ces éléments. Dans un premier temps, pour le tableau concernant la variable <alert>Atteint</alert> du diabète, les étapes qui suivent devraient mener à un tableau de quatre lignes et trois colonnes.
    <list xml:id="li-tableau">
    <title>Mise en forme du tableau pour publication</title>
    <ol>
-    <li><p>À gauche, on ajoute une colonne appelée &#xAB;Présence du diabète&#xBB; dont les lignes sont, du haut vers le bas : &#xAB;Non&#xBB;,&#xAB;Oui&#xBB;,&#xAB;Total&#xBB;. La colonne &#xAB;Présence du diabète&#xBB; se trouve donc dans la colonne <c>G</c> de la feuille de calcul.</p></li>
-    <li><p>On ajoute le titre des autres colonnes, de gauche à droite : &#xAB;Nombre de femmes&#xBB; et &#xAB;Pourcentage de femmes&#xBB;. On élargit les colonnes de manière à ce que le tout soit lisible.</p></li>
-    <li><p>Dans la dernière ligne, on a le total du nombre de femmes sous chaque colonne. Sous la colonne <alert>Pourcentage de femmes</alert> à la ligne <alert>Total</alert>, on s'assure qu'il est <em>toujours</em> écrit <m>100\%</m>, même si l'addition des nombres dans la colonne pourrait ne pas donner <m>100\%</m> en raison d'erreur d'arrondi. Dans de tels cas, on l'indiquera sous le tableau à l'aide de la note : &#xAB;En raison de l'arrondissement des pourcentages, le total pourrait ne pas être exactement de <m>100,00\%</m>.&#xBB;</p></li>
+    <li><p>Dans la cellule <c>F4</c>, on ajouter une colonne appelée &#xAB;Présence du diabète&#xBB; dont les lignes sont, du haut vers le bas : &#xAB;Non&#xBB;,&#xAB;Oui&#xBB;,&#xAB;Total&#xBB;. La colonne &#xAB;Présence du diabète&#xBB; se trouve donc dans la colonne <c>F</c> de la feuille de calcul.</p></li>
+    <li><p>On ajoute le titre des autres colonnes, de gauche à droite : &#xAB;Nombre de femmes&#xBB; (cellule <c>G4</c>) et &#xAB;Pourcentage de femmes&#xBB; (cellule <c>H4</c>). On élargit les colonnes de manière à ce que le tout soit lisible.</p></li>
+    <li><p>Dans la dernière ligne, soit la ligne <m>7</m>, on a le total du nombre de femmes sous chaque colonne. Sous la colonne <alert>Pourcentage de femmes</alert> à la ligne <alert>Total</alert>, on s'assure qu'il est <em>toujours</em> écrit <m>100\%</m>, même si l'addition des nombres dans la colonne pourrait ne pas donner <m>100\%</m> en raison d'erreur d'arrondi. Dans de tels cas, on l'indiquera sous le tableau à l'aide de la note : &#xAB;En raison de l'arrondissement des pourcentages, le total pourrait ne pas être exactement de <m>100,00\%</m>.&#xBB;</p></li>
+       
     <li><p>Sous le tableau, on inscrit la source des données. Dans le cas de cette étude, la source est donnée dans la <xref ref="sec-Prelab_Introduction" text="l'introduction"/>. La mention &#xAB;Source : National Institute of Diabetes and Digestive and Kidney Diseases (USA)&#xBB; doit apparaitre sous chacun des tableaux et des graphiques créés pour publication. </p></li>
-    <li><p>On titre le tableau. Le titre aura généralement la forme <alert> Répartition d'un échantillon (ou d'une population) de [unités statistiques] selon [la variable], [le lieu], [période ou date]</alert>.  </p></li>
-    </ol></list>
-    </p>
-    <p>La figure ci-dessous illustre le tableau pour publication une fois toutes les étapes effectuées.</p>
-        <figure>
+       
+    <li><p>On titre le tableau. Le titre aura généralement la forme <alert> Répartition d'un échantillon (ou d'une population) de [unités statistiques] selon [la variable], [le lieu], [période ou date]</alert>. Écrire ce titre dans la cellule <c>F1</c>.   </p></li>
+       
+      <li><p>Le titre étant long, on aimerait le centrer au tableau. Sélectionner les cellules <c>F1:H2</c> (voir la <xref ref="Fig_Qual_TableauFinal"/>). </p></li>
+       
+       <li><p>Cliquer sur l'onglet <alert>Accueil</alert> Dans le groupe <alert>Alignement</alert>, sélectionner l'option <alert>Fusionner et centrer</alert> (voir la <xref ref="Fig_Qual_TableauFinal"/>). Les cellules <c>F1:H2</c> sont maintenant considérées comme une seule cellule.</p></li>
+       
+       <li><p>Le titre est cependant sur une ligne. On aimerait qu'il soit sur plus d'une ligne pour qu'il soit lisible. Dans le groupe <alert>Alignement</alert>, sélectionner l'option <alert>Renvoyer à la ligne automatiquement</alert> (voir la <xref ref="Fig_Qual_TableauFinal"/>). On peut mettre le titre en gras et augmenter la police si l'on veut.</p>
+       
+       <figure xml:id="Fig_Qual_TableauFinal">
         <caption>Le tableau pour publication - après la mise en forme</caption>
-            <image source="images/Fig_Tableau_Formatter.png">
-        <!-- <image source="images/Tableau_atteint_preformat.png">-->
+            <image source="images/Fig_Qual_TableauFinal.png">
         <description>Capture d'écran du tableau une fois les étapes précédentes effectuées.</description>
         </image>
-        </figure>    
+           </figure> </li>
+    </ol>
+    </list>
+    </p>
+        
+        
     <p>Répéter les étapes ci-dessus avec le tableau croisé dynamique généré lors du prélaboratoire pour la variable <alert>Obésité</alert> dans la feuille <alert>Étude Obésité</alert>.</p>
     <p>Ces tableaux sont appelés <term>tableau de fréquences</term> de la variable étudiée. S'il n'y a que la colonne du nombre d'individus, on parle alors de <term>tableau de fréquences absolues</term> et, s'il n'y a que la colonne des pourcentages, on dit <term>tableau de fréquences relatives</term>.</p>
     <p>Habituellement, le titre, les entêtes de colonne, ainsi que le contenu de la ligne &#xAB;Total&#xBB; ont une mise en forme particulière, par exemple en gras.</p>
+    </subsubsection>
+    
     </subsection>
     
-    <subsection>
-        <title>Graphiques</title>
+    
+     <subsection xml:id="ssec-GraphQual">
+        <title>Graphiques d'une variable qualitative</title>
+
+        
+      <introduction><p>Un tableau est une excellente manière de rassembler l'information d'une variable qualitative. Cela dit, illustrer la répartition des unités de manière graphique peut être aussi, et même davantage, utile. Pour une variable qualitative, il existe deux types de graphiques principaux: le diagramme circulaire et le diagramme à bandes. Dans le second cas, les bandes peuvent être horizontales ou verticales, mais, si la variable est ordinale, on préfère le diagramme à bandes verticales.</p></introduction>  
+         
+     <subsubsection xml:id="DiagCirc">
+         <title>Diagramme circulaire</title>
+        
+     <p>On construit le diagramme circulaire associé à la variable <alert>Atteint</alert>. On choisit de faire la répartition en pourcentage des effectifs.
+     <ol>
+     <li><p>Dans le tableau de fréquences de la feuille <alert>Étude Atteint</alert>, sélectionner les modalités de la variable aux cellules <c>F4:F5</c> et, en maintenant la touche <kbd>Ctrl</kbd> enfoncée, les effectifs relatifs aux cellules <c>H4:H5</c>.</p></li>
+         <li><p>Cliquer sur l'onglet <alert>Insertion</alert> du ruban (voir la <xref ref="Fig_Qual_Graph1"/>).</p></li>
+     <li><p>Sous l'onglet <alert>Insertion</alert>, cliquer sur l'icône correspondant au diagramme circulaire dans le ruban (voir la <xref ref="Fig_Qual_Graph1"/>).</p></li>
+     <li><p>Sous <alert>Secteur 2D</alert>, cliquer sur le premier type de graphique à gauche, appelé <alert>Secteur</alert> (voir la <xref ref="Fig_Qual_Graph1"/>). Le graphique créé sera inséré dans la feuille. Déplacer le graphique au besoin.</p> <p>La figure <xref ref="Fig_Qual_Graph1"/> illustre les étapes précédentes sous forme d'animation.</p>
+     
+         <figure xml:id="Fig_Qual_Graph1">
+     <caption>L'insertion d'un diagramme circulaire</caption>
+     <image source="images/Fig_Qual_Graph1.png">
+     <description>Animation des étapes menant à l'insertion d'un diagrame circulaire.</description>
+     </image>
+     </figure>
+         
+         </li>
+     <li><p>On peut sélectionner un style prédéfini sous l'onglet création de graphique (apparaissant lorsque le graphique est sélectionné, voir la figure <xref ref="fig-stylespredefinis"/>) ou encore peaufiner les éléments graphiques selon ce qui est attendu. Toutefois, en sciences, l'allure esthétique du graphique ne devrait pas prendre le dessus sur l'information transmise. On préfèrera un style relativement neutre sans trop de fioritures. Le graphique circulaire doit contenir les éléments suivants:
+     <ul>
+     <li><p>Un titre représentatif, typiquement de la forme <alert>Répartition d'un échantillon (ou d'une population) de [unités statistiques] selon [la variable], [le lieu], [période ou date]</alert>;</p></li>
+     <li><p>Une légende, pour distinguer les différents secteurs;</p></li>
+     <li><p>Les étiquettes correspondant aux pourcentages ou au nombre d'effectifs sur le graphique, pour une information précise;</p></li>
+     <li><p>La source, lorsque pertinente, dans le bas du graphique.</p></li>
+     </ul>
+     Si l'un ou plusieurs de ces éléments est manquant, on peut, lorsque le graphique est sélectionné, cliquer sur l'onglet <alert>Création de graphique</alert> et cliquer sur le bouton <alert>Ajouter un élément graphique</alert> situé dans la partie gauche du ruban. Il est aussi possible de cliquer sur le petit symbole de croix en haut à droite du graphique. La figure <xref ref="fig-elementgraphique"/> illustre ces deux options.
+     </p></li>
+     </ol> </p>
+
+     <figure xml:id="fig-stylespredefinis">
+     <caption>Les styles prédéfinis d'Excel</caption>
+     <image source="images/graphqualstyle.png">
+     <description>Capture d'écran de l'endroit où l'on retrouve les styles prédéfinis dans le ruban</description>
+     </image>
+     </figure>
+     <figure xml:id="fig-elementgraphique">
+     <caption>Ajout d'un élément graphique: deux options</caption>
+     <sidebyside width="45%">
+     <image source="images/ajoutergraphique1.png">
+     <description>Capture d'écran de l'endroit dans le ruban où l'on peut ajouter une élément graphique.</description>
+     </image>
+     <image source="images/ajoutergraphique2.png">
+     <description>Capture d'écran de l'endroit dans près du graphique où l'on peut ajouter une élément graphique.</description>
+     </image>
+     </sidebyside>
+     </figure>
+         
+         </subsubsection>
+         
+         
+      <subsubsection xml:id="DiagBandes">
+          <title>Diagramme à bandes</title>
+          
+     <p>On construit maintenant le diagramme à bandes pour la variable <alert>Obésité</alert>. Comme la variable est qualitative et a une échelle ordinale, on choisit les bandes verticales. On choisit d'utiliser les effectifs relatifs.
+     <ol>
+     <li><p>Dans le tableau de fréquences de la feuille <alert>Étude Obésité</alert>, sélectionner les modalités de la variable et, en maintenant la touche <kbd>Ctrl</kbd> enfoncée, les effectifs relatifs.</p></li>
+     <li><p>Sous l'onglet <alert>Insertion</alert>, cliquer sur le bouton correspondant à l'histogramme. Voir la figure <xref ref="fig-graphqualbandes"/> ci-dessous.
+     <ul>
+     <li><p>Sous <alert>Histogramme 2D</alert>, cliquer sur le premier type de graphique à gauche, appelé <alert>Histogramme groupé</alert>, pour un diagramme à bandes verticales.</p></li>
+     <li><p>Sous <alert>Barres 2D</alert>, cliquer sur le premier type de graphique à gauche, appelé <alert>Barres groupées</alert>, pour un diagramme à bandes horizontales.</p>
+         
+             <figure xml:id="fig-graphqualbandes">
+    <caption>Insertion d'un diagramme à bandes</caption>
+    <image source="images/graphqualbandes.png">
+    <shortdescription>Capture d'écran de l'emplacement pour ajouter un diagramme à bandes</shortdescription>
+    </image>
+    </figure>
+         </li>
+     </ul></p></li>
+     <li><p>On peut sélectionner un style prédéfini ou encore peaufiner les éléments graphiques selon ce qui est attendu. Toutefois, en sciences, l'allure esthétique du graphique ne devrait pas prendre le dessus sur l'information transmise. On préfèrera un style relativement neutre sans trop de fioritures. Le diagramme à bandes doit contenir les éléments suivants:
+     <ul>
+     <li><p>Un titre représentatif, typiquement de la forme <alert>Répartition d'un échantillon (ou d'une population) de [unités statistiques] selon [la variable], [le lieu], [période ou date]</alert>;</p></li>
+     <li><p>Des titres significatifs pour les axes;</p></li>
+     <li><p>Le nom des modalités identifié clairement, sous l'axe (pour un graphique à bandes verticales), à la gauche (pour un graphique à bandes horizontales) ou encore dans une légende (pour les deux types de graphiques).</p></li>
+     <li><p> L'axe des effectifs comprend une graduation bien faite. Une note est ajoutée s'il y a eu coupure de l'axe pour sauter certaines valeurs.</p></li>
+     <li><p> Les étiquettes correspondant aux pourcentages ou au nombre d'effectifs sur le graphique, pour une information précise.</p></li>
+     <li><p>La source, lorsque pertinente, dans le bas du graphique.</p></li>
+     </ul>
+     Si l'un ou plusieurs de ces éléments sont manquants, on peut, lorsque le graphique est sélectionné, cliquer sur l'onglet <alert>Création de graphique</alert> et cliquer sur le bouton <alert>Ajouter un élément graphique</alert>. Il est aussi possible de cliquer sur le petit symbole de croix en haut à droite du graphique. La figure <xref ref="fig-elementgraphique"/> illustre ces deux options.
+     </p></li>
+     </ol>    
+     </p>
+
+    <figure xml:id="fig-graphqualbandesfinal">
+    <caption>Diagramme à bandes verticales</caption>
+    <image source="images/Diagrammebandes.png">
+    <shortdescription>Le résultat attendu du diagramme à bandes vertical</shortdescription></image>
+    </figure>
+          
+    
+         </subsubsection>
+    </subsection>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ <!--   <subsection xml:id="ssec-GraphQual">
+        <title>Graphiques d'une variable qualitative</title>
         <p></p>
         
         <p>Un tableau est une excellente manière de rassembler l'information d'une variable qualitative. Cela dit, illustrer la répartition des unités de manière graphique peut être aussi, et même davantage, utile. Pour une variable qualitative, il existe deux types de graphiques principaux: le diagramme circulaire et le diagramme à bandes. Dans le second cas, les bandes peuvent être horizontales ou verticales, mais, si la variable est ordinale, on préfère le diagramme à bandes verticales.</p>
@@ -146,5 +388,6 @@
     <image source="images/Diagrammebandes.png">
     <shortdescription>Le résultat attendu du diagramme à bandes vertical</shortdescription></image>
     </figure>
-    </subsection>
+    </subsection>-->
+    
 </section>

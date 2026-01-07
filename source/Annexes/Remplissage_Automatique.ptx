@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<appendix xml:id="ann-remplissage">
+<title>Remplissage automatique</title>
+    
+<subsubsection xml:id="RemplissageValeur">
+            <title>Remplissage automatique d'une valeur</title>
+            
+            <introduction><p>Il est possible de remplir une colonne avec la même valeur en utilisant la fonction de recopiage automatique d'Excel. Par exemple, dans un problème de physique ou de chimie, il se peut que l'incertitude soit la même pour toutes les mesures et l'on aimerait la recopier sans taper manuellement la valeur plusieurs fois. Les étapes pour faire un remplissage automatique sont présentées ci-dessous.</p></introduction>
+            
+            <p>
+            <ol>
+                
+                <li><p>Dans le classeur de travail, ajouter une feuille de travail (<xref ref="Fig_Ajout_Feuille"/>).</p></li>
+                
+                <li><p>Dans la cellule <c>C5</c> de cette nouvelle feuille, taper la valeur <m>1</m> (<xref ref="Fig_Remplissage_gif1"/>).</p>
+                   <p> </p>
+    
+    <figure xml:id="Fig_Remplissage_gif1">
+<caption>Remplissage automatique d'une valeur à recopier</caption>
+<image source="images/Fig_Remplissage_gif1.png" >
+<description>Remplissage automatique d'une valeur à recopier</description>
+</image>
+</figure>
+ </li>  
+                
+                <li><p>Sélectionner la cellule jusqu'à ce qu'elle soit encadrée d'une bordure verte (<xref ref="Fig_Remplissage_gif1"/>).</p></li>
+                
+                <li><p>Cliquer et maintenir enfoncé le bouton gauche de la souris sur le coin inférieur droit de la cellule (un petit carré vert). Glisser le pointeur vers le bas jusqu'à la cellule voulue, la cellule <c>C17</c> dans ce cas (<xref ref="Fig_Remplissage_gif1"/>). </p></li>
+                
+                <li><p>Relâcher le bouton gauche de la souris. La valeur <m>1</m> apparait dans toutes les cases sélectionnées, soit la plage <c>C5:C17</c> (<xref ref="Fig_Remplissage_gif1"/>). Le remplissage peut également être fait le long d'une ligne.</p></li>
+                
+                
+            </ol>
+            </p>
+        
+        </subsubsection>
+        
+        
+            <subsubsection xml:id="RemplissageSuite">
+            <title>Remplissage automatique d'une suite de nombre</title>
+            
+            <introduction>Il est possible de remplir une colonne avec une suite de nombres en utilisant la fonction de recopiage automatique d'Excel. Les étapes sont présentées ci-dessous.</introduction>
+            
+            <p>
+            <ol>
+                
+                <li><p>Dans les cellules <c>E5:E7</c> de la même feuille de calcul, taper les valeurs <m>1</m>, <m>2</m> et <m>3</m> respectivement (<xref ref="Fig_Remplissage_gif2"/>).</p>
+                   <p> </p>
+    
+    <figure xml:id="Fig_Remplissage_gif2">
+<caption>Remplissage automatique d'une suite de nombres</caption>
+<image source="images/Fig_Remplissage_gif2.png" >
+<description>Remplissage automatique d'une suite de nombres</description>
+</image>
+</figure>
+ </li>  
+                
+                <li><p>Sélectionner les cellules <c>E5:E7</c> jusqu'à ce qu'elles soient encadrées d'une bordure verte (<xref ref="Fig_Remplissage_gif2"/>).</p></li>
+                
+                <li><p>Cliquer et maintenir enfoncé le bouton gauche de la souris sur le coin inférieur droit de la plage de cellules (un petit carré vert). Glisser le pointeur vers le bas jusqu'à la cellule voulue, la cellule <c>E17</c> dans ce cas (<xref ref="Fig_Remplissage_gif2"/>). Relâcher le bouton gauche de la souris une fois la cellule voulue atteinte. </p>
+                
+                <p>En sélectionnant trois cellules qui ont trois nombres consécutifs, Excel comprend qu'en effectuant un remplissage automatique, on veut poursuivre la séquence et non recopier ces trois valeurs. Ainsi, il remplit les cellules avec les nombres <m>4</m> à <m>13</m> (<xref ref="Fig_Remplissage_gif2"/>).</p>
+                </li>
+                
+                
+            </ol>
+            </p>
+        
+        </subsubsection>
+    
+    
+        
+                <subsubsection xml:id="RemplissageValeurDouble">
+            <title>Remplissage automatique d'une valeur en doublecliquant</title>
+            
+            <introduction> Il est possible de remplir une colonne adjacente à une autre en utilisant le doubleclique. Les étapes sont présentées ci-dessous.</introduction>
+            
+            <p>
+            <ol>
+                
+                <li><p>Dans les cellules <c>F5:F6</c> de la même feuille de calcul, taper la valeur <m>2</m> (<xref ref="Fig_Remplissage_gif3"/>). On place ces valeurs dans la colonne adjacente à celles déjà remplies avec les valeurs <m>1</m> à <m>13</m>.</p>
+                   <p> </p>
+    
+    <figure xml:id="Fig_Remplissage_gif3">
+<caption>Remplissage automatique d'une valeur ou d'une formule avec le doubleclique</caption>
+<image source="images/Fig_Remplissage_gif3.png" >
+<description>Remplissage automatique d'une valeur ou d'une formule avec le doubleclique</description>
+</image>
+</figure>
+ </li>  
+                
+                <li><p>Sélectionner les cellules <c>F5:F6</c> jusqu'à ce qu'elles soient encadrées d'une bordure verte (<xref ref="Fig_Remplissage_gif3"/>).</p></li>
+                
+                <li><p>Doublecliquer le bouton gauche de la souris sur le coin inférieur droit de la plage de cellules (un petit carré vert) (voir la <xref ref="Fig_Remplissage_gif3"/>). La plage <c>F5:F17</c> se remplit automatiquement. Le remplissage arrête à la ligne <m>17</m>, car Excel remplit jusqu'à la même ligne que la colonne adjacente à la colonne <c>F</c>. </p> </li>
+                
+                
+            </ol>
+            </p>
+        
+        </subsubsection>
+
+
+</appendix>
+<!--
+Ajouter/enlever cellules - effacer
+Ajout ligne/colonne
+Masquer/démasquer
+Trier
+Groupe ligne colonne (Ajouter raccourcis? >>> Alt+Shift+droite et Alt+Shift+gauche)
+Mode selection F8 ?
+-->

@@ -9,18 +9,18 @@
 
 <objectives>
     <ul>
-      <li><p>Créer les tableaux croisés dynamiques nécessaires pour le laboratoire</p></li>
+     <!-- <li><p>Créer les tableaux croisés dynamiques nécessaires pour le laboratoire</p></li>-->
       <li><p>Se conscientiser à l'importance de présenter des résultats de la bonne manière.</p></li>
     </ul>
   </objectives>
   
-  <introduction>
+ <!-- <introduction>
     <p>On continue de travailler à l'aide de la base de données du laboratoire d'<xref ref="chap-Intro">introduction</xref>. Le but de ce prélab est d'utiliser les connaissances et les outils acquis dans le premier laboratoire afin de préparer une feuille de calcul qui servira lors du prochain laboratoire.</p>
-  </introduction> 
+  </introduction> -->
 <page>  
-  <exercise>
+ <!-- <exercise>
   <statement><p>Dans le fichier Excel du laboratoire, créer une nouvelle feuille de calcul intitulée <alert>Étude Obésité</alert>. Dans celle-ci, générer le tableau croisé dynamique de la répartition des femmes selon la variable <alert>Obésité</alert>. </p></statement>
-  </exercise>
+  </exercise>-->
   
   <exercise workspace="2.5in">
   <introduction><p>Considérer les situations suivantes. Quelle(s) critique(s) peut-on poser à leur égard?</p></introduction>

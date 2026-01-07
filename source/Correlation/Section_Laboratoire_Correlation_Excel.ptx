@@ -8,6 +8,19 @@
 <p>Pour présenter ces concepts, on utilise la base de données portant sur <m>421</m> étoiles de type &#x00AB; céphéide &#x00BB; présentée dans le prélaboratoire.
 </p>
 </introduction>
+    
+      <subsection xml:id="ssec-prelab8_exo">
+<title>Exercice préparatoire</title>
+    
+    <introduction>
+   
+        <p> Pour préparer ce laboratoire, il faut s'assurer d'avoir fait la question 3 du prélaboratoire 8 (voir la <xref ref="sec-Prelab_Correlation"></xref>).</p> 
+ 
+    </introduction>
+             
+             </subsection>
+    
+    
 <subsection>
 <title>Corrélation et régression linéaire</title>
 <p>Dans le prélaboratoire, on a demandé de tracer le nuage de points du rayon en fonction de la période de pulsation. À l'observation du graphique, il est plausible de conclure à l'existence d'un lien linéaire entre le rayon d'une céphéide et sa période de pulsation. On peut donc aller de l'avant avec l'analyse de la relation linéaire entre ces variables.</p>
@@ -78,7 +91,7 @@ C'est une mesure de la variabilité conjointe des variables, normalisée pour ê
 <li><p>Pour ajouter l'équation, on clique sur la flèche à droite de <em>Courbe de tendance</em> et on clique sur <em>Autres options<ellipsis/></em>. On aurait aussi pu faire un doubleclic sur la droite créée précédemment et on coche la case <em>Afficher l'équation sur le graphique</em>. </p></li>
 </ol>
 </p>
-<p>La fonction <c>DROITEREG</c> permet aussi d'obtenir directement dans les cellules les valeurs de <m>a,b</m>, mais elle a comme inconvénient qu'il faut que le nombre de valeurs pour chacune des variables soit le même. Dans le cas de la base de données des céphéides, le rayon de plusieurs étoiles est manquant. Il faut alors filtrer dans la formule pour exclure les entrées vides. La formule <c>DROITEREG((FILTRE(Rayon;Rayon%lt;>0));FILTRE(PÉRIODE;Rayon&lt;>0))</c> permet d'accomplir cela, où <c>PÉRIODE</c> et <c>RAYON</c> sont les plages nommées correspondant à ces variables dans le tableau des données. Dans les deux cas, si l'on note <m>P</m> la période et <m>R</m> le rayon, on obtient
+<p>La fonction <c>DROITEREG</c> permet aussi d'obtenir directement dans les cellules les valeurs de <m>a,b</m>, mais elle a comme inconvénient qu'il faut que le nombre de valeurs pour chacune des variables soit le même. Dans le cas de la base de données des céphéides, le rayon de plusieurs étoiles est manquant. Il faut alors filtrer dans la formule pour exclure les entrées vides. La formule <c>DROITEREG((FILTRE(Rayon;Rayon&lt;>0));FILTRE(PÉRIODE;Rayon&lt;>0))</c> permet d'accomplir cela, où <c>PÉRIODE</c> et <c>RAYON</c> sont les plages nommées correspondant à ces variables dans le tableau des données. Dans les deux cas, si l'on note <m>P</m> la période et <m>R</m> le rayon, on obtient
 <men xml:id="eq-PR">
 R=4,370849753P+24,05523133
 </men>.</p>

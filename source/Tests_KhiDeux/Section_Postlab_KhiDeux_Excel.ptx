@@ -26,11 +26,11 @@
     
         
          <exercise>
-  <statement><p>La conclusion d'un test d'indépendance peut parfois être obtenue avec un test paramétrique. Lequel? Expliquer.</p></statement>
+  <statement><p>La conclusion d'un test d'indépendance peut parfois être obtenue avec un test paramétrique (test sur une moyenne, test sur une proportion, test sur deux moyennes ou test sur deux proportions). Lequel? Expliquer.</p></statement>
   </exercise>
     
 <exercise>
-    <statement><p>À la <xref ref="ssec-KhiDeuxAge"/>, on a fait un test d'indépendance vérifiant s'il existe un lien entre l'âge d'un conducteur et la gravité d'une collision. La variable <alert>Âge</alert> a été groupée en tranche de 10 ans. Ceci a mené au non-rejet de l'hypothèse nulle, c'est-à-dire qu'on n'a pas pu conclure qu'il existait un lien entre l'âge et la gravité. Choisir un groupement d'âge différent de celui fait à la  <xref ref="ssec-KhiDeuxAge"/> et montrer que la conclusion peut changer.</p></statement>
+    <statement><p>À la <xref ref="ssec-KhiDeuxAge"/>, on a fait un test d'indépendance vérifiant s'il existe un lien entre l'âge d'un conducteur et la gravité d'une collision. La variable <alert>Âge</alert> a été groupée en tranche de 10 ans. Ceci a mené au non-rejet de l'hypothèse nulle, c'est-à-dire qu'on n'a pas pu conclure qu'il existait un lien entre l'âge et la gravité. Choisir un groupement d'âge différent de celui fait à la  <xref ref="ssec-KhiDeuxAge"/> et montrer que la conclusion peut changer. Qu'est-ce qui fait que la conclusion change avec un regroupement différent?</p></statement>
     </exercise>
         
         

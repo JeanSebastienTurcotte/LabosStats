@@ -58,8 +58,12 @@
     </exercise>
         
         
+          <exercise>
+    <statement><p>Selon un rapport démographique de la communauté militaire américaine <fn> <url href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf"/>, page consultée le 24 novembre 2024</fn>, en 2010, l'armée américaine comptait <m>13,4\%</m> de membres de sexe féminin. Dans la base de données de <m>6068</m> membres de l'armée américaine présentée à la <xref ref="ssec-TestProportion"/>, l'échantillon prélevé en 2011 comptait <m>32,7\%</m> de membres de sexe féminin. Avec un écart aussi grand, que dire de notre échantillon?  </p></statement>
+    </exercise>
+        
         <exercise>
-    <statement><p>Parmi toutes les bases de données disponibles (<!--baseball,--> vin, armée, <!--nutrition,--> collisions, etc.), faire deux tests d'hypothèses paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse.</p></statement>
+    <statement><p>Parmi toutes les bases de données disponibles (<!--baseball,--> vin, armée, <!--nutrition,--> collisions, etc.), faire deux tests d'hypothèses paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse. Les feuilles des fichiers Excel remis doivent être bien identifiées.</p></statement>
     </exercise>
         
         <!--effectuer une recherche statistique en suivant toutes les étapes présentées dans les laboratoires 1, 2, 3 et 6 sauf la collecte de données. Cela signifie une recherche préliminaire de la littérature scientifique, la formulation de quelques hypothèses de recherche et la réalisation des tests d'hypothèse paramétriques. Faire deux tests d'hypothèse paramétriques de type différent en utilisant les canevas.-->
@@ -70,7 +74,7 @@
     </exercise>-->
         
         <exercise>
-    <statement><p>Pour trois des quatre tests effectués dans le laboratoire 6, les cotes <m>z</m> ou <m>t</m> observées sont loin des valeurs critiques et les valeurs p sont très petites. Donner une ou deux raisons qui pourraient expliquer la puissance de ces rejets de l'hypothèse nulle. Les feuilles des fichiers Excel remis doivent être bien identifiées.</p></statement>
+    <statement><p>Pour trois des quatre tests effectués dans le laboratoire 6, les cotes <m>z</m> ou <m>t</m> observées sont loin des valeurs critiques et les valeurs p sont très petites. Donner une ou deux raisons qui pourraient expliquer la puissance de ces rejets de l'hypothèse nulle. </p></statement>
     </exercise>
         
        <!-- <exercise>
