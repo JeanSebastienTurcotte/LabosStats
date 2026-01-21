@@ -1828,6 +1828,11 @@
                <li><p>Malheureusement, Excel n'est pas en mesure de calculer la médiane du sous-total d'une plage de données. Il est donc nécessaire d'utiliser la fonction Excel <alert>SI</alert>, fonction qui permet d'appliquer des conditions lors de l'emploi d'une formule. Dans la cellule <alert><c>O8</c></alert>, taper <alert><c>=MEDIANE(SI(IMC &lt;&gt; 0 ;IMC))</c> </alert> et appuyer sur la touche <kbd>Enter</kbd> (voir la <xref ref="MesuresF_gif"/>).</p>
                    
                    <p><alert><c>SI(IMC &lt;&gt; 0 ;IMC)</c></alert> renvoie les valeurs de l'IMC différentes de <m>0</m>. Excel fait ensuite le calcul de la médiane de ces valeurs.</p>
+                   
+                   <remark xml:id="rem-FiltreEntre">
+<title>Mesures descriptives de l'IMC utilisant un filtre</title>
+<p>Si l’on souhaite calculer la médiane de l’IMC en ne tenant compte que des valeurs comprises entre 20 et 40, deux approches sont possibles. On peut utiliser la formule <alert><c>=MEDIANE(FILTRE(IMC;(IMC&gt;20)*(IMC &lt; 40)))</c></alert> ou encore <alert><c>=MEDIANE(SI((IMC&gt;20)*(IMC &lt; 40);IMC))</c></alert>. Dans ce contexte, le symbole <kbd>*</kbd> ne représente pas une multiplication au sens arithmétique, mais une opération logique appliquée cellule par cellule. Il joue le rôle de l'opérateur logique <alert><c>ET</c></alert>. Excel calcule ainsi la médiane uniquement à partir des valeurs d’IMC comprises entre 20 et 40. De façon analogue, le symbole <kbd>+</kbd> agit comme un opérateur logique <alert><c>OU</c></alert>.</p>
+    </remark>
               
                     <p></p>
                 
