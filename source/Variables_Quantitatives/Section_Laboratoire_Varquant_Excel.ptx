@@ -13,16 +13,7 @@
     
     
     
-     <subsection xml:id="ssec-prelab3_exo">
-<title>Exercice préparatoire</title>
-    
-    <introduction>
-   
-        <p> Pour préparer ce laboratoire, il faut s'assurer d'avoir fait les trois premières questions du prélaboratoire 3 (voir la <xref ref="sec-Prelab_Varquant"></xref>).</p> 
- 
-    </introduction>
-    
- </subsection>  
+
     
     <subsection xml:id="ssec_UneVarQuant">
         <title>L'étude d'une variable quantitative continue</title>
@@ -2601,6 +2592,18 @@
        
          
     </subsection>
+    
+    
+         <subsection xml:id="ssec-prelab3_exo">
+<title>Exercice final</title>
+    
+    <introduction>
+   
+        <p> Pour les variables quantitatives discrètes, vous pouvez faire les questions 2 et 3 du prélaboratoire 3 (voir la <xref ref="sec-Prelab_Varquant"></xref>).</p> 
+ 
+    </introduction>
+    
+ </subsection>  
     
     
 </section>
