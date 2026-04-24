@@ -5,19 +5,21 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="fr-CA" dir="ltr" data-legacy-colorscheme="blue_red">
+<html lang="fr-CA" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Laboratoire</title>
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.googleapis.com">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -34,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -54,14 +56,14 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -73,13 +75,13 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta xmlns:xlink="http://www.w3.org/1999/xlink" name="Keywords" content="Authored in PreTeXt">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:type" content="book">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:title" content="Les sciences autour de nous">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Yasmine Tawfik">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Jean-Sébastien Turcotte">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta property="og:type" content="book">
+<meta property="book:title" content="Les sciences autour de nous">
+<meta property="book:author" content="Yasmine Tawfik">
+<meta property="book:author" content="Jean-Sébastien Turcotte">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -101,25 +103,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.15';
+eBookConfig.runestone_version = '7.13.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.529fd9398bfbd03e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
-<script xmlns:xlink="http://www.w3.org/1999/xlink" src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Évaluer (Sage)';
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Évaluer (Sage)';
 </script>
 </head>
 <body id="sciencesautour" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Sauter au contenu</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="https://jeansebastienturcotte.github.io/LabosStats/LSAN.html"><img src="external/images/frontcover_petit.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="LSAN.html"><span class="title">Les sciences autour de nous:</span> <span class="subtitle">Laboratoires de probabilités et statistiques</span></a></h1>
+<h1 class="heading"><a href="LSAN.html"><span class="title">Les sciences autour de nous</span> <span class="subtitle">Laboratoires de probabilités et statistiques</span></a></h1>
 <p class="byline">Yasmine Tawfik, Jean-Sébastien Turcotte</p>
 </div>
-</div></header><nav xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Table des matières"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Table des matières</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
@@ -131,8 +133,8 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-Prelab_Correlation.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="up-button button" href="chap-Correlation.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><a class="next-button button" href="sec-Postlab_correlation.html" title="Suivant"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div xmlns:xlink="http://www.w3.org/1999/xlink" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-Prelab_Correlation.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Préc.</span></a><a class="up-button button" href="chap-Correlation.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><a class="next-button button" href="sec-Postlab_correlation.html" title="Suivant"><span class="name">Suiv.</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -140,7 +142,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Pages Liminaires</span></a></div>
 <ul class="structural toc-item-list">
@@ -470,20 +472,36 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:xlink="http://www.w3.org/1999/xlink" class="section" id="sec-Laboratoire_correlation"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">8.2</span><span class="space"> </span><span class="title">Laboratoire</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-Laboratoire_correlation">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Laboratoire</span>
 </h2>
-<section class="introduction" id="sec-Laboratoire_correlation-2"><div class="para" id="sec-Laboratoire_correlation-2-1">Dans ce laboratoire, on s’intéresse au type de lien qui peut exister entre deux variables quantitatives. Plus spécifiquement, on cherche à déterminer l’existence d’un lien linéaire entre des variables <span class="process-math">\(X,Y\text{,}\)</span> et donc de l’existence de coefficients <span class="process-math">\(a,b\)</span> pour lesquels <span class="process-math">\(Y\approx aX+b\text{.}\)</span> Cette droite est appelée la droite de régression. Cette droite est appelée la droite de régression. Plus la dépendance entre <span class="process-math">\(X,Y\)</span> est forte, plus cette approximation sera bonne. La force de ce lien (linéaire) est donnée par le coefficient de corrélation, aussi appelé coefficient de Pearson. Il est noté <span class="process-math">\(r\)</span> dans le cas d’un échantillon et <span class="process-math">\(\rho\)</span> (lettre grecque « rho ») pour une population.</div>
-<div class="para" id="sec-Laboratoire_correlation-2-2">La première étape d’une étude sur la nature du lien entre deux variables doit toujours être l’observation des données afin de vérifier qualitativement la plausabilité de l’existence d’un lien linéaire entre les variables. L’équation de la droite de régression ainsi que le coefficient de corrélation peuvent presque toujours être calculés, même si les données ne sont pas reliées linéairement. Il incombe à l’analyste de déterminer la pertinence et l’interprétation adéquate de ces outils.</div>
-<div class="para" id="sec-Laboratoire_correlation-2-3">Pour présenter ces concepts, on utilise la base de données portant sur <span class="process-math">\(421\)</span> étoiles de type « céphéide » présentée dans le prélaboratoire.</div></section><section class="subsection" id="ssec-prelab8_exo"><h3 class="heading hide-type">
-<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="space"> </span><span class="title">Exercice préparatoire</span>
+<section class="introduction" id="sec-Laboratoire_correlation-2">
+<div class="para" id="sec-Laboratoire_correlation-2-1">Dans ce laboratoire, on s’intéresse au type de lien qui peut exister entre deux variables quantitatives. Plus spécifiquement, on cherche à déterminer l’existence d’un lien linéaire entre des variables <span class="process-math">\(X,Y\text{,}\)</span> et donc de l’existence de coefficients <span class="process-math">\(a,b\)</span> pour lesquels <span class="process-math">\(Y\approx aX+b\text{.}\)</span> Cette droite est appelée la droite de régression. Cette droite est appelée la droite de régression. Plus la dépendance entre <span class="process-math">\(X,Y\)</span> est forte, plus cette approximation sera bonne. La force de ce lien (linéaire) est donnée par le coefficient de corrélation, aussi appelé coefficient de Pearson. Il est noté <span class="process-math">\(r\)</span> dans le cas d’un échantillon et <span class="process-math">\(\rho\)</span> (lettre grecque « rho ») pour une population.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-2-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-2-2">La première étape d’une étude sur la nature du lien entre deux variables doit toujours être l’observation des données afin de vérifier qualitativement la plausabilité de l’existence d’un lien linéaire entre les variables. L’équation de la droite de régression ainsi que le coefficient de corrélation peuvent presque toujours être calculés, même si les données ne sont pas reliées linéairement. Il incombe à l’analyste de déterminer la pertinence et l’interprétation adéquate de ces outils.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-2-2" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-2-3">Pour présenter ces concepts, on utilise la base de données portant sur <span class="process-math">\(421\)</span> étoiles de type « céphéide » présentée dans le prélaboratoire.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-2-3" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div></section>
+<section class="subsection" id="ssec-prelab8_exo">
+<h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercice préparatoire</span>
 </h3>
-<section class="introduction" id="ssec-prelab8_exo-2"><div class="para" id="ssec-prelab8_exo-2-1">Pour préparer ce laboratoire, il faut s’assurer d’avoir fait la question 3 du prélaboratoire 8 (voir la <a href="sec-Prelab_Correlation.html" class="internal" title="Section 8.1: Prélab">Section 8.1</a>).</div></section></section><section class="subsection" id="sec-Laboratoire_correlation-4"><h3 class="heading hide-type">
-<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">8.2.2</span><span class="space"> </span><span class="title">Corrélation et régression linéaire</span>
+<section class="introduction" id="ssec-prelab8_exo-2">
+<div class="para" id="ssec-prelab8_exo-2-1">Pour préparer ce laboratoire, il faut s’assurer d’avoir fait la question 3 du prélaboratoire 8 (voir la <a href="sec-Prelab_Correlation.html" class="internal" title="Section 8.1: Prélab">Section 8.1</a>).<div class="autopermalink" data-description="Paragraphe"><a href="#ssec-prelab8_exo-2-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Sous-section 8.2.1: Exercice préparatoire"><a href="#ssec-prelab8_exo" title="Copier le titre et le lien permanent pour Sous-section 8.2.1: Exercice préparatoire" aria-label="Copier le titre et le lien permanent pour Sous-section 8.2.1: Exercice préparatoire">🔗</a></div>
+</section>
+<section class="subsection" id="sec-Laboratoire_correlation-4">
+<h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Corrélation et régression linéaire</span>
 </h3>
-<div class="para" id="sec-Laboratoire_correlation-4-2">Dans le prélaboratoire, on a demandé de tracer le nuage de points du rayon en fonction de la période de pulsation. À l’observation du graphique, il est plausible de conclure à l’existence d’un lien linéaire entre le rayon d’une céphéide et sa période de pulsation. On peut donc aller de l’avant avec l’analyse de la relation linéaire entre ces variables.</div>
+<div class="para" id="sec-Laboratoire_correlation-4-2">Dans le prélaboratoire, on a demandé de tracer le nuage de points du rayon en fonction de la période de pulsation. À l’observation du graphique, il est plausible de conclure à l’existence d’un lien linéaire entre le rayon d’une céphéide et sa période de pulsation. On peut donc aller de l’avant avec l’analyse de la relation linéaire entre ces variables.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-2" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="sec-Laboratoire_correlation-4-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/PeriodeRayon.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.1<span class="period">.</span></span><span class="space"> </span>Le nuage de points créé sur Excel. Source: Observatoire-David-Dunlap, Canada, 1997</figcaption></figure><div class="para logical" id="sec-Laboratoire_correlation-4-4">
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Le nuage de points créé sur Excel. Source: Observatoire-David-Dunlap, Canada, 1997<div class="autopermalink" data-description="Figure 8.2.1"><a href="#sec-Laboratoire_correlation-4-3" title="Copier le titre et le lien permanent pour Figure 8.2.1" aria-label="Copier le titre et le lien permanent pour Figure 8.2.1">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="sec-Laboratoire_correlation-4-4">
 <div class="para">Dans un premier temps, on calcule le coefficient de corrélation linéaire. La formule <code class="code-inline tex2jax_ignore">COEFFICIENT.CORRELATION(matrice1;matrice2)</code> permet d’obtenir ce coefficient, où <code class="code-inline tex2jax_ignore">matrice1</code> et <code class="code-inline tex2jax_ignore">matrice2</code> sont les plages contenant les données des deux variables. La formule mathématique du coefficient de corrélation est</div>
 <div class="displaymath process-math" id="eq-coeffvar">
 \begin{equation}
@@ -492,15 +510,31 @@ r=\frac{1}{n-1}\sum_{i=1}^n\left(\frac{x_i-\bar{x}}{s_x}\right)\left(\frac{y_i-\
 </div>
 <div class="para">C’est une mesure de la variabilité conjointe des variables, normalisée pour être entre <span class="process-math">\(-1\)</span> et <span class="process-math">\(1\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-4" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
 </div>
-<div class="para logical" id="sec-Laboratoire_correlation-4-5"><ol class="decimal" id="sec-Laboratoire_correlation-4-5-1">
-<li id="sec-Laboratoire_correlation-4-5-1-1"><div class="para" id="sec-Laboratoire_correlation-4-5-1-1-1">On calcule le coefficient de corrélation entre la période de pulsation et le rayon des céphéides et on l’ajoute sous les études descriptives. Dans la cellule <code class="code-inline tex2jax_ignore">I15</code> de la feuille <em class="alert">RP</em>, taper <em class="alert">Coefficient de corrélation linéaire</em>.</div></li>
-<li id="sec-Laboratoire_correlation-4-5-1-2"><div class="para" id="sec-Laboratoire_correlation-4-5-1-2-1">Dans la cellule <code class="code-inline tex2jax_ignore">J15</code>, taper <kbd class="kbdkey">=COEFFICIENT.CORRELATION(PÉRIODE;RAYON)</kbd> et appuyer sur <kbd class="kbdkey">Enter</kbd>.</div></li>
-<li id="sec-Laboratoire_correlation-4-5-1-3"><div class="para" id="sec-Laboratoire_correlation-4-5-1-3-1">On obtient un coefficient de corrélation linéaire d’environ <span class="process-math">\(0,898\text{.}\)</span>
-</div></li>
-</ol></div>
-<div class="para" id="sec-Laboratoire_correlation-4-6">Le signe du coefficient de corrélation donne le sens de la variabilité de la variable <span class="process-math">\(Y\)</span> lorsque <span class="process-math">\(X\)</span> varie: une variation positive de <span class="process-math">\(X\)</span> entraine une variation positive de <span class="process-math">\(Y\)</span> lorsque <span class="process-math">\(r&gt;0\)</span> et  une variation positive de <span class="process-math">\(X\)</span> entraine une variation négative de <span class="process-math">\(Y\)</span> lorsque <span class="process-math">\(r&lt;0\text{.}\)</span> La magnitude du coefficient de corrélation quant à elle quantifie la force du lien linéaire entre les variables. Traditionnellement, la force est obtenue selon la valeur de <span class="process-math">\(|r|\)</span> dans la table suivante.</div>
-<figure class="table table-like" id="sec-Laboratoire_correlation-4-7"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.2.2<span class="period">.</span></span><span class="space"> </span>Interprétation de la force du lien linéaire</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para logical" id="sec-Laboratoire_correlation-4-5">
+<ol class="decimal" id="sec-Laboratoire_correlation-4-5-1">
+<li id="sec-Laboratoire_correlation-4-5-1-1">
+<div class="para" id="sec-Laboratoire_correlation-4-5-1-1-1">On calcule le coefficient de corrélation entre la période de pulsation et le rayon des céphéides et on l’ajoute sous les études descriptives. Dans la cellule <code class="code-inline tex2jax_ignore">I15</code> de la feuille <em class="alert">RP</em>, taper <em class="alert">Coefficient de corrélation linéaire</em>.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-5-1-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 1"><a href="#sec-Laboratoire_correlation-4-5-1-1" title="Copier le titre et le lien permanent pour Point 1" aria-label="Copier le titre et le lien permanent pour Point 1">🔗</a></div>
+</li>
+<li id="sec-Laboratoire_correlation-4-5-1-2">
+<div class="para" id="sec-Laboratoire_correlation-4-5-1-2-1">Dans la cellule <code class="code-inline tex2jax_ignore">J15</code>, taper <kbd class="kbdkey">=COEFFICIENT.CORRELATION(PÉRIODE;RAYON)</kbd> et appuyer sur <kbd class="kbdkey">Enter</kbd>.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-5-1-2-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 2"><a href="#sec-Laboratoire_correlation-4-5-1-2" title="Copier le titre et le lien permanent pour Point 2" aria-label="Copier le titre et le lien permanent pour Point 2">🔗</a></div>
+</li>
+<li id="sec-Laboratoire_correlation-4-5-1-3">
+<div class="para" id="sec-Laboratoire_correlation-4-5-1-3-1">On obtient un coefficient de corrélation linéaire d’environ <span class="process-math">\(0,898\text{.}\)</span><div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-5-1-3-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 3"><a href="#sec-Laboratoire_correlation-4-5-1-3" title="Copier le titre et le lien permanent pour Point 3" aria-label="Copier le titre et le lien permanent pour Point 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-5" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-4-6">Le signe du coefficient de corrélation donne le sens de la variabilité de la variable <span class="process-math">\(Y\)</span> lorsque <span class="process-math">\(X\)</span> varie: une variation positive de <span class="process-math">\(X\)</span> entraine une variation positive de <span class="process-math">\(Y\)</span> lorsque <span class="process-math">\(r&gt;0\)</span> et  une variation positive de <span class="process-math">\(X\)</span> entraine une variation négative de <span class="process-math">\(Y\)</span> lorsque <span class="process-math">\(r&lt;0\text{.}\)</span> La magnitude du coefficient de corrélation quant à elle quantifie la force du lien linéaire entre les variables. Traditionnellement, la force est obtenue selon la valeur de <span class="process-math">\(|r|\)</span> dans la table suivante.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-6" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<figure class="table table-like" id="sec-Laboratoire_correlation-4-7"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Interprétation de la force du lien linéaire<div class="autopermalink" data-description="Table 8.2.2: Interprétation de la force du lien linéaire"><a href="#sec-Laboratoire_correlation-4-7" title="Copier le titre et le lien permanent pour Table 8.2.2: Interprétation de la force du lien linéaire" aria-label="Copier le titre et le lien permanent pour Table 8.2.2: Interprétation de la force du lien linéaire">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b2 r0 l0 t3 lines"><span class="process-math">\(|r|\)</span></td>
 <td class="l m b2 r0 l0 t3 lines">Interprétation du lien</td>
@@ -521,16 +555,29 @@ r=\frac{1}{n-1}\sum_{i=1}^n\left(\frac{x_i-\bar{x}}{s_x}\right)\left(\frac{y_i-\
 <td class="l m b3 r0 l0 t0 lines"><span class="process-math">\([0;0,3[\)</span></td>
 <td class="l m b3 r0 l0 t0 lines">Aucun à faible</td>
 </tr>
-</table></div></figure><div class="para" id="sec-Laboratoire_correlation-4-8">Puisque les écarts types des variables font partie de la <a href="sec-Laboratoire_correlation.html#eq-coeffvar" class="xref" data-knowl="./knowl/xref/eq-coeffvar.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Équation 8.2.1">formule mathématique (8.2.1)</a> du coefficient de variation, ce dernier est sensible aux valeurs extrêmes. Il est donc important de bien analyser les données lors d’une étape préliminaire.</div>
-<div class="para" id="sec-Laboratoire_correlation-4-9">Une fois la nature linéaire du lien confirmée, il est possible de déterminer l’équation de la meilleure droite qui relie les deux variables. L’exercice <a href="sec-Prelab_Correlation.html#exo-moindrescarres" class="xref" data-knowl="./knowl/xref/exo-moindrescarres.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Activité 8.1.2">Activité 8.1.2</a> donne une idée de la procédure mathématique à suivre pour la trouver. Un ouvrage statistique théorique peut montrer que la pente est donnée par <span class="process-math">\(a=r\frac{s_y}{s_x}\)</span> et l’ordonnée à l’origine par <span class="process-math">\(b=\bar{y}-a\bar{x}\text{.}\)</span> Sur Excel, on peut afficher directement sur le graphique la droite et son équation.</div>
-<div class="para logical" id="sec-Laboratoire_correlation-4-10"><ol class="decimal" id="sec-Laboratoire_correlation-4-10-1">
-<li id="sec-Laboratoire_correlation-4-10-1-1"><div class="para" id="sec-Laboratoire_correlation-4-10-1-1-1">Pour cela, sélectionner le graphique et cliquer sur la petite croix en haut à droite, puis sur la case <em class="emphasis"><em class="alert">Courbe de tendance</em></em>.</div></li>
-<li id="sec-Laboratoire_correlation-4-10-1-2">
-<div class="para" id="sec-Laboratoire_correlation-4-10-1-2-1">Pour ajouter l’équation, cliquer sur la flèche à droite de <em class="emphasis"><em class="alert">Courbe de tendance</em></em> suivi d’un clic sur <em class="emphasis"><em class="alert">Autres options…</em></em> (voir la <a href="sec-Laboratoire_correlation.html#Fig_Corrgif1" class="xref" data-knowl="./knowl/xref/Fig_Corrgif1.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Figure 8.2.3">Figure 8.2.3</a>). Une fenêtre grise s’ouvre à droite de la feuille de calcul. Dans le menu <em class="emphasis"><em class="alert">Options de la courbe de tendance</em></em>, sélectionner <em class="emphasis"><em class="alert">Afficher l’équation sur le graphique</em></em> (voir la <a href="sec-Laboratoire_correlation.html#Fig_Corrgif1" class="xref" data-knowl="./knowl/xref/Fig_Corrgif1.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Figure 8.2.3">Figure 8.2.3</a>). On aurait aussi pu faire un doubleclic sur la droite créée précédemment et cocher la case <em class="emphasis"><em class="alert">Afficher l’équation sur le graphique</em></em>.</div>
-<figure class="figure figure-like" id="Fig_Corrgif1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Corrgif1.png" class="contained" alt="Ajouter la courbe de tendance et son équation"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.3<span class="period">.</span></span><span class="space"> </span>Ajouter la courbe de tendance et son équation</figcaption></figure>
+</table></div>
+</figure>
+<div class="para" id="sec-Laboratoire_correlation-4-8">Puisque les écarts types des variables font partie de la <a href="sec-Laboratoire_correlation.html#eq-coeffvar" class="xref" data-knowl="./knowl/xref/eq-coeffvar.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Équation 8.2.1">formule mathématique (8.2.1)</a> du coefficient de variation, ce dernier est sensible aux valeurs extrêmes. Il est donc important de bien analyser les données lors d’une étape préliminaire.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-8" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-4-9">Une fois la nature linéaire du lien confirmée, il est possible de déterminer l’équation de la meilleure droite qui relie les deux variables. L’exercice <a href="sec-Prelab_Correlation.html#exo-moindrescarres" class="xref" data-knowl="./knowl/xref/exo-moindrescarres.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Activité 8.1.2">Activité 8.1.2</a> donne une idée de la procédure mathématique à suivre pour la trouver. Un ouvrage statistique théorique peut montrer que la pente est donnée par <span class="process-math">\(a=r\frac{s_y}{s_x}\)</span> et l’ordonnée à l’origine par <span class="process-math">\(b=\bar{y}-a\bar{x}\text{.}\)</span> Sur Excel, on peut afficher directement sur le graphique la droite et son équation.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-9" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Laboratoire_correlation-4-10">
+<ol class="decimal" id="sec-Laboratoire_correlation-4-10-1">
+<li id="sec-Laboratoire_correlation-4-10-1-1">
+<div class="para" id="sec-Laboratoire_correlation-4-10-1-1-1">Pour cela, sélectionner le graphique et cliquer sur la petite croix en haut à droite, puis sur la case <em class="emphasis"><em class="alert">Courbe de tendance</em></em>.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-10-1-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 1"><a href="#sec-Laboratoire_correlation-4-10-1-1" title="Copier le titre et le lien permanent pour Point 1" aria-label="Copier le titre et le lien permanent pour Point 1">🔗</a></div>
 </li>
-</ol></div>
+<li id="sec-Laboratoire_correlation-4-10-1-2">
+<div class="para" id="sec-Laboratoire_correlation-4-10-1-2-1">Pour ajouter l’équation, cliquer sur la flèche à droite de <em class="emphasis"><em class="alert">Courbe de tendance</em></em> suivi d’un clic sur <em class="emphasis"><em class="alert">Autres options…</em></em> (voir la <a href="sec-Laboratoire_correlation.html#Fig_Corrgif1" class="xref" data-knowl="./knowl/xref/Fig_Corrgif1.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Figure 8.2.3">Figure 8.2.3</a>). Une fenêtre grise s’ouvre à droite de la feuille de calcul. Dans le menu <em class="emphasis"><em class="alert">Options de la courbe de tendance</em></em>, sélectionner <em class="emphasis"><em class="alert">Afficher l’équation sur le graphique</em></em> (voir la <a href="sec-Laboratoire_correlation.html#Fig_Corrgif1" class="xref" data-knowl="./knowl/xref/Fig_Corrgif1.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Figure 8.2.3">Figure 8.2.3</a>). On aurait aussi pu faire un doubleclic sur la droite créée précédemment et cocher la case <em class="emphasis"><em class="alert">Afficher l’équation sur le graphique</em></em>.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-10-1-2-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="Fig_Corrgif1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/Fig_Corrgif1.png" class="contained" alt="Ajouter la courbe de tendance et son équation"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Ajouter la courbe de tendance et son équation<div class="autopermalink" data-description="Figure 8.2.3"><a href="#Fig_Corrgif1" title="Copier le titre et le lien permanent pour Figure 8.2.3" aria-label="Copier le titre et le lien permanent pour Figure 8.2.3">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Point 2"><a href="#sec-Laboratoire_correlation-4-10-1-2" title="Copier le titre et le lien permanent pour Point 2" aria-label="Copier le titre et le lien permanent pour Point 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-10" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
 <div class="para logical" id="sec-Laboratoire_correlation-4-11">
 <div class="para">La fonction <code class="code-inline tex2jax_ignore">DROITEREG</code> permet aussi d’obtenir directement dans les cellules les valeurs de <span class="process-math">\(a,b\text{,}\)</span> mais elle a comme inconvénient qu’il faut que le nombre de valeurs pour chacune des variables soit le même. Dans le cas de la base de données des céphéides, le rayon de plusieurs étoiles est manquant. Il faut alors filtrer dans la formule pour exclure les entrées vides. La formule <code class="code-inline tex2jax_ignore">DROITEREG((FILTRE(Rayon;Rayon&lt;&gt;0));FILTRE(PÉRIODE;Rayon&lt;&gt;0))</code> permet d’accomplir cela, où <code class="code-inline tex2jax_ignore">PÉRIODE</code> et <code class="code-inline tex2jax_ignore">RAYON</code> sont les plages nommées correspondant à ces variables dans le tableau des données. Dans les deux cas, si l’on note <span class="process-math">\(P\)</span> la période et <span class="process-math">\(R\)</span> le rayon, on obtient</div>
 <div class="displaymath process-math" id="eq-PR">
@@ -538,57 +585,112 @@ r=\frac{1}{n-1}\sum_{i=1}^n\left(\frac{x_i-\bar{x}}{s_x}\right)\left(\frac{y_i-\
 R=4,370849753P+24,05523133\text{.}\tag{8.2.2}
 \end{equation}
 </div>
+<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-11" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
 </div>
-<div class="para" id="sec-Laboratoire_correlation-4-12">Avec cette droite, on est en mesure d’estimer le rayon d’une étoile dont la période de pulsation est connue ou à l’inverse, de déterminer la période de pulsation d’une céphéide de rayon donné . Par exemple, la céphéide <em class="emphasis">FF_AQL</em> dont l’identifiant est <span class="process-math">\(4\)</span> possède une période égale à environ <span class="process-math">\(4,47\)</span> jours. En entrant cette valeur  dans l’équation, on estime un rayon de <span class="process-math">\(43,59292972591(\times6,957\times10^8)\)</span> mètres. Selon <a class="external" href="https://en.wikipedia.org/wiki/FF_Aquilae#cite_note-turner-5" target="_blank">Wikipédia</a><details class="ptx-footnote" aria-live="polite" id="sec-Laboratoire_correlation-4-12-6"><summary class="ptx-footnote__number" title="Note de bas de page 8.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-Laboratoire_correlation-4-12-6"><code class="code-inline tex2jax_ignore">en.wikipedia.org/wiki/FF_Aquilae#cite_note-turner-5</code></div></details>, la composante numérique du rayon est de 39.</div>
+<div class="para" id="sec-Laboratoire_correlation-4-12">Avec cette droite, on est en mesure d’estimer le rayon d’une étoile dont la période de pulsation est connue ou à l’inverse, de déterminer la période de pulsation d’une céphéide de rayon donné . Par exemple, la céphéide <em class="emphasis">FF_AQL</em> dont l’identifiant est <span class="process-math">\(4\)</span> possède une période égale à environ <span class="process-math">\(4,47\)</span> jours. En entrant cette valeur  dans l’équation, on estime un rayon de <span class="process-math">\(43,59292972591(\times6,957\times10^8)\)</span> mètres. Selon <a class="external" href="https://en.wikipedia.org/wiki/FF_Aquilae#cite_note-turner-5" target="_blank">Wikipédia</a>, la composante numérique du rayon est de 39.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-12" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
 <div class="para logical" id="sec-Laboratoire_correlation-4-13">
 <div class="para">Une autre mesure de la force du lien est donnée par le coefficient de détermination, habituellement noté <span class="process-math">\(R^2\)</span> (sans lien avec le rayon mentionné précédemment). Ce dernier quantifie la proportion des variations de la variable dépendante qui sont expliquées par la variable indépendante. Il est donné en pourcentage et lorsqu’il n’y a qu’une seule variable indépendante, on a toujours</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-Laboratoire_correlation-4-13-2">
 \begin{equation*}
 R^2=r^2\times 100\%\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-13" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
 </div>
-<div class="para" id="sec-Laboratoire_correlation-4-14">Sur Excel, la commande <code class="code-inline tex2jax_ignore">COEFFICIENT.DETERMINATION(y_connus;x_connus)</code> permet de l’obtenir, mais ne donne pas le résultat en pourcentage. Il faut manuellement modifier le format de cellule. Faire attention au fait que cette formule demande les valeurs de <span class="process-math">\(y\)</span> en premier suivies des <span class="process-math">\(x\text{,}\)</span> contrairement au coefficient de corrélation.</div>
-<div class="para logical" id="sec-Laboratoire_correlation-4-15"><ol class="decimal" id="sec-Laboratoire_correlation-4-15-1">
-<li id="sec-Laboratoire_correlation-4-15-1-1"><div class="para" id="sec-Laboratoire_correlation-4-15-1-1-1">On calcule le coefficient de détermination entre la période de pulsation et le rayon des céphéides et on l’ajoute sous les études descriptives. Dans la cellule <code class="code-inline tex2jax_ignore">I16</code> de la feuille <em class="alert">RP</em>, taper <em class="alert">Coefficient de détermination</em>.</div></li>
-<li id="sec-Laboratoire_correlation-4-15-1-2"><div class="para" id="sec-Laboratoire_correlation-4-15-1-2-1">Dans la cellule <code class="code-inline tex2jax_ignore">J16</code>, taper <kbd class="kbdkey">=COEFFICIENT.DETERMINATION(RAYON;PÉRIODE)</kbd> et appuyer sur <kbd class="kbdkey">Enter</kbd>.</div></li>
-<li id="sec-Laboratoire_correlation-4-15-1-3"><div class="para" id="sec-Laboratoire_correlation-4-15-1-3-1">On obtient un coefficient de détermination d’environ <span class="process-math">\(0,807\text{.}\)</span>
-</div></li>
-</ol></div>
-<div class="para" id="sec-Laboratoire_correlation-4-16">En calculant le coefficient de détermination entre la période de pulsation et le rayon d’une céphéide, on trouve qu’une variation du rayon d’une étoile de type céphéide explique environ <span class="process-math">\(81\%\)</span> de la variation de sa période de pulsation.</div></section><section class="subsection" id="sec-Laboratoire_correlation-5"><h3 class="heading hide-type">
-<span class="type">Sous-section</span><span class="space"> </span><span class="codenumber">8.2.3</span><span class="space"> </span><span class="title">Absence de lien linéaire apparent et autres cas</span>
+<div class="para" id="sec-Laboratoire_correlation-4-14">Sur Excel, la commande <code class="code-inline tex2jax_ignore">COEFFICIENT.DETERMINATION(y_connus;x_connus)</code> permet de l’obtenir, mais ne donne pas le résultat en pourcentage. Il faut manuellement modifier le format de cellule. Faire attention au fait que cette formule demande les valeurs de <span class="process-math">\(y\)</span> en premier suivies des <span class="process-math">\(x\text{,}\)</span> contrairement au coefficient de corrélation.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-14" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Laboratoire_correlation-4-15">
+<ol class="decimal" id="sec-Laboratoire_correlation-4-15-1">
+<li id="sec-Laboratoire_correlation-4-15-1-1">
+<div class="para" id="sec-Laboratoire_correlation-4-15-1-1-1">On calcule le coefficient de détermination entre la période de pulsation et le rayon des céphéides et on l’ajoute sous les études descriptives. Dans la cellule <code class="code-inline tex2jax_ignore">I16</code> de la feuille <em class="alert">RP</em>, taper <em class="alert">Coefficient de détermination</em>.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-15-1-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 1"><a href="#sec-Laboratoire_correlation-4-15-1-1" title="Copier le titre et le lien permanent pour Point 1" aria-label="Copier le titre et le lien permanent pour Point 1">🔗</a></div>
+</li>
+<li id="sec-Laboratoire_correlation-4-15-1-2">
+<div class="para" id="sec-Laboratoire_correlation-4-15-1-2-1">Dans la cellule <code class="code-inline tex2jax_ignore">J16</code>, taper <kbd class="kbdkey">=COEFFICIENT.DETERMINATION(RAYON;PÉRIODE)</kbd> et appuyer sur <kbd class="kbdkey">Enter</kbd>.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-15-1-2-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 2"><a href="#sec-Laboratoire_correlation-4-15-1-2" title="Copier le titre et le lien permanent pour Point 2" aria-label="Copier le titre et le lien permanent pour Point 2">🔗</a></div>
+</li>
+<li id="sec-Laboratoire_correlation-4-15-1-3">
+<div class="para" id="sec-Laboratoire_correlation-4-15-1-3-1">On obtient un coefficient de détermination d’environ <span class="process-math">\(0,807\text{.}\)</span><div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-15-1-3-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 3"><a href="#sec-Laboratoire_correlation-4-15-1-3" title="Copier le titre et le lien permanent pour Point 3" aria-label="Copier le titre et le lien permanent pour Point 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-15" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-4-16">En calculant le coefficient de détermination entre la période de pulsation et le rayon d’une céphéide, on trouve qu’une variation du rayon d’une étoile de type céphéide explique environ <span class="process-math">\(81\%\)</span> de la variation de sa période de pulsation.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-4-16" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Sous-section 8.2.2: Corrélation et régression linéaire"><a href="#sec-Laboratoire_correlation-4" title="Copier le titre et le lien permanent pour Sous-section 8.2.2: Corrélation et régression linéaire" aria-label="Copier le titre et le lien permanent pour Sous-section 8.2.2: Corrélation et régression linéaire">🔗</a></div>
+</section>
+<section class="subsection" id="sec-Laboratoire_correlation-5">
+<h3 class="heading hide-type">
+<span class="type">Sous-section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Absence de lien linéaire apparent et autres cas</span>
 </h3>
-<div class="para" id="sec-Laboratoire_correlation-5-2">Dans la feuille <em class="alert">MappP</em>, on a tracé le nuage de points représentant la magnitude apparente et la période de pulsation. Le résultat est illustré à la figure ci-dessous.</div>
+<div class="para" id="sec-Laboratoire_correlation-5-2">Dans la feuille <em class="alert">MappP</em>, on a tracé le nuage de points représentant la magnitude apparente et la période de pulsation. Le résultat est illustré à la figure ci-dessous.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-2" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="sec-Laboratoire_correlation-5-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/MappP.png" class="contained" alt="Nuage de points sur Excel montrant la relation entre la magnitude apparente et la période de pulsation."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.4<span class="period">.</span></span><span class="space"> </span>Nuage de points représentant la magnitude apparente et la période</figcaption></figure><div class="para" id="sec-Laboratoire_correlation-5-4">Dans des cellules sous le tableau des mesures descriptives fait dans le prélaboratoire, calculer le coefficient de corrélation linéaire et le coefficient de détermination.</div>
-<div class="para" id="sec-Laboratoire_correlation-5-5">Le calcul des coefficients de corrélation et de détermination montre d’autant plus que ces variables ne sont pas reliées de manière linéaire. Ceci s’explique probablement en partie du fait que la luminosité apparente dépend de la distance de l’étoile. Au contraire, la magnitude absolue ramène cette valeur sur une même échelle.</div>
-<div class="para" id="sec-Laboratoire_correlation-5-6">Dans la feuille <em class="alert">MabsP</em>, on a tracé le nuage de points représentant la magnitude absoulue et la période de pulsation. Le résultat est illustré à la figure ci-dessous.</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Nuage de points représentant la magnitude apparente et la période<div class="autopermalink" data-description="Figure 8.2.4"><a href="#sec-Laboratoire_correlation-5-3" title="Copier le titre et le lien permanent pour Figure 8.2.4" aria-label="Copier le titre et le lien permanent pour Figure 8.2.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec-Laboratoire_correlation-5-4">Dans des cellules sous le tableau des mesures descriptives fait dans le prélaboratoire, calculer le coefficient de corrélation linéaire et le coefficient de détermination.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-4" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-5-5">Le calcul des coefficients de corrélation et de détermination montre d’autant plus que ces variables ne sont pas reliées de manière linéaire. Ceci s’explique probablement en partie du fait que la luminosité apparente dépend de la distance de l’étoile. Au contraire, la magnitude absolue ramène cette valeur sur une même échelle.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-5" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-5-6">Dans la feuille <em class="alert">MabsP</em>, on a tracé le nuage de points représentant la magnitude absoulue et la période de pulsation. Le résultat est illustré à la figure ci-dessous.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-6" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="sec-Laboratoire_correlation-5-7"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/MabsP.png" class="contained" alt="Nuage de points sur Excel montrant la relation entre la magnitude absolue et la période de pulsation."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.5<span class="period">.</span></span><span class="space"> </span>Nuage de points représentant la magnitude absolue et la période</figcaption></figure><div class="para" id="sec-Laboratoire_correlation-5-8">Deux choses ressortent de ce graphique. Premièrement, la relation ne semble pas linéaire, mais il y a clairement un lien entre les deux variables. Deuxièmement, bien que la relation semble très forte, il semble aussi y avoir deux types de relations. En effet, on peut observer dans le graphique produit deux amas principaux de points. Ces deux amas paraissent suivre une relation de même type, mais il y a possiblement une troisième variable qui influence le lien entre la magnitude absolue et la période de pulsation, ou des erreurs dans les données disponibles.</div>
-<div class="para" id="sec-Laboratoire_correlation-5-9">On commence par s’attarder à la première observation. Bien qu’elle ne soit pas linéaire, la relation liant les variables ressemble à un courbe bien connue, soit un logarithme. En cliquant sur l’outil croix du graphique, puis sur la flèche au niveau de l’option <em class="alert">courbe de tendance</em> suivi de <em class="alert">autres options</em>, on peut modifier le type de fonction utilisée pour approximer le lien. L’option logarithme est présente. On peut également afficher l’équation sur le graphique, qui sera de la forme <span class="process-math">\(a\ln(x)+b\text{.}\)</span>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Nuage de points représentant la magnitude absolue et la période<div class="autopermalink" data-description="Figure 8.2.5"><a href="#sec-Laboratoire_correlation-5-7" title="Copier le titre et le lien permanent pour Figure 8.2.5" aria-label="Copier le titre et le lien permanent pour Figure 8.2.5">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec-Laboratoire_correlation-5-8">Deux choses ressortent de ce graphique. Premièrement, la relation ne semble pas linéaire, mais il y a clairement un lien entre les deux variables. Deuxièmement, bien que la relation semble très forte, il semble aussi y avoir deux types de relations. En effet, on peut observer dans le graphique produit deux amas principaux de points. Ces deux amas paraissent suivre une relation de même type, mais il y a possiblement une troisième variable qui influence le lien entre la magnitude absolue et la période de pulsation, ou des erreurs dans les données disponibles.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-8" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-5-9">On commence par s’attarder à la première observation. Bien qu’elle ne soit pas linéaire, la relation liant les variables ressemble à un courbe bien connue, soit un logarithme. En cliquant sur l’outil croix du graphique, puis sur la flèche au niveau de l’option <em class="alert">courbe de tendance</em> suivi de <em class="alert">autres options</em>, on peut modifier le type de fonction utilisée pour approximer le lien. L’option logarithme est présente. On peut également afficher l’équation sur le graphique, qui sera de la forme <span class="process-math">\(a\ln(x)+b\text{.}\)</span><div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-9" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
 </div>
 <div class="para logical" id="sec-Laboratoire_correlation-5-10">
 <div class="para">Une autre option est de modifier l’axe de la période pour que l’échelle soit logarithmique. Voici la marche à suivre pour y arriver.</div>
 <ol class="decimal" id="sec-Laboratoire_correlation-5-10-1">
-<li id="sec-Laboratoire_correlation-5-10-1-1"><div class="para" id="sec-Laboratoire_correlation-5-10-1-1-1">Faire un clic à l’aide du bouton de droite de la souris sur l’axe de la période, ou encore effectuer un double-clic;</div></li>
-<li id="sec-Laboratoire_correlation-5-10-1-2"><div class="para" id="sec-Laboratoire_correlation-5-10-1-2-1">Dans le menu apparaissant, cliquer sur le petit icone ressemblant à un histogramme et appelé <em class="alert">Options d’axe</em>.</div></li>
-<li id="sec-Laboratoire_correlation-5-10-1-3"><div class="para" id="sec-Laboratoire_correlation-5-10-1-3-1">Cocher la boite appelée <em class="alert">Échelle logarithmique</em>.</div></li>
+<li id="sec-Laboratoire_correlation-5-10-1-1">
+<div class="para" id="sec-Laboratoire_correlation-5-10-1-1-1">Faire un clic à l’aide du bouton de droite de la souris sur l’axe de la période, ou encore effectuer un double-clic;<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-10-1-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 1"><a href="#sec-Laboratoire_correlation-5-10-1-1" title="Copier le titre et le lien permanent pour Point 1" aria-label="Copier le titre et le lien permanent pour Point 1">🔗</a></div>
+</li>
+<li id="sec-Laboratoire_correlation-5-10-1-2">
+<div class="para" id="sec-Laboratoire_correlation-5-10-1-2-1">Dans le menu apparaissant, cliquer sur le petit icone ressemblant à un histogramme et appelé <em class="alert">Options d’axe</em>.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-10-1-2-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 2"><a href="#sec-Laboratoire_correlation-5-10-1-2" title="Copier le titre et le lien permanent pour Point 2" aria-label="Copier le titre et le lien permanent pour Point 2">🔗</a></div>
+</li>
+<li id="sec-Laboratoire_correlation-5-10-1-3">
+<div class="para" id="sec-Laboratoire_correlation-5-10-1-3-1">Cocher la boite appelée <em class="alert">Échelle logarithmique</em>.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-10-1-3-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Point 3"><a href="#sec-Laboratoire_correlation-5-10-1-3" title="Copier le titre et le lien permanent pour Point 3" aria-label="Copier le titre et le lien permanent pour Point 3">🔗</a></div>
+</li>
 </ol>
 <div class="para">Ces deux options sont représentées dans la figure ci-dessous.</div>
+<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-10" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="fig-MabsP_log"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:50%;"><img src="external/images/MabsP_log_tendance.png" class="contained" alt="Ajout d’une courbe de tendance logarithmique sur le nuage de points."></div>
-<div class="sbspanel top" style="width:50%;"><img src="external/images/MabsP_log_echelle.png" class="contained" alt="Changement pour l’échelle logarithmique sur le nuage de points."></div>
-</div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.2.6<span class="period">.</span></span><span class="space"> </span>Comparaison entre la courbe de tendance logarithmique et l’échelle logarithmique</figcaption></figure><div class="para" id="sec-Laboratoire_correlation-5-12">Pour la deuxième observation, déterminer la nature de la cause relèverait davantage de la physique que des statistiques. Il existe deux types de céphéides, pour lesquels la période et la magnitude absolue suivent en effet des relations différentes, mais toutes deux logarithmiques, mais une analyse des données a montré que la presque totalité des étoiles de cette base de données sont de type <span class="process-math">\(I\text{.}\)</span>
+<figure class="figure figure-like" id="fig-MabsP_log">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="external/images/MabsP_log_tendance.png" class="contained" alt="Ajout d’une courbe de tendance logarithmique sur le nuage de points."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="external/images/MabsP_log_echelle.png" class="contained" alt="Changement pour l’échelle logarithmique sur le nuage de points."></div></div>
 </div>
-<div class="para" id="sec-Laboratoire_correlation-5-13">Le calcul du coefficient de détermination linéaire pour ces deux variables est relativement fort. Par contre, dans les options de la courbe de tendance, il est possible de faire calculer le coefficient de détermination de la relation logarithmique, qui est encore plus fort. Afficher ce coefficient sur le graphique.</div></section></section></div>
-<div class="ptx-content-footer">
-<a class="previous-button button" href="sec-Prelab_Correlation.html" title="Précédent"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="top-button button" href="#" title="Top"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Postlab_correlation.html" title="Suivant"><span class="name">Suivant</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Comparaison entre la courbe de tendance logarithmique et l’échelle logarithmique<div class="autopermalink" data-description="Figure 8.2.6"><a href="#fig-MabsP_log" title="Copier le titre et le lien permanent pour Figure 8.2.6" aria-label="Copier le titre et le lien permanent pour Figure 8.2.6">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec-Laboratoire_correlation-5-12">Pour la deuxième observation, déterminer la nature de la cause relèverait davantage de la physique que des statistiques. Il existe deux types de céphéides, pour lesquels la période et la magnitude absolue suivent en effet des relations différentes, mais toutes deux logarithmiques, mais une analyse des données a montré que la presque totalité des étoiles de cette base de données sont de type <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-12" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Laboratoire_correlation-5-13">Le calcul du coefficient de détermination linéaire pour ces deux variables est relativement fort. Par contre, dans les options de la courbe de tendance, il est possible de faire calculer le coefficient de détermination de la relation logarithmique, qui est encore plus fort. Afficher ce coefficient sur le graphique.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Laboratoire_correlation-5-13" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Sous-section 8.2.3: Absence de lien linéaire apparent et autres cas"><a href="#sec-Laboratoire_correlation-5" title="Copier le titre et le lien permanent pour Sous-section 8.2.3: Absence de lien linéaire apparent et autres cas" aria-label="Copier le titre et le lien permanent pour Sous-section 8.2.3: Absence de lien linéaire apparent et autres cas">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 8.2: Laboratoire"><a href="#sec-Laboratoire_correlation" title="Copier le titre et le lien permanent pour Section 8.2: Laboratoire" aria-label="Copier le titre et le lien permanent pour Section 8.2: Laboratoire">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-Prelab_Correlation.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Préc.</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Postlab_correlation.html" title="Suivant"><span class="name">Suiv.</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a xmlns:xlink="http://www.w3.org/1999/xlink" class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

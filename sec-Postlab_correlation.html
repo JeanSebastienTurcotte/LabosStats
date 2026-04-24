@@ -5,19 +5,21 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="fr-CA" dir="ltr" data-legacy-colorscheme="blue_red">
+<html lang="fr-CA" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Réflexions</title>
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.googleapis.com">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -34,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -54,14 +56,14 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -73,13 +75,13 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta xmlns:xlink="http://www.w3.org/1999/xlink" name="Keywords" content="Authored in PreTeXt">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:type" content="book">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:title" content="Les sciences autour de nous">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Yasmine Tawfik">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Jean-Sébastien Turcotte">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta property="og:type" content="book">
+<meta property="book:title" content="Les sciences autour de nous">
+<meta property="book:author" content="Yasmine Tawfik">
+<meta property="book:author" content="Jean-Sébastien Turcotte">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -101,25 +103,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.15';
+eBookConfig.runestone_version = '7.13.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.529fd9398bfbd03e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
-<script xmlns:xlink="http://www.w3.org/1999/xlink" src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Évaluer (Sage)';
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Évaluer (Sage)';
 </script>
 </head>
 <body id="sciencesautour" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Sauter au contenu</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="https://jeansebastienturcotte.github.io/LabosStats/LSAN.html"><img src="external/images/frontcover_petit.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="LSAN.html"><span class="title">Les sciences autour de nous:</span> <span class="subtitle">Laboratoires de probabilités et statistiques</span></a></h1>
+<h1 class="heading"><a href="LSAN.html"><span class="title">Les sciences autour de nous</span> <span class="subtitle">Laboratoires de probabilités et statistiques</span></a></h1>
 <p class="byline">Yasmine Tawfik, Jean-Sébastien Turcotte</p>
 </div>
-</div></header><nav xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Table des matières"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Table des matières</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
@@ -131,8 +133,8 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-Laboratoire_correlation.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="up-button button" href="chap-Correlation.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><a class="next-button button" href="backmatter.html" title="Suivant"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div xmlns:xlink="http://www.w3.org/1999/xlink" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-Laboratoire_correlation.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Préc.</span></a><a class="up-button button" href="chap-Correlation.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><a class="next-button button" href="backmatter.html" title="Suivant"><span class="name">Suiv.</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -140,7 +142,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Pages Liminaires</span></a></div>
 <ul class="structural toc-item-list">
@@ -470,66 +472,186 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:xlink="http://www.w3.org/1999/xlink" class="section" id="sec-Postlab_correlation"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">8.3</span><span class="space"> </span><span class="title">Réflexions</span>
-</h2>
-<div class="para" id="sec-Postlab_correlation-2">Ce laboratoire a montré comment déterminer la présence d’un lien linéaire entre deux variables, par le biais de l’observation (qualitativement) du nuage de points et par le calcul des coefficients de corrélation et de détermination (quantitativement). Ensemble, ces informations permettent de conclure à la présence ou non d’une relation linéaire ainsi que d’en quantifier la force.</div>
-<div class="para" id="sec-Postlab_correlation-3">De plus, on a vu qu’il est possible d’être en présence d’une relation qui n’est pas linéaire, mais qui peut être tout de même intéressante et très forte.</div>
-<section class="worksheet" id="sec-Postlab_correlation-4"><h3 class="heading hide-type">
-<span class="type">Feuille d'activités</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Travail à faire après le laboratoire</span><div class="print-links">
-<a href="sec-Postlab_correlation-4-a4.html" class="a4">A4</a><a href="sec-Postlab_correlation-4-letter.html" class="us">US</a>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Aperçu avant impression</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Format de papier</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Options d'impression supplémentaires</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Imprimer les en-têtes</span><label>Première page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>En cours<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
+<div class="footer-option">
+<span class="title">Imprimer les pieds de page</span><label>Première page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>En cours<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Mettre en évidence l'espace de travail</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Imprimer" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Imprimer</span></button>
+</div>
+</div>
+<section class="section" id="sec-Postlab_correlation">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Réflexions</span>
+</h2>
+<div class="para" id="sec-Postlab_correlation-2">Ce laboratoire a montré comment déterminer la présence d’un lien linéaire entre deux variables, par le biais de l’observation (qualitativement) du nuage de points et par le calcul des coefficients de corrélation et de détermination (quantitativement). Ensemble, ces informations permettent de conclure à la présence ou non d’une relation linéaire ainsi que d’en quantifier la force.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-2" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="para" id="sec-Postlab_correlation-3">De plus, on a vu qu’il est possible d’être en présence d’une relation qui n’est pas linéaire, mais qui peut être tout de même intéressante et très forte.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-3" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<section class="worksheet" id="sec-Postlab_correlation-4" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h3 class="heading hide-type">
+<span class="type">Feuille d'activités</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Travail à faire après le laboratoire</span><div class="print-links"><a href="?printpreview=sec-Postlab_correlation-4" class="print-link" title="Aperçu avant impression"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h3>
 <article class="objectives goal-like" id="sec-Postlab_correlation-4-2"><h4 class="heading"><span class="type">Objectifs</span></h4>
 <ul class="disc" id="sec-Postlab_correlation-4-2-1">
-<li id="sec-Postlab_correlation-4-2-1-1"><div class="para" id="sec-Postlab_correlation-4-2-1-1-1">Calculer des informations manquantes à l’aide de la régression linéaire.</div></li>
-<li id="sec-Postlab_correlation-4-2-1-2"><div class="para" id="sec-Postlab_correlation-4-2-1-2-1">Poser un regard critique sur les données.</div></li>
-<li id="sec-Postlab_correlation-4-2-1-3"><div class="para" id="sec-Postlab_correlation-4-2-1-3-1">Effectuer un test d’hypothèse paramétrique pour vérifier une hypothèse.</div></li>
-<li id="sec-Postlab_correlation-4-2-1-4"><div class="para" id="sec-Postlab_correlation-4-2-1-4-1">Interpréter adéquatement la conclusion d’un test.</div></li>
-<li id="sec-Postlab_correlation-4-2-1-5"><div class="para" id="sec-Postlab_correlation-4-2-1-5-1">Construire des intervalles de confiance pour estimer une variable à l’aide d’une régression.</div></li>
-</ul></article><article class="exercise exercise-like" id="sec-Postlab_correlation-4-3"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="introduction" id="sec-Postlab_correlation-4-3-1"><div class="para" id="sec-Postlab_correlation-4-3-1-1">Dans le tableau des données, on remarque que plusieurs étoiles n’ont pas de valeurs pour le rayon. On peut utiliser l’équation de la droite de régression <a href="sec-Laboratoire_correlation.html#eq-PR" class="xref" data-knowl="./knowl/xref/eq-PR.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Équation 8.2.2">(8.2.2)</a> pour approximer ces données manquantes.</div></div>
+<li id="sec-Postlab_correlation-4-2-1-1">
+<div class="para" id="sec-Postlab_correlation-4-2-1-1-1">Calculer des informations manquantes à l’aide de la régression linéaire.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-2-1-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#sec-Postlab_correlation-4-2-1-1" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="sec-Postlab_correlation-4-2-1-2">
+<div class="para" id="sec-Postlab_correlation-4-2-1-2-1">Poser un regard critique sur les données.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-2-1-2-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#sec-Postlab_correlation-4-2-1-2" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="sec-Postlab_correlation-4-2-1-3">
+<div class="para" id="sec-Postlab_correlation-4-2-1-3-1">Effectuer un test d’hypothèse paramétrique pour vérifier une hypothèse.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-2-1-3-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#sec-Postlab_correlation-4-2-1-3" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="sec-Postlab_correlation-4-2-1-4">
+<div class="para" id="sec-Postlab_correlation-4-2-1-4-1">Interpréter adéquatement la conclusion d’un test.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-2-1-4-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#sec-Postlab_correlation-4-2-1-4" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="sec-Postlab_correlation-4-2-1-5">
+<div class="para" id="sec-Postlab_correlation-4-2-1-5-1">Construire des intervalles de confiance pour estimer une variable à l’aide d’une régression.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-2-1-5-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#sec-Postlab_correlation-4-2-1-5" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectifs 8.3"><a href="#sec-Postlab_correlation-4-2" title="Copier le titre et le lien permanent pour Objectifs 8.3" aria-label="Copier le titre et le lien permanent pour Objectifs 8.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-Postlab_correlation-4-3"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-Postlab_correlation-4-3-1">
+<div class="para" id="sec-Postlab_correlation-4-3-1-1">Dans le tableau des données, on remarque que plusieurs étoiles n’ont pas de valeurs pour le rayon. On peut utiliser l’équation de la droite de régression <a href="sec-Laboratoire_correlation.html#eq-PR" class="xref" data-knowl="./knowl/xref/eq-PR.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Équation 8.2.2">(8.2.2)</a> pour approximer ces données manquantes.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-3-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+</div>
 <article class="task exercise-like" id="sec-Postlab_correlation-4-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-3-2-1-1">Dans le tableau des données, filtrer la colonne <em class="alert">Rayon</em> afin d’afficher uniquement les étoiles dont la valeur du rayon est absente.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-3-3-1-1">Dans une nouvelle feuille de calcul, copier, le nom et la période de ces étoiles.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-3-4-1-1">À l’aide de l’équation <a href="sec-Laboratoire_correlation.html#eq-PR" class="xref" data-knowl="./knowl/xref/eq-PR.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Équation 8.2.2">(8.2.2)</a>, déterminer les rayons manquants dans cette feuille de calculs.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-3-5-1-1">Vérifier la précision de l’approximation en cherchant les véritables valeurs des rayons des étoiles <code class="code-inline tex2jax_ignore">AX_Cir</code> (ID 207), <code class="code-inline tex2jax_ignore">R_Cru</code> (ID 209), <code class="code-inline tex2jax_ignore">SU_Cyg</code> (ID 225) et <code class="code-inline tex2jax_ignore">S_Sgr</code> (ID 397). Citer les sources utilisées.</div></article></article><article class="exercise exercise-like" id="sec-Postlab_correlation-4-4"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="introduction" id="sec-Postlab_correlation-4-4-1"><div class="para" id="sec-Postlab_correlation-4-4-1-1">Puisque le coefficient de corrélation <span class="process-math">\(r\)</span> est une approximation du véritable facteur de corrélation (<span class="process-math">\(\rho\)</span>) entre les variables et qu’il dépend du hasard de l’échantillon, ainsi que de sa taille, il est possible de faire un test d’hypothèse pour évaluer si le lien est significatif. L’hypothèse nulle est <span class="process-math">\(H_0: \rho = 0\text{,}\)</span> où <span class="process-math">\(\rho\)</span> est la vraie valeur du facteur de corrélation entre les variables, et l’hypothèse alternative est <span class="process-math">\(H_1: \rho\neq 0\text{.}\)</span> La règle de décision stipule de rejeter <span class="process-math">\(H_0\)</span> lorsque <span class="process-math">\(|{T_{obs}}|&gt;t_{n-2;\alpha/2}\)</span> où <span class="process-math">\(t_{obs}=\frac{r\sqrt{n-2}}{\sqrt{1-r^2}}\text{.}\)</span> Si l’on préfère utiliser la valeur <span class="process-math">\(P\text{,}\)</span> qui dans ce cas vaut <span class="process-math">\(2P(T_{n-2}&gt;|{t_{obs}}|)\text{,}\)</span> on rejette <span class="process-math">\(H_0\)</span> si celle-ci est inférieure à <span class="process-math">\(\alpha\text{.}\)</span>
-</div></div>
+<div class="para" id="sec-Postlab_correlation-4-3-2-1-1">Dans le tableau des données, filtrer la colonne <em class="alert">Rayon</em> afin d’afficher uniquement les étoiles dont la valeur du rayon est absente.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-3-2-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.1.a"><a href="#sec-Postlab_correlation-4-3-2" title="Copier le titre et le lien permanent pour Tâche 8.3.1.a" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-3-3-1-1">Dans une nouvelle feuille de calcul, copier, le nom et la période de ces étoiles.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-3-3-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.1.b"><a href="#sec-Postlab_correlation-4-3-3" title="Copier le titre et le lien permanent pour Tâche 8.3.1.b" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-3-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-3-4-1-1">À l’aide de l’équation <a href="sec-Laboratoire_correlation.html#eq-PR" class="xref" data-knowl="./knowl/xref/eq-PR.html" data-reveal-label="Dévoiler" data-close-label="Fermer" title="Équation 8.2.2">(8.2.2)</a>, déterminer les rayons manquants dans cette feuille de calculs.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-3-4-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.1.c"><a href="#sec-Postlab_correlation-4-3-4" title="Copier le titre et le lien permanent pour Tâche 8.3.1.c" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-3-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-3-5-1-1">Vérifier la précision de l’approximation en cherchant les véritables valeurs des rayons des étoiles <code class="code-inline tex2jax_ignore">AX_Cir</code> (ID 207), <code class="code-inline tex2jax_ignore">R_Cru</code> (ID 209), <code class="code-inline tex2jax_ignore">SU_Cyg</code> (ID 225) et <code class="code-inline tex2jax_ignore">S_Sgr</code> (ID 397). Citer les sources utilisées.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-3-5-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.1.d"><a href="#sec-Postlab_correlation-4-3-5" title="Copier le titre et le lien permanent pour Tâche 8.3.1.d" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.1.d">🔗</a></div>
+</article><div class="autopermalink" data-description="Activité 8.3.1"><a href="#sec-Postlab_correlation-4-3" title="Copier le titre et le lien permanent pour Activité 8.3.1" aria-label="Copier le titre et le lien permanent pour Activité 8.3.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-Postlab_correlation-4-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-Postlab_correlation-4-4-1">
+<div class="para" id="sec-Postlab_correlation-4-4-1-1">Puisque le coefficient de corrélation <span class="process-math">\(r\)</span> est une approximation du véritable facteur de corrélation (<span class="process-math">\(\rho\)</span>) entre les variables et qu’il dépend du hasard de l’échantillon, ainsi que de sa taille, il est possible de faire un test d’hypothèse pour évaluer si le lien est significatif. L’hypothèse nulle est <span class="process-math">\(H_0: \rho = 0\text{,}\)</span> où <span class="process-math">\(\rho\)</span> est la vraie valeur du facteur de corrélation entre les variables, et l’hypothèse alternative est <span class="process-math">\(H_1: \rho\neq 0\text{.}\)</span> La règle de décision stipule de rejeter <span class="process-math">\(H_0\)</span> lorsque <span class="process-math">\(|{T_{obs}}|&gt;t_{n-2;\alpha/2}\)</span> où <span class="process-math">\(t_{obs}=\frac{r\sqrt{n-2}}{\sqrt{1-r^2}}\text{.}\)</span> Si l’on préfère utiliser la valeur <span class="process-math">\(P\text{,}\)</span> qui dans ce cas vaut <span class="process-math">\(2P(T_{n-2}&gt;|{t_{obs}}|)\text{,}\)</span> on rejette <span class="process-math">\(H_0\)</span> si celle-ci est inférieure à <span class="process-math">\(\alpha\text{.}\)</span><div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-4-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+</div>
 <article class="task exercise-like" id="sec-Postlab_correlation-4-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-4-2-1-1">Faire le test d’hypothèse au seuil de <span class="process-math">\(5\%\)</span> en utilisant la première méthode.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-4-3-1-1">Faire le test d’hypothèse au seuil de <span class="process-math">\(1\%\)</span> en utilisant la valeur <span class="process-math">\(P\text{.}\)</span>
-</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-4-4-1-1">Interpréter adéquatement ce test d’hypothèses.</div></article></article><article class="exercise exercise-like" id="sec-Postlab_correlation-4-5"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="introduction" id="sec-Postlab_correlation-4-5-1"><div class="para logical" id="sec-Postlab_correlation-4-5-1-1">
+<div class="para" id="sec-Postlab_correlation-4-4-2-1-1">Faire le test d’hypothèse au seuil de <span class="process-math">\(5\%\)</span> en utilisant la première méthode.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-4-2-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.2.a"><a href="#sec-Postlab_correlation-4-4-2" title="Copier le titre et le lien permanent pour Tâche 8.3.2.a" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-4-3-1-1">Faire le test d’hypothèse au seuil de <span class="process-math">\(1\%\)</span> en utilisant la valeur <span class="process-math">\(P\text{.}\)</span><div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-4-3-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.2.b"><a href="#sec-Postlab_correlation-4-4-3" title="Copier le titre et le lien permanent pour Tâche 8.3.2.b" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-4-4-1-1">Interpréter adéquatement ce test d’hypothèses.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-4-4-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.2.c"><a href="#sec-Postlab_correlation-4-4-4" title="Copier le titre et le lien permanent pour Tâche 8.3.2.c" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.2.c">🔗</a></div>
+</article><div class="autopermalink" data-description="Activité 8.3.2"><a href="#sec-Postlab_correlation-4-4" title="Copier le titre et le lien permanent pour Activité 8.3.2" aria-label="Copier le titre et le lien permanent pour Activité 8.3.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec-Postlab_correlation-4-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="sec-Postlab_correlation-4-5-1">
+<div class="para logical" id="sec-Postlab_correlation-4-5-1-1">
 <div class="para">Lorsque l’on utilise l’équation de la droite de régression pour estimer une variable à l’aide d’une autre, ce que l’on fait est en réalité un calcul de moyenne conditionnelle, à savoir si les variables <span class="process-math">\(X,Y\)</span> sont linéairement corrélées, alors l’équation <span class="process-math">\(y=ax+b\)</span> signifie aussi qu’en moyenne lorsque <span class="process-math">\(X=x\text{,}\)</span> la variable <span class="process-math">\(Y\)</span> sera égale à <span class="process-math">\(y\text{.}\)</span> On peut utiliser ces informations pour construire un intervalle de confiance pour estimer une valeur de <span class="process-math">\(Y\)</span> pour une valeur de <span class="process-math">\(X\)</span> donnée, offrant ainsi plus de contrôle sur l’estimation. L’intervalle pour un niveau de confiance de <span class="process-math">\((a-\alpha)\%\)</span> est de la forme</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-Postlab_correlation-4-5-1-1-9">
 \begin{equation*}
 [ax+b-E;ax+b+E]\text{,}
 \end{equation*}
 </div>
 <div class="para">où la marge d’erreur <span class="process-math">\(E\)</span> vaut, si <span class="process-math">\(s_x,s_y\)</span> sont les écarts types estimés des variables <span class="process-math">\(X,Y\text{,}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-Postlab_correlation-4-5-1-1-13">
 \begin{equation*}
 E=t_{n-2;\alpha/2}s_y\sqrt{\frac{1}{n}+\frac{(x-\bar{x})^2}{(n-1)s_x^2}}\text{.}
 \end{equation*}
 </div>
-</div></div>
+<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-5-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+</div>
 <article class="task exercise-like" id="sec-Postlab_correlation-4-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-5-2-1-1">Dans une nouvelle feuille de calculs appelée <em class="alert">IntervalleR</em>, faire une copie des couples de données période-rayon pour les couples dont le rayon n’est pas vide.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>Ajouter des colonnes <em class="alert">Estimation</em>, <em class="alert">E</em>, <em class="alert">Binf</em>, <em class="alert">Bsup</em> et <em class="alert">P dans intervalle</em>.</article><article class="task exercise-like" id="sec-Postlab_correlation-4-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-5-4-1-1">À côté de ce tableau, calculer la moyenne des rayons, les écarts type pour les rayons et la période et le nombre de données dans le tableau. Inscrire aussi la valeur <span class="process-math">\(\alpha=0,05\)</span> et calculer la cote <span class="process-math">\(t\)</span> nécessaire.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-5-5-1-1">Dans le tableau, calculer les entrées de la colonne <em class="alert">Estimation</em> à l’aide de l’équation de la droite de régression obtenue pendant le laboratoire.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-5-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-5-6-1-1">Remplir la colonne <em class="alert">E</em> en calculant les marges d’erreur.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-5-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-5-7-1-1">Calculer les bornes inférieures et supérieures pour les intervalles de confiance dans les colonnes suivantes.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-5-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-5-8-1-1">Dans la colonne <em class="alert">P dans intervalle</em>, vérifier si la véritable période de chacune des étoiles se trouve dans l’intervalle de confiance construit.</div></article><article class="task exercise-like" id="sec-Postlab_correlation-4-5-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="sec-Postlab_correlation-4-5-9-1-1">Quelle est la proportion d’intervalles qui contiennent leur période? Commenter brièvement.</div></article></article></section></section></div>
-<div class="ptx-content-footer">
-<a class="previous-button button" href="sec-Laboratoire_correlation.html" title="Précédent"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="top-button button" href="#" title="Top"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Suivant"><span class="name">Suivant</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<div class="para" id="sec-Postlab_correlation-4-5-2-1-1">Dans une nouvelle feuille de calculs appelée <em class="alert">IntervalleR</em>, faire une copie des couples de données période-rayon pour les couples dont le rayon n’est pas vide.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-5-2-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.3.a"><a href="#sec-Postlab_correlation-4-5-2" title="Copier le titre et le lien permanent pour Tâche 8.3.3.a" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>Ajouter des colonnes <em class="alert">Estimation</em>, <em class="alert">E</em>, <em class="alert">Binf</em>, <em class="alert">Bsup</em> et <em class="alert">P dans intervalle</em>.<div class="autopermalink" data-description="Tâche 8.3.3.b"><a href="#sec-Postlab_correlation-4-5-3" title="Copier le titre et le lien permanent pour Tâche 8.3.3.b" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.3.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-5-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-5-4-1-1">À côté de ce tableau, calculer la moyenne des rayons, les écarts type pour les rayons et la période et le nombre de données dans le tableau. Inscrire aussi la valeur <span class="process-math">\(\alpha=0,05\)</span> et calculer la cote <span class="process-math">\(t\)</span> nécessaire.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-5-4-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.3.c"><a href="#sec-Postlab_correlation-4-5-4" title="Copier le titre et le lien permanent pour Tâche 8.3.3.c" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.3.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-5-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-5-5-1-1">Dans le tableau, calculer les entrées de la colonne <em class="alert">Estimation</em> à l’aide de l’équation de la droite de régression obtenue pendant le laboratoire.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-5-5-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.3.d"><a href="#sec-Postlab_correlation-4-5-5" title="Copier le titre et le lien permanent pour Tâche 8.3.3.d" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.3.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-5-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-5-6-1-1">Remplir la colonne <em class="alert">E</em> en calculant les marges d’erreur.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-5-6-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.3.e"><a href="#sec-Postlab_correlation-4-5-6" title="Copier le titre et le lien permanent pour Tâche 8.3.3.e" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.3.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-5-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-5-7-1-1">Calculer les bornes inférieures et supérieures pour les intervalles de confiance dans les colonnes suivantes.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-5-7-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.3.f"><a href="#sec-Postlab_correlation-4-5-7" title="Copier le titre et le lien permanent pour Tâche 8.3.3.f" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.3.f">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-5-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-5-8-1-1">Dans la colonne <em class="alert">P dans intervalle</em>, vérifier si la véritable période de chacune des étoiles se trouve dans l’intervalle de confiance construit.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-5-8-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.3.g"><a href="#sec-Postlab_correlation-4-5-8" title="Copier le titre et le lien permanent pour Tâche 8.3.3.g" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.3.g">🔗</a></div>
+</article>
+<article class="task exercise-like" id="sec-Postlab_correlation-4-5-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para" id="sec-Postlab_correlation-4-5-9-1-1">Quelle est la proportion d’intervalles qui contiennent leur période? Commenter brièvement.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_correlation-4-5-9-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Tâche 8.3.3.h"><a href="#sec-Postlab_correlation-4-5-9" title="Copier le titre et le lien permanent pour Tâche 8.3.3.h" aria-label="Copier le titre et le lien permanent pour Tâche 8.3.3.h">🔗</a></div>
+</article><div class="autopermalink" data-description="Activité 8.3.3"><a href="#sec-Postlab_correlation-4-5" title="Copier le titre et le lien permanent pour Activité 8.3.3" aria-label="Copier le titre et le lien permanent pour Activité 8.3.3">🔗</a></div>
+</article><div class="autopermalink" data-description="Feuille d'activités 8.3: Travail à faire après le laboratoire"><a href="#sec-Postlab_correlation-4" title="Copier le titre et le lien permanent pour Feuille d'activités 8.3: Travail à faire après le laboratoire" aria-label="Copier le titre et le lien permanent pour Feuille d'activités 8.3: Travail à faire après le laboratoire">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 8.3: Réflexions"><a href="#sec-Postlab_correlation" title="Copier le titre et le lien permanent pour Section 8.3: Réflexions" aria-label="Copier le titre et le lien permanent pour Section 8.3: Réflexions">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-Laboratoire_correlation.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Préc.</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Suivant"><span class="name">Suiv.</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a xmlns:xlink="http://www.w3.org/1999/xlink" class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

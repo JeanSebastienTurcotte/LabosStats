@@ -5,19 +5,21 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="fr-CA" dir="ltr" data-legacy-colorscheme="blue_red">
+<html lang="fr-CA" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Réflexions</title>
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.googleapis.com">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link xmlns:xlink="http://www.w3.org/1999/xlink" href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -34,11 +36,11 @@ window.MathJax = {
     "packages": {
       "[+]": [
         "base",
-        "extpfeil",
         "ams",
         "amscd",
         "color",
         "newcommand",
+        "textmacros",
         "knowl"
       ]
     }
@@ -54,14 +56,14 @@ window.MathJax = {
   "loader": {
     "load": [
       "input/asciimath",
-      "[tex]/extpfeil",
       "[tex]/amscd",
       "[tex]/color",
       "[tex]/newcommand",
+      "[tex]/textmacros",
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -73,13 +75,13 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta xmlns:xlink="http://www.w3.org/1999/xlink" name="Keywords" content="Authored in PreTeXt">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="og:type" content="book">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:title" content="Les sciences autour de nous">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Yasmine Tawfik">
-<meta xmlns:xlink="http://www.w3.org/1999/xlink" property="book:author" content="Jean-Sébastien Turcotte">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta property="og:type" content="book">
+<meta property="book:title" content="Les sciences autour de nous">
+<meta property="book:author" content="Yasmine Tawfik">
+<meta property="book:author" content="Jean-Sébastien Turcotte">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -101,25 +103,25 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.15';
+eBookConfig.runestone_version = '7.13.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.529fd9398bfbd03e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
-<script xmlns:xlink="http://www.w3.org/1999/xlink" src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Évaluer (Sage)';
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Évaluer (Sage)';
 </script>
 </head>
 <body id="sciencesautour" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Sauter au contenu</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" class="logo-link" target="_blank" href="https://jeansebastienturcotte.github.io/LabosStats/LSAN.html"><img src="external/images/frontcover_petit.png" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="LSAN.html"><span class="title">Les sciences autour de nous:</span> <span class="subtitle">Laboratoires de probabilités et statistiques</span></a></h1>
+<h1 class="heading"><a href="LSAN.html"><span class="title">Les sciences autour de nous</span> <span class="subtitle">Laboratoires de probabilités et statistiques</span></a></h1>
 <p class="byline">Yasmine Tawfik, Jean-Sébastien Turcotte</p>
 </div>
-</div></header><nav xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Table des matières"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Table des matières</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
@@ -131,8 +133,8 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-Laboratoire_TestHyp.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="up-button button" href="chap-TestHyp.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><a class="next-button button" href="chap-KhiDeux.html" title="Suivant"><span class="name">Suivant</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div xmlns:xlink="http://www.w3.org/1999/xlink" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-Laboratoire_TestHyp.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Préc.</span></a><a class="up-button button" href="chap-TestHyp.html" title="Haut"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Haut</span></a><a class="next-button button" href="chap-KhiDeux.html" title="Suivant"><span class="name">Suiv.</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -140,7 +142,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div xmlns:xlink="http://www.w3.org/1999/xlink" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Pages Liminaires</span></a></div>
 <ul class="structural toc-item-list">
@@ -470,38 +472,123 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:xlink="http://www.w3.org/1999/xlink" class="section" id="sec-Postlab_TestHyp"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.3</span><span class="space"> </span><span class="title">Réflexions</span>
-</h2>
-<div class="para" id="sec-Postlab_TestHyp-2">Ce laboratoire aura permis d’explorer les concepts liés aux tests d’hypothèses paramétriques. Toutefois, une étude plus approfondie est utile pour en saisir toutes les subtilités.</div>
-<section class="worksheet" id="ws-Reflexion_TestHyp"><h3 class="heading hide-type">
-<span class="type">Feuille d'activités</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Travail à faire après le laboratoire</span><div class="print-links">
-<a href="ws-Reflexion_TestHyp-a4.html" class="a4">A4</a><a href="ws-Reflexion_TestHyp-letter.html" class="us">US</a>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Aperçu avant impression</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Format de papier</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Options d'impression supplémentaires</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Imprimer les en-têtes</span><label>Première page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>En cours<input type="checkbox" id="print-running-header-checkbox" checked></label>
 </div>
+<div class="footer-option">
+<span class="title">Imprimer les pieds de page</span><label>Première page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>En cours<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Mettre en évidence l'espace de travail</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Imprimer" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Imprimer</span></button>
+</div>
+</div>
+<section class="section" id="sec-Postlab_TestHyp">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Réflexions</span>
+</h2>
+<div class="para" id="sec-Postlab_TestHyp-2">Ce laboratoire aura permis d’explorer les concepts liés aux tests d’hypothèses paramétriques. Toutefois, une étude plus approfondie est utile pour en saisir toutes les subtilités.<div class="autopermalink" data-description="Paragraphe"><a href="#sec-Postlab_TestHyp-2" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<section class="worksheet" id="ws-Reflexion_TestHyp" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h3 class="heading hide-type">
+<span class="type">Feuille d'activités</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Travail à faire après le laboratoire</span><div class="print-links"><a href="?printpreview=ws-Reflexion_TestHyp" class="print-link" title="Aperçu avant impression"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h3>
 <article class="objectives goal-like" id="ws-Reflexion_TestHyp-2"><h4 class="heading"><span class="type">Objectifs</span></h4>
 <ul class="disc" id="ws-Reflexion_TestHyp-2-1">
-<li id="ws-Reflexion_TestHyp-2-1-1"><div class="para" id="ws-Reflexion_TestHyp-2-1-1-1">Poser un regard critique sur des données.</div></li>
-<li id="ws-Reflexion_TestHyp-2-1-2"><div class="para" id="ws-Reflexion_TestHyp-2-1-2-1">Formuler des hypothèses de recherche.</div></li>
-<li id="ws-Reflexion_TestHyp-2-1-3"><div class="para" id="ws-Reflexion_TestHyp-2-1-3-1">Choisir le type de tests adéquatement et comprendre les distinctions entre chaque type de tests.</div></li>
-<li id="ws-Reflexion_TestHyp-2-1-4"><div class="para" id="ws-Reflexion_TestHyp-2-1-4-1">Effectuer un test d’hypothèse paramétriques pour vérifier une hypothèse.</div></li>
-<li id="ws-Reflexion_TestHyp-2-1-5"><div class="para" id="ws-Reflexion_TestHyp-2-1-5-1">Interpréter adéquatement la conclusion d’un test.</div></li>
-<li id="ws-Reflexion_TestHyp-2-1-6"><div class="para" id="ws-Reflexion_TestHyp-2-1-6-1">Comprendre les effets d’un changement de seuil de signification.</div></li>
-<li id="ws-Reflexion_TestHyp-2-1-7"><div class="para" id="ws-Reflexion_TestHyp-2-1-7-1">Explorer les caractéristiques des erreurs de type I et de type II.</div></li>
-</ul></article><article class="exercise exercise-like" id="ws-Reflexion_TestHyp-3"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="para" id="ws-Reflexion_TestHyp-3-1-1">Avant de faire une collecte de données, un chercheur pose ses hypothèses de recherche. Ce dernier effectue une étude sur l’efficacité de certains désinfectants sur la croissance de bactéries. Ce dernier croit que le désinfectant commercial Lysol sera plus efficace que le vinaigre contre la croissance bactérienne. Une fois les données récoltées, le chercheur constate que la moyenne du diamètre d’inhibition des bactéries avec Lysol est plus petite que la moyenne avec le vinaigre. Il décide de manipuler ses données pour aller dans le sens de son hypothèse de recherche de départ. Discuter des impacts de ce choix dans ce contexte et dans d’autres contextes. Que devrait faire le chercheur avant de réaliser son test d’hypothèse?</div></article><article class="exercise exercise-like" id="ws-Reflexion_TestHyp-4"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="para" id="ws-Reflexion_TestHyp-4-1-1">Dans le test sur deux moyennes dépendantes de la <a href="sec-Laboratoire_TestHyp.html#ssec-TestDeuxMoyennesDep" class="internal" title="Sous-section 6.2.5: Test d’hypothèse sur deux moyennes dépendantes">Sous-section 6.2.5</a>, à partir de quelle valeur du seuil de signification la conclusion du test change-t-elle? Donner la valeur au centième près. Expliquer en considérant les valeurs des statistiques et de la valeur p.</div></article><article class="exercise exercise-like" id="ws-Reflexion_TestHyp-5"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="ws-Reflexion_TestHyp-5-1-1">Un chercheur peut commettre deux types d’erreurs lorsque vient le temps de conclure: une erreur de type I (un faux positif), c’est-à-dire rejeter <span class="process-math">\(H_{0}\)</span> alors que <span class="process-math">\(H_{0}\)</span> est vraie, ou une erreur de type II (un faux négatif), soit ne pas rejeter <span class="process-math">\(H_{0}\)</span> alors que <span class="process-math">\(H_{0}\)</span> est faux. Supposer qu’un professionnel de la santé veut tester si un patient a une maladie. Dans quel contexte est-ce que l’erreur de type I (faux positif) est plus grave? Dans quel contexte est-ce que l’erreur de type II (faux négatif) est plus grave? Donner des exemples concrets.</div></article><article class="exercise exercise-like" id="ws-Reflexion_TestHyp-6"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div class="para" id="ws-Reflexion_TestHyp-6-1-1">Selon un rapport démographique de la communauté militaire américaine <details class="ptx-footnote" aria-live="polite" id="ws-Reflexion_TestHyp-6-1-1-1"><summary class="ptx-footnote__number" title="Note de bas de page 6.3.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ws-Reflexion_TestHyp-6-1-1-1">
-<a class="external" href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf" target="_blank"><code class="code-inline tex2jax_ignore">https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf</code></a>, page consultée le 24 novembre 2024</div></details>, en 2010, l’armée américaine comptait <span class="process-math">\(13,4\%\)</span> de membres de sexe féminin. Dans la base de données de <span class="process-math">\(6068\)</span> membres de l’armée américaine présentée à la <a href="sec-Laboratoire_TestHyp.html#ssec-TestProportion" class="internal" title="Sous-section 6.2.3: Test d’hypothèse sur une proportion">Sous-section 6.2.3</a>, l’échantillon prélevé en 2011 comptait <span class="process-math">\(32,7\%\)</span> de membres de sexe féminin. Avec un écart aussi grand, que dire de notre échantillon?</div></article><article class="exercise exercise-like" id="ws-Reflexion_TestHyp-7"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
-<div class="para" id="ws-Reflexion_TestHyp-7-1-1">Parmi toutes les bases de données disponibles ( vin, armée,  collisions, etc.), faire deux tests d’hypothèses paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse. Les feuilles des fichiers Excel remis doivent être bien identifiées.</div></article><article class="exercise exercise-like" id="ws-Reflexion_TestHyp-8"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div class="para" id="ws-Reflexion_TestHyp-8-1-1">Pour trois des quatre tests effectués dans le laboratoire 6, les cotes <span class="process-math">\(z\)</span> ou <span class="process-math">\(t\)</span> observées sont loin des valeurs critiques et les valeurs p sont très petites. Donner une ou deux raisons qui pourraient expliquer la puissance de ces rejets de l’hypothèse nulle.</div></article></section></section></div>
-<div class="ptx-content-footer">
-<a class="previous-button button" href="sec-Laboratoire_TestHyp.html" title="Précédent"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Précédent</span></a><a class="top-button button" href="#" title="Top"><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chap-KhiDeux.html" title="Suivant"><span class="name">Suivant</span><span xmlns:xlink="http://www.w3.org/1999/xlink" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<li id="ws-Reflexion_TestHyp-2-1-1">
+<div class="para" id="ws-Reflexion_TestHyp-2-1-1-1">Poser un regard critique sur des données.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-2-1-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#ws-Reflexion_TestHyp-2-1-1" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="ws-Reflexion_TestHyp-2-1-2">
+<div class="para" id="ws-Reflexion_TestHyp-2-1-2-1">Formuler des hypothèses de recherche.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-2-1-2-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#ws-Reflexion_TestHyp-2-1-2" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="ws-Reflexion_TestHyp-2-1-3">
+<div class="para" id="ws-Reflexion_TestHyp-2-1-3-1">Choisir le type de tests adéquatement et comprendre les distinctions entre chaque type de tests.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-2-1-3-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#ws-Reflexion_TestHyp-2-1-3" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="ws-Reflexion_TestHyp-2-1-4">
+<div class="para" id="ws-Reflexion_TestHyp-2-1-4-1">Effectuer un test d’hypothèse paramétriques pour vérifier une hypothèse.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-2-1-4-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#ws-Reflexion_TestHyp-2-1-4" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="ws-Reflexion_TestHyp-2-1-5">
+<div class="para" id="ws-Reflexion_TestHyp-2-1-5-1">Interpréter adéquatement la conclusion d’un test.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-2-1-5-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#ws-Reflexion_TestHyp-2-1-5" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="ws-Reflexion_TestHyp-2-1-6">
+<div class="para" id="ws-Reflexion_TestHyp-2-1-6-1">Comprendre les effets d’un changement de seuil de signification.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-2-1-6-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#ws-Reflexion_TestHyp-2-1-6" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+<li id="ws-Reflexion_TestHyp-2-1-7">
+<div class="para" id="ws-Reflexion_TestHyp-2-1-7-1">Explorer les caractéristiques des erreurs de type I et de type II.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-2-1-7-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objectif"><a href="#ws-Reflexion_TestHyp-2-1-7" title="Copier le titre et le lien permanent pour Objectif" aria-label="Copier le titre et le lien permanent pour Objectif">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectifs 6.3"><a href="#ws-Reflexion_TestHyp-2" title="Copier le titre et le lien permanent pour Objectifs 6.3" aria-label="Copier le titre et le lien permanent pour Objectifs 6.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-Reflexion_TestHyp-3"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws-Reflexion_TestHyp-3-1-1">Avant de faire une collecte de données, un chercheur pose ses hypothèses de recherche. Ce dernier effectue une étude sur l’efficacité de certains désinfectants sur la croissance de bactéries. Ce dernier croit que le désinfectant commercial Lysol sera plus efficace que le vinaigre contre la croissance bactérienne. Une fois les données récoltées, le chercheur constate que la moyenne du diamètre d’inhibition des bactéries avec Lysol est plus petite que la moyenne avec le vinaigre. Il décide de manipuler ses données pour aller dans le sens de son hypothèse de recherche de départ. Discuter des impacts de ce choix dans ce contexte et dans d’autres contextes. Que devrait faire le chercheur avant de réaliser son test d’hypothèse?<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-3-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activité 6.3.1"><a href="#ws-Reflexion_TestHyp-3" title="Copier le titre et le lien permanent pour Activité 6.3.1" aria-label="Copier le titre et le lien permanent pour Activité 6.3.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-Reflexion_TestHyp-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws-Reflexion_TestHyp-4-1-1">Dans le test sur deux moyennes dépendantes de la <a href="sec-Laboratoire_TestHyp.html#ssec-TestDeuxMoyennesDep" class="internal" title="Sous-section 6.2.5: Test d’hypothèse sur deux moyennes dépendantes">Sous-section 6.2.5</a>, à partir de quelle valeur du seuil de signification la conclusion du test change-t-elle? Donner la valeur au centième près. Expliquer en considérant les valeurs des statistiques et de la valeur p.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-4-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activité 6.3.2"><a href="#ws-Reflexion_TestHyp-4" title="Copier le titre et le lien permanent pour Activité 6.3.2" aria-label="Copier le titre et le lien permanent pour Activité 6.3.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-Reflexion_TestHyp-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws-Reflexion_TestHyp-5-1-1">Un chercheur peut commettre deux types d’erreurs lorsque vient le temps de conclure: une erreur de type I (un faux positif), c’est-à-dire rejeter <span class="process-math">\(H_{0}\)</span> alors que <span class="process-math">\(H_{0}\)</span> est vraie, ou une erreur de type II (un faux négatif), soit ne pas rejeter <span class="process-math">\(H_{0}\)</span> alors que <span class="process-math">\(H_{0}\)</span> est faux. Supposer qu’un professionnel de la santé veut tester si un patient a une maladie. Dans quel contexte est-ce que l’erreur de type I (faux positif) est plus grave? Dans quel contexte est-ce que l’erreur de type II (faux négatif) est plus grave? Donner des exemples concrets.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-5-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activité 6.3.3"><a href="#ws-Reflexion_TestHyp-5" title="Copier le titre et le lien permanent pour Activité 6.3.3" aria-label="Copier le titre et le lien permanent pour Activité 6.3.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-Reflexion_TestHyp-6"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws-Reflexion_TestHyp-6-1-1">Selon un rapport démographique de la communauté militaire américaine <details class="ptx-footnote" aria-live="polite" id="ws-Reflexion_TestHyp-6-1-1-1"><summary class="ptx-footnote__number" title="Note de bas de page 6.3.1"><sup> 1 </sup></summary>
+<div class="ptx-footnote__contents" id="ws-Reflexion_TestHyp-6-1-1-1">
+<a class="external" href="https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf" target="_blank"><code class="code-inline tex2jax_ignore">https://download.militaryonesource.mil/12038/MOS/Reports/2020-demographics-report.pdf</code></a>, page consultée le 24 novembre 2024
+</div></details>, en 2010, l’armée américaine comptait <span class="process-math">\(13,4\%\)</span> de membres de sexe féminin. Dans la base de données de <span class="process-math">\(6068\)</span> membres de l’armée américaine présentée à la <a href="sec-Laboratoire_TestHyp.html#ssec-TestProportion" class="internal" title="Sous-section 6.2.3: Test d’hypothèse sur une proportion">Sous-section 6.2.3</a>, l’échantillon prélevé en 2011 comptait <span class="process-math">\(32,7\%\)</span> de membres de sexe féminin. Avec un écart aussi grand, que dire de notre échantillon?<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-6-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activité 6.3.4"><a href="#ws-Reflexion_TestHyp-6" title="Copier le titre et le lien permanent pour Activité 6.3.4" aria-label="Copier le titre et le lien permanent pour Activité 6.3.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-Reflexion_TestHyp-7"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws-Reflexion_TestHyp-7-1-1">Parmi toutes les bases de données disponibles ( vin, armée,  collisions, etc.), faire deux tests d’hypothèses paramétriques de type différent en utilisant les canevas. Les hypothèses doivent être appuyées par une source crédible et rigoureuse. Les feuilles des fichiers Excel remis doivent être bien identifiées.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-7-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activité 6.3.5"><a href="#ws-Reflexion_TestHyp-7" title="Copier le titre et le lien permanent pour Activité 6.3.5" aria-label="Copier le titre et le lien permanent pour Activité 6.3.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-Reflexion_TestHyp-8"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws-Reflexion_TestHyp-8-1-1">Pour trois des quatre tests effectués dans le laboratoire 6, les cotes <span class="process-math">\(z\)</span> ou <span class="process-math">\(t\)</span> observées sont loin des valeurs critiques et les valeurs p sont très petites. Donner une ou deux raisons qui pourraient expliquer la puissance de ces rejets de l’hypothèse nulle.<div class="autopermalink" data-description="Paragraphe"><a href="#ws-Reflexion_TestHyp-8-1-1" title="Copier le titre et le lien permanent pour Paragraphe" aria-label="Copier le titre et le lien permanent pour Paragraphe">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activité 6.3.6"><a href="#ws-Reflexion_TestHyp-8" title="Copier le titre et le lien permanent pour Activité 6.3.6" aria-label="Copier le titre et le lien permanent pour Activité 6.3.6">🔗</a></div>
+</article><div class="autopermalink" data-description="Feuille d'activités 6.3: Travail à faire après le laboratoire"><a href="#ws-Reflexion_TestHyp" title="Copier le titre et le lien permanent pour Feuille d'activités 6.3: Travail à faire après le laboratoire" aria-label="Copier le titre et le lien permanent pour Feuille d'activités 6.3: Travail à faire après le laboratoire">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 6.3: Réflexions"><a href="#sec-Postlab_TestHyp" title="Copier le titre et le lien permanent pour Section 6.3: Réflexions" aria-label="Copier le titre et le lien permanent pour Section 6.3: Réflexions">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-Laboratoire_TestHyp.html" title="Précédent"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Préc.</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chap-KhiDeux.html" title="Suivant"><span class="name">Suiv.</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a xmlns:xlink="http://www.w3.org/1999/xlink" class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a xmlns:xlink="http://www.w3.org/1999/xlink" class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>
