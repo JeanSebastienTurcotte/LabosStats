@@ -212,7 +212,7 @@
             </figure>    
             </li>
             
-             <li><p>Lorsque l'on clique sur la cellule intitulée <alert>Effacer le contenu des cellules grises</alert>(voir la <xref ref="Fig_Canevas_7"/>), un message d'avertissement s'affiche et demande à l'utilisateur si ce dernier veut vraiment effacer tout le contenu des cellules grises. En cliquant <c>Oui</c>, le contenu des cellules grises est effacé.</p></li>
+             <li><p>Lorsque l'on clique sur la cellule intitulée <alert>Effacer le contenu des cellules grises</alert> (voir la <xref ref="Fig_Canevas_7"/>), un message d'avertissement s'affiche et demande à l'utilisateur si ce dernier veut vraiment effacer tout le contenu des cellules grises. En cliquant <c>Oui</c>, le contenu des cellules grises est effacé.</p></li>
             
         </ul> 
         </p>
@@ -502,7 +502,7 @@
                 
                 </li>-->
                 
-                <li><p>On s'intéresse au pourcentage total des codes 2 à 8. Il est possible de regrouper ces modalités pour trouver la proportion échantillonnale. Sélectionner les cellules <c>A5:B10</c> (voir la <xref ref="Fig_TCD_Ethnie_gif2"/>). </p>
+                <li><p>On s'intéresse au pourcentage total des codes 2 à 7. Il est possible de regrouper ces modalités pour trouver la proportion échantillonnale. Sélectionner les cellules <c>A5:B10</c> (voir la <xref ref="Fig_TCD_Ethnie_gif2"/>). </p>
                 
                  <p></p>
             

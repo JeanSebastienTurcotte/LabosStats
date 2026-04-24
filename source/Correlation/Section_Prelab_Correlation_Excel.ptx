@@ -87,7 +87,7 @@
   </statement></task>
   <task><statement><p>Ajouter une feuille de calcul appelée &#x00AB;MappP &#x00BB;, tracer le nuage de points représentant la magnitude apparente des étoiles en fonction de leur période de pulsation en suivant la procédure ci-dessus.</p></statement></task>
   <task><statement><p>Ajouter une feuille de calcul appelée &#x00AB;MabsP &#x00BB;, tracer le nuage de points représentant la magnitude absolue des étoiles en fonction de leur période de pulsation en suivant la procédure ci-dessus.</p></statement></task>
-  <task><statement><p>Sur chacune des trois feuilles, faire l'étude descriptive des variables de l'échantillon telle que décrite dans la <xref ref="sssec_Mesures"/> pour les variables impliquées.</p></statement></task>
+  <task><statement><p>Sur chacune des trois feuilles, faire un tableau de l'étude descriptive des variables de l'échantillon telle que décrite dans la <xref ref="sssec_Mesures"/> pour les variables impliquées. Débuter le tableau à la cellule <alert><c>I3</c></alert> de chaque feuille.</p></statement></task>
   </exercise>
   </worksheet>
 </section>

@@ -75,7 +75,7 @@
              
             <p>
              <ol>
-               <li><p>Dans la feuille <alert>Étude Atteint</alert>, sélectionner la cellule <c>G3</c> pour commencer le tableau (voir la <xref ref="Fig_Qual_Tableau1"/>). </p> </li> 
+               <li><p>Dans la feuille <alert>Étude Atteint</alert>, sélectionner la cellule <c>G4</c> pour commencer le tableau (voir la <xref ref="Fig_Qual_Tableau1"/>). </p> </li> 
                  <li><p>Appuyer ensuite sur la touche <kbd>=</kbd> (voir la <xref ref="Fig_Qual_Tableau1"/>). </p></li>
                  
                  <li><p>Sélectionner la plage du tableau croisé dynamique correspondant aux données, soit les cellules <c>C4:D6</c>. Appuyer sur la touche <kbd>Enter</kbd>.</p></li>
@@ -104,7 +104,7 @@
                <li><p>Dans la feuille <alert>Étude Atteint</alert>, sélectionner les cellules <c>C4:D6</c> (voir la <xref ref="Fig_Qual_Tableau2"/>). </p> </li> 
                  <li><p>Appuyer sur les touches <kbd>Ctrl</kbd>+<kbd>C</kbd> pour copier les valeurs. </p></li>
                  
-                 <li><p>Sélectionner la cellule <c>G3</c>, l'endroit où les cellules copiées seront collées.</p></li>
+                 <li><p>Sélectionner la cellule <c>G4</c>, l'endroit où les cellules copiées seront collées.</p></li>
                  
                   <li><p>Appuyer sur les touches <kbd>Ctrl</kbd>+<kbd>V</kbd> pour copier les valeurs (voir la <xref ref="Fig_Qual_Tableau2"/>). </p></li>
                  

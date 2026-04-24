@@ -36,6 +36,17 @@
 r=\frac{1}{n-1}\sum_{i=1}^n\left(\frac{x_i-\bar{x}}{s_x}\right)\left(\frac{y_i-\bar{y}}{s_y}\right).
 </men>
 C'est une mesure de la variabilité conjointe des variables, normalisée pour être entre <m>-1</m> et <m>1</m>. </p>
+    
+<p>
+             <ol>
+               <li><p>On calcule le coefficient de corrélation entre la période de pulsation et le rayon des céphéides et on l'ajoute sous les études descriptives. Dans la cellule <c>I15</c> de la feuille <alert>RP</alert>, taper <alert>Coefficient de corrélation linéaire</alert>. </p> </li> 
+                 <li><p>Dans la cellule <c>J15</c>, taper <kbd>=COEFFICIENT.CORRELATION(PÉRIODE;RAYON)</kbd> et appuyer sur <kbd>Enter</kbd>. </p></li>
+                 <li><p>On obtient un coefficient de corrélation linéaire d'environ <m>0,898</m>.</p></li>
+                
+             </ol>
+             
+             </p> 
+    
 <p>Le signe du coefficient de corrélation donne le sens de la variabilité de la variable <m>Y</m> lorsque <m>X</m> varie: une variation positive de <m>X</m> entraine une variation positive de <m>Y</m> lorsque <m>r>0</m> et  une variation positive de <m>X</m> entraine une variation négative de <m>Y</m> lorsque <m>r&lt;0</m>. La magnitude du coefficient de corrélation quant à elle quantifie la force du lien linéaire entre les variables. Traditionnellement, la force est obtenue selon la valeur de <m>|r|</m> dans la table suivante. </p>
 <table>
   <title>Interprétation de la force du lien linéaire</title>
@@ -82,13 +93,21 @@ C'est une mesure de la variabilité conjointe des variables, normalisée pour ê
     </row>
   </tabular>
 </table>
-<p>On calcule le coefficient de corrélation entre la période de pulsation et le rayon des céphéides et on  l'ajoute sous les études descriptives. Puisque les écarts types des variables font partie de la <xref ref="eq-coeffvar">formule mathématique</xref> du coefficient de variation, ce dernier est sensible aux valeurs extrêmes. Il est donc important de bien analyser les données lors d'une étape préliminaire.</p>
+<p>Puisque les écarts types des variables font partie de la <xref ref="eq-coeffvar">formule mathématique</xref> du coefficient de variation, ce dernier est sensible aux valeurs extrêmes. Il est donc important de bien analyser les données lors d'une étape préliminaire.</p>
 <p>Une fois la nature linéaire du lien confirmée, il est possible de déterminer l'équation de la meilleure droite qui relie les deux variables. L'exercice <xref ref="exo-moindrescarres"/> donne une idée de la procédure mathématique à suivre pour la trouver. Un ouvrage statistique théorique peut montrer que la pente est donnée par <m>a=r\frac{s_y}{s_x}</m> et l'ordonnée à l'origine par <m>b=\bar{y}-a\bar{x}</m>. Sur Excel, on peut afficher directement sur le graphique la droite et son équation.</p>
 <p>
 <ol>
 <!-- Todo Mettre figure-->
-<li><p>Pour cela, on sélectionne le graphique et on clique sur la petite croix en haut à droite, puis sur la case <em>Courbe de tendance</em>.</p></li>
-<li><p>Pour ajouter l'équation, on clique sur la flèche à droite de <em>Courbe de tendance</em> et on clique sur <em>Autres options<ellipsis/></em>. On aurait aussi pu faire un doubleclic sur la droite créée précédemment et on coche la case <em>Afficher l'équation sur le graphique</em>. </p></li>
+<li><p>Pour cela, sélectionner le graphique et cliquer sur la petite croix en haut à droite, puis sur la case <em><alert>Courbe de tendance</alert></em>.</p></li>
+<li><p>Pour ajouter l'équation, cliquer sur la flèche à droite de <em><alert>Courbe de tendance</alert></em> suivi d'un clic sur <em><alert>Autres options<ellipsis/></alert></em> (voir la <xref ref="Fig_Corrgif1"/>). Une fenêtre grise s'ouvre à droite de la feuille de calcul. Dans le menu <em><alert>Options de la courbe de tendance</alert></em>, sélectionner <em><alert>Afficher l'équation sur le graphique</alert></em> (voir la <xref ref="Fig_Corrgif1"/>). On aurait aussi pu faire un doubleclic sur la droite créée précédemment et cocher la case <em><alert>Afficher l'équation sur le graphique</alert></em>. </p>
+    <figure xml:id="Fig_Corrgif1">
+<caption>Ajouter la courbe de tendance et son équation</caption>
+<image source="images/Fig_Corrgif1.png" >
+<description>Ajouter la courbe de tendance et son équation</description>
+</image>
+</figure> 
+    
+    </li>
 </ol>
 </p>
 <p>La fonction <c>DROITEREG</c> permet aussi d'obtenir directement dans les cellules les valeurs de <m>a,b</m>, mais elle a comme inconvénient qu'il faut que le nombre de valeurs pour chacune des variables soit le même. Dans le cas de la base de données des céphéides, le rayon de plusieurs étoiles est manquant. Il faut alors filtrer dans la formule pour exclure les entrées vides. La formule <c>DROITEREG((FILTRE(Rayon;Rayon&lt;>0));FILTRE(PÉRIODE;Rayon&lt;>0))</c> permet d'accomplir cela, où <c>PÉRIODE</c> et <c>RAYON</c> sont les plages nommées correspondant à ces variables dans le tableau des données. Dans les deux cas, si l'on note <m>P</m> la période et <m>R</m> le rayon, on obtient
@@ -98,19 +117,32 @@ R=4,370849753P+24,05523133
 <p>Avec cette droite, on est en mesure d'estimer le rayon d'une étoile dont la période de pulsation est connue ou à l'inverse, de déterminer la période de pulsation d'une céphéide de rayon donné . Par exemple, la céphéide <em>FF_AQL</em> dont l'identifiant est <m>4</m> possède une période égale à environ <m>4,47</m> jours. En entrant cette valeur  dans l'équation, on estime un rayon de <m>43,59292972591(\times6,957\times10^8)</m> mètres. Selon <url href="https://en.wikipedia.org/wiki/FF_Aquilae#cite_note-turner-5">Wikipédia</url>, la composante numérique du rayon est de 39.</p>
 
 <p>Une autre mesure de la force du lien est donnée par le coefficient de détermination, habituellement noté <m>R^2</m> (sans lien avec le rayon mentionné précédemment). Ce dernier quantifie la proportion des variations de la variable dépendante qui sont expliquées par la variable indépendante. Il est donné en pourcentage et lorsqu'il n'y a qu'une seule variable indépendante, on a toujours <me>R^2=r^2\times 100\%</me>.</p>
-<p>Sur excel, la commande <c>COEFFICIENT.DETERMINATION(y_connus;x_connus)</c> permet de l'obtenir, mais ne donne pas le résultat en pourcentage. Il faut manuellement modifier le format de cellule. Faire attention au fait que cette formule demande les valeurs de <m>y</m> en premier suivies des <m>x</m>, contrairement au coefficient de corrélation. En calculant le coefficient de détermination entre la période de pulsation et le rayon d'une céphéide, on trouve qu'une variation du rayon d'une étoile de type céphéide explique environ <m>81\%</m> de la variation de sa période de pulsation. </p>
+<p>Sur Excel, la commande <c>COEFFICIENT.DETERMINATION(y_connus;x_connus)</c> permet de l'obtenir, mais ne donne pas le résultat en pourcentage. Il faut manuellement modifier le format de cellule. Faire attention au fait que cette formule demande les valeurs de <m>y</m> en premier suivies des <m>x</m>, contrairement au coefficient de corrélation. </p>
+    
+    <p>
+             <ol>
+               <li><p>On calcule le coefficient de détermination entre la période de pulsation et le rayon des céphéides et on l'ajoute sous les études descriptives. Dans la cellule <c>I16</c> de la feuille <alert>RP</alert>, taper <alert>Coefficient de détermination</alert>. </p> </li> 
+                 <li><p>Dans la cellule <c>J16</c>, taper <kbd>=COEFFICIENT.DETERMINATION(RAYON;PÉRIODE)</kbd> et appuyer sur <kbd>Enter</kbd>. </p></li>
+                 <li><p>On obtient un coefficient de détermination d'environ <m>0,807</m>.</p></li>
+                
+             </ol>
+             
+             </p> 
+    
+    <p>En calculant le coefficient de détermination entre la période de pulsation et le rayon d'une céphéide, on trouve qu'une variation du rayon d'une étoile de type céphéide explique environ <m>81\%</m> de la variation de sa période de pulsation. </p>
 </subsection>
 <subsection>
 <title>Absence de lien linéaire apparent et autres cas</title>
-<p>Dans la feuille <alert>MappP</alert>, on trace le nuage de points représentant la magnitude apparente et la période de pulsation. Le résultat est illustré à la figure ci-dessous.</p>
+<p>Dans la feuille <alert>MappP</alert>, on a tracé le nuage de points représentant la magnitude apparente et la période de pulsation. Le résultat est illustré à la figure ci-dessous.</p>
 <figure>
 <image source="images/MappP.png">
 <shortdescription>Nuage de points sur Excel montrant la relation entre la magnitude apparente et la période de pulsation.</shortdescription>
 </image>
 <caption>Nuage de points représentant la magnitude apparente et la période </caption>
 </figure>
+    <p>Dans des cellules sous le tableau des mesures descriptives fait dans le prélaboratoire, calculer le coefficient de corrélation linéaire et le coefficient de détermination. </p>
 <p>Le calcul des coefficients de corrélation et de détermination montre d'autant plus que ces variables ne sont pas reliées de manière linéaire. Ceci s'explique probablement en partie du fait que la luminosité apparente dépend de la distance de l'étoile. Au contraire, la magnitude absolue ramène cette valeur sur une même échelle.</p>
-<p>Dans la feuille <alert>MabsP</alert>, on trace le nuage de points représentant la magnitude absoulue et la période de pulsation. Le résultat est illustré à la figure ci-dessous.</p>
+<p>Dans la feuille <alert>MabsP</alert>, on a tracé le nuage de points représentant la magnitude absoulue et la période de pulsation. Le résultat est illustré à la figure ci-dessous.</p>
 <figure>
 <image source="images/MabsP.png">
 <shortdescription>Nuage de points sur Excel montrant la relation entre la magnitude absolue et la période de pulsation.</shortdescription>
